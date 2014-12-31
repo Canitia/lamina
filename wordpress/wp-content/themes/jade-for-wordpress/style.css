@@ -1,0 +1,262 @@
+/*
+Theme Name: Jade for Wordpress
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A theme based on material-design elements. This is the wordpress version of the Ghost original theme.
+Author: Michael Boumann
+Author URI: https://github.com/hxkclan/jade-for-wordpress
+Version: 1.0
+Tags: responsive, white, bootstrap, material design
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+/* general stuff */
+html body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+}
+
+p {
+    margin-left: 40px;
+    margin-right:40px;
+}
+
+#headerurl{
+    color: white;
+}
+
+.text-left-title {
+    padding-left: 40px;
+    padding-top: 60px;
+    font-size: 28px;
+}
+
+.text-left-title a {
+        color: white;
+}
+
+.scroll-top{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    left: 50%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+         .blogtitle {
+         font-size: 32px;
+         padding-top: 90px;
+         margin-left: 10%;
+         text-overflow: ellipsis;
+           white-space: nowrap;
+          overflow: hidden;
+         }
+}
+
+
+@media only screen and (max-width: 720px) {
+
+/*
+###############
+ home page look and feel
+###############
+ */
+    .container-fluid{
+        margin:0;
+        height: 100%;
+        margin-bottom:30px;
+    }
+         /*basic header */
+         #header {
+             position: relative;
+             background-color: #1e90ff;
+             color: #ffffff;
+             width: 100%;
+        }
+
+         .blogtitle {
+         font-size: 42px;
+         padding-top: 90px;
+         margin-left: 5%;
+         text-overflow: ellipsis;
+           white-space: nowrap;
+          overflow: hidden;
+         }
+
+         .text-left-title {
+             padding-left: 40px;
+             padding-top: 60px;
+             font-size: 18px;
+         }
+
+         /* margins of text */
+         .row {
+            margin-top:25px;
+           margin-left: 0px;
+           margin-right:0px;
+         }
+
+          /*
+          ############
+          Info modal
+          ############
+          */
+            /* question mark - about this theme */
+            #about {
+                position: absolute;
+                right: 10px;
+                top: 25px;
+            }
+
+}
+
+@media only screen and (min-width: 721px) {
+
+    .container-fluid{
+        margin:0;
+        padding-top: 200px;
+        height: 100%;
+        margin-bottom:30px;
+    }
+         /*basic header */
+         #header {
+             position: fixed;
+             background-color: #1e90ff;
+             color: #ffffff;
+             width: 100%;
+        }
+
+         .blogtitle {
+         font-size: 55px;
+         padding-top: 90px;
+         margin-left: 10%;
+         }
+
+         /* margins of text */
+         .row {
+            margin-top:25px;
+           margin-left: 10%;
+           margin-right:10%;
+         }
+
+          /*
+          ############
+          Info modal
+          ############
+          */
+            /* question mark - about this theme */
+            #about {
+                position: fixed;
+                right: 10px;
+                top: 25px;
+            }
+}
+
+
+
+ /*
+ ###############
+ Post related
+ ##############
+ */
+
+
+ /* post headers */
+ .modal-post {
+     background-color: #1e90ff;
+     color: #ffffff;
+     height: 100%;
+      margin-top:0px;
+     overflow: hidden;
+ }
+
+/* dont expand images too far in excerpt */
+article img {
+    width: 100%;
+}
+
+/* size of date and tags in header */
+.postdate {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* row below posts on index */
+hr {
+    margin-top: 25px;
+    margin-bottom: 65px;
+    border-width: 3px;
+    color: #708090;
+}
+
+/* seperate articles a bit more */
+article {
+    margin-bottom: 35px;
+}
+
+/* read more link */
+.readmore {
+    float: right;
+    color: #fff;
+    background-color: #1e90ff;
+    padding: 10px;
+    margin-top: -45px;
+    text-align: center;
+
+}
+
+.readmore:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #00bfff;
+}
+
+/* author info stuff at bottom of post */
+.postfooter{
+    background: #1e90ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.post-edit-link {
+    color: white;
+}
+
+.post-edit-link:hover {
+    text-decoration:none;
+}
+
+
+/* pagination */
+#pagination {
+    text-align: center;
+    bottom: 0;
+}
+
+.older-posts {
+      background: #1e90ff;
+      color: #fff;
+      padding: 10px;
+}
+
+.older-posts:hover {
+        color: #fff;
+        background-color: #00bfff;
+}
+
+.newer-posts {
+      background: #1e90ff;
+      color: #fff;
+      padding: 10px;
+}
+
+.newer-posts:hover {
+        color: #fff;
+        background-color: #00bfff;
+}
