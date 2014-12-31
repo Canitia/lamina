@@ -1,0 +1,34 @@
+<?php /*
+Theme Name:  Jade for Wordpress
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A theme based on material-design elements. This is the wordpress version of the Ghost original theme.
+Author: Michael Boumann
+Author URI: https://github.com/hxkclan/jade-for-wordpress
+Version: 1.0
+Tags: responsive, white, bootstrap, material design
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<head>
+<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> » Blog Archive <?php } ?> <?php wp_title(); ?></title>
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+
+<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
+<meta name="description" content="<?php bloginfo(); ?>" />
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
+
+      <!-- jQuery, font-awesome and more -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss2_url'); ?>" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<?php wp_get_archives('type=monthly&format=link'); ?>
+<?php wp_head(); ?>
+</head>
