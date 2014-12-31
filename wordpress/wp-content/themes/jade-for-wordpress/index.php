@@ -13,13 +13,6 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 */
 ?>
 <?php get_header(); ?>
-<body>
-
-  <div id="header">
-        <p class="blogtitle"><a href="<?php bloginfo('wpurl'); ?>" id="headerurl"><?php bloginfo('name'); ?></a></p>
-         <div id="about"><a href="#aboutModal2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-question fa-4x"></i></a></div>
-    </div>
-
 
    <div class="container-fluid">
 
@@ -59,15 +52,9 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
                     <!-- column 1 end! -->
 
 
-        <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
-
-
-    <?php endif; ?>
-
-                        <?php posts_nav_link( $sep, 'Previous', 'Next' ); ?><!--.navigation-->
-
-
-    </div>
+	<?php endwhile; else: ?>
+		<p><?php _e('Sorry, this page does not exist.'); ?></p>
+	<?php endif; ?>
 
 
 <div class="scroll-top">
