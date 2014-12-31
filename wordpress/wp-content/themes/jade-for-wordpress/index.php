@@ -40,10 +40,11 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
                     <?php the_content(); ?>
 
-
-                    <?php wp_link_pages(); ?>
-
                 </div><!--. entry-->
+                    <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
+
+                    <!-- navigation?-->
+                    <?php wp_link_pages(); ?>
 
                 <footer class="postfooter">
                 <?php edit_post_link(); ?>
