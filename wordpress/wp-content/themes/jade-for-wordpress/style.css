@@ -193,6 +193,11 @@ hr {
     color: #708090;
 }
 
+/* align comments section to center of page */
+#respond {
+    text-align: center;
+}
+
 /* seperate articles a bit more */
 article {
     margin-bottom: 35px;
@@ -200,11 +205,10 @@ article {
 
 /* read more link */
 .readmore {
-    float: right;
     color: #fff;
     background-color: #1e90ff;
     padding: 10px;
-    margin-top: -45px;
+    margin-top:10px;
     text-align: center;
 
 }
