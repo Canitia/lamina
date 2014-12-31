@@ -30,7 +30,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
             <div class="row">
                 <div>
             <div <?php post_class(); ?>>
-                <h4 class="text-left-title modal-post"><?php the_title(); ?> <p class="text-right postdate"><?php the_time( 'M j y' ); ?></p></h4>
+                <h4 class="text-left-title modal-post"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> <p class="text-right postdate"><?php the_time( 'M j y' ); ?></p></h4>
 
             </div><!--.post-header-->
 
@@ -65,7 +65,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
                         <?php posts_nav_link( $sep, 'Previous', 'Next' ); ?><!--.navigation-->
 
-    
+
     </div>
 
 
