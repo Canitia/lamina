@@ -198,6 +198,35 @@ hr {
     text-align: center;
 }
 
+.comment-body {
+text-align: center;
+margin-top: 40px;
+background: #1e90ff;
+color: white;
+}
+
+div.comment-meta.commentmetadata > a {
+    color:white;
+}
+.comment-reply-link{
+    color: white;
+}
+
+.comment-reply-link:hover{
+    color: white;
+}
+
+.commentlist {
+    list-style-type: none;
+}
+
+.commentlist {
+    list-style-type: none;
+}
+
+.children{
+    list-style-type: none;
+}
 /* seperate articles a bit more */
 article {
     margin-bottom: 35px;
