@@ -32,3 +32,10 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php wp_head(); ?>
 </head>
+
+<body>
+
+  <div id="header">
+        <p class="blogtitle"><a href="<?php bloginfo('wpurl'); ?>" id="headerurl"><?php bloginfo('name'); ?></a></p>
+         <div id="about"><a href="#aboutModal2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-question fa-4x"></i></a></div>
+    </div>
