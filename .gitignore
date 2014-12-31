@@ -5,3 +5,4 @@ sitemap.xml.gz
 wp-config.php
 wordpress/*
 !wordpress/wp-content/themes/jade-for-wordpress
+!wordpress/wp-content/themes/jade-for-wordpress/*
