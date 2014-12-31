@@ -40,9 +40,8 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
                     <?php wp_link_pages(); ?>
 
                 <footer class="postfooter">
-                <?php edit_post_link(); ?>
                 <address itemscope itemtype="http://schema.org/Person">
-                    <?php the_author(); ?>
+                    <p>This post is written by: <?php the_author(); ?></p>
 
                 </footer>
                 <!--.post-footer-->
