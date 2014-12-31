@@ -33,7 +33,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class();?>>
 
   <div id="header">
         <p class="blogtitle"><a href="<?php bloginfo('wpurl'); ?>" id="headerurl"><?php bloginfo('name'); ?></a></p>
