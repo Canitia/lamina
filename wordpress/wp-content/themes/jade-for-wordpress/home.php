@@ -31,7 +31,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
                             <?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
 
-                            <?php the_content(); ?>
+                            <?php the_excerpt(); ?>
 
                         </div><!--. entry-->
                             <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
