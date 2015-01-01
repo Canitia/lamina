@@ -14,4 +14,4 @@ Currently under (heavy) development. Master branch at least has a working versio
 #Preview
 Below you see a preview of the Jade for Wordpress theme.
 
-![Jade for Wordpress Preview](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-01182048.png)
+![Jade for Wordpress Preview](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-01234204.png)
