@@ -26,6 +26,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_get_archives('type=monthly&format=link'); ?>
 
+    <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <!-- close with wp_head -->
     <?php wp_head(); ?>
 </head>
