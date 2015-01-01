@@ -11,6 +11,41 @@ License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
 */
 
+
+/* ###############
+Wordpress required
+###############*/
+
+.aligncenter{} /* replaced by bootstraps text-left */
+.alignleft{} /* replaced by bootstraps text-center */
+.alignright{} /* replaced by bootstraps text-right */
+
+.wp-caption {
+    background: #1e90ff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.wp-caption-text {
+    color: white;
+    margin-top: 10px;
+}
+.gallery-caption {
+    color: white;
+    margin-top: 10px;
+    background: #1e90ff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sticky {
+
+}
+
+.bypostauthor{
+
+}
+
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 /* general stuff */
