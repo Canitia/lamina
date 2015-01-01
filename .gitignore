@@ -1,7 +1,14 @@
-*.log
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
+!.gitignore
+
 wordpress/*
-!wordpress/wp-content/themes/jade-for-wordpress
+!wordpress/wp-content/
+ 
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wordpress/wp-content/*
+!wordpress/wp-content/themes/
+wordpress/wp-content/themes/index.php
+wordpress/wp-content/themes/twenty*
+# Ignore everything in the "themes" directory, except the themes you
+# specify (see the commented-out example for a hint on how to do this.)
+!wp-content/themes/jade-for-wordpress

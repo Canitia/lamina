@@ -24,6 +24,16 @@ p {
     margin-right:40px;
 }
 
+.container-fluid{
+    margin:0;
+    height: 100%;
+    margin-bottom:30px;
+}
+
+.container-inside {
+    margin-top: 180px;
+}
+
 #headerurl{
     color: white;
 }
@@ -38,6 +48,14 @@ p {
         color: white;
 }
 
+.col-md-4 {
+    margin-top: 25px;
+}
+
+#sidebar li {
+list-style-type:none;
+}
+
 .scroll-top{
     color: #fff;
     text-decoration: none;
@@ -45,6 +63,7 @@ p {
     left: 50%;
     margin-bottom: 20px;
 }
+
 
 @media only screen and (max-width: 576px) {
          .blogtitle {
@@ -65,11 +84,11 @@ p {
  home page look and feel
 ###############
  */
-    .container-fluid{
-        margin:0;
-        height: 100%;
-        margin-bottom:30px;
+
+    .container-inside {
+        margin-top: 0;
     }
+
          /*basic header */
          #header {
              position: relative;
@@ -116,18 +135,14 @@ p {
 
 @media only screen and (min-width: 721px) {
 
-    .container-fluid{
-        margin:0;
-        padding-top: 200px;
-        height: 100%;
-        margin-bottom:30px;
-    }
+
          /*basic header */
          #header {
              position: fixed;
              background-color: #1e90ff;
              color: #ffffff;
              width: 100%;
+             z-index:100;
         }
 
          .blogtitle {
@@ -139,8 +154,8 @@ p {
          /* margins of text */
          .row {
             margin-top:25px;
-           margin-left: 10%;
-           margin-right:10%;
+           margin-left: 25px;
+           margin-right:25px;
          }
 
           /*
@@ -193,6 +208,40 @@ hr {
     color: #708090;
 }
 
+/* align comments section to center of page */
+#respond {
+    text-align: center;
+}
+
+.comment-body {
+text-align: center;
+margin-top: 40px;
+background: #1e90ff;
+color: white;
+}
+
+div.comment-meta.commentmetadata > a {
+    color:white;
+}
+.comment-reply-link{
+    color: white;
+}
+
+.comment-reply-link:hover{
+    color: white;
+}
+
+.commentlist {
+    list-style-type: none;
+}
+
+.commentlist {
+    list-style-type: none;
+}
+
+.children{
+    list-style-type: none;
+}
 /* seperate articles a bit more */
 article {
     margin-bottom: 35px;
@@ -200,11 +249,10 @@ article {
 
 /* read more link */
 .readmore {
-    float: right;
     color: #fff;
     background-color: #1e90ff;
     padding: 10px;
-    margin-top: -45px;
+    margin-top:10px;
     text-align: center;
 
 }
@@ -218,6 +266,7 @@ article {
 /* author info stuff at bottom of post */
 .postfooter{
     background: #1e90ff;
+    margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -231,7 +280,6 @@ article {
 .post-edit-link:hover {
     text-decoration:none;
 }
-
 
 /* pagination */
 #pagination {
