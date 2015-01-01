@@ -17,11 +17,13 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 html body {
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
+      text-rendering: optimizeLegibility;
 }
 
 p {
     margin-left: 40px;
     margin-right:40px;
+    text-align:justify;
 }
 
 .container-fluid{
@@ -41,11 +43,11 @@ p {
 .text-left-title {
     padding-left: 40px;
     padding-top: 60px;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .text-left-title a {
-        color: white;
+        color: #1e90ff;
 }
 
 .col-md-4 {
@@ -182,8 +184,8 @@ list-style-type:none;
 
  /* post headers */
  .modal-post {
-     background-color: #1e90ff;
-     color: #ffffff;
+
+     color: #1e90ff;
      height: 100%;
       margin-top:0px;
      overflow: hidden;
@@ -216,19 +218,15 @@ hr {
 .comment-body {
 text-align: center;
 margin-top: 40px;
-background: #1e90ff;
-color: white;
+color: #1e90ff;
+}
+
+a {
+    color: #1e90ff;
 }
 
 div.comment-meta.commentmetadata > a {
-    color:white;
-}
-.comment-reply-link{
-    color: white;
-}
-
-.comment-reply-link:hover{
-    color: white;
+    color:grey;
 }
 
 .commentlist {
@@ -254,7 +252,7 @@ article {
     padding: 10px;
     margin-top:10px;
     text-align: center;
-
+    float:right;
 }
 
 .readmore:hover {
@@ -265,11 +263,10 @@ article {
 
 /* author info stuff at bottom of post */
 .postfooter{
-    background: #1e90ff;
+    color: #1e90ff;
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
     text-align: center;
 }
 
