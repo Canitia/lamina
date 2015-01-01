@@ -47,26 +47,16 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
                         <!--.post-footer-->
 
                     </div><!-- .post-->
-                        </div>
-                            <!-- column 1 end! -->
-
+                </div>
 
         	<?php endwhile; else: ?>
         		<p><?php _e('Sorry, this page does not exist.'); ?></p>
         	<?php endif; ?>
 
-
-        <div class="scroll-top">
-        	<span class="scroll-top-inner">
-        		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
-        	</span>
-        </div>
-    </div>
-
+        </div>                            <!-- column 1 end! -->
 
     <?php get_sidebar(); ?>
-
 </div> <!-- container inside -->
-    </div><!-- container fluid END! -->
+</div><!-- container fluid END! -->
 
 <?php get_footer(); ?>

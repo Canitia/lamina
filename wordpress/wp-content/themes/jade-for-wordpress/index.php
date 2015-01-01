@@ -55,14 +55,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
         		<p><?php _e('Sorry, this page does not exist.'); ?></p>
         	<?php endif; ?>
 
-
-        <div class="scroll-top">
-        	<span class="scroll-top-inner">
-        		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
-        	</span>
-        </div>
-    </div>
-
+</div>
     <?php get_sidebar(); ?>
 </div>
     </div><!-- container fluid END! -->

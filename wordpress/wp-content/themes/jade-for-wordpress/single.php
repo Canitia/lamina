@@ -47,11 +47,8 @@
           <!-- let user enter a comment -->
 		<?php comments_template(); ?>
 
-        <div class="scroll-top">
-        	<span class="scroll-top-inner">
-        		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
-        	</span>
         </div>
+            <?php get_sidebar(); ?>
 </div>
     </div>
 
@@ -59,7 +56,7 @@
 
 
 
-    <?php get_sidebar(); ?>
+
 
 </div><!-- container fluid END! -->
 
