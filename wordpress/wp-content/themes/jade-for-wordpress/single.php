@@ -2,7 +2,7 @@
 
    <div class="container-fluid">
        <div class="container-inside">
-
+    <div class="col-md-8">
     <?php if ( have_posts() ) : ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
@@ -36,8 +36,7 @@
                 <!--.post-footer-->
 
             </div><!-- .post-->
-        </div>
-                    <!-- column 1 end! -->
+        </div> <!-- column 1 end! -->
 
 
 	<?php endwhile; else: ?>
@@ -48,14 +47,16 @@
           <!-- let user enter a comment -->
 		<?php comments_template(); ?>
 
+        <div class="scroll-top">
+        	<span class="scroll-top-inner">
+        		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
+        	</span>
+        </div>
+</div>
     </div>
 
 
-<div class="scroll-top">
-	<span class="scroll-top-inner">
-		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
-	</span>
-</div>
+
 
     <div class="col-md-4">
         <h4 class="text-left-title modal-post">Sidebar</h4>
