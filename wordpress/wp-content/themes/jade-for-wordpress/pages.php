@@ -2,7 +2,7 @@
 
    <div class="container-fluid">
        <div class="container-inside">
-
+    <div class="col-md-8">
     <?php if ( have_posts() ) : ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
@@ -40,7 +40,7 @@
 	<?php endwhile; else: ?>
 		<p><?php _e('Sorry, this page does not exist.'); ?></p>
 	<?php endif; ?>
-
+</div>
     <div class="col-md-4">
         <h4 class="text-left-title modal-post">Sidebar</h4>
     <?php get_sidebar(); ?>
