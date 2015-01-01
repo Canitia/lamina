@@ -11,6 +11,41 @@ License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
 */
 
+
+/* ###############
+Wordpress required
+###############*/
+
+.aligncenter{} /* replaced by bootstraps text-left */
+.alignleft{} /* replaced by bootstraps text-center */
+.alignright{} /* replaced by bootstraps text-right */
+
+.wp-caption {
+    background: #1e90ff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.wp-caption-text {
+    color: white;
+    margin-top: 10px;
+}
+.gallery-caption {
+    color: white;
+    margin-top: 10px;
+    background: #1e90ff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sticky {
+
+}
+
+.bypostauthor{
+
+}
+
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 /* general stuff */
@@ -33,7 +68,7 @@ p {
 }
 
 .container-inside {
-    margin-top: 180px;
+    margin-top: 185px;
 }
 
 #headerurl{
@@ -44,12 +79,16 @@ p {
     padding-left: 40px;
     padding-top: 60px;
     font-size: 30px;
+
 }
 
 .text-left-title a {
-        color: #1e90ff;
+        color: #fff;
 }
 
+.text-left-title a:hover {
+        color: #fff;
+}
 .col-md-4 {
     margin-top: 25px;
 }
@@ -119,6 +158,7 @@ list-style-type:none;
             margin-top:25px;
            margin-left: 0px;
            margin-right:0px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
          }
 
           /*
@@ -131,6 +171,7 @@ list-style-type:none;
                 position: absolute;
                 right: 10px;
                 top: 25px;
+                background: black;
             }
 
 }
@@ -158,6 +199,7 @@ list-style-type:none;
             margin-top:25px;
            margin-left: 25px;
            margin-right:25px;
+               box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
          }
 
           /*
@@ -170,6 +212,7 @@ list-style-type:none;
                 position: fixed;
                 right: 10px;
                 top: 25px;
+                background: black;
             }
 }
 
@@ -184,15 +227,15 @@ list-style-type:none;
 
  /* post headers */
  .modal-post {
-
-     color: #1e90ff;
+    background: #1e90ff;
+     color: white;
      height: 100%;
       margin-top:0px;
      overflow: hidden;
  }
 
-/* dont expand images too far in excerpt */
-article img {
+/* dont expand images beyond post width */
+.row img {
     width: 100%;
 }
 
@@ -211,38 +254,52 @@ hr {
 }
 
 /* align comments section to center of page */
-#respond {
+.comments-area {
+    color: #1e90ff;
     text-align: center;
-}
-
-.comment-body {
-text-align: center;
-margin-top: 40px;
-color: #1e90ff;
 }
 
 a {
     color: #1e90ff;
 }
 
-div.comment-meta.commentmetadata > a {
-    color:grey;
+a:hover {
+    color: #1e90ff;
 }
 
-.commentlist {
+
+/* center actual reply */
+.comment-body p {
+    text-align:center;
+        background-color: #1e90ff;
+        color:white;
+}
+
+..form-submit{
+    text-align: center;
+}
+
+.submit {
+        background-color: #1e90ff;
+        color:white;
+        position: relative;
+        left: 50%;
+}
+
+.logged-in-as {
+    text-align: center;
+}
+
+.comment-form-comment{
+    text-align: center;
+}
+/* Remove comments ul/li stuff */
+.comment-list {
     list-style-type: none;
 }
 
-.commentlist {
+.children {
     list-style-type: none;
-}
-
-.children{
-    list-style-type: none;
-}
-/* seperate articles a bit more */
-article {
-    margin-bottom: 35px;
 }
 
 /* read more link */
@@ -250,7 +307,6 @@ article {
     color: #fff;
     background-color: #1e90ff;
     padding: 10px;
-    margin-top:10px;
     text-align: center;
     float:right;
 }
@@ -263,7 +319,7 @@ article {
 
 /* author info stuff at bottom of post */
 .postfooter{
-    color: #1e90ff;
+    background: #1e90ff;
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -272,10 +328,16 @@ article {
 
 .post-edit-link {
     color: white;
+    background: #1e90ff;
+        padding: 10px;
+        margin-top:10px;
+        text-align: center;
 }
 
 .post-edit-link:hover {
     text-decoration:none;
+    color:white;
+    background-color: #00bfff;
 }
 
 /* pagination */

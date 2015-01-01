@@ -18,16 +18,16 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
-<meta name="description" content="<?php bloginfo(); ?>" />
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
+<meta name="description" content="<?php bloginfo( 'description' ); ?>" />
+<link rel="shortcut icon" href="<?php echo get_template_directory(); ?>/favicon.ico" />
 
       <!-- jQuery, font-awesome and more -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css">
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss2_url'); ?>" />
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php get_feed_link( 'rss2' )?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php wp_head(); ?>
@@ -36,6 +36,6 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 <body <?php body_class();?>>
 
   <div id="header">
-        <p class="blogtitle"><a href="<?php bloginfo('wpurl'); ?>" id="headerurl"><?php bloginfo('name'); ?></a></p>
+        <p class="blogtitle"><a href="<?php echo home_url();  ?>" id="headerurl"><?php bloginfo('name'); ?></a></p>
          <div id="about"><a href="#aboutModal2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-question fa-4x"></i></a></div>
     </div>

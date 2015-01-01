@@ -38,7 +38,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
 
                     <!-- navigation?-->
-                    <?php wp_link_pages(); ?>
+                    <div class="navigation"><?php posts_nav_link(); ?></div>
 
                 <footer class="postfooter">
                 <?php edit_post_link(); ?>

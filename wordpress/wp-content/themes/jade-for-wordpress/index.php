@@ -23,7 +23,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
                     <div class="row">
                         <div>
                     <div <?php post_class(); ?>>
-                        <h4 class="text-left-title modal-post"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> <p class="text-right postdate"><?php the_time( 'M j y' ); ?></p></h4>
+                        <h4 class="text-left-title modal-post"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a><p class="text-center postdate"> <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p></h4>
 
                     </div><!--.post-header-->
 
@@ -37,7 +37,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
                             <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
 
                     <!-- navigation?-->
-                    <?php wp_link_pages(); ?>
+                    <div class="navigation"><?php posts_nav_link(); ?></div>
 
                 <footer class="postfooter">
                 <?php edit_post_link(); ?>
