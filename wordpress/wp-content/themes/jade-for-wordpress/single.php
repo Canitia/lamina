@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
    <div class="container-fluid">
-
+       <div class="container-inside">
 
     <?php if ( have_posts() ) : ?>
 
@@ -26,9 +26,12 @@
 
                 <footer class="postfooter">
                 <?php edit_post_link(); ?>
+                </footer>
+
+
+                <footer class="postfooter">
                 <address itemscope itemtype="http://schema.org/Person">
                     <?php the_author(); ?>
-
                 </footer>
                 <!--.post-footer-->
 
@@ -44,8 +47,7 @@
 	  	<hr>
           <!-- let user enter a comment -->
 		<?php comments_template(); ?>
-        <!-- show already placed comments -->
-        <?php wp_list_comments(); ?>
+
     </div>
 
 
@@ -53,6 +55,12 @@
 	<span class="scroll-top-inner">
 		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
 	</span>
+</div>
+
+    <div class="col-md-4">
+        <h4 class="text-left-title modal-post">Sidebar</h4>
+    <?php get_sidebar(); ?>
+    </div>
 </div>
 </div><!-- container fluid END! -->
 
