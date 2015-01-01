@@ -17,6 +17,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 html body {
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
+      text-rendering: optimizeLegibility;
 }
 
 p {

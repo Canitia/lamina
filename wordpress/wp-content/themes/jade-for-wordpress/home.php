@@ -16,7 +16,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
    <div class="container-fluid">
        <div class="container-inside">
-       <div class="col-md-8">
+       <div >
             <?php if ( have_posts() ) : ?>
 
                 <?php while ( have_posts() ) : the_post(); ?>
@@ -54,7 +54,6 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
         </div>                            <!-- column 1 end! -->
 
-    <?php get_sidebar(); ?>
 </div> <!-- container inside -->
 </div><!-- container fluid END! -->
 

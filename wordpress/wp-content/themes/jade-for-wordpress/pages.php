@@ -2,7 +2,7 @@
 
    <div class="container-fluid">
        <div class="container-inside">
-    <div class="col-md-8">
+    <div>
     <?php if ( have_posts() ) : ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
@@ -38,9 +38,6 @@
 		<p><?php _e('Sorry, this page does not exist.'); ?></p>
 	<?php endif; ?>
 </div>
-
-    <?php get_sidebar(); ?>
-
 </div>
     </div>
 
