@@ -100,8 +100,10 @@ p {
 }
 
 /* ##########################
-    Header
+    Header - general
 #########################*/
+
+/* seperate css class for the header url so it shows */
 #headerurl{
     color: white;
 }
@@ -121,6 +123,9 @@ p {
         color: #fff;
 }
 
+/* ##########################
+    Footer - general
+#########################*/
 .scroll-top{
     color: #fff;
     text-decoration: none;
@@ -130,124 +135,12 @@ p {
 }
 
 
-@media only screen and (max-width: 576px) {
-         .blogtitle {
-         font-size: 32px;
-         padding-top: 90px;
-         margin-left: 10%;
-         text-overflow: ellipsis;
-           white-space: nowrap;
-          overflow: hidden;
-         }
-}
-
-
-@media only screen and (max-width: 720px) {
-
-/*
-###############
- home page look and feel
-###############
- */
-
-    .container-inside {
-        margin-top: 0;
-    }
-
-         /*basic header */
-         #header {
-             position: relative;
-             background-color: #1e90ff;
-             color: #ffffff;
-             width: 100%;
-        }
-
-         .blogtitle {
-         font-size: 42px;
-         padding-top: 90px;
-         margin-left: 5%;
-         text-overflow: ellipsis;
-           white-space: nowrap;
-          overflow: hidden;
-         }
-
-         .text-left-title {
-             padding-left: 40px;
-             padding-top: 60px;
-             font-size: 18px;
-         }
-
-         /* margins of text */
-         .row {
-            margin-top:25px;
-           margin-left: 0px;
-           margin-right:0px;
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-         }
-
-          /*
-          ############
-          Info modal
-          ############
-          */
-            /* question mark - about this theme */
-            #about {
-                position: absolute;
-                right: 10px;
-                top: 25px;
-                background: black;
-            }
-
-}
-
-@media only screen and (min-width: 721px) {
-
-
-         /*basic header */
-         #header {
-             position: fixed;
-             background-color: #1e90ff;
-             color: #ffffff;
-             width: 100%;
-             z-index:100;
-        }
-
-         .blogtitle {
-         font-size: 55px;
-         padding-top: 90px;
-         margin-left: 10%;
-         }
-
-         /* margins of text */
-         .row {
-            margin-top:25px;
-           margin-left: 25px;
-           margin-right:25px;
-               box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-         }
-
-          /*
-          ############
-          Info modal
-          ############
-          */
-            /* question mark - about this theme */
-            #about {
-                position: fixed;
-                right: 10px;
-                top: 25px;
-                background: black;
-            }
-}
-
-
 
  /*
  ###############
  Post - general
  ###############
  */
-
 
  /* post headers */
  .modal-post {
@@ -262,6 +155,72 @@ p {
 .postdate {
     font-size: 18px;
     margin-top: 20px;
+}
+
+/* read more link */
+.readmore {
+    color: #fff;
+    background-color: #1e90ff;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.readmore:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #00bfff;
+}
+
+/* author info stuff at bottom of post */
+.postfooter{
+    background: #1e90ff;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.post-edit-link {
+    color: white;
+    background: #1e90ff;
+    padding: 10px;
+}
+
+.post-edit-link:hover {
+    text-decoration:none;
+    color:white;
+    background-color: #00bfff;
+}
+
+
+/* pagination */
+#pagination {
+    text-align: center;
+    bottom: 0;
+}
+
+/* links to older posts */
+.older-posts {
+      background: #1e90ff;
+      color: #fff;
+      padding: 10px;
+}
+
+.older-posts:hover {
+        color: #fff;
+        background-color: #00bfff;
+}
+/* links to newer posts */
+.newer-posts {
+      background: #1e90ff;
+      color: #fff;
+      padding: 10px;
+}
+
+.newer-posts:hover {
+        color: #fff;
+        background-color: #00bfff;
 }
 
 /* row below posts on index */
@@ -324,66 +283,116 @@ p#form-allowed-tags {
     list-style-type: none;
 }
 
-/* read more link */
-.readmore {
-    color: #fff;
-    background-color: #1e90ff;
-    padding: 10px;
-    text-align: center;
+
+/* ##########################
+    Specific resolution CSS - max width 576
+#########################
+*/
+@media only screen and (max-width: 576px) {
+         .blogtitle {
+         font-size: 32px;
+         padding-top: 90px;
+         margin-left: 10%;
+         text-overflow: ellipsis;
+           white-space: nowrap;
+          overflow: hidden;
+         }
+}
+
+/* ##########################
+    Specific resolution CSS - max width 720
+#########################
+*/
+@media only screen and (max-width: 720px) {
+
+/*
+###############
+ home page look and feel
+###############
+ */
+
+    .container-inside {
+        margin-top: 0;
+    }
+
+         /*basic header */
+         #header {
+             position: relative;
+             background-color: #1e90ff;
+             color: #ffffff;
+             width: 100%;
+        }
+
+         .blogtitle {
+         font-size: 42px;
+         padding-top: 90px;
+         margin-left: 5%;
+         text-overflow: ellipsis;
+           white-space: nowrap;
+          overflow: hidden;
+         }
+
+         .text-left-title {
+             padding-left: 40px;
+             padding-top: 60px;
+             font-size: 18px;
+         }
+
+         /* margins of text */
+         .row {
+            margin-top:25px;
+           margin-left: 0px;
+           margin-right:0px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+         }
+
+          /*
+          Info modal (question mark)
+          */
+            #about {
+                position: absolute;
+                right: 10px;
+                top: 25px;
+                background: black;
+            }
 
 }
 
-.readmore:hover {
-    text-decoration: none;
-    color: #fff;
-    background-color: #00bfff;
-}
+/* ##########################
+    Specific resolution CSS - everything bigger than 720
+######################### */
+@media only screen and (min-width: 721px) {
 
-/* author info stuff at bottom of post */
-.postfooter{
-    background: #1e90ff;
-    margin-top: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
+         /*basic header */
+         #header {
+             position: fixed;
+             background-color: #1e90ff;
+             color: #ffffff;
+             width: 100%;
+             z-index:100;
+        }
 
-.post-edit-link {
-    color: white;
-    background: #1e90ff;
-    padding: 10px;
-}
+         .blogtitle {
+         font-size: 55px;
+         padding-top: 90px;
+         margin-left: 10%;
+         }
 
-.post-edit-link:hover {
-    text-decoration:none;
-    color:white;
-    background-color: #00bfff;
-}
+         /* margins of text */
+         .row {
+            margin-top:25px;
+           margin-left: 25px;
+           margin-right:25px;
+               box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+         }
 
-/* pagination */
-#pagination {
-    text-align: center;
-    bottom: 0;
-}
-
-.older-posts {
-      background: #1e90ff;
-      color: #fff;
-      padding: 10px;
-}
-
-.older-posts:hover {
-        color: #fff;
-        background-color: #00bfff;
-}
-
-.newer-posts {
-      background: #1e90ff;
-      color: #fff;
-      padding: 10px;
-}
-
-.newer-posts:hover {
-        color: #fff;
-        background-color: #00bfff;
+          /*
+          Info modal (question mark)
+          */
+            #about {
+                position: fixed;
+                right: 10px;
+                top: 25px;
+                background: black;
+            }
 }
