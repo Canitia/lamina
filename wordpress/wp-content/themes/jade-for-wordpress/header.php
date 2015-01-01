@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
     <title>
-        <?php echo wp_title(); ?>
+        <?php wp_title(); ?>
     </title>
 
     <!-- some meta -->
