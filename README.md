@@ -15,7 +15,7 @@ Currently under (heavy) development. Master branch at least has a working versio
 Below are a few images of the Jade for Wordpress theme.
 
 First image is the main page
-![Jade for Wordpress Preview - main](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-01023535.png)
+![Jade for Wordpress Preview - main](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-01132559.png)
 
 This second one shows the view when you open a post;
-![Jade for Wordpress Preview - Post](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-01023521.png)
+![Jade for Wordpress Preview - Post](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-01132909.png)
