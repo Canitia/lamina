@@ -225,6 +225,11 @@ a {
     color: #1e90ff;
 }
 
+a:hover {
+        color: #fff;
+        background-color: #00bfff;
+}
+
 div.comment-meta.commentmetadata > a {
     color:grey;
 }
@@ -272,6 +277,10 @@ article {
 
 .post-edit-link {
     color: white;
+    background: #1e90ff;
+        padding: 10px;
+        margin-top:10px;
+        text-align: center;
 }
 
 .post-edit-link:hover {
