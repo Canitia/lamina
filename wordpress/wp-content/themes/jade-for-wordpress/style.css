@@ -282,6 +282,11 @@ a:hover {
         color:white;
 }
 
+/* remove the allowed tags part */
+p#form-allowed-tags {
+    display:none;
+}
+
 ..form-submit{
     text-align: center;
 }
