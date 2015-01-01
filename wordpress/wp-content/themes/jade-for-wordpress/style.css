@@ -55,6 +55,7 @@ p {
 #sidebar li {
 list-style-type:none;
 }
+
 .scroll-top{
     color: #fff;
     text-decoration: none;
@@ -153,8 +154,8 @@ list-style-type:none;
          /* margins of text */
          .row {
             margin-top:25px;
-           margin-left: 10%;
-           margin-right:10%;
+           margin-left: 25px;
+           margin-right:25px;
          }
 
           /*
@@ -279,7 +280,6 @@ article {
 .post-edit-link:hover {
     text-decoration:none;
 }
-
 
 /* pagination */
 #pagination {
