@@ -36,6 +36,6 @@
 <header>
 <div id="header">
     <p class="blogtitle"><a href="<?php echo home_url();  ?>" id="headerurl"><?php bloginfo('name'); ?></a></p>
-     <div id="about"><a href="#aboutModal2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-question fa-4x"></i></a></div>
+     <div id="about"><a href="#aboutModal2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-question fa-3x"></i></a></div>
 </div>
 </header>
