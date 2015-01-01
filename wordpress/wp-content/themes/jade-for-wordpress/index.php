@@ -15,52 +15,59 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 <?php get_header(); ?>
 
    <div class="container-fluid">
+       <div class="container-inside">
+       <div class="col-md-8">
+            <?php if ( have_posts() ) : ?>
+
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <div class="row">
+                        <div>
+                    <div <?php post_class(); ?>>
+                        <h4 class="text-left-title modal-post"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> <p class="text-right postdate"><?php the_time( 'M j y' ); ?></p></h4>
+
+                    </div><!--.post-header-->
+
+                        <div class="entry clear">
+
+                            <?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
+
+                            <?php the_content(); ?>
+
+                        </div><!--. entry-->
+                            <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
+
+                            <!-- navigation?-->
+                            <?php wp_link_pages(); ?>
+
+                        <footer class="postfooter">
+                        <address itemscope itemtype="http://schema.org/Person">
+                        <?php the_author(); ?>
+
+                        </footer>
+                        <!--.post-footer-->
+
+                    </div><!-- .post-->
+                        </div>
+                            <!-- column 1 end! -->
 
 
-    <?php if ( have_posts() ) : ?>
-
-        <?php while ( have_posts() ) : the_post(); ?>
-            <div class="row">
-                <div>
-            <div <?php post_class(); ?>>
-                <h4 class="text-left-title modal-post"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> <p class="text-right postdate"><?php the_time( 'M j y' ); ?></p></h4>
-
-            </div><!--.post-header-->
-
-                <div class="entry clear">
-
-                    <?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
-
-                    <?php the_content(); ?>
-
-                </div><!--. entry-->
-                    <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
-
-                    <!-- navigation?-->
-                    <?php wp_link_pages(); ?>
-
-                <footer class="postfooter">
-                <address itemscope itemtype="http://schema.org/Person">
-                    <p>This post is written by: <?php the_author(); ?></p>
-
-                </footer>
-                <!--.post-footer-->
-
-            </div><!-- .post-->
-                </div>
-                    <!-- column 1 end! -->
+        	<?php endwhile; else: ?>
+        		<p><?php _e('Sorry, this page does not exist.'); ?></p>
+        	<?php endif; ?>
 
 
-	<?php endwhile; else: ?>
-		<p><?php _e('Sorry, this page does not exist.'); ?></p>
-	<?php endif; ?>
+        <div class="scroll-top">
+        	<span class="scroll-top-inner">
+        		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
+        	</span>
+        </div>
+    </div>
 
-
-<div class="scroll-top">
-	<span class="scroll-top-inner">
-		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
-	</span>
+    <div class="col-md-4">
+        <h4 class="text-left-title modal-post">Sidebar</h4>
+    <?php get_sidebar(); ?>
+    </div>
 </div>
-</div><!-- container fluid END! -->
+    </div><!-- container fluid END! -->
 
 <?php get_footer(); ?>
