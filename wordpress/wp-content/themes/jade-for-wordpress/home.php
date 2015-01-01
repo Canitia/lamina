@@ -20,7 +20,6 @@
                                                                 <?php the_excerpt(); ?>
 
                                                             </div><!--. entry-->
-                                                                <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
 
                                                         <!-- navigation?-->
                                                         <div class="navigation">
@@ -30,15 +29,17 @@
 
                                                         <!--.post-footer-->
                                                         <footer class="postfooter">
+                                                                <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
+
                                                                 <?php edit_post_link(); ?>
                                                         </footer>
                                                             <!--.post-footer-->
 
-                                                        <hr>
+
                                             </div><!-- .post-->
                                     </div>
                                     <!-- column end! -->
-
+                                    <hr>
                             <!-- error handling -->
                             <?php endwhile; else: ?>
                         		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
