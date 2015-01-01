@@ -123,6 +123,7 @@ list-style-type:none;
             margin-top:25px;
            margin-left: 0px;
            margin-right:0px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
          }
 
           /*
@@ -162,6 +163,7 @@ list-style-type:none;
             margin-top:25px;
            margin-left: 25px;
            margin-right:25px;
+               box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
          }
 
           /*
@@ -195,8 +197,8 @@ list-style-type:none;
      overflow: hidden;
  }
 
-/* dont expand images too far in excerpt */
-article img {
+/* dont expand images beyond post width */
+.row img {
     width: 100%;
 }
 
