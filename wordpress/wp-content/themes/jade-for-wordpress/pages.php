@@ -26,9 +26,6 @@
 
                 <footer class="postfooter">
                 <?php edit_post_link(); ?>
-                <address itemscope itemtype="http://schema.org/Person">
-                    <?php the_author(); ?>
-
                 </footer>
                 <!--.post-footer-->
 

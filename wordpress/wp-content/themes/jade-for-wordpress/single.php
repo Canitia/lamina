@@ -9,7 +9,7 @@
             <div class="row">
                 <div>
             <div <?php post_class(); ?>>
-                <h4 class="text-left-title modal-post"><?php the_title(); ?><p class="text-right postdate"><?php the_time( 'M j y' ); ?></p></h4>
+                        <h4 class="text-left-title modal-post"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a><p class="text-center postdate"> <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p></h4>
 
             </div><!--.post-header-->
 
@@ -28,11 +28,6 @@
                 <?php edit_post_link(); ?>
                 </footer>
 
-
-                <footer class="postfooter">
-                <address itemscope itemtype="http://schema.org/Person">
-                    <?php the_author(); ?>
-                </footer>
                 <!--.post-footer-->
 
             </div><!-- .post-->

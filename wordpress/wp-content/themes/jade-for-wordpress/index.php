@@ -36,16 +36,14 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
                         </div><!--. entry-->
                             <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
 
-                            <!-- navigation?-->
-                            <?php wp_link_pages(); ?>
+                    <!-- navigation?-->
+                    <?php wp_link_pages(); ?>
 
-                        <footer class="postfooter">
-                        <address itemscope itemtype="http://schema.org/Person">
-                        <?php the_author(); ?>
-
-                        </footer>
+                <footer class="postfooter">
+                <?php edit_post_link(); ?>
+                </footer>
                         <!--.post-footer-->
-
+        <hr>
                     </div><!-- .post-->
                         </div>
                             <!-- column 1 end! -->
