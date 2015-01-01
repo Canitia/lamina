@@ -24,9 +24,12 @@ Wordpress required and/or recommended
     background: #1e90ff;
     padding-bottom: 10px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wp-caption-text {
+    text-align:center;
     color: white;
     margin-top: 10px;
 }
