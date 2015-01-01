@@ -233,7 +233,7 @@ p {
  /*
  ###############
  Post related
- ##############
+ ###############
  */
 
 
@@ -320,7 +320,7 @@ p#form-allowed-tags {
     background-color: #1e90ff;
     padding: 10px;
     text-align: center;
-    float:right;
+
 }
 
 .readmore:hover {
@@ -341,9 +341,7 @@ p#form-allowed-tags {
 .post-edit-link {
     color: white;
     background: #1e90ff;
-        padding: 10px;
-        margin-top:10px;
-        text-align: center;
+    padding: 10px;
 }
 
 .post-edit-link:hover {
