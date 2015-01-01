@@ -53,9 +53,7 @@ p {
 }
 
 #sidebar li {
-display : inline;
-text-decoration-style: none;
-
+list-style-type:none;
 }
 .scroll-top{
     color: #fff;
