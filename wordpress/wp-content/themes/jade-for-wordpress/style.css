@@ -243,16 +243,8 @@ div.comment-meta.commentmetadata > a {
     list-style-type: none;
 }
 
-.commentlist {
-    list-style-type: none;
-}
-
 .children{
     list-style-type: none;
-}
-/* seperate articles a bit more */
-article {
-    margin-bottom: 35px;
 }
 
 /* read more link */
