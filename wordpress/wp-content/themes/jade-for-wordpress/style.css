@@ -96,7 +96,7 @@ p {
 }
 
 .container-inside {
-    margin-top: 185px;
+    margin-top: 145px;
 }
 
 /* ##########################
@@ -110,7 +110,7 @@ p {
 
 .text-left-title {
     padding-left: 40px;
-    padding-top: 60px;
+    padding-top: 40px;
     font-size: 30px;
 
 }
@@ -373,7 +373,7 @@ p#form-allowed-tags {
 
          .text-left-title {
              padding-left: 40px;
-             padding-top: 60px;
+             padding-top: 40px;
              font-size: 18px;
          }
 
