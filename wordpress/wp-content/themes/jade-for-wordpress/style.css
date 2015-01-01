@@ -10,10 +10,10 @@ Tags: responsive, white, bootstrap, material design
 License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
 */
-
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 /* ###############
-Wordpress required and/or recommended
+    Wordpress required and/or recommended
 ###############*/
 
 .aligncenter{} /* replaced by bootstraps text-left */
@@ -59,17 +59,26 @@ Wordpress required and/or recommended
 }
 
 /* ##########################
-My own CSS
+    General CSS
 #########################*/
 
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 /* general stuff */
 html body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 16px;
       text-rendering: optimizeLegibility;
 }
+
+
+a {
+    color: #1e90ff;
+}
+
+a:hover {
+    color: #1e90ff;
+}
+
 
 p {
     margin-left: 40px;
@@ -77,6 +86,9 @@ p {
     text-align:justify;
 }
 
+/* ##########################
+    Container
+#########################*/
 .container-fluid{
     margin:0;
     height: 100%;
@@ -87,6 +99,11 @@ p {
     margin-top: 185px;
 }
 
+/* ##########################
+    Header - general
+#########################*/
+
+/* seperate css class for the header url so it shows */
 #headerurl{
     color: white;
 }
@@ -105,14 +122,10 @@ p {
 .text-left-title a:hover {
         color: #fff;
 }
-.col-md-4 {
-    margin-top: 25px;
-}
 
-#sidebar li {
-list-style-type:none;
-}
-
+/* ##########################
+    Footer - general
+#########################*/
 .scroll-top{
     color: #fff;
     text-decoration: none;
@@ -122,6 +135,159 @@ list-style-type:none;
 }
 
 
+
+ /*
+ ###############
+ Post - general
+ ###############
+ */
+
+ /* post headers */
+ .modal-post {
+    background: #1e90ff;
+     color: white;
+     height: 100%;
+      margin-top:0px;
+     overflow: hidden;
+ }
+
+/* size of date and tags in header */
+.postdate {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* read more link */
+.readmore {
+    color: #fff;
+    background-color: #1e90ff;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.readmore:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #00bfff;
+}
+
+/* author info stuff at bottom of post */
+.postfooter{
+    background: #1e90ff;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.post-edit-link {
+    color: white;
+    background: #1e90ff;
+    padding: 10px;
+}
+
+.post-edit-link:hover {
+    text-decoration:none;
+    color:white;
+    background-color: #00bfff;
+}
+
+
+/* pagination */
+#pagination {
+    text-align: center;
+    bottom: 0;
+}
+
+/* links to older posts */
+.older-posts {
+      background: #1e90ff;
+      color: #fff;
+      padding: 10px;
+}
+
+.older-posts:hover {
+        color: #fff;
+        background-color: #00bfff;
+}
+/* links to newer posts */
+.newer-posts {
+      background: #1e90ff;
+      color: #fff;
+      padding: 10px;
+}
+
+.newer-posts:hover {
+        color: #fff;
+        background-color: #00bfff;
+}
+
+/* row below posts on index */
+hr {
+    margin-top: 25px;
+    margin-bottom: 65px;
+    border-width: 3px;
+    color: #708090;
+}
+
+ /*
+ ###############
+ Post - comments area
+ ###############
+ */
+
+/* align comments section to center of page */
+.comments-area {
+    color: #1e90ff;
+    text-align: center;
+}
+
+
+/* center actual reply */
+.comment-body p {
+    text-align:center;
+        background-color: #1e90ff;
+        color:white;
+}
+
+/* remove the allowed tags part */
+p#form-allowed-tags {
+    display:none;
+}
+
+..form-submit{
+    text-align: center;
+}
+
+.submit {
+        background-color: #1e90ff;
+        color:white;
+        position: relative;
+        left: 50%;
+}
+
+.logged-in-as {
+    text-align: center;
+}
+
+.comment-form-comment{
+    text-align: center;
+}
+/* Remove comments ul/li stuff */
+.comment-list {
+    list-style-type: none;
+}
+
+.children {
+    list-style-type: none;
+}
+
+
+/* ##########################
+    Specific resolution CSS - max width 576
+#########################
+*/
 @media only screen and (max-width: 576px) {
          .blogtitle {
          font-size: 32px;
@@ -133,7 +299,10 @@ list-style-type:none;
          }
 }
 
-
+/* ##########################
+    Specific resolution CSS - max width 720
+#########################
+*/
 @media only screen and (max-width: 720px) {
 
 /*
@@ -178,11 +347,8 @@ list-style-type:none;
          }
 
           /*
-          ############
-          Info modal
-          ############
+          Info modal (question mark)
           */
-            /* question mark - about this theme */
             #about {
                 position: absolute;
                 right: 10px;
@@ -192,8 +358,10 @@ list-style-type:none;
 
 }
 
+/* ##########################
+    Specific resolution CSS - everything bigger than 720
+######################### */
 @media only screen and (min-width: 721px) {
-
 
          /*basic header */
          #header {
@@ -219,162 +387,12 @@ list-style-type:none;
          }
 
           /*
-          ############
-          Info modal
-          ############
+          Info modal (question mark)
           */
-            /* question mark - about this theme */
             #about {
                 position: fixed;
                 right: 10px;
                 top: 25px;
                 background: black;
             }
-}
-
-
-
- /*
- ###############
- Post related
- ##############
- */
-
-
- /* post headers */
- .modal-post {
-    background: #1e90ff;
-     color: white;
-     height: 100%;
-      margin-top:0px;
-     overflow: hidden;
- }
-
-/* size of date and tags in header */
-.postdate {
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-/* row below posts on index */
-hr {
-    margin-top: 25px;
-    margin-bottom: 65px;
-    border-width: 3px;
-    color: #708090;
-}
-
-/* align comments section to center of page */
-.comments-area {
-    color: #1e90ff;
-    text-align: center;
-}
-
-a {
-    color: #1e90ff;
-}
-
-a:hover {
-    color: #1e90ff;
-}
-
-
-/* center actual reply */
-.comment-body p {
-    text-align:center;
-        background-color: #1e90ff;
-        color:white;
-}
-
-..form-submit{
-    text-align: center;
-}
-
-.submit {
-        background-color: #1e90ff;
-        color:white;
-        position: relative;
-        left: 50%;
-}
-
-.logged-in-as {
-    text-align: center;
-}
-
-.comment-form-comment{
-    text-align: center;
-}
-/* Remove comments ul/li stuff */
-.comment-list {
-    list-style-type: none;
-}
-
-.children {
-    list-style-type: none;
-}
-
-/* read more link */
-.readmore {
-    color: #fff;
-    background-color: #1e90ff;
-    padding: 10px;
-    text-align: center;
-    float:right;
-}
-
-.readmore:hover {
-    text-decoration: none;
-    color: #fff;
-    background-color: #00bfff;
-}
-
-/* author info stuff at bottom of post */
-.postfooter{
-    background: #1e90ff;
-    margin-top: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.post-edit-link {
-    color: white;
-    background: #1e90ff;
-        padding: 10px;
-        margin-top:10px;
-        text-align: center;
-}
-
-.post-edit-link:hover {
-    text-decoration:none;
-    color:white;
-    background-color: #00bfff;
-}
-
-/* pagination */
-#pagination {
-    text-align: center;
-    bottom: 0;
-}
-
-.older-posts {
-      background: #1e90ff;
-      color: #fff;
-      padding: 10px;
-}
-
-.older-posts:hover {
-        color: #fff;
-        background-color: #00bfff;
-}
-
-.newer-posts {
-      background: #1e90ff;
-      color: #fff;
-      padding: 10px;
-}
-
-.newer-posts:hover {
-        color: #fff;
-        background-color: #00bfff;
 }
