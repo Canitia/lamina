@@ -52,6 +52,11 @@ p {
     margin-top: 25px;
 }
 
+#sidebar li {
+display : inline;
+text-decoration-style: none;
+
+}
 .scroll-top{
     color: #fff;
     text-decoration: none;
