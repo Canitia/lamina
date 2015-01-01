@@ -124,6 +124,45 @@ p {
 }
 
 /* ##########################
+    Header - 'advanced'
+#########################*/
+ header {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background-color: #1e90ff;
+        -webkit-transition: height 1.0s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+}
+
+/* title in regular mode */
+header  .blogtitle {
+         font-size: 55px;
+         margin-left: 10%;
+         margin-top: 50px;
+         }
+
+/* new height when in smaller version */
+header.smaller {
+    height: 75px;
+}
+
+/* new blog title size when in small version */
+header.smaller  .blogtitle {
+        color: white;
+         font-size: 26px;
+         margin-left: 5%;
+         margin-top: 40px;
+}
+
+/* ##########################
     Footer - general
 #########################*/
 .scroll-top{
@@ -362,21 +401,6 @@ p#form-allowed-tags {
     Specific resolution CSS - everything bigger than 720
 ######################### */
 @media only screen and (min-width: 721px) {
-
-         /*basic header */
-         #header {
-             position: fixed;
-             background-color: #1e90ff;
-             color: #ffffff;
-             width: 100%;
-             z-index:100;
-        }
-
-         .blogtitle {
-         font-size: 55px;
-         padding-top: 90px;
-         margin-left: 10%;
-         }
 
          /* margins of text */
          .row {
