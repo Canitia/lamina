@@ -273,6 +273,24 @@ a:hover {
         color:white;
 }
 
+..form-submit{
+    text-align: center;
+}
+
+.submit {
+        background-color: #1e90ff;
+        color:white;
+        position: relative;
+        left: 50%;
+}
+
+.logged-in-as {
+    text-align: center;
+}
+
+.comment-form-comment{
+    text-align: center;
+}
 /* Remove comments ul/li stuff */
 .comment-list {
     list-style-type: none;
