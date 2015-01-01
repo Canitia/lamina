@@ -252,14 +252,9 @@ hr {
 }
 
 /* align comments section to center of page */
-#respond {
+.comments-area {
+    color: #1e90ff;
     text-align: center;
-}
-
-.comment-body {
-text-align: center;
-margin-top: 40px;
-
 }
 
 a {
@@ -274,19 +269,17 @@ a:hover {
 /* center actual reply */
 .comment-body p {
     text-align:center;
+        background-color: #1e90ff;
+        color:white;
 }
 
 /* Remove comments ul/li stuff */
-.commentlist {
+.comment-list {
     list-style-type: none;
 }
 
-.children{
+.children {
     list-style-type: none;
-}
-
-#comments {
-    text-align: center;
 }
 
 /* read more link */
