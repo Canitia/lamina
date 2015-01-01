@@ -1,4 +1,11 @@
 
+        <div class="scroll-top">
+        	<span class="scroll-top-inner">
+        		<a href="#top"><i class="fa fa-2x fa-arrow-circle-up"></i>Back to top</a>
+        	</span>
+        </div>
+    </div>
+
     <!-- Modal about site -->
     <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
         <div class="modal-dialog">
