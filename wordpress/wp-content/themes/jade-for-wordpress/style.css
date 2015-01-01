@@ -171,6 +171,7 @@ list-style-type:none;
                 position: absolute;
                 right: 10px;
                 top: 25px;
+                background: black;
             }
 
 }
@@ -211,6 +212,7 @@ list-style-type:none;
                 position: fixed;
                 right: 10px;
                 top: 25px;
+                background: black;
             }
 }
 
