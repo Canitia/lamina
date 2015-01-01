@@ -33,7 +33,7 @@ p {
 }
 
 .container-inside {
-    margin-top: 180px;
+    margin-top: 185px;
 }
 
 #headerurl{
@@ -44,12 +44,16 @@ p {
     padding-left: 40px;
     padding-top: 60px;
     font-size: 30px;
+
 }
 
 .text-left-title a {
-        color: #1e90ff;
+        color: #fff;
 }
 
+.text-left-title a:hover {
+        color: #fff;
+}
 .col-md-4 {
     margin-top: 25px;
 }
@@ -184,8 +188,8 @@ list-style-type:none;
 
  /* post headers */
  .modal-post {
-
-     color: #1e90ff;
+    background: #1e90ff;
+     color: white;
      height: 100%;
       margin-top:0px;
      overflow: hidden;
@@ -226,8 +230,7 @@ a {
 }
 
 a:hover {
-        color: #fff;
-        background-color: #00bfff;
+    color: #1e90ff;
 }
 
 div.comment-meta.commentmetadata > a {
@@ -268,7 +271,7 @@ article {
 
 /* author info stuff at bottom of post */
 .postfooter{
-    color: #1e90ff;
+    background: #1e90ff;
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -285,6 +288,8 @@ article {
 
 .post-edit-link:hover {
     text-decoration:none;
+    color:white;
+    background-color: #00bfff;
 }
 
 /* pagination */
