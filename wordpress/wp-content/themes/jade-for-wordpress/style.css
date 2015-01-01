@@ -224,7 +224,7 @@ hr {
 .comment-body {
 text-align: center;
 margin-top: 40px;
-color: #1e90ff;
+
 }
 
 a {
@@ -235,10 +235,13 @@ a:hover {
     color: #1e90ff;
 }
 
-div.comment-meta.commentmetadata > a {
-    color:grey;
+
+/* center actual reply */
+.comment-body p {
+    text-align:center;
 }
 
+/* Remove comments ul/li stuff */
 .commentlist {
     list-style-type: none;
 }
