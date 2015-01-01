@@ -10,10 +10,10 @@ Tags: responsive, white, bootstrap, material design
 License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
 */
-
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 /* ###############
-Wordpress required and/or recommended
+    Wordpress required and/or recommended
 ###############*/
 
 .aligncenter{} /* replaced by bootstraps text-left */
@@ -59,10 +59,9 @@ Wordpress required and/or recommended
 }
 
 /* ##########################
-My own CSS
+    General CSS
 #########################*/
 
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 /* general stuff */
 html body {
@@ -71,12 +70,25 @@ html body {
       text-rendering: optimizeLegibility;
 }
 
+
+a {
+    color: #1e90ff;
+}
+
+a:hover {
+    color: #1e90ff;
+}
+
+
 p {
     margin-left: 40px;
     margin-right:40px;
     text-align:justify;
 }
 
+/* ##########################
+    Container
+#########################*/
 .container-fluid{
     margin:0;
     height: 100%;
@@ -87,6 +99,9 @@ p {
     margin-top: 185px;
 }
 
+/* ##########################
+    Header
+#########################*/
 #headerurl{
     color: white;
 }
@@ -232,7 +247,7 @@ p {
 
  /*
  ###############
- Post related
+ Post - general
  ###############
  */
 
@@ -260,18 +275,16 @@ hr {
     color: #708090;
 }
 
+ /*
+ ###############
+ Post - comments area
+ ###############
+ */
+
 /* align comments section to center of page */
 .comments-area {
     color: #1e90ff;
     text-align: center;
-}
-
-a {
-    color: #1e90ff;
-}
-
-a:hover {
-    color: #1e90ff;
 }
 
 
