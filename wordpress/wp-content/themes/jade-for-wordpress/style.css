@@ -250,6 +250,10 @@ a:hover {
     list-style-type: none;
 }
 
+#comments {
+    text-align: center;
+}
+
 /* read more link */
 .readmore {
     color: #fff;
