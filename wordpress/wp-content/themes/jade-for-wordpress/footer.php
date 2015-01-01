@@ -23,7 +23,24 @@
     <!-- call jQuery and bootstrap JS in footer -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-2.1.3.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
-
+    <script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
+    <script>
+    function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 100,
+            header = document.querySelector("header");
+        if (distanceY > shrinkOn) {
+            classie.add(header,"smaller");
+        } else {
+            if (classie.has(header,"smaller")) {
+                classie.remove(header,"smaller");
+            }
+        }
+    });
+}
+window.onload = init();
+    </script>
     <!-- close with Wordpress footer aka adminbar etc. -->
     <?php wp_footer(); ?>
   </body>
