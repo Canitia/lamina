@@ -58,11 +58,9 @@
 
 
 
-    <div class="col-md-4">
-        <h4 class="text-left-title modal-post">Sidebar</h4>
+
     <?php get_sidebar(); ?>
-    </div>
-</div>
+
 </div><!-- container fluid END! -->
 
 <?php get_footer(); ?>

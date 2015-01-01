@@ -41,10 +41,8 @@
 		<p><?php _e('Sorry, this page does not exist.'); ?></p>
 	<?php endif; ?>
 </div>
-    <div class="col-md-4" id="sidebar">
-        <h4 class="text-left-title modal-post">Sidebar</h4>
+
     <?php get_sidebar(); ?>
-    </div>
 
 </div>
     </div>
