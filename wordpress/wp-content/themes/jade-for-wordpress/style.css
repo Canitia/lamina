@@ -66,7 +66,7 @@ My own CSS
 
 /* general stuff */
 html body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Raleway', 'Roboto', sans-serif;
       font-size: 16px;
       text-rendering: optimizeLegibility;
 }
