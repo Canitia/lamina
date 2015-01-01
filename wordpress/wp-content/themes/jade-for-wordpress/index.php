@@ -55,7 +55,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
         		<p><?php _e('Sorry, this page does not exist.'); ?></p>
         	<?php endif; ?>
 
-</div>
+        </div>
     <?php get_sidebar(); ?>
 </div>
     </div><!-- container fluid END! -->
