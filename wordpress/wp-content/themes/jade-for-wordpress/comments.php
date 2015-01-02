@@ -4,7 +4,6 @@ if ( post_password_required() )
 ?>
 
 <?php if ( have_comments() ) : ?>
-        <?php comment_id_fields(); ?>
 <h4 id="comments"><?php comments_number('No Comments', 'One Comment', '% Comments' );?></h4>
 <ul class="commentlist">
 	<?php wp_list_comments(); ?></ul>
