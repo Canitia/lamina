@@ -7,7 +7,10 @@ This is the Wordpress version of the [jade](https://github.com/hxkclan/jade) the
 - Header becomes small when you start scrolling the page;
 - Bootstrap-based;
 - Material Design inspired;
-- Can do all the regular Wordpress stuff like set own header title, description, show user (that posted) and edit links on post pages, reply to posts etc.
+- Set title / description (in header);
+- Other stuff Wordpress can do (commenting etc.)
+
+#Badges of honor
 - Successfully validated CSS3 using [Jigsaw W3 CSS validator](http://jigsaw.w3.org/css-validator/validator)
 - Successfully validated HTML(5) using both [html5.Validator.nu](http://html5.validator.nu) and the [W3 HTML Validator](http://validator.w3.org/)
 
