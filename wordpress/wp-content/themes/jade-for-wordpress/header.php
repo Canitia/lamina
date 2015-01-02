@@ -19,10 +19,9 @@
     <!-- my own css file (style.css) -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 
-    <!-- rss, pingback, archive -->
+    <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo get_feed_link( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    <?php wp_get_archives('type=monthly&format=link'); ?>
 
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <!-- close with wp_head -->
