@@ -144,7 +144,6 @@ p {
 /* title in regular mode */
 header  .blogtitle {
          font-size: 55px;
-         margin-left: 5%;
          margin-top: 50px;
          }
 
@@ -162,7 +161,6 @@ header.smaller {
 header.smaller  .blogtitle {
         color: white;
          font-size: 26px;
-         margin-left: 5%;
          margin-top: 40px;
 }
 
