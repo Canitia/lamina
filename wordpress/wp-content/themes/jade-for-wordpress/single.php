@@ -9,14 +9,16 @@
             <article>
                 <div>
             <div <?php post_class(); ?>>
-                        <h4 class="text-left-title modal-post">
-                            <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                            <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
-                            <?php if ( has_post_thumbnail() ) {
-                            	the_post_thumbnail();
-                            }?>
-                            <p class="text-right postdate"><?php the_tags(); ?></p>
-                            </h4>
+                <div class="modal-post">
+                    <h4 class="text-left-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
+                        <?php
+                        if ( has_post_thumbnail() ) {
+                        	the_post_thumbnail();
+                        }?>
+
+                    <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
+                    <p class="text-right postdate"><?php the_tags(); ?></p>
+                </div>
 
             </div><!--.post-header-->
 
