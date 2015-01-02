@@ -199,14 +199,11 @@ header.smaller .text-right {
 
 /* size of date and tags in header */
 .postdate {
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 16px;
 }
 
 .modal-post > .postdate > a {
     color:white;
-    font-size: 18px;
-    margin-top: 20px;
 }
 
 /* read more link */
