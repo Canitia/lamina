@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
-    <title>
-        <?php wp_title(); ?>
-    </title>
+<title><?php wp_title(''); ?></title>
 
     <!-- some meta -->
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -22,7 +20,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 
     <!-- rss, pingback, archive -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php get_feed_link( 'rss2' )?>" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo get_feed_link( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_get_archives('type=monthly&format=link'); ?>
 
