@@ -27,12 +27,6 @@
 
                                                             </div><!--. entry-->
 
-                                                        <!-- navigation?-->
-                                                        <div class="navigation">
-                                                            <?php posts_nav_link(); ?>
-                                                        </div>
-                                                        <!-- navigation?-->
-
                                                         <!--.post-footer-->
                                                         <footer>
                                                                 <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
@@ -44,11 +38,16 @@
                                 </div><!-- close post class div -->
                                 <!-- column end! -->
                                     <hr>
+
                             <!-- error handling -->
                             <?php endwhile; else: ?>
                         		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
                             <?php endif; ?>
-
+                                <!-- navigation?-->
+                                <div class="pagination">
+                                    <?php posts_nav_link(); ?>
+                                </div>
+                                <!-- navigation?-->
     </div><!-- end container inside -->
 </div><!-- container fluid END! -->
 
