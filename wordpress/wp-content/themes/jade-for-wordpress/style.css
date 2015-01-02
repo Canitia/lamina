@@ -282,6 +282,10 @@ hr {
     text-align: center;
 }
 
+.commentlist {
+    background: #F8F8F8;
+}
+
 
 /* center actual reply */
 .comment-body p {
