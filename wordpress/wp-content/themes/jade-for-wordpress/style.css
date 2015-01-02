@@ -182,8 +182,6 @@ header.smaller .text-right {
     margin-bottom: 20px;
 }
 
-
-
  /*
  ###############
  Post - general
@@ -247,11 +245,16 @@ footer{
     background-color: #00bfff;
 }
 
-
 /* pagination */
-#pagination {
+.pagination {
+    display:block;
     text-align: center;
-    bottom: 0;
+    padding: 10px;
+    background: #1e90ff;
+}
+
+.pagination > a {
+    color:white;
 }
 
 /* links to older posts */
