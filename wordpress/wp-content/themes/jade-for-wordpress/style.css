@@ -148,6 +148,11 @@ header  .blogtitle {
          margin-top: 50px;
          }
 
+header .text-right {
+    color: white;
+    margin-top: -20px;
+}
+
 /* new height when in smaller version */
 header.smaller {
     height: 75px;
@@ -159,6 +164,11 @@ header.smaller  .blogtitle {
          font-size: 26px;
          margin-left: 5%;
          margin-top: 40px;
+}
+
+header.smaller .text-right {
+    color: white;
+    margin-top: -40px;
 }
 
 /* ##########################
