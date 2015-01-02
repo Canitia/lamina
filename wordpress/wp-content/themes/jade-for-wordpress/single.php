@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-   <div class="container-fluid">
-       <div class="container-inside">
-    <div>
+    <div class="container-fluid">
+    <div class="container-inside">
     <?php if ( have_posts() ) : ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
@@ -18,8 +17,6 @@
                     <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
                     <p class="text-right postdate"><?php the_tags(); ?></p>
                 </div>
-
-
 
                 <div class="entry clear">
 
@@ -48,16 +45,7 @@
           <!-- let user enter a comment -->
 		<?php comments_template(); ?>
 
-        </div>
-</div>
-    </div>
-
-
-
-
-
-
-
+</div><!-- container inside END! -->
 </div><!-- container fluid END! -->
 
 <?php get_footer(); ?>
