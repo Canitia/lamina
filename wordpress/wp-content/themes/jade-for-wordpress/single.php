@@ -1,24 +1,22 @@
 <?php get_header(); ?>
 
-   <div class="container-fluid">
-       <div class="container-inside">
-    <div>
+    <div class="container-fluid">
+    <div class="container-inside">
     <?php if ( have_posts() ) : ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
-            <div class="row">
-                <div>
+            <article>
             <div <?php post_class(); ?>>
-                        <h4 class="text-left-title modal-post">
-                            <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                            <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
-                            <?php if ( has_post_thumbnail() ) {
-                            	the_post_thumbnail();
-                            }?>
-                            <p class="text-right postdate"><?php the_tags(); ?></p>
-                            </h4>
+                <div class="modal-post"><!-- post header -->
+                    <h4 class="text-left-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
+                        <?php
+                        if ( has_post_thumbnail() ) {
+                        	the_post_thumbnail();
+                        }?>
 
-            </div><!--.post-header-->
+                    <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
+                    <p class="text-right postdate"><?php the_tags(); ?></p>
+                </div>
 
                 <div class="entry clear">
 
@@ -31,14 +29,12 @@
                     <!-- navigation?-->
                     <?php wp_link_pages(); ?>
 
+                <!--.post-footer-->
                 <footer class="postfooter">
                 <?php edit_post_link(); ?>
                 </footer>
-
-                <!--.post-footer-->
-
-            </div><!-- .post-->
-        </div> <!-- column 1 end! -->
+            </div><!--.post-header-->
+        </article> <!-- column 1 end! -->
 
 
 	<?php endwhile; else: ?>
@@ -49,16 +45,7 @@
           <!-- let user enter a comment -->
 		<?php comments_template(); ?>
 
-        </div>
-</div>
-    </div>
-
-
-
-
-
-
-
+</div><!-- container inside END! -->
 </div><!-- container fluid END! -->
 
 <?php get_footer(); ?>

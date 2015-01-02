@@ -5,19 +5,19 @@
                     <?php if ( have_posts() ) : ?>
 
                         <?php while ( have_posts() ) : the_post(); ?>
-                                    <div class="row">
-                                            <div><!-- .post-->
-                                                        <div <?php post_class(); ?>><!--.post-header-->
-                                                                <h4 class="text-left-title modal-post">
+                                    <div <?php post_class(); ?>>
+                                    <article>
+                                                            <div class="modal-post"><!--.post-header-->
+                                                                <h4 class="text-left-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
                                                                     <?php
                                                                     if ( has_post_thumbnail() ) {
                                                                     	the_post_thumbnail();
                                                                     }?>
-                                                                        <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                                                                        <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
-                                                                        <p class="text-right postdate"><?php the_tags(); ?></p>
-                                                                </h4>
-                                                        </div><!--.post-header-->
+
+                                                                <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
+                                                                <p class="text-right postdate"><?php the_tags(); ?></p>
+                                                            </div><!--.post-header-->
+
 
                                                             <div class="entry clear"><!--. entry-->
 
@@ -34,17 +34,15 @@
                                                         <!-- navigation?-->
 
                                                         <!--.post-footer-->
-                                                        <footer class="postfooter">
+                                                        <footer>
                                                                 <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
 
                                                                 <?php edit_post_link(); ?>
                                                         </footer>
                                                             <!--.post-footer-->
-
-
-                                            </div><!-- .post-->
-                                    </div>
-                                    <!-- column end! -->
+                                    </article><!-- close article -->
+                                </div><!-- close post class div -->
+                                <!-- column end! -->
                                     <hr>
                             <!-- error handling -->
                             <?php endwhile; else: ?>

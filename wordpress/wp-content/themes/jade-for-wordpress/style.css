@@ -67,7 +67,6 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 html body {
       font-family: 'Raleway', sans-serif;
       font-size: 16px;
-      text-rendering: optimizeLegibility;
 }
 
 
@@ -196,6 +195,12 @@ header.smaller  .blogtitle {
     margin-top: 20px;
 }
 
+.modal-post > .postdate > a {
+    color:white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
 /* read more link */
 .readmore {
     color: #fff;
@@ -212,7 +217,7 @@ header.smaller  .blogtitle {
 }
 
 /* author info stuff at bottom of post */
-.postfooter{
+footer{
     background: #1e90ff;
     margin-top: 5px;
     padding-top: 10px;
@@ -286,6 +291,9 @@ hr {
     background: #F8F8F8;
 }
 
+.comment-body {
+    background: #F8F8F8;
+}
 /* center actual reply */
 .comment-body p {
     text-align:center;
@@ -298,7 +306,7 @@ p#form-allowed-tags {
     display:none;
 }
 
-..form-submit{
+.form-submit{
     text-align: center;
 }
 
@@ -341,7 +349,7 @@ p#form-allowed-tags {
          }
 
           /* margins of text */
-          .row {
+          article {
              margin-top:15px;
             margin-left: 15px;
             margin-right:15px;
@@ -355,7 +363,7 @@ p#form-allowed-tags {
 @media only screen and (max-width: 720px) {
 
          /* margins of text */
-         .row {
+         article {
             margin-top:25px;
            margin-left: 25px;
            margin-right:25px;
@@ -369,7 +377,7 @@ p#form-allowed-tags {
 @media only screen and (min-width: 721px) {
 
          /* margins of text */
-         .row {
+         article {
             margin-top:25px;
            margin-left: 25px;
            margin-right:25px;
