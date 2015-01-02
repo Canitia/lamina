@@ -136,16 +136,16 @@ p {
         z-index: 999;
         background-color: #1e90ff;
         -webkit-transition: height 1.0s;
-        -moz-transition: height 0.3s;
-        -ms-transition: height 0.3s;
-        -o-transition: height 0.3s;
-        transition: height 0.3s;
+        -moz-transition: height 1.0s;
+        -ms-transition: height 1.0s;
+        -o-transition: height 1.0s;
+        transition: height 1.0s;
 }
 
 /* title in regular mode */
 header  .blogtitle {
          font-size: 55px;
-         margin-left: 10%;
+         margin-left: 5%;
          margin-top: 50px;
          }
 
