@@ -6,7 +6,7 @@
     <?php if ( have_posts() ) : ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
-            <div class="row">
+            <article>
                 <div>
             <div <?php post_class(); ?>>
                         <h4 class="text-left-title modal-post">
@@ -38,7 +38,7 @@
                 <!--.post-footer-->
 
             </div><!-- .post-->
-        </div> <!-- column 1 end! -->
+        </article> <!-- column 1 end! -->
 
 
 	<?php endwhile; else: ?>

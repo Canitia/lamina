@@ -341,7 +341,7 @@ p#form-allowed-tags {
          }
 
           /* margins of text */
-          .row {
+          article {
              margin-top:15px;
             margin-left: 15px;
             margin-right:15px;
@@ -355,7 +355,7 @@ p#form-allowed-tags {
 @media only screen and (max-width: 720px) {
 
          /* margins of text */
-         .row {
+         article {
             margin-top:25px;
            margin-left: 25px;
            margin-right:25px;
@@ -369,7 +369,7 @@ p#form-allowed-tags {
 @media only screen and (min-width: 721px) {
 
          /* margins of text */
-         .row {
+         article {
             margin-top:25px;
            margin-left: 25px;
            margin-right:25px;

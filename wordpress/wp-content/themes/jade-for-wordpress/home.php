@@ -5,7 +5,7 @@
                     <?php if ( have_posts() ) : ?>
 
                         <?php while ( have_posts() ) : the_post(); ?>
-                                    <div class="row">
+                                    <article>
                                             <div><!-- .post-->
                                                         <div <?php post_class(); ?>><!--.post-header-->
                                                                 <h4 class="text-left-title modal-post">
@@ -43,7 +43,7 @@
 
 
                                             </div><!-- .post-->
-                                    </div>
+                                </article>
                                     <!-- column end! -->
                                     <hr>
                             <!-- error handling -->
