@@ -7,9 +7,8 @@
 
         <?php while ( have_posts() ) : the_post(); ?>
             <article>
-                <div>
             <div <?php post_class(); ?>>
-                <div class="modal-post">
+                <div class="modal-post"><!-- post header -->
                     <h4 class="text-left-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
                         <?php
                         if ( has_post_thumbnail() ) {
@@ -20,7 +19,7 @@
                     <p class="text-right postdate"><?php the_tags(); ?></p>
                 </div>
 
-            </div><!--.post-header-->
+
 
                 <div class="entry clear">
 
@@ -33,13 +32,11 @@
                     <!-- navigation?-->
                     <?php wp_link_pages(); ?>
 
+                <!--.post-footer-->
                 <footer class="postfooter">
                 <?php edit_post_link(); ?>
                 </footer>
-
-                <!--.post-footer-->
-
-            </div><!-- .post-->
+            </div><!--.post-header-->
         </article> <!-- column 1 end! -->
 
 
