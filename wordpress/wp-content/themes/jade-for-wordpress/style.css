@@ -286,6 +286,9 @@ hr {
     background: #F8F8F8;
 }
 
+.comment-body {
+    background: #F8F8F8;
+}
 /* center actual reply */
 .comment-body p {
     text-align:center;
