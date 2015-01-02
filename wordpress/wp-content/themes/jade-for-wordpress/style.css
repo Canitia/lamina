@@ -1,16 +1,16 @@
 /*
 Theme Name: Jade for Wordpress
-Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Theme URI: https://github.com/hxkclan/jade-for-wordpress
 Description: A theme based on material-design elements. This is the wordpress version of the Ghost original theme.
 Author: Michael Boumann
-Author URI: https://github.com/hxkclan/jade-for-wordpress
+Author URI: https://github.com/hxkclan
 Version: 1.0
 Tags:white
 
 License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
 */
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(./css/font-awesome.min.css);
 
 /* ###############
     Wordpress required and/or recommended
@@ -92,7 +92,7 @@ p {
 .container-fluid{
     margin:0;
     height: 100%;
-    margin-bottom:30px;
+
 }
 
 .container-inside {
@@ -282,6 +282,9 @@ hr {
     text-align: center;
 }
 
+.commentlist {
+    background: #F8F8F8;
+}
 
 /* center actual reply */
 .comment-body p {
