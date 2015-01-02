@@ -67,7 +67,6 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 html body {
       font-family: 'Raleway', sans-serif;
       font-size: 16px;
-      text-rendering: optimizeLegibility;
 }
 
 
@@ -307,7 +306,7 @@ p#form-allowed-tags {
     display:none;
 }
 
-..form-submit{
+.form-submit{
     text-align: center;
 }
 
