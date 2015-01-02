@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head>
     <title>
-        <?php echo wp_title(); ?>
+        <?php wp_title(); ?>
     </title>
 
     <!-- some meta -->
@@ -13,7 +13,7 @@
 
     <!-- Font awesome (icons) and Raleway font as is used in the whole site -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css">
@@ -26,6 +26,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_get_archives('type=monthly&format=link'); ?>
 
+    <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <!-- close with wp_head -->
     <?php wp_head(); ?>
 </head>
