@@ -34,7 +34,7 @@
                                                         <!-- navigation?-->
 
                                                         <!--.post-footer-->
-                                                        <footer class="postfooter">
+                                                        <footer>
                                                                 <a href="<?php echo get_permalink(); ?>" class="readmore">Read More</a>
 
                                                                 <?php edit_post_link(); ?>

@@ -212,7 +212,7 @@ header.smaller  .blogtitle {
 }
 
 /* author info stuff at bottom of post */
-.postfooter{
+footer{
     background: #1e90ff;
     margin-top: 5px;
     padding-top: 10px;
