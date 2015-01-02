@@ -171,6 +171,17 @@ header.smaller .text-right {
     margin-top: -40px;
 }
 
+/* question mark */
+#about {
+    position:absolute;
+    top: 30px;
+    right:10px;
+}
+
+#about > a {
+    color: white;
+}
+
 /* ##########################
     Footer - general
 #########################*/
