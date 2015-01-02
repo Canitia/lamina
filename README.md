@@ -17,7 +17,7 @@ Currently under development. Master branch at least has a working version, and s
 #Preview
 Below you see a preview of the Jade for Wordpress theme.
 
-![Jade for Wordpress Preview - Home](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02160146-1.png)
+![Jade for Wordpress Preview - Home](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02161732.png)
 
 When you start scrolling the header becomes smaller;
 ![Jade for Wordpress Preview - Home - Small header](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02160152.png)
