@@ -14,7 +14,9 @@
                                                                     	the_post_thumbnail();
                                                                     }?>
                                                                         <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                                                                        <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p></h4>
+                                                                        <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
+                                                                        <p class="text-right postdate"><?php the_tags(); ?></p>
+                                                                </h4>
                                                         </div><!--.post-header-->
 
                                                             <div class="entry clear"><!--. entry-->

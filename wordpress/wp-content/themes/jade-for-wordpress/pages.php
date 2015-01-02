@@ -10,13 +10,14 @@
                 <div>
             <div <?php post_class(); ?>>
                         <h4 class="text-left-title modal-post">
+                        <?php
+                        if ( has_post_thumbnail() ) {
+                        	the_post_thumbnail();
+                        }?>
                             <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
                             <p class="text-center postdate"> <p class="text-right postdate">
                                 <?php echo 'Written by '; the_author(); ?></p>
-                                <?php
-                                if ( has_post_thumbnail() ) {
-                                	the_post_thumbnail();
-                                }?>
+                                <p class="text-right postdate"><?php the_tags(); ?></p>
                                 </h4>
 
             </div><!--.post-header-->

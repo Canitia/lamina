@@ -15,6 +15,7 @@
                             <?php if ( has_post_thumbnail() ) {
                             	the_post_thumbnail();
                             }?>
+                            <p class="text-right postdate"><?php the_tags(); ?></p>
                             </h4>
 
             </div><!--.post-header-->
