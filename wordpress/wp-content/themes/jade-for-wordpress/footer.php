@@ -6,7 +6,7 @@
     </div>
 
     <!-- Modal about site (question mark at top) -->
-    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <h4 class="text-left-title modal-post">About Jade</h4>
