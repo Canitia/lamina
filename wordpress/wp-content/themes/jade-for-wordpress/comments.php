@@ -19,5 +19,3 @@ if ( post_password_required() )
 endif;
 
 comment_form(); ?>
-
-</div><!-- #comments -->
