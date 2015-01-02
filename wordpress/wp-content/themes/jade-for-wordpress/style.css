@@ -92,7 +92,7 @@ p {
 .container-fluid{
     margin:0;
     height: 100%;
-    margin-bottom:30px;
+
 }
 
 .container-inside {
@@ -285,7 +285,6 @@ hr {
 .commentlist {
     background: #F8F8F8;
 }
-
 
 /* center actual reply */
 .comment-body p {
