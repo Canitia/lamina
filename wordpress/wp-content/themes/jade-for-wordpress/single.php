@@ -28,7 +28,7 @@
 
                             <!-- navigation?-->
                             <?php wp_link_pages(); ?>
-
+                            
                         <!--.post-footer-->
                         <footer class="postfooter">
                         <?php edit_post_link(); ?>
