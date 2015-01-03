@@ -57,7 +57,7 @@
                             </div><!-- einde md8 -->
 
 
-                        <div class="col-md-4 visible-md">
+                        <div class="col-md-4 visible-md visible-lg">
                             <?php get_sidebar( 'primary' ); ?>
                         </div>
 
