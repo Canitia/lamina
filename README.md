@@ -4,8 +4,9 @@ This is the Wordpress version of the [jade](https://github.com/hxkclan/jade) the
 
 #Current features
 - Has scale properties in CSS (<=576, <=720 and >720 resolutions);
+- Sidebar support (only shows it when on medium or higher resolutions)
 - Header becomes small when you start scrolling the page;
-- Bootstrap-based;
+- Bootstrap-based (responsive);
 - Material Design inspired;
 - Set title / description (in header);
 - Other stuff Wordpress can do (commenting etc.)
@@ -20,10 +21,13 @@ Currently under development. Master branch at least has a working version, and s
 #Preview
 Below you see a preview of the Jade for Wordpress theme.
 
-![Jade for Wordpress Preview - Home](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02161732.png)
+![Jade for Wordpress Preview - Home](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-03023830.png)
 
 When you start scrolling the header becomes smaller;
 ![Jade for Wordpress Preview - Home - Small header](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02160152.png)
+
+It shows the sidebar when the window is big enough
+![Jade for Wordpress Preview - Home - bigger browser window](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-03023837.png)
 
 When opening a post you see the following with default comments enabled;
 ![Jade for Wordpress Preview - Post](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02160457.png)
