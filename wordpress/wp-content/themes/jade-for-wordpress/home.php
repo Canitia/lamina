@@ -3,9 +3,11 @@
    <div class="container-fluid">
        <div class="container-inside">
                     <?php if ( have_posts() ) : ?>
-
+                                    <div class="col-xs-12 col-md-8 visible-xs visible-sm visible-md visible-lg">
                         <?php while ( have_posts() ) : the_post(); ?>
+
                                     <div <?php post_class(); ?>>
+
                                     <article>
                                                             <div class="modal-post"><!--.post-header-->
                                                                 <h4 class="text-left-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
@@ -34,20 +36,39 @@
                                                                 <?php edit_post_link(); ?>
                                                         </footer>
                                                             <!--.post-footer-->
+
                                     </article><!-- close article -->
-                                </div><!-- close post class div -->
+                                                                    <hr>
+                            </div><!-- close post class div -->
                                 <!-- column end! -->
-                                    <hr>
+
+
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
                         		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
                             <?php endif; ?>
-                                <!-- navigation?-->
-                                <div class="pagination">
-                                    <?php posts_nav_link(); ?>
-                                </div>
-                                <!-- navigation?-->
+
+                                                            <!-- navigation?-->
+                                                            <div class="pagination">
+                                                                <?php posts_nav_link(); ?>
+                                                            </div>
+                                                            <!-- navigation?-->
+                            </div><!-- einde md8 -->
+
+
+                        <div class="col-md-4 visible-md">
+                            <?php get_sidebar( 'primary' ); ?>
+                        </div>
+
+
+
+
+
+
+
+
+
     </div><!-- end container inside -->
 </div><!-- container fluid END! -->
 
