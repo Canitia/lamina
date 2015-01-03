@@ -12,7 +12,7 @@
                 <h4 class="text-left-title modal-post">About Jade</h4>
                 <div class="modal-body">
                   <div class="panel">
-                        <p>The theme currently used is called <a href="https://github.com/hxkclan/jade" target="_blank">Jade (for Wordpress)</a>. Jade uses elements from <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> with <a href="http://jquery.com/" target="_blank">JQuery</a> for modals and the (fluid) website layout. Jade also uses <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank">Font-Awesome</a> for the scalable icons.
+                        <p>The theme currently used is called <a href="https://github.com/hxkclan/jade-for-wordpress" target="_blank">Jade (for Wordpress)</a>. Jade uses elements from <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> with <a href="http://jquery.com/" target="_blank">JQuery</a> for modals and the (fluid) website layout. Jade also uses <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank">Font-Awesome</a> for the scalable icons.
                         </p>
                 </div>
               </div>
