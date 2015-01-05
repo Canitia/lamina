@@ -40,6 +40,12 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
     text-align: center;
 }
 
+.gallery{
+        color: white;
+        margin-top: 10px;
+        background: #1e90ff;
+}
+
 .sticky {
 
 }
