@@ -1,409 +1,620 @@
-/*
-Theme Name: Jade for Wordpress
-Theme URI: https://github.com/hxkclan/jade-for-wordpress
-Description: A theme based on material-design elements. This is the wordpress version of the Ghost original theme.
-Author: Michael Boumann
-Author URI: https://github.com/hxkclan
-Version: 1.0
-Tags:white
+/* ##############################
 
-License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
-License URI: http://creativecommons.org/licenses/by-sa/3.0/
-*/
+  SET OVERALL ACCENT color
 
-/* ###############
-    Wordpress required and/or recommended
-###############*/
-
-.aligncenter{} /* replaced by bootstraps text-left */
-.alignleft{} /* replaced by bootstraps text-center */
-.alignright{} /* replaced by bootstraps text-right */
-
-.wp-caption {
-    background: #1e90ff;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  #############################*/
+.accentcolor {
+background-color: #0d47a1 !important;
 }
 
-.wp-caption-text {
-    text-align:center;
-    color: white;
-    margin-top: 10px;
-}
-.gallery-caption {
-    color: white;
-    margin-top: 10px;
-    background: #1e90ff;
-    padding-bottom: 10px;
-    text-align: center;
+.accentcolor2 {
+  background-color: #1565c0 !important;
 }
 
-.gallery{
-        color: white;
-        margin-top: 10px;
-        background: #1e90ff;
+.accentcolor-error {
+  background-color: red !important;
 }
 
-.sticky {
 
+  /* ##############################
+
+    OTHER COLORS
+
+    #############################*/
+  html body {
+  background-color: dimgrey;
 }
 
-.bypostauthor{
-
+p > a, .headerurl:hover, .side-nav li:hover, h1.text-left-title a:hover, .pagination > a > i:hover, .collection .collection-item a, .author-profile h4 a, li.pagination-arrows a i:hover, .socialfooter > a:hover {
+	color: black !important;
 }
 
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-	max-width: 100%;
-	height: auto;
+
+p > a:focus, p > a:hover
+{
+  color:grey  !important;
 }
 
-/* ##########################
-    General CSS
-#########################*/
+.headerurl, .side-nav a, .side-nav a:hover, .text-left-title-featured, .text-left-title-featured a, .text-left-title a:hover, .text-left-title-featured a:hover, .postdate a, .tag_heading, .chip a, .pagination, .pagination li a, footer a  {
+      color: white !important;
+}
+
+.side-nav {
+  background-color: black !important;
+}
+
+.side-nav a:hover {
+  background-color: #0d47a1;
+}
+
+.collection .collection-item:hover {
+	background-color: #e0e0e0 !important;
+}
+
+.collection .collection-item a:hover, .main-content > .text-left-title, .author-profile h4, .text-left-title a, article > h1, article > h2, article > h3, article > h4, .slider .indicators .indicator-item.active, .postdate, .postdate a:hover, .chip a:hover, .author-url-post-head  {
+	color:#979797 !important;
+}
+
+article {
+      background-color: white;
+}
 
 
-/* general stuff */
+section.author-profile {
+	background-color:whitesmoke;
+}
+
+.pagination li:hover {
+		background-color: #0D47A1 !important;
+}
+
+.pagination li.active {
+	background-color: #0D47A1 !important;
+}
+
+li.pagination-arrows:hover {
+	background-color: #1565C0 !important;
+}
+
+footer > nav {
+  background-color: #0d47a1 !important;
+}
+
+/* social media icons sidebar and footer */
+.socialfooter {
+  border-top:1px solid rgba(0,0,0,0.12);
+}
+
+.socialfooter > a {
+    color: #00bfff;
+}
+
+.socialfooter > a:hover {
+    color: black;
+}
+
+body > main > div > article > h4 > p > i {
+	color:white;
+}
+
+.fa-star {
+  color: #ffa500 !important;
+}
+
+
+
+/* **************************************
+
+  GENERAL FONT / ELEMENT
+
+*****************************************/
+
 html body {
-      font-family: 'Raleway', sans-serif;
-      font-size: 16px;
+line-height: 0 !important;
+font-size:16px;
 }
 
-
-a {
-    color: #1e90ff;
+h1 {
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 26.3999996185303px;
 }
 
-a:hover {
-    color: #1e90ff;
+h2 {
+	font-size: 26px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 15.3999996185303px;
 }
 
+h3 {
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 15.3999996185303px;
+}
+
+h4 {
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 15.3999996185303px;
+}
 
 p {
-    margin-left: 40px;
-    margin-right:40px;
-    text-align:justify;
+	line-height: 20px;
+  padding-left:15px;
+	padding-right:15px;
+	text-align: justify;
+	text-rendering: geometricPrecision;
 }
 
-/* ##########################
-    Container
-#########################*/
-.container-fluid{
-    margin:0;
-    height: 100%;
-
+p.text-justify {
+	padding: 20px;
 }
 
-.container-inside {
-    margin-top: 155px;
+p > a {
+	text-decoration: underline;
 }
 
-/* ##########################
-    Header - general
-#########################*/
-
-/* seperate css class for the header url so it shows */
-#headerurl{
-    color: white;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #979797 !important;
+    margin: 1em 0;
+    padding: 0;
 }
 
+blockquote {
+	line-height: 30px;
+  border-left: 5px solid grey !important;
+}
+
+blockquote > p {
+  	font-style: italic !important;
+		text-align:left;
+}
+
+pre {
+	line-height: 18.5714302062988px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color: #f5f7f8;
+}
+
+strong {
+  font-weight: 700 !important;
+}
+
+/* **************************************
+
+  SPECIFIC RESTRICTIONS TO GUI
+
+*****************************************/
+/* fix MS Edge for featured section */
+.container .row {
+  width: auto;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+	max-width:960px !important;
+  padding-bottom: 20px;
+  border-bottom:1px solid rgba(0,0,0,0.12);
+}
+
+
+.home-template, .post-template, .tag-template, .author-template, .error-template {
+	max-width: 1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.post-template {
+	max-width: 1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.card {
+	margin-bottom:40px !important;
+}
+
+.card-error {
+	float:none;
+}
+
+/* read more button on featured posts */
+.card-featured > #read_more_custom {
+  display:none;
+}
+
+/* **************************************
+
+  HEADER
+
+*****************************************/
+/* color of clickable header */
+.headerurl {
+    text-decoration: none;
+		margin-left:55px;
+}
+
+.headerurl:hover {
+  text-decoration: none;
+}
+
+img.cover {
+	width:100%;
+	margin-bottom:15px;
+}
+
+img.logo {
+	height:64px;
+	position:relative;
+}
+
+/* **************************************
+
+  SLIDEOUT SIDEBAR
+
+*****************************************/
+
+i.small.mdi-navigation-menu {
+	padding: 5px;
+}
+
+.side-nav full {
+    overflow:auto;
+}
+
+
+
+
+.side-nav li {
+    height: 55px;
+		padding:0 !important;
+}
+
+
+
+/* **************************************
+
+  SITE/CONTENT SIDEBAR
+
+*****************************************/
+
+.card-sidebar {
+	margin: 0px !important;
+	width:100%;
+}
+
+.collection {
+	margin:0px !important;
+}
+
+
+/* ######################################
+
+POST/ARTICLE HEADERS
+
+##########################################*/
+
+
+/* post title */
 .text-left-title {
-    padding-left: 40px;
-    padding-top: 30px;
-    font-size: 30px;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 26.3999996185303px;
+	padding:20px;
+	margin: 0px;
+	color:white;
+	white-space:normal;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
 
+/* post title */
+.text-left-title-featured {
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 26.3999996185303px;
+	margin: 0px;
+	padding:10px !important;
+
+	white-space: normal;
+	overflow:hidden;
+	text-overflow: ellipsis;
 }
 
 .text-left-title a {
-        color: #fff;
+		text-decoration: none;
 }
 
-.text-left-title a:hover {
-        color: #fff;
+/* **************************************
+
+  ARTICLE/POST LOOK-N-FEEL
+
+*****************************************/
+article > h1 {
+  	font-size: 30px;
+    margin-left: 10px;
 }
 
-/* ##########################
-    Header - 'advanced'
-#########################*/
- header {
-        width: 100%;
-        height: 150px;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        background-color: #1e90ff;
-        -webkit-transition: height 1.0s;
-        -moz-transition: height 1.0s;
-        -ms-transition: height 1.0s;
-        -o-transition: height 1.0s;
-        transition: height 1.0s;
+article > h2 {
+	font-size: 22px;
+  margin-left: 10px;
 }
 
-/* title in regular mode */
-header  .blogtitle {
-         font-size: 55px;
-         margin-top: 50px;
-         }
-
-header .text-right {
-    color: white;
-    margin-top: -20px;
+article > h3 {
+	font-size: 20px;
+  margin-left: 10px;
 }
 
-/* new height when in smaller version */
-header.smaller {
-    height: 75px;
+article > h4 {
+	font-size: 18px;
+  margin-left: 10px;
 }
 
-/* new blog title size when in small version */
-header.smaller  .blogtitle {
-        color: white;
-         font-size: 26px;
-         margin-top: 40px;
+article > ul li {
+  list-style-type: square !important;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding:5px;
+  line-height: 25px;
+  text-align: justify;
 }
 
-header.smaller .text-right {
-    color: white;
-    margin-top: -40px;
+article > ol li {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding:5px;
+  line-height: 25px;
+  text-align: justify;
 }
 
-/* question mark */
-#about {
-    position:absolute;
-    top: 30px;
-    right:10px;
+/* general dimensions of posts/articles */
+article {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+		word-wrap: break-word;
 }
 
-#about > a {
-    color: white;
+article img {
+    width: 100%;
+    height:auto;
+}
+.individual-post {
+	padding:0px !important;
 }
 
-/* ##########################
-    Footer - general
-#########################*/
-.scroll-top{
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    left: 50%;
-    margin-bottom: 20px;
+.slider {
+	margin-bottom: 25px !important;
 }
 
- /*
- ###############
- Post - general
- ###############
- */
+.slider .slides li .caption {
+	bottom:0% !important;
+	top:unset !important;
+	left:unset !important;
+	width: 100% !important;
+}
 
- /* post headers */
- .modal-post {
-    background: #1e90ff;
-     color: white;
-     height: 100%;
-     margin-top:0px;
-     overflow: hidden;
- }
 
-/* size of date and tags in header */
+img.content-images-featured:hover, img.content-images:hover {
+	opacity:0.9;
+}
+
+.btn-flat {
+	line-height: 45px !important;
+	height: 45px !important;
+}
+
+.article-footer-img {
+	width:auto;
+	max-width:50%;
+	max-height:100%;
+
+}
+
+.article-footer-img:hover {
+	opacity: 0.9;
+}
+
 .postdate {
     font-size: 16px;
+    margin:0px;
 }
 
-.modal-post > .postdate > a {
-    color:white;
+/* add some styling to disqus */
+#disqus_thread {
+padding: 40px;
 }
 
-/* read more link */
-.readmore {
-    color: #fff;
-    background-color: #1e90ff;
-    padding: 10px;
-    text-align: center;
 
+/* **************************************
+
+  ARTICLE: TAGS look-n-feel
+
+*****************************************/
+
+.tag_heading {
+    padding: 20px;
+    margin-bottom: 0.25rem;
 }
 
-.readmore:hover {
-    text-decoration: none;
-    color: #fff;
-    background-color: #00bfff;
+.tags {
+  margin-top:25px;
+	margin-bottom:25px;
+	line-height: 60px;
 }
 
-/* author info stuff at bottom of post */
-footer{
-    background: #1e90ff;
-    margin-top: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
+.chip {
+  margin-left:10px;
+	height:45px !important;
+	line-height: 45px !important;
+	border-radius: 0px !important;
 }
 
-.post-edit-link {
-    color: white;
-    background: #1e90ff;
-    padding: 10px;
+/* **************************************
+
+	ARTICLE: AUTHOR look-n-feel
+
+*****************************************/
+
+
+section.author-profile {
+	padding:30px;
 }
 
-.post-edit-link:hover {
-    text-decoration:none;
-    color:white;
-    background-color: #00bfff;
+.author-profile h4 a {
+	text-decoration: underline;
 }
 
-/* pagination */
+.comment-author {
+  line-height: 50px;
+}
+
+.comments-wrapper {
+  background-color:white;
+  color:black;
+  padding:15px;
+}
+
+.avatar-page {
+	width:150px;
+	float:none;
+	border-radius: 20px;
+	margin-right:20px;
+	margin-top:15px;
+}
+
+p.author-bio {
+	padding:20px;
+}
+
+/* **************************************
+
+  PAGINATION
+
+*****************************************/
+
 .pagination {
-    display:block;
-    text-align: center;
-    padding: 10px;
-    background: #1e90ff;
+		padding:15px;
 }
 
-.pagination > a {
-    color:white;
+/* **************************************
+
+  FOOTER
+
+*****************************************/
+footer {
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+    padding: 20px;
 }
 
-/* links to older posts */
-.older-posts {
-      background: #1e90ff;
-      color: #fff;
-      padding: 10px;
+/* **************************************
+
+	SOME MINOR WIDTH BASED TWEAKS
+
+*****************************************/
+
+/* For the people that have phones reporting very low resolutions */
+@media (max-width:640px) and (min-width:200px) {
+	/* make logo image smaller as the navigation bar shrinks at these resolutions */
+	img.logo {
+		height:55px;
+	}
+
+	.text-left-title {
+		font-size:22px;
+	}
+
+/* Smaller margins to the page gets fit to nearly the full screen */
+	.container-fluid {
+		margin-top:25px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
 }
 
-.older-posts:hover {
-        color: #fff;
-        background-color: #00bfff;
-}
-/* links to newer posts */
-.newer-posts {
-      background: #1e90ff;
-      color: #fff;
-      padding: 10px;
-}
+/* mobile devices */
+@media (max-width:992px) and (min-width:601px) {
+    h1 {
+    	font-size: 18px;
+    }
 
-.newer-posts:hover {
-        color: #fff;
-        background-color: #00bfff;
-}
+    /* post title */
+    .text-left-title {
+				font-size:30px;
+        padding:20px;
+    }
 
-/* row below posts on index */
-hr {
-    margin-top: 25px;
-    margin-bottom: 65px;
-    border-width: 3px;
-    color: #708090;
-}
+    .content-images, .content-images-individual {
+        width: 100%;
+    }
 
- /*
- ###############
- Post - comments area
- ###############
- */
+			.container-fluid {
+				margin-top:25px;
+				margin-left: 65px;
+				margin-right: 65px;
+			}
 
-/* align comments section to center of page */
-.comments-area {
-    color: #1e90ff;
-    text-align: center;
+  }
+
+	/* tablet devices */
+	@media only screen and (min-width: 993px) {
+	.container-fluid {
+		margin-top:25px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
 }
 
-.commentlist {
-    background: #F8F8F8;
+	/* **************************************
+
+	  FONT AWESOME look-n-feel
+
+	*****************************************/
+.fa-user-secret, .fa-star, .fa-calendar {
+  margin-left:20px;
+  margin-right:20px;
 }
 
-.comment-body {
-    background: #F8F8F8;
-}
-/* center actual reply */
-.comment-body p {
-    text-align:center;
-        background-color: #1e90ff;
-        color:white;
-}
-
-/* remove the allowed tags part */
-p#form-allowed-tags {
-    display:none;
+.postdate > a i {
+	color: white;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	padding: 15px;
 }
 
-.form-submit{
-    text-align: center;
-}
-
-.submit {
-        background-color: #1e90ff;
-        color:white;
-        position: relative;
-        left: 50%;
-}
-
-.logged-in-as {
-    text-align: center;
-}
-
-.comment-form-comment{
-    text-align: center;
-}
-/* Remove comments ul/li stuff */
-.comment-list {
-    list-style-type: none;
-}
-
-.children {
-    list-style-type: none;
-}
-
-
-/* ##########################
-    Specific resolution CSS - max width 576
-#########################
-*/
-@media only screen and (max-width: 576px) {
-         .blogtitle {
-         font-size: 32px;
-         padding-top: 90px;
-         margin-left: 10%;
-         text-overflow: ellipsis;
-           white-space: nowrap;
-          overflow: hidden;
-         }
-
-          /* margins of text */
-          article {
-             margin-top:15px;
-            margin-left: 15px;
-            margin-right:15px;
-                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-          }
-}
-
-/* ##########################
-    Specific resolution CSS - everything max 720
-######################### */
-@media only screen and (max-width: 720px) {
-
-         /* margins of text */
-         article {
-            margin-top:25px;
-           margin-left: 25px;
-           margin-right:25px;
-               box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-         }
-}
-
-/* ##########################
-    Specific resolution CSS - everything bigger than 720
-######################### */
-@media only screen and (min-width: 721px) {
-
-         /* margins of text */
-         article {
-           margin-left: 25px;
-           margin-right:25px;
-               box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-         }
-}
+	/* general styling of pretty much all font-awesome icons */
+	.socialfooter > a i {
+	    color: white;
+	    border-radius: 10px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: 3px;
+	    margin-top: 3px;
+	    padding: 15px;
+	    transition: all 0.2s ease-in-out;
+	}

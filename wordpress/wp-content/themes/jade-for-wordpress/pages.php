@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
    <div class="container-fluid">
-       <div class="container-inside">
+     <div class="row">
                     <?php if ( have_posts() ) : ?>
-                                    <div class="col-xs-12 col-md-8 visible-xs visible-sm visible-md visible-lg">
+                             <div class="col s12 m12 l8 main-content">
                         <?php while ( have_posts() ) : the_post(); ?>
 
                                     <div <?php post_class(); ?>>
@@ -57,7 +57,7 @@
                             </div><!-- einde md8 -->
 
 
-                        <div class="col-md-4 visible-md visible-lg">
+                        <div class="col s12 m12 l4 hide-on-med-and-down">
                             <?php get_sidebar( 'primary' ); ?>
                         </div>
 

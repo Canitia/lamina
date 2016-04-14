@@ -11,11 +11,11 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css' />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css"/>
+    <!-- other used items -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
     <!-- my own css file (style.css) -->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" type="text/css" />
 
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo get_feed_link( 'rss2_url' )?>" />
@@ -31,9 +31,27 @@
 
 <!-- start of the actual header -->
 <header>
-<div id="header">
-    <p class="blogtitle"><a href="<?php echo home_url();  ?>" id="headerurl"><?php bloginfo('name'); ?></a></p>
-    <p class="text-right"><?php bloginfo('description'); ?></p>
-     <div id="about"><a href="#aboutModal2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-question fa-3x"></i></a></div>
+    <div class="navbar-fixed">
+    <nav class="accentcolor">
+      <div class="nav-wrapper">
+        <p class="brand-logo left">
+            <a href="<?php echo home_url();  ?>" class="headerurl"><?php bloginfo('name'); ?></a>
+        </p>
+
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+         </ul>
+         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="small mdi-navigation-menu"></i></a>
+
+<ul id="slide-out" class="side-nav">
+    <!-- Loop through the navigation items -->
+
+    <!-- End the loop -->
+</ul>
+
 </div>
+</nav>
+
+</div>
+
 </header>

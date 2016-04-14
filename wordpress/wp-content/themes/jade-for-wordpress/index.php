@@ -1,15 +1,14 @@
 <?php get_header(); ?>
 
    <div class="container-fluid">
-       <div class="container-inside">
+     <div class="row">
                     <?php if ( have_posts() ) : ?>
-                            <div class="col-xs-12 col-md-8 visible-xs visible-sm visible-md visible-lg">
+                          <div class="main-content col s12 m12 l8">
                         <?php while ( have_posts() ) : the_post(); ?>
 
                                     <div <?php post_class(); ?>>
 
                                     <article>
-                                                <div class="modal-post"><!--.post-header-->
                                                     <h4 class="text-left-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
                                                         <?php
                                                         if ( has_post_thumbnail() ) {
@@ -18,7 +17,6 @@
 
                                                     <p class="text-right postdate"><?php echo 'Written by '; the_author(); ?></p>
                                                     <p class="text-right postdate"><?php the_tags(); ?></p>
-                                                </div><!--.post-header-->
 
 
                                                 <div class="entry clear"><!--. entry-->
@@ -57,7 +55,7 @@
                     </div><!-- einde md8 -->  <!-- column end! -->
 
                     <!-- second column (widget bar) -->
-                    <div class="col-md-4 visible-md visible-lg">
+                    <div class="col s12 m12 l4 hide-on-med-and-down">
                         <?php get_sidebar( 'primary' ); ?>
                     </div>
 
