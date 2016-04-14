@@ -6,7 +6,7 @@
     <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
     <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_template_directory(); ?>/favicon.ico" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font awesome (icons) and Raleway font as is used in the whole site -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css' />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
