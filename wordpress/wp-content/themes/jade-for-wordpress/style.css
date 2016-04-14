@@ -273,6 +273,10 @@ i.small.mdi-navigation-menu {
 	padding: 5px;
 }
 
+.side-nav {
+  margin-top:20px;
+}
+
 .side-nav full {
     overflow:auto;
 }
