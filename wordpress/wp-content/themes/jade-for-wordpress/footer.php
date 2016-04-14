@@ -14,6 +14,8 @@
             closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
           }
         );
+    $('.slider').slider({indicators: false});
+
      });
     </script>
     <!-- close with Wordpress footer aka adminbar etc. -->
