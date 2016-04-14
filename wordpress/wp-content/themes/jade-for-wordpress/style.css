@@ -315,6 +315,8 @@ i.small.mdi-navigation-menu {
 
   .collection-header {
     list-style-type: none !important;
+    margin-left:0;
+    margin-right:0;
   }
 
 
