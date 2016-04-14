@@ -32,4 +32,14 @@ function add_excerpt_class( $excerpt )
 
 add_filter( "the_excerpt", "add_excerpt_class" );
 
+
+
+
+
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+
 ?>

@@ -39,14 +39,12 @@
         </p>
 
          <ul id="nav-mobile" class="right hide-on-med-and-down">
-
+           <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
          </ul>
          <a href="#" data-activates="slide-out" class="button-collapse right"><i class="small mdi-navigation-menu"></i></a>
 
 <ul id="slide-out" class="side-nav">
-    <!-- Loop through the navigation items -->
-
-    <!-- End the loop -->
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 </ul>
 
 </div>
