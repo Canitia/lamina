@@ -19,9 +19,11 @@
        	while ( $the_query->have_posts() ) {
        		$the_query->the_post();
           echo '<li>';
-          if ( has_post_thumbnail() ) {
-            the_post_thumbnail();
-          }
+           if ( has_post_thumbnail() ) : ?>
+              <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                  <?php the_post_thumbnail('large'); ?>
+              </a>
+          <?php endif;
           echo '<div class="caption center-align"><h3 class="text-left-title-featured accentcolor2">';
           the_title();
           echo '</h3></div></li>';
