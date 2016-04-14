@@ -282,8 +282,6 @@ i.small.mdi-navigation-menu {
 }
 
 
-
-
 .side-nav li {
     height: 55px;
 		padding:0 !important;
@@ -305,6 +303,15 @@ i.small.mdi-navigation-menu {
 .collection {
 	margin:0px !important;
 }
+
+.widget > ul > li {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+    list-style-type: none !important;
+  }
 
 
 /* ######################################
