@@ -19,7 +19,7 @@
                                             <div>
                                                       <h1 class="text-left-title center-align"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
                                                       <p class="postdate center-align"><i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time></p>
-                                                              <?php the_excerpt(); ?>
+                                                                <?php the_excerpt(); ?>
                                             </div>
                                         </article>
                                         </div>

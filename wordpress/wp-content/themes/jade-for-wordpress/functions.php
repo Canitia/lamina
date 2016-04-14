@@ -24,5 +24,12 @@ function my_register_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
 
+function add_excerpt_class( $excerpt )
+{
+    $excerpt = str_replace( "<p", "<p class=\"text-justify\"", $excerpt );
+    return $excerpt;
+}
+
+add_filter( "the_excerpt", "add_excerpt_class" );
 
 ?>
