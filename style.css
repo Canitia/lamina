@@ -52,7 +52,7 @@ p > a:focus, p > a:hover
   color:grey  !important;
 }
 
-.headerurl, .text-left-title-featured, .text-left-title-featured, .text-left-title a:hover, .text-left-title-featured a:hover, .tag_heading, .chip a, .pagination, .pagination li a, .pagination a, footer a  {
+.headerurl, .side-nav a, .side-nav a:hover, .text-left-title-featured, .text-left-title-featured, .text-left-title a:hover, .text-left-title-featured a:hover, .tag_heading, .chip a, .pagination, .pagination li a, .pagination a, footer a  {
       color: white !important;
 }
 
