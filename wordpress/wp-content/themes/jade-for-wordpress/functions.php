@@ -5,11 +5,10 @@ add_theme_support( "post-thumbnails" );
 add_action( 'widgets_init', 'my_register_sidebars' );
 
 $args = array(
-	'flex-width'    => true,
-	'width'         => 980,
-	'flex-height'    => true,
-	'height'        => 200,
+	'width'         => 960,
+	'height'        => 360,
 	'default-image' => get_template_directory_uri() . '/images/header.png',
+	'uploads'       => true,
 );
 add_theme_support( 'custom-header', $args );
 
