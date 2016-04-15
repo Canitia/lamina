@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-   <div class="container-fluid">
      <div class="row">
           <div class="tag_heading center-align">
           <h3><?php

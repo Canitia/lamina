@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<div class="container-fluid">
-
   <div class="slider hide-on-small-only">
                 <ul class="slides">
        <?php

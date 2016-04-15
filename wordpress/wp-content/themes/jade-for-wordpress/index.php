@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-   <div class="container-fluid">
      <div class="row">
                     <?php if ( have_posts() ) : ?>
                           <div class="main-content col s12 m12 l8">
