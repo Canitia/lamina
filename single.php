@@ -46,9 +46,8 @@
                         		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
                             <?php endif; ?>
 
-                            <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>'); ?>
-                            </div><!-- einde md8 -->
-
+                            <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
+                          </div><!-- einde md8 -->
 
     <div class="col l4 hide-on-med-and-down">
         <?php get_sidebar( 'primary' ); ?>
