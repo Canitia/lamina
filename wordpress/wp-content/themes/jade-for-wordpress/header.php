@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- other used items -->
   <link rel="stylesheet" href="<?php echo get_template_directory(); ?>/css/materialize.min.css">
-
+  <link rel="stylesheet" href="<?php echo get_template_directory(); ?>/css/font-awesome.min.css">
     <!-- my own css file (style.css) -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" type="text/css" />
 
