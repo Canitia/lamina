@@ -6,58 +6,56 @@
           <h3><?php single_cat_title(); ?></h3>
           <hr />
           </div>
+       <?php if ( have_posts() ) : ?>
+             <div class="main-content col s12 m12 l8">
+           <?php while ( have_posts() ) : the_post(); ?>
 
-     <div class="col s12 m12 l8 main-content">
-                    <?php if ( have_posts() ) : ?>
-                        <?php while ( have_posts() ) : the_post(); ?>
+                         <div class="card hoverable">
+                           <article>
+                                 <div>
+                                   <?php if ( has_post_thumbnail() ) : ?>
+                                       <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                           <?php the_post_thumbnail(); ?>
+                                       </a>
+                                   <?php endif; ?>
+                                     </a>
+                               </div>
+                               <div>
+                                         <h1 class="text-left-title center-align"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
+                                         <p class="postdate center-align"><i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time></p>
+                                                   <?php the_excerpt(); ?>
+                               </div>
+                           </article>
+                           </div>
 
-                                    <div <?php post_class(); ?>>
-                                    <article>
-                                      <?php
-                                      if ( has_post_thumbnail() ) {
-                                        the_post_thumbnail();
-                                      }?>
-                                      <h1 class="text-left-title center-align"></i><?php the_title(); ?></h1>
-                                      <h4 class="text-left-title-featured center-align">
-                                        <p class="postdate center-align">
-                                          <i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time>
-                                          <i class="fa fa-user-secret"></i><a class="author-url-post-head"><?php echo 'Written by '; the_author(); ?></a>
-                                        </p>
-                                      </h4>
-                                          <p class="text-right postdate"><?php the_tags(); ?></p>
+               <!-- error handling -->
+               <?php endwhile; else: ?>
+                     <p><?php _e('Sorry, this page does not exist.'); ?></p>
+               <?php endif; ?>
 
+               <!-- navigation?-->
 
-                                                            <div class="entry clear"><!--. entry-->
-                                                                <p class="text-justify-individual"><?php the_content(); ?></p>
+               <ul class="pagination accentcolor2 center-align" role="pagination">
+                 <?php if( get_previous_posts_link() ) :
 
-                                                            </div><!--. entry-->
+                 previous_posts_link( '<li class="pagination-arrows newer-posts"><i class="fa fa-arrow-left fa-2x"></i></li>' );
 
-                                                        <!--.post-footer-->
-                                                        <footer>
-                                                                <?php edit_post_link(); ?>
-                                                        </footer>
-                                                            <!--.post-footer-->
-                                    </article><!-- close article -->
+                 endif; ?>
 
+                 <li class="active"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo $paged; ?></li>
+                 <?php if( get_next_posts_link() ) :
 
-                                          <!-- let user enter a comment -->
-                                		<?php //comments_template(); ?>
-                            </div><!-- close post class div -->
-                                <!-- column end! -->
+                 next_posts_link( '<li class="pagination-arrows older-posts"><i class="fa fa-arrow-right fa-2x"></i></li>' );
 
+                 endif; ?>
+               </ul>
 
-
-                            <!-- error handling -->
-                            <?php endwhile; else: ?>
-                        		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
-                            <?php endif; ?>
-
-                            </div><!-- einde md8 -->
-
-
-    <div class="col l4 hide-on-med-and-down">
-        <?php get_sidebar( 'primary' ); ?>
-    </div>
+               <!-- navigation?-->
+     </div>
+       <!-- second column (widget bar) -->
+       <div class="col s12 m12 l4 hide-on-med-and-down">
+           <?php get_sidebar( 'primary' ); ?>
+       </div>
 
   </div><!-- end row -->
 </div><!-- container fluid END! -->
