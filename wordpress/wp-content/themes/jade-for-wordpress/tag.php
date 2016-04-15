@@ -49,7 +49,7 @@
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
-                        		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
+                        		      <p><?php echo wpautop( 'Sorry, no posts were found' ); ?></p>
                             <?php endif; ?>
 
                             </div><!-- einde md8 -->

@@ -51,7 +51,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
-                        		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
+                        		      <p><?php echo wpautop( 'Sorry, this page can not be found' ); ?></p>
                             <?php endif; ?>
 
                             </div><!-- einde md8 -->

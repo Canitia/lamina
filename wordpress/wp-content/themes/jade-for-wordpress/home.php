@@ -70,7 +70,7 @@
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
-                        		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
+                        		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
                             <?php endif; ?>
 
                             <!-- navigation?-->

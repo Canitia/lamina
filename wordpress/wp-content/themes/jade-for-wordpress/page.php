@@ -44,7 +44,7 @@
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
-                        		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
+                        		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
                             <?php endif; ?>
 
                             </div><!-- einde md8 -->
