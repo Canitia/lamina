@@ -204,6 +204,10 @@ strong {
   line-height: 30px;
 }
 
+.entry > ul li {
+  list-style-type: square;
+}
+
 /* **************************************
 
   SPECIFIC RESTRICTIONS TO GUI
