@@ -200,7 +200,7 @@ strong {
   font-weight: 700 !important;
 }
 
-ul, ol {
+.entry > ul, ol {
   line-height: 30px;
 }
 
