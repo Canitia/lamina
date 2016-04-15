@@ -12,8 +12,6 @@ $args = array(
 );
 add_theme_support( 'custom-header', $args );
 
-
-
 function my_register_sidebars() {
 
 	/* Register the 'primary' sidebar. */
