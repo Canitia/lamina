@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory(); ?>/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font awesome (icons) and Raleway font as is used in the whole site -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- other used items -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
