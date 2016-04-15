@@ -42,7 +42,7 @@ background-color: #c51162 !important;
   background-color: dimgrey;
 }
 
-p > a, .headerurl:hover, .side-nav li:hover, h1.text-left-title a:hover, .pagination > a > li > i:hover, .collection .collection-item a, .author-profile h4 a, li.pagination-arrows a li i:hover, .socialfooter > a:hover, .card-sidebar ul li a:hover, .socialfooter a i:hover {
+p > a, .headerurl:hover, h1.text-left-title a:hover, .pagination > a > li > i:hover, .collection .collection-item a, .author-profile h4 a, li.pagination-arrows a li i:hover, .socialfooter > a:hover, .card-sidebar ul li a:hover, .socialfooter a i:hover {
 	color: black !important;
 }
 
@@ -52,7 +52,7 @@ p > a:focus, p > a:hover
   color:grey  !important;
 }
 
-.headerurl, .side-nav a, .side-nav a:hover, .text-left-title-featured, .text-left-title-featured, .text-left-title a:hover, .text-left-title-featured a:hover, .tag_heading, .chip a, .pagination, .pagination li a, .pagination a, footer a  {
+.headerurl, .text-left-title-featured, .text-left-title-featured, .text-left-title a:hover, .text-left-title-featured a:hover, .tag_heading, .chip a, .pagination, .pagination li a, .pagination a, footer a  {
       color: white !important;
 }
 
