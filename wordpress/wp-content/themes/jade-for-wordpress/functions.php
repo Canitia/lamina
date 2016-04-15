@@ -2,6 +2,7 @@
 add_theme_support( "title-tag" );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
+add_theme_support( 'custom-header' );
 add_action( 'widgets_init', 'my_register_sidebars' );
 
 function my_register_sidebars() {
