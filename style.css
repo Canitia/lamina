@@ -284,10 +284,6 @@ img.logo {
 
 *****************************************/
 
-i.small.mdi-navigation-menu {
-	padding: 5px;
-}
-
 .side-nav {
   margin-top:20px;
 }
@@ -300,6 +296,10 @@ i.small.mdi-navigation-menu {
 .side-nav li {
     height: 55px;
 		padding:0 !important;
+}
+
+nav .button-collapse {
+  margin-right:20px !important;
 }
 
 
