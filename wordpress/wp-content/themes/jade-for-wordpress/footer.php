@@ -3,8 +3,8 @@
         <a href="/rss" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
 </div>
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="<?php echo get_template_directory(); ?>/js/jquery-2.2.3.min.js"></script>
+    <script src="<?php echo get_template_directory(); ?>/js/materialize.min.js"></script>
     <script>
     $(document).ready(function(){
       // Activate the side menu
