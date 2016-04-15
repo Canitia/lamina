@@ -307,6 +307,15 @@ i.small.mdi-navigation-menu {
     margin-right:0;
   }
 
+  .search-box {
+    padding: 15px;
+  }
+
+  .search-box form i {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
 
 /* ######################################
 
