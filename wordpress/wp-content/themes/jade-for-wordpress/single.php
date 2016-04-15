@@ -44,9 +44,10 @@
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
-                        		      <p><?php _e('Sorry, this page does not exist.'); ?></p>
+                        		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
                             <?php endif; ?>
 
+                            <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>'); ?>
                             </div><!-- einde md8 -->
 
 
