@@ -434,6 +434,10 @@ article img {
     width: 100%;
     height:auto;
 }
+
+.entry {
+  padding:15px;
+}
 .individual-post {
 	padding:0px !important;
 }
