@@ -21,7 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   SET OVERALL ACCENT color
 
   #############################*/
-.accentcolor, .pagination li.active, .pagination li.active:hover {
+.accentcolor, .pagination li.active, .pagination li.active:hover, .side-nav a:hover {
 background-color: #c51162 !important;
 }
 
@@ -58,10 +58,6 @@ p > a:focus, p > a:hover
 
 .side-nav {
   background-color: black !important;
-}
-
-.side-nav a:hover {
-  background-color: #0d47a1;
 }
 
 .collection .collection-item:hover {
