@@ -33,53 +33,112 @@ background-color: #c51162 !important;
   background-color: red !important;
 }
 
-  /* ##############################
+/* ##############################
 
-    OTHER COLORS
+  MAIN BACKGROUND
 
-    #############################*/
+  #############################*/
   html body {
   background-color: dimgrey;
 }
 
-p > a, .headerurl:hover, h1.text-left-title a:hover, .pagination > a > li > i:hover, .collection .collection-item a, .author-profile h4 a, li.pagination-arrows a li i:hover, .socialfooter > a:hover, .card-sidebar ul li a:hover, .socialfooter a i:hover {
-	color: black !important;
-}
+/* ##############################
 
+  SIDEBAR
 
-p > a:focus, p > a:hover
-{
-  color:grey  !important;
-}
-
-.headerurl, .side-nav a, .side-nav a:hover, .text-left-title-featured, .text-left-title-featured, .text-left-title a:hover, .text-left-title-featured a:hover, .tag_heading, .chip a, .pagination, .pagination li a, .pagination a, footer a  {
-      color: white !important;
-}
-
-.side-nav {
-  background-color: black !important;
+  #############################*/
+.collection .collection-item a, .card-sidebar ul li a:hover {
+  color: black !important;
 }
 
 .collection .collection-item:hover {
 	background-color: #e0e0e0 !important;
 }
 
-.collection .collection-item a:hover, .main-content > .text-left-title, .author-profile h4, .text-left-title a, article > h1, article > h2, article > h3, article > h4, .slider .indicators .indicator-item.active, .postdate, .postdate a:hover, .chip a:hover, .author-url-post-head, .card-sidebar ul li a  {
-	color:#979797 !important;
-}
-
-article {
-      background-color: white;
+.collection .collection-item a:hover {
+  color: #979797 !important;
 }
 
 
-section.author-profile {
-	background-color:whitesmoke;
+  /* ##############################
+
+    NAVIGATION and  SLIDEOUT MENU
+
+    #############################*/
+p > a, .headerurl:hover {
+  color:black !important;
 }
 
+.headerurl, .side-nav a, .side-nav a:hover {
+  color: white !important;
+}
 
-footer > nav {
-  background-color: #0d47a1 !important;
+.side-nav {
+  background-color: black !important;
+}
+
+/* ##############################
+
+  ARTICLE
+
+  #############################*/
+  article {
+        background-color: white;
+  }
+
+  h1.text-left-title a:hover, .author-profile h4 a  {
+  	color: black !important;
+  }
+
+  p > a:focus, p > a:hover
+  {
+    color:grey  !important;
+  }
+
+    .text-left-title-featured, .text-left-title-featured, .text-left-title a:hover, .text-left-title-featured a:hover {
+      color:white !important;
+    }
+
+    .tag_heading, .chip a,   {
+          color: white !important;
+    }
+
+    .main-content > .text-left-title, .author-profile h4, .text-left-title a, article > h1, article > h2, article > h3, article > h4 {
+      color: #979797 !important;
+    }
+
+    .postdate, .postdate a:hover, .chip a:hover, .author-url-post-head {
+      color: #979797 !important;
+    }
+
+    section.author-profile {
+    	background-color:whitesmoke;
+    }
+
+    article > h4 > p > i {
+    	color:white;
+    }
+
+/* ##############################
+
+  PAGINATION
+
+  #############################*/
+.pagination > a > li > i:hover, li.pagination-arrows a li i:hover {
+  color:black !important;
+}
+
+.pagination, .pagination li a, .pagination a, footer a {
+  color: white !important;
+}
+
+/* ##############################
+
+  FOOTER
+
+  #############################*/
+.socialfooter > a:hover, .socialfooter a i:hover {
+  color:black !important;
 }
 
 /* social media icons sidebar and footer */
@@ -95,8 +154,18 @@ footer > nav {
     color: black;
 }
 
-body > main > div > article > h4 > p > i {
-	color:white;
+footer > nav {
+  background-color: #0d47a1 !important;
+}
+
+
+  /* ##############################
+
+    OTHER COLORS
+
+    #############################*/
+ .slider .indicators .indicator-item.active, .card-sidebar ul li a  {
+	color:#979797 !important;
 }
 
 .fa-star {
