@@ -23,6 +23,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
                                         <p class="postdate center-align">
                                           <i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time>
                                           <i class="fa fa-user-secret"></i><a class="author-url-post-head"><?php echo 'Written by '; the_author(); ?></a>
+                                          <<i class="fa fa-pencil-square-o" aria-hidden="true"></i>   <?php edit_post_link(); ?>
                                         </p>
                                       </h4>
                                                             <div class="entry clear"><!--. entry-->
@@ -34,7 +35,6 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
                                                         <footer>
                                                           <div class="tags center-align">
                                                           <?php the_tags( '<div class="chip accentcolor">', '</div><div class="chip accentcolor">', '</div>' ); ?>
-                                                                <?php edit_post_link(); ?>
                                                                 </div>
                                                         </footer>
                                                             <!--.post-footer-->
