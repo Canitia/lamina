@@ -553,6 +553,10 @@ img.content-images-featured:hover, img.content-images:hover {
     margin:0px;
 }
 
+.author-url-post-head {
+  margin-right:10px;
+}
+
 /* add some styling to disqus */
 #disqus_thread {
 padding: 40px;
