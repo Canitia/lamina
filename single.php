@@ -15,12 +15,11 @@
                                       <h4 class="text-left-title-featured center-align">
                                         <p class="postdate center-align">
                                           <i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time>
-                                          <i class="fa fa-user-secret"></i><a class="author-url-post-head"><p><?php echo get_the_author_link(); ?></p></a>
+                                          <i class="fa fa-user-secret"></i><a class="author-url-post-head"><?php echo get_the_author_link(); ?></a>
                                         </p>
                                       </h4>
                                                             <div class="entry clear"><!--. entry-->
-                                                                <p class="text-justify-individual"><?php the_content(); ?></p>
-
+                                                                <?php the_content(); ?>
                                                             </div><!--. entry-->
 
                                                         <!--.post-footer-->
