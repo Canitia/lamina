@@ -21,10 +21,9 @@
                                           <p class="text-right postdate"><?php the_tags(); ?></p>
 
 
-                                                            <div class="entry clear"><!--. entry-->
-                                                                <p class="text-justify-individual"><?php the_content(); ?></p>
-
-                                                            </div><!--. entry-->
+                                          <div class="entry clear"><!--. entry-->
+                                              <?php the_content(); ?>
+                                          </div><!--. entry-->
 
                                                         <!--.post-footer-->
                                                         <footer>
