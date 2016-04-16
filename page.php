@@ -24,8 +24,10 @@
 
                                                         <!--.post-footer-->
                                                         <footer>
-                                                            <div class="tags center-align"><?php the_tags( '<div class="chip accentcolor">', '', '</div>' ); ?></div>
+                                                          <div class="tags center-align">
+                                                          <?php the_tags( '<div class="chip accentcolor">', '</div><div class="chip accentcolor">', '</div>' ); ?>
                                                                 <?php edit_post_link(); ?>
+                                                                </div>
                                                         </footer>
                                                             <!--.post-footer-->
                                     </article><!-- close article -->
