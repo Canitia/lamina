@@ -15,7 +15,7 @@
                                       <h4 class="text-left-title-featured center-align">
                                         <p class="postdate center-align">
                                           <i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time>
-                                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link(); ?>
+                                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();    ?>
                                           <i class="fa fa-pencil-square-o" aria-hidden="true"></i>   <?php edit_post_link(); ?>
                                         </p>
                                       </h4>
