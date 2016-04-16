@@ -107,6 +107,10 @@ p > a, .headerurl:hover {
       color: #979797 !important;
     }
 
+    .postdate > i {
+      color: #979797;
+    }
+
     .postdate, .postdate a:hover, .chip a:hover, .author-url-post-head {
       color: #979797 !important;
     }
