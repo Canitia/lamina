@@ -26,10 +26,8 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
                                         </p>
                                       </h4>
                                           <p class="text-right postdate"><?php the_tags(); ?></p>
-
-
                                                             <div class="entry clear"><!--. entry-->
-                                                                <p class="text-justify-individual"><?php the_content(); ?></p>
+                                                                <?php the_excerpt(); ?>
 
                                                             </div><!--. entry-->
 
