@@ -7,13 +7,12 @@
     <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_template_directory(); ?>/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Font awesome (icons) and Raleway font as is used in the whole site -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <!-- other used items -->
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/materialize.min.css">
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
     <!-- my own css file (style.css) -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" type="text/css" />
+    <!-- other used items -->
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/materialize.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
+
 
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo get_feed_link( 'rss2_url' )?>" />
