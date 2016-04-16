@@ -18,8 +18,7 @@
                                           <i class="fa fa-user-secret"></i><a class="author-url-post-head"><?php echo 'Written by '; the_author(); ?></a>
                                         </p>
                                       </h4>
-                                          <p class="center-align postdate"><?php the_tags( '<div class="chip accentcolor">', '', '</div>' ); ?></p>
-
+                                        <div class="tags center-align"><?php the_tags( '<div class="chip accentcolor">', '', '</div>' ); ?></div>
 
                                                             <div class="entry clear"><!--. entry-->
                                                                 <p class="text-justify-individual"><?php the_content(); ?></p>
