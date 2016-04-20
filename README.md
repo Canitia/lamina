@@ -21,16 +21,4 @@ Currently under development. Master branch at least has a working version, and s
 #Preview
 Below you see a preview of the Jade for Wordpress theme.
 
-![Jade for Wordpress Preview - Home](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-03023830.png)
-
-When you start scrolling the header becomes smaller;
-![Jade for Wordpress Preview - Home - Small header](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02160152.png)
-
-It shows the sidebar when the window is big enough
-![Jade for Wordpress Preview - Home - bigger browser window](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-03023837.png)
-
-When opening a post you see the following with default comments enabled;
-![Jade for Wordpress Preview - Post](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02160457.png)
-
-I myself prefer Disqus as a comments/moderation platform so i installed the Disqus plugin, which looks as follows
-![Jade for Wordpress Preview - Post with Disqus plugin](http://img.photobucket.com/albums/v385/hxkclan/github/Jade%20for%20Wordpress/Screenshotfrom2015-01-02160135.png)
+![Jade for Wordpress Preview](http://img.photobucket.com/albums/v385/hxkclan/2016-04-15.png)
