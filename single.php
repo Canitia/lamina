@@ -12,7 +12,7 @@
                                         the_post_thumbnail();
                                       }?>
                                       <h1 class="text-left-title center-align"></i><?php the_title(); ?></h1>
-                                      <h4 class="text-left-title-featured-sidebar center-align">
+                                      <h4 class="text-left-title-featured-slider center-align">
                                         <p class="postdate center-align">
                                           <i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time>
                                           <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();    ?>
