@@ -198,7 +198,7 @@ footer > nav {
 html body {
 line-height: 0 !important;
 font-size:16px;
-font-family: Segoe UI, Roboto,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+font-family: Segoe UI, Roboto,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
 }
 
 h1 {
@@ -567,6 +567,7 @@ img.content-images-featured:hover, img.content-images:hover {
 .postdate {
     font-size: 16px;
     margin:0px;
+    padding: 15px;
 }
 
 /* add some styling to disqus */
