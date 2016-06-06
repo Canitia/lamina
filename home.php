@@ -52,7 +52,7 @@
                                           <div class="card-image">
                                             <?php
                                             if ( has_post_thumbnail() ) {
-                                              the_post_thumbnail();
+                                              the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
                                             }?>
                                             <span class="card-title">
                                               <p class="posttitle"><?php the_title(); ?></p>
