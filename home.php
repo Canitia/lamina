@@ -47,9 +47,21 @@
                     <?php if ( have_posts() ) : ?>
                           <div class="main-content col s12 m12 l8">
                         <?php while ( have_posts() ) : the_post(); ?>
+                                      <div class="card large">
+                                        <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                          <div class="card-image">
+                                            <?php
+                                            if ( has_post_thumbnail() ) {
+                                              the_post_thumbnail();
+                                            }?>
+                                            <span class="card-title">
+                                              <p class="posttitle"><?php the_title(); ?></p>
+                                              </p></span>
+                                          </div>
+                                          <div class="card-content">
+                                            <?php the_excerpt(); ?>
+                                          </div>
 
-                                      <div class="card hoverable">
-                                        <article>
                                               <div>
                                                 <?php if ( has_post_thumbnail() ) : ?>
                                                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -57,13 +69,7 @@
                                                     </a>
                                                 <?php endif; ?>
                                                   </a>
-                                            </div>
-                                            <div>
-                                                      <h1 class="text-left-title center-align"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
-                                                      <p class="postdate center-align"><i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time></p>
-                                                                <?php the_excerpt(); ?>
-                                            </div>
-                                        </article>
+                                          </div>
                                         </div>
 
                             <!-- error handling -->
