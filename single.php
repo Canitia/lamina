@@ -4,38 +4,42 @@
      <div class="col s12 m12 l8 main-content">
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
-
-                                    <div <?php post_class(); ?>>
+                          <div class="card">
+                                <div <?php post_class(); ?>>
                                     <article>
-                                      <?php
-                                      if ( has_post_thumbnail() ) {
-                                        the_post_thumbnail();
-                                      }?>
-                                      <h1 class="text-left-title center-align"></i><?php the_title(); ?></h1>
-                                      <h4 class="text-left-title-featured-slider center-align">
-                                        <p class="postdate center-align">
-                                          <i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time>
-                                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();    ?>
+<p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                      <div class="card-image">
+                                        <?php
+                                        if ( has_post_thumbnail() ) {
+                                          the_post_thumbnail();
+                                        }?>
+                                        <span class="card-title">
+                                          <p class="posttitle"><?php the_title(); ?></p>
+                                          </p></span>
+                                      </div>
+                                      <div class="card-content">
+                                        <p>{{content}}</p>
+                                      </div>
+                                      <div class="tags center-align">
+                                      <?php the_tags( '<div class="waves-effect waves-light chip accentcolor2">', '</div><div class="waves-effect waves-light chip accentcolor2">', '</div>' ); ?>
+                                      </div>
+                                      <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
+                                      <section class="author-profile">
+                                        <p class="author-bio">
+                                        <strong><i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?></strong>
                                           <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
-                                        </p>
-                                      </h4>
-                                                            <div class="entry clear"><!--. entry-->
-                                                                <?php the_content(); ?>
-                                                            </div><!--. entry-->
+                                          <i class="fa fa-info fa-2x" aria-hidden="true"></i><a href="<?php the_author_meta('user_url');?>"><?php the_author_meta('user_url'); ?></a>
 
-                                                        <!--.post-footer-->
-                                                        <footer>
-                                                          <div class="tags center-align">
-                                                          <?php the_tags( '<div class="chip accentcolor">', '</div><div class="chip accentcolor">', '</div>' ); ?>
-                                                                </div>
-                                                        </footer>
-                                                            <!--.post-footer-->
+                                        <br />
+                                          <?php get_the_author_meta('description'); ?>
+                                      </p>
+                                      </section>
                                     </article><!-- close article -->
-
 
                                           <!-- let user enter a comment -->
                                 		<?php comments_template(); ?>
                             </div><!-- close post class div -->
+                          </div>
                                 <!-- column end! -->
 
 
