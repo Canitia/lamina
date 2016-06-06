@@ -1,6 +1,9 @@
 <footer class="page-footer accentcolor hide-on-small-only">
   <div class="socialfooter center-align">
         <a href="/rss" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
+        <p class="right">
+            <a href="https://jadewp.demo.miboutech.com" target="_blank">powered by: Jade for Wordpress</a>
+    </p>
 </div>
     <!-- Compiled and minified JavaScript -->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-2.2.4.min.js"></script>
