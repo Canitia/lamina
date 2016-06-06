@@ -50,10 +50,11 @@
                                       <div class="card large">
                                         <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
                                           <div class="card-image">
-                                            <?php
-                                            if ( has_post_thumbnail() ) {
-                                              the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
-                                            }?>
+                                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                            <?php  if ( has_post_thumbnail() ) {
+                                                          the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
+                                                  } ?>
+                                            </a>
                                             <span class="card-title">
                                               <p class="posttitle"><?php the_title(); ?></p>
                                               </p></span>
