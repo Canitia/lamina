@@ -48,6 +48,7 @@ function theme_prefix_setup() {
 		'height'      => 100,
 		'width'       => 100,
 		'flex-width' => true,
+		'header-text' => array( 'site-title', 'site-description' ),
 	) );
 
 }
