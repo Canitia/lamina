@@ -574,8 +574,38 @@ footer {
 			color:black;
 		}
 
+    /* **************************************
+
+  	 WORDPRESS SPECIFIC
+
+  	*****************************************/
 
 .twitter-tweet {
 	margin-left:auto;
 	margin-right: auto;
 }
+
+.widget > ul > li {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+    list-style-type: none !important;
+  }
+
+  .collection-header {
+    list-style-type: none !important;
+    margin-left:0;
+    margin-right:0;
+  }
+
+  .search-box {
+    padding: 15px;
+  }
+
+  .search-box form i {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
