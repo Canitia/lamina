@@ -34,7 +34,10 @@
     <div class="navbar-fixed">
     <nav class="accentcolor">
       <div class="nav-wrapper">
-        <p class="brand-logo left">
+        <?php if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+        }?>
+        <p class="brand-logo center">
             <a href="<?php echo home_url();  ?>" class="headerurl"><?php bloginfo('name'); ?></a>
         </p>
 
