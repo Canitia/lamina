@@ -18,7 +18,7 @@
                                           </p></span>
                                       </div>
                                       <div class="card-content">
-                                        <p>{{content}}</p>
+                                        <p><?php the_content(); ?></p>
                                       </div>
                                       <div class="tags center-align">
                                       <?php the_tags( '<div class="waves-effect waves-light chip accentcolor2">', '</div><div class="waves-effect waves-light chip accentcolor2">', '</div>' ); ?>
