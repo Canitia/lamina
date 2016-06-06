@@ -1,49 +1,47 @@
 <?php get_header(); ?>
 
-  <div class="slider hide-on-small-only">
-                <ul class="slides">
-       <?php
-       $args = array(
-       	'posts_per_page'      => 3,
-       	'post__in'            => get_option( 'sticky_posts' ),
-       	'ignore_sticky_posts' => 1,
-       );
-
-       // The Query
-       $the_query = new WP_Query( $args );
-
-       // The Loop
-       if ( $the_query->have_posts() ) {
-       	while ( $the_query->have_posts() ) {
-       		$the_query->the_post();
-          echo '<li>';
-           if ( has_post_thumbnail() ) : ?>
-              <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                  <?php the_post_thumbnail('large'); ?>
-              </a>
-          <?php endif;
-          echo '<div class="caption center-align"><h3 class="text-left-title-featured accentcolor2">';
-          the_title();
-          echo '</h3></div></li>';
-
-       	}
-       } else {
-       	// no posts found
-       }
-       /* Restore original Post Data */
-       wp_reset_postdata();
-?>
-
-
-
-
-              </ul>
-  </div><!-- .slider -->
-
-
-
-
   <div class="row">
+    <div class="slider hide-on-small-only">
+                  <ul class="slides">
+         <?php
+         $args = array(
+         	'posts_per_page'      => 3,
+         	'post__in'            => get_option( 'sticky_posts' ),
+         	'ignore_sticky_posts' => 1,
+         );
+
+         // The Query
+         $the_query = new WP_Query( $args );
+
+         // The Loop
+         if ( $the_query->have_posts() ) {
+         	while ( $the_query->have_posts() ) {
+         		$the_query->the_post();
+            echo '<li>';
+             if ( has_post_thumbnail() ) : ?>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                    <?php the_post_thumbnail('large'); ?>
+                </a>
+            <?php endif;
+            echo '<div class="caption center-align"><h3 class="text-left-title-featured accentcolor2">';
+            the_title();
+            echo '</h3></div></li>';
+
+         	}
+         } else {
+         	// no posts found
+         }
+         /* Restore original Post Data */
+         wp_reset_postdata();
+  ?>
+
+
+
+
+                </ul>
+    </div><!-- .slider -->
+
+
                     <?php if ( have_posts() ) : ?>
                           <div class="main-content col s12 m12 l8">
                         <?php while ( have_posts() ) : the_post(); ?>
