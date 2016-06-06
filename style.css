@@ -13,236 +13,36 @@ Text Domain: jade-for-wordpress
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
-
-
-/* ##############################
-
-  SET OVERALL ACCENT color
-
-  #############################*/
-.accentcolor, .pagination li.active, .pagination li.active:hover, .side-nav a:hover {
-background-color: #c51162 !important;
-}
-
-.accentcolor2, .pagination li:hover, li.pagination-arrows:hover, .side-nav a:hover  {
-  background-color: #f50057 !important;
-}
-
-.accentcolor-error {
-  background-color: red !important;
-}
-
-/* ##############################
-
-  MAIN BACKGROUND
-
-  #############################*/
-  html body {
-  background-color: dimgrey;
-}
-
-/* ##############################
-
-  SIDEBAR
-
-  #############################*/
-.collection .collection-item a, .card-sidebar ul li a:hover {
-  color: black !important;
-}
-
-.collection .collection-item:hover {
-	background-color: #e0e0e0 !important;
-}
-
-.collection .collection-item a:hover {
-  color: #979797 !important;
-}
-
-
-  /* ##############################
-
-    NAVIGATION and  SLIDEOUT MENU
-
-    #############################*/
-p > a, .headerurl:hover {
-  color:black !important;
-}
-
-.headerurl, .side-nav a {
-  color: white !important;
-}
-
-.side-nav {
-  background-color: black !important;
-}
-
-/* ##############################
-
-  ARTICLE
-
-  #############################*/
-  article {
-        background-color: white;
-  }
-
-  h1.text-left-title a:hover, .author-profile h4 a  {
-  	color: black !important;
-  }
-
-  p > a:focus, p > a:hover
-  {
-    color:grey  !important;
-  }
-
-    .text-left-title-featured, .text-left-title-featured, .text-left-title a:hover, .text-left-title-featured a:hover {
-      color:white !important;
-    }
-
-    .text-left-title-featured {
-     opacity: 0.7;
-     background-color: black !important;
-    }
-
-    .text-left-title-featured-sidebar {
-      opacity: 1;
-      background-color: #f50057 !important;
-      color:white !important;
-    }
-
-    .tag_heading, .chip a {
-          color: white !important;
-    }
-
-    .main-content > .text-left-title, .author-profile h4, .text-left-title a, article > h1, article > h2, article > h3, article > h4 {
-      color: #979797 !important;
-    }
-
-    .postdate > i {
-      color: #979797;
-    }
-
-    .postdate, .postdate a:hover, .chip a:hover, .author-url-post-head {
-      color: #979797 !important;
-    }
-
-    section.author-profile {
-    	background-color:whitesmoke;
-    }
-
-    article > h4 > p > i {
-    	color:white;
-    }
-
-/* ##############################
-
-  PAGINATION
-
-  #############################*/
-.pagination > a > li > i:hover, li.pagination-arrows a li i:hover {
-  color:black !important;
-}
-
-.pagination, .pagination li a, .pagination a, footer a {
-  color: white !important;
-}
-
-/* ##############################
-
-  FOOTER
-
-  #############################*/
-.socialfooter > a:hover, .socialfooter a i:hover {
-  color:black !important;
-}
-
-/* social media icons sidebar and footer */
-.socialfooter {
-  border-top:1px solid rgba(0,0,0,0.12);
-}
-
-.socialfooter > a {
-    color: #00bfff;
-}
-
-.socialfooter > a:hover {
-    color: black;
-}
-
-footer > nav {
-  background-color: #0d47a1 !important;
-}
-
-
-  /* ##############################
-
-    OTHER COLORS
-
-    #############################*/
- .slider .indicators .indicator-item.active, .card-sidebar ul li a  {
-	color:#979797 !important;
-}
-
-.fa-star {
-  color: #ffa500 !important;
-}
-
-
-
 /* **************************************
 
   GENERAL FONT / ELEMENT
 
 *****************************************/
-
 html body {
 line-height: 0 !important;
 font-size:16px;
-font-family: Segoe UI, Roboto,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+font-family: Roboto,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
 }
 
 h1 {
-	font-size: 30px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 26.3999996185303px;
+	font-size: 250%;
 }
 
 h2 {
-	font-size: 26px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 15.3999996185303px;
+	font-size: 200%;
 }
 
 h3 {
-	font-size: 20px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 15.3999996185303px;
+	font-size: 175%;
 }
 
 h4 {
-	font-size: 18px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 15.3999996185303px;
+	font-size: 140%;
 }
 
 p {
-	line-height: 20px;
-  padding-left:15px;
-	padding-right:15px;
-	text-align: justify;
+	line-height: 30px;
 	text-rendering: geometricPrecision;
-}
-
-p.text-justify {
-	padding: 20px;
 }
 
 p > a {
@@ -258,24 +58,41 @@ hr {
     padding: 0;
 }
 
-blockquote {
-  background-color: whitesmoke;
-  border-left: 5px solid #f50057 !important;
+pre {
+	line-height: 30px;
 }
 
 blockquote {
-	line-height: 30px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	position:relative;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+blockquote:before, blockquote:after {
+    color:black;
+    content:'\f10d';
+    font-family:'FontAwesome';
+    font-size:30px;
+    position:absolute;
+    top:5px;
+    left:8px;
+    display:block;
+}
+blockquote:after {
+    content:'\f10e';
+    bottom:0;
+    right:8px;
+    top:auto;
+    left:auto;
 }
 
 blockquote > p {
   	font-style: italic !important;
 		text-align:left;
+		margin-left:30px !important;
 }
 
 pre {
-	line-height: 18.5714302062988px;
 	padding-left:30px;
 	padding-right:30px;
 	padding-top:5px;
@@ -285,15 +102,6 @@ pre {
 
 strong {
   font-weight: 700 !important;
-}
-
-.entry > ul, ol {
-  line-height: 30px;
-}
-
-.entry > ul li {
-  list-style-type: square;
-  margin-left: 40px;
 }
 
 /* **************************************
@@ -306,38 +114,32 @@ strong {
   width: auto;
 }
 
-.row {
-  margin-left: auto;
-  margin-right: auto;
-	max-width:960px !important;
-  padding-bottom: 20px;
-  border-bottom:1px solid rgba(0,0,0,0.12);
-}
-
-
-.home-template, .post-template, .tag-template, .author-template, .error-template {
-	max-width: 1200px;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.post-template {
-	max-width: 1200px;
-	margin-left:auto;
-	margin-right:auto;
+.posttitle {
+	margin-left:15px;
+	float:left;
 }
 
 .card {
 	margin-bottom:40px !important;
 }
 
-.card-error {
-	float:none;
+.card.large {
+	height: auto !important;
 }
 
-/* read more button on featured posts */
-.card-featured > #read_more_custom {
-  display:none;
+.card-title {
+	font-size:125% !important;
+	padding:5px !important;
+}
+
+/* forbidden icon from error page */
+.card-image > .fa-ban {
+	font-size:20em;
+}
+
+.slider .indicators {
+	position: relative !important;
+	margin-top: 20px !important;
 }
 
 /* **************************************
@@ -348,11 +150,15 @@ strong {
 /* color of clickable header */
 .headerurl {
     text-decoration: none;
-		margin-left:55px;
+		margin-left:20px;
 }
 
 .headerurl:hover {
   text-decoration: none;
+}
+
+nav .brand-logo {
+	line-height:5px;
 }
 
 img.cover {
@@ -363,6 +169,7 @@ img.cover {
 img.logo {
 	height:64px;
 	position:relative;
+	margin-left:1%;
 }
 
 /* **************************************
@@ -371,65 +178,28 @@ img.logo {
 
 *****************************************/
 
-.side-nav {
-  margin-top:20px;
+i.fa.fa-bars {
+	margin-right:35px;
 }
 
 .side-nav full {
     overflow:auto;
 }
 
-
-.side-nav li {
-    height: 55px;
-		padding:0 !important;
-}
-
-nav .button-collapse {
-  margin-right:20px !important;
-}
-
-
-
 /* **************************************
 
-  SITE/CONTENT SIDEBAR
+  CONTENT SIDEBAR
 
 *****************************************/
-
-.card-sidebar {
-	margin: 0px !important;
-	width:100%;
-}
 
 .collection {
 	margin:0px !important;
 }
 
-.widget > ul > li {
-    background-color: #fff;
-    line-height: 1.5rem;
-    padding: 10px 20px;
-    margin: 0;
-    border-bottom: 1px solid #e0e0e0;
-    list-style-type: none !important;
-  }
+.card-sidebar {
+	margin-top: 0px !important;
+}
 
-  .collection-header {
-    list-style-type: none !important;
-    margin-left:0;
-    margin-right:0;
-  }
-
-  .search-box {
-    padding: 15px;
-  }
-
-  .search-box form i {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-  }
 
 /* ######################################
 
@@ -437,33 +207,19 @@ POST/ARTICLE HEADERS
 
 ##########################################*/
 
-
-/* post title */
-.text-left-title {
-	font-size: 28px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 26.3999996185303px;
-	color:white;
-	white-space:normal;
-	overflow:hidden;
-	text-overflow: ellipsis;
-	padding: 7px;
-}
-
 /* post title */
 .text-left-title-featured, .text-left-title-featured-sidebar {
-	font-size: 16px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 26.3999996185303px;
-	padding:10px !important;
-	margin-top:5px;
+	font-size: 120%;
+	padding:15px !important;
 	white-space: normal;
 	overflow:hidden;
 	text-overflow: ellipsis;
+}
+
+/* aligns the sidebar to the top of the page and adapts the content within it */
+.text-left-title-featured-sidebar {
+	margin-top:0px;
+	margin-bottom: 0px;
 }
 
 .text-left-title a {
@@ -475,40 +231,43 @@ POST/ARTICLE HEADERS
   ARTICLE/POST LOOK-N-FEEL
 
 *****************************************/
-article > h1 {
-  	font-size: 30px;
+.card-content > h1 {
+  	font-size: 250%;
     margin-left: 10px;
+		font-family:'Slabo 27px', serif;
 }
 
-article > h2 {
-	font-size: 22px;
+.card-content > h2 {
+	font-size: 200%;
   margin-left: 10px;
+	font-family:'Slabo 27px', serif;
 }
 
-article > h3 {
-	font-size: 20px;
+.card-content > h3 {
+	font-size: 175%;
   margin-left: 10px;
+	font-family:'Slabo 27px', serif;
 }
 
-article > h4 {
-	font-size: 18px;
+.card-content > h4 {
+	font-size: 140%;
   margin-left: 10px;
+	font-family:'Slabo 27px', serif;
 }
 
-article > ul li {
+.card-content > ul li {
   list-style-type: square !important;
   margin-left: 40px;
   margin-right: 40px;
   padding:5px;
-  line-height: 25px;
-  text-align: justify;
+  line-height: 35px;
 }
 
-article > ol li {
+.card-content > ol li {
   margin-left: 40px;
   margin-right: 40px;
   padding:5px;
-  line-height: 25px;
+  line-height: 35px;
   text-align: justify;
 }
 
@@ -520,59 +279,65 @@ article {
 		word-wrap: break-word;
 }
 
-article img {
-    width: 100%;
-    height:auto;
-}
-
-.entry {
-  padding:15px;
-}
-.individual-post {
-	padding:0px !important;
+.card-content > img, .card-content > p > img {
+	max-width: 100%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 20px;
+	margin-top:20px;
 }
 
 .slider {
-	margin-bottom: 25px !important;
+	height: 400px !important;
+}
+
+.slider .slides {
+	height: 350px !important;
 }
 
 .slider .slides li .caption {
 	bottom:0% !important;
-	top:unset !important;
-	left:unset !important;
+	top:auto !important;
+	left:auto !important;
 	width: 100% !important;
 }
 
+.slider .slides li img {
+	object-fit: cover;
+	background-size: contain !important;
+	background-position: center !important;
+	background-color: dimgrey !important;
+	background-repeat: no-repeat !important;
+}
 
 img.content-images-featured:hover, img.content-images:hover {
 	opacity:0.9;
 }
 
-.btn-flat {
-	line-height: 45px !important;
-	height: 45px !important;
-}
-
-.article-footer-img {
-	width:auto;
-	max-width:50%;
-	max-height:100%;
-
-}
-
-.article-footer-img:hover {
-	opacity: 0.9;
+iframe {
+	max-width: 100% !important;
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
 .postdate {
-    font-size: 16px;
-    margin:0px;
-    padding: 15px;
+    font-size: 80%;
+		padding: 10px;
+		position:absolute;
+		top:30px;
+		right:30px;
+		opacity:0.7;
+		z-index:1;
 }
 
 /* add some styling to disqus */
 #disqus_thread {
-padding: 40px;
+padding-left: 40px;
+padding-right: 40px;
 }
 
 
@@ -588,14 +353,7 @@ padding: 40px;
 }
 
 .tags {
-	line-height: 60px;
-}
-
-.chip {
-  margin-left:10px;
-	height:45px !important;
-	line-height: 45px !important;
-	border-radius: 0px !important;
+	line-height:40px;
 }
 
 /* **************************************
@@ -603,24 +361,33 @@ padding: 40px;
 	ARTICLE: AUTHOR look-n-feel
 
 *****************************************/
-
-
-section.author-profile {
-	padding:30px;
-}
-
 .author-profile h4 a {
 	text-decoration: underline;
 }
 
-.comment-author {
-  line-height: 50px;
+.author-profile {
+	min-height:150px;
+	background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
 }
 
-.comments-wrapper {
-  background-color:white;
-  color:black;
-  padding:15px;
+.author-bio a i {
+	color: white;
+}
+
+img.avatar {
+	border-radius: 50px;
+	width:100px;
+	height:100px;
+	float:left;
+	margin-left:5px;
+	margin-right:10px;
+	position:relative;
+	left: 20px;
+	top: 40px;
+	z-index:200;
 }
 
 .avatar-page {
@@ -633,6 +400,19 @@ section.author-profile {
 
 p.author-bio {
 	padding:20px;
+	opacity:0.7;
+	min-height:150px;
+	padding-left:160px;
+	margin-bottom: 0px;
+}
+
+.socialauthor {
+	padding: 15px;
+}
+
+.socialauthor > ul > li {
+	margin-top: 10px;
+	margin-bottom:10px;
 }
 
 /* **************************************
@@ -654,7 +434,11 @@ footer {
     width: 100%;
     overflow: hidden;
     z-index: 999;
-    padding: 20px;
+}
+
+.socialfooter > .right > a {
+	margin: 15px;
+	font-size: 70%;
 }
 
 /* **************************************
@@ -664,45 +448,71 @@ footer {
 *****************************************/
 
 /* For the people that have phones reporting very low resolutions */
-@media (max-width:640px) and (min-width:200px) {
+@media (max-width:600px) and (min-width:200px) {
 	/* make logo image smaller as the navigation bar shrinks at these resolutions */
 	img.logo {
 		height:55px;
 	}
 
-	.text-left-title {
-		font-size:22px;
-	}
-
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
-		margin-top:25px;
-		margin-left: 25px;
-		margin-right: 25px;
+		margin-top:0px;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 
+	p.text-justify {
+		padding-top: 0px;
+		padding-left:15px;
+		padding-right:15px;
+		padding-bottom:15px;
+	}
+
+	.posttitle {
+		margin:10px;
+	}
+
+	.postdate {
+		padding:5px;
+	}
+
+	.pagination, .main-content {
+		margin-bottom: 12px;
+	}
+
+	.author-profile {
+		display:none;
+	}
+
+	.avatar {
+		display:none;
+	}
+
+	.tags {
+		line-height: 50px;
+		padding-bottom: 10px !important;
+	}
+
+	.chip {
+		height: 40px !important;
+		line-height:40px !important;
+	}
 }
 
 /* mobile devices */
 @media (max-width:992px) and (min-width:601px) {
     h1 {
-    	font-size: 18px;
-    }
-
-    /* post title */
-    .text-left-title {
-				font-size:30px;
-        padding:20px;
+    	font-size: 120%;
     }
 
     .content-images, .content-images-individual {
-        width: 100%;
+				object-fit: cover;
     }
 
 			.container-fluid {
 				margin-top:25px;
-				margin-left: 65px;
-				margin-right: 65px;
+				margin-left: 45px;
+				margin-right: 45px;
 			}
 
   }
@@ -711,9 +521,18 @@ footer {
 	@media only screen and (min-width: 993px) {
 	.container-fluid {
 		margin-top:25px;
-		margin-left: 100px;
-		margin-right: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		width:960px;
 	}
+
+	.brand-logo {
+		float:left !important;
+		left: auto !important;
+		margin-left:80px !important;
+	}
+
+
 }
 
 	/* **************************************
@@ -721,28 +540,42 @@ footer {
 	  FONT AWESOME look-n-feel
 
 	*****************************************/
-.fa-user-secret, .fa-pencil-square-o, .fa-calendar {
+.fa-user-secret, .fa-star, .fa-calendar, .fa-twitter, .fa-facebook {
   margin-left:20px;
+  margin-right:20px;
+}
+
+.slides > li > p > .fa-star {
+	margin-left: 5px !important;
+	margin-right: 5px !important;
+	color: orange;
+}
+
+.postdate i {
+	margin-right: 5px;
 }
 
 .postdate > a i {
-	color: white;
 	border-radius: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 3px;
 	margin-top: 3px;
-	padding: 15px;
 }
 
 	/* general styling of pretty much all font-awesome icons */
 	.socialfooter > a i {
 	    color: white;
-	    border-radius: 10px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    margin-bottom: 3px;
-	    margin-top: 3px;
 	    padding: 15px;
 	    transition: all 0.2s ease-in-out;
 	}
+
+		.socialfooter > a i:hover {
+			color:black;
+		}
+
+
+.twitter-tweet {
+	margin-left:auto;
+	margin-right: auto;
+}
