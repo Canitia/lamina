@@ -34,7 +34,7 @@
 
 
                                           <!-- let user enter a comment -->
-                                		<?php //comments_template(); ?>
+                                		<?php comments_template(); ?>
                             </div><!-- close post class div -->
                                 <!-- column end! -->
 
