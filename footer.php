@@ -3,7 +3,7 @@
         <a href="/rss" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
 </div>
     <!-- Compiled and minified JavaScript -->
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-2.2.3.min.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-2.2.4.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/materialize.min.js"></script>
     <script>
     $(document).ready(function(){
