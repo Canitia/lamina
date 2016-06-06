@@ -54,7 +54,7 @@
                                                   } ?>
                                             </a>
                                             <span class="card-title">
-                                              <p class="posttitle"><?php the_title(); ?></p>
+                                              <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
                                               </p></span>
                                           </div>
                                           <div class="card-content">
