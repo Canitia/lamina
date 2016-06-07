@@ -369,14 +369,6 @@ padding-right: 40px;
 	text-decoration: underline;
 }
 
-.author-profile {
-	min-height:150px;
-	background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-}
-
 .author-bio a i {
 	color: white;
 }
