@@ -2,8 +2,9 @@
   <div class="socialfooter">
         <a href="/rss" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
         <p class="right">
-            <a href="https://jadewp.demo.insideuwp.xyz" target="_blank">powered by: Jade for Wordpress</a>
-    </p>
+          <a href="https://insideuwp.xyz/privacy-policy">privacy policy</a>
+          <a href="https://jadewp.demo.insideuwp.xyz" target="_blank">powered by: Jade for Wordpress</a>
+        </p>
 </div>
     <!-- Compiled and minified JavaScript -->
     <script src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/js/jquery-2.2.4.min.js"></script>
