@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 <head>
     <!-- some meta -->
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
     <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_template_directory(); ?>/favicon.ico" />
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- my own css file (style.css) -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" type="text/css" />
@@ -20,6 +21,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo get_feed_link( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+    <title><?php wp_title(); ?></title>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
     <!-- close with wp_head -->
