@@ -200,6 +200,10 @@ i.fa.fa-bars {
 	margin-top: 0px !important;
 }
 
+.card-sidebar > article > ul {
+  margin-top: 5px;
+}
+
 
 /* ######################################
 
