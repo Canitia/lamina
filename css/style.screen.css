@@ -110,8 +110,12 @@ li.pagination-arrows:hover {
 }
 
 p.author-bio {
-	color:white;
-	background-color:black;
+	color:black;
+	background-color:whitesmoke;
+}
+
+.author-bio > a, .author-bio > a i {
+  color: black;
 }
 
 .author-bio a i {
