@@ -3,23 +3,6 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
 
-/**
- * Enqueue a script with jQuery as a dependency.
- */
-
- 	// Add Material scripts and styles
- 	if( !is_admin()){
- 		wp_deregister_script('jquery');
- 		wp_enqueue_script( 'jquery', 'http://code.jquery.com/jquery-2.2.4.min.js', array(), '1.0', false );
-
- 	}
- 	wp_enqueue_style( 'material-style', get_template_directory_uri() . '/css/materialize.min.css' );
- 	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css' );
- 	wp_enqueue_script( 'material-script', get_template_directory_uri() . '/js/materialize.min.js', array(), '1.0', false );
-
-
-
-
 add_theme_support( "title-tag" );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
