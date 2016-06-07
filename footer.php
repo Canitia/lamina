@@ -2,7 +2,7 @@
   <div class="socialfooter">
         <a href="/rss" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
         <p class="right">
-            <a href="https://jadewp.demo.miboutech.com" target="_blank">powered by: Jade for Wordpress</a>
+            <a href="https://jadewp.demo.insideuwp.xyz" target="_blank">powered by: Jade for Wordpress</a>
     </p>
 </div>
     <!-- Compiled and minified JavaScript -->
