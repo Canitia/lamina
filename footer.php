@@ -24,6 +24,7 @@
           interval: 7500
         });
      });
+
     </script>
     <!-- close with Wordpress footer aka adminbar etc. -->
     <?php wp_footer(); ?>
