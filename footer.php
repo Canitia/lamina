@@ -6,7 +6,7 @@
     </p>
 </div>
     <!-- Compiled and minified JavaScript -->
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-2.2.4.min.js"></script>
+    <?php wp_enqueue_script('jquery'); ?>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/materialize.min.js"></script>
     <script>
     $(document).ready(function(){
