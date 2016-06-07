@@ -114,7 +114,7 @@ p.author-bio {
 	background-color:whitesmoke;
 }
 
-.author-bio > a, .author-bio > a i {
+.author-bio a, .author-bio > a i {
   color: black;
 }
 
