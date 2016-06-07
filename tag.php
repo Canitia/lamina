@@ -3,64 +3,59 @@
           <h3><?php single_tag_title(); ?></h3>
           <hr />
           </div>
-               <div class="row">
-               <div class="col s12 m12 l8 main-content">
-                              <?php if ( have_posts() ) : ?>
+
                                   <?php while ( have_posts() ) : the_post(); ?>
-                                    <div class="card">
-                                          <div <?php post_class(); ?>>
-                                              <article>
-          <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
-                                                <div class="card-image">
-                                                  <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                                  <?php if ( has_post_thumbnail() ) {
-                                                                the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
-                                                        } else { ?>
-                                                          <img src="<?php bloginfo('template_directory'); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
-                                                          <?php }; ?>
-                                                  </a>
-                                                  <span class="card-title">
-                                                    <p class="posttitle"><?php the_title(); ?></p>
-                                                    </p></span>
-                                                </div>
-                                                <div class="card-content">
-                                                  <p><?php the_content(); ?></p>
-                                                </div>
-                                                <div class="tags center-align">
-                                                <?php the_tags( '<div class="waves-effect waves-light chip accentcolor2">', '</div><div class="waves-effect waves-light chip accentcolor2">', '</div>' ); ?>
-                                                </div>
-                                                <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
-                                                <section class="author-profile">
-                                                  <p class="author-bio">
-                                                  <strong><i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?></strong>
-                                                    <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
-                                                  <br />
-                                                    <?php echo nl2br(get_the_author_meta('description'));  ?>
-                                                </p>
-                                                </section>
-                                              </article><!-- close article -->
-
-                                                    <!-- let user enter a comment -->
-                                          		<?php comments_template(); ?>
-                                      </div><!-- close post class div -->
-                                    </div>
-                                          <!-- column end! -->
-
-
+                                                <div class="card large">
+                                                  <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                                    <div class="card-image">
+                                                      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                                      <?php if ( has_post_thumbnail() ) {
+                                                                    the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
+                                                            } else { ?>
+                                                              <img src="<?php bloginfo('template_directory'); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
+                                                              <?php }; ?>
+                                                      </a>
+                                                      <span class="card-title">
+                                                        <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="card-content">
+                                                      <?php the_excerpt(); ?>
+                                                    </div>
+                                                  </div>
 
                                       <!-- error handling -->
                                       <?php endwhile; else: ?>
-                                  		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
+                                  		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
                                       <?php endif; ?>
 
-                                      <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
-                                    </div><!-- einde md8 -->
+                                      <!-- navigation?-->
 
-              <div class="col l4 hide-on-med-and-down">
-                  <?php get_sidebar( 'primary' ); ?>
-              </div>
+                                      <ul class="pagination accentcolor2 center-align" role="pagination">
+                                        <?php if( get_previous_posts_link() ) :
 
-            </div><!-- end row -->
+                                        previous_posts_link( '<li class="pagination-arrows newer-posts"><i class="fa fa-arrow-left fa-2x"></i></li>' );
+
+                                        endif; ?>
+
+                                        <li class="active"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo $paged; ?></li>
+                                        <?php if( get_next_posts_link() ) :
+
+                                        next_posts_link( '<li class="pagination-arrows older-posts"><i class="fa fa-arrow-right fa-2x"></i></li>' );
+
+                                        endif; ?>
+                                      </ul>
+
+                                      <!-- navigation?-->
+
+                              </div><!-- einde md8 -->  <!-- column end! -->
+
+                              <!-- second column (widget bar) -->
+                              <div class="col s12 m12 l4 hide-on-med-and-down">
+                                  <?php get_sidebar( 'primary' ); ?>
+                              </div>
+
+              </div><!-- end container inside -->
           </div><!-- container fluid END! -->
 
           <!-- start of footer -->
