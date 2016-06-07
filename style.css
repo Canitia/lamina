@@ -150,7 +150,6 @@ strong {
 /* color of clickable header */
 .headerurl {
     text-decoration: none;
-		margin-left:20px;
 }
 
 .headerurl:hover {
@@ -507,6 +506,10 @@ footer {
 		left: auto !important;
 		margin-left:80px !important;
 	}
+
+  .headerurl {
+    	margin-left:20px;
+  }
 
 
 }
