@@ -1,6 +1,6 @@
 <?php
 if ( ! isset( $content_width ) ) {
-	$content_width = 600;
+	$content_width = 700;
 }
 
 add_theme_support( "title-tag" );
