@@ -60,7 +60,7 @@
                                           <?php } ?>
                                             <span class="card-title">
                                               <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
-                                              </p></span>
+                                              </span>
                                           </div>
                                           <div class="card-content">
                                             <?php the_excerpt(); ?>
