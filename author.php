@@ -1,67 +1,69 @@
-<?php get_header(); ?>
+      <?php get_header(); ?>
+      <div class="tag_heading center-align">
+      <h3><?php
+            $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+            echo $curauth->nickname; ?></h3>
+      <hr />
+      </div>
+               <div class="row">
+               <div class="col s12 m12 l8 main-content">
+                              <?php if ( have_posts() ) : ?>
+                                  <?php while ( have_posts() ) : the_post(); ?>
+                                    <div class="card">
+                                          <div <?php post_class(); ?>>
+                                              <article>
+          <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                                <div class="card-image">
+                                                  <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                                  <?php if ( has_post_thumbnail() ) {
+                                                                the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
+                                                        } else { ?>
+                                                          <img src="<?php bloginfo('template_directory'); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
+                                                          <?php }; ?>
+                                                  </a>
+                                                  <span class="card-title">
+                                                    <p class="posttitle"><?php the_title(); ?></p>
+                                                    </p></span>
+                                                </div>
+                                                <div class="card-content">
+                                                  <p><?php the_content(); ?></p>
+                                                </div>
+                                                <div class="tags center-align">
+                                                <?php the_tags( '<div class="waves-effect waves-light chip accentcolor2">', '</div><div class="waves-effect waves-light chip accentcolor2">', '</div>' ); ?>
+                                                </div>
+                                                <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
+                                                <section class="author-profile">
+                                                  <p class="author-bio">
+                                                  <strong><i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?></strong>
+                                                    <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
+                                                  <br />
+                                                    <?php echo nl2br(get_the_author_meta('description'));  ?>
+                                                </p>
+                                                </section>
+                                              </article><!-- close article -->
 
-     <div class="row">
-          <div class="tag_heading center-align">
-          <h3><?php
-$curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
- echo $curauth->nickname; ?></h3>
-          <hr />
-          </div>
-
-     <div class="col s12 m12 l8 main-content">
-                    <?php if ( have_posts() ) : ?>
-                        <?php while ( have_posts() ) : the_post(); ?>
-
-                                    <div <?php post_class(); ?>>
-                                    <article>
-                                      <?php
-                                      if ( has_post_thumbnail() ) {
-                                        the_post_thumbnail();
-                                      }?>
-                                      <h1 class="text-left-title center-align"></i><?php the_title(); ?></h1>
-                                      <h4 class="text-left-title-featured center-align">
-                                        <p class="postdate center-align">
-                                          <i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time>
-                                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();    ?>
-                                          <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
-                                        </p>
-                                      </h4>
-                                                            <div class="entry clear"><!--. entry-->
-                                                                <?php the_excerpt(); ?>
-
-                                                            </div><!--. entry-->
-
-                                                        <!--.post-footer-->
-                                                        <footer>
-                                                          <div class="tags center-align">
-                                                          <?php the_tags( '<div class="chip accentcolor">', '</div><div class="chip accentcolor">', '</div>' ); ?>
-                                                                </div>
-                                                        </footer>
-                                                            <!--.post-footer-->
-                                    </article><!-- close article -->
-
-
-                                          <!-- let user enter a comment -->
-                                		<?php //comments_template(); ?>
-                            </div><!-- close post class div -->
-                                <!-- column end! -->
-
-
-
-                            <!-- error handling -->
-                            <?php endwhile; else: ?>
-                        		      <p><?php echo wpautop( 'Sorry, this page can not be found' ); ?></p>
-                            <?php endif; ?>
-
-                            </div><!-- einde md8 -->
+                                                    <!-- let user enter a comment -->
+                                          		<?php comments_template(); ?>
+                                      </div><!-- close post class div -->
+                                    </div>
+                                          <!-- column end! -->
 
 
-    <div class="col l4 hide-on-med-and-down">
-        <?php get_sidebar( 'primary' ); ?>
-    </div>
 
-  </div><!-- end row -->
-</div><!-- container fluid END! -->
+                                      <!-- error handling -->
+                                      <?php endwhile; else: ?>
+                                  		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
+                                      <?php endif; ?>
 
-<!-- start of footer -->
-<?php get_footer(); ?>
+                                      <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
+                                    </div><!-- einde md8 -->
+
+              <div class="col l4 hide-on-med-and-down">
+                  <?php get_sidebar( 'primary' ); ?>
+              </div>
+
+            </div><!-- end row -->
+          </div><!-- container fluid END! -->
+
+          <!-- start of footer -->
+          <?php get_footer(); ?>
