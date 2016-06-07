@@ -417,6 +417,17 @@ p.author-bio {
 	margin-bottom:10px;
 }
 
+.tags {
+  line-height: 50px;
+  padding-bottom: 10px !important;
+}
+
+.chip {
+  height: 40px !important;
+  line-height:40px !important;
+  margin-left: 5px !important;
+}
+
 /* **************************************
 
   PAGINATION
@@ -482,16 +493,6 @@ footer {
 		margin-bottom: 12px;
 	}
 
-	.tags {
-		line-height: 50px;
-		padding-bottom: 10px !important;
-	}
-
-	.chip {
-		height: 40px !important;
-		line-height:40px !important;
-    margin-left: 5px !important;
-	}
 }
 
 /* mobile devices */
