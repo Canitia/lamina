@@ -1,3 +1,4 @@
+<li class="collection-header center"><h1 class="widget-title text-left-title-featured-sidebar accentcolor2 center-align">Search</h1></li>
 <div class="search-box">
   <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
       <label>
