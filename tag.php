@@ -34,8 +34,6 @@
                                     </div>
                                           <!-- column end! -->
 
-
-
                                       <!-- error handling -->
                                       <?php endwhile; else: ?>
                                   		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
