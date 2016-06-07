@@ -18,7 +18,7 @@
                                          <?php if ( has_post_thumbnail() ) {
                                                        the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
                                                } else { ?>
-                                                 <img src="<?php bloginfo('template_directory'); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
+                                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
                                                  <?php }; ?>
                                          </a>
                                          <span class="card-title">
