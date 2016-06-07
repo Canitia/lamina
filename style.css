@@ -291,8 +291,8 @@ article {
 	margin-top:20px;
 }
 
-.slider {
-  margin-bottom: 50px !important;
+.slider .slides {
+  height: 350px !important;
 }
 
 .slider .slides li .caption {
