@@ -19,7 +19,7 @@ function my_register_sidebars() {
 		array(
 			'id' => 'primary',
 			'name' => __( 'Primary' ),
-			'description' => __( 'A short description of the sidebar.' ),
+			'description' => __( 'Main sidebar.' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<li class="collection-header center"><h1 class="widget-title text-left-title-featured-sidebar accentcolor2 center-align">',
