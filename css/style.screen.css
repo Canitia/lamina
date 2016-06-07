@@ -87,10 +87,6 @@ p > a:focus, p > a:hover, .btn > a:hover
   text-decoration: none;
 }
 
-section.author-profile {
-	background-color:whitesmoke;
-}
-
 .pagination li.active {
 	background-color: #0D47A1 !important;
 }
