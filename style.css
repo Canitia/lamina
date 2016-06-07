@@ -295,10 +295,6 @@ article {
 	height: 400px !important;
 }
 
-.slider .slides {
-	height: 350px !important;
-}
-
 .slider .slides li .caption {
 	bottom:0% !important;
 	top:auto !important;
