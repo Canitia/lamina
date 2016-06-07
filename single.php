@@ -26,9 +26,10 @@
                                       <div class="tags center-align">
                                       <?php the_tags( '<div class="waves-effect waves-light chip accentcolor2">', '</div><div class="waves-effect waves-light chip accentcolor2">', '</div>' ); ?>
                                       </div>
-                                      <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
+
                                       <section class="author-profile hide-on-small">
                                         <p class="author-bio">
+                                      <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
                                         <strong><i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?></strong>
                                           <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
                                         <br />
