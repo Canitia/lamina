@@ -42,14 +42,14 @@ blockquote {
    color:white !important;
  }
 
-p > a, .headerurl:hover, .pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover, .widget > ul > li > a {
+p > a, .headerurl:hover, .pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover {
 	color: black !important;
 }
 
 
-p > a:focus, p > a:hover, .btn > a:hover
+p > a:focus, p > a:hover, .btn > a:hover, .widget > ul > li > a
 {
-  color:grey  !important;
+  color:dimgrey  !important;
 }
 
 .headerurl, .side-nav a, .text-left-title-featured, .text-left-title-featured a, .text-left-title a:hover, .text-left-title-featured a:hover, .postdate a, .tag_heading, .chip a, .pagination, .pagination li a, .pagination li, footer a, .btn > a {
