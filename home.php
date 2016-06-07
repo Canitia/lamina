@@ -5,7 +5,7 @@
                           <div class="main-content col s12 m12 l8">
 
                             <div class="slider">
-                                          <ul class="slides">
+                                <ul class="slides">
                                  <?php
                                  $args = array(
                                  	'posts_per_page'      => 3,
@@ -21,6 +21,7 @@
                                  	while ( $the_query->have_posts() ) {
                                  		$the_query->the_post();
                                     echo '<li>';
+                                    echo '<p class="postdate right"><i class="fa fa-star"></i> Featured</p>';
                                      if ( has_post_thumbnail() ) : ?>
                                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php the_post_thumbnail('large'); ?>
