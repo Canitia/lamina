@@ -1,7 +1,7 @@
 /*
 Theme Name: Jade for Wordpress
 Theme URI: http://wordpress.org/themes/jadeforwordpress
-Author: MiBouTech
+Author: InsideUWP
 Author URI: https://www.miboutech.com/
 Description: Elegant yet simple designed responsive UI. Features support for WP menus, all kinds of posts and a sticky post slider to show the posts/images that need more attention.
 Version: 1.0
@@ -612,4 +612,13 @@ footer {
     position: absolute;
     right: 30px;
     top: 30px;
+  }
+
+  .size-auto,
+  .size-full,
+  .size-large,
+  .size-medium,
+  .size-thumbnail {
+  	max-width: 100%;
+  	height: auto;
   }
