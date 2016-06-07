@@ -39,8 +39,6 @@
                                   		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
                                       <?php endif; ?>
 
-                                      <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
-
                                       <!-- navigation?-->
 
                                       <ul class="pagination accentcolor2 center-align" role="pagination">
