@@ -386,9 +386,6 @@ img.avatar {
 	float:left;
 	margin-left:5px;
 	margin-right:10px;
-	position:relative;
-	left: 20px;
-	top: 40px;
 	z-index:200;
 }
 
