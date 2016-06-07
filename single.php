@@ -31,7 +31,7 @@
                                         <p class="author-bio">
                                         <strong><i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?></strong>
                                           <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
-                                          <i class="fa fa-info fa-2x" aria-hidden="true"></i><a href="<?php the_author_meta('user_url');?>"><?php the_author_meta('user_url'); ?></a>
+                                          <i class="fa fa-info" aria-hidden="true"></i><a href="<?php the_author_meta('user_url');?>"><?php the_author_meta('user_url'); ?></a>
 
                                         <br />
                                           <?php get_the_author_meta('description'); ?>
