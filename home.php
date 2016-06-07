@@ -50,14 +50,12 @@
                                         <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
                                           <div class="card-image">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                            <?php  if ( has_post_thumbnail() ) {
+                                            <?php if ( has_post_thumbnail() ) {
                                                           the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
-                                                  }
-                                                  ?>
+                                                  } else { ?>
+                                                    <img src="<?php bloginfo('template_directory'); ?>/images/default-image.jpg" alt="<?php the_title_attribute(); ?>" />
+                                                    <?php }; ?>
                                             </a>
-                                          <?php else { ?>
-                                            <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri();?>/images/no-pic-available.jpg" title="no image available" alt="No image available" />
-                                          <?php } ?>
                                             <span class="card-title">
                                               <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
                                               </span>
