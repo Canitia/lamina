@@ -18,7 +18,7 @@
                                         </a>
                                         <span class="card-title">
                                           <p class="posttitle"><?php the_title(); ?></p>
-                                          </p></span>
+                                          </span>
                                       </div>
                                       <div class="card-content">
                                         <p><?php the_content(); ?></p>
