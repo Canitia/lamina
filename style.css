@@ -292,7 +292,6 @@ article {
 }
 
 .slider {
-	height: 400px !important;
   margin-bottom: 50px !important;
 }
 
@@ -304,11 +303,7 @@ article {
 }
 
 .slider .slides li img {
-	object-fit: cover;
-	background-size: contain !important;
-	background-position: center !important;
-	background-color: dimgrey !important;
-	background-repeat: no-repeat !important;
+
 }
 
 img.content-images-featured:hover, img.content-images:hover {
