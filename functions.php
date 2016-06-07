@@ -23,7 +23,7 @@ function my_register_sidebars() {
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<li class="collection-header center"><h1 class="widget-title text-left-title-featured-sidebar accentcolor2 center-align">',
-			'after_title' => '</li></h1>'
+			'after_title' => '</h1></li>'
 		)
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
