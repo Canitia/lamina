@@ -27,7 +27,7 @@
                                       <?php the_tags( '<div class="waves-effect waves-light chip accentcolor2">', '</div><div class="waves-effect waves-light chip accentcolor2">', '</div>' ); ?>
                                       </div>
 
-                                      <section class="author-profile hide-on-small">
+                                      <section class="author-profile">
                                         <p class="author-bio">
                                       <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
                                         <strong><i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?></strong>
