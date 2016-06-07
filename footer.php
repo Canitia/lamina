@@ -1,4 +1,4 @@
-<footer class="page-footer accentcolor hide-on-small-only">
+<footer class="page-footer accentcolor">
   <div class="socialfooter">
         <a href="/rss" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
         <p class="right">
