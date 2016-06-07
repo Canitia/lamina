@@ -4,7 +4,7 @@
                     <?php if ( have_posts() ) : ?>
                           <div class="main-content col s12 m12 l8">
 
-                            <div class="slider hide-on-small-only">
+                            <div class="slider">
                                           <ul class="slides">
                                  <?php
                                  $args = array(
