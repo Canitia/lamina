@@ -8,24 +8,24 @@
              <div class="main-content col s12 m12 l8">
            <?php while ( have_posts() ) : the_post(); ?>
 
-                         <div class="card hoverable">
-                           <article>
-                                 <div>
-                                   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                   <?php if ( has_post_thumbnail() ) {
-                                                 the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
-                                         } else { ?>
-                                           <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
-                                           <?php }; ?>
-                                   </a>
-                               </div>
-                               <div>
-                                         <h1 class="text-left-title center-align"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
-                                         <p class="postdate center-align"><i class="fa fa-clock-o"></i><time> <?php echo get_the_date(); ?></time></p>
-                                                   <?php the_excerpt(); ?>
-                               </div>
-                           </article>
-                           </div>
+             <div class="card large">
+               <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                 <div class="card-image">
+                   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                   <?php if ( has_post_thumbnail() ) {
+                                 the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
+                         } else { ?>
+                           <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
+                           <?php }; ?>
+                   </a>
+                   <span class="card-title">
+                     <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+                     </span>
+                 </div>
+                 <div class="card-content">
+                   <?php the_excerpt(); ?>
+                 </div>
+               </div>
 
                <!-- error handling -->
                <?php endwhile; else: ?>
