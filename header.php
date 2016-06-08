@@ -38,8 +38,8 @@
         <?php if ( function_exists( 'the_custom_logo' ) ) {
             the_custom_logo();
         }?>
-        <p class="brand-logo center" style="<?php echo get_header_textcolor(); ?>">
-            <a href="<?php echo home_url();  ?>" class="headerurl"><?php bloginfo('name'); ?></a>
+        <p class="brand-logo center">
+            <a href="<?php echo home_url();  ?>" class="headerurl" style="<?php echo get_header_textcolor(); ?>"><?php bloginfo('name'); ?></a>
         </p>
 
          <ul id="nav-mobile" class="right hide-on-med-and-down">
