@@ -12,7 +12,7 @@ $args = array(
 	'width'         => 960,
 	'height'        => 360,
 	'default-text-color'     => '#ffffff',
-  'header-text'            => false,
+  'header-text'            => true,
 	'default-image' => get_template_directory_uri() . '/images/header.png',
 	'uploads'       => true,
 );
