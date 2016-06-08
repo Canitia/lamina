@@ -6,13 +6,11 @@
                           <ul class="slides">
                            <?php
                            $args = array(
-                            'posts_per_page'      => 3,
-                            'post__in'            => get_option( 'sticky_posts' ),
-                            'ignore_sticky_posts' => 0,
+                           	'posts_per_page' => 3,
+                           	'post__in'  => get_option( 'sticky_posts' ),
+                           	'ignore_sticky_posts' => 1
                            );
-
-                           // The Query
-                           $the_query = new WP_Query( $args );
+                           $query = new WP_Query( $args );
 
                            // The Loop
                            if ( $the_query->have_posts() ) {
