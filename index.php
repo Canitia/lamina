@@ -10,7 +10,7 @@
                                  $args = array(
                                  	'posts_per_page'      => 3,
                                  	'post__in'            => get_option( 'sticky_posts' ),
-                                 	'ignore_sticky_posts' => 1,
+                                 	'ignore_sticky_posts' => 0,
                                  );
 
                                  // The Query
