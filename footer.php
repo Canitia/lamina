@@ -21,7 +21,7 @@
 
         $('.slider').slider({
           indicators: true,
-          transition: 350,
+          transition: 150,
           interval: 7500
         });
      });
