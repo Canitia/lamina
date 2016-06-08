@@ -275,7 +275,7 @@ POST/ARTICLE HEADERS
   text-align: justify;
 }
 
-.wp-caption {
+.wp-caption, .gallery-caption {
 	background-color: whitesmoke;
 	margin-bottom:15px;
 }
