@@ -46,7 +46,7 @@
                           <div class="main-content col s12 m12 l8">
 
                         <?php
-                        $querynosticky = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) );
+                        $querynosticky = new WP_Query( array( 'ignore_sticky_posts' => 1 ) );
 
 
                         while ( $querynosticky->have_posts() ) : $querynosticky->the_post();
