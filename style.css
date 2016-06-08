@@ -316,6 +316,7 @@ article {
 .slider .slides li img {
     background-repeat: no-repeat;
     height:auto !important;
+		max-height:400px !important;
 }
 
 
