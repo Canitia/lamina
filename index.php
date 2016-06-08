@@ -28,7 +28,7 @@
                                           } else { ?>
                                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
                                             <?php }; ?>
-                                    </a>
+                                    </a><?php
                                     echo '<div class="caption center-align"><h3 class="text-left-title-featured accentcolor2">';
                                     the_title();
                                     echo '</h3></div></li>';
