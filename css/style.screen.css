@@ -117,3 +117,7 @@ p.author-bio {
 .author-bio a i {
 	color: white;
 }
+
+li.pagination-arrows.newer-posts i:hover, li.pagination-arrows.older-posts i:hover {
+  color:black;
+}
