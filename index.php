@@ -21,15 +21,14 @@
                                  	while ( $the_query->have_posts() ) {
                                  		$the_query->the_post();
                                     echo '<li>';
-                                    echo '<p class="postdate right"><i class="fa fa-star"></i> Featured</p>';
-                                     if ( has_post_thumbnail() ) : ?>
-                                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                            <?php
-                                                          the_post_thumbnail( 'large', array( 'class' => 'responsive-img' ) );
-                                             ?>
-                                        </a>
-
-                                    <?php endif;
+                                    echo '<p class="postdate right"><i class="fa fa-star"></i> Featured</p>';?>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                    <?php if ( has_post_thumbnail() ) {
+                                                  the_post_thumbnail( 'large', array( 'class' => 'responsive-img' ) );
+                                          } else { ?>
+                                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
+                                            <?php }; ?>
+                                    </a>
                                     echo '<div class="caption center-align"><h3 class="text-left-title-featured accentcolor2">';
                                     the_title();
                                     echo '</h3></div></li>';
