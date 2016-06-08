@@ -13,9 +13,9 @@
                            $query = new WP_Query( $args );
 
                            // The Loop
-                           if ( $the_query->have_posts() ) {
-                            while ( $the_query->have_posts() ) {
-                              $the_query->the_post();
+                           if ( $query->have_posts() ) {
+                            while ( $query->have_posts() ) {
+                              $query->the_post();
                               echo '<li>';
                               echo '<p class="postdate right"><i class="fa fa-star"></i> Featured</p>';?>
                               <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
