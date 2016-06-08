@@ -276,9 +276,12 @@ POST/ARTICLE HEADERS
 
 .wp-caption {
 	background-color: whitesmoke;
+	margin-bottom:15px;
+}
+
+.wp-caption-text {
 	font-family:'Slabo 27px';
 	font-weight:bold;
-	margin-bottom:15px;
 }
 
 /* general dimensions of posts/articles */
