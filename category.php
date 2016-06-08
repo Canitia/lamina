@@ -11,12 +11,13 @@
                          <div class="card hoverable">
                            <article>
                                  <div>
-                                   <?php if ( has_post_thumbnail() ) : ?>
-                                       <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                           <?php the_post_thumbnail(); ?>
-                                       </a>
-                                   <?php endif; ?>
-                                     </a>
+                                   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                   <?php if ( has_post_thumbnail() ) {
+                                                 the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
+                                         } else { ?>
+                                           <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
+                                           <?php }; ?>
+                                   </a>
                                </div>
                                <div>
                                          <h1 class="text-left-title center-align"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
