@@ -314,7 +314,6 @@ article {
 }
 
 .slider .slides li img {
-    background-size:100% auto !important;
     background-repeat: no-repeat;
     height:auto !important;
     width: 100% !important;
