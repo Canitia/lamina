@@ -49,7 +49,7 @@
                         $querynosticky = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) );
 
 
-                        while ( $querynosticky->have_posts() ) : the_post();
+                        while ( $querynosticky->have_posts() ) : $querynosticky->the_post();
                         ?>
                                       <div class="card large">
                                         <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
