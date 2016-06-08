@@ -302,12 +302,6 @@ article {
 	margin-top:20px;
 }
 
-.slider {
-	max-width:80% !important;
-	margin-left: auto !important;
-	margin-right:auto !important;
-}
-
 .slider .slides li .caption {
 	bottom:0% !important;
 	top:auto !important;
