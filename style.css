@@ -308,10 +308,6 @@ article {
 	margin-right:auto !important;
 }
 
-.slider .slides {
-  height: 350px !important;
-}
-
 .slider .slides li .caption {
 	bottom:0% !important;
 	top:auto !important;
