@@ -45,7 +45,12 @@
 
                           <div class="main-content col s12 m12 l8">
 
-                        <?php while ( have_posts() ) : the_post(); ?>
+                        <?php
+                        $querynosticky = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) );
+
+
+                        while ( $querynosticky->have_posts() ) : the_post();
+                        ?>
                                       <div class="card large">
                                         <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
                                           <div class="card-image">
