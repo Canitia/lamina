@@ -313,12 +313,6 @@ article {
 	width: 100% !important;
 }
 
-.slider .slides li img {
-    background-repeat: no-repeat;
-    height:auto !important;
-		max-height:400px !important;
-}
-
 
 img.content-images-featured:hover, img.content-images:hover {
 	opacity:0.9;
