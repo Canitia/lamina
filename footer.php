@@ -2,7 +2,7 @@
   <div class="socialfooter">
         <a href="/rss" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
         <p class="right">
-          <a href="https://insideuwp.xyz/privacy-policy">privacy policy</a>
+          <a href="<?php echo home_url();?>/privacy-policy">privacy policy</a>
           <a href="https://jadewp.demo.insideuwp.xyz" target="_blank">powered by: Jade for Wordpress</a>
         </p>
 </div>
