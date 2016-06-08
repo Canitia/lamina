@@ -628,6 +628,14 @@ footer {
 	    margin: 5px 20px 20px 0;
 	}
 
+	.commentlist .bypostauthor {
+		background: whitesmoke;
+	}
+
+	.commentlist li ul.children li.bypostauthor {
+		background: whitesmoke;
+	}
+
 	/* Text meant only for screen readers. */
 	.screen-reader-text {
 		clip: rect(1px, 1px, 1px, 1px);
