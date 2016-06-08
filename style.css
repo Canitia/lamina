@@ -274,6 +274,13 @@ POST/ARTICLE HEADERS
   text-align: justify;
 }
 
+.wp-caption {
+	background-color: whitesmoke;
+	font-family:'Slabo 27px';
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
 /* general dimensions of posts/articles */
 article {
     margin-left: auto;
