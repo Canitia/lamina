@@ -467,7 +467,7 @@ footer {
 	}
 
 	.posttitle {
-		margin:10px;
+		margin:5px;
 	}
 
 	.postdate {
@@ -478,6 +478,13 @@ footer {
 		margin-bottom: 12px;
 	}
 
+	.card {
+		margin-bottom: 0 !important;
+	}
+
+	.card-content {
+		display: none;
+	}
 }
 
 /* mobile devices */
