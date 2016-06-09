@@ -43,12 +43,10 @@
                                         </ul>
                             </div><!-- .slider -->
                         <?php
-                        if ( get_query_var('paged') ) { $paged = get_query_var('paged'); }
-                        elseif ( get_query_var('page') ) { $paged = get_query_var('page'); }
-                        else { $paged = 1; }
                         $argsnosticky = array(
+                            'post_type' => 'post',
                             'ignore_sticky_posts' => 1,
-                            'paged' => $paged
+                            'paged' => get_query_var( 'paged' )
                         );
 
                         $querynosticky = new WP_Query( $argsnosticky );
