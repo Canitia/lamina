@@ -74,16 +74,16 @@ function theme_prefix_the_custom_logo() {
 
 }
 
-function mytheme_infinite_scroll_init() {
+function insideuwp_infinite_scroll_init() {
 add_theme_support( 'infinite-scroll', array(
 'container' => 'main-content',
-'render' => 'mytheme_infinite_scroll_render',
+'render' => 'insideuwp_infinite_scroll_render',
 'footer' => 'page-footer',
 ) );
 }
-add_action( 'init', 'mytheme_infinite_scroll_init' );
+add_action( 'init', 'insideuwp_infinite_scroll_init' );
 
-function mytheme_infinite_scroll_render() {
+function insideuwp_infinite_scroll_render() {
 get_template_part( 'loop' );
 }
 
