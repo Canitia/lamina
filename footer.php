@@ -5,7 +5,7 @@
           <a href="<?php echo home_url();?>/privacy-policy">privacy policy</a>
           <a href="https://jadewp.demo.insideuwp.xyz" target="_blank">powered by: Jade for Wordpress</a>
         </p>
-</div>
+      </div>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
