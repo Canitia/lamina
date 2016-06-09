@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
     <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
-    <link rel="shortcut icon" type="image/png" href="<?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }?>" />
+    <link rel="icon" type="image/png" href="<?php the_custom_logo(); ?>" />
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
