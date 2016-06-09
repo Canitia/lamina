@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
   <div class="row">
-    <div class="main-content col s12 m12 l8">
                     <?php
                     $args = array(
                      'posts_per_page' => 3,
@@ -10,6 +9,7 @@
                     $query = new WP_Query( $args );
 
                     if ( $query->have_posts() ) : ?>
+                          <div class="main-content col s12 m12 l8">
                             <div class="slider hide-on-small-only">
                                 <ul class="slides">
                                  <?php
@@ -44,7 +44,14 @@
                                         </ul>
                             </div><!-- .slider -->
                         <?php
-                        if ( have_posts() ) : while ( have_posts() ) : the_post();
+                        $argsnosticky = array(
+                            'post_type' => 'post',
+                            'ignore_sticky_posts' => 1
+                        );
+
+                        $querynosticky = new WP_Query( $argsnosticky );
+
+                        if ( $querynosticky->have_posts() ) : while ( $querynosticky->have_posts() ) : $querynosticky->the_post();
                         ?>
                                       <div class="card large">
                                         <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
@@ -77,7 +84,7 @@
                         <?php get_sidebar( 'primary' ); ?>
                     </div>
 
-    </div><!-- end row inside -->
+    </div><!-- end container inside -->
 </div><!-- container fluid END! -->
 
 <!-- start of footer -->
