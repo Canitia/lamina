@@ -82,7 +82,7 @@ function themeslug_enqueue_script() {
 
 add_theme_support( 'infinite-scroll', array(
 'container' => 'main-content',
-'footer' => 'page-footer',
+'footer' => 'pagination',
 ) );
 
 ?>
