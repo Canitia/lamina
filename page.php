@@ -12,7 +12,7 @@
 
                     $querynosticky = new WP_Query( $argsnosticky );
 
-                    if ( have_posts() ) : ?>
+                    if ( $querynosticky->have_posts() ) : ?>
                         <?php while ( $querynosticky->have_posts() ) : $querynosticky->the_post(); ?>
 
                                     <div <?php post_class(); ?>>
