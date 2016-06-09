@@ -2,6 +2,9 @@
      <div class="row">
           <div class="tag_heading center-align">
           <h3><?php single_cat_title(); ?></h3>
+          <p class="center-align">
+            <?php echo category_description(); ?>
+          </p>
           <hr />
           </div>
        <?php if ( have_posts() ) : ?>
