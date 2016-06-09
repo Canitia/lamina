@@ -7,8 +7,6 @@
         </p>
 </div>
     <!-- Compiled and minified JavaScript -->
-    <script src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/js/jquery-2.2.4.min.js"></script>
-    <script src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/js/materialize.min.js"></script>
     <script>
     $(document).ready(function(){
       // Activate the side menu
