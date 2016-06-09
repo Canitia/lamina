@@ -11,7 +11,7 @@ function insideuwp_enqueue_style() {
 }
 
 function insideuwp_enqueue_script() {
-	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'jquery', get_stylesheet_directory_uri() . '/js/jquery-2.2.4.min.js', false );
 	wp_enqueue_script( 'materialize', get_stylesheet_directory_uri() . '/js/materialize.min.js', false );
 	wp_enqueue_script( 'sidenav', get_stylesheet_directory_uri() . '/js/sidenav.js', false );
 }
