@@ -19,9 +19,6 @@ function insideuwp_theme_name_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'insideuwp_theme_name_scripts' );
 
-
-$handle, $src = false, $deps = array(), $ver = false, $media = 'all'
-
 add_theme_support( "title-tag" );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
