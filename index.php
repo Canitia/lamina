@@ -76,9 +76,7 @@
                             <?php endwhile; else: ?>
                         		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
                             <?php endif; ?>
-                            <!-- navigation?-->
 
-                            <!-- navigation?-->
                     </div><!-- einde md8 -->  <!-- column end! -->
 
                     <!-- second column (widget bar) -->
