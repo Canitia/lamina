@@ -48,7 +48,6 @@
                         else { $paged = 1; }
                         $argsnosticky = array(
                             'ignore_sticky_posts' => 1,
-                            'posts_per_page' => 8,
                             'paged' => $paged
                         );
 
