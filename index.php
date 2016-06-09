@@ -77,7 +77,7 @@
                         <?php get_sidebar( 'primary' ); ?>
                     </div>
 
-    </div><!-- end container inside -->
+    </div><!-- end row inside -->
 </div><!-- container fluid END! -->
 
 <!-- start of footer -->
