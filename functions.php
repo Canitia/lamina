@@ -80,4 +80,9 @@ function themeslug_enqueue_script() {
 	wp_enqueue_script( 'materializejs', trailingslashit( get_template_directory_uri() ) . 'js/materialize.min.js', false );
 }
 
+add_theme_support( 'infinite-scroll', array(
+'container' => 'main-content',
+'footer' => 'page-footer',
+) );
+
 ?>
