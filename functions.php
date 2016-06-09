@@ -74,17 +74,9 @@ function theme_prefix_the_custom_logo() {
 
 }
 
-function insideuwp_infinite_scroll_init() {
 add_theme_support( 'infinite-scroll', array(
-'container' => 'main-content',
-'render' => 'insideuwp_infinite_scroll_render',
-'footer' => 'page-footer',
+    'container' => 'main-content',
+    'footer' => 'page-footer',
 ) );
-}
-add_action( 'init', 'insideuwp_infinite_scroll_init' );
-
-function insideuwp_infinite_scroll_render() {
-get_template_part( 'loop' );
-}
 
 ?>
