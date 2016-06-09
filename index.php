@@ -1,12 +1,16 @@
 <?php get_header(); ?>
 
-  <div class="row">    
+  <div class="row">  
     <div class="main-content col s12 m12 l8">
                         <?php
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
                                       <div class="card large">
-                                        <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                        <p class="postdate right">
+                                          <?php if ( is_sticky() ) {?>
+                                                 <i class="fa fa-star"></i>
+                                            <?php }?>
+                                        <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
                                           <div class="card-image">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
