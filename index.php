@@ -98,7 +98,7 @@
                             </ul>
 
                             <!-- navigation?-->
-
+                            <?php wp_reset_postdata(); ?>
                     </div><!-- einde md8 -->  <!-- column end! -->
 
                     <!-- second column (widget bar) -->
