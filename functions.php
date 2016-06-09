@@ -76,9 +76,9 @@ function theme_prefix_the_custom_logo() {
 
 function mytheme_infinite_scroll_init() {
 add_theme_support( 'infinite-scroll', array(
-'container' => 'content',
+'container' => 'main-content',
 'render' => 'mytheme_infinite_scroll_render',
-'footer' => 'wrapper',
+'footer' => 'page-footer',
 ) );
 }
 
