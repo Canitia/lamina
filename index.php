@@ -51,7 +51,7 @@
 
                         $querynosticky = new WP_Query( $argsnosticky );
 
-                        if ( $querynosticky->have_posts() ) : while ( $querynosticky->have_posts() ) : the_post();
+                        if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
                                       <div class="card large">
                                         <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
