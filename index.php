@@ -44,7 +44,13 @@
                             </div><!-- .slider -->
                         <?php
                         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                        $querynosticky = new WP_Query( array( 'ignore_sticky_posts' => 1, 'posts_per_page' => 8 ) );
+                        $args = array(
+                            'ignore_sticky_posts' => 1,
+                            'posts_per_page' => 8,
+                            'paged' => $paged
+                        );
+
+                        $querynosticky = new WP_Query( $args );
 
 
                         while ( $querynosticky->have_posts() ) : $querynosticky->the_post();
