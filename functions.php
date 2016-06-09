@@ -74,6 +74,12 @@ function theme_prefix_the_custom_logo() {
 
 }
 
+function themeslug_enqueue_script() {
+	wp_enqueue_script( 'materializecss', trailingslashit( get_template_directory_uri() ) . 'css/materialize.min.css', false );
+	wp_enqueue_script( 'jquery', trailingslashit( get_template_directory_uri() ) . 'js/jquery-2.2.4.min.js', false );
+	wp_enqueue_script( 'materializejs', trailingslashit( get_template_directory_uri() ) . 'js/materialize.min.js', false );
+}
+
 function mytheme_infinite_scroll_init() {
 add_theme_support( 'infinite-scroll', array(
 'container' => 'main-content',
@@ -88,9 +94,4 @@ get_template_part( 'loop' );
 
 add_action( 'init', 'mytheme_infinite_scroll_init' );
 
-function themeslug_enqueue_script() {
-	wp_enqueue_script( 'materializecss', trailingslashit( get_template_directory_uri() ) . 'css/materialize.min.css', false );
-	wp_enqueue_script( 'jquery', trailingslashit( get_template_directory_uri() ) . 'js/jquery-2.2.4.min.js', false );
-	wp_enqueue_script( 'materializejs', trailingslashit( get_template_directory_uri() ) . 'js/materialize.min.js', false );
-}
 ?>
