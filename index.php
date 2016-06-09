@@ -44,13 +44,6 @@
                                         </ul>
                             </div><!-- .slider -->
                         <?php
-                        $argsnosticky = array(
-                            'post_type' => 'post',
-                            'ignore_sticky_posts' => 1
-                        );
-
-                        $querynosticky = new WP_Query( $argsnosticky );
-
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
                                       <div class="card large">
