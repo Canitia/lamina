@@ -45,6 +45,7 @@
                         <?php
                         $argsnosticky = array(
                             'post_type' => 'post',
+                            'posts_per_page' => 8,
                             'ignore_sticky_posts' => 1,
                             'paged' => get_query_var( 'paged' )
                         );
