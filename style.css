@@ -3,7 +3,7 @@ Theme Name: Jade for Wordpress
 Theme URI: http://wordpress.org/themes/jadeforwordpress
 Author: InsideUWP
 Author URI: https://www.insideuwp.xyz
-Description: Elegant yet simple designed responsive UI. Features support for WP menus, all kinds of posts and a sticky post slider to show the posts/images that need more attention.
+Description: Elegant yet simple designed responsive UI. Features support for WP menus, all kinds of posts, tags, menu and others.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -136,11 +136,6 @@ strong {
 /* forbidden icon from error page */
 .card-image > .fa-ban {
 	font-size:20em;
-}
-
-.slider .indicators {
-	position: relative !important;
-	margin-top: 20px !important;
 }
 
 /* **************************************
@@ -301,14 +296,6 @@ article {
 	margin-bottom: 20px;
 	margin-top:20px;
 }
-
-.slider .slides li .caption {
-	bottom:0% !important;
-	top:auto !important;
-	left:auto !important;
-	width: 100% !important;
-}
-
 
 img.content-images-featured:hover, img.content-images:hover {
 	opacity:0.9;
