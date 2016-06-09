@@ -44,14 +44,12 @@
                                         </ul>
                             </div><!-- .slider -->
                         <?php
-                        $argsnosticky = array(
+                        $args = array(
                             'post_type' => 'post',
-                            'posts_per_page' => 8,
                             'ignore_sticky_posts' => 1,
-                            'paged' => get_query_var( 'paged' )
                         );
 
-                        $querynosticky = new WP_Query( $argsnosticky );
+                        $querynosticky = new WP_Query( $args );
 
                         if ( $querynosticky->have_posts() ) : while ( $querynosticky->have_posts() ) : $querynosticky->the_post();
                         ?>
