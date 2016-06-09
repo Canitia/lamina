@@ -80,18 +80,4 @@ function themeslug_enqueue_script() {
 	wp_enqueue_script( 'materializejs', trailingslashit( get_template_directory_uri() ) . 'js/materialize.min.js', false );
 }
 
-function mytheme_infinite_scroll_init() {
-add_theme_support( 'infinite-scroll', array(
-'container' => 'main-content',
-'render' => 'mytheme_infinite_scroll_render',
-'footer' => 'container-fluid',
-) );
-}
-
-function mytheme_infinite_scroll_render() {
-get_template_part( 'loop' );
-}
-
-add_action( 'init', 'mytheme_infinite_scroll_init' );
-
 ?>
