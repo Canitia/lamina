@@ -6,7 +6,7 @@
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
                                       <div class="card large">
-                                        <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                        <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time></p>
                                           <div class="card-image">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
