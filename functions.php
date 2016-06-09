@@ -83,4 +83,8 @@ add_theme_support( 'infinite-scroll', array(
 }
 add_action( 'init', 'mytheme_infinite_scroll_init' );
 
+function mytheme_infinite_scroll_render() {
+get_template_part( 'loop' );
+}
+
 ?>
