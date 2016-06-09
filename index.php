@@ -51,7 +51,7 @@
 
                         $querynosticky = new WP_Query( $argsnosticky );
 
-                        if ( $querynosticky->have_posts() ) : while ( $querynosticky->have_posts() ) : $querynosticky->the_post();
+                        if ( $querynosticky->have_posts() ) : while ( $querynosticky->have_posts() ) : $querynosticky-the_post();
                         ?>
                                       <div class="card large">
                                         <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
@@ -76,6 +76,7 @@
                             <?php endwhile; else: ?>
                         		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
                             <?php endif; ?>
+                            <?php wp_reset_postdata(); ?>
                             <!-- navigation?-->
 
                             <ul class="pagination accentcolor2 center-align" role="pagination">
