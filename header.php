@@ -14,7 +14,7 @@
 
     <!-- other used items -->
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/materialize.min.css">
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo get_feed_link( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
