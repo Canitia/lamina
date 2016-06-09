@@ -43,7 +43,9 @@
                                         </ul>
                             </div><!-- .slider -->
                         <?php
-                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        if ( get_query_var('paged') ) { $paged = get_query_var('paged'); }
+                        elseif ( get_query_var('page') ) { $paged = get_query_var('page'); }
+                        else { $paged = 1; }
                         $argsnosticky = array(
                             'ignore_sticky_posts' => 1,
                             'posts_per_page' => 8,
