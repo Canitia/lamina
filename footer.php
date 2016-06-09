@@ -6,19 +6,6 @@
           <a href="https://jadewp.demo.insideuwp.xyz" target="_blank">powered by: Jade for Wordpress</a>
         </p>
 </div>
-    <!-- Compiled and minified JavaScript -->
-    <script>
-    $(document).ready(function(){
-      // Activate the side menu
-      // Initialize collapse button
-      $('.button-collapse').sideNav({
-            edge: 'right', // Choose the horizontal origin
-            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-          }
-        );
-     });
-
-    </script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
