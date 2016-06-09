@@ -5,7 +5,7 @@ if ( ! isset( $content_width ) ) {
 
 function insideuwp_enqueue_style() {
 	wp_enqueue_style( 'core', 'style.css', false );
-	wp_enqueue_style( 'screen', trailingslashit( get_template_directory_uri() ) . 'css/style.screen.css', false );
+	wp_enqueue_style( 'screen', get_stylesheet_directory_uri() . 'css/style.screen.css', false );
 }
 
 function insideuwp_enqueue_script() {
