@@ -270,6 +270,10 @@ POST/ARTICLE HEADERS
   text-align: justify;
 }
 
+blockquote ul li, blockquote ol li {
+	line-height:30px;
+}
+
 .wp-caption, .gallery-caption {
 	background-color: whitesmoke;
 	margin-bottom:15px;
