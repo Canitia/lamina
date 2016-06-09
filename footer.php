@@ -18,12 +18,6 @@
             closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
           }
         );
-
-        $('.slider').slider({
-          indicators: true,
-          transition: 250,
-          interval: 7500
-        });
      });
 
     </script>
