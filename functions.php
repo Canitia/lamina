@@ -81,6 +81,11 @@ add_theme_support( 'infinite-scroll', array(
 'footer' => 'wrapper',
 ) );
 }
+
+function mytheme_infinite_scroll_render() {
+get_template_part( 'loop' );
+}
+
 add_action( 'init', 'mytheme_infinite_scroll_init' );
 
 ?>
