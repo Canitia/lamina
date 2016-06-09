@@ -14,7 +14,17 @@
 
   ga('create', 'UA-63270110-1', 'auto');
   ga('send', 'pageview');
-
+</script>
+<script>
+$(document).ready(function(){
+  // Activate the side menu
+  // Initialize collapse button
+  $('.button-collapse').sideNav({
+        edge: 'right', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      }
+    );
+ });
 </script>
 
     <!-- close with Wordpress footer aka adminbar etc. -->
