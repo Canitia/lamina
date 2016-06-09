@@ -74,4 +74,9 @@ function theme_prefix_the_custom_logo() {
 
 }
 
+add_theme_support( 'infinite-scroll', array(
+    'container' => 'main-content',
+    'footer' => 'page-footer',
+) );
+
 ?>
