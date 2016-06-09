@@ -8,8 +8,6 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory(); ?>/favicon.ico" />
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- my own css file (style.css) -->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.screen.css" type="text/css" type="text/css" />
 
     <!-- other used items -->
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
