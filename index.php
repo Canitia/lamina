@@ -43,7 +43,7 @@
                                         </ul>
                             </div><!-- .slider -->
                         <?php
-                        $querynosticky = new WP_Query( array( 'ignore_sticky_posts' => 1 ) );
+                        $querynosticky = new WP_Query( array( 'ignore_sticky_posts' => 1, 'posts_per_page' => 8, ) );
 
 
                         while ( $querynosticky->have_posts() ) : $querynosticky->the_post();
