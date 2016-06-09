@@ -9,8 +9,6 @@ function insideuwp_enqueue_style() {
 }
 
 function insideuwp_enqueue_script() {
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
-
 	wp_enqueue_script( 'jquery');
 	wp_enqueue_script( 'materialize', get_stylesheet_directory_uri() . '/css/materialize.min.css', false );
 	wp_enqueue_script( 'materialize', get_stylesheet_directory_uri() . '/js/materialize.min.js', false );
