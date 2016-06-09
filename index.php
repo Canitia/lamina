@@ -46,7 +46,7 @@
                         <?php
                         $args = array(
                             'post_type' => 'post',
-                            'ignore_sticky_posts' => 1,
+                            'ignore_sticky_posts' => 1
                         );
 
                         $querynosticky = new WP_Query( $args );
