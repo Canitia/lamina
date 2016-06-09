@@ -2,18 +2,8 @@
 
      <div class="row">
      <div class="col s12 m12 l8 main-content">
-                    <?php
-                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    $argsnosticky = array(
-                        'ignore_sticky_posts' => 1,
-                        'posts_per_page' => 8,
-                        'paged' => $paged
-                    );
-
-                    $querynosticky = new WP_Query( $argsnosticky );
-
-                    if ( $querynosticky->have_posts() ) : ?>
-                        <?php while ( $querynosticky->have_posts() ) : $querynosticky->the_post(); ?>
+                    <?php if ( have_posts() ) : ?>
+                        <?php while ( have_posts() ) : the_post(); ?>
 
                                     <div <?php post_class(); ?>>
                                     <article>
