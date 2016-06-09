@@ -3,6 +3,9 @@
      <div class="row">
           <div class="tag_heading center-align">
           <h3><?php single_tag_title(); ?></h3>
+          <p class="center-align">
+            <?php echo tag_description(); ?>
+          </p>
           <hr />
           </div>
 
