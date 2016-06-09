@@ -76,7 +76,7 @@
                             <?php endwhile; else: ?>
                         		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
                             <?php endif; ?>
-
+                            <?php wp_reset_postdata(); ?>
                             <!-- navigation?-->
 
                             <ul class="pagination accentcolor2 center-align" role="pagination">
@@ -95,7 +95,6 @@
                             </ul>
 
                             <!-- navigation?-->
-                            <?php wp_reset_postdata(); ?>
                     </div><!-- einde md8 -->  <!-- column end! -->
 
                     <!-- second column (widget bar) -->
