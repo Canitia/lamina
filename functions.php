@@ -84,7 +84,7 @@ function mytheme_infinite_scroll_init() {
 add_theme_support( 'infinite-scroll', array(
 'container' => 'main-content',
 'render' => 'mytheme_infinite_scroll_render',
-'footer' => 'page-footer',
+'footer' => 'container-fluid',
 ) );
 }
 
