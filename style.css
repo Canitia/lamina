@@ -13,6 +13,46 @@ Text Domain: jade-for-wordpress
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/* ##############################
+
+  GENERIC SITE COLORS
+
+  #############################*/
+.accentcolor {
+background-color: #0d47a1 !important;
+}
+
+.accentcolor2, .side-nav a:hover, .search-submit {
+  background-color: #1565c0 !important;
+}
+
+.accentcolor-error {
+  background-color: red !important;
+}
+
+p > a {
+	color: black !important;
+}
+
+.pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover {
+	color: black !important;
+}
+
+.widget ul li:hover, .collection .collection-item a:hover, .main-content > .text-left-title,  .postdate > a, .author-profile h4, .text-left-title a, article > h1, article > h2, article > h3, article > h4, .postdate a:hover, .chip a:hover, .author-url-post-head, .widget > ul > li > a:hover  {
+	color:#979797 !important;
+}
+
+p > a:focus, p > a:hover, .btn > a:hover, .widget > ul > li > a
+{
+  color:dimgrey  !important;
+}
+
+.headerurl, .side-nav a, .text-left-title-featured, .text-left-title-featured a, .text-left-title a:hover, .text-left-title-featured a:hover, .postdate a, .tag_heading, .chip a, .pagination, .pagination li a, .pagination li, footer a, .btn > a {
+      color: white !important;
+}
+
+
 /* **************************************
 
   GENERAL FONT / ELEMENT
@@ -22,6 +62,7 @@ html body {
 line-height: 0 !important;
 font-size:16px;
 font-family: Roboto,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+background-color: dimgrey;
 }
 
 h1 {
@@ -66,6 +107,8 @@ blockquote {
 	position:relative;
 	padding-top:20px;
 	padding-bottom:20px;
+	background-color: whitesmoke;
+	border-left: 0 !important;
 }
 
 blockquote:before, blockquote:after {
@@ -120,6 +163,15 @@ strong {
 	float:left;
 }
 
+.posttitle > a {
+	color: white !important;
+  text-decoration: none;
+}
+
+.posttitle > a:hover {
+  text-decoration: none;
+}
+
 .card {
 	margin-bottom:40px !important;
 }
@@ -131,6 +183,9 @@ strong {
 .card-title {
 	font-size:125% !important;
 	padding:5px !important;
+	background-color: black;
+	opacity: 0.8;
+	width: 100%;
 }
 
 /* forbidden icon from error page */
@@ -181,6 +236,14 @@ i.fa.fa-bars {
     overflow:auto;
 }
 
+.side-nav {
+  background-color: black !important;
+}
+
+.side-nav a:hover {
+  background-color: #0d47a1;
+}
+
 /* **************************************
 
   CONTENT SIDEBAR
@@ -215,10 +278,19 @@ POST/ARTICLE HEADERS
 	text-overflow: ellipsis;
 }
 
+.text-left-title-featured {
+	opacity: 0.8;
+	background-color: black !important;
+	margin:0px;
+	padding:25px !important;
+}
+
 /* aligns the sidebar to the top of the page and adapts the content within it */
 .text-left-title-featured-sidebar {
 	margin-top:0px;
 	margin-bottom: 0px;
+	background-color: #1565c0 !important;
+	color:white !important;
 }
 
 .text-left-title a {
@@ -322,6 +394,8 @@ iframe {
 		right:30px;
 		opacity:0.7;
 		z-index:1;
+		background-color:black;
+		color:white;
 }
 
 /* add some styling to disqus */
@@ -372,6 +446,16 @@ img.avatar {
 
 p.author-bio {
 	padding:20px;
+	color:black;
+	background-color:whitesmoke;
+}
+
+.author-bio > strong > a, .author-bio > a i {
+  color: black;
+}
+
+.author-bio a i {
+	color: white;
 }
 
 .socialauthor {
@@ -412,6 +496,18 @@ li.pagination-arrows.older-posts {
 	float:right;
 }
 
+.pagination li.active {
+	background-color: #0D47A1 !important;
+}
+
+li.pagination-arrows:hover {
+	background-color: #1565C0 !important;
+}
+
+li.pagination-arrows.newer-posts i:hover, li.pagination-arrows.older-posts i:hover {
+  color:black;
+}
+
 /* **************************************
 
   FOOTER
@@ -426,6 +522,14 @@ footer {
 .socialfooter > .right > a {
 	margin: 15px;
 	font-size: 70%;
+}
+
+.socialfooter > a {
+    color: #00bfff;
+}
+
+.socialfooter > a:hover {
+    color: black;
 }
 
 /* **************************************
