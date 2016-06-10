@@ -35,7 +35,7 @@ p > a {
 	color: black !important;
 }
 
-.pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover {
+.pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover,  .postdate a {
 	color: black !important;
 }
 
@@ -48,7 +48,7 @@ p > a:focus, p > a:hover, .btn > a:hover, .widget > ul > li > a
   color:dimgrey  !important;
 }
 
-.headerurl, .side-nav a, .text-left-title-featured, .text-left-title-featured a, .text-left-title a:hover, .text-left-title-featured a:hover, .postdate a, .tag_heading, .chip a, .pagination, .pagination li a, .pagination li, footer a, .btn > a {
+.headerurl, .side-nav a, .text-left-title-featured, .text-left-title-featured a, .text-left-title a:hover, .text-left-title-featured a:hover, .tag_heading, .chip a, .pagination, .pagination li a, .pagination li, footer a, .btn > a {
       color: white !important;
 }
 
