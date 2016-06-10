@@ -509,9 +509,10 @@ footer {
 		margin-left:80px !important;
 	}
 
-.custom-logo {
-	margin-right: 20px;
-}
+  .headerurl {
+    	margin-left:20px;
+  }
+
 
 }
 
