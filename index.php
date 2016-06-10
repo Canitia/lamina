@@ -21,6 +21,7 @@
                                           <div class="card-content hide-on-small-only">
                                             <p class="postdate right">
                                               <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                              <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
                                               <?php if( is_sticky() ) {
                                                 ?><i class="fa fa-star"></i> Featured
                                             <?php  } ?>
