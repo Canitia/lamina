@@ -400,13 +400,6 @@ iframe {
 .postdate {
     font-size: 80%;
 		padding: 10px;
-		position:absolute;
-		top:30px;
-		right:30px;
-		opacity:0.7;
-		z-index:1;
-		background-color:black;
-		color:white;
 }
 
 /* add some styling to disqus */
