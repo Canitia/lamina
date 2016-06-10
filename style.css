@@ -158,6 +158,10 @@ strong {
   width: auto;
 }
 
+.col .s12 .m4 .l12 {
+	padding: 0 !important;
+}
+
 .posttitle {
 	margin-left:15px;
 	float:left;
