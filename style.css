@@ -197,6 +197,10 @@ strong {
 	font-size:20em;
 }
 
+.card-image {
+	padding: 0 !important;
+}
+
 /* **************************************
 
   HEADER
