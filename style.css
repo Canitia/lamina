@@ -266,6 +266,10 @@ i.fa.fa-bars {
 	margin-top: 0px !important;
 }
 
+.card-sidebar ul {
+	margin: 0.5rem 0 1rem 0 !important;
+}
+
 .card-sidebar > article > ul {
   margin-top: 5px;
 }
