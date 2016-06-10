@@ -573,6 +573,10 @@ footer {
 	.card {
 		margin-bottom: 15px !important;
 	}
+
+	p {
+		font-size: 110%;
+	}
 }
 
 /* mobile devices */
