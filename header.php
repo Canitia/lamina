@@ -27,48 +27,40 @@
 
 <!-- start of the actual header -->
 <header>
-    <div class="navbar-fixed">
-    <nav class="accentcolor">
-      <div class="nav-wrapper">
-        <?php if ( function_exists( 'the_custom_logo' ) ) {
-            the_custom_logo();
-        }?>
-        <p class="brand-logo center">
-            <a href="<?php echo home_url();  ?>" class="headerurl" style="color: #<?php echo get_header_textcolor(); ?> !important;"><?php bloginfo('name'); ?></a>
-        </p>
+
+  <nav class="navbar navbar-default accentcolor" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <?php
-    wp_nav_menu( array(
-        'menu'              => 'primary',
-        'theme_location'    => 'primary',
-        'depth'             => 2,
-        'container'         => 'div',
-        'container_class'   => 'collapse navbar-collapse',
-'container_id'      => 'bs-example-navbar-collapse-1',
-        'menu_class'        => 'navbar-fixed',
-        'fallback_cb'       => 'wp_materialise_navwalker::fallback',
-        'walker'            => new wp_materialise_navwalker())
-    );
-?>
+        <?php if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+        }?>
+        <p class="brand-logo center">
+            <a href="<?php echo home_url();  ?>" class="headerurl" style="color: #<?php echo get_header_textcolor(); ?> !important;"><?php bloginfo('name'); ?></a>
+        </p>
+      </div>
 
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
-           <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-         </ul>
-         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="fa fa-bars" aria-hidden="true"></i></a>
-
-<ul id="slide-out" class="side-nav">
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-</ul>
-
-</div>
-</nav>
-
-</div>
+          <?php
+              wp_nav_menu( array(
+                  'menu'              => 'primary',
+                  'theme_location'    => 'primary',
+                  'depth'             => 2,
+                  'container'         => 'div',
+                  'container_class'   => 'collapse navbar-collapse',
+          'container_id'      => 'bs-example-navbar-collapse-1',
+                  'menu_class'        => 'nav navbar-nav',
+                  'fallback_cb'       => 'wp_materialise_navwalker::fallback',
+                  'walker'            => new wp_materialise_navwalker())
+              );
+          ?>
+      </div>
+  </nav>
 </header>
 <div class="container-fluid">
 <!-- <img src="<?php header_image(); ?>" height="<?php // echo get_custom_header()->height; ?>" width="<?php //echo get_custom_header()->width;?>" class="center-align"  alt="header image" /> -->
