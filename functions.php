@@ -10,7 +10,6 @@ if ( ! isset( $content_width ) ) {
 
 function insideuwp_theme_name_scripts() {
 	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css', false );
-	wp_enqueue_style( 'screen', get_stylesheet_directory_uri() . '/css/style.screen.css', false );
 	wp_enqueue_style( 'materialize', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css', false );
 	wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.min.css', false );
 	wp_enqueue_script( 'jquery' );
