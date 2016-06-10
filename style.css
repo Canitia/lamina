@@ -591,6 +591,10 @@ footer {
 				margin-right: 12%;
 			}
 
+			.card-title {
+				margin: 2px !important;
+			}
+
   }
 
 	/* tablet devices */
