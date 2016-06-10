@@ -36,6 +36,25 @@
         <p class="brand-logo center">
             <a href="<?php echo home_url();  ?>" class="headerurl" style="color: #<?php echo get_header_textcolor(); ?> !important;"><?php bloginfo('name'); ?></a>
         </p>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <?php
+    wp_nav_menu( array(
+        'menu'              => 'primary',
+        'theme_location'    => 'primary',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => 'collapse navbar-collapse',
+'container_id'      => 'bs-example-navbar-collapse-1',
+        'menu_class'        => 'navbar-fixed',
+        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+        'walker'            => new wp_bootstrap_navwalker())
+    );
+?>
 
          <ul id="nav-mobile" class="right hide-on-med-and-down">
            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
