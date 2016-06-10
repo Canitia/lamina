@@ -6,8 +6,10 @@
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
                           <div class="row card large">
-                                      <div class="col s12 m4 l12 image-medium">
-                                          <div class="card-image">
+                              <div class="col s12 m4 l12 image-medium">
+
+                                        <div class="valign-wrapper">                                      
+                                          <div class="card-image valign">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
                                                           the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
@@ -27,6 +29,7 @@
                                               </p>
                                           </div>
                                         </div>
+                                </div>
                                           <div class="card-content main-excerpt col s12 m8 l12">
                                             <?php the_excerpt(); ?>
                                           </div>
