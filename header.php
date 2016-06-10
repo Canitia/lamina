@@ -27,29 +27,28 @@
 
 <!-- start of the actual header -->
 <header>
-    <div class="navbar-fixed">
-    <nav class="accentcolor">
-      <div class="nav-wrapper">
-        <?php if ( function_exists( 'the_custom_logo' ) ) {
-            the_custom_logo();
-        }?>
+  <nav class="navbar navbar-default accentcolor" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
         <p class="brand-logo center">
             <a href="<?php echo home_url();  ?>" class="headerurl" style="color: #<?php echo get_header_textcolor(); ?> !important;"><?php bloginfo('name'); ?></a>
         </p>
+      </div>
+      <?php if ( function_exists( 'the_custom_logo' ) ) {
+          the_custom_logo();
+      }?>
 
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
-           <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-         </ul>
-         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse right"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
-<ul id="slide-out" class="side-nav">
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-</ul>
-
-</div>
-</nav>
-
-</div>
+      <ul id="slide-out" class="side-nav">
+       <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+      </ul>
+      </div>
+  </nav>
 </header>
 <div class="container-fluid">
 <!-- <img src="<?php header_image(); ?>" height="<?php // echo get_custom_header()->height; ?>" width="<?php //echo get_custom_header()->width;?>" class="center-align"  alt="header image" /> -->
