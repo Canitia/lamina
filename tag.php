@@ -1,16 +1,14 @@
 <?php get_header(); ?>
 
      <div class="row">
-          <div class="tag_heading center-align">
-          <h3><?php single_tag_title(); ?></h3>
-          <p class="center-align">
-            <?php echo tag_description(); ?>
-          </p>
-          <hr />
-          </div>
-
-               <div class="row">
                <div class="col s12 m12 l8 main-content">
+                 <div class="tag_heading center-align">
+                 <h3><?php single_tag_title(); ?></h3>
+                 <p class="center-align">
+                   <?php echo tag_description(); ?>
+                 </p>
+                 <hr />
+                 </div>
                               <?php if ( have_posts() ) : ?>
                                   <?php while ( have_posts() ) : the_post(); ?>
                                     <div class="card">
