@@ -8,7 +8,7 @@
                           <div class="row card large">
                               <div class="col s12 m4 l12 image-medium">
 
-                                        <div class="valign-wrapper">                                      
+                                        <div class="valign-wrapper">
                                           <div class="card-image valign">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
@@ -30,7 +30,7 @@
                                           </div>
                                         </div>
                                 </div>
-                                          <div class="card-content main-excerpt col s12 m8 l12">
+                                          <div class="card-content col s12 m8 l12 hide-on-small-only">
                                             <?php the_excerpt(); ?>
                                           </div>
                                 </div>
