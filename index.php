@@ -5,11 +5,14 @@
                         <?php
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
-                          <div class="row card large">
-                              <div class="col s12 m4 l12 image-medium">
-
-                                        <div class="valign-wrapper">
-                                          <div class="card-image valign">
+                                      <div class="card large">
+                                        <p class="postdate right">
+                                          <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                          <?php if( is_sticky() ) {
+                                            ?><i class="fa fa-star"></i>
+                                        <?php  } ?>
+                                        </p>
+                                          <div class="card-image">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
                                                           the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
@@ -20,20 +23,11 @@
                                             <span class="card-title">
                                               <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
                                               </span>
-
-                                              <p class="postdate right">
-                                                <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
-                                                <?php if( is_sticky() ) {
-                                                  ?><i class="fa fa-star"></i>
-                                              <?php  } ?>
-                                              </p>
                                           </div>
-                                        </div>
-                                </div>
-                                          <div class="card-content col s12 m8 l12 hide-on-small-only">
+                                          <div class="card-content main-excerpt">
                                             <?php the_excerpt(); ?>
                                           </div>
-                                </div>
+                                        </div>
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
