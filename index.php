@@ -5,7 +5,7 @@
                         <?php
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
-                          <div class="row">
+                          <div class="row card">
                                       <div class="card large col s12 m4 l12">
                                           <div class="card-image">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
