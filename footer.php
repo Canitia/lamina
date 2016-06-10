@@ -6,6 +6,15 @@
           <a href="https://jadewp.demo.insideuwp.xyz" target="_blank">powered by: Jade for Wordpress</a>
         </p>
       </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {
+              families: ['Slabo+27px']
+            }
+          });
+        </script>
     <!-- close with Wordpress footer aka adminbar etc. -->
     <?php wp_footer(); ?>
 </footer>
