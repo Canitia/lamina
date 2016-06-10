@@ -49,7 +49,7 @@
           <?php
               wp_nav_menu( array(
                   'menu'              => 'primary',
-                  'theme_location'    => 'primary',
+                  'theme_location'    => 'menu',
                   'depth'             => 2,
                   'container'         => 'div',
                   'container_class'   => 'collapse navbar-collapse',
