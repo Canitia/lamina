@@ -158,10 +158,6 @@ strong {
   width: auto;
 }
 
-.col .s12 .m4 .l12 {
-	padding: 0 !important;
-}
-
 .posttitle {
 	margin-left:15px;
 	float:left;
@@ -195,14 +191,6 @@ strong {
 /* forbidden icon from error page */
 .card-image > .fa-ban {
 	font-size:20em;
-}
-
-.card-image {
-	padding: 0 !important;
-}
-
-.image-medium {
-	padding: 0 !important;
 }
 
 /* **************************************
@@ -574,10 +562,6 @@ footer {
 		margin:15px;
 	}
 
-	.card-title {
-		padding: 2px !important;
-	}
-
 	.postdate {
 		padding:5px;
 	}
@@ -588,6 +572,10 @@ footer {
 
 	.card {
 		margin-bottom: 15px !important;
+	}
+
+	.main-excerpt {
+		display: none;
 	}
 
 }
