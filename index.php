@@ -22,12 +22,12 @@
                                             <p class="postdate right">
                                               <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
                                               <?php if( is_sticky() ) {
-                                                ?><i class="fa fa-star"></i>
+                                                ?><i class="fa fa-star"></i> Featured
                                             <?php  } ?>
                                             </p>
 
                                             <?php the_excerpt(); ?>
-                                            
+
                                           </div>
                                         </div>
 
