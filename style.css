@@ -499,6 +499,11 @@ footer {
 			.card-image {
 				float: left ;
 				margin-right: -19%;
+				width: 71%;
+			}
+
+			.card.large .card-image {
+				max-height:100% !important;
 			}
 
 			.card.large {
