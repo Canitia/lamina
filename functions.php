@@ -1,4 +1,3 @@
-// Register Custom Navigation Walker
 <?php
 require_once('wp_materialise_navwalker.php');
 
