@@ -26,10 +26,11 @@
                                               <?php  } ?>
                                               </p>
                                           </div>
+                                        </div>
                                           <div class="card-content main-excerpt col s12 m8 l12">
                                             <?php the_excerpt(); ?>
                                           </div>
-                                        </div>
+                                </div>
                                 </div>
 
                             <!-- error handling -->
