@@ -31,14 +31,13 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
+        <?php if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+        }?>
         <p class="brand-logo center">
             <a href="<?php echo home_url();  ?>" class="headerurl" style="color: #<?php echo get_header_textcolor(); ?> !important;"><?php bloginfo('name'); ?></a>
         </p>
       </div>
-      <?php if ( function_exists( 'the_custom_logo' ) ) {
-          the_custom_logo();
-      }?>
-
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
       </ul>
