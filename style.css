@@ -574,9 +574,10 @@ footer {
 		margin-bottom: 15px !important;
 	}
 
-	.card-content {
+	.main-excerpt {
 		display: none;
 	}
+
 }
 
 /* mobile devices */
