@@ -31,7 +31,6 @@
                                             <?php the_excerpt(); ?>
                                           </div>
                                 </div>
-                                </div>
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
