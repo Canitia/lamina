@@ -1,7 +1,4 @@
 <?php
-require_once('wp_materialise_navwalker.php');
-
-
 if ( ! isset( $content_width ) ) {
 	$content_width = 700;
 }
