@@ -24,7 +24,7 @@
                                               <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
                                               </span>
                                           </div>
-                                          <div class="card-content main-excerpt">
+                                          <div class="card-content hide-on-small-only">
                                             <?php the_excerpt(); ?>
                                           </div>
                                         </div>
