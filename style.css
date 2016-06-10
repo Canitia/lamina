@@ -574,6 +574,10 @@ footer {
 		margin:15px;
 	}
 
+	.card-title {
+		padding: 2px !important;
+	}
+
 	.postdate {
 		padding:5px;
 	}
