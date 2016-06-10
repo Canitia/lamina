@@ -5,13 +5,8 @@
                         <?php
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
-                                      <div class="card large">
-                                        <p class="postdate right">
-                                          <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
-                                          <?php if( is_sticky() ) {
-                                            ?><i class="fa fa-star"></i>
-                                        <?php  } ?>
-                                        </p>
+                          <div class="row">
+                                      <div class="card large col s12 m4 l12">
                                           <div class="card-image">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
@@ -23,11 +18,19 @@
                                             <span class="card-title">
                                               <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
                                               </span>
+
+                                              <p class="postdate right">
+                                                <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                                <?php if( is_sticky() ) {
+                                                  ?><i class="fa fa-star"></i>
+                                              <?php  } ?>
+                                              </p>
                                           </div>
-                                          <div class="card-content main-excerpt">
+                                          <div class="card-content main-excerpt col s12 m8 l12">
                                             <?php the_excerpt(); ?>
                                           </div>
                                         </div>
+                                </div>
 
                             <!-- error handling -->
                             <?php endwhile; else: ?>
