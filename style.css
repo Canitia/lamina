@@ -305,25 +305,25 @@ POST/ARTICLE HEADERS
 .card-content > h1 {
   	font-size: 250%;
     margin-left: 10px;
-		font-family:'Slabo 27px', serif;
+		font-weight: 300;
 }
 
 .card-content > h2 {
 	font-size: 200%;
   margin-left: 10px;
-	font-family:'Slabo 27px', serif;
+	font-weight: 300;
 }
 
 .card-content > h3 {
 	font-size: 175%;
   margin-left: 10px;
-	font-family:'Slabo 27px', serif;
+	font-weight: 300;
 }
 
 .card-content > h4 {
 	font-size: 140%;
   margin-left: 10px;
-	font-family:'Slabo 27px', serif;
+	font-weight: 300;
 }
 
 .card-content > ul li {
@@ -352,7 +352,6 @@ blockquote ul li, blockquote ol li {
 }
 
 .wp-caption-text {
-	font-family:'Slabo 27px';
 	font-weight:bold;
 }
 
