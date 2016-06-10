@@ -59,7 +59,6 @@ p > a:focus, p > a:hover, .btn > a:hover, .widget > ul > li > a
 
 *****************************************/
 html body {
-line-height: 0 !important;
 font-size:112%;
 font-family: Roboto,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
 background-color: dimgrey;
