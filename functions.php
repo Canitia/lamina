@@ -18,7 +18,7 @@ function insideuwp_theme_name_scripts() {
 	wp_register_script('jquery', ("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"), false, '3.0.0', true);
 	wp_enqueue_script('jquery');
 	}
-	
+
 	wp_enqueue_script( 'materialize', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js', array('jquery'), false, true );
 	wp_enqueue_script( 'sidenav', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery', 'materialize'), false, true );
 }
