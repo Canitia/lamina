@@ -51,8 +51,8 @@
         'container_class'   => 'collapse navbar-collapse',
 'container_id'      => 'bs-example-navbar-collapse-1',
         'menu_class'        => 'navbar-fixed',
-        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-        'walker'            => new wp_bootstrap_navwalker())
+        'fallback_cb'       => 'wp_materialise_navwalker::fallback',
+        'walker'            => new wp_materialise_navwalker())
     );
 ?>
 
