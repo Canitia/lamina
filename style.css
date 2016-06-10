@@ -492,6 +492,36 @@ footer {
 				margin-right: 45px;
 			}
 
+			.card-image {
+				float: left;
+				margin-right: -19%;
+			}
+
+			.card.large {
+				height: 200px !important;
+			}
+
+			.card .card-image img {
+				width: 71% !important;
+			}
+
+			.postdate {
+				top: initial;
+				bottom: 10px;
+			}
+
+			.card .card-title {
+				width: 71% !important;
+			}
+
+			.card-title {
+				font-size: 105% !important;
+			}
+
+			.posttitle {
+				margin: 5px;
+			}
+
   }
 
 	/* tablet devices */
