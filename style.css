@@ -176,13 +176,6 @@ strong {
 	margin-bottom:40px !important;
 }
 
-.card:hover
-{
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);
-}
-
 .card.large {
 	height: auto !important;
 }
@@ -604,6 +597,13 @@ footer {
 
 			.posttitle {
 				margin: 12px !important;
+			}
+
+			.card:hover
+			{
+			        -webkit-transform: scale(1.1);
+			        -ms-transform: scale(1.1);
+			        transform: scale(1.1);
 			}
 
   }
