@@ -31,11 +31,7 @@ background-color: #0d47a1 !important;
   background-color: red !important;
 }
 
-p > a {
-	color: black !important;
-}
-
-.pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover,  .postdate a {
+.pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover,  .postdate a, p > a {
 	color: black !important;
 }
 
