@@ -59,19 +59,19 @@ background-color: #ebebeb;
 }
 
 h1 {
-	font-size: 200%;
+	font-size: 175%;
 }
 
 h2 {
-	font-size: 180%;
+	font-size: 155%;
 }
 
 h3 {
-	font-size: 165%;
+	font-size: 140%;
 }
 
 h4 {
-	font-size: 140%;
+	font-size: 125%;
 }
 
 p {
@@ -363,25 +363,25 @@ POST/ARTICLE HEADERS
 
 *****************************************/
 .card-content > h1 {
-  	font-size: 200%;
+  	font-size: 175%;
     margin-left: 10px;
 		font-weight: 300;
 }
 
 .card-content > h2 {
-	font-size: 180%;
+	font-size: 155%;
   margin-left: 10px;
 	font-weight: 300;
 }
 
 .card-content > h3 {
-	font-size: 165%;
+	font-size: 140%;
   margin-left: 10px;
 	font-weight: 300;
 }
 
 .card-content > h4 {
-	font-size: 140%;
+	font-size: 125%;
   margin-left: 10px;
 	font-weight: 300;
 }
