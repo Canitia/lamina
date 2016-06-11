@@ -59,7 +59,9 @@ $args = array(
 );
 add_theme_support( 'custom-background', $args );
 
-
+/**
+ * sidebar
+ */
 function my_register_sidebars() {
 
 	/* Register the 'primary' sidebar. */
@@ -91,6 +93,10 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+
+/**
+ * add custom site logo (to header)
+ */
 function theme_prefix_setup() {
 
 	add_theme_support( 'custom-logo', array(
@@ -103,6 +109,7 @@ function theme_prefix_setup() {
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
+
 function theme_prefix_the_custom_logo() {
 
 	if ( function_exists( 'the_custom_logo' ) ) {
@@ -110,10 +117,5 @@ function theme_prefix_the_custom_logo() {
 	}
 
 }
-
-add_theme_support( 'infinite-scroll', array(
-'container' => 'main-content',
-'footer' => 'pagination',
-) );
 
 ?>
