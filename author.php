@@ -47,7 +47,7 @@
 
                              <!-- navigation?-->
 
-                             <ul class="pagination accentcolor2 center-align" role="pagination">
+                             <ul class="pagination center-align" role="pagination">
                                <?php if( get_previous_posts_link() ) :
 
                                previous_posts_link( '<li class="pagination-arrows newer-posts"><i class="fa fa-arrow-left fa-2x"></i></li>' );
