@@ -157,6 +157,7 @@ strong {
 .posttitle-single {
 	font-weight: 400;
 	margin:0 !important;
+	padding:15px;
 }
 
 .posttitle > a {
