@@ -401,6 +401,7 @@ iframe {
     font-size: 85%;
 		padding: 10px;
 		border-bottom: 1px solid #ebebeb;
+		margin-bottom: 15px !important
 }
 
 /* add some styling to disqus */
