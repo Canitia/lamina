@@ -330,6 +330,11 @@ POST/ARTICLE HEADERS
 	font-weight: 300;
 }
 
+.card-content > p.text-justify {
+	padding-bottom:15px;
+}
+
+
 .card-content > ul li {
   list-style-type: square !important;
   margin-left: 40px;
