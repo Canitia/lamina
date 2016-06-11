@@ -20,7 +20,7 @@
                                           </div>
                                           <div class="card-content hide-on-small-only">
                                             <p class="postdate center-align">
-                                              <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                              <i class="fa fa-clock-o"></i><time><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></time>
                                               <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
                                               <?php if( is_sticky() ) {
                                                 ?><i class="fa fa-star"></i> Featured
