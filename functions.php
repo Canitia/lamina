@@ -84,9 +84,7 @@ function my_register_sidebars() {
 		'name' => __( 'Footer' ),
 		'description' => __( 'Footer section.' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<li>',
-		'after_title' => '</li>'
+		'after_widget' => '</div>'
  ) );
 }
 
