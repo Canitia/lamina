@@ -436,8 +436,9 @@ iframe {
 .postdate {
     font-size: 85%;
 		padding: 10px;
+		padding-bottom:20px;
 		border-bottom: 1px solid #ebebeb;
-		margin-bottom: 15px !important
+		margin-bottom: 15px !important;
 }
 
 /* add some styling to disqus */
