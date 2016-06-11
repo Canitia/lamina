@@ -188,6 +188,14 @@ strong {
 	width: 100%;
 }
 
+.card-title-single {
+	font-size:125% !important;
+	padding:5px !important;
+	background-color: white;
+	opacity: 0.8;
+	width: 100%;
+}
+
 /* forbidden icon from error page */
 .card-image > .fa-ban {
 	font-size:20em;
