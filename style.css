@@ -123,7 +123,8 @@ blockquote:after {
 blockquote > p {
   	font-style: italic !important;
 		text-align:left;
-		margin-left:30px !important;
+		margin-left:40px !important;
+		padding: 10px;
 }
 
 pre {
