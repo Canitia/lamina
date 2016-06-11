@@ -406,6 +406,10 @@ blockquote ul li, blockquote ol li {
 	font-weight:bold;
 }
 
+.comments-wrapper {
+	padding: 15px;
+}
+
 .comment-reply-title {
 	font-size: 175%;
 }
