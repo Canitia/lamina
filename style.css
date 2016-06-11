@@ -311,6 +311,11 @@ i.fa.fa-bars {
 	bottom:-15px;
 }
 
+input[type=search]:focus:not([readonly]) {
+	border-bottom: 1px solid #979797 !important;
+	box-shadow: 0 1px 0 0 #979797 !important;
+}
+
 
 /* ######################################
 
