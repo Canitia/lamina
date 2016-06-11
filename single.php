@@ -10,7 +10,7 @@
                                       <span class="card-title-single">
                                         <p class="posttitle-single"><?php the_title(); ?></p>
                                         </span>
-                                      <div class="card-image-single">
+                                      <div class="card-image card-image-single">
                                         <?php if ( has_post_thumbnail() ) {
                                                       the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
                                               } else { ?>
