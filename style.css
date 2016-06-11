@@ -229,6 +229,23 @@ nav .brand-logo {
 	line-height:5px;
 }
 
+nav .sub-menu {
+		position: absolute;
+		min-width: 115px;
+		display: none;
+		transition: all .3s;
+		background-color: #ee6e73;
+		z-index: 1;
+}
+nav .sub-menu li {
+		white-space: nowrap;
+
+		float: none;
+}
+li.menu-item-has-children:hover > .sub-menu {
+		display: block;
+}
+
 img.cover {
 	width:100%;
 	margin-bottom:15px;
