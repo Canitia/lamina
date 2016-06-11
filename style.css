@@ -406,6 +406,10 @@ blockquote ul li, blockquote ol li {
 	font-weight:bold;
 }
 
+.comment-reply-title {
+	font-size: 175%;
+}
+
 /* general dimensions of posts/articles */
 article {
     margin-left: auto;
