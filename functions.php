@@ -1,4 +1,6 @@
 <?php
+
+/* should be set for a proper Wordpress theme*/
 if ( ! isset( $content_width ) ) {
 	$content_width = 700;
 }
