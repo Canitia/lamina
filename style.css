@@ -569,12 +569,12 @@ li.pagination-arrows.older-posts {
 	float:right;
 }
 
-.pagination li.active {
-	background-color: #0D47A1 !important;
+li.pagination-arrows.newer-posts i, li.pagination-arrows.older-posts i {
+	color: #0D47A1 !important;
 }
 
 li.pagination-arrows.newer-posts i:hover, li.pagination-arrows.older-posts i:hover {
-  color:black;
+  color: #979797 !important;
 }
 
 /* **************************************
