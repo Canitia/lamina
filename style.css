@@ -444,7 +444,8 @@ img.avatar {
 p.author-bio {
 	padding:20px;
 	color:black;
-	background-color:whitesmoke;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .author-bio > strong > a, .author-bio > a i {
