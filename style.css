@@ -168,11 +168,11 @@ strong {
 	background:black;
 }
 
- .card.large .card-image {
+ .card.large .card-hover {
 	 background: black !important;
  }
 
-.card .card-image img:hover {
+.card .card-hover img:hover {
 	opacity:0.9;
 }
 
