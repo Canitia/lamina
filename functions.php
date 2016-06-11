@@ -83,7 +83,7 @@ function my_register_sidebars() {
 		'id' => 'footer',
 		'name' => __( 'Footer' ),
 		'description' => __( 'Footer section.' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s socialfooter">',
 		'after_widget' => '</div>',
 		'before_title' => '<li class="collection-header center">',
 		'after_title' => '</li>'
