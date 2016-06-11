@@ -8,7 +8,7 @@
                                 <div <?php post_class(); ?>>
                                     <article>
                                       <span class="card-title-single">
-                                        <p class="posttitle"><?php the_title(); ?></p>
+                                        <p class="posttitle-single"><?php the_title(); ?></p>
                                         </span>
                                       <div class="card-image">
                                         <?php if ( has_post_thumbnail() ) {
