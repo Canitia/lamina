@@ -577,6 +577,10 @@ li.pagination-arrows.newer-posts i:hover, li.pagination-arrows.older-posts i:hov
   color: #979797 !important;
 }
 
+.pagination li.active {
+	background-color: #0D47A1;
+}
+
 /* **************************************
 
   FOOTER
