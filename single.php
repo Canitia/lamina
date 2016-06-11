@@ -7,15 +7,15 @@
                           <div class="card">
                                 <div <?php post_class(); ?>>
                                     <article>
+                                      <span class="card-title-single">
+                                        <p class="posttitle"><?php the_title(); ?></p>
+                                        </span>
                                       <div class="card-image">
                                         <?php if ( has_post_thumbnail() ) {
                                                       the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
                                               } else { ?>
                                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
                                                 <?php }; ?>
-                                        <span class="card-title-single">
-                                          <p class="posttitle"><?php the_title(); ?></p>
-                                          </span>
                                       </div>
                                       <div class="card-content">
                                         <p class="postdate center-align">
