@@ -578,7 +578,7 @@ li.pagination-arrows.newer-posts i:hover, li.pagination-arrows.older-posts i:hov
 }
 
 .pagination li.active {
-	background-color: #0D47A1;
+	background-color: #0D47A1 !important;
 }
 
 /* **************************************
