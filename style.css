@@ -467,6 +467,15 @@ p.author-bio {
 .tags {
   line-height: 50px;
   padding-bottom: 10px !important;
+	margin-left: 15px;
+}
+
+.tags a {
+	color: #979797;
+}
+
+.tags a:hover {
+	color: black;
 }
 
 /* **************************************
