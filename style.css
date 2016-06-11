@@ -203,7 +203,9 @@ strong {
 }
 
 .card-image-single {
-	padding: 15px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right:15px;
 }
 
 /* forbidden icon from error page */
