@@ -52,6 +52,7 @@ background-color: #0d47a1 !important;
 
 *****************************************/
 html body {
+font-size: 2vh;
 font-size:112%;
 font-family: Roboto,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
 background-color: #ebebeb;
