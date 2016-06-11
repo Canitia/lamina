@@ -492,6 +492,10 @@ padding-right: 40px;
     margin: 0.5rem 0 1rem 0;
 }
 
+.tag_heading > h3 {
+	font-weight: 300;
+}
+
 
 /* **************************************
 
