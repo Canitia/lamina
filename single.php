@@ -28,7 +28,7 @@
                                         <p><?php the_content(); ?></p>
                                       </div>
                                       <div class="tags">
-                                      <?php the_tags( '', ', ', '' ); ?>
+                                        <p><strong>Tags: </strong><br /><?php the_tags( '', ', ', '' ); ?>
                                       </div>
 
                                       <section class="author-profile">
