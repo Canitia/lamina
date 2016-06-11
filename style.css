@@ -31,7 +31,8 @@ background-color: #0d47a1 !important;
   background-color: red !important;
 }
 
-.pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover,  .postdate a, p > a, .widget > ul > li > a, .fn > a, .comment-meta > a, .widgets-list-layout-links > a {
+.pagination > a > i:hover, .collection .collection-item a, li.pagination-arrows a i:hover, .socialfooter > a:hover,  .postdate a, p > a,
+.widget > ul > li > a, .fn > a, .comment-meta > a, .widgets-list-layout-links > a, ul > li > a {
 	color: black !important;
 }
 
