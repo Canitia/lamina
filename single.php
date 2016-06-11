@@ -13,7 +13,7 @@
                                               } else { ?>
                                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
                                                 <?php }; ?>
-                                        <span class="card-title">
+                                        <span class="card-title-single">
                                           <p class="posttitle"><?php the_title(); ?></p>
                                           </span>
                                       </div>
