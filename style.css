@@ -558,6 +558,7 @@ p.author-bio {
 
 .pagination {
 		padding:15px;
+		border-top: 1px solid #dedede;
 }
 
 li.pagination-arrows.newer-posts {
@@ -570,10 +571,6 @@ li.pagination-arrows.older-posts {
 
 .pagination li.active {
 	background-color: #0D47A1 !important;
-}
-
-li.pagination-arrows:hover {
-	background-color: #1565C0 !important;
 }
 
 li.pagination-arrows.newer-posts i:hover, li.pagination-arrows.older-posts i:hover {
