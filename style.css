@@ -346,6 +346,10 @@ POST/ARTICLE HEADERS
   text-align: justify;
 }
 
+.card .card-content {
+	padding-bottom: 0 !important;
+}
+
 blockquote ul li, blockquote ol li {
 	line-height:30px;
 }
