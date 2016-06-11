@@ -19,7 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERIC SITE COLORS
 
   #############################*/
-.accentcolor {
+.accentcolor, nav .sub-menu {
 background-color: #0d47a1 !important;
 }
 
