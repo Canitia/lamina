@@ -163,6 +163,7 @@ strong {
 	margin:0 !important;
 	padding:15px;
 	padding-top:25px;
+	line-height: normal;
 }
 
 .posttitle > a {
