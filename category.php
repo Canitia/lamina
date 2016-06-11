@@ -8,7 +8,6 @@
            <?php while ( have_posts() ) : the_post(); ?>
 
              <div class="card large">
-               <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
                  <div class="card-image">
                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                    <?php if ( has_post_thumbnail() ) {
@@ -22,6 +21,13 @@
                      </span>
                  </div>
                  <div class="card-content">
+                   <p class="postdate center-align">
+                     <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                     <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
+                     <?php if( is_sticky() ) {
+                       ?><i class="fa fa-star"></i> Featured
+                   <?php  } ?>
+                   </p>
                    <?php the_excerpt(); ?>
                  </div>
                </div>
