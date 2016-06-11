@@ -154,6 +154,10 @@ strong {
 	float:left;
 }
 
+.posttitle-single {
+	font-weight: 400;
+}
+
 .posttitle > a {
 	color: white !important;
   text-decoration: none;
