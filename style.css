@@ -154,6 +154,7 @@ strong {
 .posttitle {
 	margin-left:15px;
 	float:left;
+	line-height: normal;
 }
 
 .posttitle-single {
@@ -161,6 +162,7 @@ strong {
 	margin:0 !important;
 	padding:15px;
 	padding-top:25px;
+	line-height: normal;
 }
 
 .posttitle > a {
