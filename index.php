@@ -46,7 +46,9 @@
 
                             endif; ?>
 
-                            <li class="active"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo $paged; ?></li>
+                            <li class="active"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo $paged; ?> ...
+                              <?php global $wp_query; echo $wp_query->max_num_pages;?></li>
+
                             <?php if( get_next_posts_link() ) :
 
                             next_posts_link( '<li class="pagination-arrows older-posts"><i class="fa fa-arrow-right fa-2x"></i></li>' );
