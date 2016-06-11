@@ -27,8 +27,8 @@
                                         </p>
                                         <p><?php the_content(); ?></p>
                                       </div>
-                                      <div class="tags center-align">
-                                      <?php the_tags( '<div class="waves-effect waves-light chip accentcolor2">', '</div><div class="waves-effect waves-light chip accentcolor2">', '</div>' ); ?>
+                                      <div class="tags">
+                                      <?php the_tags( '', ', ', '' ); ?>
                                       </div>
 
                                       <section class="author-profile">
