@@ -77,15 +77,6 @@ function my_register_sidebars() {
 		)
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
-
-
-	register_sidebar( array(
-		'id' => 'footer',
-		'name' => __( 'Footer' ),
-		'description' => __( 'Footer section.' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>'
- ) );
 }
 
 /* add text-justiry class to excerpt */
