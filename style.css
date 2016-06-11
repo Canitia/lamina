@@ -153,13 +153,14 @@ strong {
 }
 
 .posttitle {
+	font-weight:300;
 	margin-left:15px;
 	float:left;
 	line-height: normal;
 }
 
 .posttitle-single {
-	font-weight: 400;
+	font-weight: 300;
 	margin:0 !important;
 	padding:15px;
 	padding-top:25px;
@@ -203,8 +204,8 @@ strong {
 }
 
 .card-title-single {
-	font-size:125% !important;
-	font-size:1.4rem !important;
+	font-size:175% !important;
+	font-size:1.9rem !important;
 	padding:0px !important;
 	background-color: white;
 	width: 100%;
