@@ -162,7 +162,6 @@ strong {
 	margin:0 !important;
 	padding:15px;
 	padding-top:25px;
-	line-height: normal;
 }
 
 .posttitle > a {
@@ -641,7 +640,6 @@ footer {
 
 	.posttitle {
 		margin:15px;
-		font-size: 2vmax;
 	}
 
 	.postdate {
