@@ -468,6 +468,7 @@ p.author-bio {
   line-height: 50px;
   padding-bottom: 10px !important;
 	margin-left: 15px;
+	font-size: 85%;
 }
 
 .tags a {
