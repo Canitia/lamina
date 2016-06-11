@@ -192,7 +192,8 @@ strong {
 }
 
 .card-title {
-	font-size:1.5rem!important;
+	font-size:125% !important;
+	font-size:1.4rem !important;
 	padding:5px !important;
 	background-color: black;
 	opacity: 0.8;
@@ -201,7 +202,8 @@ strong {
 }
 
 .card-title-single {
-	font-size:1.5rem !important;
+	font-size:125% !important;
+	font-size:1.4rem !important;
 	padding:0px !important;
 	background-color: white;
 	width: 100%;
