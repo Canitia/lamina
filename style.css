@@ -200,6 +200,10 @@ strong {
 	width: 100%;
 }
 
+.card-image-single {
+	padding: 15px;
+}
+
 /* forbidden icon from error page */
 .card-image > .fa-ban {
 	font-size:20em;
