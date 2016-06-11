@@ -34,6 +34,10 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
 add_action( 'widgets_init', 'my_register_sidebars' );
 
+/**
+ * site header
+ */
+
 $args = array(
 	'width'         => 960,
 	'height'        => 360,
@@ -44,8 +48,14 @@ $args = array(
 );
 add_theme_support( 'custom-header', $args );
 
+
+/**
+ * custom background-color
+ */
+
+
 $args = array(
-	'default-color' => '696969',
+	'default-color' => 'ebebeb',
 );
 add_theme_support( 'custom-background', $args );
 
@@ -67,6 +77,7 @@ function my_register_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
 
+/* add text-justiry class to excerpt */
 function add_excerpt_class( $excerpt )
 {
     $excerpt = str_replace( "<p", "<p class=\"text-justify\"", $excerpt );
