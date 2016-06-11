@@ -1,7 +1,7 @@
 <footer class="page-footer accentcolor">
 
     <div class="socialfooter">
-        <?php get_sidebar( 'footer' ); ?>
+        <a href="/rss" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
         <p class="right">
           <a href="<?php echo home_url();?>/privacy-policy">privacy policy</a>
           <?php
