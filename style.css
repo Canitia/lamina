@@ -59,15 +59,15 @@ background-color: #ebebeb;
 }
 
 h1 {
-	font-size: 250%;
-}
-
-h2 {
 	font-size: 200%;
 }
 
+h2 {
+	font-size: 180%;
+}
+
 h3 {
-	font-size: 175%;
+	font-size: 165%;
 }
 
 h4 {
@@ -363,19 +363,19 @@ POST/ARTICLE HEADERS
 
 *****************************************/
 .card-content > h1 {
-  	font-size: 250%;
+  	font-size: 200%;
     margin-left: 10px;
 		font-weight: 300;
 }
 
 .card-content > h2 {
-	font-size: 200%;
+	font-size: 180%;
   margin-left: 10px;
 	font-weight: 300;
 }
 
 .card-content > h3 {
-	font-size: 175%;
+	font-size: 165%;
   margin-left: 10px;
 	font-weight: 300;
 }
