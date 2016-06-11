@@ -334,11 +334,12 @@ POST/ARTICLE HEADERS
 
 /* post title */
 .text-left-title-featured, .text-left-title-featured-sidebar {
-	font-size: 120%;
+	font-size: 125%;
 	padding:15px !important;
 	white-space: normal;
 	overflow:hidden;
 	text-overflow: ellipsis;
+	font-weight: 300;
 }
 
 .text-left-title-featured {
