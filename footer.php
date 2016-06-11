@@ -5,7 +5,7 @@
           <a href="<?php echo home_url();?>/privacy-policy">privacy policy</a>
           <?php
               $my_theme = wp_get_theme();
-              echo $my_theme->get( 'Name' ) . " is version " . $my_theme->get( 'Version' );
+              echo $my_theme->get( 'Name' ) . " v" . $my_theme->get( 'Version' );
             ?>
         </p>
       </div>
