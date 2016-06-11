@@ -574,6 +574,10 @@ footer {
 	color: white;
 }
 
+.socialfooter > .right > a {
+	margin-right: 15px;
+}
+
 .socialfooter > a {
     color: #00bfff;
 }
