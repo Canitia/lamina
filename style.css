@@ -568,7 +568,7 @@ footer {
     z-index: 999;
 }
 
-.socialfooter > .right > a {
+.socialfooter > .right {
 	margin: 15px;
 	font-size: 70%;
 }
