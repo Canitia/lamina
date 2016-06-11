@@ -6,7 +6,7 @@
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
                                       <div class="card large">
-                                          <div class="card-image">
+                                          <div class="card-image card-hover">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
                                                           the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
