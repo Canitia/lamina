@@ -2,7 +2,7 @@
 <div class="tag_heading center-align text-left-title-featured-sidebar accentcolor2">
   <h3><?php
             $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
-            echo $curauth->nickname; ?></h3>
+            echo $curauth->display_name; ?></h3>
 </div>
 <div class="row">
   <div class="col s12 m12 l8 main-content">
@@ -14,9 +14,9 @@
           <div class="card-image">
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
               <?php if ( has_post_thumbnail() ) {
-                                                       the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
+                          the_post_thumbnail( 'medium', array( 'class' => 'responsive-img' ) );
                                                } else { ?>
-              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
+                              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
               <?php }; ?>
             </a>
             <span class="card-title">
