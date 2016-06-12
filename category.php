@@ -34,7 +34,7 @@
 
                <!-- error handling -->
                <?php endwhile; else: ?>
-                     <p><?php echo wpautop( 'Sorry, this category can not be found' ); ?></p>
+                     <p><?php echo wpautop( 'Sorry, this category has no posts ..probably' ); ?></p>
                <?php endif; ?>
 
                <!-- navigation?-->
