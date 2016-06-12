@@ -46,7 +46,7 @@
     <!-- error handling -->
     <?php endwhile; else: ?>
     <p>
-      <?php echo wpautop( 'Sorry, this post can not be found' ); ?>
+      <?php echo wpautop( 'Sorry, there are no posts by this author' ); ?>
     </p>
     <?php endif; ?>
 
