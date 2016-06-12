@@ -268,7 +268,11 @@ img.cover {
 img.logo {
 	height:64px;
 	position:relative;
-	margin-left:1%;
+	margin-left:35px;
+}
+
+.custom-logo {
+	margin-left: 35px;
 }
 
 /* **************************************
