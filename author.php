@@ -28,8 +28,8 @@
               <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
               <i class="fa fa-user-secret"></i>
               <?php the_author_posts_link();?>
-              <?php if( is_sticky() ) {
-                                             ?><i class="fa fa-star"></i> Featured
+              <?php if( is_sticky() ) { ?>
+                  <i class="fa fa-star"></i> Featured
               <?php  } ?>
             </p>
             <p>
@@ -57,18 +57,18 @@
     <ul class="pagination center-align" role="pagination">
       <?php if( get_previous_posts_link() ) :
 
-                               previous_posts_link( '<li class="pagination-arrows newer-posts"><i class="fa fa-arrow-left fa-2x"></i></li>' );
+              previous_posts_link( '<li class="pagination-arrows newer-posts"><i class="fa fa-arrow-left fa-2x"></i></li>' );
 
-                               endif; ?>
+            endif; ?>
 
       <li class="active">
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo $paged; ?>
       </li>
       <?php if( get_next_posts_link() ) :
 
-                               next_posts_link( '<li class="pagination-arrows older-posts"><i class="fa fa-arrow-right fa-2x"></i></li>' );
+              next_posts_link( '<li class="pagination-arrows older-posts"><i class="fa fa-arrow-right fa-2x"></i></li>' );
 
-                               endif; ?>
+            endif; ?>
     </ul>
 
   </div>
