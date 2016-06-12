@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- rss, pingback -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo get_bloginfo( 'rss2_url' )?>" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <title><?php wp_title(); ?></title>
