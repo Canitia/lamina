@@ -111,13 +111,13 @@ blockquote:before, blockquote:after {
     font-family:'FontAwesome';
     font-size:30px;
     position:absolute;
-    top:5px;
+    top:-20px;
     left:8px;
     display:block;
 }
 blockquote:after {
     content:'\f10e';
-    bottom:0;
+    bottom:-20px;
     right:8px;
     top:auto;
     left:auto;
