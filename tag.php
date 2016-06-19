@@ -19,8 +19,8 @@
                                                           <?php }; ?>
                                                   </a>
                                                   <span class="card-title">
-                                                    <p class="posttitle"><?php the_title(); ?></p>
-                                                    </p></span>
+                                                    <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+                                                    </span>
                                                 </div>
                                                 <div class="card-content">
                                                   <p class="postdate center-align">
