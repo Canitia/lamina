@@ -651,7 +651,8 @@ footer {
 	}
 
   .card .card-content {
-    padding: 10px !important;
+    padding: 20px !important;
+    padding-bottom:3px !important;
   }
 
 	.pagination, .main-content {
