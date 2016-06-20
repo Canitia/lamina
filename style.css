@@ -400,6 +400,10 @@ POST/ARTICLE HEADERS
 	padding-bottom:15px;
 }
 
+.card .card-content p {
+  margin-bottom:30px !important;
+}
+
 
 .card-content > ul li, article ul li {
   font-size: 110%;
