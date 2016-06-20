@@ -396,10 +396,6 @@ POST/ARTICLE HEADERS
 	font-weight: 300;
 }
 
-.card-content > p.text-justify {
-	padding-bottom:15px;
-}
-
 .card .card-content p {
   margin-bottom:28px !important;
 }
