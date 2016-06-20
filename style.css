@@ -658,6 +658,10 @@ footer {
 		font-size: 2vmax;
 	}
 
+  .card .card-content {
+    padding: 0 !important;
+  }
+
 	.pagination, .main-content {
 		margin-bottom: 12px;
 	}
