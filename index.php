@@ -18,7 +18,7 @@
                                               <p class="posttitle"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
                                               </span>
                                           </div>
-                                          <div class="card-content hide-on-small-only">
+                                          <div class="card-content">
                                             <p class="postdate center-align">
                                               <i class="fa fa-clock-o"></i><time><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></time>
                                               <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
