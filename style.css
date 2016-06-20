@@ -758,6 +758,10 @@ footer {
 			color:black;
 		}
 
+    nav .button-collapse i {
+      font-size: 2rem !important;
+    }
+
     /* **************************************
 
   	 WORDPRESS SPECIFIC
