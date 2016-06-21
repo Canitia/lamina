@@ -421,6 +421,7 @@ POST/ARTICLE HEADERS
 
 blockquote ul li, blockquote ol li {
 	line-height:30px;
+  font-style: italic;
 }
 
 .wp-caption, .gallery-caption {
