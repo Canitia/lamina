@@ -649,6 +649,10 @@ p.tagline {
   display: none;
 }
 
+.main-content, .card-sidebar {
+  top: 0px;
+}
+
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
 		margin-top:0px;
@@ -687,6 +691,10 @@ p.tagline {
 
     p.tagline {
       display: block;
+    }
+
+    .main-content, .card-sidebar {
+      top: -65px;
     }
 
     .content-images, .content-images-individual {
