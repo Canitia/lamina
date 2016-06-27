@@ -694,7 +694,7 @@ p.tagline {
     }
 
     .main-content, .card-sidebar {
-      top: -65px !important;
+      position: relative;
     }
 
     .content-images, .content-images-individual {
@@ -734,6 +734,10 @@ p.tagline {
 
   .headerurl {
     	margin-left:20px;
+  }
+
+  .main-content, .card-sidebar {
+    position: relative;
   }
 
 
