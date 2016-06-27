@@ -38,7 +38,6 @@
         }?>
         <p class="brand-logo center">
             <a href="<?php echo home_url();  ?>" class="headerurl" style="color: #<?php echo get_header_textcolor(); ?> !important;"><?php bloginfo('name'); ?></a>
-            <p class="tagline"><?php bloginfo('description'); ?></p>
         </p>
 
          <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -56,4 +55,5 @@
 </div>
 </header>
 <div class="container-fluid">
+<p class="tagline tagline text-left-title-featured-sidebar accentcolor2"><?php bloginfo('description'); ?></p>
 <!-- <img src="<?php header_image(); ?>" height="<?php // echo get_custom_header()->height; ?>" width="<?php //echo get_custom_header()->width;?>" class="center-align"  alt="header image" /> -->
