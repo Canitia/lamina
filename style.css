@@ -647,6 +647,10 @@ footer {
 		height:55px;
 	}
 
+p.tagline {
+  display: none;
+}
+
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
 		margin-top:0px;
@@ -681,6 +685,11 @@ footer {
 @media (max-width:992px) and (min-width:601px) {
     h1 {
     	font-size: 120%;
+    }
+
+    p.tagline {
+      display: block;
+      left: 0;
     }
 
     .content-images, .content-images-individual {
