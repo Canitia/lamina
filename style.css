@@ -241,11 +241,9 @@ strong {
 }
 
 p.tagline {
-  font-size: 14px;
-  left: 100px;
-  top: -8px;
-  position: relative;
-
+float: left;
+transform: rotate(90deg);
+transform-origin: left top 0;
 }
 
 nav .brand-logo {
@@ -689,7 +687,6 @@ p.tagline {
 
     p.tagline {
       display: block;
-      left: 100px;
     }
 
     .content-images, .content-images-individual {
@@ -725,7 +722,6 @@ p.tagline {
 
   p.tagline {
     display: block;
-    left: 100px;
   }
 
   .headerurl {
