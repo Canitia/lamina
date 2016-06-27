@@ -240,6 +240,14 @@ strong {
   text-decoration: none;
 }
 
+p.tagline {
+  font-size: 14px;
+  left: 100px;
+  top: -8px;
+  position: relative;
+
+}
+
 nav .brand-logo {
 	line-height:5px;
 }
