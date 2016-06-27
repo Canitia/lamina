@@ -693,7 +693,7 @@ p.tagline {
       display: block;
     }
 
-    .main-content {
+  .main-content, .sidebar-card  {
       position: relative;
       top:-65px;
     }
@@ -737,7 +737,7 @@ p.tagline {
     	margin-left:20px;
   }
 
-  .main-content {
+  .main-content, .sidebar-card {
     position: relative;
     top:-65px;
   }
