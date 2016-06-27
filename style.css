@@ -723,6 +723,11 @@ p.tagline {
 		margin-left:80px !important;
 	}
 
+  p.tagline {
+    display: block;
+    left: 100px;
+  }
+
   .headerurl {
     	margin-left:20px;
   }
