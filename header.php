@@ -59,6 +59,6 @@
     $description = get_bloginfo('description');
 
     if ( $description ) {
-        echo '<p class="tagline text-left-title-featured-sidebar accentcolor2">' . $description . '</p>';
+        //echo '<p class="tagline text-left-title-featured-sidebar accentcolor2">' . $description . '</p>';
     }?>
 <!-- <img src="<?php header_image(); ?>" height="<?php // echo get_custom_header()->height; ?>" width="<?php //echo get_custom_header()->width;?>" class="center-align"  alt="header image" /> -->
