@@ -693,8 +693,9 @@ p.tagline {
       display: block;
     }
 
-    .main-content, .card-sidebar {
+    .main-content {
       position: relative;
+      top:-65px;
     }
 
     .content-images, .content-images-individual {
@@ -736,8 +737,9 @@ p.tagline {
     	margin-left:20px;
   }
 
-  .main-content, .card-sidebar {
+  .main-content {
     position: relative;
+    top:-65px;
   }
 
 
