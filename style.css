@@ -689,7 +689,7 @@ p.tagline {
 
     p.tagline {
       display: block;
-      left: 0;
+      left: 100px;
     }
 
     .content-images, .content-images-individual {
