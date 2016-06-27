@@ -693,11 +693,6 @@ p.tagline {
       display: block;
     }
 
-  .main-content, .card-sidebar  {
-      position: relative;
-      top:-65px;
-    }
-
     .content-images, .content-images-individual {
 				object-fit: cover;
     }
@@ -735,11 +730,6 @@ p.tagline {
 
   .headerurl {
     	margin-left:20px;
-  }
-
-  .main-content, .card-sidebar {
-    position: relative;
-    top:-65px;
   }
 
 
