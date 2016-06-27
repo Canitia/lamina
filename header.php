@@ -55,7 +55,7 @@
 </div>
 </header>
 <div class="container-fluid">
-<?php>
+<?php
     $description = //get_bloginfo('description');
 
    if ( $description ) {
