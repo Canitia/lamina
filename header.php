@@ -38,6 +38,7 @@
         }?>
         <p class="brand-logo center">
             <a href="<?php echo home_url();  ?>" class="headerurl" style="color: #<?php echo get_header_textcolor(); ?> !important;"><?php bloginfo('name'); ?></a>
+            <p class="tagline"><?php bloginfo('description'); ?></p>
         </p>
 
          <ul id="nav-mobile" class="right hide-on-med-and-down">
