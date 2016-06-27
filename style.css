@@ -694,7 +694,7 @@ p.tagline {
     }
 
     .main-content, .card-sidebar {
-      top: -65px;
+      top: -65px !important;
     }
 
     .content-images, .content-images-individual {
