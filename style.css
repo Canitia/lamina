@@ -126,7 +126,7 @@ blockquote:after {
 blockquote > p {
   	font-style: italic !important;
 		text-align:left;
-		margin-left:40px !important;
+		margin-left:10px !important;
 		padding: 10px;
 }
 
