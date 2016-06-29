@@ -408,7 +408,6 @@ POST/ARTICLE HEADERS
 
 
 .card-content > ul li, article ul li {
-  font-size: 110%;
   list-style-type: square !important;
   margin-left: 40px;
   margin-right: 40px;
