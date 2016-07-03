@@ -80,7 +80,7 @@ p {
 	text-rendering: geometricPrecision;
 }
 
-p > a {
+p > a, .card-content > ul > li > a {
 	text-decoration: underline;
 }
 
