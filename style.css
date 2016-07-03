@@ -182,6 +182,10 @@ strong {
 	background:black;
 }
 
+.card .card-image img {
+  height: auto;
+}
+
  .card.large .card-hover {
 	 background: black !important;
  }
