@@ -27,9 +27,11 @@
                                         </p>
                                         <p><?php the_content(); ?></p>
                                       </div>
+                                      <?php if(has_tag()) { ?>
                                       <div class="tags">
                                         <p><strong>Tags: </strong><?php the_tags( '', ', ', '' ); ?>
                                       </div>
+                                      <?php } ?>
 
                                       <section class="author-profile">
                                         <p class="author-bio">
