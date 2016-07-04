@@ -27,6 +27,10 @@ background-color: #0d47a1 !important;
   background-color: #1565c0 !important;
 }
 
+.collection-item:hover {
+  background-color: #ebebeb;
+}
+
 .accentcolor-error {
   background-color: red !important;
 }
