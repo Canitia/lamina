@@ -4,7 +4,7 @@
      <div class="col s12 m12 l8 main-content">
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
-
+                          <div class="card">
                                     <div <?php post_class(); ?>>
                                     <article>
                                       <span class="card-title-single">
@@ -46,6 +46,7 @@
                                           <!-- let user enter a comment -->
                                 		<?php //comments_template(); ?>
                             </div><!-- close post class div -->
+                          </div><!-- close card class -->
                                 <!-- column end! -->
 
 
