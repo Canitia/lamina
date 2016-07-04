@@ -27,7 +27,7 @@ background-color: #0d47a1 !important;
   background-color: #1565c0 !important;
 }
 
-.widgets-list-layout > li:hover {
+.widgets-list-layout > li:hover,  .widget > ul > li:hover {
   background-color: #ebebeb !important;
 }
 
