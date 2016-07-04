@@ -308,7 +308,7 @@ i.fa.fa-bars {
   background-color: #0d47a1;
 }
 
-.card-sidebar ul {
+.widget > ul {
   margin: 0px !important;
 }
 
