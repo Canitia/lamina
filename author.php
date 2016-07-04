@@ -14,7 +14,7 @@
           <div class="card-image">
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
               <?php if ( has_post_thumbnail() ) {
-                            the_post_thumbnail( );
+                                                        the_post_thumbnail( 'large', array( 'class' => 'responsive-img' ) );
                     } else { ?>
                               <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />
               <?php }; ?>
