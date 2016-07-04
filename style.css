@@ -182,10 +182,6 @@ strong {
 	background:black;
 }
 
-.card .card-image img {
-  height: auto;
-}
-
  .card.large .card-hover {
 	 background: black !important;
  }
@@ -222,11 +218,6 @@ strong {
 	padding-top: 15px;
 	padding-left: 15px;
 	padding-right:15px;
-}
-
-/* forbidden icon from error page */
-.card-image > .fa-ban {
-	font-size:20em;
 }
 
 /* **************************************
