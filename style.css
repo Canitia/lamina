@@ -183,8 +183,8 @@ strong {
 }
 
 .card .card-image img {
-  height: auto;
-  max-height: 350px;
+  height: auto !important;
+  max-height: 350px !important;
 }
 
  .card.large .card-hover {
