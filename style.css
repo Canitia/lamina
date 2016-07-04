@@ -308,6 +308,10 @@ i.fa.fa-bars {
   background-color: #0d47a1;
 }
 
+.card-sidebar ul {
+  margin: 0px !important;
+}
+
 /* **************************************
 
   CONTENT SIDEBAR
