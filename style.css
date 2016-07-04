@@ -23,11 +23,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 background-color: #0d47a1 !important;
 }
 
-.accentcolor2, .side-nav a:hover, .search-submit {
+.accentcolor2, .side-nav a:hover, .search-submit { /* second accentcolor and also search submit button and (mobile) sidenav hover color */
   background-color: #1565c0 !important;
 }
 
-.widgets-list-layout > li:hover,  .widget > ul > li:hover {
+.widgets-list-layout > li:hover,  .widget > ul > li:hover { /* sidebar collection list hovers */
   background-color: #ebebeb !important;
 }
 
