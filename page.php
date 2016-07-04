@@ -7,30 +7,34 @@
 
                                     <div <?php post_class(); ?>>
                                     <article>
-                                      <p class="postdate right"><i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
-                                        <div class="card-image">
-                                          <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                      <span class="card-title-single">
+                                        <p class="posttitle-single"><?php the_title(); ?></p>
+                                        </span>
+                                        <div class="card-image card-image-single">
                                           <?php if ( has_post_thumbnail() ) {
-                                                        the_post_thumbnail( 'large', array( 'class' => 'responsive-img' ) );
+                                                          the_post_thumbnail( 'large', array( 'class' => 'responsive-img' ) );
                                                 } else { ?>
-                                                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>"  class="responsive-img" />
+                                                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" class="responsive-img" />
                                                   <?php }; ?>
-                                          </a>
-                                          <span class="card-title">
-                                            <p class="posttitle"><?php the_title(); ?></p>
-                                            </span>
                                         </div>
                                         <div class="card-content">
+                                          <p class="postdate center-align">
+                                            <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                            <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
+                                            <?php if( is_sticky() ) {
+                                              ?><i class="fa fa-star"></i> Featured
+                                          <?php  } ?>
+                                          </p>
                                           <p><?php the_content(); ?></p>
                                         </div>
-                                        <div class="tags center-align">
-                                        <?php the_tags( '<div class="waves-effect waves-light chip accentcolor2">', '</div><div class="waves-effect waves-light chip accentcolor2">', '</div>' ); ?>
+                                        <div class="tags">
+                                          <p><strong>Tags: </strong><?php the_tags( '', ', ', '' ); ?>
                                         </div>
 
                                         <section class="author-profile">
                                           <p class="author-bio">
                                         <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
-                                          <strong><i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?></strong>
+                                          <?php the_author_posts_link();?>
                                             <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
                                           <br />
                                             <?php echo nl2br(get_the_author_meta('description'));  ?>
