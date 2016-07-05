@@ -6,14 +6,15 @@ This is the Wordpress version of the [jade](https://github.com/hxkclan/jade) the
 - Optimised for Phones, tablets and desktops
 - Sidebar support (only shows it when on medium or higher resolutions)
 - Change color and fonts of header
-- Easily change color
+- Fairly easily change overall accent colors (top of CSS)
 - Material Design inspired;
-- Other stuff Wordpress can do (commenting etc.)
+- Other stuff Wordpress can do ('custom' pages, 'custom' tag page, 'custom' category pages)
 
 #Status
-Currently under development. Master branch at least has a working version, and sometimes i tag 'releases' if i believe they are usable (aka 'stable'). 
+Currently under development. Sometimes i tag 'releases' if i believe they are usable (aka 'stable'). 
+
+## Note
+Wordpress default comments are currently unstyled so i recommend using third party ones for now. 
 
 #Preview
-Below you see a preview of the Jade for Wordpress theme.
-
-![Jade for Wordpress Preview](http://img.photobucket.com/albums/v385/hxkclan/2016-04-15.png)
+Checkout screenshot.png for now to check out the new theme UI
