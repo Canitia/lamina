@@ -2,7 +2,6 @@
 
    <div class="container-fluid">
      <div class="row">
-                    <?php if ( have_posts() ) : ?>
                       <div class="card large card-error">
                           <div class="card-image center">
                             <i class="fa fa-ban fa-5x" aria-hidden="true"></i>
