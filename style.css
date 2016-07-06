@@ -405,6 +405,10 @@ POST/ARTICLE HEADERS
 	font-weight: 300;
 }
 
+.card .card-content {
+    background-color: white !important;
+}
+
 .card .card-content p {
   margin-bottom:15px !important;
 }
