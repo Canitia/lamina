@@ -187,9 +187,6 @@ strong {
 
 .card .card-image img {
   min-height: 350px;
-  width: auto !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
  .card.large .card-hover {
