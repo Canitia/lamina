@@ -186,11 +186,7 @@ strong {
 }
 
 .card .card-image img {
-  height: 400px !important;
-  max-height: 500px;
-  width: auto !important;
-  margin-left: auto !important;
-  margin-right:auto !important;
+
 }
 
  .card.large .card-hover {
