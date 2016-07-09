@@ -185,10 +185,14 @@ strong {
 	margin-bottom:40px !important;
 }
 
-.card .card-image img {
-  min-height: 350px;
+@supports (-ms-accelerator:true) {
+  .card .card-image img {
+    min-height: 320px;
 
+  }
 }
+
+
 
  .card.large .card-hover {
 	 background: black !important;
