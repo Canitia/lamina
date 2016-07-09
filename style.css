@@ -186,6 +186,7 @@ strong {
 }
 
 .card .card-image img {
+  min-height: 350px;
 
 }
 
@@ -461,7 +462,7 @@ article {
 
 .card-content > img, .card-content > p > img {
 	max-width: 100%;
-  height: auto !important;
+    height: auto !important;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
