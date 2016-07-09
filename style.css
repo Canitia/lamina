@@ -461,6 +461,7 @@ article {
 
 .card-content > img, .card-content > p > img {
 	max-width: 100%;
+  height: auto !important;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
