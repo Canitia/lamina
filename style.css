@@ -187,8 +187,8 @@ strong {
 
 @supports (-ms-accelerator:true) {
   .card .card-image img {
-    min-height: 320px;
-
+    width: 700px !important;
+    min-height: 400px !important;
   }
 }
 
