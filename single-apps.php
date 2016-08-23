@@ -19,6 +19,13 @@
                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" class="responsive-img" />
                                 <?php }; ?>
                       </div>
+                      <!-- error handling -->
+                      <?php endwhile; else: ?>
+                            <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
+                      <?php endif;
+
+                         wp_reset_postdata(); ?>
+
                       <div class="card-content">
                         <p>
 
@@ -37,21 +44,6 @@
 
                         </p>
                       </div>
-                      <?php if(has_tag()) { ?>
-                      <div class="tags">
-                        <p><strong>Tags: </strong><?php the_tags( '', ', ', '' ); ?>
-                      </div>
-                      <?php } ?>
-
-                      <section class="author-profile">
-                        <p class="author-bio">
-                      <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
-                        <?php the_author_posts_link();?>
-                          <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
-                        <br />
-                          <?php echo nl2br(get_the_author_meta('description'));  ?>
-                      </p>
-                      </section>
                     </article><!-- close article -->
 
                           <!-- let user enter a comment -->
@@ -62,12 +54,7 @@
 
 
 
-            <!-- error handling -->
-            <?php endwhile; else: ?>
-                  <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
-            <?php endif;
 
-            	 wp_reset_postdata(); ?>
 
             <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
           </div><!-- einde md8 -->
