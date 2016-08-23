@@ -18,9 +18,9 @@ if (typeof Windows !== 'undefined'&& typeof Windows.UI !== 'undefined' && typeof
 
     tileText[0].appendChild(tileContent.createTextNode(message || 'InsideUWP'));
 
-    tileImage[0].setAttribute('src', imgUrl || 'https://unsplash.it/150/150/?random');
+    tileImage[0].setAttribute('src', imgUrl || 'https://insideuwp.xyz/win-tiles/small.jpg');
 
-    tileImage[0].setAttribute('alt', imgAlt || 'Random demo image');
+    tileImage[0].setAttribute('alt', imgAlt || 'Logo');
 
 
 
