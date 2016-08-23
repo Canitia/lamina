@@ -26,12 +26,12 @@
 
                                  $the_query = new WP_Query(
                                  	array(
-                                 		'post_type' => array( 'App-updates' )
+                                 		'post_type' => array( 'app-updates' )
                                  	)
                                  );
 
                                  while ($the_query->have_posts()) :
-                                        echo 'it has content!';
+                                        the_title();
                                   endwhile;
 
 
