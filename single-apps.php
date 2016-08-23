@@ -29,9 +29,7 @@
                                         <?php
                                         $posts = get_posts(array(
                                         	'numberposts'	=> -1,
-                                        	'post_type'		=> 'app-updates',
-                                        	'meta_key'		=> 'name',
-                                        	'meta_value'	=> get_field( "name" )
+                                        	'post_type'		=> 'app-updates'
                                         ));
                                             ?>
 
