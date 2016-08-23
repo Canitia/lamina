@@ -22,16 +22,13 @@
                       <div class="card-content">
                         <p>
 
-                                 <?php
-                                 // Get the last 10 posts in the special_cat category.
-                                query_posts( 'post_type=app-updates&posts_per_page=10' );
-
-                                 while ( have_posts() ) : the_post();
-                                        the_title();
-                                   endwhile;
 
 
-                                 ?>
+                                   <?php $my_query = new WP_Query( 'post_type=app-updates&posts_per_page=10' ); ?>
+
+                                   <?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+                                   	<!-- Do special_cat stuff... --> the_title();
+                                   <?php endwhile; ?>
 
 
 
