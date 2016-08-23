@@ -28,7 +28,7 @@
                                         <hr />
                                         <?php
 
-                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );?>
+                                            $args = array( 'post_type' => 'app-updates', 'name' = get_field( "name" ) , 'posts_per_page' => 5 );?>
 
                                             <h2>Latest app updates</h2>
                                             <ul class="collection">
@@ -40,9 +40,6 @@
                                                 <li class="collection-item">
 
                                               <?php the_title();
-                                                $value = get_field( "name" );
-                                                echo $value;
-
                                               ?>
 
                                             </li>
