@@ -54,13 +54,24 @@ function create_post_type() {
   register_post_type( 'apps',
     array(
       'labels' => array(
-        'name' => __( 'App Updates' ),
-        'singular_name' => __( 'Updates' )
+        'name' => __( 'Apps' ),
+        'singular_name' => __( 'App' )
       ),
       'public' => true,
       'has_archive' => true,
     )
   );
+
+	register_post_type( 'app-updates',
+		array(
+			'labels' => array(
+				'name' => __( 'App Updates' ),
+				'singular_name' => __( 'Updates' )
+			),
+			'public' => true,
+			'has_archive' => true,
+		)
+	);
 }
 
 /**
