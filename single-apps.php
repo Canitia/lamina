@@ -29,7 +29,10 @@
                                         <hr />
                                         <?php
 
-                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
+                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );?>
+
+                                            <h2>Latest app updates</h2>
+                                            <?php
 
                                             $loop = new WP_Query( $args );
                                             while ( $loop->have_posts() ) : $loop->the_post();
