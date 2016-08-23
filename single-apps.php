@@ -35,7 +35,7 @@
                                                       		    array (
                                                       			  'key' => 'name',
                                                       			  'value' => getField('name'),
-                                                                                'compare' => 'IN'
+                                                                                'compare' => 'LIKE'
                                                       		    )
                                                       		  ) );
 
