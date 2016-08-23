@@ -25,7 +25,6 @@
                                             ?><i class="fa fa-star"></i> Featured
                                         <?php  } ?>
                                         </p>
-                                        <p><?php the_content(); ?></p>
                                         <hr />
                                         <?php
 
