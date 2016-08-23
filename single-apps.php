@@ -33,8 +33,8 @@
                                   $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
 
                                   $loop = new WP_Query( $args );
-                                  while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                                    the_title();
+                                  while ( $loop->have_posts() ) : $loop->the_post();
+                                    the_title();?>
 
                           		<?php endwhile; // end of the loop. ?>
 
