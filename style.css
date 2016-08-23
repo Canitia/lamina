@@ -650,7 +650,7 @@ footer {
 *****************************************/
 
 /* For the people that have phones reporting very low resolutions */
-@media (max-width:600px) and (min-width:200px) {
+@media (max-width:992px) and (min-width:200px) {
 	/* make logo image smaller as the navigation bar shrinks at these resolutions */
 	img.logo {
 		height:55px;
@@ -693,33 +693,6 @@ p.tagline {
 		font-size: 110%;
 	}
 }
-
-/* mobile devices */
-@media (max-width:992px) and (min-width:601px) {
-    h1 {
-    	font-size: 120%;
-    }
-
-    p.tagline {
-      display: block;
-    }
-
-    .content-images, .content-images-individual {
-				object-fit: cover;
-    }
-
-			.container-fluid {
-				margin-top:25px;
-				margin-left: 12%;
-				margin-right: 12%;
-			}
-
-			.posttitle {
-				margin: 12px !important;
-			}
-
-  }
-
 	/* tablet devices */
 	@media only screen and (min-width: 993px) {
 	.container-fluid {
