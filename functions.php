@@ -62,7 +62,7 @@ function create_post_type() {
     )
   );
 
-	register_post_type( 'app-updates',
+	register_post_type( 'App-updates',
 		array(
 			'labels' => array(
 				'name' => __( 'App Updates' ),
