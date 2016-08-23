@@ -27,17 +27,21 @@
                                         </p>
                                         <hr />
                                         <?php
+                                            $args = array(
+                                                            'post_type' => 'app-updates' ,
+                                                            'posts_per_page' => 5,
 
-                                        $args = array(
-                                      		  'numberposts' => 5,
-                                      		  'post_type' => 'app-updates',
-                                      		  'meta_query' => array (
-                                      		    array (
-                                      			  'key' => 'name',
-                                      			  'value' => get_field('name'),
-                                                                'compare' => 'IN'
-                                      		    )
-                                      		  ) );		
+                                                            'meta_query' => array (
+                                                      		    array (
+                                                      			  'key' => 'name',
+                                                      			  'value' => getField('name'),
+                                                                                'compare' => 'IN'
+                                                      		    )
+                                                      		  ) );
+
+
+
+
                                             ?>
 
                                             <h2>Latest app updates</h2>
