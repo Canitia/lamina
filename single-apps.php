@@ -22,19 +22,6 @@
                       <div class="card-content">
                         <p>
 
-
-
-                                   <?php $my_query = new WP_Query( 'post_type=app-updates&posts_per_page=10' );
-
-                                    ?>
-
-                                   <?php  while ( $my_query->have_posts() ) : $my_query->the_post();
-                                       $my_query->the_title();
-                                    endwhile; ?>
-
-
-
-
                         </p>
                       </div>
 
