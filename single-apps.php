@@ -27,8 +27,6 @@
                                         </p>
                                         <hr />
                                         <?php
-                                            $appname = str_replace(' ', '-', strtolower(get_field( "name" )));
-
                                             $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
 
