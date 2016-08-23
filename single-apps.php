@@ -18,16 +18,34 @@
                                                 <?php }; ?>
                                       </div>
                                 </div>
+
+                                <!-- let user enter a comment -->
+                          <?php //comments_template(); ?>
+                        </div><!-- close post class div -->
                                 <!-- error handling -->
                                 <?php endwhile; else: ?>
                                       <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
                                 <?php endif; ?>
+                                <?php wp_reset_postdata(); ?>
+
+                          		<?php
+
+                                  $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
+                                  $loop = new WP_Query( $args );
+                                  while ( $loop->have_posts() ) : $loop->the_post();
+                                      $loop->the_title();
+
+                                  ?>
+
+
+                          		<?php endwhile; // end of the loop. ?>
+
+                                  <?php wp_reset_postdata(); ?>
+
 
                                     </article><!-- close article -->
 
-                                          <!-- let user enter a comment -->
-                                		<?php //comments_template(); ?>
-                            </div><!-- close post class div -->
+
                           </div>
                                 <!-- column end! -->
 
