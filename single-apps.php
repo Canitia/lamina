@@ -40,7 +40,11 @@
                                               ?>
                                                 <li class="collection-item">
 
-                                              <?php the_title();?>
+                                              <?php the_title();
+                                                $value = get_field( "name" );
+                                                echo $value;
+
+                                              ?>
 
                                             </li>
                                         <?php endwhile; // end of the loop. ?>
