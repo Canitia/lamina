@@ -689,6 +689,10 @@ p.tagline {
 		margin-bottom: 15px !important;
 	}
 
+  .row {
+    max-width: 700px;
+  }
+
 	p {
 		font-size: 110%;
 	}
