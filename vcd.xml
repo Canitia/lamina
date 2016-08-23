@@ -19,7 +19,7 @@
 
       <Feedback>Navigating to {options}</Feedback>
 
-      <Navigate/>
+      <Navigate Target="/category/{options}" />
 
     </Command>
 
