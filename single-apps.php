@@ -17,16 +17,11 @@
                                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" class="responsive-img" />
                                                 <?php }; ?>
                                       </div>
-                                      <div class="card-content">
-                                        <p class="postdate center-align">
-                                          <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
-                                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
-                                          <?php if( is_sticky() ) {
-                                            ?><i class="fa fa-star"></i> Featured
-                                        <?php  } ?>
-                                        </p>
-                                        <p><?php the_content(); ?></p>
-                                      </div>
+                                </div>
+                                <!-- error handling -->
+                                <?php endwhile; else: ?>
+                                      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
+                                <?php endif; ?>
 
                                     </article><!-- close article -->
 
@@ -35,13 +30,6 @@
                             </div><!-- close post class div -->
                           </div>
                                 <!-- column end! -->
-
-
-
-                            <!-- error handling -->
-                            <?php endwhile; else: ?>
-                        		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
-                            <?php endif; ?>
 
                             <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
                           </div><!-- einde md8 -->
