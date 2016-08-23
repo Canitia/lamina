@@ -36,7 +36,7 @@
                                     ?>
 
                                    <?php  while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-                                       <?php $my_query->the_title(); ?>
+                                       
                                    <?php endwhile; ?>
 
 
