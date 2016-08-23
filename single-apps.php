@@ -27,17 +27,16 @@
                                         </p>
                                         <hr />
                                         <?php
-                                        $posts = get_posts(array(
-                                        	'numberposts'	=> -1,
-                                        	'post_type'		=> 'app-updates'
-                                        ));
+                                            $args = array( 'post_type' => 'app-updates' , 'posts_per_page' => 5 );
+
                                             ?>
 
                                             <h2>Latest app updates</h2>
                                             <ul class="collection">
                                             <?php
 
-                                            while ( $posts->have_posts() ) : $posts->the_post();
+                                            $loop = new WP_Query( $args );
+                                            while ( $loop->have_posts() ) : $loop->the_post();
                                               ?>
                                                 <li class="collection-item">
 
