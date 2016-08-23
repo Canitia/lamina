@@ -40,9 +40,9 @@
             <a href="<?php echo home_url();  ?>" class="headerurl" style="color: #<?php echo get_header_textcolor(); ?> !important;"><?php bloginfo('name'); ?></a>
         </p>
 
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <div id="nav-mobile" class="right hide-on-med-and-down">
            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-         </ul>
+         </div>
          <a href="#" data-activates="slide-out" class="button-collapse right"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
 <ul id="slide-out" class="side-nav">
