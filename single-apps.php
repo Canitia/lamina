@@ -29,7 +29,7 @@
                                         <?php
                                             $appname = str_replace(' ', '-', strtolower(get_field( "name" )));
 
-                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 	'meta_key' => 'name',	'meta_value' => $appname );
+                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 	'name' => $appname );
 var_dump($args);
 
                                             ?>
