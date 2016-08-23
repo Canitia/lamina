@@ -3,7 +3,7 @@
      <div class="row">
      <div class="col s12 m12 l8 main-content">
 
-<?php if ( >have_posts() ) : ?>
+<?php if ( have_posts() ) : ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
           <div class="card">
@@ -34,7 +34,7 @@
 
                                  while ($the_query->have_posts()) :
                                         echo 'it has content!';
-                                    endwhile;
+                                  endwhile;
 
 
 
