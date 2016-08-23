@@ -30,8 +30,6 @@
                                  	)
                                  );
 
-                                 var_dump($the_query);
-
                                  while ($the_query->have_posts()) :
                                         echo 'it has content!';
                                   endwhile;
