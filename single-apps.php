@@ -27,23 +27,15 @@
                                         </p>
                                         <hr />
                                         <?php
-                                            $args = array(
-                                                            'post_type' => 'app-updates' ,
-                                                            'posts_per_page' => 5,
-
-                                                            'meta_query' => array (
-                                                      		    array (
-                                                      			  'key' => 'name',
-                                                      			  'value' => getField('name'),
-                                                                                'compare' => 'LIKE'
-                                                      		    )
-                                                      		  ) );
-
-                                                            var_dump($args);
-
-
-
-
+                                            $appname = get_field( "name" );
+                                            $args = array( 'post_type' => 'app-updates' , 'posts_per_page' => 5,
+                                            'meta_query' => array (
+                                                array (
+                                                'key' => 'name',
+                                                'value' =>  $appname,
+                                                                  'compare' => 'IN'
+                                                )
+                                              ) );
 
                                             ?>
 
@@ -52,7 +44,6 @@
                                             <?php
 
                                             $loop = new WP_Query( $args );
-                                            var_dump($loop);
                                             while ( $loop->have_posts() ) : $loop->the_post();
                                               ?>
                                                 <li class="collection-item">
