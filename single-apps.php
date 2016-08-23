@@ -17,35 +17,45 @@
                                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" class="responsive-img" />
                                                 <?php }; ?>
                                       </div>
-                                </div>
+                                      <div class="card-content">
+                                        <p class="postdate center-align">
+                                          <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
+                                          <?php if( is_sticky() ) {
+                                            ?><i class="fa fa-star"></i> Featured
+                                        <?php  } ?>
+                                        </p>
+                                        <p><?php the_content(); ?></p>
+                                        <hr />
+                                        <?php
 
-                                <!-- let user enter a comment -->
-                          <?php //comments_template(); ?>
-                        </div><!-- close post class div -->
-                                <!-- error handling -->
-                                <?php endwhile; else: ?>
-                                      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
-                                <?php endif; ?>
-                                <?php wp_reset_postdata(); ?>
+                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
 
-                          		<?php
+                                            $loop = new WP_Query( $args );
+                                            while ( $loop->have_posts() ) : $loop->the_post();
+                                              the_title();?>
 
-                                  $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
+                                        <?php endwhile; // end of the loop. ?>
 
-                                  $loop = new WP_Query( $args );
-                                  while ( $loop->have_posts() ) : $loop->the_post();
-                                    the_title();?>
+                                            <?php wp_reset_postdata(); ?>
 
-                          		<?php endwhile; // end of the loop. ?>
-
-                                  <?php wp_reset_postdata(); ?>
+                                      </div>
 
 
                                     </article><!-- close article -->
 
-
+                                          <!-- let user enter a comment -->
+                                		<?php //comments_template(); ?>
+                            </div><!-- close post class div -->
                           </div>
                                 <!-- column end! -->
+
+
+
+                            <!-- error handling -->
+                            <?php endwhile; else: ?>
+                        		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
+                            <?php endif; ?>
 
                             <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
                           </div><!-- einde md8 -->
