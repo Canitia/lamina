@@ -29,9 +29,7 @@
                                         <?php
                                             $appname = str_replace(' ', '-', strtolower(get_field( "name" )));
 
-                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 	'name' => $appname );
-var_dump($args);
-
+                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
 
                                             <h2>Latest app updates</h2>
@@ -39,6 +37,7 @@ var_dump($args);
                                             <?php
 
                                             $loop = new WP_Query( $args );
+                                                                                        print_r($loop);
                                             while ( $loop->have_posts() ) : $loop->the_post();
                                               ?>
                                                 <li class="collection-item">
