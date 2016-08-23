@@ -27,8 +27,8 @@
                                         </p>
                                         <hr />
                                         <?php
-
-                                            $args = array( 'post_type' => 'app-updates', 'name' = get_field( "name" ) , 'posts_per_page' => 5 );?>
+                                            $appname = get_field( "name" );
+                                            $args = array( 'post_type' => 'app-updates', 'name' = $appname , 'posts_per_page' => 5 );?>
 
                                             <h2>Latest app updates</h2>
                                             <ul class="collection">
