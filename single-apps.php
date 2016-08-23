@@ -23,13 +23,6 @@
                         <p>
 
                                  <?php
-
-                                 $the_query = new WP_Query(
-                                 	array(
-                                 		'post_type' => array( 'app-updates' )
-                                 	)
-                                 );
-
                                  // Get the last 10 posts in the special_cat category.
                                 query_posts( 'post_type=app-updates&posts_per_page=10' );
 
