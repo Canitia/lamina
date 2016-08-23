@@ -24,6 +24,14 @@
 
 
 
+                                   <?php $my_query = new WP_Query( 'post_type=app-updates&posts_per_page=10' ); var_dump($my_query); ?>
+
+                                   <?php // while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+                                   	<!-- Do special_cat stuff... -->
+                                   <?php //endwhile; ?>
+
+
+
 
                         </p>
                       </div>
