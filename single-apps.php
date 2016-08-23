@@ -29,7 +29,7 @@
                                  while ( have_posts() ) : the_post();
                                         the_title();
                                    endwhile;
-
+            	 wp_reset_postdata();
 
                                  ?>
 
@@ -68,7 +68,7 @@
                   <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
             <?php endif;
 
-            	 wp_reset_postdata(); ?>
+ ?>
 
             <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
           </div><!-- einde md8 -->
