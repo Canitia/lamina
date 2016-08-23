@@ -33,7 +33,7 @@
                                                 array (
                                                 'key' => 'name',
                                                 'value' =>  $appname,
-                                                                  'compare' => 'IN'
+                                                                  'compare' => 'LIKE'
                                                 )
                                               ) );
 
