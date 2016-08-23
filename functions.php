@@ -51,7 +51,7 @@ add_theme_support( 'custom-header', $args );
 
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
-  register_post_type( 'app_update',
+  register_post_type( 'apps',
     array(
       'labels' => array(
         'name' => __( 'App Updates' ),
