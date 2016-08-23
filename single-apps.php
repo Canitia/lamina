@@ -30,10 +30,12 @@
                                  	)
                                  );
 
-                                 while ($the_query->have_posts()) :
-                                        the_title();
-                                  endwhile;
+                                 // Get the last 10 posts in the special_cat category.
+                                query_posts( 'post_type=app-updates&posts_per_page=10' );
 
+                                 while ( have_posts() ) : the_post();
+                                        the_title();
+                                   endwhile;
 
 
                                  ?>
