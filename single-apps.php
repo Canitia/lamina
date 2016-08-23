@@ -5,19 +5,11 @@
 
 
 
-       <?php
 
-$the_query = new WP_Query(
-	array(
-		'post_type' => array( 'App-updates' ),
-		'posts_per_page' => 5
-	)
-);
-?>
 
-<?php if ( $the_query->have_posts() ) : ?>
+<?php if ( have_posts() ) : ?>
 
-	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+	<?php while ( have_posts() ) : the_post(); ?>
           <div class="card">
                 <div <?php post_class(); ?>>
                     <article>
