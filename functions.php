@@ -49,6 +49,19 @@ $args = array(
 );
 add_theme_support( 'custom-header', $args );
 
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'app_update',
+    array(
+      'labels' => array(
+        'name' => __( 'App Updates' ),
+        'singular_name' => __( 'Updates' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
 
 /**
  * custom background-color
