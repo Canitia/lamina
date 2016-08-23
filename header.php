@@ -14,7 +14,7 @@
     <meta name="msapplication-square150x150logo" content="<?php echo esc_url( get_template_directory_uri() ); ?>/win-tiles/medium.jpg"/>
     <meta name="msapplication-wide310x150logo" content="<?php echo esc_url( get_template_directory_uri() ); ?>/win-tiles/wide.jpg"/>
     <meta name="msapplication-square310x310logo" content="<?php echo esc_url( get_template_directory_uri() ); ?>/win-tiles/large.jpg"/>
-    <meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=5; cycle=1"/>
+    <meta name="msapplication-notification" content="frequency=10;polling-uri=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=https://insideuwp.xyz/rss&amp;id=5; cycle=1"/>
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
