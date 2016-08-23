@@ -29,6 +29,8 @@
                                         <?php
                                             $appname = str_replace(' ', '-', strtolower(get_field( "name" )));
 
+                                            echo
+
                                             $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
 
@@ -37,13 +39,12 @@
                                             <?php
 
                                             $loop = new WP_Query( $args );
-                                                                                        print_r($loop);
                                             while ( $loop->have_posts() ) : $loop->the_post();
                                               ?>
                                                 <li class="collection-item">
 
-                                              <?php the_title();
-                                              ?>
+                                               <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                                              
 
                                             </li>
                                         <?php endwhile; // end of the loop. ?>
