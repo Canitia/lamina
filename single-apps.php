@@ -39,6 +39,7 @@
                                             <?php
 
                                             $loop = new WP_Query( $args );
+                                            $var_dump($loop);
                                             while ( $loop->have_posts() ) : $loop->the_post();
                                               ?>
                                                 <li class="collection-item">
