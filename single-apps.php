@@ -3,11 +3,7 @@
      <div class="row">
      <div class="col s12 m12 l8 main-content">
 
-
-
-
-
-<?php if ( have_posts() ) : ?>
+<?php if ( >have_posts() ) : ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
           <div class="card">
@@ -24,14 +20,25 @@
                                 <?php }; ?>
                       </div>
                       <div class="card-content">
-                        <p class="postdate center-align">
-                          <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
-                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
-                          <?php if( is_sticky() ) {
-                            ?><i class="fa fa-star"></i> Featured
-                        <?php  } ?>
+                        <p>
+
+                                 <?php
+
+                                 $the_query = new WP_Query(
+                                 	array(
+                                 		'post_type' => array( 'App-updates' )
+                                 	)
+                                 );
+
+                                 var_dump($the_query);
+
+
+                                 ?>
+
+
+
+
                         </p>
-                        <p><?php the_content(); ?></p>
                       </div>
                       <?php if(has_tag()) { ?>
                       <div class="tags">
