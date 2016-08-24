@@ -28,9 +28,11 @@
                                         <hr />
                                         <?php
                                         $idparent = get_field('appparent');
+                                        $idparent2 = get_field('poparent');
                                         $parentname = get_field('name', $idparent);
                                         var_dump($parentname);
                                         var_dump($idparent);
+                                        var_dump($idparent2);
                                             $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 	'meta_key'		=> 'appparent',	'meta_value'	=> $parentname );
                                             ?>
 
