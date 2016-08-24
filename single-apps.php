@@ -27,10 +27,10 @@
                                         </p>
                                         <hr />
                                         <?php
-                                        $idparent = get_field('parent');
+                                        $idparent = get_field('appparent');
                                         $parentname = get_field('name', $idparent);
                                         var_dump($parentname);
-                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 	'meta_key'		=> 'parent',	'meta_value'	=> $parentname );
+                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 	'meta_key'		=> 'appparent',	'meta_value'	=> $parentname );
                                             ?>
 
                                             <h2>Latest app updates</h2>
