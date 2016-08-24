@@ -25,7 +25,7 @@
                                       //  $parentname = get_field('appparent', get_the_id());
                                       // get only first 3 results
                                       $ids = get_field_object('apparent');
-                                      $id = $ids['ID'];
+                                      $id = $ids->ID;
                                       var_dump($id);
 
                                             $args = array( 'post_type' => 'app-updates',
