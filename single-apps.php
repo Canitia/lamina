@@ -28,7 +28,7 @@
                                         <hr />
                                         <?php
                                         $idparent = get_field('appparent');
-                                        $idparent2 = get_field('poparent');
+                                        $idparent2 = get_field('POParent');
                                         $parentname = get_field('name', $idparent);
                                         var_dump($parentname);
                                         var_dump($idparent);
