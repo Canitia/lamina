@@ -18,18 +18,11 @@
                                                 <?php }; ?>
                                       </div>
                                       <div class="card-content">
-                                        <p class="postdate center-align">
-                                          <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
-                                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
-                                          <?php if( is_sticky() ) {
-                                            ?><i class="fa fa-star"></i> Featured
-                                        <?php  } ?>
-                                        </p>
+
                                         <hr />
                                         <?php
 
                                       //  $parentname = get_field('appparent', get_the_id());
-                                        var_dump(  get_field('appparent'));
 
                                             $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
