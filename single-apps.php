@@ -28,10 +28,10 @@
 
 
                                             $args = array( 'post_type' => 'app-updates',
-                                                            'posts_per_page' => 5
+                                                            'posts_per_page' => 5,
                                                             'post__in'			=> $ids,
                                                             'post_status'		=> 'any',
-                                                            'orderby'        	=> 'post__in',
+                                                            'orderby'        	=> 'post__in'
                                                            );
                                             ?>
 
