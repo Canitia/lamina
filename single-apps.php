@@ -25,7 +25,7 @@
                                       //  $parentname = get_field('appparent', get_the_id());
                                       // get only first 3 results
                                       $ids = get_field('appparent', false, false);
-
+                                      var_dump($ids);
 
                                             $args = array( 'post_type' => 'app-updates',
                                                             'posts_per_page' => 5,
