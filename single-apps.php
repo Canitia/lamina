@@ -29,7 +29,7 @@
                                         <?php
                                         $idparent = getField('parent');
                                         $parentname = getField('name', $idparent);
-                                        echo $parentname;
+                                        print_r($parentname);
                                             $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
 
