@@ -27,8 +27,9 @@
                                         </p>
                                         <hr />
                                         <?php
+
                                       //  $parentname = get_field('appparent', get_the_id());
-                                    //    var_dump($parentname);
+                                        var_dump(  get_field('appparent'));
 
                                             $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
