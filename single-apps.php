@@ -27,8 +27,8 @@
                                         </p>
                                         <hr />
                                         <?php
-                                            $name = getField('name');
-                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 'meta_key' => 'parent', 'meta_value' => $name );
+                                            $name = getField('name', getField('parent'));
+                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
 
                                             <h2>Latest app updates</h2>
@@ -36,6 +36,7 @@
                                             <?php
 
                                             $loop = new WP_Query( $args );
+                                            var_dump($loop);
                                             while ( $loop->have_posts() ) : $loop->the_post();
                                               ?>
                                                 <li class="collection-item">
