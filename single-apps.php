@@ -27,7 +27,7 @@
                                         </p>
                                         <hr />
                                         <?php
-                                      //  $idparent = getField('parent');
+                                        $idparent = getField('parent');
                                       //  $parentname = getField('name', $idparent);
                                             $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
@@ -37,7 +37,7 @@
                                             <?php
 
                                             $loop = new WP_Query( $args );
-                                            var_dump($loop);
+                                            //var_dump($loop);
                                             while ( $loop->have_posts() ) : $loop->the_post();
                                               ?>
                                                 <li class="collection-item">
