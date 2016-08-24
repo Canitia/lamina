@@ -27,7 +27,8 @@
                                         </p>
                                         <hr />
                                         <?php
-                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 'meta_key' => 'parent', 'meta_value' => 'getField('name')' );
+                                            $name = getField('name');
+                                            $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5, 'meta_key' => 'parent', 'meta_value' => $name );
                                             ?>
 
                                             <h2>Latest app updates</h2>
