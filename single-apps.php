@@ -25,11 +25,12 @@
                                       //  $parentname = get_field('appparent', get_the_id());
                                       // get only first 3 results
                                       $ids = get_field_object('apparent');
-                                      var_dump($ids);
+                                      $id = $ids['ID'];
+                                      var_dump($id);
 
                                             $args = array( 'post_type' => 'app-updates',
                                                             'posts_per_page' => 5,
-                                                            'post__in'			=> $ids,
+                                                            'post__in'			=> $id,
                                                             'post_status'		=> 'any',
                                                             'orderby'        	=> 'post__in'
                                                            );
