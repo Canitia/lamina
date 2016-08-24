@@ -27,7 +27,11 @@
                                         </p>
                                         <hr />
                                         <?php
-                                        $idparent = getField('parent');
+                                        $field_name = "parent";
+                                        $field = get_field_object($field_name);
+
+var_dump($field);
+                                      //  $idparent = getField('parent');
                                       //  $parentname = getField('name', $idparent);
                                             $args = array( 'post_type' => 'app-updates', 'posts_per_page' => 5 );
                                             ?>
