@@ -412,6 +412,7 @@ POST/ARTICLE HEADERS
 
 .card .card-content {
     background-color: white !important;
+    padding-bottom:0px !important;
 }
 
 .card .card-content p {
