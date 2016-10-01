@@ -12,7 +12,7 @@
                                         </span>
                                       <div class="card-image card-image-single">
                                         <?php if ( has_post_thumbnail() ) {
-                                                        the_post_thumbnail( 'large', array( 'class' => 'responsive-img' ) );
+                                                        the_post_thumbnail( 'large' );
                                               } else { ?>
                                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" class="responsive-img" />
                                                 <?php }; ?>
