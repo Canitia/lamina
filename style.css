@@ -716,6 +716,10 @@ p.tagline {
     display: block;
   }
 
+  .postdate {
+    padding-bottom:10px;
+  }
+
 }
 
 	/* **************************************
