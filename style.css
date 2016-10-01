@@ -192,8 +192,6 @@ strong {
   }
 }
 
-
-
  .card.large .card-hover {
 	 background: black !important;
  }
@@ -203,7 +201,7 @@ strong {
 }
 
 .card.large {
-
+  min-width:500px;
   margin-bottom: 30px !important;
 }
 
