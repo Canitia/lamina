@@ -1,15 +1,3 @@
-// code to enable side navigation
-jQuery(document).ready(function(){
-  // Initialize collapse button
-  jQuery('.button-collapse').sideNav({
-        edge: 'right', // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      }
-    );
-    updateTile('InsideUWP' );
- });
-
-
 //code for analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
