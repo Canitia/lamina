@@ -32,23 +32,6 @@
                                           </div>
                                         </div>
 
-                                        <ul class="collection hide-on-med-and-up">
-                                             <li class="collection-item avatar">
-                                               <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                               <?php if ( has_post_thumbnail() ) {
-                                                           the_post_thumbnail( 'small' );
-                                                     } else { ?>
-                                                       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>"  class="responsive-img" />
-                                                       <?php }; ?>
-                                               </a>
-                                               <span class="title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></span>
-                                               <p>
-                                                 <?php the_excerpt(); ?>
-                                               </p>
-                                             </li>
-                                        </ul>
-
-
                             <?php endwhile; else: ?>
                             <!-- error handling -->
                         		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
