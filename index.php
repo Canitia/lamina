@@ -5,7 +5,7 @@
                         <?php
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         ?>
-                                      <div class="card large">
+                                      <div class="card large hide-on-small-only">
                                           <div class="card-image card-hover">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
@@ -31,6 +31,22 @@
 
                                           </div>
                                         </div>
+
+                                        <ul class="collection hide-on-med-and-up">
+                                             <li class="collection-item avatar">
+                                               <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                               <?php if ( has_post_thumbnail() ) {
+                                                           the_post_thumbnail( 'small' );
+                                                     } else { ?>
+                                                       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>"  class="responsive-img" />
+                                                       <?php }; ?>
+                                               </a>
+                                               <span class="title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></span>
+                                               <p>
+                                                 <?php the_excerpt(); ?>
+                                               </p>
+                                             </li>
+                                        </ul>
 
 
                             <?php endwhile; else: ?>
