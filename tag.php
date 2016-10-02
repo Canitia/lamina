@@ -2,8 +2,28 @@
 
      <div class="row">
                <div class="col s12 m12 l8 main-content">
+                 <div class="jumbotron accentcolor2">
+                     <div class="container">
+                             <div class="col-md-24 center">
+                                 <h3 class="posttitle-single"><?php single_tag_title(); ?></h3>
+                                 <div>
+                                     <div class="type-p3"><?php
+                                     // Fetch post content
+                                     $content = get_post_field( 'post_content', get_the_ID() );
+
+                                     // Get content parts
+                                     $content_parts = get_extended( $content );
+
+                                     // Output part before <!--more--> tag
+                                     echo $content_parts['main'];
+
+                                      ?></div>
+                                 </div>
+                             </div>
+                     </div>
+                 </div>
                  <div class="tag_heading center-align text-left-title-featured-sidebar accentcolor2">
-                 <h3><?php single_tag_title(); ?></h3>
+                 <h3></h3>
                  </div>
                               <?php if ( have_posts() ) : ?>
                                   <?php while ( have_posts() ) : the_post(); ?>
