@@ -17,7 +17,7 @@
                               <div class="container">
                                   <div class="row">
                                       <div class="col-md-24 center">
-                                          <h3><?php the_title(); ?></h3>
+                                          <h3 class="posttitle-single"><?php the_title(); ?></h3>
                                           <div>
                                               <div class="type-p3"><?php
                                               // Fetch post content
