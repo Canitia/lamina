@@ -31,7 +31,7 @@
 
                                                ?></div>
                                               <br />
-                                              <p class="postdate center-align">
+                                              <p class="postdate-single center-align">
                                                 <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
                                                 <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
                                                 <?php if( is_sticky() ) {
