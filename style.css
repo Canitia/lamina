@@ -382,6 +382,12 @@ POST/ARTICLE HEADERS
   margin-bottom: -10px;
 }
 
+.card-content > p > img {
+  margin-left:auto;
+  margin-right: auto;
+  display:block;
+}
+
 .post-header-img > img {
   height: auto;
   width: 100%;
