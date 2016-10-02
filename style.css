@@ -398,26 +398,26 @@ POST/ARTICLE HEADERS
 
 
 .card-content > h1 {
-  	font-size: 175%;
-    margin-left: 10px;
+  	font-size: 185%;
+    padding-top: 25px;
 		font-weight: 300;
 }
 
 .card-content > h2 {
-	font-size: 155%;
-  margin-left: 10px;
+	font-size: 165%;
+  padding-top: 25px;
 	font-weight: 300;
 }
 
 .card-content > h3 {
-	font-size: 140%;
-  margin-left: 10px;
+	font-size: 145%;
+  padding-top: 15px;
 	font-weight: 300;
 }
 
 .card-content > h4 {
 	font-size: 125%;
-  margin-left: 10px;
+  padding-top: 15px;
 	font-weight: 300;
 }
 
