@@ -607,8 +607,8 @@ p.author-bio {
 .tags {
   line-height: 50px;
   padding-bottom: 10px !important;
-	margin-left: 15px;
-	font-size: 85%;
+	margin-left: 35px;
+  border-top: 1px solid #ebebeb;
 }
 
 .tags a {
