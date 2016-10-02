@@ -459,11 +459,8 @@ POST/ARTICLE HEADERS
 }
 
 .card-content > ol li, article ol li {
-  margin-left: 40px;
-  margin-right: 40px;
   padding:5px;
   line-height: 28px;
-  text-align: justify;
 }
 
 blockquote ul li, blockquote ol li {
