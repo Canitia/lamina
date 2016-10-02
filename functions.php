@@ -160,6 +160,16 @@ function add_my_post_types_to_query( $query ) {
   if ( is_home() && $query->is_main_query() )
     $query->set( 'post_type', array( 'post', 'page', 'in_depth' ) );
   return $query;
+
+	if(is_category() || is_tag()) {
+	$post_type = get_query_var('post_type');
+if($post_type)
+		$post_type = $post_type;
+else
+		$post_type = array('post','in_depth'); // replace cpt to your custom post type
+	$query->set('post_type',$post_type);
+return $query;
+	}
 }
 
 
