@@ -38,7 +38,7 @@
                   </div>
           </div>
       </div>
-     <div class="row">
+     <div class="row row-single">
      <div class="main-content">
                           <div class="card">
                                 <div <?php post_class(); ?>>
