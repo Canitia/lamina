@@ -29,7 +29,7 @@
                                         </div>
 
                                         <?php if(has_tag()) { ?>
-                                        <div class="tags">
+                                        <div class="tags center">
                                           <p><strong>Tags: </strong><?php the_tags( '', ', ', '' ); ?>
                                         </div>
                                         <?php } ?>
