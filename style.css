@@ -493,7 +493,7 @@ article {
 }
 
 .card .card-image img {
-
+  height: auto !important;
 }
 
 .card-content > img, .card-content > p > img {
