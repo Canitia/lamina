@@ -378,7 +378,7 @@ POST/ARTICLE HEADERS
   ARTICLE/POST LOOK-N-FEEL
 
 *****************************************/
-.post-header-img {
+.post-header-img > img {
   height: auto;
   width: 100%;
 }
