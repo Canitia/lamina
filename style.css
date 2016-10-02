@@ -378,6 +378,12 @@ POST/ARTICLE HEADERS
   ARTICLE/POST LOOK-N-FEEL
 
 *****************************************/
+.post-header-img {
+  height: auto;
+  width: 100%;
+}
+
+
 .card-content > h1 {
   	font-size: 175%;
     margin-left: 10px;
