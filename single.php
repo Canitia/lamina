@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
      <div class="row">
-     <div class="main-content">
+     <div class="col s12 m12 l8 main-content">
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
                           <div class="card">
@@ -59,6 +59,11 @@
 
                             <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
                           </div><!-- einde md8 -->
+
+    <div class="col l4 hide-on-med-and-down">
+        <?php get_sidebar( 'primary' ); ?>
+    </div>
+
   </div><!-- end row -->
 </div><!-- container fluid END! -->
 
