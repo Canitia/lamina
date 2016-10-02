@@ -12,7 +12,6 @@
 
       <div class="jumbotron accentcolor">
           <div class="container">
-              <div class="row">
                   <div class="col-md-24 center">
                       <h3 class="posttitle-single"><?php the_title(); ?></h3>
                       <div>
@@ -37,7 +36,6 @@
                           </p>
                       </div>
                   </div>
-              </div>
           </div>
       </div>
      <div class="row">
