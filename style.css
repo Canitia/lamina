@@ -378,6 +378,10 @@ POST/ARTICLE HEADERS
   ARTICLE/POST LOOK-N-FEEL
 
 *****************************************/
+.post-header-img {
+  margin-bottom: -10px;
+}
+
 .post-header-img > img {
   height: auto;
   width: 100%;
