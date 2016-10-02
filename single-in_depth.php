@@ -10,7 +10,7 @@
       <?php }; ?>
       </div>
 
-      <div class="jumbotron accentcolor">
+      <div class="jumbotron accentcolor2">
           <div class="container">
                   <div class="col-md-24 center">
                       <h3 class="posttitle-single"><?php the_title(); ?></h3>
