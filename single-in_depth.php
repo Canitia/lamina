@@ -43,7 +43,7 @@
                           <div class="card">
                                 <div <?php post_class(); ?>>
                                     <article>
-                                      <div class="card-content-single">
+                                      <div class="card-content card-content-single">
                                         <p><?php the_content(); ?></p>
                                       </div>
                                       <?php if(has_tag()) { ?>
