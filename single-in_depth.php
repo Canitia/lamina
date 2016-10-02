@@ -44,7 +44,7 @@
                                 <div <?php post_class(); ?>>
                                     <article>
                                       <div class="card-content card-content-single">
-                                        <p><?php the_content(); ?></p>
+                                        <p><?php the_content( '', TRUE ); ?></p>
                                       </div>
                                       <?php if(has_tag()) { ?>
                                       <div class="tags center">
