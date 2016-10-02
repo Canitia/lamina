@@ -501,6 +501,7 @@ article {
 	margin-right:auto;
 	margin-bottom: 30px;
 	margin-top:30px;
+  height: auto;
 }
 
 img.content-images-featured:hover, img.content-images:hover {
