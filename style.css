@@ -438,6 +438,8 @@ POST/ARTICLE HEADERS
 .card .card-content {
     background-color: white !important;
     padding-bottom:0px !important;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .card .card-content p {
@@ -719,6 +721,8 @@ p.tagline {
   .card .card-content {
     padding: 20px !important;
     padding-bottom:3px !important;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
 	.pagination, .main-content {
