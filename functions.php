@@ -157,9 +157,10 @@ function cptui_register_my_cpts_in_depth() {
 add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
 function add_my_post_types_to_query( $query ) {
-  if ( is_home() && $query->is_main_query() )
+  if ( is_home() && $query->is_main_query() ) {
     $query->set( 'post_type', array( 'post', 'page', 'in_depth' ) );
   return $query;
+}
 
 	if(is_category() || is_tag()) {
 	$post_type = get_query_var('post_type');
