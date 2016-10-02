@@ -550,6 +550,11 @@ padding-right: 40px;
 	ARTICLE: AUTHOR look-n-feel
 
 *****************************************/
+.author-profile {
+  padding:20px;
+}
+
+
 .author-profile h4 a {
 	text-decoration: underline;
 }
