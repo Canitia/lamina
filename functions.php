@@ -120,4 +120,38 @@ function theme_prefix_the_custom_logo() {
 
 }
 
+add_action( 'init', 'cptui_register_my_cpts_in_depth' );
+function cptui_register_my_cpts_in_depth() {
+	$labels = array(
+		"name" => __( 'In-Depth', 'jade-for-wordpress' ),
+		"singular_name" => __( 'In-Depth', 'jade-for-wordpress' ),
+		);
+
+	$args = array(
+		"label" => __( 'In-Depth', 'jade-for-wordpress' ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => true,
+		"show_in_menu" => true,
+				"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "in_depth", "with_front" => true ),
+		"query_var" => true,
+
+		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
+		"taxonomies" => array( "category", "post_tag" ),
+			);
+	register_post_type( "in_depth", $args );
+
+// End of cptui_register_my_cpts_in_depth()
+}
+
+
 ?>
