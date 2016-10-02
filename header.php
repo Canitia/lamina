@@ -23,9 +23,8 @@
 
 <!-- start of the actual header -->
 <header>
-    <nav class="navbar navbar-default">
-    <div class="navbar-global theme-default">
-
+    <div class="navbar-fixed">
+    <nav class="accentcolor">
       <div class="nav-wrapper">
         <?php if ( function_exists( 'the_custom_logo' ) ) {
             the_custom_logo();
@@ -44,10 +43,9 @@
 </ul>
 
 </div>
-
+</nav>
 
 </div>
-</nav>
 </header>
 <div class="container-fluid">
 <!-- <img src="<?php header_image(); ?>" height="<?php // echo get_custom_header()->height; ?>" width="<?php //echo get_custom_header()->width;?>" class="center-align"  alt="header image" /> -->
