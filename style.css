@@ -228,6 +228,7 @@ transform-origin: left top 0;
 
 nav .brand-logo {
 	line-height:5px;
+  padding: 20px !important;
 }
 
 nav .sub-menu {
