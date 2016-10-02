@@ -4,12 +4,45 @@
      <div class="main-content">
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
-                          
+
+                          <div class="post-header-img">
                           <?php if ( has_post_thumbnail() ) {
                                           the_post_thumbnail( 'large' );
                                 } else { ?>
                                   <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" class="responsive-img" />
                           <?php }; ?>
+                          </div>
+
+                          <div class="jumbotron accentcolor">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-md-24 center">
+                                          <h3><?php the_title(); ?></h3>
+                                          <div>
+                                              <div class="type-p3"><?php
+                                              // Fetch post content
+                                              $content = get_post_field( 'post_content', get_the_ID() );
+
+                                              // Get content parts
+                                              $content_parts = get_extended( $content );
+
+                                              // Output part before <!--more--> tag
+                                              echo $content_parts['main'];
+
+                                               ?></div>
+                                              <br />
+                                              <p class="postdate center-align">
+                                                <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+                                                <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
+                                                <?php if( is_sticky() ) {
+                                                  ?><i class="fa fa-star"></i> Featured
+                                              <?php  } ?>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
 
 
                           <div class="card">
@@ -26,13 +59,6 @@
                                                 <?php }; ?>
                                       </div>
                                       <div class="card-content">
-                                        <p class="postdate center-align">
-                                          <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
-                                          <i class="fa fa-user-secret"></i>  <?php the_author_posts_link();?>
-                                          <?php if( is_sticky() ) {
-                                            ?><i class="fa fa-star"></i> Featured
-                                        <?php  } ?>
-                                        </p>
                                         <p><?php the_content(); ?></p>
                                       </div>
                                       <?php if(has_tag()) { ?>
