@@ -197,7 +197,6 @@ strong {
 }
 
 .card.large {
-  min-width:500px;
   height: auto !important;
   margin-bottom: 30px !important;
 }
