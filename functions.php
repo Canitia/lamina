@@ -136,7 +136,7 @@ function cptui_register_my_cpts_in_depth() {
 		"show_ui" => true,
 		"show_in_rest" => false,
 		"rest_base" => "",
-		"has_archive" => true,
+		"has_archive" => false,
 		"show_in_menu" => true,
 				"exclude_from_search" => false,
 		"capability_type" => "post",
