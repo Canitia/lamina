@@ -185,13 +185,6 @@ strong {
 	margin-bottom:40px !important;
 }
 
-@supports (-ms-accelerator:true) {
-  .card-image > img {
-    width: auto !important;
-    height: auto !important;
-  }
-}
-
  .card.large .card-hover {
 	 background: black !important;
  }
@@ -463,6 +456,10 @@ article {
     margin-right: auto;
     margin-bottom: 15px;
 		word-wrap: break-word;
+}
+
+.card .card-image img {
+
 }
 
 .card-content > img, .card-content > p > img {
