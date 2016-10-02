@@ -387,6 +387,10 @@ POST/ARTICLE HEADERS
   width: 100%;
 }
 
+.card-content-single {
+  margin-top:-10px;
+}
+
 .col-md-24, .col-md-24 > a {
   color: white;
   font-weight: 300;
