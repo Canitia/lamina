@@ -38,9 +38,9 @@
          </ul>
          <a href="#" data-activates="slide-out" class="button-collapse right"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
-<ul id="slide-out" class="side-nav">
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-</ul>
+        <ul id="slide-out" class="side-nav">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+        </ul>
 
 </div>
 </nav>
