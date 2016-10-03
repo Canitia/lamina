@@ -298,10 +298,6 @@ i.fa.fa-bars {
     overflow:auto;
 }
 
-.side-nav {
-  background-color: black !important;
-}
-
 .side-nav a:hover {
   background-color: #0d47a1;
 }
