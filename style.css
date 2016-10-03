@@ -695,7 +695,6 @@ p.tagline {
 
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
-    min-width: 590px;
 		margin-top:0px;
 		margin-left: 0px;
 		margin-right: 0px;
