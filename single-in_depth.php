@@ -52,15 +52,16 @@
                                       </div>
                                       <?php } ?>
 
-                                      <section class="author-profile">
-                                        <p class="author-bio">
-                                      <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
-                                        <?php the_author_posts_link();?>
-                                          <?php edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
-                                        <br />
-                                          <?php echo nl2br(get_the_author_meta('description'));  ?>
-                                      </p>
-                                      </section>
+                                      <!--                                      <section class="author-profile">
+                                                                              <p class="author-bio">
+                                                                            <?php //echo get_avatar( get_the_author_meta('email'), '100' ); ?>
+                                                                              <?php the_author_posts_link();?>
+                                                                                <?php //edit_post_link('edit', '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' ); ?>
+                                                                              <br />
+                                                                                <?php //echo nl2br(get_the_author_meta('description'));  ?>
+                                                                            </p>
+                                                                          </section>
+                                      -->
                                     </article><!-- close article -->
 
                                           <!-- let user enter a comment -->
