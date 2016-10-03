@@ -444,11 +444,6 @@ POST/ARTICLE HEADERS
     margin-right: 15px;
 }
 
-.card .card-content p {
-  margin-bottom:15px !important;
-}
-
-
 .card-content > ul li, article ul li {
   list-style-type: square !important;
   margin-left: 40px;
