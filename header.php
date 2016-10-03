@@ -26,6 +26,7 @@
     <div class="navbar-fixed">
     <nav class="accentcolor">
       <div class="nav-wrapper">
+        <a href="#" data-activates="slide-out" class="button-collapse left"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <?php if ( function_exists( 'the_custom_logo' ) ) {
             the_custom_logo();
         }?>
@@ -43,7 +44,6 @@
                   );
 ?>
          </ul>
-         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
         <ul id="slide-out" class="side-nav">
           <?php
