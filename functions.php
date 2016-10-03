@@ -176,5 +176,16 @@ return $query;
 add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
 
+function fix_nav_menu( $query ) {
+    if ( $query->get( 'post_type' ) === 'in_depth' ) {
+    $query->set( 'tax_query', '' );
+		$query->set( 'tax_query', '' );
+		$query->set( 'meta_key', '' );
+		$query->set( 'orderby', '' );
+    }
+}
+add_action( 'pre_get_posts', 'fix_nav_menu' );
+
+
 
 ?>
