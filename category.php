@@ -3,7 +3,15 @@
      <div class="row">
                <div class="col s12 m12 l8 main-content">
                  <div class="tag_heading center-align text-left-title-featured-sidebar accentcolor2">
-                 <h3><?php single_cat_title(); ?></h3>
+                   <h3>
+                  <?php
+                   if ( is_archive() || is_category() ) {
+                     ?><i class="fa fa-archive" aria-hidden="true"></i><?php
+                    }
+                    ?>
+                 <?php single_cat_title(); ?>
+
+               </h3>
                  </div>
                               <?php if ( have_posts() ) : ?>
                                   <?php while ( have_posts() ) : the_post(); ?>
