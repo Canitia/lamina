@@ -168,19 +168,14 @@ if($post_type)
 else
 		$post_type = array('post','in_depth'); // replace cpt to your custom post type
 	$query->set('post_type',$post_type);
-return $query;
-	}
-
-	if ( $query->get( 'post_type' ) === 'menu-item' ) {
-	$query->set( 'tax_query', '' );
 	$query->set( 'tax_query', '' );
 	$query->set( 'meta_key', '' );
 	$query->set( 'orderby', '' );
+return $query;
 	}
 }
 
 // Show posts of 'post', 'page' and 'movie' post types on home page
 add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
-
 
 ?>
