@@ -753,6 +753,10 @@ p.tagline {
   margin-right:20px;
 }
 
+.fa-star {
+  color: #ffc768;
+}
+
 .slides > li > p > .fa-star {
 	margin-left: 5px !important;
 	margin-right: 5px !important;
