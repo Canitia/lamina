@@ -726,6 +726,10 @@ p.tagline {
 	p {
 		font-size: 100%;
 	}
+
+  .drag-target {
+    width: 25% !important;
+  }
 }
 	/* tablet devices */
 	@media only screen and (min-width: 993px) {
