@@ -166,11 +166,8 @@ function add_my_post_types_to_query( $query ) {
 if($post_type)
 		$post_type = $post_type;
 else
-		$post_type = array('post','in_depth'); // replace cpt to your custom post type
+		$post_type = array('post','in_depth', 'nav_menu_item'); // replace cpt to your custom post type
 	$query->set('post_type',$post_type);
-	$query->set( 'tax_query', '' );
-	$query->set( 'meta_key', '' );
-	$query->set( 'orderby', '' );
 return $query;
 	}
 }
