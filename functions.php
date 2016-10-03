@@ -171,7 +171,7 @@ else
 return $query;
 	}
 
-	if ( $query->get( 'post_type' ) === 'in_depth' ) {
+	if ( $query->get( 'post_type' ) === 'nav_menu_item' ) {
 	$query->set( 'tax_query', '' );
 	$query->set( 'tax_query', '' );
 	$query->set( 'meta_key', '' );
