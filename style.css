@@ -440,8 +440,6 @@ POST/ARTICLE HEADERS
 .card .card-content {
     background-color: white !important;
     padding-bottom:0px !important;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 .card-content > ul li, article ul li {
@@ -746,6 +744,11 @@ p.tagline {
 
   p.tagline {
     display: block;
+  }
+
+  .card .card-content {
+      margin-left: 15px;
+      margin-right: 15px;
   }
 
 }
