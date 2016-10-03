@@ -27,6 +27,10 @@ background-color: #0d47a1 !important;
   background-color: #1565c0 !important;
 }
 
+.side-nav a:hover {
+  color: white !important;
+}
+
 .widgets-list-layout > li:hover,  .widget > ul > li:hover { /* sidebar collection list hovers */
   background-color: #ebebeb !important;
 }
