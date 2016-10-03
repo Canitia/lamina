@@ -437,6 +437,10 @@ POST/ARTICLE HEADERS
     background-color: white !important;
 }
 
+.card .card-content p {
+  margin: 15px;
+}
+
 .card-content > ul li, article ul li {
   list-style-type: square !important;
   margin-left: 40px;
