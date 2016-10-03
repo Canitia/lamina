@@ -137,7 +137,7 @@ function cptui_register_my_cpts_in_depth() {
 		"show_in_rest" => false,
 		"rest_base" => "",
 		"has_archive" => false,
-		"show_in_menu" => true,
+		"show_in_menu" => false,
 				"exclude_from_search" => false,
 		"capability_type" => "post",
 		"map_meta_cap" => true,
@@ -152,6 +152,7 @@ function cptui_register_my_cpts_in_depth() {
 
 // End of cptui_register_my_cpts_in_depth()
 }
+
 
 // Show posts of 'post', 'page' and 'movie' post types on home page
 add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
