@@ -5,7 +5,7 @@
                  <div class="tag_heading center-align text-left-title-featured-sidebar accentcolor2">
                    <h3>
                   <?php
-                   if ( is_archive() || is_category() ) {
+                   if ( is_archive() ) {
                      ?><i class="fa fa-archive" aria-hidden="true"></i><?php
                     }
                     ?>
