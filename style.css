@@ -693,10 +693,6 @@ p.tagline {
   top: 0px;
 }
 
-.drag-target {
-  width:40% !important;
-}
-
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
 		margin-top:0px;
