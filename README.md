@@ -3,7 +3,7 @@ jade (for Wordpress)
 This is the Wordpress version of the [jade](https://github.com/hxkclan/jade) theme for Ghost. 
 
 **Oktober 2016 update**
-The theme's demo page is down and will stay down for now. I'll try to add some screenshots at a later date or you can just try it out ;) 
+The theme's demo page is down and will stay down for now. Check out screenshot.png to get an idea of what things will look like ;) 
 
 #Current features
 - Optimised for Phones, tablets and desktops
@@ -14,10 +14,7 @@ The theme's demo page is down and will stay down for now. I'll try to add some s
 - Other stuff Wordpress can do ('custom' pages, 'custom' tag page, 'custom' category pages)
 
 #Status
-Currently under development. Sometimes i tag 'releases' if i believe they are usable (aka 'stable'). 
+Temporarily on-hold (until halfway november-ish)
 
 ## Note
 Wordpress default comments are currently unstyled so i recommend using third party ones for now. 
-
-#Preview
-Checkout screenshot.png for now to check out the new theme UI
