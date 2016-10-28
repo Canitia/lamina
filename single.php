@@ -33,7 +33,9 @@
                                       </div>
                                       <?php } ?>
 
-<!--                                      <section class="author-profile">
+<!--
+  [NOT OPTIMISED] UNCOMMENT IF YOU WANT A AUTHOR SECTION AT THE BOTTOM OF A POST.
+                              <section class="author-profile">
                                         <p class="author-bio">
                                       <?php //echo get_avatar( get_the_author_meta('email'), '100' ); ?>
                                         <?php the_author_posts_link();?>
