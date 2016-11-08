@@ -1,6 +1,6 @@
 jade (for Wordpress)
 ==================
-This is the Wordpress version of the [jade](https://github.com/boumannm/jade) theme for Ghost. 
+This is the Wordpress version of the [jade](https://github.com/boumannm/jade) theme for Ghost.
 
 **Oktober 2016 update**
 The theme's demo page is down and will stay down for now. Check out screenshot.png to get an idea of what things will look like ;)
@@ -14,7 +14,7 @@ The theme's demo page is down and will stay down for now. Check out screenshot.p
 - Other stuff Wordpress can do ('custom' pages, 'custom' tag page, 'custom' category pages)
 
 #Status
-Temporarily on-hold (until halfway november-ish)
+Slowly working on it when i have time
 
 ## Note
 Wordpress default comments are currently unstyled so i recommend using third party ones for now.
