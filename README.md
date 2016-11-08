@@ -2,8 +2,8 @@ jade (for Wordpress)
 ==================
 This is the Wordpress version of the [jade](https://github.com/boumannm/jade) theme for Ghost.
 
-**Oktober 2016 update**
-The theme's demo page is down and will stay down for now. Check out screenshot.png to get an idea of what things will look like ;)
+**November 2016 update**
+The theme's demo page is back up and has moved [here](http://michaelboumann.info/collection/#jadewp)].
 
 #Current features
 - Optimised for Phones, tablets and desktops
