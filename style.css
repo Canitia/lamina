@@ -321,6 +321,10 @@ POST/ARTICLE HEADERS
   ARTICLE/POST LOOK-N-FEEL
 
 *****************************************/
+.card .card-title {
+	font-weight: 300;
+}
+
 .card-content > h1 {
   	font-size: 210%;
 	font-family:'Slabo 27px', serif;
