@@ -18,7 +18,6 @@
             </p>
         </li>
         </a>
-
                             <?php endwhile; else: ?>
                             <!-- error handling -->
                         		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
