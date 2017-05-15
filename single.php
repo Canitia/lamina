@@ -26,8 +26,8 @@
   <?php echo nl2br(get_the_author_meta('description'));  ?>
   </p>
   </section>
-                                    </article><!-- close article -->
-
+   </article><!-- close article -->
+   <hr />
                                           <!-- let user enter a comment -->
                   <h1 class="text-left-title-featured-sidebar">Join the conversation</h1>
                                 		<?php comments_template(); ?>
