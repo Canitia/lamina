@@ -35,20 +35,6 @@ add_theme_support( "post-thumbnails" );
 add_action( 'widgets_init', 'my_register_sidebars' );
 
 /**
- * site header
- */
-
-$args = array(
-	'width'         => 960,
-	'height'        => 360,
-	'default-text-color'     => '#ffffff',
-  'header-text'            => true,
-	'default-image' => get_template_directory_uri() . '/images/header.png',
-	'uploads'       => true,
-);
-add_theme_support( 'custom-header', $args );
-
-/**
  * custom background-color
  */
 
