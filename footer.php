@@ -5,7 +5,7 @@
         <p class="right">
           <?php
               $getActiveTheme = wp_get_theme();
-              echo $getActiveTheme->get( 'Name' ) . " v" . $getActiveTheme->get( 'Version' );
+              echo $getActiveTheme->get( 'Name' ) . $getActiveTheme->get( 'Version' );
             ?>
         </p>
       </div>
