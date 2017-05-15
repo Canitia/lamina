@@ -358,6 +358,7 @@ article {
 	padding-top: 15px;
 	word-wrap: break-word;
 	background:white;
+	height:100%;
 }
 
 .card .card-content p {
