@@ -789,7 +789,7 @@ padding-right: 40px;
     list-style-type: none !important;
   }
 
-  .widget > ul > li > a {
+  .widget > ul > li > a, a {
 	  color:black;
   }
 
