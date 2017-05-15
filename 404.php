@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php get_header();
+?>
 
    <div class="container-fluid">
      <div class="row">
@@ -16,4 +17,5 @@
 </div><!-- container fluid END! -->
 
 <!-- start of footer -->
-<?php get_footer(); ?>
+<?php get_footer();
+?>
