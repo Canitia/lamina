@@ -2,7 +2,7 @@
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <div class="col s12 m8 l8">
+    <div class="col s12 m12 l12">
           <div <?php post_class(); ?>>
                 <article>
                   <span class="card-title">

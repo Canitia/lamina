@@ -1,6 +1,21 @@
 <?php get_header(); ?>
 
   <div class="row">
+      <div class="slider">
+          <ul class="slides">
+              {{#foreach featured}}
+            <li>
+              <a href="{{url}}"><img class="content-images-featured responsive-img" src="{{#if image}}{{image}}{{else}}{{asset "images/no-pic-available.jpg"}}{{/if}}" title="{{title}}" alt="Header image of {{title}}" />
+              </a>
+              <div class="caption center-align">
+                <h3 class="text-left-title-featured accentcolor2">{{title}}</h3>
+              </div>
+            </li>
+            {{/foreach}}
+          </ul>
+        </div>
+
+
     <div class="main-content col s12 m8 l8">
  
      <h1 class="text-left-title-featured-sidebar">Latest</h1>
