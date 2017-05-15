@@ -35,7 +35,6 @@
                             <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
                           </div><!-- einde md8 -->
 
-  </div><!-- end row -->
 </div><!-- container fluid END! -->
 
 <!-- start of footer -->
