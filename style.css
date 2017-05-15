@@ -358,6 +358,8 @@ article {
     margin-right: auto;
     margin-bottom: 15px;
 	padding-top: 15px;
+	padding-left: 15px;
+	padding-right:15px;
 	word-wrap: break-word;
 	background:white;
 	height:100%;
