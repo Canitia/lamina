@@ -86,8 +86,8 @@ add_action( 'init', 'register_my_menu' );
 function theme_prefix_setup() {
 
 	add_theme_support( 'custom-logo', array(
-		'height'      => 58,
-		'width'       => 58,
+		'height'      => 64,
+		'width'       => 64,
 		'flex-width' => true,
 		'header-text' => array( 'site-title', 'site-description' ),
 	) );
