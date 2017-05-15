@@ -1,4 +1,4 @@
-<li class="collection-header center"><h1 class="widget-title text-left-title-featured-sidebar accentcolor2 center-align">Search</h1></li>
+<li class="collection-header center"><h1 class="widget-title text-left-title-featured-sidebar center-align">Search</h1></li>
 <div class="search-box">
   <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
       <label>
@@ -7,7 +7,7 @@
               value="<?php echo get_search_query() ?>" name="s"
               title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
       </label>
-      <input type="submit" class="search-submit btn"
+      <input type="submit" class="search-submit btn grey"
           value="<?php echo esc_attr_x( 'Go', 'submit button' ) ?>" />
   </form>
 </div>

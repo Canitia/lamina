@@ -1,12 +1,14 @@
 <?php get_header(); ?>
-<div class="tag_heading center-align text-left-title-featured-sidebar accentcolor2">
+<div class="tag_heading center-align text-left-title-featured-sidebar">
   <h3><?php
             $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
             echo $curauth->display_name; ?></h3>
 </div>
 <div class="row">
   <div class="col s12 m12 l8 main-content">
-  <h1 class="text-left-title-featured-sidebar">Latest</h1>
+  <h1 class="text-left-title-featured-sidebar">Latest posts by <?php
+            $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+            echo $curauth->display_name; ?></h1>
    <ul class="collection">
     <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
@@ -53,7 +55,7 @@
   <!-- einde md8 -->
 
     <?php get_sidebar( 'primary' ); ?>
-    
+
 </div>
 <!-- end row -->
 </div>
