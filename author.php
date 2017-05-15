@@ -6,7 +6,7 @@
 </div>
 <div class="row">
   <div class="col s12 m12 l8 main-content">
-     <h1 class="text-left-title-featured-sidebar">Latest</h1>
+  <h1 class="text-left-title-featured-sidebar">Latest</h1>
    <ul class="collection">
     <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
@@ -52,10 +52,8 @@
   </div>
   <!-- einde md8 -->
 
-  <div class="col l4 hide-on-med-and-down">
     <?php get_sidebar( 'primary' ); ?>
-  </div>
-
+    
 </div>
 <!-- end row -->
 </div>

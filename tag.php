@@ -5,6 +5,8 @@
                  <h3><?php single_tag_title(); ?></h3>
                  </div>
                <div class="col s12 m12 l12 main-content">
+                 <h1 class="text-left-title-featured-sidebar">Latest</h1>
+                <ul class="collection">
                               <?php if ( have_posts() ) : ?>
                                   <?php while ( have_posts() ) : the_post(); ?>
                                     <div class="card">
@@ -41,7 +43,7 @@
                                       <?php endwhile; else: ?>
                                   		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
                                       <?php endif; ?>
-
+              </ul>
                                       <!-- navigation?-->
 
                                     <ul class="pagination center-align" role="pagination">
@@ -60,9 +62,7 @@
                                     </ul>
                                     </div><!-- einde md8 -->
 
-              <div class="col l4 hide-on-med-and-down">
                   <?php get_sidebar( 'primary' ); ?>
-              </div>
 
             </div><!-- end row -->
           </div><!-- container fluid END! -->
