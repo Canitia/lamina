@@ -789,6 +789,10 @@ padding-right: 40px;
     list-style-type: none !important;
   }
 
+  .widget > ul > li:hover {
+	  background-color: #ebebeb;
+  }
+
   .widget > ul > li > a, a {
 	  color:black;
   }
