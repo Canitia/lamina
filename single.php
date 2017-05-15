@@ -17,7 +17,7 @@
       <div class="card-content">
         <p><?php the_content(); ?></p>
       </div>  
-  
+     <hr />
   <section class="author-profile">
   <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
     <p class="author-bio">
@@ -27,7 +27,6 @@
   </p>
   </section>
    </article><!-- close article -->
-   <hr />
                                           <!-- let user enter a comment -->
                   <h1 class="text-left-title-featured-sidebar">Join the conversation</h1>
                                 		<?php comments_template(); ?>
