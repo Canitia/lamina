@@ -313,6 +313,10 @@ POST/ARTICLE HEADERS
 	font-weight: 300;
 }
 
+.responsive-img {
+	width:100%;
+}
+
 .card-content > h1 {
   	font-size: 210%;
 	font-family:'Slabo 27px', serif;

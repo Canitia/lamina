@@ -1,15 +1,15 @@
 <?php get_header(); ?>
-
+<?php the_post_thumbnail('large', ['class' => 'responsive-img', 'title' => 'Feature image']); ?>
     <div class="row row-post">
     <div>
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
-                    <div class="col s12 m8 l8">
-                                <div <?php post_class(); ?>>
-                                    <article>
-                                      <span class="card-title">
-                                        <p class="posttitle center"><?php the_title(); ?></p>
-                                        </span>
+    <div class="col s12 m8 l8">
+                <div <?php post_class(); ?>>
+                    <article>
+                      <span class="card-title">
+                        <p class="posttitle center"><?php the_title(); ?></p>
+                        </span>
       <div class="post-subitems center">
         <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
         <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
