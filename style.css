@@ -215,6 +215,10 @@ img.logo {
 nav ul a {
 	color: black !important;
 }
+/* hide subnavigation items for now */
+.sub-menu {
+	display:none;
+}
 
 /* **************************************
 
