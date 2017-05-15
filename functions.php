@@ -10,7 +10,7 @@ if ( ! isset( $content_width ) ) {
  *  wp_enqueue_script( $handle, $source, $dependencies, $version,
  */
 
-function insideuwp_theme_name_scripts() {
+function cerulean_theme_name_scripts() {
 	wp_enqueue_style( 'materialize', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', false );
 	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css', false );
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false );
@@ -27,7 +27,7 @@ function insideuwp_theme_name_scripts() {
 	//wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri() . '/js/vendor/bootstrap.min.js', array('jquery'), false, true );
 	wp_enqueue_script( 'sidenav', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery', 'materialize'), false, true );
 }
-add_action( 'wp_enqueue_scripts', 'insideuwp_theme_name_scripts' );
+add_action( 'wp_enqueue_scripts', 'cerulean_theme_name_scripts' );
 
 add_theme_support( "title-tag" );
 add_theme_support( 'automatic-feed-links' );
