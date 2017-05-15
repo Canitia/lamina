@@ -52,6 +52,7 @@
          </ul>
 
         <ul id="slide-out" class="side-nav">
+            <h1 class="text-left-title-featured-sidebar">Archives</h1>
           <?php
             wp_nav_menu(
                 array(

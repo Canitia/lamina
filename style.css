@@ -234,6 +234,10 @@ nav ul a {
     overflow:auto;
 }
 
+.side-nav > h1 {
+	color: #979797 !important;
+}
+
 /* **************************************
 
   CONTENT SIDEBAR / MAIN
