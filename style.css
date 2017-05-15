@@ -240,7 +240,7 @@ nav ul a {
 
 *****************************************/
 #sidenav-overlay {
-	right: 300px !important;
+	left: 300px !important;
 }
 
 .collection {
