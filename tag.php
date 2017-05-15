@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
      <div class="row">
-               <div class="col s12 m12 l8 main-content">
-                 <div class="tag_heading center-align text-left-title-featured-sidebar accentcolor2">
+                 <div class="tag_heading">
                  <h3><?php single_tag_title(); ?></h3>
                  </div>
+               <div class="col s12 m12 l12 main-content">
                               <?php if ( have_posts() ) : ?>
                                   <?php while ( have_posts() ) : the_post(); ?>
                                     <div class="card">

@@ -17,7 +17,7 @@ function insideuwp_theme_name_scripts() {
 
 	if( !is_admin()){
 	wp_deregister_script('jquery');
-	wp_register_script('jquery', ('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'), false, '3.1.1', true);
+	wp_register_script('jquery', ('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'), false, '3.1.1', true);
 	wp_enqueue_script('jquery');
 } else {
 		wp_enqueue_script('jquery');
@@ -71,7 +71,7 @@ function my_register_sidebars() {
 			'description' => __( 'Main sidebar.' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s card">',
 			'after_widget' => '</div>',
-			'before_title' => '<li class="collection-header center"><h1 class="widget-title text-left-title-featured-sidebar accentcolor2 center-align">',
+			'before_title' => '<li class="collection-header center"><h1 class="widget-title text-left-title-featured-sidebar center-align">',
 			'after_title' => '</h1></li>'
 		)
 	);

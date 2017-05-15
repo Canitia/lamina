@@ -24,7 +24,7 @@
 <!-- start of the actual header -->
 <header>
     <div class="navbar-fixed">
-    <nav class="accentcolor">
+    <nav class="white">
       <div class="nav-wrapper">
         <a href="#" data-activates="slide-out" class="button-collapse left"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <?php if ( function_exists( 'the_custom_logo' ) ) {
