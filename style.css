@@ -258,6 +258,10 @@ nav ul a {
 	margin-top: 0px !important;
 }
 
+.main-content > ul > a > li > p {
+	margin:0px;
+}
+
 /* ######################################
 
 POST/ARTICLE HEADERS
