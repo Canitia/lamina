@@ -58,7 +58,7 @@ function my_register_sidebars() {
 			'description' => __( 'Main sidebar.' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<li class="collection-header center"><h1 class="widget-title text-left-title-featured-sidebar center-align">',
+			'before_title' => '<li class="collection-header"><h1 class="widget-title text-left-title-featured-sidebar">',
 			'after_title' => '</h1></li>'
 		)
 	);
