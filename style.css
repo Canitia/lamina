@@ -136,6 +136,7 @@ p > a:focus, p > a:hover, .btn > a:hover, li.pagination-arrows a i:hover, .socia
 .post-subitems.center > a
 {
 	color:#979797;
+	text-decoration: underline;
 }
 
 .posttitle {
