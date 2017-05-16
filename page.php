@@ -1,8 +1,8 @@
-<?php get_header();
-?>
+<?php get_header();?>
+<?php the_post_thumbnail('large', ['class' => 'responsive-img', 'title' => 'Feature image']); ?>
+
 <?php if ( have_posts() ) : ?>
-    <?php while ( have_posts() ) : the_post();
-?>
+    <?php while ( have_posts() ) : the_post();?>
 
     <div class="col s12 m12 l12">
           <div <?php post_class();?>>
@@ -16,9 +16,6 @@
       </div>
       <div class="card-content">
         <p><?php the_content();?></p>
-          <div class="tags center-align">
-             <?php the_tags( 'Tags: ', ', ', ' ' ); ?> 
-          </div>
       </div>  
   
   <section class="author-profile">
