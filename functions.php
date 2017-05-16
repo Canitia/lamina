@@ -1,7 +1,4 @@
 <?php
-
-load_theme_textdomain( 'cerulean-for-wordpress', templatepath.'/languages' );
-
 /* should be set for a proper Wordpress theme*/
 
 if ( ! isset( $content_width ) ) {
@@ -152,5 +149,6 @@ function theme_prefix_the_custom_logo() {
 	
 }
 
+load_theme_textdomain( 'cerulean-for-wordpress', get_template_directory().'/languages' );
 
 ?>

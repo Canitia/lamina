@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-16 18:27+0000\n"
+"POT-Creation-Date: 2017-05-16 20:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,57 +14,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: 404.php:9 cerulean-for-wordpress/404.php:9
+#: 404.php:9
 msgid "Error"
 msgstr ""
 
-#: 404.php:12 cerulean-for-wordpress/404.php:12
+#: 404.php:12
 msgid ""
 "This page doesnt exist anymore or was available on the old website. To "
 "continue please select a menu option from the navigation menu."
 msgstr ""
 
-#: author.php:5 cerulean-for-wordpress/author.php:5
+#: author.php:5
 msgid "Latest posts by"
 msgstr ""
 
-#: header.php:55 cerulean-for-wordpress/header.php:55
-msgid "Menu"
-msgstr ""
-
-#: index.php:45 cerulean-for-wordpress/index.php:45
-msgid "Latest"
-msgstr ""
-
-#: single.php:36 cerulean-for-wordpress/single.php:36
-msgid "Join the conversation"
-msgstr ""
-
-#: tag.php:5 cerulean-for-wordpress/tag.php:5
-msgid "Latest posts tagged"
-msgstr ""
-
-#: cerulean-for-wordpress/author.php:32
+#: author.php:32
 msgid "Sorry, there are no posts by this author."
 msgstr ""
 
-#: cerulean-for-wordpress/category.php:5
+#: category.php:5
 msgid "Latest posts in"
 msgstr ""
 
-#: cerulean-for-wordpress/index.php:62
+#: header.php:55
+msgid "Menu"
+msgstr ""
+
+#: index.php:45
+msgid "Latest"
+msgstr ""
+
+#: index.php:62
 msgid "Sorry, it seems there are no posts available."
 msgstr ""
 
-#: cerulean-for-wordpress/page.php:35
+#: page.php:35
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr ""
 
-#: cerulean-for-wordpress/single.php:44
+#: single.php:36
+msgid "Join the conversation"
+msgstr ""
+
+#: single.php:44
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr ""
 
-#: cerulean-for-wordpress/tag.php:26
+#: tag.php:5
+msgid "Latest posts tagged"
+msgstr ""
+
+#: tag.php:26
 msgid "Sorry, no posts can be found within this tag."
 msgstr ""
 
