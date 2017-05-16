@@ -33,8 +33,7 @@
                    }		
                   }
                   endif;	
-                  /* Restore original Post Data */		
-                  wp_reset_postdata();		
+        	
            ?>
 </div>
 </div>
@@ -45,7 +44,8 @@
      <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'cerulean-for-wordpress'); ?></h1>
  <ul class="collection">
     <?php 
-    $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1 ); 
+    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+    $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1, 'paged' => $paged ); 
     $my_query = new WP_Query( $args );
     if ( $my_query->have_posts() ) : 
       while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
@@ -62,8 +62,7 @@
                         		      <p><?php _e('Sorry, it seems there are no posts available.', 'cerulean-for-wordpress'); ?></p>
                             <?php endif; ?>
                         </ul>
-        <?php /* Restore original Post Data */		
-           wp_reset_postdata();	?>
+
                             <!-- navigation?-->
 
                           <ul class="pagination center-align" role="pagination">
