@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <?php the_post_thumbnail('large', ['class' => 'responsive-img', 'title' => 'Feature image']); ?>
     <div class="row row-post">
-    <div>
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
+ <div>   
     <div class="col s12 m8 l8">
     <div <?php post_class(); ?>>
         <article>
@@ -44,12 +44,10 @@
       <?php endif; ?>
 
       <?php wp_link_pages('before=<ul class="pagination center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
-    </div><!-- einde  -->
 
         <?php get_sidebar( 'primary' ); ?>
-
+</div><!-- close col s12 m12 l12 class div -->
   </div><!-- end row -->
 </div><!-- container fluid END! -->
-
 <!-- start of footer -->
 <?php get_footer(); ?>
