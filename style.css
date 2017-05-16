@@ -895,7 +895,3 @@ padding-right: 40px;
   .tagcloud {
     padding: 5px;
 }
-
-.postform, .select {
-	display: inline !important;
-}

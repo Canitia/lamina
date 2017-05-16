@@ -10,5 +10,7 @@ jQuery(document).ready(function () {
 
   jQuery('.slider').slider({
     indicators: false
-  })
+  });
+
+  jQuery('select').material_select();
 });
