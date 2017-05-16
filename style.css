@@ -451,6 +451,11 @@ img.content-images-featured:hover, img.content-images:hover {
 .tags {
 	line-height:40px;
 	margin-top: 10px;
+	color: #979797;
+}
+
+.tags > a {
+	color: #979797;
 }
 
 .chip {
