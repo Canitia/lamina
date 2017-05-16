@@ -449,7 +449,8 @@ img.content-images-featured:hover, img.content-images:hover {
 }
 
 .tags {
-	margin-top: 10px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	color: #979797;
 }
 
