@@ -956,3 +956,7 @@ nav .sub-menu li {
 li.menu-item-has-children:hover > .sub-menu {
 	display: block;
 }
+
+.navbar-fixed {
+	position: fixed !important;
+}
