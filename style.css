@@ -785,10 +785,22 @@ padding-right: 40px;
   	 WORDPRESS SPECIFIC
 
   	*****************************************/
-.wp-caption {}
-.wp-caption-text{}
-.gallery-caption{}
+.wp-caption, .gallery-caption {
+	background-color: whitesmoke;
+	margin-bottom:15px;
+}
 
+.wp-caption-text {
+	font-weight:bold;
+}
+
+.comments-wrapper {
+	padding: 15px;
+}
+
+.comment-reply-title {
+	font-size: 175%;
+}
 
 .twitter-tweet {
 	margin-left:auto;
