@@ -97,6 +97,7 @@ blockquote:after {
     right:8px;
     top:auto;
     left:auto;
+	bottom: -23px;
 }
 
 blockquote > p {
