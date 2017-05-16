@@ -599,7 +599,7 @@ footer {
 @media (max-width:600px) and (min-width:200px) {
 
 	/* make logo image smaller as the navigation bar shrinks at these resolutions */
-	img.logo {
+	.custom-logo {
 		height:56px;
 	}
 
