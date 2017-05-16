@@ -895,3 +895,7 @@ padding-right: 40px;
   .tagcloud {
     padding: 5px;
 }
+
+.select {
+	display: inline;
+}
