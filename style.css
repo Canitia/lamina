@@ -116,11 +116,11 @@ strong {
   font-weight: 700 !important;
 }
 
-p > a, .side-nav a, .pagination > a > i:hover, .collection .collection-item, .collection-item > a {
+p > a, .side-nav a, .collection .collection-item, .collection-item > a {
 	color: black !important;
 }
 
-p > a:focus, p > a:hover, .btn > a:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover, .socialfooter a
+p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover, .socialfooter a
 {
   color:#979797  !important;
 }
