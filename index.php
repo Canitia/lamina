@@ -39,17 +39,16 @@
 </div>
 </div>
 
-
-
   <div class="row">
     <div class="main-content col s12 m8 l8">
  
      <h1 class="text-left-title-featured-sidebar">Latest</h1>
  <ul class="collection">
-      <?php
-      if ( have_posts() ) : while ( have_posts() ) : the_post();
-      ?>
- 
+    <?php 
+    $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1 ); 
+    $my_query = new WP_Query( $args );
+    if ( $my_query->have_posts() ) : 
+      while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
         <a href="<?php the_permalink(); ?>">
         <li class="collection-item truncate">
             <p title="<?php the_title_attribute(); ?>"><?php if ( is_sticky() ) {?> <i class="fa fa-star" aria-hidden="true"></i> <?php } else {?> <i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
@@ -58,12 +57,13 @@
             </span> 
             </p>
         </li>
-        </a>
-                            <?php endwhile; else: ?>
+        </a><?php endwhile; else: ?>
                             <!-- error handling -->
                         		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
                             <?php endif; ?>
-  </ul>
+                        </ul>
+        <?php /* Restore original Post Data */		
+           wp_reset_postdata();	?>
                             <!-- navigation?-->
 
                           <ul class="pagination center-align" role="pagination">
