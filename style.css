@@ -896,6 +896,6 @@ padding-right: 40px;
     padding: 5px;
 }
 
-.select {
+.postform, .select {
 	display: inline !important;
 }
