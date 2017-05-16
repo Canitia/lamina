@@ -17,7 +17,7 @@
       <div class="card-content">
         <p><?php the_content();?></p>
       </div>  
-  
+  <hr />
   <section class="author-profile">
   <?php echo get_avatar( get_the_author_meta('email'), '100' );?>
     <p class="author-bio">
