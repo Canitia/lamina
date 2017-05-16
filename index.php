@@ -1,4 +1,46 @@
 <?php get_header(); ?>
+
+
+
+<div class="row">    
+    <?php		
+    $args = array(		
+      'posts_per_page' => 3,		
+      'post__in'  => get_option( 'sticky_posts' )		
+     );		
+     $query = new WP_Query( $args );		
+ 		
+     if ( $query->have_posts() ) : ?>		
+             <div class="slider">		
+                 <ul class="slides">		
+                  <?php		
+                  // The Loop		
+                  if ( $query->have_posts() ) {		
+                   while ( $query->have_posts() ) {		
+                     $query->the_post();		
+                     echo '<li>';		?>		
+                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
+                     <?php if ( has_post_thumbnail() ) {		
+                                   the_post_thumbnail( 'large', array( 'class' => 'responsive-img' ) );		
+                           } else { ?>		
+                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />		
+                             <?php }; ?>		
+                     </a><?php		
+                     echo '<div class="caption center-align"><h3 class="text-left-title-featured">';		
+                     the_title();		
+                     echo '</h3></div></li>';		
+ 		
+                   }		
+                  }
+                  endif;	
+                  /* Restore original Post Data */		
+                  wp_reset_postdata();		
+           ?>
+</div>
+</div>
+
+
+
   <div class="row">
     <div class="main-content col s12 m8 l8">
  
