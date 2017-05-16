@@ -895,3 +895,7 @@ padding-right: 40px;
   .tagcloud {
     padding: 5px;
 }
+
+.dropdown-content li > a, .dropdown-content li > span {
+	color: black !important;
+}
