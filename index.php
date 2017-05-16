@@ -59,7 +59,7 @@
         </li>
         </a><?php endwhile; else: ?>
                             <!-- error handling -->
-                        		      <p><?php echo wpautop( 'Sorry, seems there are no posts available' ); ?></p>
+                        		      <p><?php echo wpautop( 'Sorry, it seems there are no posts available' ); ?></p>
                             <?php endif; ?>
                         </ul>
         <?php /* Restore original Post Data */		
