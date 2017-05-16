@@ -455,6 +455,10 @@ img.content-images-featured:hover, img.content-images:hover {
 	color: #979797;
 }
 
+.tags > a:hover {
+	text-decoration: underline;
+}
+
 .chip {
 	color:white !important;
 	border-radius: 0px !important;
