@@ -897,5 +897,5 @@ padding-right: 40px;
 }
 
 .select {
-	display: inline;
+	display: inline !important;
 }
