@@ -788,10 +788,12 @@ padding-right: 40px;
 .wp-caption, .gallery-caption {
 	background-color: whitesmoke;
 	margin-bottom:15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .wp-caption-text {
-	font-weight:bold;
+	text-align:center;
 }
 
 .comments-wrapper {
