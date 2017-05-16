@@ -45,7 +45,7 @@ else: ?>
                             <?php endif;
 ?>
 
-                            <?php wp_link_pages('before=<ul class="pagination accentcolor2 center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>');
+                            <?php wp_link_pages('before=<ul class="pagination center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>');
 ?>
                           </div><!-- einde md8 -->
 
