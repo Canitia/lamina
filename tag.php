@@ -23,7 +23,7 @@
 
                                       <!-- error handling -->
                                       <?php endwhile; else: ?>
-                                  		      <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
+                                  		      <p><?php echo wpautop( 'Sorry, no posts with this tag can be found' ); ?></p>
                                       <?php endif; ?>
               </ul>
                                       <!-- navigation?-->
