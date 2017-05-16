@@ -16,6 +16,9 @@
       </div>
       <div class="card-content">
         <p><?php the_content();?></p>
+          <div class="tags center-align">
+             <?php the_tags( 'Tags: ', ', ', ' ' ); ?> 
+          </div>
       </div>  
   
   <section class="author-profile">
