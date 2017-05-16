@@ -2,7 +2,7 @@
 
 
 
-<div class="row">    
+<div>    
     <?php		
     $args = array(		
       'posts_per_page' => 3,		
