@@ -78,19 +78,21 @@ blockquote {
   	border-left: 0 !important;
 }
 
+blockquote:before {
+    top:-20px;
+    left:8px;
+}
+
 blockquote:before, blockquote:after {
     color:black;
     content:'\f10d';
     font-family:'FontAwesome';
     font-size:30px;
     position:absolute;
-    top:5px;
-    left:8px;
     display:block;
 }
 blockquote:after {
     content:'\f10e';
-    bottom:0;
     right:8px;
     top:auto;
     left:auto;
