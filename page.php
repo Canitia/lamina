@@ -14,6 +14,7 @@
         <i class="fa fa-clock-o"></i><time><?php echo get_the_date();?></time>
         <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
       </div>
+   <hr />
       <div class="card-content">
         <p><?php the_content();?></p>
       </div>  
