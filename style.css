@@ -748,6 +748,7 @@ EXTERNAL libraries look-n-feel
 /* general styling of pretty much all font-awesome icons */
 .socialfooter {
 	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .socialfooter > a i {
