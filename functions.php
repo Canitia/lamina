@@ -27,14 +27,7 @@ function cerulean_theme_name_scripts() {
 	
 	wp_enqueue_style( 'Slabo27px', 'https://fonts.googleapis.com/css?family=Slabo+27px', false );
 	
-	wp_enqueue_script('jquery');
-		
-	}
-	
-	
 	wp_enqueue_script( 'materialize', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js', array('jquery'), false, true );
-	
-	//w	p_enqueue_script( 'bootstrap', get_stylesheet_directory_uri() . '/js/vendor/bootstrap.min.js', array('jquery'), false, true );
 	
 	wp_enqueue_script( 'sidenav', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery', 'materialize'), false, true );
 	
