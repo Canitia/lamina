@@ -162,7 +162,7 @@ p > a:focus, p > a:hover, .btn > a:hover, li.pagination-arrows a i:hover, .socia
   SPECIFIC RESTRICTIONS TO GUI
 
 *****************************************/
-.row {
+.row-post {
 	border: 2px solid #f0f0f0;
 }
 
