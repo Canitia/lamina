@@ -16,9 +16,12 @@
           </div>
         </div>
         <hr />
-          <div class="card-content">
+        <div class="card-content">
             <p><?php the_content(); ?></p>
-          </div>  
+             <div class="tags center-align">
+             <?php the_tags( 'Tags: ', ', ', ' ' ); ?> 
+          </div>
+        </div>  
        <hr />
         <section class="author-profile">
         <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
