@@ -2,7 +2,7 @@
 
      <div class="row">
                <div class="col s12 m12 l12 main-content">
-                 <h1 class="text-left-title-featured-sidebar">Latest posts tagged <?php single_tag_title(); ?></h1>
+                 <h1 class="text-left-title-featured-sidebar"><?php __('Latest posts tagged', 'cerulean-for-wordpress');?> <?php single_tag_title(); ?></h1>
                 <ul class="collection">
                               <?php if ( have_posts() ) : ?>
                                   <?php while ( have_posts() ) : the_post(); ?>

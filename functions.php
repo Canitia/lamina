@@ -1,5 +1,6 @@
 <?php
 
+load_theme_textdomain( 'cerulean-for-wordpress', templatepath.'/languages' );
 
 /* should be set for a proper Wordpress theme*/
 

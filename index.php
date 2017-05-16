@@ -42,7 +42,7 @@
   <div class="row">
     <div class="main-content col s12 m8 l8">
  
-     <h1 class="text-left-title-featured-sidebar">Latest</h1>
+     <h1 class="text-left-title-featured-sidebar"><?php __('Latest', 'cerulean-for-wordpress'); ?></h1>
  <ul class="collection">
     <?php 
     $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1 ); 

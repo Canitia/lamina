@@ -33,7 +33,7 @@
         </section>
        </article><!-- close article -->
                                           <!-- let user enter a comment -->
-      <h1 class="text-left-title-featured-sidebar">Join the conversation</h1>
+      <h1 class="text-left-title-featured-sidebar"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h1>
       <?php comments_template(); ?>
   
     </div><!-- close post class div -->
