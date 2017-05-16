@@ -899,3 +899,11 @@ padding-right: 40px;
 .dropdown-content li > a, .dropdown-content li > span {
 	color: black !important;
 }
+
+.select-wrapper input.select-dropdown {
+	border-bottom: 0px !important;
+}
+
+.select-wrapper {
+	padding-left: 10px !important;
+}
