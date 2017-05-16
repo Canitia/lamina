@@ -102,9 +102,6 @@ blockquote:after {
 
 blockquote > p {
   	font-style: italic !important;
-		text-align:left;
-		margin-left:25px !important;
-		padding:20px;
 }
 
 pre {
