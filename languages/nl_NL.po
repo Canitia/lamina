@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-16 20:49+0000\n"
-"PO-Revision-Date: 2017-05-16 20:49+0000\n"
+"POT-Creation-Date: 2017-05-16 21:41+0000\n"
+"PO-Revision-Date: 2017-05-16 21:42+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,9 +13,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: index.php:56
-msgid "ago"
-msgstr "geleden"
+#: searchform.php:1
+msgid "Search"
+msgstr "Zoeken"
+
+#: searchform.php:6
+msgctxt "placeholder"
+msgid "Search ..."
+msgstr "Zoekterm ..."
+
+#: searchform.php:8
+msgctxt "label"
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Go"
+msgstr "Gaan"
+
+#: sidebar.php:4
+msgid "There are currently no widgets enabled."
+msgstr "Er zijn momenteel geen widgets actief."
 
 #: 404.php:9
 msgid "Error"
@@ -48,6 +67,10 @@ msgstr "Menu"
 #: index.php:45
 msgid "Latest"
 msgstr "Laatste"
+
+#: index.php:56
+msgid "ago"
+msgstr "geleden"
 
 #: index.php:62
 msgid "Sorry, it seems there are no posts available."
