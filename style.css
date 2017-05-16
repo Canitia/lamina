@@ -76,6 +76,7 @@ blockquote {
 	margin-right: 30px;
 	background-color: whitesmoke;
   	border-left: 0 !important;
+	border: 2px solid #ebebeb !important;
 }
 
 blockquote:before {
