@@ -41,7 +41,7 @@
 
       <!-- error handling -->
       <?php endwhile; else: ?>
-            <p><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
+            <p><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
       <?php endif; ?>
 
       <?php wp_link_pages('before=<ul class="pagination center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>

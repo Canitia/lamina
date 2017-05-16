@@ -23,7 +23,7 @@
 
                                       <!-- error handling -->
                                       <?php endwhile; else: ?>
-                                  		      <p><?php echo wpautop( 'Sorry, no posts with this tag can be found' ); ?></p>
+                                  		      <p><?php _e('Sorry, no posts can be found within this tag.', 'cerulean-for-wordpress'); ?></p>
                                       <?php endif; ?>
               </ul>
                                       <!-- navigation?-->

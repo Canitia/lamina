@@ -59,7 +59,7 @@
         </li>
         </a><?php endwhile; else: ?>
                             <!-- error handling -->
-                        		      <p><?php echo wpautop( 'Sorry, it seems there are no posts available' ); ?></p>
+                        		      <p><?php _e('Sorry, it seems there are no posts available.', 'cerulean-for-wordpress'); ?></p>
                             <?php endif; ?>
                         </ul>
         <?php /* Restore original Post Data */		

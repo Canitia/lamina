@@ -29,8 +29,7 @@ echo $curauth->display_name;
     <?php endwhile;
 else: ?>
     <p>
-      <?php echo wpautop( 'Sorry, there are no posts by this author' );
-?>
+      <?php _e('Sorry, there are no posts by this author.', 'cerulean-for-wordpress'); ?>
     </p>
     <?php endif;
 ?>
