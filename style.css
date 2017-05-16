@@ -209,10 +209,6 @@ img.logo {
 nav ul a {
 	color: black !important;
 }
-/* hide subnavigation items for now */
-.sub-menu {
-	display:none !important;
-}
 
 /* **************************************
 
@@ -939,4 +935,21 @@ padding-right: 40px;
 
 .main-content > ul > div > div > a > li > p {
 	margin:0px;
+}
+
+nav .sub-menu {
+	position: absolute;
+	min-width: 115px;
+	display: none;
+	transition: all .3s;
+	background-color: white;
+	z-index: 1;
+	border: 1px solid #ebebeb;
+}
+nav .sub-menu li {
+	white-space: nowrap;
+	float: none;
+}
+li.menu-item-has-children:hover > .sub-menu {
+	display: block;
 }

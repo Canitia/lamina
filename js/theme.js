@@ -13,4 +13,9 @@ jQuery(document).ready(function () {
   });
 
   jQuery('select').material_select();
+
+    // Configure dropdown
+    jQuery(".dropdown-button").dropdown({
+        hover: false
+    });
 });
