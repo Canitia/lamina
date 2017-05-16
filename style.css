@@ -780,6 +780,10 @@ padding-right: 40px;
   	 WORDPRESS SPECIFIC
 
   	*****************************************/
+.wp-caption {}
+.wp-caption-text{}
+.gallery-caption{}
+
 
 .twitter-tweet {
 	margin-left:auto;
