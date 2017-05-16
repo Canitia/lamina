@@ -959,4 +959,5 @@ li.menu-item-has-children:hover > .sub-menu {
 
 .navbar-fixed {
 	position: fixed !important;
+	top: 0 !important;
 }
