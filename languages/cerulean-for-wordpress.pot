@@ -1,0 +1,91 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-16 20:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: 404.php:9
+msgid "Error"
+msgstr ""
+
+#: 404.php:12
+msgid ""
+"This page doesnt exist anymore or was available on the old website. To "
+"continue please select a menu option from the navigation menu."
+msgstr ""
+
+#: author.php:5
+msgid "Latest posts by"
+msgstr ""
+
+#: author.php:32
+msgid "Sorry, there are no posts by this author."
+msgstr ""
+
+#: category.php:5
+msgid "Latest posts in"
+msgstr ""
+
+#: header.php:55
+msgid "Menu"
+msgstr ""
+
+#: index.php:45
+msgid "Latest"
+msgstr ""
+
+#: index.php:62
+msgid "Sorry, it seems there are no posts available."
+msgstr ""
+
+#: page.php:35
+msgid "Sorry, this page can not be found or has been deleted."
+msgstr ""
+
+#: single.php:36
+msgid "Join the conversation"
+msgstr ""
+
+#: single.php:44
+msgid "Sorry, this post can not be found or has been deleted."
+msgstr ""
+
+#: tag.php:5
+msgid "Latest posts tagged"
+msgstr ""
+
+#: tag.php:26
+msgid "Sorry, no posts can be found within this tag."
+msgstr ""
+
+#. Name of the theme
+msgid "Cerulean for Wordpress"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Elegant yet simple designed responsive UI. Features support for WP menus, "
+"logo, header image, tags, menu and others."
+msgstr ""
+
+#. URI of the theme
+msgid "http://blank.url/at/this/point"
+msgstr ""
+
+#. Author of the theme
+msgid "Michael Boumann"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.michaelboumann.info"
+msgstr ""
