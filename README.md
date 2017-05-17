@@ -6,10 +6,12 @@ This code was previously called Jade for Wordpress but has since been rebased an
 - Optimised for Phones, tablets and desktops
 - Sidebar support (only shows it when on medium or higher resolutions)
 - Change color and fonts of header
+- Show logo of the site in header
+- Slider support which automatically grabs the 3 latest 'sticky' posts
 - Material Design inspired;
 - Other stuff Wordpress can do ('custom' pages, 'custom' tag page, 'custom' category pages)
 
 # Status
-Stable. 
+Beta
 
 ~~It's not 100% according to the 'Wordpress theme spec' yet, but it's very close now. For open items related to this and other issues check out the issue tracker.~~
