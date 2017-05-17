@@ -2,6 +2,8 @@ Cerulean for Wordpress
 ==================
 This code was previously called Jade for Wordpress but has since been rebased and rebranded to match Cerulean. Cerulean for Wordpress is a theme that's based on the [Cerulean for Ghost](https://github.com/boumannm/cerulean-for-ghost) theme. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#ceruleanwp) or look at the 'quick and dirty' featurelist below.
 
+![Cerulean for Ghost main](https://github.com/boumannm/cerulean-for-wordpress/blob/master/screenshot.png)
+
 # Current features
 - Optimised for Phones, tablets and desktops
 - Sidebar support (only shows it when on medium or higher resolutions)
