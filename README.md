@@ -1,9 +1,6 @@
-jade (for Wordpress)
+Cerulean for Wordpress
 ==================
-This is the Wordpress version of the [jade](https://github.com/boumannm/jade) theme for Ghost.
-
-**November 2016 update**
-The theme's project page is back up and has moved [here](http://michaelboumann.info/collection/#jadewp).
+This code was previously called Jade for Wordpress but has since been rebased and rebranded to match Cerulean. Cerulean for Wordpress is a theme that's based on the [Cerulean for Ghost](https://github.com/boumannm/cerulean-for-ghost) theme. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#ceruleanwp) or look at the 'quick and dirty' featurelist below.
 
 # Current features
 - Optimised for Phones, tablets and desktops
@@ -13,7 +10,6 @@ The theme's project page is back up and has moved [here](http://michaelboumann.i
 - Other stuff Wordpress can do ('custom' pages, 'custom' tag page, 'custom' category pages)
 
 # Status
-Tired but still working on it
+Stable. 
 
-# Note
-Wordpress default comments are currently unstyled so i recommend using third party ones for now.
+~~It's not 100% according to the 'Wordpress theme spec' yet, but it's very close now. For open items related to this and other issues check out the issue tracker.~~
