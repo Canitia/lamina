@@ -14,4 +14,4 @@ This code was previously called Jade for Wordpress but has since been rebased an
 # Status
 Beta
 
-~~It's not 100% according to the 'Wordpress theme spec' yet, but it's very close now. For open items related to this and other issues check out the issue tracker.~~
+*It's not 100% according to the 'Wordpress theme spec' yet, but it's very close now. For open items related to this and other issues check out the issue tracker.*
