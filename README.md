@@ -14,6 +14,9 @@ This code was previously called Jade for Wordpress but has since been rebased an
 - Other stuff Wordpress can do ('custom' pages, 'custom' tag page, 'custom' category pages)
 
 # Status
-Beta
+Release Candidate-ish
 
 *It's not 100% according to the 'Wordpress theme spec' yet, but it's very close now. For open items related to this and other issues check out the issue tracker.*
+
+# Recommmendation
+Install Disqus or a other third party comments platform. The default commentsection is pretty much unstyled at this point (as i don't use it myself). 
