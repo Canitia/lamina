@@ -47,10 +47,6 @@ h4 {
 	font-size: 140%;
 }
 
-p {
-	text-rendering: geometricPrecision;
-}
-
 p > a {
 	text-decoration: underline;
 }
