@@ -35,7 +35,7 @@
             
         }
         ?>
-        <p class="brand-logo">
+        <p class="brand-logo hide-on-small-only">
             <a href="<?php echo home_url();?>" class="headerurl" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
         </p>
 
