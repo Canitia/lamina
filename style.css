@@ -409,6 +409,11 @@ iframe {
 	background-color: #dfe3e5 !important;
 }
 
+.slider .slides li img {
+	height: auto !important;
+	margin: -200px;
+}
+
 img.content-images-featured:hover, img.content-images:hover {
 	opacity:0.9;
 }
