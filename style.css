@@ -139,14 +139,6 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
   SPECIFIC RESTRICTIONS TO GUI
 
 *****************************************/
-.row-post {
-	border: 2px solid #f0f0f0;
-}
-
-.row.row-post {
-  background-color: white !important;
-}
-
 .card.large {
 	height: auto !important;
 }
