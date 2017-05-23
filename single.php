@@ -4,7 +4,7 @@
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
  <div>   
-    <div class="col s12 m8 l8">
+    <div class="col s12 m8 l8 main-content">
     <div <?php post_class(); ?>>
         <article>
           <span class="card-title">
