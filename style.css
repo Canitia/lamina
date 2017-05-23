@@ -167,6 +167,12 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 	margin:0 !important;
 }
 
+nav .brand-logo {
+	 left: unset;
+    -webkit-transform: unset;
+    transform: unset;
+}
+
 img.cover {
 	width:100%;
 	max-height:250px;
@@ -535,6 +541,10 @@ footer {
 	.custom-logo {
 		height:56px;
 	}
+
+	nav .brand-logo {
+	 font-size: 125% !important;
+}
 
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
