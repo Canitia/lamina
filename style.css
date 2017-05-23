@@ -32,23 +32,17 @@ html body {
 }
 
 h1 {
-	font-size: 250%;
-}
-
-h2 {
-	font-size: 200%;
-}
-
-h3 {
-	font-size: 175%;
-}
-
-h4 {
-	font-size: 140%;
+	font-weight: 300 !important;
 }
 
 p > a {
 	text-decoration: underline;
+}
+
+.label {
+	font-weight: bold;
+	color:black !important;
+	width: 30%;
 }
 
 hr {
@@ -127,7 +121,7 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 
 .post-subitems.center {
 	color: #979797;
-	font-weight: 300;
+	margin-bottom: 25px;
 }
 
 .post-subitems.center > a
@@ -139,21 +133,6 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 .post-subitems.center > a
 {
 	text-decoration: underline;
-}
-
-.posttitle {
-    font-size: 250%;
-    font-weight: 300;
-	margin: 10px !important;
-}
-
-.posttitle > a {
-  color: black !important;
-  text-decoration: none;
-}
-
-.posttitle > a:hover {
-  text-decoration: none;
 }
 
 /* **************************************
@@ -319,26 +298,6 @@ POST/ARTICLE HEADERS
 	width:100%;
 }
 
-.card-content > h1 {
-  	font-size: 210%;
-	font-family:'Slabo 27px', serif;
-}
-
-.card-content > h2 {
-	font-size: 180%;
-	font-family:'Slabo 27px', serif;
-}
-
-.card-content > h3 {
-	font-size: 165%;
-	font-family:'Slabo 27px', serif;
-}
-
-.card-content > h4 {
-	font-size: 140%;
-	font-family:'Slabo 27px', serif;
-}
-
 .card-content > ul li {
 	list-style-type: square !important;
 	margin-left: 40px;
@@ -429,16 +388,6 @@ img.content-images-featured:hover, img.content-images:hover {
     margin-bottom: 0.25rem;
 }
 
-.tag_heading > .posttitle {
-    font-size: 250%;
-    font-weight: 300;
-    opacity:0.8;
-	background:black;
-	margin-bottom: 0px !important;
-	margin-left:0px !important;
-	margin-right:0px !important;
-}
-
 .socialfooter-top {
 	opacity: 0.8;
 }
@@ -451,17 +400,7 @@ img.content-images-featured:hover, img.content-images:hover {
 	color: white;
 }
 
-.tags {
-	margin-top: 40px;
-	margin-bottom: 25px;
-	color: #979797;
-}
-
-.tags > a {
-	color: #979797;
-}
-
-.tags > a:hover {
+.cat-links > a:hover {
 	text-decoration: underline;
 }
 
@@ -486,7 +425,7 @@ img.content-images-featured:hover, img.content-images:hover {
 
 *****************************************/
 .author-profile {
-	margin-top: 40px;
+	margin-top: 60px;
 	height: 100%;
 }
 
@@ -632,10 +571,6 @@ footer {
 
 	.pagination, .main-content {
 		margin-bottom: 12px;
-	}
-
-	.tags {
-		padding-bottom: 10px !important;
 	}
 
 	.chip {
