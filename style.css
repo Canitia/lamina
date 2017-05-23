@@ -477,9 +477,10 @@ p.author-bio {
 
 .pagination {
 	padding:15px;
-	margin-top: 0px !important;
-	border-top: 1px solid #ebebeb;
-	background:white;
+}
+
+.pagination > a {
+	margin: 20px;
 }
 
 .pagination > .active {
@@ -489,6 +490,10 @@ p.author-bio {
 
 .pagination li.active, .pagination > li:hover {
 	background-color: #d3d3d3 !important;
+}
+
+.fa-ellipsis-h:hover {
+    color: #979797;
 }
 
 /* **************************************
