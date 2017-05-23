@@ -4,7 +4,7 @@ Theme URI: http://blank.url/at/this/point
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple designed responsive UI. Features support for WP menus, logo, header image, tags, menu and others.
-Version: 0.9.8.139
+Version: 0.9.8.172
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
@@ -552,9 +552,15 @@ footer {
 	 font-size: 125% !important;
 	}
 
-	.sub-menu {
-		display: none;
+	nav .sub-menu li {
+		display: none !important;
 	}
+
+	nav .sub-menu {
+		border: 0px !important;
+	}
+
+
 
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
@@ -608,9 +614,16 @@ footer {
 		margin-right: auto;
 	}
 
-
 	.sidebar {
 		margin-bottom: 20px;
+	}
+
+	nav .sub-menu li {
+		display: none !important;
+	}
+
+	nav .sub-menu {
+		border: 0px !important;
 	}
 
 	.row-post {
