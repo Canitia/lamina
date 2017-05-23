@@ -26,8 +26,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 *****************************************/
 h1 {
-	font-size: 3.6rem !important;
+	font-size: 3.5rem !important;
 	font-weight: 300 !important;
+}
+
+h2 {
+	font-size: 3.1rem !important;
+}
+
+h3 {
+	font-size: 2.6rem !important;
 }
 
 p > a {
