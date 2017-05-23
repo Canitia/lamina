@@ -9,8 +9,8 @@
                                     <div>
                                           <div <?php post_class(); ?>>
                                               <a href="<?php the_permalink(); ?>">
-                                              <li class="collection-item truncate">
-                                                  <p title="<?php the_title_attribute(); ?>"><i class="fa fa-circle" aria-hidden="true"></i><?php the_title(); ?>
+                                              <li class="collection-item">
+                                                  <p title="<?php the_title_attribute(); ?>" class="truncate"><i class="fa fa-circle" aria-hidden="true"></i><?php the_title(); ?>
                                                     <span class="badge">
                                                     <time><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></time>
                                                   </span> 

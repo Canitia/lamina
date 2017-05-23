@@ -35,7 +35,7 @@
             
         }
         ?>
-        <p class="brand-logo hide-on-small-only">
+        <p class="brand-logo">
             <a href="<?php echo home_url();?>" class="headerurl" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
         </p>
 
@@ -52,7 +52,7 @@
          </ul>
 
         <ul id="slide-out" class="side-nav">
-            <h1 class="text-left-title-featured-sidebar"><?php __('Menu', 'cerulean-for-wordpress');?></h1>
+            <h1 class="text-left-title-featured-sidebar"><?php _e('Menu', 'cerulean-for-wordpress');?></h1>
           <?php
             wp_nav_menu(
                 array(

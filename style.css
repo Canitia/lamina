@@ -4,7 +4,7 @@ Theme URI: http://blank.url/at/this/point
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple designed responsive UI. Features support for WP menus, logo, header image, tags, menu and others.
-Version: 0.9.8.139
+Version: 0.9.8.172
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
@@ -25,30 +25,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
-html body {
-	font-size:16px;
-	font-family: Roboto,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
-	background-color: #dfe3e5;
-}
-
 h1 {
-	font-size: 250%;
-}
-
-h2 {
-	font-size: 200%;
-}
-
-h3 {
-	font-size: 175%;
-}
-
-h4 {
-	font-size: 140%;
+	font-size: 3rem !important;
+	font-weight: 300 !important;
 }
 
 p > a {
 	text-decoration: underline;
+}
+
+.label {
+	font-weight: bold;
+	color:black !important;
+	width: 30%;
 }
 
 hr {
@@ -68,11 +57,11 @@ blockquote {
 	position:relative;
 	padding-top:10px;
 	padding-bottom:10px;
-	margin-left: 30px;
-	margin-right: 30px;
 	background-color: whitesmoke;
-  	border-left: 0 !important;
-	border: 2px solid #ebebeb !important;
+  	border-left: 5px solid #979797 !important;
+	border-top: 2px solid #ebebeb !important;
+	border-bottom: 2px solid #ebebeb !important;
+	border-right: 2px solid #ebebeb !important;
 }
 
 blockquote:before {
@@ -127,7 +116,7 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 
 .post-subitems.center {
 	color: #979797;
-	font-weight: 300;
+	margin-bottom: 25px;
 }
 
 .post-subitems.center > a
@@ -141,34 +130,11 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 	text-decoration: underline;
 }
 
-.posttitle {
-    font-size: 250%;
-    font-weight: 300;
-	margin: 10px !important;
-}
-
-.posttitle > a {
-  color: black !important;
-  text-decoration: none;
-}
-
-.posttitle > a:hover {
-  text-decoration: none;
-}
-
 /* **************************************
 
   SPECIFIC RESTRICTIONS TO GUI
 
 *****************************************/
-.row-post {
-	border: 2px solid #f0f0f0;
-}
-
-.row.row-post {
-  background-color: white !important;
-}
-
 .card.large {
 	height: auto !important;
 }
@@ -195,6 +161,12 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 
 .brand-logo {
 	margin:0 !important;
+}
+
+nav .brand-logo {
+	 left: unset;
+    -webkit-transform: unset;
+    transform: unset;
 }
 
 img.cover {
@@ -264,6 +236,10 @@ nav ul a {
 	margin:0px;
 }
 
+.main-content {
+	border-right: 1px solid #f8f8f8;
+}
+
 /* ######################################
 
 POST/ARTICLE HEADERS
@@ -281,7 +257,7 @@ POST/ARTICLE HEADERS
 
 /* post title */
 .text-left-title-featured, .text-left-title-featured-sidebar {
-	font-size: 150%;
+	font-size: 150% !important;
 	font-weight: 300;
 	padding:15px !important;
 	white-space: normal;
@@ -319,26 +295,6 @@ POST/ARTICLE HEADERS
 	width:100%;
 }
 
-.card-content > h1 {
-  	font-size: 210%;
-	font-family:'Slabo 27px', serif;
-}
-
-.card-content > h2 {
-	font-size: 180%;
-	font-family:'Slabo 27px', serif;
-}
-
-.card-content > h3 {
-	font-size: 165%;
-	font-family:'Slabo 27px', serif;
-}
-
-.card-content > h4 {
-	font-size: 140%;
-	font-family:'Slabo 27px', serif;
-}
-
 .card-content > ul li {
 	list-style-type: square !important;
 	margin-left: 40px;
@@ -359,7 +315,7 @@ article {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-	padding-top: 15px;
+	padding-top: 25px;
 	padding-left: 15px;
 	padding-right:15px;
 	word-wrap: break-word;
@@ -409,11 +365,6 @@ iframe {
 	background-color: #dfe3e5 !important;
 }
 
-.slider .slides li img {
-	height: auto !important;
-	margin-top: -200px;
-}
-
 img.content-images-featured:hover, img.content-images:hover {
 	opacity:0.9;
 }
@@ -429,16 +380,6 @@ img.content-images-featured:hover, img.content-images:hover {
     margin-bottom: 0.25rem;
 }
 
-.tag_heading > .posttitle {
-    font-size: 250%;
-    font-weight: 300;
-    opacity:0.8;
-	background:black;
-	margin-bottom: 0px !important;
-	margin-left:0px !important;
-	margin-right:0px !important;
-}
-
 .socialfooter-top {
 	opacity: 0.8;
 }
@@ -451,17 +392,7 @@ img.content-images-featured:hover, img.content-images:hover {
 	color: white;
 }
 
-.tags {
-	margin-top: 40px;
-	margin-bottom: 25px;
-	color: #979797;
-}
-
-.tags > a {
-	color: #979797;
-}
-
-.tags > a:hover {
+.cat-links > a:hover {
 	text-decoration: underline;
 }
 
@@ -486,7 +417,7 @@ img.content-images-featured:hover, img.content-images:hover {
 
 *****************************************/
 .author-profile {
-	margin-top: 40px;
+	margin-top: 60px;
 	height: 100%;
 }
 
@@ -546,18 +477,24 @@ p.author-bio {
 
 .pagination {
 	padding:15px;
-	margin-top: 0px !important;
-	border-top: 1px solid #ebebeb;
-	background:white;
+}
+
+.pagination > a {
+	margin: 20px;
 }
 
 .pagination > .active {
 	padding: 15px;
 	line-height: 2px; 
+	font-weight: 600;
 }
 
 .pagination li.active, .pagination > li:hover {
 	background-color: #d3d3d3 !important;
+}
+
+.fa-ellipsis-h:hover {
+    color: #979797;
 }
 
 /* **************************************
@@ -611,6 +548,20 @@ footer {
 		height:56px;
 	}
 
+	nav .brand-logo {
+	 font-size: 125% !important;
+	}
+
+	nav .sub-menu li {
+		display: none !important;
+	}
+
+	nav .sub-menu {
+		border: 0px !important;
+	}
+
+
+
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
 		margin-top:0px;
@@ -634,10 +585,6 @@ footer {
 		margin-bottom: 12px;
 	}
 
-	.tags {
-		padding-bottom: 10px !important;
-	}
-
 	.chip {
 		height: 40px !important;
 		line-height:40px !important;
@@ -657,9 +604,6 @@ footer {
 
 /* mobile devices */
 @media (max-width:992px) and (min-width:601px) {
-    h1 {
-    	font-size: 120%;
-    }
 
     .content-images, .content-images-individual {
 				object-fit: cover;
@@ -670,9 +614,16 @@ footer {
 		margin-right: auto;
 	}
 
-
 	.sidebar {
 		margin-bottom: 20px;
+	}
+
+	nav .sub-menu li {
+		display: none !important;
+	}
+
+	nav .sub-menu {
+		border: 0px !important;
 	}
 
 	.row-post {
@@ -688,6 +639,11 @@ footer {
 		margin-left: auto;
 		margin-right: auto;
 		max-width:1200px;
+	}
+
+	.slider .slides li img {
+	margin-top: -200px;
+	height: auto !important;
 	}
 
 	.sidebar {
@@ -942,7 +898,7 @@ padding-right: 40px;
 }
 
 .select-wrapper {
-	padding-left: 10px !important;
+	margin-left: 20px !important;
 }
 
 .main-content > ul > div > div > a > li > p {

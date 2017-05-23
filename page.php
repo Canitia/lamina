@@ -8,7 +8,7 @@
           <div <?php post_class();?>>
                 <article>
                   <span class="card-title">
-                    <p class="posttitle center"><?php the_title();?></p>
+                    <h1 class="center"><?php the_title();?></h1>
                     </span>
       <div class="post-subitems center">
         <i class="fa fa-clock-o"></i><time><?php echo get_the_date();?></time>
