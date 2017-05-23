@@ -359,11 +359,6 @@ iframe {
 	background-color: #dfe3e5 !important;
 }
 
-.slider .slides li img {
-	height: auto !important;
-	margin-top: -200px;
-}
-
 img.content-images-featured:hover, img.content-images:hover {
 	opacity:0.9;
 }
@@ -611,6 +606,11 @@ footer {
 		margin-left: auto;
 		margin-right: auto;
 		max-width:1200px;
+	}
+
+	.slider .slides li img {
+	margin-top: -200px;
+	height: auto !important;
 	}
 
 	.sidebar {
