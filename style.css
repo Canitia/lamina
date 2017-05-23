@@ -25,10 +25,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
-html body {
-	font-size:16px;
-}
-
 h1 {
 	font-size: 3rem !important;
 	font-weight: 300 !important;
