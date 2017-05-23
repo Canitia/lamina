@@ -8,7 +8,7 @@
     <div <?php post_class(); ?>>
         <article>
           <span class="card-title">
-            <p class="posttitle center"><?php the_title(); ?></p>
+            <h1 class="center"><?php the_title(); ?></h1>
             </span>
           <div class="post-subitems center">
             <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
@@ -17,12 +17,9 @@
         <hr />
         <div class="card-content">
             <p><?php the_content(); ?></p>
-             <div class="tags center-align">
-             <?php the_tags( 'Tags: ', ', ', ' ' ); ?> 
-          </div>
-        </div>  
-       <hr />
+        </div> 
         <section class="author-profile">
+       <hr />
         <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
           <p class="author-bio">
           <strong class="author-name"><?php the_author_posts_link();?></strong>
@@ -30,6 +27,15 @@
         <?php echo nl2br(get_the_author_meta('description'));  ?>
         </p>
         </section>
+        <hr />
+        <span class="cat-links">
+          <span class="label">Posted in</span> <a href="#"><?php $category = get_the_category();
+            $firstCategory = $category[0]->cat_name; 
+            echo $firstCategory;?></a>
+         <hr />
+             <?php the_tags( '<span class="label">Tags</span> ', ', ', ' ' ); ?> 
+        <hr />
+          </span>
        </article><!-- close article -->
                                           <!-- let user enter a comment -->
       <h1 class="text-left-title-featured-sidebar"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h1>
