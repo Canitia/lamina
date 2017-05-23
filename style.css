@@ -550,7 +550,11 @@ footer {
 
 	nav .brand-logo {
 	 font-size: 125% !important;
-}
+	}
+
+	.sub-menu {
+		display: none;
+	}
 
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
