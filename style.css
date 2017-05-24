@@ -594,8 +594,6 @@ footer {
 		border: 0px !important;
 	}
 
-
-
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
 		margin-top:0px;
@@ -609,6 +607,25 @@ footer {
 		padding-left:15px;
 		padding-right:15px;
 		padding-bottom:15px;
+	}
+
+	h1 {
+	font-size: 2.5rem !important;
+	font-weight: 300 !important;
+	}
+
+	h2 {
+		font-size: 2.1rem !important;
+	}
+
+	h3 {
+		font-size: 1.6rem !important;
+	}
+
+	.h3-join-the-conversation {
+		font-size: 1.6rem !important;
+		font-weight: 300 !important;
+		margin-left: 15px;
 	}
 
 	.postdate {
