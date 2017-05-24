@@ -69,8 +69,8 @@ function my_register_sidebars() {
 	register_sidebar(
 	array(
 	'id' => 'primary',
-	'name' => __( 'Primary' ),
-	'description' => __( 'Main sidebar.' ),
+	'name' => __( 'Primary', 'cerulean-for-wordpress' ),
+	'description' => __( 'Main sidebar.', 'cerulean-for-wordpress' ),
 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	'after_widget' => '</div>',
 	'before_title' => '<li class="collection-header"><h1 class="widget-title text-left-title-featured-sidebar">',
@@ -105,7 +105,7 @@ add_filter( "the_excerpt", "add_excerpt_class" );
 
 function register_my_menu() {
 	
-	register_nav_menu('header-menu',__( 'Header Menu' ));
+	register_nav_menu('header-menu',__( 'Header Menu', 'cerulean-for-wordpress' ));
 	
 }
 
