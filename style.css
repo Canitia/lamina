@@ -129,6 +129,7 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 .post-subitems.center {
 	color: #979797;
 	margin-bottom: 25px;
+	font-size: 16px;
 }
 
 .post-subitems.center > a
