@@ -19,6 +19,8 @@
             <p><?php the_content(); ?></p>
         </div> 
 
+      <?php wp_link_pages('before=<hr /><ul class="pagination center-align" role="pagination">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
+
         <?php get_template_part( 'partials/authorsection' ); ?>
 
         <div class="cat-links">
@@ -41,9 +43,6 @@
       <?php endwhile; else: ?>
             <p><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
       <?php endif; ?>
-
-      <?php wp_link_pages('before=<ul class="pagination center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
-
         <?php get_sidebar( 'primary' ); ?>
 </div><!-- close col s12 m12 l12 class div -->
   </div><!-- end row -->
