@@ -7,7 +7,7 @@
      $query = new WP_Query( $args );		
  		
      if ( $query->have_posts() ) : ?>		
-             <div class="slider hide-on-small-only">		
+             <div class="slider">		
                  <ul class="slides">		
                   <?php		
                   // The Loop		
