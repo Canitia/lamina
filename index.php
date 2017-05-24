@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-                <?php get_template_part( 'partials/slider' ); ?>
-
   <div class="row">
     <div class="main-content col s12 m8 l8">
  
