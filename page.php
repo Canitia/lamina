@@ -18,15 +18,7 @@
       <div class="card-content">
         <p><?php the_content();?></p>
       </div>  
-  <hr />
-  <section class="author-profile">
-  <?php echo get_avatar( get_the_author_meta('email'), '100' );?>
-    <p class="author-bio">
-    <strong class="author-name"><?php the_author_posts_link();?></strong>
-  <br />
-  <?php echo nl2br(get_the_author_meta('description'));?>
-  </p>
-  </section>
+        <?php get_template_part( 'partials/authorsection' ); ?>
                                     </article><!-- close article -->
                             </div><!-- close post class div -->
 

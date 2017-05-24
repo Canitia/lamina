@@ -18,16 +18,9 @@
         <div class="card-content">
             <p><?php the_content(); ?></p>
         </div> 
-        <section class="author-profile">
-       <hr />
-        <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
-          <p class="author-bio">
-          <strong class="author-name"><?php the_author_posts_link();?></strong>
-        <br />
-        <?php echo nl2br(get_the_author_meta('description'));  ?>
-        </p>
-        </section>
-        <hr />
+
+        <?php get_template_part( 'partials/authorsection' ); ?>
+
         <div class="cat-links">
           <span class="label"><?php _e("Posted in", "cerulean-for-wordpress"); ?></span> <a href="#"><?php $category = get_the_category();
             $firstCategory = $category[0]->cat_name; 
