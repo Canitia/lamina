@@ -15,7 +15,7 @@ if ( ! isset( $content_width ) ) {
  */
 
 
-function cerulean_theme_name_scripts() {
+function cerulean_theme_scripts() {
 	
 	wp_enqueue_style( 'materialize', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', false );
 	
@@ -29,7 +29,7 @@ function cerulean_theme_name_scripts() {
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'cerulean_theme_name_scripts' );
+add_action( 'wp_enqueue_scripts', 'cerulean_theme_scripts' );
 
 
 add_theme_support( "title-tag" );
@@ -82,24 +82,6 @@ function my_register_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 	
 }
-
-
-
-/* add text-justiry class to excerpt */
-
-function add_excerpt_class( $excerpt )
-{
-	
-	$excerpt = str_replace( "<p", "<p class=\"text-justify\"", $excerpt );
-	
-	return $excerpt;
-	
-}
-
-
-add_filter( "the_excerpt", "add_excerpt_class" );
-
-
 
 /* register main navigation */
 
