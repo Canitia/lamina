@@ -525,7 +525,7 @@ p.author-bio {
 	font-weight: 600;
 }
 
-.pagination li.active, .pagination > li:hover {
+.pagination li.active {
 	background-color: #d3d3d3 !important;
 }
 
