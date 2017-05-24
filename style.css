@@ -777,6 +777,8 @@ padding-right: 40px;
 .wp-caption-text {
 	text-align:center;
 	font-style: italic;
+	padding-bottom: 15px;
+	font-weight: 600;
 }
 
 .comments-wrapper {
