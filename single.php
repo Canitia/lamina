@@ -33,7 +33,7 @@
             $firstCategory = $category[0]->cat_name; 
             echo $firstCategory;?></a>
          <hr class="cat-links-hr" />
-             <?php the_tags( '<span class="label"><?php _e("Tags", "cerulean-for-wordpress"); ?></span> ', ', ', ' ' ); ?> 
+             <?php the_tags( '<span class="label">Tags</span> ', ', ', ' ' ); ?> 
         <hr class="cat-links-hr" />
           </div>
        </article><!-- close article -->
