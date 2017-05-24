@@ -97,7 +97,7 @@ add_action( 'init', 'register_mainmenu' );
  * add custom site logo (to header)
  */
 
-function cerulean_for_wordpress_setup() {
+function cerulean_setup() {
 	
 	
 	add_theme_support( 'custom-logo', array(
@@ -110,11 +110,11 @@ function cerulean_for_wordpress_setup() {
 	
 }
 
-add_action( 'after_setup_theme', 'cerulean_for_wordpress_setup' );
+add_action( 'after_setup_theme', 'cerulean_setup' );
 
 
 
-function cerulean_for_wordpress_the_custom_logo() {
+function cerulean_the_custom_logo() {
 	
 	
 	if ( function_exists( 'the_custom_logo' ) ) {
