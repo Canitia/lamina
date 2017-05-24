@@ -30,6 +30,10 @@ h1 {
 	font-weight: 300 !important;
 }
 
+.h1-slider {
+	text-shadow: 2px 1px #000000;
+}
+
 h2 {
 	font-size: 3.1rem !important;
 }
