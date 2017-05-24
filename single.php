@@ -28,14 +28,14 @@
         </p>
         </section>
         <hr />
-        <span class="cat-links">
+        <div class="cat-links">
           <span class="label">Posted in</span> <a href="#"><?php $category = get_the_category();
             $firstCategory = $category[0]->cat_name; 
             echo $firstCategory;?></a>
-         <hr />
+         <hr class="cat-links-hr" />
              <?php the_tags( '<span class="label">Tags</span> ', ', ', ' ' ); ?> 
-        <hr />
-          </span>
+        <hr class="cat-links-hr" />
+          </div>
        </article><!-- close article -->
                                           <!-- let user enter a comment -->
       <h1 class="text-left-title-featured-sidebar"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h1>
