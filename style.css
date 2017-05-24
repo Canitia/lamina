@@ -4,7 +4,7 @@ Theme URI: http://blank.url/at/this/point
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple designed responsive UI. Features support for WP menus, logo, header image, tags, menu and others.
-Version: 0.9.8.185
+Version: 0.9.8.188
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
@@ -149,6 +149,10 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 *****************************************/
 .card.large {
 	height: auto !important;
+}
+
+.card-content {
+	width: 100%;
 }
 
 /* forbidden icon from error page */
@@ -772,15 +776,8 @@ padding-right: 40px;
 
   	*****************************************/
 .wp-caption, .gallery-caption {
-	margin-left: auto !important;
-	margin-right: auto !important;
+	max-width: 100%;
 	border: 2px solid #ebebeb;
-}
-
-.wp-caption > img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 
 .wp-caption-text {
@@ -840,11 +837,24 @@ padding-right: 40px;
   }
 
   .size-auto,
-  .size-full,
   .size-large,
   .size-medium,
   .size-thumbnail {
+	max-width: 100%;
+	width: 100%;
+	height: auto; 
+	display:block;
+  }
 
+  .size-full {
+	  max-width: 100%;
+	  display:block;
+	  height: 100%;
+  }
+/* custom image size */
+  .wp-caption > img {
+    max-width: 100%;
+    height: 100%;
   }
 
 	.sticky {
