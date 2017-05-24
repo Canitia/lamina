@@ -13,7 +13,9 @@ Text Domain: cerulean-for-wordpress
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+html body {
+	font-size: 16px;
+}
 
 .accentcolor-error {
   background-color: red !important;
