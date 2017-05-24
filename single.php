@@ -29,11 +29,11 @@
         </section>
         <hr />
         <div class="cat-links">
-          <span class="label">Posted in</span> <a href="#"><?php $category = get_the_category();
+          <span class="label"><?php _e("Posted in", "cerulean-for-wordpress"); ?></span> <a href="#"><?php $category = get_the_category();
             $firstCategory = $category[0]->cat_name; 
             echo $firstCategory;?></a>
          <hr class="cat-links-hr" />
-             <?php the_tags( '<span class="label">Tags</span> ', ', ', ' ' ); ?> 
+             <?php the_tags( '<span class="label"><?php _e("Tags", "cerulean-for-wordpress"); ?></span> ', ', ', ' ' ); ?> 
         <hr class="cat-links-hr" />
           </div>
        </article><!-- close article -->
