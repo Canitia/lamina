@@ -42,6 +42,11 @@ h3 {
 	font-size: 2.6rem !important;
 }
 
+.h3-join-the-conversation {
+	font-size: 2rem !important;
+	font-weight: 300 !important;
+}
+
 p > a {
 	text-decoration: underline;
 }
