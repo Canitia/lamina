@@ -400,6 +400,11 @@ img.content-images-featured:hover, img.content-images:hover {
 	color: white;
 }
 
+.cat-links-hr {
+	margin-top:7px;
+	margin-bottom:7px;
+}
+
 .cat-links > a:hover {
 	text-decoration: underline;
 }

@@ -32,9 +32,9 @@
           <span class="label">Posted in</span> <a href="#"><?php $category = get_the_category();
             $firstCategory = $category[0]->cat_name; 
             echo $firstCategory;?></a>
-         <hr />
+         <hr class="cat-links-hr" />
              <?php the_tags( '<span class="label">Tags</span> ', ', ', ' ' ); ?> 
-        <hr />
+        <hr class="cat-links-hr" />
           </div>
        </article><!-- close article -->
                                           <!-- let user enter a comment -->
