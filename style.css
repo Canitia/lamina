@@ -151,6 +151,10 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 	height: auto !important;
 }
 
+.card-content {
+	width: 100%;
+}
+
 /* forbidden icon from error page */
 .card-image > .fa-ban {
 	font-size:20em;
