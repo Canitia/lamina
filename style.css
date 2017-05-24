@@ -294,7 +294,7 @@ POST/ARTICLE HEADERS
 .text-left-title-featured-sidebar {
 	margin-bottom: 0px;
 	background-color: white;
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #f8f8f8;
 }
 
 .text-left-title a {
@@ -956,7 +956,7 @@ padding-right: 20px;
 	margin-left: 20px !important;
 }
 
-.main-content > ul > div > div > a > li > p {
+.collection-item > p {
 	margin:0px;
 }
 
