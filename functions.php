@@ -49,7 +49,7 @@ add_action( 'widgets_init', 'my_register_sidebars' );
 
 
 $args = array(
-'default-color' => 'ebebeb',
+'default-color' => 'ffffff',
 );
 
 add_theme_support( 'custom-background', $args );
