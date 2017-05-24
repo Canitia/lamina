@@ -28,7 +28,7 @@
               </ul>
                                       <!-- navigation?-->
 
-                <?php get_template_part( 'partials/pagination' ); ?>
+<?php get_template_part( 'partials', 'pagination' ); ?>
                                     </div><!-- einde md8 -->
 
                   <?php get_sidebar( 'primary' ); ?>
