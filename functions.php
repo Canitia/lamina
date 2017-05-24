@@ -31,14 +31,13 @@ function cerulean_theme_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'cerulean_theme_scripts' );
 
-
 add_theme_support( "title-tag" );
 
 add_theme_support( 'automatic-feed-links' );
 
 add_theme_support( "post-thumbnails" );
 
-add_action( 'widgets_init', 'my_register_sidebars' );
+add_action( 'widgets_init', 'cerulean_sidebars' );
 
 
 
@@ -60,22 +59,20 @@ add_theme_support( 'custom-background', $args );
  * sidebar
  */
 
-function my_register_sidebars() {
-	
-	
+function cerulean_sidebars() {
 	
 	/* Register the 'primary' sidebar. */
 	
 	register_sidebar(
-	array(
-	'id' => 'primary',
-	'name' => __( 'Primary', 'cerulean-for-wordpress' ),
-	'description' => __( 'Main sidebar.', 'cerulean-for-wordpress' ),
-	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	'after_widget' => '</div>',
-	'before_title' => '<li class="collection-header"><h1 class="widget-title text-left-title-featured-sidebar">',
-	'after_title' => '</h1></li>'
-	)
+		array(
+		'id' => 'primary',
+		'name' => __( 'Primary', 'cerulean-for-wordpress' ),
+		'description' => __( 'Main sidebar.', 'cerulean-for-wordpress' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<li class="collection-header"><h1 class="widget-title text-left-title-featured-sidebar">',
+		'after_title' => '</h1></li>'
+		)
 	);
 	
 	
@@ -85,13 +82,13 @@ function my_register_sidebars() {
 
 /* register main navigation */
 
-function register_my_menu() {
+function register_mainmenu() {
 	
 	register_nav_menu('header-menu',__( 'Header Menu', 'cerulean-for-wordpress' ));
 	
 }
 
-add_action( 'init', 'register_my_menu' );
+add_action( 'init', 'register_mainmenu' );
 
 
 
@@ -100,7 +97,7 @@ add_action( 'init', 'register_my_menu' );
  * add custom site logo (to header)
  */
 
-function theme_prefix_setup() {
+function cerulean_for_wordpress_setup() {
 	
 	
 	add_theme_support( 'custom-logo', array(
@@ -113,11 +110,11 @@ function theme_prefix_setup() {
 	
 }
 
-add_action( 'after_setup_theme', 'theme_prefix_setup' );
+add_action( 'after_setup_theme', 'cerulean_for_wordpress_setup' );
 
 
 
-function theme_prefix_the_custom_logo() {
+function cerulean_for_wordpress_the_custom_logo() {
 	
 	
 	if ( function_exists( 'the_custom_logo' ) ) {
