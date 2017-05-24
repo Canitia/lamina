@@ -38,7 +38,7 @@
           </div>
        </article><!-- close article -->
                                           <!-- let user enter a comment -->
-      <h1 class="text-left-title-featured-sidebar"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h1>
+      <h3><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h3>
       <?php comments_template(); ?>
   
     </div><!-- close post class div -->
