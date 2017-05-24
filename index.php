@@ -25,10 +25,10 @@
                            } else { ?>		
                              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />		
                              <?php }; ?>		
-                     </a><?php		
+                     <?php		
                      echo '<div class="caption center-align"><h1 class="h1-slider">';		
                      the_title();		
-                     echo '</h1></div></li>';		
+                     echo '</h1></div></a></li>';		
  		
                    }		
                   }
