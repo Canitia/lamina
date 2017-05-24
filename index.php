@@ -1,42 +1,6 @@
 <?php get_header(); ?>
 
-
-
-<div>    
-    <?php		
-    $args = array(		
-      'posts_per_page' => 3,		
-      'post__in'  => get_option( 'sticky_posts' )		
-     );		
-     $query = new WP_Query( $args );		
- 		
-     if ( $query->have_posts() ) : ?>		
-             <div class="slider hide-on-small-only">		
-                 <ul class="slides">		
-                  <?php		
-                  // The Loop		
-                  if ( $query->have_posts() ) {		
-                   while ( $query->have_posts() ) {		
-                     $query->the_post();		
-                     echo '<li>';		?>		
-                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
-                     <?php if ( has_post_thumbnail() ) {		
-                                   the_post_thumbnail( 'large', array( 'class' => 'responsive-img' ) );		
-                           } else { ?>		
-                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" />		
-                             <?php }; ?>		
-                     <?php		
-                     echo '<div class="caption center-align"><h1 class="h1-slider">';		
-                     the_title();		
-                     echo '</h1></div></a></li>';		
- 		
-                   }		
-                  }
-                  endif;	
-        	
-           ?>
-</div>
-</div>
+                <?php get_template_part( 'partials/slider' ); ?>
 
   <div class="row">
     <div class="main-content col s12 m8 l8">
@@ -65,21 +29,7 @@
 
                             <!-- navigation?-->
 
-                          <ul class="pagination center-align" role="pagination">
-                            <?php if( get_previous_posts_link() ) :
-
-                            previous_posts_link( '<li class="pagination-arrows newer-posts"><i class="fa fa-ellipsis-h"></i></li>' );
-
-                            endif; ?>
-
-                            <li class="active"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo $paged; ?> </li>
-
-                            <?php if( get_next_posts_link() ) :
-
-                            next_posts_link( '<li class="pagination-arrows older-posts"><i class="fa fa-ellipsis-h"></i></li>' );
-
-                            endif; ?>
-                          </ul>
+                <?php get_template_part( 'partials/pagination' ); ?>
                     </div><!-- einde md8 -->  <!-- column end! -->
 
                     <!-- second column (widget bar) -->
