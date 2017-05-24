@@ -762,10 +762,10 @@ padding-right: 40px;
 
   	*****************************************/
 .wp-caption, .gallery-caption {
-	background-color: whitesmoke;
-	margin-bottom:15px;
 	margin-left: auto !important;
 	margin-right: auto !important;
+	width: auto !important;
+	border: 2px solid #ebebeb;
 }
 
 .wp-caption > img {
@@ -777,7 +777,6 @@ padding-right: 40px;
 .wp-caption-text {
 	text-align:center;
 	font-style: italic;
-	padding-bottom: 15px;
 	font-weight: 600;
 }
 
