@@ -444,6 +444,7 @@ img.avatar {
 	height:100px;
 	float:left;
 	z-index:200;
+	margin-top: 10px;
 	margin-left: 20px;
 	margin-right:15px;
 }
@@ -764,7 +765,6 @@ padding-right: 40px;
 .wp-caption, .gallery-caption {
 	margin-left: auto !important;
 	margin-right: auto !important;
-	width: auto !important;
 	border: 2px solid #ebebeb;
 }
 
