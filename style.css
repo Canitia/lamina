@@ -45,6 +45,7 @@ h3 {
 .h3-join-the-conversation {
 	font-size: 2rem !important;
 	font-weight: 300 !important;
+	margin-left: 15px;
 }
 
 p > a {
