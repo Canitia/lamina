@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-24 14:18+0000\n"
-"PO-Revision-Date: 2017-05-24 14:18+0000\n"
+"POT-Creation-Date: 2017-05-24 16:31+0000\n"
+"PO-Revision-Date: 2017-05-24 16:32+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,9 +13,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: single.php:32
-msgid "Posted in"
-msgstr "Gepost in"
+#: functions.php:72
+msgid "Primary"
+msgstr "Primair"
+
+#: functions.php:73
+msgid "Main sidebar."
+msgstr "Hoofd sidebar."
+
+#: functions.php:108
+msgid "Header Menu"
+msgstr "Hoofdnavigatie"
 
 #: 404.php:9
 msgid "Error"
@@ -83,6 +91,10 @@ msgstr "Gaan"
 #: sidebar.php:4
 msgid "There are currently no widgets enabled."
 msgstr "Er zijn momenteel geen widgets actief."
+
+#: single.php:32
+msgid "Posted in"
+msgstr "Gepost in"
 
 #: single.php:41
 msgid "Join the conversation"
