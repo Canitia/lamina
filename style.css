@@ -74,6 +74,7 @@ pre {
 }
 
 blockquote {
+	display: table;
 	position:relative;
 	padding-top:10px;
 	padding-bottom:10px;
