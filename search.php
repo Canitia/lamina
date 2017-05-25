@@ -25,7 +25,7 @@ if ( $the_query->have_posts() ) {
         while ( $the_query->have_posts() ) {
            $the_query->the_post();
                  ?>
-         <a href="<?php the_permalink(); ?>">
+          <a href="<?php the_permalink(); ?>">
         <li class="collection-item">
             <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
               <span class="badge">
