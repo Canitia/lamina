@@ -715,6 +715,10 @@ padding-right: 20px;
 	background: whitesmoke;
 }
 
+dl.wp-caption {
+	border: 0;
+}
+
 .wp-caption-text {
 	text-align:center;
 	font-style: italic;
@@ -855,57 +859,62 @@ padding-right: 20px;
 
   .tagcloud {
     padding: 5px;
-}
+	}
 
-.dropdown-content li > a, .dropdown-content li > span {
-	color: black !important;
-}
+	.dropdown-content li > a, .dropdown-content li > span {
+		color: black !important;
+	}
 
-.select-wrapper input.select-dropdown {
-	border-bottom: 0px !important;
-}
+	.select-wrapper input.select-dropdown {
+		border-bottom: 0px !important;
+	}
 
-.select-wrapper {
-	margin-left: 20px !important;
-}
+	.select-wrapper {
+		margin-left: 20px !important;
+	}
 
-.collection-item > p {
-	margin:0px;
-}
+	.collection-item > p {
+		margin:0px;
+	}
 
-nav .sub-menu {
-	position: absolute;
-	min-width: 115px;
-	display: none;
-	transition: all .3s;
-	background-color: white;
-	z-index: 1;
-	border: 1px solid #ebebeb;
-}
+	nav .sub-menu {
+		position: absolute;
+		min-width: 115px;
+		display: none;
+		transition: all .3s;
+		background-color: white;
+		z-index: 1;
+		border: 1px solid #ebebeb;
+	}
 
-nav .sub-menu li {
-	white-space: nowrap;
-	float: none;
-}
+	nav .sub-menu li {
+		white-space: nowrap;
+		float: none;
+	}
 
-li.menu-item-has-children:hover > .sub-menu {
-	display: block;
-}
+	li.menu-item-has-children:hover > .sub-menu {
+		display: block;
+	}
 
-input.search-field {
-    border-bottom: 1px solid #979797 !important;
-}
+	input.search-field {
+		border-bottom: 1px solid #979797 !important;
+	}
 
-input.search-field:focus {
-    box-shadow: 0 !important;
-}
+	input.search-field:focus {
+		box-shadow: 0 !important;
+	}
 
-/* Hides navigation links and site footer when infinite scroll is active */
-.infinite-scroll #navigation,
-.infinite-scroll.neverending #footer {
-    display: none;
-}
-/* Shows the footer again in case all posts have been loaded */
-.infinity-end.neverending #footer {
-    display: block;
-}
+	/* Hides navigation links and site footer when infinite scroll is active */
+	.infinite-scroll #navigation,
+	.infinite-scroll.neverending #footer {
+		display: none;
+	}
+	/* Shows the footer again in case all posts have been loaded */
+	.infinity-end.neverending #footer {
+		display: block;
+	}
+
+	.post_format-post-format-quote blockquote {
+		margin-left: auto;
+		margin-right: auto;
+	}
