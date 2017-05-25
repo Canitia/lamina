@@ -475,6 +475,10 @@ footer {
 	bottom:0;
 }
 
+.socialfooter {
+	margin-left: 20px;
+}
+
 .socialfooter > .right > a {
 	margin: 15px;
 	font-size: 70%;
