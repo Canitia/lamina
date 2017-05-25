@@ -4,7 +4,7 @@ Theme URI: https://michaelboumann.info/collection/#ceruleanwp
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple. Simplicity with features like custom designed tag/page/error and search pages, dynamic nav-menu's, logo support and more.
-Version: 0.9.9.93
+Version: 0.9.9.101
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
@@ -926,11 +926,6 @@ div.aligncenter {
 	z-index: 100000; /* Above WP toolbar. */
 }
 
-/* tagcloud widget */
-.tagcloud {
-	padding: 5px;
-}
-
 .dropdown-content li > a, 
 .dropdown-content li > span {
 	color: black !important;
@@ -943,4 +938,89 @@ div.aligncenter {
 
 .select-wrapper {
 	margin-left: 20px !important;
+}
+
+/* **************************************
+
+	CUSTOM WORDPRESS WIDGET CSS
+
+*****************************************/
+
+.tagcloud {
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.tagcloud > a:hover {
+	color: #979797;
+	text-decoration: underline;
+}
+
+.widget_tag_cloud h1 {
+    margin-top: 0;
+}
+
+/* calendar widget */
+.widget_calendar {
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+}
+
+#wp-calendar {
+	width: 100%;
+}
+
+#wp-calendar caption {
+	font-size: 150% !important;
+	font-weight: 300;
+	white-space: normal;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	border-bottom: 1px solid #f8f8f8;
+	text-align: left;
+}
+
+#wp-calendar thead { 
+	font-size: 10px; 
+}
+
+#wp-calendar thead th { 
+	padding-bottom: 10px; 
+}
+
+#wp-calendar tbody { 
+	color: #aaa; 
+}
+
+#wp-calendar tbody td { 
+	background: #f5f5f5; 
+	border: 1px solid #fff; 
+	text-align: center; 
+	padding:8px;
+}
+
+#wp-calendar tbody td:hover { 
+	background: #fff;
+}
+
+#wp-calendar tbody .pad { 
+	background: none; 
+}
+
+#wp-calendar tfoot #next { 
+	font-size: 10px; 
+	text-transform: uppercase; 
+	text-align: right; 
+}
+
+#wp-calendar tfoot #prev { 
+	font-size: 10px; 
+	text-transform: uppercase; 
+	padding-top: 10px; 
 }
