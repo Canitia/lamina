@@ -92,7 +92,7 @@ blockquote:before, blockquote:after {
     color:black;
     content:'\f10d';
     font-family:'FontAwesome';
-    font-size:30px;
+    font-size:25px;
     position:absolute;
     display:block;
 }
