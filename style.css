@@ -391,7 +391,7 @@ iframe {
 }
 
 .slider:hover, .h1-slider:hover { 
-	filter: grayscale(35%);
+	filter: grayscale(55%);
 }
 
 img.content-images-featured:hover, img.content-images:hover {
