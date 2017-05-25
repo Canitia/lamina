@@ -1,21 +1,16 @@
-<?php get_header();
-?>
+<?php get_header();?>
 
    <div class="container-fluid">
      <div class="row">
-                      <div class="card large card-error">
-                          <div class="card-image center">
-                            <i class="fa fa-ban fa-5x" aria-hidden="true"></i>
-                            <span class="card-title"><p class="posttitle"><?php _e('Error', 'cerulean-for-wordpress'); ?></p></span>
-                          </div>
-                          <div class="card-content">
-                            <p><?php _e('This page doesnt exist anymore or was available on the old website. To continue please select a menu option from the navigation menu.', 'cerulean-for-wordpress');?></p>
-                          </div>
-                      </div>
+           <div class="main-content col s12 m8 l8">
+                <h1 class="text-left-title-featured-sidebar"><?php _e('Error', 'cerulean-for-wordpress'); ?></h1>
+              <div class="post-content">
+                <p><?php _e('This post or page doesnt exist anymore. To continue please select a menu option from the navigation menu or navigate to the previous page.', 'cerulean-for-wordpress');?></p>
+              </div>
 
-    </div><!-- end container inside -->
 </div><!-- container fluid END! -->
-
+    <!-- second column (widget bar) -->
+    <?php get_sidebar( 'primary' ); ?>
 <!-- start of footer -->
 <?php get_footer();
 ?>
