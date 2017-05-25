@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="container-fluid">
      <div class="row">
                <div class="col s12 m8 l8 main-content">
                  <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts in', 'cerulean-for-wordpress'); ?> <strong><?php single_cat_title(); ?></strong></h1>

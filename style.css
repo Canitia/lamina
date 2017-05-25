@@ -3,8 +3,8 @@ Theme Name: Cerulean for Wordpress
 Theme URI: https://michaelboumann.info/collection/#ceruleanwp
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
-Description: Elegant yet simple designed UI. Simplicity with features custom designed tag/page/error pages, dynamic nav-menu's, logo support and more.
-Version: 0.9.9.32
+Description: Elegant yet simple. Simplicity with features like custom designed tag/page/error and search pages, dynamic nav-menu's, logo support and more.
+Version: 0.9.9.60
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
@@ -13,20 +13,16 @@ Text Domain: cerulean-for-wordpress
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-html body {
-	font-size: 16px;
-}
-
-.accentcolor-error {
-  background-color: red !important;
-}
-
 
 /* **************************************
 
   GENERAL FONT / ELEMENT
 
 *****************************************/
+html body {
+	font-size: 16px;
+}
+
 h1 {
 	font-size: 3.2rem !important;
 	font-weight: 300 !important;
@@ -38,16 +34,22 @@ h1 {
 
 h2 {
 	font-size: 2.9rem !important;
+	font-weight: 300 !important;
 }
 
 h3 {
 	font-size: 2.6rem !important;
+	font-weight: 300 !important;
 }
 
 .h3-join-the-conversation {
 	font-size: 2rem !important;
 	font-weight: 300 !important;
 	margin-left: 15px;
+}
+
+h4 {
+	font-weight: 300 !important;	
 }
 
 p > a {
@@ -57,7 +59,6 @@ p > a {
 .label {
 	font-weight: bold;
 	color:black !important;
-	width: 30%;
 }
 
 hr {
@@ -74,14 +75,12 @@ pre {
 }
 
 blockquote {
+	display: table;
 	position:relative;
 	padding-top:10px;
 	padding-bottom:10px;
 	background-color: whitesmoke;
-  	border-left: 5px solid #979797 !important;
-	border-top: 2px solid #ebebeb !important;
-	border-bottom: 2px solid #ebebeb !important;
-	border-right: 2px solid #ebebeb !important;
+	border: 2px solid #ebebeb !important;
 }
 
 blockquote:before {
@@ -117,56 +116,13 @@ pre {
 	background-color: #f5f7f8;
 }
 
-strong {
-  font-weight: 700 !important;
-}
-
 p > a, .side-nav a, .collection .collection-item, .collection-item > a {
 	color: black !important;
 }
 
-p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover, .socialfooter a
+p > a:focus, p > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover
 {
   color:#979797  !important;
-}
-
-.text-left-title-featured, .text-left-title-featured a, .text-left-title a:hover, .text-left-title-featured a:hover, .postdate a, .tag_heading, .chip a, footer a, .btn > a  {
-      color: white !important;
-}
-
-.post-subitems.center {
-	color: #979797;
-	margin-bottom: 25px;
-	font-size: 16px;
-}
-
-.post-subitems.center > a
-{
-	color:#979797;
-	text-decoration: none;
-}
-
-.post-subitems.center > a
-{
-	text-decoration: underline;
-}
-
-/* **************************************
-
-  SPECIFIC RESTRICTIONS TO GUI
-
-*****************************************/
-.card.large {
-	height: auto !important;
-}
-
-.card-content {
-	width: 100%;
-}
-
-/* forbidden icon from error page */
-.card-image > .fa-ban {
-	font-size:20em;
 }
 
 /* **************************************
@@ -229,9 +185,38 @@ nav ul a {
 
 /* **************************************
 
+  SLIDER LOOK-N-FEEL
+
+*****************************************/
+
+.slider .slides li {
+	background-color: #dfe3e5 !important;
+}
+
+.slider:hover, .h1-slider:hover { 
+	filter: grayscale(100%);
+}
+
+
+/* **************************************
+
   CONTENT SIDEBAR / MAIN
 
 *****************************************/
+
+/* headers*/
+.text-left-title-featured-sidebar {
+	font-size: 150% !important;
+	font-weight: 300;
+	padding:15px !important;
+	white-space: normal;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0px;
+	background-color: white;
+	border-bottom: 1px solid #f8f8f8;
+}
+
 #sidenav-overlay {
 	left: 300px !important;
 }
@@ -253,10 +238,6 @@ nav ul a {
 	color:#979797 !important;
 }
 
-.card-sidebar {
-	margin-top: 0px !important;
-}
-
 .main-content > ul > a > li > p {
 	margin:0px;
 }
@@ -265,41 +246,6 @@ nav ul a {
 	border-right: 1px solid #f8f8f8;
 }
 
-/* ######################################
-
-POST/ARTICLE HEADERS
-
-##########################################*/
-
-.text-left-title-featured {
-	padding:25px !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	margin-bottom:0px !important;
-	opacity: 0.8;
-	background-color: black !important;
-}
-
-/* post title */
-.text-left-title-featured, .text-left-title-featured-sidebar {
-	font-size: 150% !important;
-	font-weight: 300;
-	padding:15px !important;
-	white-space: normal;
-	overflow:hidden;
-	text-overflow: ellipsis;
-}
-
-/* aligns the sidebar to the top of the page and adapts the content within it */
-.text-left-title-featured-sidebar {
-	margin-bottom: 0px;
-	background-color: white;
-	border-bottom: 1px solid #f8f8f8;
-}
-
-.text-left-title a {
-	text-decoration: none;
-}
 
 .main-content > .collection > .collection-item {
   white-space: nowrap;
@@ -307,20 +253,54 @@ POST/ARTICLE HEADERS
   text-overflow: ellipsis;
 }
 
+/* ######################################
+
+POST/ARTICLE HEADERS
+
+##########################################*/
+.post-title {
+	font-weight: 300;
+}
+
+.post-subitems.center {
+	color: #979797;
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.post-subitems.center > a
+{
+	color:#979797;
+	text-decoration: none;
+}
+
+.post-subitems.center > a
+{
+	text-decoration: underline;
+}
+
+.posthead-image {
+	width: 100%;
+	max-width:1200px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post-content {
+	width: 100%;
+}
+
 /* **************************************
 
   ARTICLE/POST LOOK-N-FEEL
 
 *****************************************/
-.card .card-title {
-	font-weight: 300;
-}
-
 .wp-post-image {
 	width:100%;
 }
 
-.card-content > ul li {
+.post-content > ul li {
 	list-style-type: square !important;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -328,7 +308,7 @@ POST/ARTICLE HEADERS
 	line-height: 35px;
 }
 
-.card-content > ol li {
+.post-content > ol li {
 	margin-left: 40px;
 	margin-right: 40px;
 	padding:5px;
@@ -348,20 +328,8 @@ article {
 	height:100%;
 }
 
-.card .card-content p {
-	margin-top: 16px !important;
-	margin-bottom: 16px !important;
-}
 
-.posthead-image {
-	width: 100%;
-	max-width:1200px;
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.card-content > img, .card-content > p > img {
+.post-content > img, .post-content > p > img {
 	width: 100%;
 	height:auto;
 	display:block;
@@ -380,46 +348,12 @@ iframe {
 	margin-bottom:20px;
 }
 
-/* **************************************
-
-  SLIDER LOOK-N-FEEL
-
-*****************************************/
-
-.slider .slides li {
-	background-color: #dfe3e5 !important;
-}
-
-.slider:hover, .h1-slider:hover { 
-	filter: grayscale(55%);
-}
-
-img.content-images-featured:hover, img.content-images:hover {
-	opacity:0.9;
-}
 
 /* **************************************
 
-  ARTICLE: TAGS look-n-feel
+  ARTICLE: TAGS/CATEGORY look-n-feel
 
 *****************************************/
-
-.tag_heading {
-    padding: 20px;
-    margin-bottom: 0.25rem;
-}
-
-.socialfooter-top {
-	opacity: 0.8;
-}
-
-.socialfooter-top > a {
-	padding: 5px;
-}
-
-.socialfooter-top > a > i {
-	color: white;
-}
 
 .cat-links-hr {
 	margin-top:7px;
@@ -430,21 +364,6 @@ img.content-images-featured:hover, img.content-images:hover {
 	text-decoration: underline;
 }
 
-.chip {
-	color:white !important;
-	border-radius: 0px !important;
-	margin-bottom: 0px !important;
-	margin-right: 0px !important;
-	font-weight: 400 !important;
-}
-
-.chip:hover {
-	background-color: #1565c0 !important;
-}
-
-.chip > a:hover {
-	color: white !important;
-}
 /* **************************************
 
 	ARTICLE: AUTHOR look-n-feel
@@ -486,29 +405,16 @@ p.author-bio {
 	font-weight: 300 !important;
 }
 
-.author-social {
-	margin-top: 50px;
-}
-
-.author-social > a > i {
-	color:black;
-	margin: 5px !important;
-}
-
-.socialauthor {
-	padding: 15px;
-}
-
-.socialauthor > ul > li {
-	margin-top: 10px;
-	margin-bottom:10px;
-}
 
 /* **************************************
 
   PAGINATION
 
 *****************************************/
+.pagination {
+	margin-top: 15px;
+}
+
 
 .pagination > a {
 	margin: 20px;
@@ -545,19 +451,17 @@ footer {
 	bottom:0;
 }
 
+.socialfooter {
+	margin-left: 20px;
+}
+
+.socialfooter > .right {
+	margin-right: 20px;
+}
+
 .socialfooter > .right > a {
 	margin: 15px;
-	font-size: 70%;
 	color:black !important;
-}
-
-.footer.page-footer {
-  position: relative !important;
-}
-
-
-.socialfooter > a {
-    color: #00bfff;
 }
 
 .socialfooter > a:hover {
@@ -611,8 +515,9 @@ footer {
 	}
 
 	h1 {
-	font-size: 2.5rem !important;
-	font-weight: 300 !important;
+		font-size: 2.5rem !important;
+		font-weight: 300 !important;
+		margin-top: 0px;
 	}
 
 	h2 {
@@ -633,17 +538,8 @@ footer {
 		margin-left: 15px;
 	}
 
-	.postdate {
-		padding:5px;
-	}
-
 	.pagination, .main-content {
 		margin-bottom: 12px;
-	}
-
-	.chip {
-		height: 40px !important;
-		line-height:40px !important;
 	}
 
 	.row {
@@ -656,6 +552,16 @@ footer {
 	.page-footer {
 		position:relative !important;
 	}
+
+	.wp-caption {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.alignleft, .alignright {
+		float: none !important;
+	}
+
 }
 
 /* mobile devices */
@@ -749,48 +655,6 @@ EXTERNAL libraries look-n-feel
 	color: black;
 }
 
-.slides > li > p > .fa-star {
-	margin-left: 5px !important;
-	margin-right: 5px !important;
-	color: orange;
-}
-
-.postdate i {
-	margin-right: 5px;
-}
-
-.postdate > a i {
-	border-radius: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 3px;
-	margin-top: 3px;
-}
-
-/* general styling of pretty much all font-awesome icons */
-.socialfooter {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.socialfooter > a i {
-	color: white;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: 15px;
-	transition: all 0.2s ease-in-out;
-	color: black;
-}
-
-.twitter-tweet {
-	margin-left:auto;
-	margin-right: auto;
-}
-
-i.fa.fa-twitter.fa-2x {
-	margin-left: 0px;
-}
-
 
 /* add some styling to disqus */
 #disqus_thread {
@@ -799,11 +663,11 @@ padding-right: 20px;
 }
 
 
-    /* **************************************
+/* **************************************
 
-  	 WORDPRESS SPECIFIC
+	WORDPRESS SPECIFIC
 
-  	*****************************************/
+*****************************************/
 .wp-caption, .gallery-caption {
 	max-width: 100%;
 	border: 1px solid #ebebeb;
@@ -977,15 +841,20 @@ nav .sub-menu {
 	z-index: 1;
 	border: 1px solid #ebebeb;
 }
+
 nav .sub-menu li {
 	white-space: nowrap;
 	float: none;
 }
+
 li.menu-item-has-children:hover > .sub-menu {
 	display: block;
 }
 
 input.search-field {
     border-bottom: 1px solid #979797 !important;
+}
+
+input.search-field:focus {
     box-shadow: 0 !important;
 }

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-24 23:35+0000\n"
-"PO-Revision-Date: 2017-05-24 23:36+0000\n"
+"POT-Creation-Date: 2017-05-25 12:14+0000\n"
+"PO-Revision-Date: 2017-05-25 12:15+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,32 +13,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#. Name of the template
-msgid "Search Page"
-msgstr "Zoekpagina"
-
-#: search.php:43
-msgid "Sorry, it seems this search query has no posts."
-msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
+#: search.php:14
+msgid "Results for "
+msgstr "Resultaten voor"
 
 #. Description of the theme
 msgid ""
-"Elegant yet simple designed UI. Simplicity with features custom designed "
-"tag/page/error pages, dynamic nav-menu's, logo support and more."
+"Elegant yet simple. Simplicity with features like custom designed "
+"tag/page/error and search pages, dynamic nav-menu's, logo support and more."
 msgstr ""
-"Elegante doch simpel ontwerpen UI. Simpliciteit met features zoals opnieuw "
-"ontworpen tag/page en errorpagina's, dynamische navigatiemenu's, logo "
+"Elegant en toch simpel. Simpliciteit met functionaliteit zoals costum-design "
+"tag/page/error en zoekpagina's, dynamische navigatiemenu's, logo "
 "ondersteuning en meer."
 
-#. URI of the theme
-msgid "https://michaelboumann.info/collection/#ceruleanwp"
-msgstr "https://michaelboumann.info/collection/#ceruleanwp"
-
-#: 404.php:9
+#: 404.php:6
 msgid "Error"
 msgstr "Foutmelding"
 
-#: 404.php:12
+#: 404.php:8
 msgid ""
 "This page doesnt exist anymore or was available on the old website. To "
 "continue please select a menu option from the navigation menu."
@@ -86,9 +78,17 @@ msgstr "geleden"
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
-#: page.php:26
+#: page.php:27
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
+
+#. Name of the template
+msgid "Search Page"
+msgstr "Zoekpagina"
+
+#: search.php:39
+msgid "Sorry, it seems this search query has no posts."
+msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
 
 #: searchform.php:1
 msgid "Search"
@@ -113,15 +113,15 @@ msgstr "Gaan"
 msgid "There are currently no widgets enabled."
 msgstr "Er zijn momenteel geen widgets actief."
 
-#: single.php:26
+#: single.php:27
 msgid "Posted in"
 msgstr "Gepost in"
 
-#: single.php:35
+#: single.php:36
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
 
-#: single.php:43
+#: single.php:44
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
@@ -136,6 +136,10 @@ msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 #. Name of the theme
 msgid "Cerulean for Wordpress"
 msgstr "Cerulean voor Wordpress"
+
+#. URI of the theme
+msgid "https://michaelboumann.info/collection/#ceruleanwp"
+msgstr "https://michaelboumann.info/collection/#ceruleanwp"
 
 #. Author of the theme
 msgid "Michael Boumann"

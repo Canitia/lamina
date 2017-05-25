@@ -83,4 +83,3 @@
                     }
  
                       ?>
-<div class="container-fluid">
