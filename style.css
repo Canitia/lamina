@@ -134,11 +134,17 @@ dt {
     font-weight: 500;
 }
 
-p > a, .side-nav a, .collection .collection-item, .collection-item > a {
+p > a, .side-nav a, 
+.collection .collection-item, 
+.collection-item > a {
 	color: black !important;
 }
 
-p > a:focus, p > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover
+p > a:focus,
+p > a:hover, 
+.pagination > a > i:hover, 
+li.pagination-arrows a i:hover, 
+.socialfooter > a > i:hover
 {
   color:#979797  !important;
 }
@@ -234,7 +240,8 @@ li.menu-item-has-children:hover > .sub-menu {
 	background-color: #dfe3e5 !important;
 }
 
-.slider:hover, .h1-slider:hover { 
+.slider:hover, 
+.h1-slider:hover { 
 	filter: grayscale(100%);
 }
 
@@ -273,7 +280,12 @@ li.menu-item-has-children:hover > .sub-menu {
 	background-color: #e0e0e0 !important;
 }
 
-.main-content > .text-left-title, article > h1, article > h2, article > h3, article > h4, .author-url-post-head  {
+.main-content > .text-left-title, 
+article > h1, 
+article > h2, 
+article > h3, 
+article > h4, 
+.author-url-post-head  {
 	color:#979797 !important;
 }
 
@@ -301,7 +313,7 @@ POST/ARTICLE HEADERS
 	font-weight: 300;
 }
 
-.post-subitems.center {
+.post-subitems {
 	color: #979797;
 	margin-bottom: 25px;
 	font-size: 16px;
@@ -375,7 +387,8 @@ article {
 }
 
 
-.post-content > img, .post-content > p > img {
+.post-content > img,
+.post-content > p > img {
 	width: 100%;
 	height:auto;
 	display:block;
@@ -469,7 +482,8 @@ p.author-bio {
 }
 
 
-.pagination > a > li, .pagination > li {
+.pagination > a > li, 
+.pagination > li {
 	padding: 20px;
 }
 
@@ -573,7 +587,6 @@ footer {
 
 	h1 {
 		font-size: 2.5rem !important;
-		font-weight: 300 !important;
 		margin-top: 0px;
 	}
 
@@ -688,12 +701,15 @@ footer {
 EXTERNAL libraries look-n-feel
 
 *****************************************/
-.fa-user-secret, .fa-twitter, .fa-facebook {
+.fa-user-secret, 
+.fa-twitter, 
+.fa-facebook {
   margin-left:20px;
   margin-right:20px;
 }
 
-.fa-star, .fa-circle {
+.fa-star, 
+.fa-circle {
 	margin-right: 15px;
 }
 
@@ -701,7 +717,8 @@ EXTERNAL libraries look-n-feel
 	color: #e59400;
 }
 
-.fa-circle, .fa-tag {
+.fa-circle, 
+.fa-tag {
 	color: #d3d3d3;
 }
 
@@ -713,7 +730,8 @@ EXTERNAL libraries look-n-feel
 	margin-left: 20px;
 }
 
-.fa-clock-o, .fa-user {
+.fa-clock-o, 
+.fa-user {
 	margin-right: 10px;
 }
 
@@ -750,7 +768,8 @@ padding-right: 20px;
 }
 
 /* image captions */
-.wp-caption, .gallery-caption {
+.wp-caption, 
+.gallery-caption {
 	max-width: 100%;
 	border: 1px solid #ebebeb;
 	background: whitesmoke;
@@ -916,7 +935,8 @@ div.aligncenter {
 	padding: 5px;
 }
 
-.dropdown-content li > a, .dropdown-content li > span {
+.dropdown-content li > a, 
+.dropdown-content li > span {
 	color: black !important;
 }
 
