@@ -128,7 +128,7 @@ p > a, .side-nav a, .collection .collection-item, .collection-item > a {
 	color: black !important;
 }
 
-p > a:focus, p > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover, .socialfooter a
+p > a:focus, p > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover
 {
   color:#979797  !important;
 }
@@ -479,9 +479,12 @@ footer {
 	margin-left: 20px;
 }
 
+.socialfooter > .right {
+	margin-right: 20px;
+}
+
 .socialfooter > .right > a {
 	margin: 15px;
-	font-size: 70%;
 	color:black !important;
 }
 
