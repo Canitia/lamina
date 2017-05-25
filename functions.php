@@ -91,7 +91,7 @@ function register_mainmenu() {
 add_action( 'init', 'register_mainmenu' );
 
 
-/** Plugin Name: Display a list of pingbacks and trackbacks with the Disqus plugin **/
+/** Display a list of pingbacks and trackbacks with the Disqus plugin **/
 
 add_filter( 'comments_template', function( $theme_template) {
 
