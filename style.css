@@ -365,6 +365,13 @@ iframe {
 	margin-bottom:20px;
 }
 
+ul.pings.commentlist {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
 
 /* **************************************
 

@@ -99,24 +99,18 @@ add_filter( 'comments_template', function( $theme_template) {
     if( ! function_exists( 'dsq_is_installed' ) || ! dsq_is_installed() )
         return $theme_template;
 
-    // Comment callback:
-    $callback = 'my_theme_comment';  // Adjust to your needs.       
-    if( ! function_exists( $callback ) )
-        $callback = null;
-
     // List comments with filters:
     $pings = wp_list_comments( 
         array(  
-            'callback' => $callback, 
             'type'     => 'pings', 
-            'style'    => 'ol', 
+            'style'    => 'ul', 
             'echo'     => 0 
         ) 
     ); 
 
     // Display:
     if( $pings )
-        printf( "<div><ol class=\"pings commentlist\">%s</ol></div>", $pings );
+        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", $pings );
 
     return $theme_template;
 
