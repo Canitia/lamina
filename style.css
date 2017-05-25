@@ -440,8 +440,12 @@ p.author-bio {
 }
 
 
-.pagination > a {
-	margin: 20px;
+.pagination > a > li, .pagination > li {
+	padding: 20px;
+}
+
+.pagination > a > .pagination-arrows {
+	padding: 0 !important;
 }
 
 .pagination > .active {
