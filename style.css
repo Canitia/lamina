@@ -145,7 +145,7 @@ p > a:focus, p > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:ho
 
 /* **************************************
 
-  HEADER
+  HEADER / NAVBAR / NAVIGATION
 
 *****************************************/
 /* color of clickable header */
@@ -183,6 +183,25 @@ nav ul a {
 	color: black !important;
 }
 
+nav .sub-menu {
+	position: absolute;
+	min-width: 115px;
+	display: none;
+	transition: all .3s;
+	background-color: white;
+	z-index: 1;
+	border: 1px solid #ebebeb;
+}
+
+nav .sub-menu li {
+	white-space: nowrap;
+	float: none;
+}
+
+li.menu-item-has-children:hover > .sub-menu {
+	display: block;
+}
+
 /* **************************************
 
   SLIDEOUT SIDEBAR
@@ -201,6 +220,10 @@ nav ul a {
 	color: #979797 !important;
 }
 
+#sidenav-overlay {
+	left: 300px !important;
+}
+
 /* **************************************
 
   SLIDER LOOK-N-FEEL
@@ -215,14 +238,13 @@ nav ul a {
 	filter: grayscale(100%);
 }
 
-
 /* **************************************
 
   CONTENT SIDEBAR / MAIN
 
 *****************************************/
 
-/* headers*/
+/* headers like 'latest' */
 .text-left-title-featured-sidebar {
 	font-size: 150% !important;
 	font-weight: 300;
@@ -234,10 +256,6 @@ nav ul a {
 	border-bottom: 1px solid #f8f8f8;
 }
 
-#sidenav-overlay {
-	left: 300px !important;
-}
-
 .collection {
 	margin:0px !important;
 	border: 0 !important;
@@ -247,11 +265,15 @@ nav ul a {
 	border-bottom: 1px solid #ededed !important;
 }
 
+.collection-item > p {
+	margin:0px;
+}
+
 .collection .collection-item:hover {
 	background-color: #e0e0e0 !important;
 }
 
-.main-content > .text-left-title,  .postdate > a, .author-profile h4, .text-left-title a, article > h1, article > h2, article > h3, article > h4, .postdate a:hover, .author-url-post-head  {
+.main-content > .text-left-title, article > h1, article > h2, article > h3, article > h4, .author-url-post-head  {
 	color:#979797 !important;
 }
 
@@ -285,13 +307,13 @@ POST/ARTICLE HEADERS
 	font-size: 16px;
 }
 
-.post-subitems.center > a
+.post-subitems > a
 {
 	color:#979797;
 	text-decoration: none;
 }
 
-.post-subitems.center > a
+.post-subitems > a:hover
 {
 	text-decoration: underline;
 }
@@ -709,6 +731,18 @@ padding-right: 20px;
 	WORDPRESS SPECIFIC
 
 *****************************************/
+/* post types */
+.post_format-post-format-quote blockquote {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post_format-post-format-chat > article > .post-content {
+	padding: 20px;
+	font-style: italic;
+}
+
+/* image captions */
 .wp-caption, .gallery-caption {
 	max-width: 100%;
 	border: 1px solid #ebebeb;
@@ -725,6 +759,7 @@ dl.wp-caption {
 	font-weight: 600;
 }
 
+/* comment styling */
 .comments-wrapper {
 	padding: 15px;
 }
@@ -733,188 +768,156 @@ dl.wp-caption {
 	font-size: 175%;
 }
 
+.commentlist .bypostauthor {
+	background: whitesmoke;
+}
+
+.commentlist li ul.children li.bypostauthor {
+	background: whitesmoke;
+}
+
+/* center align twitter */
 .twitter-tweet {
 	margin-left:auto;
 	margin-right: auto;
 }
 
-.widget {
-	background: white;
+/* sidebar */
+.widget > ul > li {
+	line-height: 1.5rem;
+	padding: 10px 20px;
+	margin: 0;
+	border-bottom: 1px solid #e0e0e0;
+	list-style-type: none !important;
 }
 
-.widget > ul > li {
-    background-color: #fff;
-    line-height: 1.5rem;
-    padding: 10px 20px;
-    margin: 0;
-    border-bottom: 1px solid #e0e0e0;
-    list-style-type: none !important;
-  }
+.widget > ul > li:hover {
+	background-color: #ebebeb;
+}
 
-  .widget > ul > li:hover {
-	  background-color: #ebebeb;
-  }
+.widget > ul > li > a, a {
+	color:black;
+}
 
-  .widget > ul > li > a, a {
-	  color:black;
-  }
+/* all list items */
 
-  .collection-header {
-    list-style-type: none !important;
-    margin-left:0;
-    margin-right:0;
-  }
+.collection-header {
+	list-style-type: none !important;
+	margin-left:0;
+	margin-right:0;
+}
 
-  .search-box {
-    padding: 15px;
-  }
+/* search */
+.search-box {
+	padding: 15px;
+}
 
-  .search-box form i {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-  }
+.search-box form i {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
 
-  .size-auto,
-  .size-large,
-  .size-medium,
-  .size-thumbnail {
+input.search-field {
+	border-bottom: 1px solid #979797 !important;
+}
+
+input.search-field:focus {
+	box-shadow: 0 !important;
+}
+
+/* images */
+.size-auto,
+.size-large,
+.size-medium,
+.size-thumbnail {
 	max-width: 100%;
 	width: 100%;
 	height: auto; 
 	display:block;
-  }
+}
 
-  .size-full {
-	  max-width: 100%;
-	  display:block;
-	  height: 100%;
-  }
+.size-full {
+	max-width: 100%;
+	display:block;
+	height: 100%;
+}
 /* custom image size */
-  .wp-caption > img {
-    max-width: 100%;
-    height: 100%;
-  }
+.wp-caption > img {
+	max-width: 100%;
+	height: 100%;
+}
 
-	.sticky {
-		color: rgba(255, 166, 0, 1) !important;
-	}
+/* sticky post star */
+.sticky {
+	color: rgba(255, 166, 0, 1) !important;
+}
 
-	.alignnone {
-	    margin: 5px 20px 20px 0;
-	}
+/* alignment css */
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
 
-	.aligncenter,
-	div.aligncenter {
-	    display: block;
-	    margin: 5px auto 5px auto;
-	}
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
 
-	.alignright {
-	    float:right;
-	    margin: 5px 0 20px 20px;
-	}
+.alignright {
+	float:right;
+	margin: 5px 0 20px 20px;
+}
 
-	.alignleft {
-	    float: left;
-	    margin: 5px 20px 20px 0;
-	}
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
 
-	.commentlist .bypostauthor {
-		background: whitesmoke;
-	}
 
-	.commentlist li ul.children li.bypostauthor {
-		background: whitesmoke;
-	}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
 
-	/* Text meant only for screen readers. */
-	.screen-reader-text {
-		clip: rect(1px, 1px, 1px, 1px);
-		position: absolute !important;
-		height: 1px;
-		width: 1px;
-		overflow: hidden;
-	}
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
 
-	.screen-reader-text:focus {
-		background-color: #f1f1f1;
-		border-radius: 3px;
-		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-		clip: auto !important;
-		color: #21759b;
-		display: block;
-		font-size: 14px;
-		font-size: 0.875rem;
-		font-weight: bold;
-		height: auto;
-		left: 5px;
-		line-height: normal;
-		padding: 15px 23px 14px;
-		text-decoration: none;
-		top: 5px;
-		width: auto;
-		z-index: 100000; /* Above WP toolbar. */
-	}
+/* tagcloud widget */
+.tagcloud {
+	padding: 5px;
+}
 
-  .tagcloud {
-    padding: 5px;
-	}
+.dropdown-content li > a, .dropdown-content li > span {
+	color: black !important;
+}
 
-	.dropdown-content li > a, .dropdown-content li > span {
-		color: black !important;
-	}
+/* sidebar dropdown element */
+.select-wrapper input.select-dropdown {
+	border-bottom: 0px !important;
+}
 
-	.select-wrapper input.select-dropdown {
-		border-bottom: 0px !important;
-	}
-
-	.select-wrapper {
-		margin-left: 20px !important;
-	}
-
-	.collection-item > p {
-		margin:0px;
-	}
-
-	nav .sub-menu {
-		position: absolute;
-		min-width: 115px;
-		display: none;
-		transition: all .3s;
-		background-color: white;
-		z-index: 1;
-		border: 1px solid #ebebeb;
-	}
-
-	nav .sub-menu li {
-		white-space: nowrap;
-		float: none;
-	}
-
-	li.menu-item-has-children:hover > .sub-menu {
-		display: block;
-	}
-
-	input.search-field {
-		border-bottom: 1px solid #979797 !important;
-	}
-
-	input.search-field:focus {
-		box-shadow: 0 !important;
-	}
-
-	/* Hides navigation links and site footer when infinite scroll is active */
-	.infinite-scroll #navigation,
-	.infinite-scroll.neverending #footer {
-		display: none;
-	}
-	/* Shows the footer again in case all posts have been loaded */
-	.infinity-end.neverending #footer {
-		display: block;
-	}
-
-	.post_format-post-format-quote blockquote {
-		margin-left: auto;
-		margin-right: auto;
-	}
+.select-wrapper {
+	margin-left: 20px !important;
+}
