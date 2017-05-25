@@ -639,6 +639,10 @@ footer {
 	background-color: orangered;
 }
 
+.post-content.error {
+	margin-left: 15px;
+}
+
 /* **************************************
 
 EXTERNAL libraries look-n-feel
