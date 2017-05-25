@@ -561,17 +561,8 @@ footer {
 		margin-left: 15px;
 	}
 
-	.postdate {
-		padding:5px;
-	}
-
 	.pagination, .main-content {
 		margin-bottom: 12px;
-	}
-
-	.chip {
-		height: 40px !important;
-		line-height:40px !important;
 	}
 
 	.row {
