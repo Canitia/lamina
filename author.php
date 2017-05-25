@@ -4,7 +4,7 @@
   <div class="col s12 m8 l8 main-content">
   <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts by', 'cerulean-for-wordpress'); ?> 
   <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
-    echo $curauth->display_name;?></h1>
+    echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
 
    <ul class="collection">
     <?php if ( have_posts() ) : ?>
