@@ -6,7 +6,7 @@
     <div class="col s12 m12 l12">
           <div <?php post_class();?>>
                 <article>
-                  <span class="card-title">
+                  <span class="post-title">
                     <h1 class="center"><?php the_title();?></h1>
                     </span>
       <div class="post-subitems center">
@@ -14,7 +14,7 @@
         <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
       </div>
    <hr />
-      <div class="card-content">
+      <div class="post-content">
         <p><?php the_content();?></p>
       </div>  
         <?php get_template_part( 'partials/authorsection' ); ?>
