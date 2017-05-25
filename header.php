@@ -73,11 +73,11 @@
                      }
                      
                     if ( is_single() ) {
-                        the_post_thumbnail('large', ['class' => 'responsive-img', 'title' => 'Feature image']);
+                        the_post_thumbnail('full', ['class' => 'responsive-img', 'title' => 'Feature image']);
                     }
  
                      if ( is_page() ) {
-                        the_post_thumbnail('large', ['class' => 'responsive-img', 'title' => 'Feature image']);
+                        the_post_thumbnail('full', ['class' => 'responsive-img', 'title' => 'Feature image']);
                     }
  
                       ?>
