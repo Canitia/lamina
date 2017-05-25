@@ -41,7 +41,7 @@
 
       <!-- error handling -->
       <?php endwhile; else: ?>
-            <p><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
+            <p class="post-errortext"><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
       <?php endif; ?>
         <?php get_sidebar( 'primary' ); ?>
 </div><!-- close col s12 m12 l12 class div -->

@@ -38,7 +38,7 @@ if ( $the_query->have_posts() ) {
         }
     }else{
 ?>
-                        		      <p><?php _e('Sorry, it seems this search query has no posts.', 'cerulean-for-wordpress'); ?></p>
+      <p class="post-errortext"><?php _e('Sorry, it seems this search query has no posts.', 'cerulean-for-wordpress'); ?></p>
 <?php } ?>
 </ul>
                     </div><!-- einde md8 -->  <!-- column end! -->
