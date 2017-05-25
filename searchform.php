@@ -1,6 +1,7 @@
 <li class="collection-header"><h1 class="widget-title text-left-title-featured-sidebar"><?php _e('Search', 'cerulean-for-wordpress');?></h1></li>
 <div class="search-box">
   <form role="search" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+ 
       <label>
           <input type="search" class="search-field"
               placeholder="<?php echo esc_attr_x( 'Search ...', 'placeholder', 'cerulean-for-wordpress' ) ?>"
