@@ -381,23 +381,6 @@ img.content-images-featured:hover, img.content-images:hover {
 
 *****************************************/
 
-.tag_heading {
-    padding: 20px;
-    margin-bottom: 0.25rem;
-}
-
-.socialfooter-top {
-	opacity: 0.8;
-}
-
-.socialfooter-top > a {
-	padding: 5px;
-}
-
-.socialfooter-top > a > i {
-	color: white;
-}
-
 .cat-links-hr {
 	margin-top:7px;
 	margin-bottom:7px;
@@ -405,22 +388,6 @@ img.content-images-featured:hover, img.content-images:hover {
 
 .cat-links > a:hover {
 	text-decoration: underline;
-}
-
-.chip {
-	color:white !important;
-	border-radius: 0px !important;
-	margin-bottom: 0px !important;
-	margin-right: 0px !important;
-	font-weight: 400 !important;
-}
-
-.chip:hover {
-	background-color: #1565c0 !important;
-}
-
-.chip > a:hover {
-	color: white !important;
 }
 /* **************************************
 
