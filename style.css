@@ -339,7 +339,10 @@ POST/ARTICLE HEADERS
 	width:100%;
 }
 
-.post-content > ul li {
+.post-content > ul li, 
+.post-content > ol li > ul li,
+.post-content > ol li > ul li,
+.post-content > ul li > ol li > ul li {
 	list-style-type: square !important;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -347,7 +350,11 @@ POST/ARTICLE HEADERS
 	line-height: 35px;
 }
 
-.post-content > ol li {
+.post-content > ol li, 
+.post-content > ul li > ol li,
+.post-content > ol li > ul li > ol li
+ {
+	list-style-type: decimal !important;
 	margin-left: 40px;
 	margin-right: 40px;
 	padding:5px;
