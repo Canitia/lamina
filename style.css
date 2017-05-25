@@ -233,6 +233,20 @@ nav ul a {
   CONTENT SIDEBAR / MAIN
 
 *****************************************/
+
+/* headers*/
+.text-left-title-featured-sidebar {
+	font-size: 150% !important;
+	font-weight: 300;
+	padding:15px !important;
+	white-space: normal;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0px;
+	background-color: white;
+	border-bottom: 1px solid #f8f8f8;
+}
+
 #sidenav-overlay {
 	left: 300px !important;
 }
@@ -271,32 +285,6 @@ nav ul a {
 POST/ARTICLE HEADERS
 
 ##########################################*/
-
-.text-left-title-featured {
-	padding:25px !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	margin-bottom:0px !important;
-	opacity: 0.8;
-	background-color: black !important;
-}
-
-/* post title */
-.text-left-title-featured, .text-left-title-featured-sidebar {
-	font-size: 150% !important;
-	font-weight: 300;
-	padding:15px !important;
-	white-space: normal;
-	overflow:hidden;
-	text-overflow: ellipsis;
-}
-
-/* aligns the sidebar to the top of the page and adapts the content within it */
-.text-left-title-featured-sidebar {
-	margin-bottom: 0px;
-	background-color: white;
-	border-bottom: 1px solid #f8f8f8;
-}
 
 .text-left-title a {
 	text-decoration: none;
