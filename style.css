@@ -133,22 +133,6 @@ p > a:focus, p > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:ho
   color:#979797  !important;
 }
 
-.post-subitems.center {
-	color: #979797;
-	margin-bottom: 25px;
-	font-size: 16px;
-}
-
-.post-subitems.center > a
-{
-	color:#979797;
-	text-decoration: none;
-}
-
-.post-subitems.center > a
-{
-	text-decoration: underline;
-}
 
 /* **************************************
 
@@ -225,6 +209,25 @@ nav ul a {
 
 /* **************************************
 
+  SLIDER LOOK-N-FEEL
+
+*****************************************/
+
+.slider .slides li {
+	background-color: #dfe3e5 !important;
+}
+
+.slider:hover, .h1-slider:hover { 
+	filter: grayscale(55%);
+}
+
+img.content-images-featured:hover, img.content-images:hover {
+	opacity:0.9;
+}
+
+
+/* **************************************
+
   CONTENT SIDEBAR / MAIN
 
 *****************************************/
@@ -271,15 +274,6 @@ nav ul a {
 	border-right: 1px solid #f8f8f8;
 }
 
-/* ######################################
-
-POST/ARTICLE HEADERS
-
-##########################################*/
-
-.text-left-title a {
-	text-decoration: none;
-}
 
 .main-content > .collection > .collection-item {
   white-space: nowrap;
@@ -287,15 +281,45 @@ POST/ARTICLE HEADERS
   text-overflow: ellipsis;
 }
 
+/* ######################################
+
+POST/ARTICLE HEADERS
+
+##########################################*/
+.post-title {
+	font-weight: 300;
+}
+
+.post-subitems.center {
+	color: #979797;
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.post-subitems.center > a
+{
+	color:#979797;
+	text-decoration: none;
+}
+
+.post-subitems.center > a
+{
+	text-decoration: underline;
+}
+
+.posthead-image {
+	width: 100%;
+	max-width:1200px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* **************************************
 
   ARTICLE/POST LOOK-N-FEEL
 
 *****************************************/
-.post-title {
-	font-weight: 300;
-}
-
 .wp-post-image {
 	width:100%;
 }
@@ -328,13 +352,6 @@ article {
 	height:100%;
 }
 
-.posthead-image {
-	width: 100%;
-	max-width:1200px;
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .post-content > img, .post-content > p > img {
 	width: 100%;
@@ -355,27 +372,10 @@ iframe {
 	margin-bottom:20px;
 }
 
-/* **************************************
-
-  SLIDER LOOK-N-FEEL
-
-*****************************************/
-
-.slider .slides li {
-	background-color: #dfe3e5 !important;
-}
-
-.slider:hover, .h1-slider:hover { 
-	filter: grayscale(55%);
-}
-
-img.content-images-featured:hover, img.content-images:hover {
-	opacity:0.9;
-}
 
 /* **************************************
 
-  ARTICLE: TAGS look-n-feel
+  ARTICLE: TAGS/CATEGORY look-n-feel
 
 *****************************************/
 
@@ -387,6 +387,7 @@ img.content-images-featured:hover, img.content-images:hover {
 .cat-links > a:hover {
 	text-decoration: underline;
 }
+
 /* **************************************
 
 	ARTICLE: AUTHOR look-n-feel
@@ -428,23 +429,6 @@ p.author-bio {
 	font-weight: 300 !important;
 }
 
-.author-social {
-	margin-top: 50px;
-}
-
-.author-social > a > i {
-	color:black;
-	margin: 5px !important;
-}
-
-.socialauthor {
-	padding: 15px;
-}
-
-.socialauthor > ul > li {
-	margin-top: 10px;
-	margin-bottom:10px;
-}
 
 /* **************************************
 
@@ -686,48 +670,6 @@ EXTERNAL libraries look-n-feel
 	color: black;
 }
 
-.slides > li > p > .fa-star {
-	margin-left: 5px !important;
-	margin-right: 5px !important;
-	color: orange;
-}
-
-.postdate i {
-	margin-right: 5px;
-}
-
-.postdate > a i {
-	border-radius: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 3px;
-	margin-top: 3px;
-}
-
-/* general styling of pretty much all font-awesome icons */
-.socialfooter {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.socialfooter > a i {
-	color: white;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: 15px;
-	transition: all 0.2s ease-in-out;
-	color: black;
-}
-
-.twitter-tweet {
-	margin-left:auto;
-	margin-right: auto;
-}
-
-i.fa.fa-twitter.fa-2x {
-	margin-left: 0px;
-}
-
 
 /* add some styling to disqus */
 #disqus_thread {
@@ -736,11 +678,11 @@ padding-right: 20px;
 }
 
 
-    /* **************************************
+/* **************************************
 
-  	 WORDPRESS SPECIFIC
+	WORDPRESS SPECIFIC
 
-  	*****************************************/
+*****************************************/
 .wp-caption, .gallery-caption {
 	max-width: 100%;
 	border: 1px solid #ebebeb;
@@ -914,10 +856,12 @@ nav .sub-menu {
 	z-index: 1;
 	border: 1px solid #ebebeb;
 }
+
 nav .sub-menu li {
 	white-space: nowrap;
 	float: none;
 }
+
 li.menu-item-has-children:hover > .sub-menu {
 	display: block;
 }
