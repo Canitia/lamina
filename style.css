@@ -575,6 +575,16 @@ footer {
 	.page-footer {
 		position:relative !important;
 	}
+
+	.wp-caption {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.alignleft, .alignright {
+		float: none !important;
+	}
+
 }
 
 /* mobile devices */
