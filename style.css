@@ -499,15 +499,6 @@ footer {
 	color:black !important;
 }
 
-.footer.page-footer {
-  position: relative !important;
-}
-
-
-.socialfooter > a {
-    color: #00bfff;
-}
-
 .socialfooter > a:hover {
     color: #979797;
 }
