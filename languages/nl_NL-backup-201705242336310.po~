@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-16 20:49+0000\n"
-"PO-Revision-Date: 2017-05-16 20:49+0000\n"
+"POT-Creation-Date: 2017-05-24 16:31+0000\n"
+"PO-Revision-Date: 2017-05-24 16:32+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,9 +13,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: index.php:56
-msgid "ago"
-msgstr "geleden"
+#: functions.php:72
+msgid "Primary"
+msgstr "Primair"
+
+#: functions.php:73
+msgid "Main sidebar."
+msgstr "Hoofd sidebar."
+
+#: functions.php:108
+msgid "Header Menu"
+msgstr "Hoofdnavigatie"
 
 #: 404.php:9
 msgid "Error"
@@ -45,23 +53,54 @@ msgstr "Laatste berichten van"
 msgid "Menu"
 msgstr "Menu"
 
-#: index.php:45
+#: index.php:44
 msgid "Latest"
 msgstr "Laatste"
+
+#: index.php:56
+msgid "ago"
+msgstr "geleden"
 
 #: index.php:62
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
-#: page.php:35
+#: page.php:36
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
-#: single.php:36
+#: searchform.php:1
+msgid "Search"
+msgstr "Zoeken"
+
+#: searchform.php:6
+msgctxt "placeholder"
+msgid "Search ..."
+msgstr "Zoekterm ..."
+
+#: searchform.php:8
+msgctxt "label"
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Go"
+msgstr "Gaan"
+
+#: sidebar.php:4
+msgid "There are currently no widgets enabled."
+msgstr "Er zijn momenteel geen widgets actief."
+
+#: single.php:32
+msgid "Posted in"
+msgstr "Gepost in"
+
+#: single.php:41
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
 
-#: single.php:44
+#: single.php:49
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 

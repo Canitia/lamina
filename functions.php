@@ -3,7 +3,7 @@
 
 if ( ! isset( $content_width ) ) {
 	
-	$content_width = 700;
+	$content_width = 777;
 	
 }
 
@@ -15,7 +15,7 @@ if ( ! isset( $content_width ) ) {
  */
 
 
-function cerulean_theme_name_scripts() {
+function cerulean_theme_scripts() {
 	
 	wp_enqueue_style( 'materialize', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', false );
 	
@@ -29,8 +29,7 @@ function cerulean_theme_name_scripts() {
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'cerulean_theme_name_scripts' );
-
+add_action( 'wp_enqueue_scripts', 'cerulean_theme_scripts' );
 
 add_theme_support( "title-tag" );
 
@@ -38,7 +37,7 @@ add_theme_support( 'automatic-feed-links' );
 
 add_theme_support( "post-thumbnails" );
 
-add_action( 'widgets_init', 'my_register_sidebars' );
+add_action( 'widgets_init', 'cerulean_sidebars' );
 
 
 
@@ -60,22 +59,20 @@ add_theme_support( 'custom-background', $args );
  * sidebar
  */
 
-function my_register_sidebars() {
-	
-	
+function cerulean_sidebars() {
 	
 	/* Register the 'primary' sidebar. */
 	
 	register_sidebar(
-	array(
-	'id' => 'primary',
-	'name' => __( 'Primary' ),
-	'description' => __( 'Main sidebar.' ),
-	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	'after_widget' => '</div>',
-	'before_title' => '<li class="collection-header"><h1 class="widget-title text-left-title-featured-sidebar">',
-	'after_title' => '</h1></li>'
-	)
+		array(
+		'id' => 'primary',
+		'name' => __( 'Primary', 'cerulean-for-wordpress' ),
+		'description' => __( 'Main sidebar.', 'cerulean-for-wordpress' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<li class="collection-header"><h1 class="widget-title text-left-title-featured-sidebar">',
+		'after_title' => '</h1></li>'
+		)
 	);
 	
 	
@@ -83,33 +80,15 @@ function my_register_sidebars() {
 	
 }
 
-
-
-/* add text-justiry class to excerpt */
-
-function add_excerpt_class( $excerpt )
-{
-	
-	$excerpt = str_replace( "<p", "<p class=\"text-justify\"", $excerpt );
-	
-	return $excerpt;
-	
-}
-
-
-add_filter( "the_excerpt", "add_excerpt_class" );
-
-
-
 /* register main navigation */
 
-function register_my_menu() {
+function register_mainmenu() {
 	
-	register_nav_menu('header-menu',__( 'Header Menu' ));
+	register_nav_menu('header-menu',__( 'Header Menu', 'cerulean-for-wordpress' ));
 	
 }
 
-add_action( 'init', 'register_my_menu' );
+add_action( 'init', 'register_mainmenu' );
 
 
 
@@ -118,7 +97,7 @@ add_action( 'init', 'register_my_menu' );
  * add custom site logo (to header)
  */
 
-function theme_prefix_setup() {
+function cerulean_setup() {
 	
 	
 	add_theme_support( 'custom-logo', array(
@@ -131,11 +110,11 @@ function theme_prefix_setup() {
 	
 }
 
-add_action( 'after_setup_theme', 'theme_prefix_setup' );
+add_action( 'after_setup_theme', 'cerulean_setup' );
 
 
 
-function theme_prefix_the_custom_logo() {
+function cerulean_the_custom_logo() {
 	
 	
 	if ( function_exists( 'the_custom_logo' ) ) {

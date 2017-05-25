@@ -36,7 +36,7 @@
         }
         ?>
         <p class="brand-logo">
-            <a href="<?php echo home_url();?>" class="headerurl" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="headerurl" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
         </p>
 
          <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -69,4 +69,18 @@
 
 </div>
 </header>
+                <?php
+                    if ( is_home() ) {
+                     get_template_part( 'partials/slider' );
+                     }
+                     
+                    if ( is_single() ) {
+                        the_post_thumbnail('large', ['class' => 'responsive-img', 'title' => 'Feature image']);
+                    }
+ 
+                     if ( is_page() ) {
+                        the_post_thumbnail('large', ['class' => 'responsive-img', 'title' => 'Feature image']);
+                    }
+ 
+                      ?>
 <div class="container-fluid">

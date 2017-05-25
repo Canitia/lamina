@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php the_post_thumbnail('large', ['class' => 'responsive-img', 'title' => 'Feature image']); ?>
     <div class="row">
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
@@ -18,18 +17,13 @@
         <div class="card-content">
             <p><?php the_content(); ?></p>
         </div> 
-        <section class="author-profile">
-       <hr />
-        <?php echo get_avatar( get_the_author_meta('email'), '100' ); ?>
-          <p class="author-bio">
-          <strong class="author-name"><?php the_author_posts_link();?></strong>
-        <br />
-        <?php echo nl2br(get_the_author_meta('description'));  ?>
-        </p>
-        </section>
-        <hr />
+
+      <?php wp_link_pages('before=<hr /><ul class="pagination center-align" role="pagination">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
+
+        <?php get_template_part( 'partials/authorsection' ); ?>
+
         <div class="cat-links">
-          <span class="label">Posted in</span> <a href="#"><?php $category = get_the_category();
+          <span class="label"><?php _e("Posted in", "cerulean-for-wordpress"); ?></span> <a href="#"><?php $category = get_the_category();
             $firstCategory = $category[0]->cat_name; 
             echo $firstCategory;?></a>
          <hr class="cat-links-hr" />
@@ -38,7 +32,7 @@
           </div>
        </article><!-- close article -->
                                           <!-- let user enter a comment -->
-      <h1 class="text-left-title-featured-sidebar"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h1>
+      <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h3>
       <?php comments_template(); ?>
   
     </div><!-- close post class div -->
@@ -48,9 +42,6 @@
       <?php endwhile; else: ?>
             <p><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
       <?php endif; ?>
-
-      <?php wp_link_pages('before=<ul class="pagination center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>'); ?>
-
         <?php get_sidebar( 'primary' ); ?>
 </div><!-- close col s12 m12 l12 class div -->
   </div><!-- end row -->

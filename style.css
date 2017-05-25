@@ -1,10 +1,10 @@
 /*
 Theme Name: Cerulean for Wordpress
-Theme URI: http://blank.url/at/this/point
+Theme URI: https://michaelboumann.info/collection/#ceruleanwp
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
-Description: Elegant yet simple designed responsive UI. Features support for WP menus, logo, header image, tags, menu and others.
-Version: 0.9.8.188
+Description: Elegant yet simple designed UI. Simplicity with features custom designed tag/page/error pages, dynamic nav-menu's, logo support and more.
+Version: 0.9.9.32
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
@@ -13,7 +13,9 @@ Text Domain: cerulean-for-wordpress
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+html body {
+	font-size: 16px;
+}
 
 .accentcolor-error {
   background-color: red !important;
@@ -26,7 +28,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 *****************************************/
 h1 {
-	font-size: 3.5rem !important;
+	font-size: 3.2rem !important;
 	font-weight: 300 !important;
 }
 
@@ -35,11 +37,17 @@ h1 {
 }
 
 h2 {
-	font-size: 3.1rem !important;
+	font-size: 2.9rem !important;
 }
 
 h3 {
 	font-size: 2.6rem !important;
+}
+
+.h3-join-the-conversation {
+	font-size: 2rem !important;
+	font-weight: 300 !important;
+	margin-left: 15px;
 }
 
 p > a {
@@ -56,7 +64,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #e0e0e0 !important;
+    border-top: 1px solid #ededed !important;
 	margin-top: 0px;
     padding: 0;
 }
@@ -129,6 +137,7 @@ p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.paginati
 .post-subitems.center {
 	color: #979797;
 	margin-bottom: 25px;
+	font-size: 16px;
 }
 
 .post-subitems.center > a
@@ -233,7 +242,7 @@ nav ul a {
 }
 
 .collection-item {
-	border-bottom: 1px solid #f0f0f0 !important;
+	border-bottom: 1px solid #ededed !important;
 }
 
 .collection .collection-item:hover {
@@ -285,7 +294,7 @@ POST/ARTICLE HEADERS
 .text-left-title-featured-sidebar {
 	margin-bottom: 0px;
 	background-color: white;
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #f8f8f8;
 }
 
 .text-left-title a {
@@ -382,7 +391,7 @@ iframe {
 }
 
 .slider:hover, .h1-slider:hover { 
-	filter: grayscale(35%);
+	filter: grayscale(55%);
 }
 
 img.content-images-featured:hover, img.content-images:hover {
@@ -442,7 +451,6 @@ img.content-images-featured:hover, img.content-images:hover {
 
 *****************************************/
 .author-profile {
-	margin-top: 60px;
 	height: 100%;
 }
 
@@ -470,7 +478,7 @@ img.avatar {
 
 p.author-bio {
 	margin-left:135px;
-	height: 100px;
+	min-height: 100px;
 }
 
 .author-name {
@@ -502,10 +510,6 @@ p.author-bio {
 
 *****************************************/
 
-.pagination {
-	padding:15px;
-}
-
 .pagination > a {
 	margin: 20px;
 }
@@ -516,7 +520,7 @@ p.author-bio {
 	font-weight: 600;
 }
 
-.pagination li.active, .pagination > li:hover {
+.pagination li.active {
 	background-color: #d3d3d3 !important;
 }
 
@@ -575,6 +579,10 @@ footer {
 		height:56px;
 	}
 
+	.slider {
+		display: none;
+	}
+
 	nav .brand-logo {
 	 font-size: 125% !important;
 	}
@@ -586,8 +594,6 @@ footer {
 	nav .sub-menu {
 		border: 0px !important;
 	}
-
-
 
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
@@ -602,6 +608,29 @@ footer {
 		padding-left:15px;
 		padding-right:15px;
 		padding-bottom:15px;
+	}
+
+	h1 {
+	font-size: 2.5rem !important;
+	font-weight: 300 !important;
+	}
+
+	h2 {
+		font-size: 2.1rem !important;
+	}
+
+	h3 {
+		font-size: 1.6rem !important;
+	}
+
+	h4 {
+		font-size: 1.3rem !important;
+	}
+
+	.h3-join-the-conversation {
+		font-size: 1.6rem !important;
+		font-weight: 300 !important;
+		margin-left: 15px;
 	}
 
 	.postdate {
@@ -765,8 +794,8 @@ i.fa.fa-twitter.fa-2x {
 
 /* add some styling to disqus */
 #disqus_thread {
-padding-left: 40px;
-padding-right: 40px;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 
@@ -777,7 +806,8 @@ padding-right: 40px;
   	*****************************************/
 .wp-caption, .gallery-caption {
 	max-width: 100%;
-	border: 2px solid #ebebeb;
+	border: 1px solid #ebebeb;
+	background: whitesmoke;
 }
 
 .wp-caption-text {
@@ -858,7 +888,7 @@ padding-right: 40px;
   }
 
 	.sticky {
-
+		color: rgba(255, 166, 0, 1) !important;
 	}
 
 	.alignnone {
@@ -934,7 +964,7 @@ padding-right: 40px;
 	margin-left: 20px !important;
 }
 
-.main-content > ul > div > div > a > li > p {
+.collection-item > p {
 	margin:0px;
 }
 
@@ -953,4 +983,9 @@ nav .sub-menu li {
 }
 li.menu-item-has-children:hover > .sub-menu {
 	display: block;
+}
+
+input.search-field {
+    border-bottom: 1px solid #979797 !important;
+    box-shadow: 0 !important;
 }
