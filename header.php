@@ -13,8 +13,6 @@
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
-
-    <title><?php wp_title();?></title>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
 
     <!-- close with wp_head -->
@@ -35,7 +33,7 @@
             
         }
         ?>
-        <p class="brand-logo">
+        <p class="brand-logo site-title">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="headerurl" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
         </p>
 
