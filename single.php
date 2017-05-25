@@ -24,9 +24,16 @@
         <?php get_template_part( 'partials/authorsection' ); ?>
 
         <div class="cat-links">
-          <span class="label"><?php _e("Posted in", "cerulean-for-wordpress"); ?></span> <a href="#"><?php $category = get_the_category();
-            $firstCategory = $category[0]->cat_name; 
-            echo $firstCategory;?></a>
+          <span class="label"><?php _e("Posted in", "cerulean-for-wordpress"); ?></span>
+          <?php $categories = get_the_category();
+            $separator = ', ';
+            $output = '';
+            if ( ! empty( $categories ) ) {
+                foreach( $categories as $category ) {
+                    $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
+                }
+                echo trim( $output, $separator );
+            } ?>
          <hr class="cat-links-hr" />
              <?php the_tags( '<span class="label">Tags</span> ', ', ', ' ' ); ?> 
         <hr class="cat-links-hr" />
