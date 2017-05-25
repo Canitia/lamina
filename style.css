@@ -231,7 +231,6 @@ nav ul a {
 	overflow:hidden;
 	text-overflow: ellipsis;
 	margin-bottom: 0px;
-	background-color: white;
 	border-bottom: 1px solid #f8f8f8;
 }
 
@@ -629,6 +628,15 @@ footer {
 	.sidebar {
 		margin-bottom: 20px;
 	}
+}
+
+/* **************************************
+
+  ERROR PAGE
+
+*****************************************/
+.error {
+	background-color: orangered;
 }
 
 /* **************************************
