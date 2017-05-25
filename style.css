@@ -838,16 +838,13 @@ dl.wp-caption {
 	padding: 15px;
 }
 
-.search-box form i {
-	position: absolute;
-	right: 30px;
-	top: 30px;
-}
-
 input.search-field {
 	border-bottom: 1px solid #979797 !important;
 }
 
+input[type=search], 
+input[type=search]:focus,
+input[type=search]:focus:not([readonly]),
 input.search-field:focus {
 	box-shadow: 0 !important;
 }
