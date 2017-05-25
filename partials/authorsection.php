@@ -7,4 +7,6 @@
 <?php echo nl2br(get_the_author_meta('description'));  ?>
 </p>
 </section>
+<?php if ( !is_page() ) { ?>
 <hr />
+<?php } ?>
