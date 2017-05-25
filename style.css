@@ -85,10 +85,7 @@ blockquote {
 	padding-top:10px;
 	padding-bottom:10px;
 	background-color: whitesmoke;
-  	border-left: 5px solid #979797 !important;
-	border-top: 2px solid #ebebeb !important;
-	border-bottom: 2px solid #ebebeb !important;
-	border-right: 2px solid #ebebeb !important;
+	border: 2px solid #ebebeb !important;
 }
 
 blockquote:before {
