@@ -453,6 +453,10 @@ p.author-bio {
   PAGINATION
 
 *****************************************/
+.pagination {
+	margin-top: 5px;
+}
+
 
 .pagination > a {
 	margin: 20px;
