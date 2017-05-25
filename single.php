@@ -32,7 +32,7 @@
         <hr class="cat-links-hr" />
           </div>
        </article><!-- close article -->
-                                          <!-- let user enter a comment -->
+       <!-- let user enter a comment -->
       <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h3>
       <?php comments_template(); ?>
   

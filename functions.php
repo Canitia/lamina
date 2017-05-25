@@ -91,7 +91,36 @@ function register_mainmenu() {
 add_action( 'init', 'register_mainmenu' );
 
 
+/** Plugin Name: Display a list of pingbacks and trackbacks with the Disqus plugin **/
 
+add_filter( 'comments_template', function( $theme_template) {
+
+    // Check if the Disqus plugin is installed:
+    if( ! function_exists( 'dsq_is_installed' ) || ! dsq_is_installed() )
+        return $theme_template;
+
+    // Comment callback:
+    $callback = 'my_theme_comment';  // Adjust to your needs.       
+    if( ! function_exists( $callback ) )
+        $callback = null;
+
+    // List comments with filters:
+    $pings = wp_list_comments( 
+        array(  
+            'callback' => $callback, 
+            'type'     => 'pings', 
+            'style'    => 'ol', 
+            'echo'     => 0 
+        ) 
+    ); 
+
+    // Display:
+    if( $pings )
+        printf( "<div><ol class=\"pings commentlist\">%s</ol></div>", $pings );
+
+    return $theme_template;
+
+}, 9 );
 
 /**
  * add custom site logo (to header)
