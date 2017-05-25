@@ -108,6 +108,15 @@ blockquote > p {
   	font-style: italic !important;
 }
 
+q {
+	display: block;
+	position:relative;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color: whitesmoke;
+	border: 2px solid #ebebeb !important;
+}
+
 pre {
 	padding-left:30px;
 	padding-right:30px;
@@ -119,6 +128,10 @@ pre {
 cite {
     font-style: italic;
     font-weight: bold;
+}
+
+dt {
+    font-weight: 500;
 }
 
 p > a, .side-nav a, .collection .collection-item, .collection-item > a {
