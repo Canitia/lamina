@@ -242,7 +242,7 @@ li.menu-item-has-children:hover > .sub-menu {
 
 .slider:hover, 
 .h1-slider:hover { 
-	filter: grayscale(100%);
+	filter: grayscale(40%);
 }
 
 /* **************************************
