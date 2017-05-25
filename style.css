@@ -218,10 +218,6 @@ nav ul a {
 	filter: grayscale(100%);
 }
 
-img.content-images-featured:hover, img.content-images:hover {
-	opacity:0.9;
-}
-
 
 /* **************************************
 
