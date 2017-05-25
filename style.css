@@ -873,5 +873,8 @@ li.menu-item-has-children:hover > .sub-menu {
 
 input.search-field {
     border-bottom: 1px solid #979797 !important;
+}
+
+input.search-field:focus {
     box-shadow: 0 !important;
 }
