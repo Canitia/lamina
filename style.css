@@ -501,8 +501,19 @@ p.author-bio {
 	background-color: #d3d3d3 !important;
 }
 
-.fa-ellipsis-h:hover {
+.fa-angle-left:hover,
+.fa-angle-right:hover {
     color: #979797;
+}
+
+.older-posts {
+	float: right;
+	margin-right: 20px;
+}
+
+.newer-posts {
+	float: left;
+	margin-left: 20px;
 }
 
 /* **************************************
