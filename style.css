@@ -215,7 +215,7 @@ nav ul a {
 }
 
 .slider:hover, .h1-slider:hover { 
-	filter: grayscale(55%);
+	filter: grayscale(100%);
 }
 
 img.content-images-featured:hover, img.content-images:hover {
