@@ -11,7 +11,7 @@ Template Name: Search Page
   <div class="row">
     <div class="main-content col s12 m8 l8">
  
-     <h1 class="text-left-title-featured-sidebar"><?php _e('Results for get_query_var("s")', 'cerulean-for-wordpress'); ?></h1>
+     <h1 class="text-left-title-featured-sidebar"><?php _e('Results for ', 'cerulean-for-wordpress'); get_query_var("s"); ?> </h1>
  <ul class="collection">
 
 <?php
