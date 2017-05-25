@@ -13,10 +13,6 @@ Text Domain: cerulean-for-wordpress
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-html body {
-	font-size: 16px;
-}
-
 .accentcolor-error {
   background-color: red !important;
 }
@@ -27,6 +23,10 @@ html body {
   GENERAL FONT / ELEMENT
 
 *****************************************/
+html body {
+	font-size: 16px;
+}
+
 h1 {
 	font-size: 3.2rem !important;
 	font-weight: 300 !important;
@@ -128,13 +128,9 @@ p > a, .side-nav a, .collection .collection-item, .collection-item > a {
 	color: black !important;
 }
 
-p > a:focus, p > a:hover, .btn > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover, .socialfooter a
+p > a:focus, p > a:hover, .pagination > a > i:hover, li.pagination-arrows a i:hover, .socialfooter > a > i:hover, .socialfooter a
 {
   color:#979797  !important;
-}
-
-.text-left-title-featured, .text-left-title-featured a, .text-left-title a:hover, .text-left-title-featured a:hover, .postdate a, .tag_heading, .chip a, footer a, .btn > a  {
-      color: white !important;
 }
 
 .post-subitems.center {
