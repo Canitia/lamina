@@ -289,7 +289,7 @@ li.menu-item-has-children:hover > .sub-menu {
 }
 
 .main-content > .text-left-title, 
-article > h1, 
+article > h1:not(:first-child), 
 article > h2, 
 article > h3, 
 article > h4, 
