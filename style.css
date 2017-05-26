@@ -142,9 +142,9 @@ p > a, .side-nav a,
 
 p > a:focus,
 p > a:hover, 
-.pagination > a > i:hover, 
-li.pagination-arrows a i:hover, 
-.socialfooter > a > i:hover
+.pagination > a > p > i:hover, 
+li.pagination-arrows a p i:hover, 
+.socialfooter > a > p > i:hover
 {
   color:#979797  !important;
 }
@@ -490,8 +490,8 @@ p.author-bio {
 }
 
 
-.pagination > a > li, 
-.pagination > li {
+.pagination > a > p, 
+.pagination > p {
 	padding: 20px;
 }
 
@@ -517,11 +517,14 @@ p.author-bio {
 .older-posts {
 	float: right;
 	margin-right: 20px;
+	margin-top: -48px;
+    position: relative;
 }
 
 .newer-posts {
 	float: left;
 	margin-left: 20px;
+    position: relative;
 }
 
 /* **************************************
