@@ -40,6 +40,7 @@
             wp_nav_menu(
                 array(
                  'theme_location' => 'header-menu',
+                  'container' => '',
                   'fallback_cb' => false
                 )
             );
@@ -53,6 +54,7 @@
             wp_nav_menu(
                 array(
                  'theme_location' => 'header-menu',
+                 'container' => '',
                  'fallback_cb' => false
                 )
             );
