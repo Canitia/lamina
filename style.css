@@ -653,6 +653,11 @@ footer {
 		display: none;
 	}
 
+	.main-content > .collection > .collection-item {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 }
 
 /* mobile devices */
