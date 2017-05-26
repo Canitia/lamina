@@ -1166,15 +1166,3 @@ div.aligncenter {
 #wp-calendar tbody .pad { 
 	background: none; 
 }
-
-#wp-calendar tfoot #next { 
-	font-size: 10px; 
-	text-transform: uppercase; 
-	text-align: right; 
-}
-
-#wp-calendar tfoot #prev { 
-	font-size: 10px; 
-	text-transform: uppercase; 
-	padding-top: 10px; 
-}
