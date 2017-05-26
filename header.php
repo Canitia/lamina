@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes();
-?>>
+<html <?php language_attributes();?> itemscope itemtype="http://schema.org/WebPage">
 <head>
     <!-- some meta -->
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type');?>; charset=<?php bloginfo('charset');?>" />
@@ -35,7 +34,7 @@
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="headerurl" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
         </p>
 
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <div id="nav-mobile" class="right hide-on-med-and-down">
            <?php
             wp_nav_menu(
                 array(
@@ -46,10 +45,10 @@
             );
 
             ?>
-         </ul>
+         </div>
 
-        <ul id="slide-out" class="side-nav">
-            <li class="text-left-title-featured-sidebar sidenav-menu-header"><?php _e('Menu', 'cerulean-for-wordpress');?></li>
+        <div id="slide-out" class="side-nav">
+            <p class="text-left-title-featured-sidebar sidenav-menu-header"><?php _e('Menu', 'cerulean-for-wordpress');?></p>
           <?php
             wp_nav_menu(
                 array(
@@ -60,7 +59,7 @@
             );
 
             ?>
-        </ul>
+        </div>
 
 </div>
 </nav>
