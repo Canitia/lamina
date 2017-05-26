@@ -13,7 +13,7 @@
       </div>
    <hr />
       <div class="post-content">
-        <p><?php the_content();?></p>
+        <?php the_content();?>
       </div>  
         <?php get_template_part( 'partials/authorsection' ); ?>
                                     </article><!-- close article -->
