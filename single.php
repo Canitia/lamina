@@ -7,16 +7,14 @@
     <div class="col s12 m8 l8 main-content">
     <div <?php post_class(); ?>>
         <article>
-          <span class="post-title">
             <h1 class="center"><?php the_title(); ?></h1>
-            </span>
           <div class="post-subitems center">
-            <i class="fa fa-clock-o"></i><time><?php echo get_the_date(); ?></time>
+            <i class="fa fa-clock-o"></i><time datetime="<?php the_date('Y-m-d h:m'); ?>"><?php echo get_the_date(); ?></time>
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
           </div>
         <hr />
         <div class="post-content">
-            <p><?php the_content(); ?></p>
+            <?php the_content(); ?>
         </div> 
 
       <?php wp_link_pages('before=<hr /><ul class="pagination center-align" role="pagination">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
