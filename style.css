@@ -297,6 +297,10 @@ article > h4,
 	color:#979797 !important;
 }
 
+.sidebar > .widget:first-child {
+    margin-top: 50px !important;
+}
+
 .main-content > ul > a > li > p {
 	margin:0px;
 }
