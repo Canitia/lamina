@@ -537,6 +537,13 @@ p.author-bio {
 	font-size: 1em !important;
 }
 
+/* pagination within a post/page */
+.pagination-within > li,
+.pagination-within > a > li {
+	padding: 5px;
+}
+
+
 /* **************************************
 
   FOOTER

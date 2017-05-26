@@ -1,8 +1,8 @@
 <?php get_header(); ?>
  <div class="container-fluid">
     <div class="row">
-                    <?php if ( have_posts() ) : ?>
-                        <?php while ( have_posts() ) : the_post(); ?>
+    <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
     <div class="col s12 m8 l8 main-content">
     <div <?php post_class(); ?>>
         <article>
@@ -16,7 +16,7 @@
             <?php the_content(); ?>
         </div> 
 
-      <?php wp_link_pages('before=<hr /><ul class="pagination center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
+        <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
         <?php get_template_part( 'partials/authorsection' ); ?>
 
