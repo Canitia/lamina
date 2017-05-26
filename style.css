@@ -581,14 +581,6 @@ footer {
 	 font-size: 125% !important;
 	}
 
-	nav .sub-menu li {
-		display: none !important;
-	}
-
-	nav .sub-menu {
-		border: 0px !important;
-	}
-
 /* Smaller margins to the page gets fit to nearly the full screen */
 	.container-fluid {
 		margin-top:0px;
