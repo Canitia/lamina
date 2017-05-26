@@ -50,7 +50,7 @@
          </ul>
 
         <ul id="slide-out" class="side-nav">
-            <h1 class="text-left-title-featured-sidebar"><?php _e('Menu', 'cerulean-for-wordpress');?></h1>
+            <p class="text-left-title-featured-sidebar"><?php _e('Menu', 'cerulean-for-wordpress');?></p>
           <?php
             wp_nav_menu(
                 array(
