@@ -18,13 +18,13 @@
         <?php get_template_part( 'partials/authorsection' ); ?>
         </article><!-- close article -->
   </div><!-- close post class div -->
-                            <!-- error handling -->
-                            <?php endwhile;
-else: ?>
-                        		      <p><?php _e('Sorry, this page can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
-<?php endif;
-?>
-                            <?php wp_link_pages('before=<ul class="pagination center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>');?>
+  <!-- error handling -->
+  <?php endwhile; else: ?>
+       <p><?php _e('Sorry, this page can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
+  <?php endif;?>
+
+   <?php wp_link_pages('before=<ul class="pagination center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>');?>
+
 </div><!-- einde md8 -->
 </div><!-- container fluid END! -->
 
