@@ -1,10 +1,11 @@
 <footer class="page-footer white">
 
-    <p class="right">
+    <p class="center">
+      
       <?php
         $getActiveTheme = wp_get_theme();
 
-        echo $getActiveTheme->get( 'Name' ) . '  ' . $getActiveTheme->get( 'Version' );
+        echo 'Powered by ' . $getActiveTheme->get( 'Name' ) . '  ' . $getActiveTheme->get( 'Version' );
       ?>
     </p>
     <!-- close with Wordpress footer aka adminbar etc. -->

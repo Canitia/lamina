@@ -551,6 +551,8 @@ footer {
 
 .page-footer > p {
     margin-right: 10px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 /* **************************************
