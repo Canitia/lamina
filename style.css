@@ -762,12 +762,130 @@ EXTERNAL libraries look-n-feel
 	color: black;
 }
 
+/* **************************************
+
+	WORDPRESS COMMENTS
+
+*****************************************/
+/* comment styling */
+.comments-wrapper {
+	padding: 15px;
+}
+
+.comment-reply-title {
+	font-size: 175% !important;
+}
+
+.commentlist .bypostauthor {
+	background: whitesmoke;
+}
+
+.commentlist li ul.children li.bypostauthor {
+	background: whitesmoke;
+}
+
+.parent {
+	margin-left: 30px;
+}
+
+.comment-respond,
+.entry-pings,
+.comment-body {
+    padding: 25px;
+    overflow: hidden;
+	border: 1px solid #ebebeb;
+}
+
+.comment.even {
+	background-color: whitesmoke;
+}
+
+ul.children {
+    background: white;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%;
+}
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+}
+
+.comment-body .comment-author img {
+	border-radius: 50%;
+	border: 5px solid #fff;
+	position: relative;
+	width: 100px;
+	margin-top: 0;
+	margin-left: 0;
+}
+.entry-pings .reply {
+	display: none;
+}
+
+.comment-meta > a {
+	color: #979797 !important;
+}
+
+.comment-reply-link, .form-submit > input#submit{
+    cursor: pointer;
+    background-color:#979797;
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+    text-transform: uppercase;
+    width: auto;
+	color:white;
+	font-weight: 500;
+}
+
+.comment-reply-link:hover, .form-submit > input#submit:hover{
+     text-decoration: underline;
+}
+
+.form-submit > input#submit {
+	float:right;
+}
+
+#cancel-comment-reply-link {
+    font-size: 80% !important;
+    float: right;
+	cursor: pointer;
+    background-color:#979797;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    text-transform: uppercase;
+    width: auto;
+	color:white;
+	font-weight: 500;
+}
+
+#cancel-comment-reply-link:hover {
+	text-decoration: underline;
+}
+
+.comment-notes{
+    display:none;   
+}
+
+.reply {
+    float: right;
+}
 
 /* add some styling to disqus */
 #disqus_thread {
 padding-left: 20px;
 padding-right: 20px;
 }
+
+
+
+
+
 
 
 /* **************************************
@@ -804,22 +922,6 @@ dl.wp-caption {
 	font-weight: 600;
 }
 
-/* comment styling */
-.comments-wrapper {
-	padding: 15px;
-}
-
-.comment-reply-title {
-	font-size: 175%;
-}
-
-.commentlist .bypostauthor {
-	background: whitesmoke;
-}
-
-.commentlist li ul.children li.bypostauthor {
-	background: whitesmoke;
-}
 
 /* center align twitter */
 .twitter-tweet {
