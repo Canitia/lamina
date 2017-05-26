@@ -662,12 +662,6 @@ footer {
 		display: none;
 	}
 
-	.comment-body > p,
-	address, 
-	pre {
-    	margin-left: 0px !important;
-	}
-
 }
 
 /* mobile devices */
@@ -838,12 +832,6 @@ ul.children {
 	width: 100px;
 	margin-top: 0;
 	margin-left: 0;
-}
-
-.comment-body > p,
-address, 
-pre {
-    margin-left: 115px;
 }
 
 .comment-meta > a {
