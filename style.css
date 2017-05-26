@@ -221,6 +221,12 @@ li.menu-item-has-children:hover > .sub-menu {
 
 /******************************************/
 
+.side-nav li>a {
+	border-bottom: 1px solid #ebebeb;
+	font-weight: 400 !important;
+	font-size: 16px !important;
+}
+
 .side-nav li>a:hover {
 	color: white;
 }
@@ -238,8 +244,8 @@ li.menu-item-has-children:hover > .sub-menu {
 }
 
 .sidenav-menu-header {
-	margin-top:20px;
-	padding-bottom: 0px !important;
+	margin-bottom: -15px !important;
+	margin-left: 15px;
 }
 
 /* **************************************
