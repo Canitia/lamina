@@ -882,6 +882,10 @@ ul.children {
 	float:right;
 }
 
+.comment-form-comment > textarea {
+	height: 8rem !important;
+}
+
 #cancel-comment-reply-link {
     font-size: 80% !important;
     float: right;
