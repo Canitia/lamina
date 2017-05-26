@@ -634,6 +634,7 @@ footer {
 	.row {
 		margin-bottom: 0px !important;
 	}
+
 	.row-post {
 		margin-top: -15px;
 	}
@@ -649,6 +650,10 @@ footer {
 
 	.alignleft, .alignright {
 		float: none !important;
+	}
+
+	.comment-body .comment-author img {
+		display: none;
 	}
 
 }
@@ -791,7 +796,7 @@ EXTERNAL libraries look-n-feel
 .comment-respond,
 .entry-pings,
 .comment-body {
-    padding: 25px;
+    padding: 15px;
     overflow: hidden;
 	border: 1px solid #ebebeb;
 }
@@ -878,8 +883,8 @@ ul.children {
 
 /* add some styling to disqus */
 #disqus_thread {
-padding-left: 20px;
-padding-right: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 
