@@ -6,7 +6,7 @@
       if ($paged < 2) {    
     ?>
     <h1 class="text-left-title-featured-sidebar"><?php _e('Today', 'cerulean-for-wordpress'); ?></h1>
-   <ul class="collection">
+    <ul class="collection">
      <?php
 
       $lastweek_args = array(
@@ -41,7 +41,15 @@
           <?php
         }
         
+      } else { ?>
+      <p class="post-errortext">
+        <?php
+           _e('It seems there are no posts today.', 'cerulean-for-wordpress'); 
+        ?>
+      </p>
+      <?php     
       }
+
       wp_reset_postdata(); 
       };
       ?>
