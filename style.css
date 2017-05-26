@@ -661,7 +661,9 @@ footer {
 		display: none;
 	}
 
-	.comment-body > p {
+	.comment-body > p,
+	address, 
+	pre {
     	margin-left: 0px !important;
 	}
 
@@ -837,7 +839,9 @@ ul.children {
 	margin-left: 0;
 }
 
-.comment-body > p {
+.comment-body > p,
+address, 
+pre {
     margin-left: 115px;
 }
 
