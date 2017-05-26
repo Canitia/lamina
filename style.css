@@ -171,6 +171,10 @@ li.pagination-arrows a p i:hover,
 	margin:0 !important;
 }
 
+.site-title {
+	font-weight: 300 !important;
+}
+
 nav .brand-logo {
 	 left: initial;
     -webkit-transform: initial;
