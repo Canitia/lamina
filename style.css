@@ -657,7 +657,7 @@ footer {
 	}
 
 	.comment-body > p {
-    	margin-left: 0px;
+    	margin-left: 0px !important;
 	}
 
 }
@@ -845,7 +845,10 @@ ul.children {
     background-color:#979797;
     border: none;
     border-radius: 3px;
-    padding: 15px;
+	padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
     text-transform: uppercase;
     width: auto;
 	color:white;
