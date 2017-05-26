@@ -1,22 +1,20 @@
 Cerulean for Wordpress
 ==================
-This code was previously called Jade for Wordpress but has since been rebased and rebranded to match Cerulean. Cerulean for Wordpress is a theme that's based on the [Cerulean for Ghost](https://github.com/boumannm/cerulean-for-ghost) theme. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#ceruleanwp) or look at the 'quick and dirty' featurelist below.
+This code was previously called Jade for Wordpress but has since been rebranded to match Cerulean. Cerulean for Wordpress is a theme that's based on the [Cerulean for Ghost](https://github.com/boumannm/cerulean-for-ghost) theme although it has gone quite it's own way in multiple ways now. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#ceruleanwp) or look at the 'quick and dirty' featurelist below.
 
-![Cerulean for Ghost main](https://github.com/boumannm/cerulean-for-wordpress/blob/master/screenshot.png)
+![Cerulean for Wordpress](https://github.com/boumannm/cerulean-for-wordpress/blob/master/screenshot.png)
 
 # Current features
 - Optimised for Phones, tablets and desktops
 - Sidebar support (only shows it when on medium or higher resolutions)
 - Change color and fonts of header
+- Choose your custom site icon
 - Show logo of the site in header
 - Slider support which automatically grabs the 3 latest 'sticky' posts
-- Material Design inspired;
-- Other stuff Wordpress can do ('custom' pages, 'custom' tag page, 'custom' category pages)
+- Simplicity inspired;
+- Custom tag, category, author, search and error pages. 
 
 # Status
-Release Candidate-ish
+Stable
 
-*It's not 100% according to the 'Wordpress theme spec' yet, but it's very close now. For open items related to this and other issues check out the issue tracker.*
-
-# Recommendation
-Install Disqus or a other third party comments platform. The default commentsection is pretty much unstyled at this point (as i don't use it myself). Might do some work on it in the future when i have some time.
+*It passes the Wordpress theme check as of (May 26th 2017). Although i do want to work on the 'recommended' items it gave me.*
