@@ -505,25 +505,36 @@ p.author-bio {
 	line-height: 2px; 
 }
 
-.pagination li.active, .pagination > li:hover {
+.pagination > ul > li {
+	background-color: #979797;
+}
+
+.pagination > ul > li:hover {
+	background-color: #d3d3d3;
+}
+
+.pagination > ul > li.active {
 	background-color: #d3d3d3 !important;
 }
 
-.fa-angle-left:hover,
-.fa-angle-right:hover {
-    color: #979797;
+.pagination > ul > li > a {
+	color: white;
 }
 
-.older-posts {
-	float: right;
-	margin-right: 20px;
-    position: relative;
+.pagination > ul > li > a:hover {
+	color: black;
 }
 
-.newer-posts {
-	float: left;
-	margin-left: 20px;
-    position: relative;
+.pagination > ul > li.pagination-tripledot {
+	background-color: white;
+	font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+	font-size: 1em !important;
 }
 
 /* **************************************
