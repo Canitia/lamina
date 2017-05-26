@@ -81,6 +81,7 @@ blockquote {
 	padding-bottom:10px;
 	background-color: whitesmoke;
 	border: 2px solid #ebebeb !important;
+	width: 100%
 }
 
 blockquote:before {
