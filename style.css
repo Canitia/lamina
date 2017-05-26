@@ -495,27 +495,20 @@ p.author-bio {
   PAGINATION
 
 *****************************************/
+
 .pagination {
-	margin-top: 15px;
-}
-
-
-.pagination > a > p, 
-.pagination > p {
-	padding: 20px;
-}
-
-.pagination > a > .pagination-arrows {
-	padding: 0 !important;
+	padding:15px;
+	margin-top: 0px !important;
+	border-top: 1px solid #ebebeb;
+	background:white;
 }
 
 .pagination > .active {
 	padding: 15px;
 	line-height: 2px; 
-	font-weight: 600;
 }
 
-.pagination li.active {
+.pagination li.active, .pagination > li:hover {
 	background-color: #d3d3d3 !important;
 }
 
@@ -524,15 +517,9 @@ p.author-bio {
     color: #979797;
 }
 
-.fa-angle-left,
-.fa-angle-right {
-	font-size:1.5em !important;
-}
-
 .older-posts {
 	float: right;
 	margin-right: 20px;
-	margin-top: -48px;
     position: relative;
 }
 
