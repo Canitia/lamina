@@ -144,10 +144,7 @@ p > a, .side-nav a,
 }
 
 p > a:focus,
-p > a:hover, 
-.pagination > a > p > i:hover, 
-li.pagination-arrows a p i:hover, 
-.socialfooter > a > p > i:hover
+p > a:hover
 {
   color:#979797  !important;
 }
