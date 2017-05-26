@@ -47,7 +47,7 @@
       ?>
       </ul>
 
-    <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress'); if($paged > 1){ echo '<div class="right">' . $paged . '</div>'; }; ?></h1>
+    <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1>
     <ul class="collection">
     <?php
     $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1, 'paged' => $paged,
