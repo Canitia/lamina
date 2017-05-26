@@ -27,7 +27,7 @@
     <?php endif;?>
     </ul>
 
-     <?php get_template_part( 'partials/pagination' ); ?>
+       <?php cerulean_pagination_numeric_posts_nav(); ?>
 
   </div>
   <!-- einde md8 -->

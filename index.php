@@ -85,9 +85,8 @@
     <?php endif; ?>
     </ul>
 
-<!-- navigation?-->
-
-<?php get_template_part( 'partials/pagination' ); ?>
+  <!-- navigation?-->
+  <?php cerulean_pagination_numeric_posts_nav(); ?>
   </div><!-- einde md8 -->  <!-- column end! -->
 
   <!-- second column (widget bar) -->

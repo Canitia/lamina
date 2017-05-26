@@ -28,7 +28,7 @@
                     <p class="post-errortext"><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
               <?php endif; ?>
         </ul>
-        <?php get_template_part( 'partials', 'pagination' ); ?>
+          <?php cerulean_pagination_numeric_posts_nav(); ?>
       </div><!-- einde md8 -->
 
           <?php get_sidebar( 'primary' ); ?>

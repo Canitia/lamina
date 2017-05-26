@@ -23,7 +23,7 @@
               <?php endwhile; else: ?>
                     <p><?php _e('Sorry, no posts can be found within this tag.', 'cerulean-for-wordpress'); ?></p>
               <?php endif; ?>
-              <?php get_template_part( 'partials/pagination' ); ?>
+                <?php cerulean_pagination_numeric_posts_nav(); ?>
                                 </div><!-- einde md8 -->
 
               <?php get_sidebar( 'primary' ); ?>
