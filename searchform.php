@@ -1,4 +1,4 @@
-<li class="collection-header"><h1 class="widget-title text-left-title-featured-sidebar"><?php _e('Search', 'cerulean-for-wordpress');?></h1></li>
+<h1 class="widget-title text-left-title-featured-sidebar"><?php _e('Search', 'cerulean-for-wordpress');?></h1>
 <div class="search-box">
   <form role="search" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
       <label>

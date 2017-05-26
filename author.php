@@ -9,19 +9,19 @@
    <ul class="collection">
     <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
-        <a href="<?php the_permalink();?>">
         <li class="collection-item truncate">
-            <p title="<?php the_title_attribute();
-?>"><i class="fa fa-circle" aria-hidden="true"></i><?php the_title();?>
+        <a href="<?php the_permalink();?>">
+            <p title="<?php the_title_attribute();?>"><i class="fa fa-circle" aria-hidden="true"></i><?php the_title();?>
               <span class="badge">
-              <time><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago';?></time>
+                 <time datetime="<?php the_date('Y-m-d'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
             </span> 
             </p>
-        </li>
         </a>
+        </li>
+
     <!-- error handling -->
     <?php endwhile; else: ?>
-    <p>
+    <p class="post-errortext">
       <?php _e('Sorry, there are no posts by this author.', 'cerulean-for-wordpress'); ?>
     </p>
     <?php endif;?>

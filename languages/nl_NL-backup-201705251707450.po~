@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-25 17:07+0000\n"
-"PO-Revision-Date: 2017-05-25 17:07+0000\n"
+"POT-Creation-Date: 2017-05-25 12:14+0000\n"
+"PO-Revision-Date: 2017-05-25 12:15+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,17 +13,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: 404.php:8
+#: search.php:14
+msgid "Results for "
+msgstr "Resultaten voor"
+
+#. Description of the theme
 msgid ""
-"This post/page doesnt exist anymore or has been renamed. Try searching for "
-"it."
+"Elegant yet simple. Simplicity with features like custom designed "
+"tag/page/error and search pages, dynamic nav-menu's, logo support and more."
 msgstr ""
-"Deze post/pagina bestaat niet meer of is van naam veranderd. Probeer het "
-"onderstaande zoekveld om uw post te vinden."
+"Elegant en toch simpel. Simpliciteit met functionaliteit zoals costum-design "
+"tag/page/error en zoekpagina's, dynamische navigatiemenu's, logo "
+"ondersteuning en meer."
 
 #: 404.php:6
 msgid "Error"
 msgstr "Foutmelding"
+
+#: 404.php:8
+msgid ""
+"This page doesnt exist anymore or was available on the old website. To "
+"continue please select a menu option from the navigation menu."
+msgstr ""
+"Deze pagina is niet meer beschikbaar. Om door te gaan gebruik het "
+"navigatiemenu."
 
 #: author.php:5
 msgid "Latest posts by"
@@ -49,7 +62,7 @@ msgstr "Hoofd sidebar."
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: header.php:53
+#: header.php:55
 msgid "Menu"
 msgstr "Menu"
 
@@ -57,7 +70,7 @@ msgstr "Menu"
 msgid "Latest"
 msgstr "Laatste"
 
-#: index.php:18 search.php:32
+#: index.php:18 search.php:31
 msgid "ago"
 msgstr "geleden"
 
@@ -73,11 +86,7 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 msgid "Search Page"
 msgstr "Zoekpagina"
 
-#: search.php:14
-msgid "Results for "
-msgstr "Resultaten voor"
-
-#: search.php:41
+#: search.php:39
 msgid "Sorry, it seems this search query has no posts."
 msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
 
@@ -127,15 +136,6 @@ msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 #. Name of the theme
 msgid "Cerulean for Wordpress"
 msgstr "Cerulean voor Wordpress"
-
-#. Description of the theme
-msgid ""
-"Elegant yet simple. Simplicity with features like custom designed "
-"tag/page/error and search pages, dynamic nav-menu's, logo support and more."
-msgstr ""
-"Elegant en toch simpel. Simpliciteit met functionaliteit zoals costum-design "
-"tag/page/error en zoekpagina's, dynamische navigatiemenu's, logo "
-"ondersteuning en meer."
 
 #. URI of the theme
 msgid "https://michaelboumann.info/collection/#ceruleanwp"
