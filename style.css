@@ -258,7 +258,7 @@ li.menu-item-has-children:hover > .sub-menu {
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
-	font-size: 150% !important;
+	font-size: 175% !important;
 	font-weight: 300;
 	padding:15px !important;
 	white-space: normal;
@@ -298,7 +298,7 @@ article > h4,
 }
 
 .sidebar > .widget:first-child {
-    margin-top: 50px !important;
+    margin-top: 45px !important;
 }
 
 .main-content > ul > a > li > p {
@@ -994,7 +994,7 @@ div.aligncenter {
 }
 
 #wp-calendar caption {
-	font-size: 150% !important;
+	font-size: 175% !important;
 	font-weight: 300;
 	white-space: normal;
 	overflow:hidden;
