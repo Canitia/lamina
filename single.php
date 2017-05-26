@@ -22,6 +22,7 @@
         <?php get_template_part( 'partials/authorsection' ); ?>
 
         <div class="cat-links">
+        <?php if(has_category()) { ?>
           <span class="label"><?php _e("Posted in", "cerulean-for-wordpress"); ?></span>
           <?php $categories = get_the_category();
             $separator = ', ';
@@ -34,8 +35,11 @@
                 echo trim( $output, $separator );
             } ?>
          <hr class="cat-links-hr" />
+        <?php } ?>
+         <?php if(has_tag()) { ?>
              <?php the_tags( '<span class="label">Tags</span> ', ', ', ' ' ); ?> 
         <hr class="cat-links-hr" />
+        <?php } ?>
           </div>
        </article><!-- close article -->
        <!-- let user enter a comment -->

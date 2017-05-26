@@ -4,7 +4,7 @@ Theme URI: https://michaelboumann.info/collection/#ceruleanwp
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple. Simplicity with features like custom designed tag/page/error and search pages, dynamic nav-menu's, logo support and more.
-Version: 0.9.9.162
+Version: 0.9.10
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
@@ -43,9 +43,11 @@ h3 {
 }
 
 .h3-join-the-conversation {
-	font-size: 2rem !important;
+	font-size: 2.3rem !important;
 	font-weight: 300 !important;
 	margin-left: 15px;
+	margin-top: 60px;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -81,6 +83,7 @@ blockquote {
 	padding-bottom:10px;
 	background-color: whitesmoke;
 	border: 2px solid #ebebeb !important;
+	width: 100%
 }
 
 blockquote:before {
@@ -166,6 +169,10 @@ li.pagination-arrows a p i:hover,
 
 .brand-logo {
 	margin:0 !important;
+}
+
+.site-title {
+	font-weight: 300 !important;
 }
 
 nav .brand-logo {
@@ -546,23 +553,11 @@ footer {
 	bottom:0;
 }
 
-.socialfooter {
-	margin-left: 20px;
+.page-footer > p {
+    margin-right: 10px;
+    font-style: italic;
+    font-weight: 300;
 }
-
-.socialfooter > .right {
-	margin-right: 20px;
-}
-
-.socialfooter > .right > a {
-	margin: 15px;
-	color:black !important;
-}
-
-.socialfooter > a:hover {
-    color: #979797;
-}
-
 
 /* **************************************
 
@@ -602,13 +597,6 @@ footer {
 		margin-bottom:5px;
 	}
 
-	p.text-justify {
-		padding-top: 0px;
-		padding-left:15px;
-		padding-right:15px;
-		padding-bottom:15px;
-	}
-
 	h1 {
 		font-size: 2.5rem !important;
 		margin-top: 0px;
@@ -630,6 +618,14 @@ footer {
 		font-size: 1.6rem !important;
 		font-weight: 300 !important;
 		margin-left: 15px;
+	}
+
+	.comment-body .comment-author img {
+		width: 50px;
+	}
+
+	.comment-author > cite {
+    	font-size: 1.7em !important;
 	}
 
 	.pagination, .main-content {
@@ -661,10 +657,9 @@ footer {
 		display: none;
 	}
 
-	.comment-body > p,
-	address, 
-	pre {
-    	margin-left: 0px !important;
+	.main-content > .collection > .collection-item {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 }
@@ -695,6 +690,10 @@ footer {
 
 	.row-post {
 		margin-top: -15px;
+	}
+
+	.comment-author > cite {
+    	font-size: 1.7em !important;
 	}
 
 }
@@ -812,7 +811,7 @@ EXTERNAL libraries look-n-feel
 	border: 1px solid #ebebeb;
 }
 
-.comment.even {
+.comment.odd {
 	background-color: #f8f8f8;
 }
 
@@ -832,17 +831,32 @@ ul.children {
 
 .comment-body .comment-author img {
 	border-radius: 50%;
-	border: 5px solid #fff;
 	position: relative;
+	float:none;
 	width: 100px;
 	margin-top: 0;
+	margin-bottom: -10px;
 	margin-left: 0;
 }
 
-.comment-body > p,
-address, 
-pre {
-    margin-left: 115px;
+.comment-author.vcard {
+	border-bottom: 1px solid #ebebeb;
+	margin-top: -5px;
+}
+
+.says {
+	display:none;
+}
+
+.comment-author > cite {
+    font-size: 2.3em;
+    font-weight: 300;
+}
+
+.comment-meta {
+    padding: 5px;
+    margin-top: 5px;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .comment-meta > a {
@@ -870,6 +884,10 @@ pre {
 
 .form-submit > input#submit {
 	float:right;
+}
+
+.comment-form-comment > textarea {
+	height: 8rem !important;
 }
 
 #cancel-comment-reply-link {
@@ -1153,16 +1171,4 @@ div.aligncenter {
 
 #wp-calendar tbody .pad { 
 	background: none; 
-}
-
-#wp-calendar tfoot #next { 
-	font-size: 10px; 
-	text-transform: uppercase; 
-	text-align: right; 
-}
-
-#wp-calendar tfoot #prev { 
-	font-size: 10px; 
-	text-transform: uppercase; 
-	padding-top: 10px; 
 }
