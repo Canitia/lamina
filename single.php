@@ -17,7 +17,7 @@
             <?php the_content(); ?>
         </div> 
 
-      <?php wp_link_pages('before=<hr /><ul class="pagination center-align" role="pagination">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
+      <?php wp_link_pages('before=<hr /><ul class="pagination center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
         <?php get_template_part( 'partials/authorsection' ); ?>
 
