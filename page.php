@@ -3,12 +3,10 @@
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
   
-   <div class="col s12 m12 l12">
-          <div <?php post_class();?>>
-                <article>
-                  <span class="post-title">
-                    <h1 class="center"><?php the_title();?></h1>
-                    </span>
+  <div class="col s12 m12 l12">
+    <div <?php post_class();?>>
+    <article>
+      <h1 class="center"><?php the_title();?></h1>
       <div class="post-subitems center">
         <i class="fa fa-clock-o"></i><time datetime="<?php the_date('Y-m-d'); ?>"><?php echo get_the_date();?></time>
         <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
