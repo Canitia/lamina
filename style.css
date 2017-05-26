@@ -809,7 +809,7 @@ EXTERNAL libraries look-n-feel
 	border: 1px solid #ebebeb;
 }
 
-.comment.even {
+.comment.odd {
 	background-color: #f8f8f8;
 }
 
