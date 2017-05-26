@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-25 17:07+0000\n"
-"PO-Revision-Date: 2017-05-25 17:07+0000\n"
+"POT-Creation-Date: 2017-05-26 15:06+0000\n"
+"PO-Revision-Date: 2017-05-26 15:06+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,6 +13,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
+#: index.php:8
+msgid "Today"
+msgstr "Vandaag"
+
+#: index.php:50
+msgid "Older posts"
+msgstr "Oudere berichten"
+
+#: 404.php:6
+msgid "Error"
+msgstr "Foutmelding"
+
 #: 404.php:8
 msgid ""
 "This post/page doesnt exist anymore or has been renamed. Try searching for "
@@ -21,13 +33,14 @@ msgstr ""
 "Deze post/pagina bestaat niet meer of is van naam veranderd. Probeer het "
 "onderstaande zoekveld om uw post te vinden."
 
-#: 404.php:6
-msgid "Error"
-msgstr "Foutmelding"
-
 #: author.php:5
 msgid "Latest posts by"
 msgstr "Laatste berichten van"
+
+#: author.php:16 category.php:16 index.php:35 index.php:69 search.php:32
+#: tag.php:15
+msgid "ago"
+msgstr "geleden"
 
 #: author.php:25
 msgid "Sorry, there are no posts by this author."
@@ -49,23 +62,15 @@ msgstr "Hoofd sidebar."
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: header.php:53
+#: header.php:51
 msgid "Menu"
 msgstr "Menu"
 
-#: index.php:6
-msgid "Latest"
-msgstr "Laatste"
-
-#: index.php:18 search.php:32
-msgid "ago"
-msgstr "geleden"
-
-#: index.php:24
+#: index.php:76
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
-#: page.php:27
+#: page.php:23
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
@@ -100,19 +105,19 @@ msgctxt "submit button"
 msgid "Go"
 msgstr "Gaan"
 
-#: sidebar.php:4
+#: sidebar.php:3
 msgid "There are currently no widgets enabled."
 msgstr "Er zijn momenteel geen widgets actief."
 
-#: single.php:27
+#: single.php:25
 msgid "Posted in"
 msgstr "Gepost in"
 
-#: single.php:36
+#: single.php:42
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
 
-#: single.php:44
+#: single.php:50
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
@@ -120,7 +125,7 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 msgid "Latest posts tagged"
 msgstr "Laatste berichten getagged met"
 
-#: tag.php:26
+#: tag.php:24
 msgid "Sorry, no posts can be found within this tag."
 msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 
