@@ -656,6 +656,10 @@ footer {
 		display: none;
 	}
 
+	.comment-body > p {
+    	margin-left: 0px;
+	}
+
 }
 
 /* mobile devices */
@@ -826,6 +830,10 @@ ul.children {
 	width: 100px;
 	margin-top: 0;
 	margin-left: 0;
+}
+
+.comment-body > p {
+    margin-left: 115px;
 }
 
 .comment-meta > a {
