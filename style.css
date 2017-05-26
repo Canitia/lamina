@@ -230,6 +230,11 @@ li.menu-item-has-children:hover > .sub-menu {
 	left: 300px !important;
 }
 
+.sidenav-menu-header {
+	margin-top:20px;
+	padding-bottom: 0px !important;
+}
+
 /* **************************************
 
   SLIDER LOOK-N-FEEL
