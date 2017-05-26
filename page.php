@@ -16,9 +16,8 @@
         <?php the_content();?>
       </div>  
         <?php get_template_part( 'partials/authorsection' ); ?>
-                                    </article><!-- close article -->
-                            </div><!-- close post class div -->
-
+        </article><!-- close article -->
+  </div><!-- close post class div -->
                             <!-- error handling -->
                             <?php endwhile;
 else: ?>
@@ -26,8 +25,7 @@ else: ?>
 <?php endif;
 ?>
                             <?php wp_link_pages('before=<ul class="pagination center-align" role="pagination">&after=</ul>&link_before=<li>&link_after=</li>');?>
-                          </div><!-- einde md8 -->
-
+</div><!-- einde md8 -->
 </div><!-- container fluid END! -->
 
 <!-- start of footer -->
