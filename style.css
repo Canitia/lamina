@@ -511,6 +511,11 @@ p.author-bio {
     color: #979797;
 }
 
+.fa-angle-left,
+.fa-angle-right {
+	font-size:1.5em !important;
+}
+
 .older-posts {
 	float: right;
 	margin-right: 20px;
