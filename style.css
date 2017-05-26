@@ -827,11 +827,32 @@ ul.children {
 
 .comment-body .comment-author img {
 	border-radius: 50%;
-	border: 5px solid #fff;
 	position: relative;
+	float:none;
 	width: 100px;
 	margin-top: 0;
+	margin-bottom: -10px;
 	margin-left: 0;
+}
+
+.comment-author.vcard {
+	border-bottom: 1px solid #ebebeb;
+	margin-top: -5px;
+}
+
+.says {
+	display:none;
+}
+
+.comment-author > cite {
+    font-size: 2.3em;
+    font-weight: 300;
+}
+
+.comment-meta {
+    padding: 5px;
+    margin-top: 5px;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .comment-meta > a {
