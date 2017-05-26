@@ -3,12 +3,12 @@
 ?>>
 <head>
     <!-- some meta -->
+    <meta charset="<?php bloginfo( 'charset' );?>" />
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type');?>; charset=<?php bloginfo('charset');
 ?>" />
     <meta name="generator" content="WordPress <?php bloginfo('version');?>" />
     <meta name="description" content="<?php bloginfo( 'description' );?>" />
     <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() );?>/favicon.ico" />
-    <meta charset="<?php bloginfo( 'charset' );?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
