@@ -790,7 +790,7 @@ EXTERNAL libraries look-n-feel
 }
 
 .parent {
-	margin-left: 30px;
+	margin-left: 15px;
 }
 
 .comment-respond,
@@ -826,9 +826,6 @@ ul.children {
 	width: 100px;
 	margin-top: 0;
 	margin-left: 0;
-}
-.entry-pings .reply {
-	display: none;
 }
 
 .comment-meta > a {
@@ -879,6 +876,7 @@ ul.children {
 
 .reply {
     float: right;
+	margin-top: 10px;
 }
 
 /* add some styling to disqus */
