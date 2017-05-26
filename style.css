@@ -273,7 +273,9 @@ li.menu-item-has-children:hover > .sub-menu {
 	border-bottom: 1px solid #ededed !important;
 }
 
-.collection-item > p {
+.collection-item > p,
+.collection-item > a > p
+ {
 	margin:0px;
 }
 
