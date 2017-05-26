@@ -30,15 +30,15 @@
         while ( $lastweek_query->have_posts() ) {
           $lastweek_query->the_post();
           ?>
-        <a href="<?php the_permalink(); ?>">
         <li class="collection-item">
+        <a href="<?php the_permalink(); ?>">
             <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
               <span class="badge">
               <time datetime="<?php the_date('Y-m-d'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
             </span> 
             </p>
-        </li>
         </a>
+        </li>
           <?php
         }
         
@@ -63,15 +63,16 @@
     $main_query = new WP_Query( $args );
     if ( $main_query->have_posts() ) : 
       while ( $main_query->have_posts() ) : $main_query->the_post(); ?>
-        <a href="<?php the_permalink(); ?>">
         <li class="collection-item">
+        <a href="<?php the_permalink(); ?>">
             <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
               <span class="badge">
               <time datetime="<?php the_date('Y-m-d'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
             </span> 
             </p>
+        </a>
         </li>
-        </a><?php endwhile; else: ?>
+        <?php endwhile; else: ?>
         <!-- error handling -->
         <p><?php _e('Sorry, it seems there are no posts available.', 'cerulean-for-wordpress'); ?></p>
     <?php endif; ?>

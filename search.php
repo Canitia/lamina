@@ -25,20 +25,21 @@ Template Name: Search Page
             while ( $the_query->have_posts() ) {
             $the_query->the_post();
                     ?>
-            <a href="<?php the_permalink(); ?>">
                 <li class="collection-item">
+                    <a href="<?php the_permalink(); ?>">
                     <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
                         <span class="badge">
                             <time><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
                         </span> 
                     </p>
+                    </a>
                 </li>
-            </a>
-                    <?php
-            }
-    } else {
-    ?>
+
+   <?php    }
+    } else {?>
+
      <p class="post-errortext"><?php _e('Sorry, it seems this search query has no posts.', 'cerulean-for-wordpress'); ?></p>
+     
     <?php } ?>
 </ul>
 </div><!-- einde main-content -->
