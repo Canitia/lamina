@@ -42,11 +42,11 @@
         }
         
       } else { ?>
-      <p class="post-errortext">
+      <li class="post-errortext">
         <?php
            _e('It seems there are no posts today.', 'cerulean-for-wordpress'); 
         ?>
-      </p>
+      </li>
       <?php     
       }
 
