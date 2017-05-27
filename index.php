@@ -2,8 +2,10 @@
 <div class="container-fluid">
   <div class="row">
     <div class="main-content col s12 m8 l8">
-    <?php $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-      if ($paged < 2) {    
+    <?php 
+     if ( get_theme_mod( 'display_today' ) == 1 ) :
+     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+    if ($paged < 2) {    
     ?>
     <h1 class="text-left-title-featured-sidebar"><?php _e('Today', 'cerulean-for-wordpress'); ?></h1>
     <ul class="collection">
@@ -55,7 +57,16 @@
       ?>
       </ul>
 
-    <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1>
+    <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1>            
+  <?php endif; ?>
+
+    <?php 
+  if ( get_theme_mod( 'display_today' ) == 0 ) :
+   ?>
+       <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'cerulean-for-wordpress');?></h1>            
+ 
+ <?php 
+ endif;?>
     <ul class="collection">
     <?php
     $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1, 'paged' => $paged,

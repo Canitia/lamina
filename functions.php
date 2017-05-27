@@ -40,21 +40,6 @@ add_theme_support( "post-thumbnails" );
 add_action( 'widgets_init', 'cerulean_sidebars' );
 
 
-
-/**
- * custom background-color
- */
-
-
-
-$args = array(
-'default-color' => 'ffffff',
-);
-
-add_theme_support( 'custom-background', $args );
-
-
-
 /**
  * sidebar
  */
@@ -184,6 +169,60 @@ function cerulean_pagination_numeric_posts_nav() {
 
 	echo '</ul></div>' . "\n";
 }
+
+
+/**
+ * Adds the individual sections, settings, and controls to the theme customizer
+ */
+function cerulean_customizer( $wp_customize ) {
+    $wp_customize->add_section(
+        'settings_section_one',
+        array(
+            'title' => 'Cerulean Settings',
+            'description' => 'Tweak Cerulean to your liking.',
+            'priority' => 35,
+        )
+    );
+
+	$wp_customize->add_setting(
+		'display_slider',
+		array(
+			'default' => true,
+		)
+	);
+
+	
+	$wp_customize->add_setting(
+		'display_today',
+		array(
+			'default' => true,
+		)
+	);
+
+	$wp_customize->add_control(
+		'display_slider',
+		array(
+			'label' => 'Show slider?',
+			'section' => 'settings_section_one',
+			'type' => 'checkbox',
+		)
+		);
+
+	$wp_customize->add_control(
+		'display_today',
+		array(
+			'label' => 'Show Today section?',
+			'section' => 'settings_section_one',
+			'type' => 'checkbox',
+		)
+		);
+
+	}
+add_action( 'customize_register', 'cerulean_customizer' );
+
+
+
+
 
 
 

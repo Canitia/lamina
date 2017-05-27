@@ -69,8 +69,11 @@
 </header>
 <?php
     if ( is_home() ) {
-        get_template_part( 'partials/slider' );
-        }
+
+        if ( get_theme_mod( 'display_slider' ) == 1 ) :
+            get_template_part( 'partials/slider' );
+        endif;
+    }
         
     if ( is_single() ) {
         the_post_thumbnail('full', ['class' => 'responsive-img', 'title' => 'Feature image']);
