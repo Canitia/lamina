@@ -603,6 +603,16 @@ footer {
 	}
 
 /* Smaller margins to the page gets fit to nearly the full screen */
+	.main-content {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.main-content > .collection > .collection-item > a > p > .fa-circle,
+	.main-content > .collection > .collection-item > p > .fa-circle {
+		margin-left: 5px;
+	}
+
 	.container-fluid {
 		margin-top:0px;
 		margin-left: 0px;
