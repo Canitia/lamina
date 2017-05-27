@@ -178,8 +178,8 @@ function cerulean_customizer( $wp_customize ) {
     $wp_customize->add_section(
         'settings_section_one',
         array(
-            'title' => 'Cerulean Settings',
-            'description' => 'Tweak Cerulean to your liking.',
+            'title' =>  __('Cerulean Settings', 'cerulean-for-wordpress'),
+            'description' => __('Tweak Cerulean to your liking.', 'cerulean-for-wordpress'),
             'priority' => 35,
         )
     );
@@ -209,7 +209,7 @@ function cerulean_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'display_slider',
 		array(
-			'label' => 'Show slider?',
+			'label' =>  __('Show slider?', 'cerulean-for-wordpress'),
 			'section' => 'settings_section_one',
 			'type' => 'checkbox',
 		)
@@ -218,7 +218,7 @@ function cerulean_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'display_today',
 		array(
-			'label' => 'Show Today section?',
+			'label' =>  __('Show Today section?', 'cerulean-for-wordpress'),
 			'section' => 'settings_section_one',
 			'type' => 'checkbox',
 		)
@@ -227,7 +227,7 @@ function cerulean_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'move_sidebar_left',
 		array(
-			'label' => 'Move sidebar to the left?',
+			'label' => __('Move sidebar to the left?', 'cerulean-for-wordpress'),
 			'section' => 'settings_section_one',
 			'type' => 'checkbox',
 		)
