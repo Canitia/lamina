@@ -245,6 +245,14 @@ li.menu-item-has-children:hover > .sub-menu {
 	margin-left: 15px;
 }
 
+.menu {
+	margin-top: 15px;
+}
+
+.side-nav .menu ul.sub-menu {
+	display: none;
+}
+
 /* **************************************
 
   SLIDER LOOK-N-FEEL
