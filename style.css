@@ -629,6 +629,10 @@ footer {
 		margin-left: 15px;
 	}
 
+	.comment-reply-title {
+    	font-size: 1.5rem !important;
+	}
+
 	.comment-body .comment-author img {
 		width: 50px;
 	}
