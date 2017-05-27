@@ -19,9 +19,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
-html body {
-	font-size: 16px;
-}
 
 .container-fluid {
 	background-color: white;
@@ -695,10 +692,6 @@ footer {
 /* mobile devices */
 @media (max-width:992px) and (min-width:601px) {
 
-	#wp-calendar tbody td { 
-		padding:4px;
-	}
-
     .content-images, .content-images-individual {
 				object-fit: cover;
     }
@@ -1194,7 +1187,7 @@ div.aligncenter {
 	background: #f5f5f5; 
 	border: 1px solid #fff; 
 	text-align: center; 
-	padding:6px;
+	padding:4px;
 }
 
 #wp-calendar tbody td:hover { 
