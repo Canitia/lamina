@@ -609,7 +609,8 @@ footer {
 	}
 
 	.main-content > .collection > .collection-item > a > p > .fa-circle,
-	.main-content > .collection > .collection-item > p > .fa-circle {
+	.main-content > .collection > .collection-item > p > .fa-circle, 
+	.main-content > .collection > .collection-item > a > p > .fa-star	{
 		margin-left: 5px;
 	}
 
