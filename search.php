@@ -9,6 +9,12 @@ Template Name: Search Page
  <?php get_template_part( 'partials/slider' ); ?>
 
 <div class="row">
+
+  <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+  <!-- second column (widget bar) -->
+  <?php get_sidebar( 'primary' ); ?>
+  <?php endif; ?>
+
 <div class="main-content col s12 m8 l8">
  
      <h1 class="text-left-title-featured-sidebar"><?php _e('Results for ', 'cerulean-for-wordpress'); echo '<strong>' . get_query_var("s") . '</strong>'; ?> </h1>
@@ -44,8 +50,10 @@ Template Name: Search Page
 </ul>
 </div><!-- einde main-content -->
 
-    <!-- second column (widget bar) -->
-   <?php get_sidebar( 'primary' ); ?>
+  <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
+  <!-- second column (widget bar) -->
+  <?php get_sidebar( 'primary' ); ?>
+  <?php endif; ?>
 
 </div><!-- end row -->
 </div><!-- container fluid END! -->

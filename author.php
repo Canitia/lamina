@@ -1,6 +1,12 @@
 <?php get_header();?>
 <div class="container-fluid">
 <div class="row">
+
+  <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+  <!-- second column (widget bar) -->
+  <?php get_sidebar( 'primary' ); ?>
+  <?php endif; ?>
+
   <div class="col s12 m8 l8 main-content">
   <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts by', 'cerulean-for-wordpress'); ?> 
   <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
@@ -31,9 +37,10 @@
 
   </div>
   <!-- einde md8 -->
-
-    <?php get_sidebar( 'primary' );
-?>
+    <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
+    <!-- second column (widget bar) -->
+    <?php get_sidebar( 'primary' ); ?>
+    <?php endif; ?>
 
 </div>
 <!-- end row -->

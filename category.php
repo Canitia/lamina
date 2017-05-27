@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 <div class="container-fluid">
      <div class="row">
+       <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+      <!-- second column (widget bar) -->
+      <?php get_sidebar( 'primary' ); ?>
+      <?php endif; ?>
         <div class="col s12 m8 l8 main-content">
           <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts in', 'cerulean-for-wordpress'); ?> <strong><?php single_cat_title(); ?></strong></h1>
         <ul class="collection">
@@ -31,7 +35,10 @@
           <?php cerulean_pagination_numeric_posts_nav(); ?>
       </div><!-- einde md8 -->
 
-          <?php get_sidebar( 'primary' ); ?>
+      <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
+      <!-- second column (widget bar) -->
+      <?php get_sidebar( 'primary' ); ?>
+      <?php endif; ?>
 
     </div><!-- end row -->
   </div><!-- container fluid END! -->

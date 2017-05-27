@@ -1,11 +1,17 @@
 <?php get_header(); ?>
 <div class="container-fluid">
   <div class="row">
+
+    <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+    <!-- second column (widget bar) -->
+      <?php get_sidebar( 'primary' ); ?>
+    <?php endif; ?>
+
     <div class="main-content col s12 m8 l8">
     <?php 
-     if ( get_theme_mod( 'display_today' ) == 1 ) :
+     if ( get_theme_mod( 'display_today' ) == 1 ) : //show today section or not
      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-    if ($paged < 2) {    
+    if ($paged < 2) {    //only show today section on page 1
     ?>
     <h1 class="text-left-title-featured-sidebar"><?php _e('Today', 'cerulean-for-wordpress'); ?></h1>
     <ul class="collection">
@@ -100,9 +106,10 @@
   <?php cerulean_pagination_numeric_posts_nav(); ?>
   </div><!-- einde md8 -->  <!-- column end! -->
 
+  <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
-
+  <?php endif; ?>
   </div><!-- end container inside -->
 </div><!-- container fluid END! -->
 

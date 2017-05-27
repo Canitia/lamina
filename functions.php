@@ -199,6 +199,13 @@ function cerulean_customizer( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'move_sidebar_left',
+		array(
+			'default' => false,
+		)
+	);
+
 	$wp_customize->add_control(
 		'display_slider',
 		array(
@@ -212,6 +219,15 @@ function cerulean_customizer( $wp_customize ) {
 		'display_today',
 		array(
 			'label' => 'Show Today section?',
+			'section' => 'settings_section_one',
+			'type' => 'checkbox',
+		)
+		);
+
+	$wp_customize->add_control(
+		'move_sidebar_left',
+		array(
+			'label' => 'Move sidebar to the left?',
 			'section' => 'settings_section_one',
 			'type' => 'checkbox',
 		)
