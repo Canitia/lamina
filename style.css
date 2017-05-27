@@ -643,8 +643,8 @@ footer {
 		margin-left: 15px;
 	}
 
-	.comment-reply-title {
-    	font-size: 1.5rem !important;
+	.reply-title {
+		font-size: 1.7rem !important;
 	}
 
 	.comment-body .comment-author img {
@@ -815,7 +815,7 @@ EXTERNAL libraries look-n-feel
 }
 
 .comment-reply-title {
-	font-size: 175% !important;
+	font-size: 1.5rem !important;
 }
 
 .commentlist .bypostauthor {
