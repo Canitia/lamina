@@ -8,7 +8,7 @@
     <article>
       <h1 class="center"><?php the_title();?></h1>
       <div class="post-subitems center">
-        <i class="fa fa-clock-o"></i><time datetime="<?php the_date('Y-m-d'); ?>"><?php echo get_the_date();?></time>
+        <i class="fa fa-clock-o"></i><time datetime="<?php the_time('c'); ?>"><?php echo get_the_date();?></time>
         <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
       </div>
    <hr />
@@ -23,7 +23,7 @@
        <p><?php _e('Sorry, this page can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
   <?php endif;?>
 
-   <?php wp_link_pages('before=<ul class="pagination center-align" role="navigation">&after=</ul>&link_before=<li>&link_after=</li>');?>
+   <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&after=</ul>&link_before=<li>&link_after=</li>');?>
 
 </div><!-- einde md8 -->
 </div><!-- container fluid END! -->

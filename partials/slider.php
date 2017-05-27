@@ -1,5 +1,4 @@
-<div>    
-    <?php		
+<?php		
     $args = array(		
       'posts_per_page' => 3,		
       'post__in'  => get_option( 'sticky_posts' )		
@@ -27,8 +26,8 @@
             echo '</h1></div></a></li>';		
 
         }		
-        }
-       endif;?>
+        }?>
         </ul>
+      <?php endif;?>
+
     </div>
-</div>

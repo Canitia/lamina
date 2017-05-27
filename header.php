@@ -54,7 +54,8 @@
                 array(
                  'theme_location' => 'header-menu',
                  'container' => '',
-                 'fallback_cb' => false
+                 'fallback_cb' => false,
+                 'depth' => 0
                 )
             );
 

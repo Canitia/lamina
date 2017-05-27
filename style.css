@@ -4,7 +4,7 @@ Theme URI: https://michaelboumann.info/collection/#ceruleanwp
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple. Simplicity with features like custom designed tag/page/error and search pages, dynamic nav-menu's, logo support and more.
-Version: 0.9.10
+Version: 0.9.9.201
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
@@ -144,10 +144,7 @@ p > a, .side-nav a,
 }
 
 p > a:focus,
-p > a:hover, 
-.pagination > a > p > i:hover, 
-li.pagination-arrows a p i:hover, 
-.socialfooter > a > p > i:hover
+p > a:hover
 {
   color:#979797  !important;
 }
@@ -221,6 +218,12 @@ li.menu-item-has-children:hover > .sub-menu {
 
 /******************************************/
 
+.side-nav li>a {
+	border-bottom: 1px solid #ebebeb;
+	font-weight: 400 !important;
+	font-size: 16px !important;
+}
+
 .side-nav li>a:hover {
 	color: white;
 }
@@ -238,8 +241,16 @@ li.menu-item-has-children:hover > .sub-menu {
 }
 
 .sidenav-menu-header {
-	margin-top:20px;
-	padding-bottom: 0px !important;
+	margin-bottom: -15px !important;
+	margin-left: 15px;
+}
+
+.side-nav > .menu {
+	margin-top: 15px;
+}
+
+.side-nav .menu ul.sub-menu {
+	display: none;
 }
 
 /* **************************************
@@ -489,52 +500,57 @@ p.author-bio {
   PAGINATION
 
 *****************************************/
+
 .pagination {
-	margin-top: 15px;
-}
-
-
-.pagination > a > p, 
-.pagination > p {
-	padding: 20px;
-}
-
-.pagination > a > .pagination-arrows {
-	padding: 0 !important;
+	padding:15px;
+	margin-top: 0px !important;
+	border-top: 1px solid #ebebeb;
+	background:white;
 }
 
 .pagination > .active {
 	padding: 15px;
 	line-height: 2px; 
-	font-weight: 600;
 }
 
-.pagination li.active {
+.pagination > ul > li {
+	background-color: #979797;
+}
+
+.pagination > ul > li:hover {
+	background-color: #d3d3d3;
+}
+
+.pagination > ul > li.active {
 	background-color: #d3d3d3 !important;
 }
 
-.fa-angle-left:hover,
-.fa-angle-right:hover {
-    color: #979797;
+.pagination > ul > li > a {
+	color: white;
 }
 
-.fa-angle-left,
-.fa-angle-right {
-	font-size:1.5em !important;
+.pagination > ul > li > a:hover {
+	color: black;
 }
 
-.older-posts {
-	float: right;
-	margin-right: 20px;
-	margin-top: -48px;
-    position: relative;
+.pagination > ul > li.pagination-tripledot {
+	background-color: white;
+	font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.newer-posts {
-	float: left;
-	margin-left: 20px;
-    position: relative;
+.fa-chevron-right,
+.fa-chevron-left {
+	font-size: 1em !important;
 }
+
+/* pagination within a post/page */
+.pagination-within > li,
+.pagination-within > a > li {
+	padding: 5px;
+}
+
 
 /* **************************************
 
@@ -551,6 +567,7 @@ footer {
 	position: relative !important;
 	border-top: 1px solid #ebebeb !important;
 	bottom:0;
+	padding-top: 0 !important;
 }
 
 .page-footer > p {
@@ -578,15 +595,7 @@ footer {
 	}
 
 	nav .brand-logo {
-	 font-size: 125% !important;
-	}
-
-	nav .sub-menu li {
-		display: none !important;
-	}
-
-	nav .sub-menu {
-		border: 0px !important;
+	 font-size: 130% !important;
 	}
 
 /* Smaller margins to the page gets fit to nearly the full screen */
@@ -618,6 +627,10 @@ footer {
 		font-size: 1.6rem !important;
 		font-weight: 300 !important;
 		margin-left: 15px;
+	}
+
+	.comment-reply-title {
+    	font-size: 1.5rem !important;
 	}
 
 	.comment-body .comment-author img {

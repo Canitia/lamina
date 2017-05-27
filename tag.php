@@ -12,7 +12,7 @@
                         <li class="collection-item">
                             <p title="<?php the_title_attribute(); ?>" class="truncate"><i class="fa fa-circle" aria-hidden="true"></i><?php the_title(); ?>
                               <span class="badge">
-                                <time datetime="<?php the_date('Y-m-d'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
+                                <time datetime="<?php the_time('F j, Y'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
                             </span> 
                             </p>
                         </li>
@@ -23,7 +23,7 @@
               <?php endwhile; else: ?>
                     <p><?php _e('Sorry, no posts can be found within this tag.', 'cerulean-for-wordpress'); ?></p>
               <?php endif; ?>
-              <?php get_template_part( 'partials/pagination' ); ?>
+                <?php cerulean_pagination_numeric_posts_nav(); ?>
                                 </div><!-- einde md8 -->
 
               <?php get_sidebar( 'primary' ); ?>

@@ -5,7 +5,7 @@
       <?php
         $getActiveTheme = wp_get_theme();
 
-        echo 'Powered by ' . ' <strong>' . $getActiveTheme->get( 'Name' ) . ' ' . $getActiveTheme->get( 'Version' ) . ' </strong>';
+        echo 'Powered by ' . ' <strong>' . $getActiveTheme->get( 'Name' ) . ' </strong>';
       ?>
     </p>
     <!-- close with Wordpress footer aka adminbar etc. -->

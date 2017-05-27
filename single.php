@@ -1,15 +1,14 @@
 <?php get_header(); ?>
  <div class="container-fluid">
     <div class="row">
-                    <?php if ( have_posts() ) : ?>
-                        <?php while ( have_posts() ) : the_post(); ?>
- <div>   
+    <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
     <div class="col s12 m8 l8 main-content">
     <div <?php post_class(); ?>>
         <article>
             <h1 class="center"><?php the_title(); ?></h1>
           <div class="post-subitems center">
-            <i class="fa fa-clock-o"></i><time datetime="<?php the_date('Y-m-d h:m'); ?>"><?php echo get_the_date(); ?></time>
+            <i class="fa fa-clock-o"></i><time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
           </div>
         <hr />
@@ -17,7 +16,7 @@
             <?php the_content(); ?>
         </div> 
 
-      <?php wp_link_pages('before=<hr /><ul class="pagination center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
+        <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
         <?php get_template_part( 'partials/authorsection' ); ?>
 
@@ -54,7 +53,6 @@
             <p class="post-errortext"><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
       <?php endif; ?>
         <?php get_sidebar( 'primary' ); ?>
-</div><!-- close col s12 m12 l12 class div -->
   </div><!-- end row -->
 </div><!-- container fluid END! -->
 <!-- start of footer -->

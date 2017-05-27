@@ -6,7 +6,7 @@
       if ($paged < 2) {    
     ?>
     <h1 class="text-left-title-featured-sidebar"><?php _e('Today', 'cerulean-for-wordpress'); ?></h1>
-   <ul class="collection">
+    <ul class="collection">
      <?php
 
       $lastweek_args = array(
@@ -32,7 +32,7 @@
         <a href="<?php the_permalink(); ?>">
             <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
               <span class="badge">
-               <time datetime="<?php the_date('Y-m-d h:m'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
+               <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
             </span> 
             <?php echo the_date();?>
             </p>
@@ -41,13 +41,21 @@
           <?php
         }
         
+      } else { ?>
+      <li class="post-errortext">
+        <?php
+           _e('It seems there are no posts today.', 'cerulean-for-wordpress'); 
+        ?>
+      </li>
+      <?php     
       }
+
       wp_reset_postdata(); 
       };
       ?>
       </ul>
 
-    <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress'); if($paged > 1){ echo '<div class="right">' . $paged . '</div>'; }; ?></h1>
+    <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1>
     <ul class="collection">
     <?php
     $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1, 'paged' => $paged,
@@ -66,7 +74,7 @@
         <a href="<?php the_permalink(); ?>">
             <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
               <span class="badge">
-              <time datetime="<?php the_date('Y-m-d'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
+              <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
             </span> 
             </p>
         </a>
@@ -77,9 +85,8 @@
     <?php endif; ?>
     </ul>
 
-<!-- navigation?-->
-
-<?php get_template_part( 'partials/pagination' ); ?>
+  <!-- navigation?-->
+  <?php cerulean_pagination_numeric_posts_nav(); ?>
   </div><!-- einde md8 -->  <!-- column end! -->
 
   <!-- second column (widget bar) -->
