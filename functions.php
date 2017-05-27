@@ -170,6 +170,10 @@ function cerulean_pagination_numeric_posts_nav() {
 	echo '</ul></div>' . "\n";
 }
 
+function cerulean_sanitize_checkbox( $checked ) {
+	// Boolean check.
+	return ( ( isset( $checked ) && true == $checked ) ? true : false );
+}
 
 /**
  * Adds the individual sections, settings, and controls to the theme customizer
@@ -188,6 +192,7 @@ function cerulean_customizer( $wp_customize ) {
 		'display_slider',
 		array(
 			'default' => true,
+			'sanitize_callback'	=> 'cerulean_sanitize_checkbox',
 		)
 	);
 
@@ -196,6 +201,7 @@ function cerulean_customizer( $wp_customize ) {
 		'display_today',
 		array(
 			'default' => true,
+			'sanitize_callback'	=> 'cerulean_sanitize_checkbox',
 		)
 	);
 
@@ -203,6 +209,7 @@ function cerulean_customizer( $wp_customize ) {
 		'move_sidebar_left',
 		array(
 			'default' => false,
+			'sanitize_callback'	=> 'cerulean_sanitize_checkbox',
 		)
 	);
 
