@@ -695,6 +695,10 @@ footer {
 /* mobile devices */
 @media (max-width:992px) and (min-width:601px) {
 
+	#wp-calendar tbody td { 
+		padding:4px;
+	}
+
     .content-images, .content-images-individual {
 				object-fit: cover;
     }
