@@ -2,6 +2,12 @@
 
 <div class="container-fluid">
   <div class="row">
+
+    <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+    <!-- second column (widget bar) -->
+    <?php get_sidebar( 'primary' ); ?>
+    <?php endif; ?>
+
     <div class="main-content col s12 m8 l8">
         <h1 class="text-left-title-featured-sidebar error"><?php _e('Error', 'cerulean-for-wordpress'); ?></h1>
         <div class="post-content">
@@ -11,8 +17,12 @@
 <?php get_search_form(); ?>
 
   </div><!-- main content END! -->
+
+    <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
     <!-- second column (widget bar) -->
     <?php get_sidebar( 'primary' ); ?>
+    <?php endif; ?>
+    
 </div><!-- row END! -->
 </div><!-- container END! -->
 <!-- start of footer -->

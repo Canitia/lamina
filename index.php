@@ -50,11 +50,10 @@
         }
         
       } else { ?>
-      <li class="post-errortext">
-        <?php
-           _e('It seems there are no posts today.', 'cerulean-for-wordpress'); 
-        ?>
-      </li>
+
+        <li class="collection-item">
+            <p><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'cerulean-for-wordpress'); ?></p>
+        </li>
       <?php     
       }
 

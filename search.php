@@ -44,10 +44,14 @@ Template Name: Search Page
    <?php    }
     } else {?>
 
-     <p class="post-errortext"><?php _e('Sorry, it seems this search query has no posts.', 'cerulean-for-wordpress'); ?></p>
+        <li class="collection-item">
+            <p><i class="fa fa-circle" aria-hidden="true"></i><?php _e('Sorry, it seems this search query has no posts.', 'cerulean-for-wordpress'); ?></p>
+        </li>
+        </ul>
 
+        <?php get_search_form(); ?>
     <?php } ?>
-</ul>
+
 </div><!-- einde main-content -->
 
   <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
