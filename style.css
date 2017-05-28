@@ -170,6 +170,11 @@ select  {
   HEADER / NAVBAR / NAVIGATION
 
 *****************************************/
+
+.navbar {
+	    border-bottom: 1px solid #ebebeb;
+}
+
 img.custom-logo {
 	position: absolute;
 	left:0;
@@ -212,7 +217,7 @@ ul#menu-main {
 *****************************************/
 
 .carousel-item {
-    max-width: 100%;
+	width: 100%;
     object-fit: cover;
     max-height: 600px;
 }
