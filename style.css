@@ -225,11 +225,6 @@ select  {
   SLIDER LOOK-N-FEEL
 
 *****************************************/
-
-.carousel {
-	margin-top: 64px;
-}
-
 .carousel-item {
     object-fit: cover;
 }
@@ -518,10 +513,6 @@ footer {
 *****************************************/
 
 @media (max-width: 575px) {  
-	
-	.container-fluid {
-		margin-top: 64px;
-	}
 
 	.main-content {
 		padding-left: 0;

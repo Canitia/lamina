@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container-fluid">
-     <div class="row">
+     <div class="row navbar-offset">
 
       <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
       <!-- second column (widget bar) -->
