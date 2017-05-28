@@ -796,6 +796,10 @@ footer {
 	.select-wrapper {
 		margin-left: 20px !important;
 	}
+
+	.post-errortext {
+		margin-left: 15px;
+	}
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -815,7 +819,10 @@ footer {
 	#wp-calendar tbody td {
 		padding: 10px;
 	}
-
+	
+	.post-errortext {
+		margin-left: 15px;
+	}
  }
 
 
