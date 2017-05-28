@@ -5,13 +5,14 @@ This code was previously called Jade for Wordpress but has since been rebranded 
 ![Cerulean for Wordpress](https://github.com/boumannm/cerulean-for-wordpress/blob/master/screenshot.png)
 
 # Current features
-- Optimised for Phones, tablets and desktops
-- Sidebar support (only shows it when on medium or higher resolutions)
+- Optimised for phones, tablets and desktops
+- Sidebar support (left or right)
 - Change color and fonts of header
-- Choose your custom site icon
-- Show logo of the site in header
+- Show your custom site icon
+- Show your custom site logo
 - Slider support which automatically grabs the 3 latest 'sticky' posts
-- Simplicity inspired;
+- Today section (only shows the posts from the last day .. duh)
+- Custom Cerulean 'theme' settings (sidebar left/right, slider on/off and today section on/off options)
 - Custom tag, category, author, search and error pages. 
 
 # Status

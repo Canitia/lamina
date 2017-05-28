@@ -188,6 +188,7 @@ function cerulean_pagination_numeric_posts_nav() {
 	echo '</ul></div>' . "\n";
 }
 
+/* sanitize checkbox as was asked by the theme checker */
 function cerulean_sanitize_checkbox( $checked ) {
 	// Boolean check.
 	return ( ( isset( $checked ) && true == $checked ) ? true : false );
@@ -280,20 +281,6 @@ function cerulean_setup() {
 }
 
 add_action( 'after_setup_theme', 'cerulean_setup' );
-
-
-
-function cerulean_the_custom_logo() {
-	
-	
-	if ( function_exists( 'the_custom_logo' ) ) {
-		
-		the_custom_logo();
-		
-	}
-	
-	
-}
 
 load_theme_textdomain( 'cerulean-for-wordpress', get_template_directory().'/languages' );
 
