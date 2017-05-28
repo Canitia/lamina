@@ -157,7 +157,7 @@ select  {
   display:block;
   width:100%;
   border:none;
-  border-bottom:1px solid #757575;
+  border-bottom:1px solid #ebebeb;
 }
 
 .truncate {
@@ -1072,16 +1072,6 @@ dl.wp-caption {
 	list-style-type: none !important;
 	margin-left:0;
 	margin-right:0;
-}
-
-input.search-field {
-	border-bottom: 1px solid #979797 !important;
-}
-
-input[type=search], 
-input[type=search]:focus,
-input.search-field:focus {
-	box-shadow: none !important;
 }
 
 /* images */
