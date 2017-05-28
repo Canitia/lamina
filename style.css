@@ -815,7 +815,9 @@ footer {
 	}
 
 	.text-left-title-featured-sidebar {
-		padding: 15px !important;
+		
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 
 	#wp-calendar tbody td {
