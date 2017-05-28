@@ -267,7 +267,6 @@ select  {
 	white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-	line-height: initial;
 }
 
 .collection .collection-item:hover {
@@ -526,6 +525,11 @@ footer {
     	padding-bottom: 10px;
 	}
 
+	.collection-item {
+		padding-left: 0;
+		line-height: 0;
+	}
+
 	.main-content > .collection > .collection-item > a > p > .fa-circle,
 	.main-content > .collection > .collection-item > p > .fa-circle, 
 	.main-content > .collection > .collection-item > a > p > .fa-star	{
@@ -642,6 +646,10 @@ footer {
     	padding-bottom: 10px;
 	}
 
+	.collection-item {
+		padding-left: initial;
+	}
+
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
 		padding-bottom: 15px;
@@ -691,6 +699,9 @@ footer {
 		padding-right: 5px;
 	}
 
+	.collection-item {
+		padding-left: initial;
+	}
 
 	.comment-author > cite {
     	font-size: 1.7em !important;
