@@ -953,7 +953,7 @@ ul.children {
 }
 
 .comment-form-comment > textarea {
-	height: 8rem !important;
+	width: 100%;
 }
 
 #cancel-comment-reply-link {
