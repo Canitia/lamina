@@ -671,6 +671,10 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 
+	.carousel-item {
+		max-height: 400px;
+	}
+
 	article {
 		padding-left: 15px;
 		padding-right:15px;
