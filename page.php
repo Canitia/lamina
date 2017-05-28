@@ -20,7 +20,9 @@
   </div><!-- close post class div -->
   <!-- error handling -->
   <?php endwhile; else: ?>
-       <p><?php _e('Sorry, this page can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
+          <div class="post-content">
+            <p><?php _e('Sorry, this page can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
+        </div><!-- post-content END! -->
   <?php endif;?>
 
    <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&after=</ul>&link_before=<li>&link_after=</li>');?>

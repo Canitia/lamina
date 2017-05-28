@@ -55,7 +55,9 @@
 
       <!-- error handling -->
       <?php endwhile; else: ?>
-            <p class="post-errortext"><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
+          <div class="post-content">
+            <p><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
+        </div><!-- post-content END! -->
       <?php endif; ?>
 
 

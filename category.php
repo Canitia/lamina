@@ -29,7 +29,9 @@
 
               <!-- error handling -->
               <?php endwhile; else: ?>
-                    <p class="post-errortext"><?php echo wpautop( 'Sorry, this post can not be found' ); ?></p>
+                <div class="post-content">
+                    <p><?php _e('Sorry, this post can not be found.', 'cerulean-for-wordpress'); ?></p>
+                </div><!-- post-content END! -->
               <?php endif; ?>
         </ul>
           <?php cerulean_pagination_numeric_posts_nav(); ?>

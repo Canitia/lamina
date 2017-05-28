@@ -96,8 +96,10 @@
         </a>
         </li>
         <?php endwhile; else: ?>
-        <!-- error handling -->
-        <p><?php _e('Sorry, it seems there are no posts available.', 'cerulean-for-wordpress'); ?></p>
+        <div class="post-content">
+            <p><?php _e('Sorry, it seems there are no posts available.', 'cerulean-for-wordpress'); ?></p>
+        </div><!-- post-content END! -->
+              
     <?php endif; ?>
     </ul>
 

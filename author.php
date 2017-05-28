@@ -27,9 +27,9 @@
 
     <!-- error handling -->
     <?php endwhile; else: ?>
-    <p class="post-errortext">
-      <?php _e('Sorry, there are no posts by this author.', 'cerulean-for-wordpress'); ?>
-    </p>
+      <div class="post-content">
+          <p><?php _e('Sorry, there are no posts by this author.', 'cerulean-for-wordpress'); ?></p>
+      </div><!-- post-content END! -->
     <?php endif;?>
     </ul>
 

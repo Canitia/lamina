@@ -27,7 +27,9 @@
 
               <!-- error handling -->
               <?php endwhile; else: ?>
-                    <p><?php _e('Sorry, no posts can be found within this tag.', 'cerulean-for-wordpress'); ?></p>
+                <div class="post-content">
+                  <p><?php _e('Sorry, no posts can be found within this tag.', 'cerulean-for-wordpress'); ?></p>
+              </div><!-- post-content END! -->             
               <?php endif; ?>
                 <?php cerulean_pagination_numeric_posts_nav(); ?>
                                 </div><!-- einde md8 -->
