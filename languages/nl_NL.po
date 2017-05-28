@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-27 14:19+0000\n"
-"PO-Revision-Date: 2017-05-27 14:19+0000\n"
+"POT-Creation-Date: 2017-05-28 15:21+0000\n"
+"PO-Revision-Date: 2017-05-28 15:21+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,23 +13,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:212
-msgid "Show slider?"
-msgstr "Laat slider zien?"
+#: category.php:33
+msgid "Sorry, this post can not be found."
+msgstr "Sorry, deze post kan niet gevonden worden."
 
-#: functions.php:221
-msgid "Show Today section?"
-msgstr "Laat 'vandaag' sectie zien?"
+#: searchform.php:6
+msgctxt "placeholder"
+msgid "What are you looking for?"
+msgstr "Waar zoek je naar?"
 
-#: functions.php:230
-msgid "Move sidebar to the left?"
-msgstr "Verplaats sidebar naar links?"
-
-#: 404.php:6
+#: 404.php:12
 msgid "Error"
 msgstr "Foutmelding"
 
-#: 404.php:8
+#: 404.php:14
 msgid ""
 "This post/page doesnt exist anymore or has been renamed. Try searching for "
 "it."
@@ -41,7 +38,7 @@ msgstr ""
 msgid "Latest posts by"
 msgstr "Laatste berichten van"
 
-#: author.php:22 category.php:20 index.php:43 index.php:94 search.php:38
+#: author.php:22 category.php:20 index.php:43 index.php:93 search.php:38
 #: tag.php:21
 msgid "ago"
 msgstr "geleden"
@@ -54,29 +51,37 @@ msgstr "Sorry, er zijn geen berichten van deze auteur."
 msgid "Latest posts in"
 msgstr "Laatste berichten van"
 
-#: functions.php:54
+#: functions.php:56
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:55
+#: functions.php:57
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:72
+#: functions.php:74
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:181
+#: functions.php:203
 msgid "Cerulean Settings"
 msgstr "Cerulean Instellingen"
 
-#: functions.php:182
+#: functions.php:204
 msgid "Tweak Cerulean to your liking."
 msgstr "Stel Cerulean in zoals jij dat wilt."
 
-#: header.php:51
-msgid "Menu"
-msgstr "Menu"
+#: functions.php:237
+msgid "Show slider?"
+msgstr "Laat slider zien?"
+
+#: functions.php:246
+msgid "Show Today section?"
+msgstr "Laat 'vandaag' sectie zien?"
+
+#: functions.php:255
+msgid "Move sidebar to the left?"
+msgstr "Verplaats sidebar naar links?"
 
 #: index.php:16
 msgid "Today"
@@ -86,19 +91,19 @@ msgstr "Vandaag"
 msgid "It seems there are no posts today."
 msgstr "Het lijkt erop dat er vandaag geen berichten geplaatst zijn."
 
-#: index.php:66
+#: index.php:65
 msgid "Older posts"
 msgstr "Oudere berichten"
 
-#: index.php:72
+#: index.php:71
 msgid "Latest"
 msgstr "Laatste"
 
-#: index.php:101
+#: index.php:100
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
-#: page.php:23
+#: page.php:24
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
@@ -110,18 +115,13 @@ msgstr "Zoekpagina"
 msgid "Results for "
 msgstr "Resultaten voor"
 
-#: search.php:47
+#: search.php:48
 msgid "Sorry, it seems this search query has no posts."
 msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
 
 #: searchform.php:1
 msgid "Search"
 msgstr "Zoeken"
-
-#: searchform.php:6
-msgctxt "placeholder"
-msgid "Search ..."
-msgstr "Zoekterm ..."
 
 #: searchform.php:8
 msgctxt "label"
@@ -145,7 +145,7 @@ msgstr "Gepost in"
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
 
-#: single.php:58
+#: single.php:59
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
@@ -153,7 +153,7 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 msgid "Latest posts tagged"
 msgstr "Laatste berichten getagged met"
 
-#: tag.php:30
+#: tag.php:31
 msgid "Sorry, no posts can be found within this tag."
 msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 
