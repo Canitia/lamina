@@ -581,25 +581,6 @@ footer {
 		display: none;
 	}
 
-	.search-box {
-		padding: 5px;
-	}
-
-	.widget_calendar {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-
-	#wp-calendar tbody td {
-		padding: 4px;
-	}
-
-	.tagcloud {
-		padding-left: 5px;
-		padding-right: 5px;
-		padding-bottom: 20px;
-	}
-
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
 		padding-bottom: 15px;
@@ -634,6 +615,11 @@ footer {
 
 	.post-errortext {
 		margin-left: 0px;
+	}
+
+	.fa-star, 
+	.fa-circle {
+		margin-right: 15px;
 	}
 
 }
