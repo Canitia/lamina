@@ -258,7 +258,6 @@ select  {
 	color: #979797;
     float: right;
     margin-right: 10px;
-    font-size: 100%;
     font-weight: 400;
 }
 
@@ -526,6 +525,11 @@ footer {
 		margin-top: 64px;
 	}
 
+	.main-content {
+		padding-left: 0;
+		padding-right:0;
+	}
+
 	button.navbar-toggler.navbar-toggler-right {
 		top: 15px;
 	}
@@ -546,7 +550,7 @@ footer {
 	.main-content > .collection > .collection-item > a > p > .fa-circle,
 	.main-content > .collection > .collection-item > p > .fa-circle, 
 	.main-content > .collection > .collection-item > a > p > .fa-star	{
-		margin-left: 5px;
+		margin-left: 12px;
 	}
 
 	article {
@@ -629,6 +633,10 @@ footer {
 	p.author-bio {
 		margin-left:60px;
 		min-height: 100px;
+	}
+	
+	.badge {
+		margin-right: 5px;
 	}
 
 }
