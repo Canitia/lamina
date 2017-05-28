@@ -516,28 +516,7 @@ footer {
 
 *****************************************/
 
-@media (max-width: 575px) {  }
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {  }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {  }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {  }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
-
-
-
-
-
-
-
-/* For the people that have phones reporting very low resolutions */
-@media (max-width:600px) and (min-width:200px) {
+@media (max-width: 575px) {  
 
 	/* make logo image smaller as the navigation bar shrinks at these resolutions */
 	.custom-logo {
@@ -546,10 +525,6 @@ footer {
 
 	.slider {
 		display: none;
-	}
-
-	nav .brand-logo {
-	 font-size: 130% !important;
 	}
 
 /* Smaller margins to the page gets fit to nearly the full screen */
@@ -638,10 +613,10 @@ footer {
 	}
 
 	.text-left-title-featured-sidebar {
-		padding-top: 15px !important;
-		padding-bottom: 15px !important;
-		padding-left: 5px !important;
-		padding-right: 5px !important;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 	.widget_recent_entries > ul > li {
@@ -664,12 +639,30 @@ footer {
 		margin-left:60px;
 		min-height: 100px;
 	}
+
 }
 
-/* mobile devices */
-@media (max-width:992px) and (min-width:601px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+	.collection-item > p,
+	.collection-item > a > p
+ 	{
+		margin:auto;
+		padding-top:15px;
+    	padding-bottom: 10px;
+	}
 
-	img.avatar {
+	.text-left-title-featured-sidebar {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+		img.avatar {
 		width:100px;
 		height:100px;
 		margin-left: 20px;
@@ -732,12 +725,10 @@ footer {
 	.select-wrapper {
 		margin-left: 5px !important;
 	}
+ }
 
-}
-
-/* tablet devices */
-@media only screen and (min-width: 993px) {
-
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
 	nav.navbar {
     	padding-top: 0;
    		padding-bottom: 0;
@@ -782,7 +773,11 @@ footer {
 	.select-wrapper {
 		margin-left: 20px !important;
 	}
-}
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
 
 /* **************************************
 
