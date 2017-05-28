@@ -110,6 +110,7 @@ blockquote:after {
 
 blockquote > p {
   	font-style: italic !important;
+	padding: 15px;
 }
 
 q {
