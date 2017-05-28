@@ -662,6 +662,10 @@ footer {
 		padding-left: 0;
 		padding-right:0;
 	}
+
+	#wp-calendar tbody td {
+		padding: 4px;
+	}
  }
 
 /* Medium devices (tablets, 768px and up) */
@@ -729,6 +733,10 @@ footer {
 
 	.select-wrapper {
 		margin-left: 5px !important;
+	}
+
+	#wp-calendar tbody td {
+		padding: 8px;
 	}
  }
 
