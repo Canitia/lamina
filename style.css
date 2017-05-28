@@ -1169,6 +1169,10 @@ div.aligncenter {
 
 *****************************************/
 
+.search-form > label {
+	width: 100%;
+}
+
 .tagcloud {
 	padding-top: 0px;
 	padding-bottom: 20px;
