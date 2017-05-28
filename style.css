@@ -178,12 +178,8 @@ img.custom-logo {
 
 /* color of clickable header */
 .site-title {
-	font-weight: 300 !important;
-	margin-right: 64px;
-}
-
-nav ul a {
-	color: black !important;
+	font-weight: 300;
+	margin-right: 35px;
 }
 
 .menu-item {
@@ -772,6 +768,12 @@ footer {
 
 /* tablet devices */
 @media only screen and (min-width: 993px) {
+
+	nav.navbar {
+    	padding-top: 0;
+   		padding-bottom: 0;
+	}
+
 	.container-fluid {
 		max-width:1200px;
 	}
