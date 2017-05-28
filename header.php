@@ -21,8 +21,8 @@
 <!-- start of the actual header -->
 <header>
 
-<nav class="navbar fixed-top navbar-light justify-content-center">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+<nav class="navbar fixed-top navbar-light navbar-toggleable-sm justify-content-center">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
     <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
@@ -31,7 +31,7 @@
         bloginfo('name');
      ?>
     </a>
-    <div class="navbar-collapse collapse" id="collapsingNavbar">
+    <div class="navbar-collapse collapse" id="collapsingNavbar3">
           <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <?php bootstrap_nav(); ?>
         </ul>

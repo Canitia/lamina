@@ -22,7 +22,7 @@
             <?php if ( has_post_thumbnail() ) {		
                         the_post_thumbnail( 'full', array( 'class' => 'd-block img-fluid' ) );		
                     } else { ?>		
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" class="d-block img-fluid wp-post-image" />		
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" width="3840" class="d-block img-fluid wp-post-image" />		
                     <?php }  ?>
                      <div class="carousel-caption d-none d-md-block">
                         <h1 class="h-slider"><?php the_title(); ?></h1>

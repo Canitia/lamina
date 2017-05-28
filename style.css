@@ -231,7 +231,6 @@ select  {
 }
 
 .carousel-item {
-    max-width: 100%;
     object-fit: cover;
 }
 
@@ -327,9 +326,8 @@ POST/ARTICLE HEADERS
 
 *****************************************/
 .wp-post-image {
-	max-height: 600px;
+	max-height: 500px;
 	object-fit: cover;
-	width: 100%;
 }
 
 .post-content > ul li, 
