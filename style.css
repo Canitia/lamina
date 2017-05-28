@@ -400,6 +400,7 @@ ul.pings.commentlist {
 
 .cat-links > a:hover {
 	text-decoration: underline;
+	color: #979797;
 }
 
 /* **************************************
