@@ -177,6 +177,7 @@ select  {
 .navbar {
 	border-bottom: 1px solid #ebebeb;
 	padding: 0;
+	background-color: white;
 }
 
 .navbar-brand {
@@ -225,10 +226,13 @@ select  {
 
 *****************************************/
 
+.carousel {
+	margin-top: 64px;
+}
+
 .carousel-item {
     max-width: 100%;
     object-fit: cover;
-    max-height: 500px;
 }
 
 .carousel:hover {
@@ -517,6 +521,10 @@ footer {
 *****************************************/
 
 @media (max-width: 575px) {  
+	
+	.container-fluid {
+		margin-top: 64px;
+	}
 
 	button.navbar-toggler.navbar-toggler-right {
 		top: 15px;
@@ -643,6 +651,11 @@ footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+
+	.carousel-item {
+		max-height: 400px;
+	}
+
 	button.navbar-toggler.navbar-toggler-right {
 		top: 15px;
 	}	

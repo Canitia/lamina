@@ -21,7 +21,7 @@
 <!-- start of the actual header -->
 <header>
 
-<nav class="navbar navbar-light navbar-toggleable-sm justify-content-center">
+<nav class="navbar fixed-top navbar-light navbar-toggleable-sm justify-content-center">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
