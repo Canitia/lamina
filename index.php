@@ -47,20 +47,21 @@
         </a>
         </li>
           <?php
-        }
         
-      } else { ?>
+        
+      } ?>
+      </ul>
+      <?php } else { ?>
 
-        <li class="collection-item">
-            <p class="truncate"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'cerulean-for-wordpress'); ?></p>
-        </li>
+            <p><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'cerulean-for-wordpress'); ?></p>
+
       <?php     
       }
 
       wp_reset_postdata(); 
       };
       ?>
-      </ul>
+
 
     <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1>            
   <?php endif; ?>
