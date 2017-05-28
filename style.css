@@ -342,7 +342,6 @@ POST/ARTICLE HEADERS
 
 *****************************************/
 .wp-post-image {
-	max-width:100%;
 	max-height: 600px;
 	object-fit: cover;
 }
