@@ -30,7 +30,6 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-
 </header>
 <?php
     if ( is_home() ) {

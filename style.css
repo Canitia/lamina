@@ -287,10 +287,6 @@ article > h1:first-child {
 	margin-bottom:30px;
 }
 
-.main-content > ul > a > li > p {
-	margin:0px;
-}
-
 .main-content {
 	border-right: 1px solid #f8f8f8;
 }
@@ -320,18 +316,6 @@ POST/ARTICLE HEADERS
 .post-subitems > a:hover
 {
 	text-decoration: underline;
-}
-
-.posthead-image {
-	width: 100%;
-	max-width:1200px;
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.post-content {
-	width: 100%;
 }
 
 /* **************************************
@@ -582,25 +566,7 @@ footer {
 		margin-left: 5px;
 	}
 
-	h1 {
-		font-size: 2.5rem !important;
-		margin-top: 0px;
-	}
-
-	h2 {
-		font-size: 2.1rem !important;
-	}
-
-	h3 {
-		font-size: 1.6rem !important;
-	}
-
-	h4 {
-		font-size: 1.3rem !important;
-	}
-
 	.h3-join-the-conversation {
-		font-size: 1.9rem !important;
 		font-weight: 300 !important;
 		margin-left: 15px;
 	}
