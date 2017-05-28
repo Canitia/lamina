@@ -799,6 +799,9 @@ footer {
 		line-height: 1.2;
 	}
 
+	.text-left-title-featured-sidebar {
+		padding: 15px !important;
+	}
 
  }
 
