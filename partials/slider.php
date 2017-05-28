@@ -24,7 +24,7 @@
                     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" class="d-block img-fluid wp-post-image" />		
                     <?php }  ?>
                      <div class="carousel-caption d-none d-md-block">
-                        <h3><?php the_title(); ?></h3>
+                        <h1 class="h-slider"><?php the_title(); ?></h1>
                     </div>
                     </a></div>
                     <?php $i++; 
