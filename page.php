@@ -6,8 +6,8 @@
   <div class="col-xs-12 col-md-12 col-lg-12">
     <div <?php post_class();?>>
     <article>
-      <h1 class="center"><?php the_title();?></h1>
-      <div class="post-subitems center">
+      <h1 class="text-center"><?php the_title();?></h1>
+      <div class="post-subitems text-center">
         <i class="fa fa-clock-o"></i><time datetime="<?php the_time('c'); ?>"><?php echo get_the_date();?></time>
         <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
       </div>
