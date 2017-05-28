@@ -747,13 +747,6 @@ footer {
 		max-width:1200px;
 	}
 
-	.collection-item > p,
-	.collection-item > a > p
- 	{
-		margin:0px;
-		padding-top: 0;
-    	padding-bottom: 10px;
-	}
 
 	.sidebar {
 		margin-bottom: 20px;
