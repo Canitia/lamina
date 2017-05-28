@@ -659,12 +659,11 @@ footer {
 	.collection-item > a > p
  	{
 		margin:auto;
-		padding-top:15px;
-    	padding-bottom: 10px;
 	}
 
 	.collection-item {
 		padding-left: initial;
+		line-height: 1;
 	}
 
 	.text-left-title-featured-sidebar {
@@ -725,6 +724,15 @@ footer {
 
 	.collection-item {
 		padding-left: initial;
+		line-height: 1;
+	}
+
+	.collection-item > p,
+	.collection-item > a > p
+ 	{
+		margin-bottom:0;
+		padding-top:0;
+    	padding-bottom: 0;
 	}
 
 	.comment-author > cite {
@@ -780,6 +788,18 @@ footer {
 		line-height: 1.2;
 	}
 
+	.collection-item > p,
+	.collection-item > a > p
+ 	{
+		margin-bottom:0 !important;
+		padding-top:5px;
+    	padding-bottom: 0;
+	}
+
+	.truncate {
+		margin-bottom: 0;
+	}
+
 	.search-box {
 		padding: 15px;
 	}
@@ -816,6 +836,10 @@ footer {
 
 	.collection-item {
 		line-height: 1.2;
+	}
+
+	.truncate {
+		margin-bottom: 0;
 	}
 
 	.text-left-title-featured-sidebar {
