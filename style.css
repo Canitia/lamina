@@ -231,7 +231,7 @@ select  {
 }
 
 .carousel:hover {
-	filter: grayscale(40%);
+	filter: grayscale(30%);
 }
 
 /* **************************************

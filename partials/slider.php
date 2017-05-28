@@ -16,6 +16,7 @@
         $i=0;		
         while ( $query->have_posts() ) {		
             $query->the_post();	?>	
+ 
             <div class="carousel-item <?php echo ($i==0)?'active':''; ?>">
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
             <?php if ( has_post_thumbnail() ) {		
