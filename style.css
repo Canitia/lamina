@@ -526,7 +526,6 @@ footer {
 	.collection-item > p,
 	.collection-item > a > p
  	{
-		margin:auto;
 		padding-top:15px;
     	padding-bottom: 10px;
 	}
@@ -649,12 +648,6 @@ footer {
 	button.navbar-toggler.navbar-toggler-right {
 		top: 15px;
 	}	
-	
-	.collection-item > p,
-	.collection-item > a > p
- 	{
-		margin:auto;
-	}
 
 	.collection-item {
 		padding-left: initial;
@@ -788,14 +781,6 @@ footer {
 
 	.collection-item {
 		line-height: 1.2;
-	}
-
-	.collection-item > p,
-	.collection-item > a > p
- 	{
-		margin-bottom:0 !important;
-		padding-top:5px;
-    	padding-bottom: 0;
 	}
 
 	.search-box {
