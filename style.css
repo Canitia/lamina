@@ -752,6 +752,10 @@ footer {
 		padding: 15px !important;
 	}
 
+	.collection-item {
+		line-height: 1.2;
+	}
+
 	.search-box {
 		padding: 15px;
 	}
