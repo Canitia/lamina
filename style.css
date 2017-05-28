@@ -518,6 +518,10 @@ footer {
 
 @media (max-width: 575px) {  
 
+	button.navbar-toggler.navbar-toggler-right {
+		top: 15px;
+	}
+
 	.collection-item > p,
 	.collection-item > a > p
  	{
@@ -639,6 +643,10 @@ footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+	button.navbar-toggler.navbar-toggler-right {
+		top: 15px;
+	}	
+	
 	.collection-item > p,
 	.collection-item > a > p
  	{
