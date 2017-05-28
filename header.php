@@ -25,7 +25,19 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
-  <a class="navbar-brand site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
+    <?php 
+    if(has_custom_logo()) {
+        if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }   
+    } else {?>
+    <a class="navbar-brand site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" style="color: #<?php echo get_header_textcolor();?> !important;">
+    <?php    
+        bloginfo('name');
+     ?>
+       </a>
+     <?php } 
+     ?>
+
+
   <div class="collapse navbar-collapse" id="navbarNav">
     <?php bootstrap_nav(); ?>
   </div>

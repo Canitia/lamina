@@ -175,19 +175,28 @@ select  {
 *****************************************/
 
 .navbar {
-	    border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 0;
+    padding-top: 0;
+	padding-left: 0;
 }
 
-img.custom-logo {
-	position: absolute;
-	left:0;
-	top:0;
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.navbar-light .navbar-toggler {
+	top: 25%;
 }
 
 /* color of clickable header */
 .site-title {
 	font-weight: 300;
-	margin-right: 35px;
 }
 
 .menu-item {
@@ -205,10 +214,6 @@ img.custom-logo {
 .menu-item > ul > .menu-item {
 	margin-top: -8px;
 	margin-bottom: -8px;
-}
-
-ul#menu-main {
-    margin-left: -17px;
 }
 
 
@@ -242,7 +247,7 @@ ul#menu-main {
 	white-space: normal;
 	overflow:hidden;
 	text-overflow: ellipsis;
-	margin-bottom: 0px;
+    margin-top: 30px;
 	border-bottom: 1px solid #f8f8f8;
 	color: #979797;
 }
@@ -449,7 +454,6 @@ img.avatar {
 .pagination {
 	padding:15px;
 	margin-top: 0px !important;
-	border-top: 1px solid #ebebeb;
 	background:white;
 }
 
@@ -729,15 +733,10 @@ footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
-	nav.navbar {
-    	padding-top: 0;
-   		padding-bottom: 0;
-	}
 
 	.container-fluid {
 		max-width:1200px;
 	}
-
 
 	.sidebar {
 		margin-bottom: 20px;
