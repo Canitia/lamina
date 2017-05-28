@@ -1,4 +1,5 @@
 <?php
+
 /* should be set for a proper Wordpress theme*/
 
 if ( ! isset( $content_width ) ) {
@@ -17,15 +18,17 @@ if ( ! isset( $content_width ) ) {
 
 function cerulean_theme_scripts() {
 	
-	wp_enqueue_style( 'materialize', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', false );
+	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', false );
 	
 	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css', false );
 	
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false );
 	
-	wp_enqueue_script( 'materialize', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js', array('jquery'), false, true );
-	
-	wp_enqueue_script( 'sidenav', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery', 'materialize'), false, true );
+	wp_enqueue_script( 'tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', array('jquery', 'bootstrapjs'), false );
+
+	wp_enqueue_script( 'bootstrapjs', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), false, true );
+
+	wp_enqueue_script( 'sidenav', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery', 'bootstrap'), false, true );
 	
 }
 
@@ -74,6 +77,22 @@ function register_mainmenu() {
 }
 
 add_action( 'init', 'register_mainmenu' );
+
+// Register Custom Navigation Walker
+require_once('wp-bootstrap-navwalker.php');
+
+// Bootstrap navigation
+function bootstrap_nav()
+{
+	wp_nav_menu( array(
+            'theme_location'    => 'header-menu',
+            'depth'             => 2,
+            'container'         => 'false',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new wp_bootstrap_navwalker())
+    );
+}
 
 
 /** Display a list of pingbacks and trackbacks with the Disqus plugin **/
@@ -131,7 +150,7 @@ function cerulean_pagination_numeric_posts_nav() {
 		$links[] = $paged + 1;
 	}
 
-	echo '<div class="pagination center"><ul>' . "\n";
+	echo '<div class="pagination"><ul class="mx-auto">' . "\n";
 
 	/**	Previous Post Link */
 	if ( get_previous_posts_link() )

@@ -7,7 +7,7 @@
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
 
-    <div class="main-content col s12 m8 l8">
+    <div class="main-content col-xs-12 col-md-8 col-lg-8">
     <?php 
      if ( get_theme_mod( 'display_today' ) == 1 ) : //show today section or not
      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;

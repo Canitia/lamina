@@ -15,7 +15,7 @@ Template Name: Search Page
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
 
-<div class="main-content col s12 m8 l8">
+<div class="main-content col-xs-12 col-md-8 col-lg-8">
  
      <h1 class="text-left-title-featured-sidebar"><?php _e('Results for ', 'cerulean-for-wordpress'); echo '<strong>' . get_query_var("s") . '</strong>'; ?> </h1>
  <ul class="collection">

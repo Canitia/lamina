@@ -5,7 +5,7 @@
       <!-- second column (widget bar) -->
       <?php get_sidebar( 'primary' ); ?>
       <?php endif; ?>
-        <div class="col s12 m8 l8 main-content">
+        <div class="col-xs-12 col-md-8 col-lg-8 main-content">
           <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts in', 'cerulean-for-wordpress'); ?> <strong><?php single_cat_title(); ?></strong></h1>
         <ul class="collection">
       <?php if ( have_posts() ) : ?>

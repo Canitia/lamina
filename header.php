@@ -6,7 +6,7 @@
     <meta name="generator" content="WordPress <?php bloginfo('version');?>" />
     <meta name="description" content="<?php bloginfo( 'description' );?>" />
     <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() );?>/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
@@ -20,52 +20,17 @@
 
 <!-- start of the actual header -->
 <header>
-    <div class="navbar-fixed">
-    <nav class="white">
-      <div class="nav-wrapper">
-        <a href="#" data-activates="slide-out" class="button-collapse left"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        <?php if ( function_exists( 'the_custom_logo' ) ) {
-	
-	        the_custom_logo();
-            
-        }
-        ?>
-        <p class="brand-logo site-title">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="headerurl" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
-        </p>
 
-         <div id="nav-mobile" class="right hide-on-med-and-down">
-           <?php
-            wp_nav_menu(
-                array(
-                 'theme_location' => 'header-menu',
-                  'container' => '',
-                  'fallback_cb' => false
-                )
-            );
-
-            ?>
-         </div>
-
-        <div id="slide-out" class="side-nav">
-            <p class="text-left-title-featured-sidebar sidenav-menu-header"><?php _e('Menu', 'cerulean-for-wordpress');?></p>
-          <?php
-            wp_nav_menu(
-                array(
-                 'theme_location' => 'header-menu',
-                 'container' => '',
-                 'fallback_cb' => false,
-                 'depth' => 0
-                )
-            );
-
-            ?>
-        </div>
-
-</div>
+<nav class="navbar navbar-toggleable-md navbar-light">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <?php bootstrap_nav(); ?>
+  </div>
 </nav>
 
-</div>
 </header>
 <?php
     if ( is_home() ) {

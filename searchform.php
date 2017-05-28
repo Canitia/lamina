@@ -7,7 +7,7 @@
               value="<?php echo get_search_query() ?>" name="s"
               title="<?php echo esc_attr_x( 'Search for:', 'label', 'cerulean-for-wordpress' ) ?>" />
       </label>
-      <input type="submit" class="search-submit btn grey right"
+      <input type="submit" class="search-submit btn float-right"
           value="<?php echo esc_attr_x( 'Go', 'submit button', 'cerulean-for-wordpress' ) ?>" />
   </form>
 </div>

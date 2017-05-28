@@ -3,7 +3,7 @@
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
   
-  <div class="col s12 m12 l12">
+  <div class="col-xs-12 col-md-12 col-lg-12">
     <div <?php post_class();?>>
     <article>
       <h1 class="center"><?php the_title();?></h1>

@@ -8,7 +8,7 @@
         
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-    <div class="col s12 m8 l8 main-content">
+    <div class="col-xs-12 col-md-8 col-lg-8 main-content">
     <div <?php post_class(); ?>>
         <article>
             <h1 class="center"><?php the_title(); ?></h1>
