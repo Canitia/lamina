@@ -359,8 +359,6 @@ article {
     margin-right: auto;
     margin-bottom: 15px;
 	padding-top: 25px;
-	padding-left: 15px;
-	padding-right:15px;
 	word-wrap: break-word;
 	background:white;
 	height:100%;
@@ -522,21 +520,6 @@ footer {
 
 @media (max-width: 575px) {  
 
-	/* make logo image smaller as the navigation bar shrinks at these resolutions */
-	.custom-logo {
-		height:56px;
-	}
-
-	.slider {
-		display: none;
-	}
-
-/* Smaller margins to the page gets fit to nearly the full screen */
-	.main-content {
-		padding-left: 0px !important;
-		padding-right: 0px !important;
-	}
-
 	.collection-item > p,
 	.collection-item > a > p
  	{
@@ -549,6 +532,11 @@ footer {
 	.main-content > .collection > .collection-item > p > .fa-circle, 
 	.main-content > .collection > .collection-item > a > p > .fa-star	{
 		margin-left: 5px;
+	}
+
+	article {
+		padding-left: 0;
+		padding-right:0;
 	}
 
 	.h3-join-the-conversation {
@@ -662,11 +650,23 @@ footer {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+
+	article {
+		padding-left: 0;
+		padding-right:0;
+	}
+
  }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) { 
-		img.avatar {
+@media (min-width: 768px) and (max-width: 991px) {
+
+	article {
+		padding-left: 15px;
+		padding-right:15px;
+	}
+ 
+	img.avatar {
 		width:100px;
 		height:100px;
 		margin-left: 20px;
@@ -736,6 +736,11 @@ footer {
 
 	.container-fluid {
 		max-width:1200px;
+	}
+
+	article {
+		padding-left: 15px;
+		padding-right:15px;
 	}
 
 	.sidebar {
