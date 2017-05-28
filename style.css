@@ -571,18 +571,6 @@ footer {
     	font-size: 1.7em !important;
 	}
 
-	.row {
-		margin-bottom: 0px !important;
-	}
-
-	.row-post {
-		margin-top: -15px;
-	}
-
-	.page-footer {
-		position:relative !important;
-	}
-
 	.wp-caption {
 		margin-left: auto !important;
 		margin-right: auto !important;
