@@ -619,6 +619,7 @@ footer {
 
 	.fa-star, 
 	.fa-circle {
+		margin-left: 5px;
 		margin-right: 15px;
 	}
 
