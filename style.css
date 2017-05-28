@@ -475,7 +475,7 @@ img.avatar {
 }
 
 .pagination > ul > li > a:hover {
-	color: black;
+	color: #979797;
 }
 
 .pagination > ul > li.pagination-tripledot {
