@@ -14,9 +14,9 @@
           <p><?php _e('This post/page doesnt exist anymore or has been renamed. Try searching for it.', 'cerulean-for-wordpress');?></p>
         </div><!-- post-content END! -->
 
-  <?php get_search_form(); ?>
+        <?php get_search_form(); ?>
 
-  </div><!-- main content END! -->
+    </div><!-- main content END! -->
 
     <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
     <!-- second column (widget bar) -->
