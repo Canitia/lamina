@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-28 15:21+0000\n"
-"PO-Revision-Date: 2017-05-28 15:21+0000\n"
+"POT-Creation-Date: 2017-05-28 17:18+0000\n"
+"PO-Revision-Date: 2017-05-28 17:18+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -14,13 +14,8 @@ msgstr ""
 "X-Generator: Loco - https://localise.biz/"
 
 #: category.php:33
-msgid "Sorry, this post can not be found."
-msgstr "Sorry, deze post kan niet gevonden worden."
-
-#: searchform.php:6
-msgctxt "placeholder"
-msgid "What are you looking for?"
-msgstr "Waar zoek je naar?"
+msgid "Sorry, there are no posts in this category."
+msgstr "Sorry, er zijn geen posts in deze categorie. "
 
 #: 404.php:12
 msgid "Error"
@@ -122,6 +117,11 @@ msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
 #: searchform.php:1
 msgid "Search"
 msgstr "Zoeken"
+
+#: searchform.php:6
+msgctxt "placeholder"
+msgid "What are you looking for?"
+msgstr "Waar zoek je naar?"
 
 #: searchform.php:8
 msgctxt "label"
