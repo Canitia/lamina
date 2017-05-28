@@ -802,6 +802,7 @@ footer {
 *****************************************/
 .error {
 	background-color: orangered;
+	color: white;
 }
 
 .post-errortext {
