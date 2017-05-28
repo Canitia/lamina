@@ -265,13 +265,14 @@ ul#menu-main {
 	white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+	line-height: initial;
 }
 
 .collection-item > p,
 .collection-item > a > p
  {
 	margin:0px;
-	padding-top: 10px;
+	padding-top: 0;
     padding-bottom: 10px;
 }
 
