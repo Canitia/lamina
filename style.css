@@ -755,10 +755,6 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
 
-	.container-fluid {
-		max-width:1200px;
-	}
-
 	article {
 		padding-left: 15px;
 		padding-right:15px;
@@ -806,7 +802,10 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-	
+	.container-fluid {
+		max-width:1250px;
+	}
+
 	.collection-item {
 		line-height: 1.2;
 	}
