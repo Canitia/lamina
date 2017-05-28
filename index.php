@@ -52,7 +52,7 @@
       } else { ?>
 
         <li class="collection-item">
-            <p><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'cerulean-for-wordpress'); ?></p>
+            <p class="truncate"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'cerulean-for-wordpress'); ?></p>
         </li>
       <?php     
       }
