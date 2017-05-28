@@ -98,6 +98,7 @@
         <?php endwhile; else: ?>
         <div class="post-content">
             <p><?php _e('Sorry, it seems there are no posts available.', 'cerulean-for-wordpress'); ?></p>
+            <?php get_search_form(); ?>
         </div><!-- post-content END! -->
               
     <?php endif; ?>

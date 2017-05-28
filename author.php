@@ -27,8 +27,10 @@
 
     <!-- error handling -->
     <?php endwhile; else: ?>
-      <div class="post-content">
+      <div class="post-content post-errortext">
           <p><?php _e('Sorry, there are no posts by this author.', 'cerulean-for-wordpress'); ?></p>
+         
+         <?php get_search_form(); ?>
       </div><!-- post-content END! -->
     <?php endif;?>
     </ul>

@@ -181,6 +181,7 @@ select  {
 
 .navbar-brand {
   padding: 0px;
+  margin-left: 5px;
 }
 
 .navbar-brand>img {

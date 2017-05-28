@@ -29,8 +29,9 @@
 
               <!-- error handling -->
               <?php endwhile; else: ?>
-                <div class="post-content">
+                <div class="post-content post-errortext">
                     <p><?php _e('Sorry, this post can not be found.', 'cerulean-for-wordpress'); ?></p>
+                    <?php get_search_form(); ?>
                 </div><!-- post-content END! -->
               <?php endif; ?>
         </ul>

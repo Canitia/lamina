@@ -58,6 +58,7 @@
           <div class="post-content">
             <p><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
         </div><!-- post-content END! -->
+         <?php get_search_form(); ?>
       <?php endif; ?>
 
 
