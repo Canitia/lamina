@@ -6,7 +6,7 @@ This code was previously called Jade for Wordpress but has since been rebranded 
 
 # Current features
 - Optimised for phones, tablets and desktops
-- Sidebar support (left or right)
+- Sidebar support
 - Change color and fonts of header
 - Show your custom site icon
 - Show your custom site logo
