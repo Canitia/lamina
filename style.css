@@ -25,7 +25,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 h1 {
-	font-size: 3.2rem !important;
 	font-weight: 300 !important;
 }
 
@@ -34,17 +33,15 @@ h1 {
 }
 
 h2 {
-	font-size: 2.9rem !important;
 	font-weight: 300 !important;
 }
 
 h3 {
-	font-size: 2.6rem !important;
 	font-weight: 300 !important;
 }
 
 .h3-join-the-conversation {
-	font-size: 2.3rem !important;
+	font-size: 2rem !important;
 	font-weight: 300 !important;
 	margin-left: 15px;
 	margin-top: 60px;
@@ -142,7 +139,7 @@ dt {
     font-weight: 500;
 }
 
-p > a, .side-nav a, 
+p > a,
 .collection .collection-item, 
 .collection-item > a {
 	color: black !important;
@@ -259,6 +256,10 @@ ul#menu-main {
 
 .collection-item {
 	border-bottom: 1px solid #ededed !important;
+	padding-left: 10px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .collection-item > p,
@@ -282,19 +283,16 @@ article > h4,
 	color:#979797 !important;
 }
 
+article > h1:first-child {
+	margin-bottom:30px;
+}
+
 .main-content > ul > a > li > p {
 	margin:0px;
 }
 
 .main-content {
 	border-right: 1px solid #f8f8f8;
-}
-
-
-.main-content > .collection > .collection-item {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .widget_recent_entries > ul {
@@ -646,11 +644,6 @@ footer {
 
 	.comment-body .comment-author img {
 		display: none;
-	}
-
-	.main-content > .collection > .collection-item {
-		padding-left: 0px;
-		padding-right: 0px;
 	}
 
 	.search-box {
