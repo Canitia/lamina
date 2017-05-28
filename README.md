@@ -18,3 +18,7 @@ This code was previously called Jade for Wordpress but has since been rebranded 
 Stable
 
 *It passes the Wordpress theme check as of May 26th 2017. Although i do want to work on the 'recommended' items it gave me.*
+
+## Tested on:
+- Chrome 60.x
+- Firefox

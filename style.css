@@ -408,7 +408,7 @@ ul.pings.commentlist {
 
 *****************************************/
 .author-profile {
-	height: 100%;
+	min-height: 125px;
 }
 
 img.avatar {
