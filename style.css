@@ -176,14 +176,13 @@ select  {
 
 .navbar {
 	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 0;
-    padding-top: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
 .navbar-brand {
   padding: 0px;
 }
+
 .navbar-brand>img {
   height: 100%;
   padding: 15px;
@@ -208,7 +207,8 @@ select  {
 }
 
 .menu-item > a:hover {
-	text-decoration: none;
+	text-decoration: underline;
+	color: black;
 }
 
 .menu-item > ul > .menu-item {
