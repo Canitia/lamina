@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-28 17:18+0000\n"
-"PO-Revision-Date: 2017-05-28 17:18+0000\n"
+"POT-Creation-Date: 2017-05-29 15:11+0000\n"
+"PO-Revision-Date: 2017-05-29 15:12+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,9 +13,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: category.php:33
-msgid "Sorry, there are no posts in this category."
-msgstr "Sorry, er zijn geen posts in deze categorie. "
+#: functions.php:294
+msgid "Header item Color"
+msgstr "Headeritems kleur"
+
+#: functions.php:306
+msgid "Text and link color"
+msgstr "Tekst en link kleuren"
+
+#: functions.php:318
+msgid "Link hover color"
+msgstr "Link hover kleur"
 
 #: 404.php:12
 msgid "Error"
@@ -33,7 +41,7 @@ msgstr ""
 msgid "Latest posts by"
 msgstr "Laatste berichten van"
 
-#: author.php:22 category.php:20 index.php:43 index.php:93 search.php:38
+#: author.php:22 category.php:20 index.php:45 index.php:103 search.php:38
 #: tag.php:21
 msgid "ago"
 msgstr "geleden"
@@ -46,55 +54,59 @@ msgstr "Sorry, er zijn geen berichten van deze auteur."
 msgid "Latest posts in"
 msgstr "Laatste berichten van"
 
-#: functions.php:56
+#: category.php:33
+msgid "Sorry, there are no posts in this category."
+msgstr "Sorry, er zijn geen posts in deze categorie. "
+
+#: functions.php:62
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:57
+#: functions.php:63
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:74
+#: functions.php:80
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:203
+#: functions.php:210
 msgid "Cerulean Settings"
 msgstr "Cerulean Instellingen"
 
-#: functions.php:204
+#: functions.php:211
 msgid "Tweak Cerulean to your liking."
 msgstr "Stel Cerulean in zoals jij dat wilt."
 
-#: functions.php:237
+#: functions.php:265
 msgid "Show slider?"
 msgstr "Laat slider zien?"
 
-#: functions.php:246
+#: functions.php:274
 msgid "Show Today section?"
 msgstr "Laat 'vandaag' sectie zien?"
 
-#: functions.php:255
+#: functions.php:283
 msgid "Move sidebar to the left?"
 msgstr "Verplaats sidebar naar links?"
 
-#: index.php:16
+#: index.php:18
 msgid "Today"
 msgstr "Vandaag"
 
-#: index.php:55
+#: index.php:58
 msgid "It seems there are no posts today."
 msgstr "Het lijkt erop dat er vandaag geen berichten geplaatst zijn."
 
-#: index.php:65
+#: index.php:66 index.php:79
 msgid "Older posts"
 msgstr "Oudere berichten"
 
-#: index.php:71
+#: index.php:76
 msgid "Latest"
 msgstr "Laatste"
 
-#: index.php:100
+#: index.php:110
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
