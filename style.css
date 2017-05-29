@@ -509,6 +509,10 @@ footer {
 
 @media (max-width: 575px) {  
 
+	.carousel-item {
+		max-height: 250px;
+	}
+
 	.truncate {
 		white-space: normal;
 		overflow: auto;
@@ -635,7 +639,7 @@ footer {
 @media (min-width: 576px) and (max-width: 767px) { 
 
 	.carousel-item {
-		max-height: 400px;
+		max-height: 350px;
 	}
 
 	button.navbar-toggler.navbar-toggler-right {

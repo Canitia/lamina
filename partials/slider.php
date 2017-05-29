@@ -1,6 +1,6 @@
 
 
- <div id="carousel" class="carousel slide hidden-xs-down" data-ride="carousel">
+ <div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
 
         <?php		
