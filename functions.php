@@ -63,7 +63,7 @@ function cerulean_sidebars() {
 		'description' => __( 'Main sidebar.', 'cerulean-for-wordpress' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
-		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar">',
+		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar" style="color:' . get_theme_mod( 'set_itemheader_color') . '">',
 		'after_title' => '</h1>'
 		)
 	);
