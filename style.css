@@ -244,7 +244,6 @@ select  {
 
 .badge {
 	color: #979797;
-    float: right;
     margin-right: 10px;
     font-weight: 400;
 }
@@ -726,27 +725,14 @@ footer {
 
 	.collection-item {
 		padding-left: initial;
-		line-height: 1;
+		line-height: normal;
+		padding-top: 10px;
 	}
 
 	.collection-item > p,
 	.collection-item > a > p
  	{
-		padding-top:15px;
-    	padding-bottom: 10px;
-		margin-top: 0;
-		margin-bottom: 5px;
-	}
-
-	@-moz-document url-prefix() {
-		.collection-item > p,
-		.collection-item > a > p
-		{
-			padding-top:15px;
-			padding-bottom: 0px;
-			margin-top: 0;
-			margin-bottom: 0;
-		}		
+    	padding-bottom: 0;
 	}
 
 	.comment-author > cite {
@@ -807,17 +793,6 @@ footer {
 
 	.collection-item {
 		line-height: 1.2;
-	}
-
-	@-moz-document url-prefix() {
-		.collection-item > p,
-		.collection-item > a > p
-		{
-			padding-top:15px;
-			padding-bottom: 0px;
-			margin-top: 0;
-			margin-bottom: 0;
-		}		
 	}
 
 	.collection-item > p,
@@ -882,17 +857,6 @@ footer {
     	padding-bottom: 15px;
 		margin-top: 0;
 		margin-bottom: 0;
-	}
-
-	@-moz-document url-prefix() {
-		.collection-item > p,
-		.collection-item > a > p
-		{
-			padding-top:15px;
-			padding-bottom: 0px;
-			margin-top: 0;
-			margin-bottom: 0;
-		}		
 	}
 
 	.text-left-title-featured-sidebar {
