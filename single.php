@@ -41,7 +41,7 @@
          <hr class="cat-links-hr" />
         <?php } ?>
          <?php if(has_tag()) { ?>
-             <?php the_tags( '<span class="label">Tags</span> ', ', ', ' ' ); ?> 
+             <?php the_tags( '<span class="label">'. _e("Tags", "cerulean-for-wordpress") . '</span> ', ', ', ' ' ); ?> 
         <hr class="cat-links-hr" />
         <?php } ?>
           </div>
