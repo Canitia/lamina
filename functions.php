@@ -149,18 +149,11 @@ function cerulean_pagination_numeric_posts_nav() {
 		$links[] = $paged + 1;
 	}
 
-	echo '<div class="pagination d-flex"><ul class="mx-auto">' . "\n";
+	echo '<div class="pagination"><ul class="mx-auto">' . "\n";
 
-
-	if ( $paged == 1 || $paged = null ) {
-		_e( '<li class="disabled"><i class="fa fa-chevron-left" aria-hidden="true"></i></li>' );
-	}
-	else {
-		/**	Previous Post Link */
-		if ( get_previous_posts_link() )
-			printf( '<li>%s</li>' . "\n", get_previous_posts_link('<i class="fa fa-chevron-left" aria-hidden="true"></i>') );
-
-	}
+	/**	Previous Post Link */
+	if ( get_previous_posts_link() )
+		printf( '<li>%s</li>' . "\n", get_previous_posts_link() );
 
 	/**	Link to first page, plus ellipses if necessary */
 	if ( ! in_array( 1, $links ) ) {
@@ -169,7 +162,7 @@ function cerulean_pagination_numeric_posts_nav() {
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
 
 		if ( ! in_array( 2, $links ) )
-			echo '<li class="pagination-tripledot">-</li>';
+			echo '<li class="pagination-dash">-</li>';
 	}
 
 	/**	Link to current page, plus 2 pages in either direction if necessary */
@@ -182,21 +175,15 @@ function cerulean_pagination_numeric_posts_nav() {
 	/**	Link to last page, plus ellipses if necessary */
 	if ( ! in_array( $max, $links ) ) {
 		if ( ! in_array( $max - 1, $links ) )
-			echo '<li class="pagination-tripledot">-</li>' . "\n";
+			echo '<li class="pagination-dash">-</li>' . "\n";
 
 		$class = $paged == $max ? ' class="active"' : '';
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
 	}
 
-	if ( $paged == $max ) {
-		printf( '<li class="disabled"><i class="fa fa-chevron-right" aria-hidden="true"></i></li>' );
-	}
-	else {
-			/**	Next Post Link */
-		if ( get_next_posts_link() )
-		printf( '<li>%s</li>' . "\n", get_next_posts_link('<i class="fa fa-chevron-right" aria-hidden="true"></i>') );
-
-	}
+	/**	Next Post Link */
+	if ( get_next_posts_link() )
+		printf( '<li>%s</li>' . "\n", get_next_posts_link() );
 
 	echo '</ul></div>' . "\n";
 }
