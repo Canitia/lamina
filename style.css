@@ -329,9 +329,7 @@ POST/ARTICLE HEADERS
 .post-content > ol li > ul li,
 .post-content > ol li > ul li,
 .post-content > ul li > ol li > ul li {
-	list-style-type: square !important;
-	margin-left: 40px;
-	margin-right: 40px;
+	list-style-type: square;
 	padding:5px;
 	line-height: 35px;
 }
@@ -340,9 +338,7 @@ POST/ARTICLE HEADERS
 .post-content > ul li > ol li,
 .post-content > ol li > ul li > ol li
  {
-	list-style-type: decimal !important;
-	margin-left: 40px;
-	margin-right: 40px;
+	list-style-type: decimal;
 	padding:5px;
 	line-height: 35px;
 	text-align: justify;
@@ -534,7 +530,7 @@ footer {
 		padding-top:15px;
     	padding-bottom: 10px;
 		margin-top: 16px;
-		margin-bottom: 5px;
+		margin-bottom: 16px;
 	}
 
 	.collection-item {
