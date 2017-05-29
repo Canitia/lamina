@@ -8,7 +8,7 @@
     <article>
       <h1 class="text-center"><?php the_title();?></h1>
       <div class="post-subitems text-center">
-        <i class="fa fa-clock-o"></i><time datetime="<?php the_time(get_option( 'date_format' )); ?>"><?php echo get_the_date();?></time>
+        <i class="fa fa-clock-o"></i><time datetime="<?php the_time('c'); ?>"><?php echo get_the_date();?></time>
         <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
       </div>
    <hr />

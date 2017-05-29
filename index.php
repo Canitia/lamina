@@ -14,7 +14,7 @@
     if ($paged < 2) {    //only show today section on page 1
     ?>
     <h1 class="text-left-title-featured-sidebar"><?php _e('Today', 'cerulean-for-wordpress'); ?></h1>
-    <ul class="collection">
+    <div class="collection">
      <?php
 
       $lastweek_args = array(
@@ -36,7 +36,7 @@
         while ( $lastweek_query->have_posts() ) {
           $lastweek_query->the_post();
           ?>
-        <li class="collection-item">
+        <div class="collection-item">
         <a href="<?php the_permalink(); ?>">
             <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
               <span class="badge">
@@ -45,12 +45,11 @@
             <?php echo the_date();?>
             </p>
         </a>
-        </li>
+        </div>
           <?php
         
         
       } ?>
-      </ul>
       <?php } else { ?>
 
             <p class="post-errortext"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'cerulean-for-wordpress'); ?></p>
@@ -61,7 +60,7 @@
       wp_reset_postdata(); 
       };
       ?>
-
+      </div>
 
     <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1>            
   <?php endif; ?>
@@ -73,7 +72,7 @@
  
  <?php 
  endif;?>
-    <ul class="collection">
+    <div class="collection">
     <?php
     $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1, 'paged' => $paged,
             'date_query'     => array(
@@ -87,15 +86,15 @@
     $main_query = new WP_Query( $args );
     if ( $main_query->have_posts() ) : 
       while ( $main_query->have_posts() ) : $main_query->the_post(); ?>
-        <li class="collection-item">
+        <div class="collection-item">
         <a href="<?php the_permalink(); ?>">
             <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
               <span class="badge">
-              <time datetime="<?php the_time(get_option( 'date_format' )); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
+              <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
             </span> 
             </p>
         </a>
-        </li>
+        </div>
         <?php endwhile; else: ?>
         <div class="post-content">
             <p><?php _e('Sorry, it seems there are no posts available.', 'cerulean-for-wordpress'); ?></p>
@@ -103,7 +102,7 @@
         </div><!-- post-content END! -->
               
     <?php endif; ?>
-    </ul>
+    </div>
 
   <!-- navigation?-->
   <?php cerulean_pagination_numeric_posts_nav(); ?>
