@@ -772,6 +772,10 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
 
+	.carousel-item {
+		max-height: 500px;
+	}
+
 	article {
 		padding-left: 15px;
 		padding-right:15px;
@@ -840,7 +844,6 @@ footer {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.carousel-item {
-		object-fit: cover;
 		max-height: 500px;
 	}
 
