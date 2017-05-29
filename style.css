@@ -314,7 +314,6 @@ POST/ARTICLE HEADERS
 
 *****************************************/
 .wp-post-image {
-	max-height: 500px;
 	object-fit: cover;
 }
 
