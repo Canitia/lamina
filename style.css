@@ -556,6 +556,10 @@ footer {
 		padding-right:0;
 	}
 
+	blockquote > p {
+		padding: 0;
+	}
+
 	.h3-join-the-conversation {
 		font-weight: 300 !important;
 		margin-left: 15px;
