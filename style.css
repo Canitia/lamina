@@ -683,6 +683,13 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 
+	.menu-item {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+    	padding-bottom: 20px;
+	}
+
 	.carousel-item {
 		max-height: 400px;
 	}
