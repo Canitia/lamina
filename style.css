@@ -677,6 +677,10 @@ footer {
 
 	.post-errortext {
 		margin-left: 0px;
+	}
+
+	img.avatar {
+		margin-left: 0;
 	}	
  }
 
@@ -702,6 +706,7 @@ footer {
 	img.avatar {
 		width:100px;
 		height:100px;
+		margin-left: 0;
 	}
 
 	.sidebar {
