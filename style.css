@@ -959,8 +959,8 @@ ul.commentlist {
 	background: whitesmoke;
 }
 
-.parent {
-	margin-left: 15px;
+.children {
+    padding-left: 15px;
 }
 
 .comment-respond,
