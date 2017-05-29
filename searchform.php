@@ -4,7 +4,7 @@
       <label>
           <input type="search" class="search-field"
               placeholder="<?php echo esc_attr_x( 'What are you looking for?', 'placeholder', 'cerulean-for-wordpress' ) ?>"
-              value="<?php echo trim( get_search_query() ); ?>" name="s"
+              value="<?php echo get_search_query() ?>" name="s"
               title="<?php echo esc_attr_x( 'Search for:', 'label', 'cerulean-for-wordpress' ) ?>" />
       </label>
       <input type="submit" class="search-submit btn float-right"
