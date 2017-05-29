@@ -48,17 +48,18 @@ Template Name: Search Page
         <div class="collection-item">
             <p><i class="fa fa-circle" aria-hidden="true"></i><?php _e('Sorry, it seems this search query has no posts.', 'cerulean-for-wordpress'); ?></p>
         </div>
-        </div>
+
 
         <?php get_search_form(); ?>
     <?php } ?>
+ </div>
+</div><!-- end main-content -->
 
-</div><!-- einde main-content -->
-</div><!-- end row -->
   <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
+</div><!-- end row -->
 </div><!-- container fluid END! -->
 
 <!-- start of footer -->
