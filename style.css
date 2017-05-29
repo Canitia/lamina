@@ -519,11 +519,6 @@ footer {
 		text-overflow: inherit;
 	}
 
-	.main-content {
-		padding-left: 0;
-		padding-right:0;
-	}
-
 	button.navbar-toggler.navbar-toggler-right {
 		top: 15px;
 	}
