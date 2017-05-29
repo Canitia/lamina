@@ -17,7 +17,7 @@ Template Name: Search Page
 
 <div class="main-content col-xs-12 col-md-8 col-lg-8">
  
-    <h1 class="text-left-title-featured-sidebar"><?php _e('Results for ', 'cerulean-for-wordpress'); echo '<strong>' . get_query_var("s") . '</strong>'; ?> </h1>
+    <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Results for ', 'cerulean-for-wordpress'); echo '<strong>' . get_query_var("s") . '</strong>'; ?> </h1>
     <div class="collection">
 
     <?php
