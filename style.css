@@ -839,6 +839,11 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+	.carousel-item {
+		object-fit: cover;
+		max-height: 500px;
+	}
+
 	.container-fluid {
 		max-width:1250px;
 	}
