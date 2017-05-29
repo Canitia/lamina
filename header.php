@@ -16,7 +16,7 @@
     <?php wp_head();?>
 </head>
 
-<body <?php body_class();?> style="color: #<?php echo get_header_textcolor();?> !important;">
+<body <?php body_class();?>>
 
 <!-- start of the actual header -->
 <header>
