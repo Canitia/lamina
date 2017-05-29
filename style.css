@@ -439,11 +439,13 @@ img.avatar {
   PAGINATION
 
 *****************************************/
+.pagination > .mx-auto {
+	padding-left: 0;
+}
+
 
 .pagination {
-	padding:15px;
-	margin-top: 0px !important;
-	background:white;
+	margin-top: 15px;
 }
 
 .pagination > .active {
