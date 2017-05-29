@@ -283,7 +283,6 @@ function cerulean_customizer( $wp_customize ) {
 				)
 			)
 		);
-
 	}
 add_action( 'customize_register', 'cerulean_customizer' );
 
