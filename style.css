@@ -729,12 +729,6 @@ footer {
 		padding-top: 10px;
 	}
 
-	.collection-item > p,
-	.collection-item > a > p
- 	{
-    	padding-bottom: 0;
-	}
-
 	.comment-author > cite {
     	font-size: 1.7em !important;
 	}
