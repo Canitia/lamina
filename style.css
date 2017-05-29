@@ -943,6 +943,10 @@ EXTERNAL libraries look-n-feel
 	padding-top: 15px;
 }
 
+ul.commentlist {
+    padding-left: 0;
+}
+
 .comment-reply-title {
 	font-size: 1.5rem !important;
 }
