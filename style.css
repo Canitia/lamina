@@ -540,6 +540,7 @@ footer {
 
 	.main-content > .collection > .collection-item > a > p > .fa-circle,
 	.main-content > .collection > .collection-item > p > .fa-circle, 
+	.collection > .post-errortext > .fa-circle,
 	.main-content > .collection > .collection-item > a > p > .fa-star	{
 		margin-left: 12px;
 	}
