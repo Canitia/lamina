@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-29 16:17+0000\n"
-"PO-Revision-Date: 2017-05-29 16:17+0000\n"
+"POT-Creation-Date: 2017-05-29 17:07+0000\n"
+"PO-Revision-Date: 2017-05-29 17:07+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,13 +13,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:317
-msgid "Text color"
-msgstr "Text kleur"
-
-#: functions.php:329
-msgid "Link color"
-msgstr "Link kleur"
+#: single.php:44
+msgid "Tags"
+msgstr "Tags"
 
 #: 404.php:12
 msgid "Error"
@@ -89,6 +85,14 @@ msgstr "Verplaats sidebar naar links?"
 #: functions.php:305
 msgid "Header item Color"
 msgstr "Headeritems kleur"
+
+#: functions.php:317
+msgid "Text color"
+msgstr "Text kleur"
+
+#: functions.php:329
+msgid "Link color"
+msgstr "Link kleur"
 
 #: functions.php:341
 msgid "Link hover color"
