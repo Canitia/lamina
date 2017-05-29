@@ -53,13 +53,11 @@ Template Name: Search Page
     <?php } ?>
 
 </div><!-- einde main-content -->
-
+</div><!-- end row -->
   <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
-
-</div><!-- end row -->
 </div><!-- container fluid END! -->
 
 <!-- start of footer -->
