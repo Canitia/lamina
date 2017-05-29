@@ -816,6 +816,10 @@ footer {
 		padding-right: 5px;
 	}
 
+	#wp-calendar caption {
+		margin-left: -15px;
+	}
+
 	#wp-calendar tbody td {
 		padding: 8px;
 	}
