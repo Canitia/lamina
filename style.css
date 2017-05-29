@@ -485,6 +485,10 @@ img.avatar {
     margin-right: 5px;
 }
 
+.pagination > ul > .disabled, .pagination > ul > .disabled:hover {
+    background: #f8f8f8;
+}
+
 .fa-chevron-right,
 .fa-chevron-left {
 	font-size: 1em !important;
