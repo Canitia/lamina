@@ -49,11 +49,15 @@
         endif;
     }
         
-    if ( is_single() ) {
-        the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+    if ( is_category() )
+     {
+        get_template_part( 'partials/slider' );
+
     }
 
-        if ( is_page() ) {
+    if ( is_single() || is_page() ) {
+
         the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+        
     }
 ?>
