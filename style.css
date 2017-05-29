@@ -533,6 +533,7 @@ footer {
  	{
 		padding-top:15px;
     	padding-bottom: 10px;
+		margin-top: 16px;
 		margin-bottom: 5px;
 	}
 
@@ -647,6 +648,16 @@ footer {
 		line-height: 1;
 	}
 
+	.collection-item > p,
+	.collection-item > a > p
+ 	{
+		padding-top:15px;
+    	padding-bottom: 10px;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
 		padding-bottom: 15px;
@@ -715,8 +726,10 @@ footer {
 	.collection-item > p,
 	.collection-item > a > p
  	{
-		padding-top:0;
-    	padding-bottom: 0;
+		padding-top:15px;
+    	padding-bottom: 10px;
+		margin-top: 0;
+		margin-bottom: 5px;
 	}
 
 	.comment-author > cite {
@@ -779,6 +792,15 @@ footer {
 		line-height: 1.2;
 	}
 
+	.collection-item > p,
+	.collection-item > a > p
+ 	{
+		padding-top:15px;
+    	padding-bottom: 10px;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
 	.search-box {
 		padding: 15px;
 	}
@@ -819,6 +841,15 @@ footer {
 
 	.collection-item {
 		line-height: 1.2;
+	}
+
+	.collection-item > p,
+	.collection-item > a > p
+ 	{
+		padding-top:15px;
+    	padding-bottom: 10px;
+		margin-top: 0;
+		margin-bottom: 5px;
 	}
 
 	.text-left-title-featured-sidebar {
