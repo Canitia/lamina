@@ -245,6 +245,20 @@ function cerulean_customizer( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'set_text_color',
+		array(
+			'default'     => '#000000'
+		)
+	);
+
+	$wp_customize->add_setting(
+		'set_link_hover_color',
+		array(
+			'default'     => '#979797'
+		)
+	);
+
 	$wp_customize->add_control(
 		'display_slider',
 		array(
@@ -283,6 +297,31 @@ function cerulean_customizer( $wp_customize ) {
 				)
 			)
 		);
+
+		$wp_customize->add_control(
+			new WP_Customize_Color_Control(
+				$wp_customize,
+				'text_color',
+				array(
+					'label'      => __( 'Text and link color', 'cerulean-for-wordpress' ),
+					'section'    => 'colors',
+					'settings'   => 'set_text_color'
+				)
+			)
+		);
+
+		$wp_customize->add_control(
+			new WP_Customize_Color_Control(
+				$wp_customize,
+				'link_hover_color',
+				array(
+					'label'      => __( 'Link hover color', 'cerulean-for-wordpress' ),
+					'section'    => 'colors',
+					'settings'   => 'set_link_hover_color'
+				)
+			)
+		);
+
 	}
 add_action( 'customize_register', 'cerulean_customizer' );
 

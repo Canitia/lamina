@@ -12,7 +12,9 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
     <style type="text/css">
-        #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?> !important};
+        #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?> !important; }
+        p, a { color: <?php echo get_theme_mod( 'set_text_color' ); ?> !important; }
+        a:hover { color: <?php echo get_theme_mod( 'set_link_hover_color' ); ?> !important; }
     </style>
     <!-- close with wp_head -->
     <?php wp_head();?>

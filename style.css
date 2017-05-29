@@ -135,10 +135,6 @@ dt {
     font-weight: 500;
 }
 
-.collection-item > a {
-	color: black;
-}
-
 p > a:focus,
 p > a:hover
 {
@@ -1137,10 +1133,6 @@ dl.wp-caption {
 
 .widget > ul > li:hover {
 	background-color: #ebebeb;
-}
-
-.widget > ul > li > a, a {
-	color:black;
 }
 
 /* all list items */
