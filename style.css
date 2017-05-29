@@ -971,6 +971,11 @@ ul.commentlist {
 	border: 1px solid #ebebeb;
 }
 
+.comment-body p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .comment {
 	list-style: none;
 }
