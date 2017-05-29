@@ -241,21 +241,24 @@ function cerulean_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'set_itemheader_color',
 		array(
-			'default'     => '#979797'
+			'default'     => '#979797',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
 	$wp_customize->add_setting(
 		'set_text_color',
 		array(
-			'default'     => '#000000'
+			'default'     => '#000000',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
 	$wp_customize->add_setting(
 		'set_link_hover_color',
 		array(
-			'default'     => '#979797'
+			'default'     => '#979797',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
