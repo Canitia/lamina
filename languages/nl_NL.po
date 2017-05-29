@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-29 15:11+0000\n"
-"PO-Revision-Date: 2017-05-29 15:12+0000\n"
+"POT-Creation-Date: 2017-05-29 16:17+0000\n"
+"PO-Revision-Date: 2017-05-29 16:17+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,17 +13,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:294
-msgid "Header item Color"
-msgstr "Headeritems kleur"
+#: functions.php:317
+msgid "Text color"
+msgstr "Text kleur"
 
-#: functions.php:306
-msgid "Text and link color"
-msgstr "Tekst en link kleuren"
-
-#: functions.php:318
-msgid "Link hover color"
-msgstr "Link hover kleur"
+#: functions.php:329
+msgid "Link color"
+msgstr "Link kleur"
 
 #: 404.php:12
 msgid "Error"
@@ -78,17 +74,25 @@ msgstr "Cerulean Instellingen"
 msgid "Tweak Cerulean to your liking."
 msgstr "Stel Cerulean in zoals jij dat wilt."
 
-#: functions.php:265
+#: functions.php:276
 msgid "Show slider?"
 msgstr "Laat slider zien?"
 
-#: functions.php:274
+#: functions.php:285
 msgid "Show Today section?"
 msgstr "Laat 'vandaag' sectie zien?"
 
-#: functions.php:283
+#: functions.php:294
 msgid "Move sidebar to the left?"
 msgstr "Verplaats sidebar naar links?"
+
+#: functions.php:305
+msgid "Header item Color"
+msgstr "Headeritems kleur"
+
+#: functions.php:341
+msgid "Link hover color"
+msgstr "Link hover kleur"
 
 #: index.php:18
 msgid "Today"
