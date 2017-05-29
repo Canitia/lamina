@@ -1083,6 +1083,7 @@ ul.children {
     float: right;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	color: white !important;
 }
 
 /* add some styling to disqus */
