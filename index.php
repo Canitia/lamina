@@ -7,7 +7,8 @@
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
 
-    <div class="main-content col-xs-12 col-md-8 col-lg-8">
+  <div class="main-content col-xs-12 col-md-8 col-lg-8">
+
     <?php 
      if ( get_theme_mod( 'display_today' ) == 1 ) : //show today section or not
      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
@@ -50,18 +51,17 @@
         
         
       } ?>
+              </div> <!-- end first collection -->
       <?php } else { ?>
 
             <p class="post-errortext"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'cerulean-for-wordpress'); ?></p>
-
+        </div> <!-- end first collection -->
       <?php     
       }
 
       wp_reset_postdata(); 
       };
       ?>
-      </div>
-
     <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1>            
   <?php endif; ?>
 
@@ -102,18 +102,20 @@
         </div><!-- post-content END! -->
               
     <?php endif; ?>
-    </div>
+    </div><!-- close collection 2 -->
 
   <!-- navigation?-->
   <?php cerulean_pagination_numeric_posts_nav(); ?>
-  </div><!-- einde md8 -->  <!-- column end! -->
+
+</div> <!-- close content main -->
 
   <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
-  </div><!-- end container inside -->
-</div><!-- container fluid END! -->
 
+
+</div> <!-- row main -->
+</div> <!-- fluid main -->
 <!-- start of footer -->
 <?php get_footer(); ?>
