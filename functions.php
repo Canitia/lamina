@@ -35,6 +35,12 @@ add_action( 'wp_enqueue_scripts', 'cerulean_theme_scripts' );
 
 add_theme_support( "title-tag" );
 
+$bgargs = array(
+	'default-color' => '000000',
+);
+
+add_theme_support( 'custom-background', $bgargs );
+
 add_theme_support( 'automatic-feed-links' );
 
 add_theme_support( "post-thumbnails" );
