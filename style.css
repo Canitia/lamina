@@ -972,6 +972,10 @@ EXTERNAL libraries look-n-feel
 	border: 1px solid #ebebeb;
 }
 
+.comment {
+	list-style: none;
+}
+
 .comment.odd {
 	background-color: #f8f8f8;
 }
