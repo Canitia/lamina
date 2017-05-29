@@ -738,6 +738,17 @@ footer {
 		margin-bottom: 5px;
 	}
 
+	@-moz-document url-prefix() {
+		.collection-item > p,
+		.collection-item > a > p
+		{
+			padding-top:15px;
+			padding-bottom: 0px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}		
+	}
+
 	.comment-author > cite {
     	font-size: 1.7em !important;
 	}
@@ -796,6 +807,17 @@ footer {
 
 	.collection-item {
 		line-height: 1.2;
+	}
+
+	@-moz-document url-prefix() {
+		.collection-item > p,
+		.collection-item > a > p
+		{
+			padding-top:15px;
+			padding-bottom: 0px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}		
 	}
 
 	.collection-item > p,
@@ -857,9 +879,20 @@ footer {
 	.collection-item > a > p
  	{
 		padding-top:15px;
-    	padding-bottom: 10px;
+    	padding-bottom: 15px;
 		margin-top: 0;
-		margin-bottom: 5px;
+		margin-bottom: 0;
+	}
+
+	@-moz-document url-prefix() {
+		.collection-item > p,
+		.collection-item > a > p
+		{
+			padding-top:15px;
+			padding-bottom: 0px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}		
 	}
 
 	.text-left-title-featured-sidebar {

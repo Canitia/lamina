@@ -5,8 +5,8 @@ Template Name: Search Page
 ?>
 
 <?php get_header(); ?>
- <?php get_template_part( 'partials/slider' ); ?>
- 
+<?php get_template_part( 'partials/slider' ); ?>
+
 <div class="container-fluid">
 
 <div class="row">
