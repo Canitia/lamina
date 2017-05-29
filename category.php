@@ -29,7 +29,7 @@
 
               <!-- error handling -->
               <?php endwhile; else: ?>
-                <div class="post-content post-errortext">
+                <div class="post-content">
                     <p><?php _e('Sorry, there are no posts in this category.', 'cerulean-for-wordpress'); ?></p>
                     <?php get_search_form(); ?>
                 </div><!-- post-content END! -->
