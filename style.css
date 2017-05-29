@@ -150,6 +150,10 @@ select  {
   border-bottom:1px solid #ebebeb;
 }
 
+.strong-search {
+	font-size: 140%;
+}
+
 .truncate {
   white-space: nowrap;
   overflow: hidden;
