@@ -159,7 +159,7 @@ function cerulean_pagination_numeric_posts_nav() {
 	if ( ! in_array( 1, $links ) ) {
 		$class = 1 == $paged ? ' class="active"' : '';
 
-		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, get_pagenum_link( 1, true ), '1' );
 
 		if ( ! in_array( 2, $links ) )
 			echo '<li class="pagination-dash">-</li>';
@@ -169,7 +169,7 @@ function cerulean_pagination_numeric_posts_nav() {
 	sort( $links );
 	foreach ( (array) $links as $link ) {
 		$class = $paged == $link ? ' class="active"' : '';
-		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, get_pagenum_link( $link, 1, true ), $link );
 	}
 
 	/**	Link to last page, plus ellipses if necessary */
@@ -178,7 +178,7 @@ function cerulean_pagination_numeric_posts_nav() {
 			echo '<li class="pagination-dash">-</li>' . "\n";
 
 		$class = $paged == $max ? ' class="active"' : '';
-		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+		printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, get_pagenum_link( $max, 1, true ), $max );
 	}
 
 	/**	Next Post Link */
