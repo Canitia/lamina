@@ -11,7 +11,9 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
-
+    <style type="text/css">
+        #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>; }
+    </style>
     <!-- close with wp_head -->
     <?php wp_head();?>
 </head>

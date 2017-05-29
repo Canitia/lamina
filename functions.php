@@ -238,6 +238,13 @@ function cerulean_customizer( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'set_itemheader_color',
+		array(
+			'default'     => '#979797'
+		)
+	);
+
 	$wp_customize->add_control(
 		'display_slider',
 		array(
@@ -263,6 +270,18 @@ function cerulean_customizer( $wp_customize ) {
 			'section' => 'settings_section_one',
 			'type' => 'checkbox',
 		)
+		);
+
+		$wp_customize->add_control(
+			new WP_Customize_Color_Control(
+				$wp_customize,
+				'itemheader_color',
+				array(
+					'label'      => __( 'Header item Color', 'cerulean-for-wordpress' ),
+					'section'    => 'colors',
+					'settings'   => 'set_itemheader_color'
+				)
+			)
 		);
 
 	}
