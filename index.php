@@ -68,7 +68,14 @@
     <?php 
   if ( get_theme_mod( 'display_today' ) == 0 ) :
    ?>
-       <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'cerulean-for-wordpress');?></h1>            
+      
+      <?php if ($paged <= 1) { ?>
+       <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'cerulean-for-wordpress');?></h1>        
+      <?php }
+      else { ?>
+        <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1> 
+      <?php }
+      ?>    
  
  <?php 
  endif;?>
