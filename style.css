@@ -194,6 +194,10 @@ select  {
     padding: 20px;
 }
 
+.menu-item > a {
+	color: black;
+}
+
 .menu-item:hover {
     background-color: #ebebeb;
 }
