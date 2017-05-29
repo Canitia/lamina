@@ -31,9 +31,7 @@
      ?>
     </a>
     <div class="navbar-collapse collapse" id="collapsingNavbar3">
-          <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <?php bootstrap_nav(); ?>
-        </ul>
     </div>
 </nav>
 
