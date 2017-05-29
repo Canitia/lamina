@@ -998,10 +998,9 @@ ul.children {
 	border-radius: 50%;
 	position: relative;
 	float:none;
-	width: 80px;
-	height: 80px;
-	margin-top: 0;
-	margin-bottom: -10px;
+	width: 60px;
+    height: 60px;
+    margin-top: 0;
 	margin-left: 0;
 }
 
@@ -1018,6 +1017,7 @@ ul.children {
 .comment-author > cite {
     font-size: 2.3em;
     font-weight: 300;
+	vertical-align: middle;
 }
 
 .comment-meta {
