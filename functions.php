@@ -36,7 +36,7 @@ add_action( 'wp_enqueue_scripts', 'cerulean_theme_scripts' );
 add_theme_support( "title-tag" );
 
 $bgargs = array(
-	'default-color' => '000000',
+	'default-color' => 'ffffff',
 );
 
 add_theme_support( 'custom-background', $bgargs );
