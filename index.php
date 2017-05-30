@@ -7,7 +7,7 @@
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
 
-  <div class="main-content col-xs-12 col-md-8 col-lg-8">
+  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
 
     <?php 
     if ( get_theme_mod( 'display_today' ) == 1 ) : //show today section or not

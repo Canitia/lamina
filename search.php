@@ -16,7 +16,7 @@ Template Name: Search Page
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
 
-<div class="main-content col-xs-12 col-md-8 col-lg-8">
+<div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
  
     <h1 class="text-left-title-featured-sidebar truncate" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Results for ', 'canitia'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
     <div class="collection">
