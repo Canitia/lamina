@@ -294,7 +294,8 @@ article > h1:first-child {
 }
 
 .widget_recent_entries > ul,
-#recentcomments {
+#recentcomments,
+.widget widget_archive > ul {
 	padding-left: 0;
 }
 
