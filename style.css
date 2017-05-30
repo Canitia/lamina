@@ -48,14 +48,6 @@ h4 {
 	font-weight: 300 !important;	
 }
 
-a {
-	color: black;
-}
-
-a:hover {
-	color: #979797;
-}
-
 p > a {
 	text-decoration: underline;
 }
