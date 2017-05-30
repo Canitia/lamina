@@ -16,7 +16,7 @@ if ( ! isset( $content_width ) ) {
  */
 
 
-function cerulean_theme_scripts() {
+function canitia_theme_scripts() {
 
 	wp_enqueue_script( 'tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', false );
 
@@ -31,7 +31,7 @@ function cerulean_theme_scripts() {
 	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css', false );	
 }
 
-add_action( 'wp_enqueue_scripts', 'cerulean_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'canitia_theme_scripts' );
 
 add_theme_support( "title-tag" );
 
@@ -45,7 +45,7 @@ add_theme_support( 'automatic-feed-links' );
 
 add_theme_support( "post-thumbnails" );
 
-add_action( 'widgets_init', 'cerulean_sidebars' );
+add_action( 'widgets_init', 'canitia_sidebars' );
 
 
 /**
@@ -59,8 +59,8 @@ function cerulean_sidebars() {
 	register_sidebar(
 		array(
 		'id' => 'primary',
-		'name' => __( 'Primary', 'cerulean-for-wordpress' ),
-		'description' => __( 'Main sidebar.', 'cerulean-for-wordpress' ),
+		'name' => __( 'Primary', 'canitia' ),
+		'description' => __( 'Main sidebar.', 'canitia' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar" style="color:' . get_theme_mod( 'set_itemheader_color') . '">',
@@ -77,7 +77,7 @@ function cerulean_sidebars() {
 
 function register_mainmenu() {
 	
-	register_nav_menu('header-menu',__( 'Header Menu', 'cerulean-for-wordpress' ));
+	register_nav_menu('header-menu',__( 'Header Menu', 'canitia' ));
 	
 }
 
@@ -126,7 +126,7 @@ add_filter( 'comments_template', function( $theme_template) {
 }, 9 );
 
 /* shoutout to WPBeginner -> http://www.wpbeginner.com/wp-themes/how-to-add-numeric-pagination-in-your-wordpress-theme/ */
-function cerulean_pagination_numeric_posts_nav() {
+function canitia_pagination_numeric_posts_nav() {
 
 	if( is_singular() )
 		return;
@@ -203,12 +203,12 @@ function cerulean_sanitize_checkbox( $checked ) {
 /**
  * Adds the individual sections, settings, and controls to the theme customizer
  */
-function cerulean_customizer( $wp_customize ) {
+function canitia_customizer( $wp_customize ) {
     $wp_customize->add_section(
         'settings_section_one',
         array(
-            'title' =>  __('Cerulean Settings', 'cerulean-for-wordpress'),
-            'description' => __('Tweak Cerulean to your liking.', 'cerulean-for-wordpress'),
+            'title' =>  __('Canitia Settings', 'canitia'),
+            'description' => __('Tweak Canitia to your liking.', 'canitia'),
             'priority' => 35,
         )
     );
@@ -217,7 +217,7 @@ function cerulean_customizer( $wp_customize ) {
 		'display_slider',
 		array(
 			'default' => true,
-			'sanitize_callback'	=> 'cerulean_sanitize_checkbox',
+			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
 		)
 	);
 
@@ -226,7 +226,7 @@ function cerulean_customizer( $wp_customize ) {
 		'display_today',
 		array(
 			'default' => true,
-			'sanitize_callback'	=> 'cerulean_sanitize_checkbox',
+			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
 		)
 	);
 
@@ -234,7 +234,7 @@ function cerulean_customizer( $wp_customize ) {
 		'move_sidebar_left',
 		array(
 			'default' => false,
-			'sanitize_callback'	=> 'cerulean_sanitize_checkbox',
+			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
 		)
 	);
 
@@ -273,7 +273,7 @@ function cerulean_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'display_slider',
 		array(
-			'label' =>  __('Show slider?', 'cerulean-for-wordpress'),
+			'label' =>  __('Show slider?', 'canitia'),
 			'section' => 'settings_section_one',
 			'type' => 'checkbox',
 		)
@@ -282,7 +282,7 @@ function cerulean_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'display_today',
 		array(
-			'label' =>  __('Show Today section?', 'cerulean-for-wordpress'),
+			'label' =>  __('Show Today section?', 'canitia'),
 			'section' => 'settings_section_one',
 			'type' => 'checkbox',
 		)
@@ -291,7 +291,7 @@ function cerulean_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'move_sidebar_left',
 		array(
-			'label' => __('Move sidebar to the left?', 'cerulean-for-wordpress'),
+			'label' => __('Move sidebar to the left?', 'canitia'),
 			'section' => 'settings_section_one',
 			'type' => 'checkbox',
 		)
@@ -302,7 +302,7 @@ function cerulean_customizer( $wp_customize ) {
 				$wp_customize,
 				'itemheader_color',
 				array(
-					'label'      => __( 'Header item Color', 'cerulean-for-wordpress' ),
+					'label'      => __( 'Header item Color', 'canitia' ),
 					'section'    => 'colors',
 					'settings'   => 'set_itemheader_color'
 				)
@@ -314,7 +314,7 @@ function cerulean_customizer( $wp_customize ) {
 				$wp_customize,
 				'text_color',
 				array(
-					'label'      => __( 'Text color', 'cerulean-for-wordpress' ),
+					'label'      => __( 'Text color', 'canitia' ),
 					'section'    => 'colors',
 					'settings'   => 'set_text_color'
 				)
@@ -326,7 +326,7 @@ function cerulean_customizer( $wp_customize ) {
 				$wp_customize,
 				'link_color',
 				array(
-					'label'      => __( 'Link color', 'cerulean-for-wordpress' ),
+					'label'      => __( 'Link color', 'canitia' ),
 					'section'    => 'colors',
 					'settings'   => 'set_link_color'
 				)
@@ -338,7 +338,7 @@ function cerulean_customizer( $wp_customize ) {
 				$wp_customize,
 				'link_hover_color',
 				array(
-					'label'      => __( 'Link hover color', 'cerulean-for-wordpress' ),
+					'label'      => __( 'Link hover color', 'canitia' ),
 					'section'    => 'colors',
 					'settings'   => 'set_link_hover_color'
 				)
@@ -346,14 +346,14 @@ function cerulean_customizer( $wp_customize ) {
 		);
 
 	}
-add_action( 'customize_register', 'cerulean_customizer' );
+add_action( 'customize_register', 'canitia_customizer' );
 
 
 /**
  * add custom site logo (to header)
  */
 
-function cerulean_setup() {
+function canitia_setup() {
 	
 	
 	add_theme_support( 'custom-logo', array(

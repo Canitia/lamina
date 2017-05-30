@@ -15,7 +15,7 @@
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       if ($paged < 2) {    //only show today section on page 1
       ?>
-      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Today', 'cerulean-for-wordpress'); ?></h1>
+      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Today', 'canitia'); ?></h1>
       <div class="collection">
       <?php
 
@@ -42,7 +42,7 @@
           <a href="<?php the_permalink(); ?>">
               <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
                 <span class="badge">
-                <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
+                <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
               </span> 
               <?php echo the_date();?>
               </p>
@@ -55,7 +55,7 @@
                 </div> <!-- end first collection -->
         <?php } else { ?>
 
-              <p class="post-errortext"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'cerulean-for-wordpress'); ?></p>
+              <p class="post-errortext"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'canitia'); ?></p>
           </div> <!-- end first collection -->
         <?php     
         }
@@ -63,7 +63,7 @@
         wp_reset_postdata(); 
         };
         ?>
-      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1>            
+      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Older posts', 'canitia');?></h1>            
   <?php endif; ?>
 
   <!-- end today section -->
@@ -73,10 +73,10 @@
   if ( get_theme_mod( 'display_today' ) == 0 ) :   ?>
       
       <?php if ($paged <= 1) { ?>
-       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Latest', 'cerulean-for-wordpress');?></h1>        
+       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Latest', 'canitia');?></h1>        
       <?php }
       else { ?>
-        <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Older posts', 'cerulean-for-wordpress');?></h1> 
+        <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Older posts', 'canitia');?></h1> 
       <?php }
       ?>    
  <?php endif;?>
@@ -100,14 +100,14 @@
           <a href="<?php the_permalink(); ?>">
               <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
                 <span class="badge">
-                <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
+                <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
               </span> 
               </p>
           </a>
           </div>
           <?php endwhile; else: ?>
           <div class="post-content">
-              <p><?php _e('Sorry, it seems there are no posts available.', 'cerulean-for-wordpress'); ?></p>
+              <p><?php _e('Sorry, it seems there are no posts available.', 'canitia'); ?></p>
               <?php get_search_form(); ?>
           </div><!-- post-content END! -->
                 
@@ -115,7 +115,7 @@
   </div><!-- close collection 2 -->
 
   <!-- navigation?-->
-  <?php cerulean_pagination_numeric_posts_nav(); ?>
+  <?php canitia_pagination_numeric_posts_nav(); ?>
 
 </div> <!-- close content main -->
 

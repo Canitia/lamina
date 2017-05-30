@@ -18,7 +18,7 @@ Template Name: Search Page
 
 <div class="main-content col-xs-12 col-md-8 col-lg-8">
  
-    <h1 class="text-left-title-featured-sidebar truncate" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Results for ', 'cerulean-for-wordpress'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
+    <h1 class="text-left-title-featured-sidebar truncate" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Results for ', 'canitia'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
     <div class="collection">
 
     <?php
@@ -36,7 +36,7 @@ Template Name: Search Page
                     <a href="<?php the_permalink(); ?>">
                     <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
                         <span class="badge">
-                            <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'cerulean-for-wordpress'); ?></time>
+                            <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
                         </span> 
                     </p>
                     </a>
@@ -46,7 +46,7 @@ Template Name: Search Page
     } else {?>
 
         <div class="collection-item">
-            <p><i class="fa fa-circle" aria-hidden="true"></i><?php _e('Sorry, it seems this search query has no posts.', 'cerulean-for-wordpress'); ?></p>
+            <p><i class="fa fa-circle" aria-hidden="true"></i><?php _e('Sorry, it seems this search query has no posts.', 'canitia'); ?></p>
         </div>
 
 

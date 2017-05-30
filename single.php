@@ -27,7 +27,7 @@
 
         <div class="cat-links">
         <?php if(has_category()) { ?>
-          <span class="label"><?php _e("Posted in", "cerulean-for-wordpress"); ?></span>
+          <span class="label"><?php _e("Posted in", "canitia"); ?></span>
           <?php $categories = get_the_category();
             $separator = ', ';
             $output = '';
@@ -41,13 +41,13 @@
          <hr class="cat-links-hr" />
         <?php } ?>
          <?php if(has_tag()) { ?>
-             <?php the_tags( '<span class="label">'. __("Tags", "cerulean-for-wordpress") . '</span> ', ', ', ' ' ); ?> 
+             <?php the_tags( '<span class="label">'. __("Tags", "canitia") . '</span> ', ', ', ' ' ); ?> 
         <hr class="cat-links-hr" />
         <?php } ?>
           </div>
        </article><!-- close article -->
        <!-- let user enter a comment -->
-      <h3 class="h3-join-the-conversation" style="<?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h3>
+      <h3 class="h3-join-the-conversation" style="<?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Join the conversation', 'canitia'); ?></h3>
       <?php comments_template(); ?>
   
     </div><!-- close post class div -->
@@ -56,7 +56,7 @@
       <!-- error handling -->
       <?php endwhile; else: ?>
           <div class="post-content">
-            <p><?php _e('Sorry, this post can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
+            <p><?php _e('Sorry, this post can not be found or has been deleted.', 'canitia'); ?></p>
             <?php get_search_form(); ?>
         </div><!-- post-content END! -->
       <?php endif; ?>

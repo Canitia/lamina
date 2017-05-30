@@ -21,7 +21,7 @@
   <!-- error handling -->
   <?php endwhile; else: ?>
           <div class="post-content post-errortext">
-            <p><?php _e('Sorry, this page can not be found or has been deleted.', 'cerulean-for-wordpress'); ?></p>
+            <p><?php _e('Sorry, this page can not be found or has been deleted.', 'canitia'); ?></p>
             <?php get_search_form(); ?>
         </div><!-- post-content END! -->
   <?php endif;?>
