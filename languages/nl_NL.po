@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-26 15:06+0000\n"
-"PO-Revision-Date: 2017-05-26 15:06+0000\n"
+"POT-Creation-Date: 2017-05-30 10:43+0000\n"
+"PO-Revision-Date: 2017-05-30 10:43+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,19 +13,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: index.php:8
-msgid "Today"
-msgstr "Vandaag"
+#. URI of the theme
+msgid "https://michaelboumann.info/collection/#canitia"
+msgstr "https://michaelboumann.info/collection/#canitia"
 
-#: index.php:50
-msgid "Older posts"
-msgstr "Oudere berichten"
-
-#: 404.php:6
+#: 404.php:12
 msgid "Error"
 msgstr "Foutmelding"
 
-#: 404.php:8
+#: 404.php:14
 msgid ""
 "This post/page doesnt exist anymore or has been renamed. Try searching for "
 "it."
@@ -33,44 +29,96 @@ msgstr ""
 "Deze post/pagina bestaat niet meer of is van naam veranderd. Probeer het "
 "onderstaande zoekveld om uw post te vinden."
 
-#: author.php:5
+#: author.php:11
 msgid "Latest posts by"
 msgstr "Laatste berichten van"
 
-#: author.php:16 category.php:16 index.php:35 index.php:69 search.php:32
-#: tag.php:15
+#: author.php:22 category.php:20 index.php:45 index.php:103 search.php:39
+#: tag.php:21
 msgid "ago"
 msgstr "geleden"
 
-#: author.php:25
+#: author.php:31
 msgid "Sorry, there are no posts by this author."
 msgstr "Sorry, er zijn geen berichten van deze auteur."
 
-#: category.php:5
+#: category.php:9
 msgid "Latest posts in"
 msgstr "Laatste berichten van"
 
-#: functions.php:69
+#: category.php:33
+msgid "Sorry, there are no posts in this category."
+msgstr "Sorry, er zijn geen posts in deze categorie. "
+
+#: functions.php:62
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:70
+#: functions.php:63
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:87
+#: functions.php:80
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: header.php:51
-msgid "Menu"
-msgstr "Menu"
+#: functions.php:210
+msgid "Canitia Settings"
+msgstr "Canitia Instellingen"
+
+#: functions.php:211
+msgid "Tweak Canitia to your liking."
+msgstr "Stel Canitia in zoals jij dat wilt."
+
+#: functions.php:276
+msgid "Show slider?"
+msgstr "Laat slider zien?"
+
+#: functions.php:285
+msgid "Show Today section?"
+msgstr "Laat 'vandaag' sectie zien?"
+
+#: functions.php:294
+msgid "Move sidebar to the left?"
+msgstr "Verplaats sidebar naar links?"
+
+#: functions.php:305
+msgid "Header item Color"
+msgstr "Headeritems kleur"
+
+#: functions.php:317
+msgid "Text color"
+msgstr "Text kleur"
+
+#: functions.php:329
+msgid "Link color"
+msgstr "Link kleur"
+
+#: functions.php:341
+msgid "Link hover color"
+msgstr "Link hover kleur"
+
+#: index.php:18
+msgid "Today"
+msgstr "Vandaag"
+
+#: index.php:58
+msgid "It seems there are no posts today."
+msgstr "Het lijkt erop dat er vandaag geen berichten geplaatst zijn."
+
+#: index.php:66 index.php:79
+msgid "Older posts"
+msgstr "Oudere berichten"
 
 #: index.php:76
+msgid "Latest"
+msgstr "Laatste"
+
+#: index.php:110
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
-#: page.php:23
+#: page.php:24
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
@@ -78,11 +126,11 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 msgid "Search Page"
 msgstr "Zoekpagina"
 
-#: search.php:14
+#: search.php:21
 msgid "Results for "
 msgstr "Resultaten voor"
 
-#: search.php:41
+#: search.php:49
 msgid "Sorry, it seems this search query has no posts."
 msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
 
@@ -92,8 +140,8 @@ msgstr "Zoeken"
 
 #: searchform.php:6
 msgctxt "placeholder"
-msgid "Search ..."
-msgstr "Zoekterm ..."
+msgid "What are you looking for?"
+msgstr "Waar zoek je naar?"
 
 #: searchform.php:8
 msgctxt "label"
@@ -109,29 +157,33 @@ msgstr "Gaan"
 msgid "There are currently no widgets enabled."
 msgstr "Er zijn momenteel geen widgets actief."
 
-#: single.php:25
+#: single.php:30
 msgid "Posted in"
 msgstr "Gepost in"
 
-#: single.php:42
+#: single.php:44
+msgid "Tags"
+msgstr "Tags"
+
+#: single.php:50
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
 
-#: single.php:50
+#: single.php:59
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
-#: tag.php:5
+#: tag.php:11
 msgid "Latest posts tagged"
 msgstr "Laatste berichten getagged met"
 
-#: tag.php:24
+#: tag.php:31
 msgid "Sorry, no posts can be found within this tag."
 msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 
 #. Name of the theme
-msgid "Cerulean for Wordpress"
-msgstr "Cerulean voor Wordpress"
+msgid "Canitia"
+msgstr "Canitia"
 
 #. Description of the theme
 msgid ""
@@ -141,10 +193,6 @@ msgstr ""
 "Elegant en toch simpel. Simpliciteit met functionaliteit zoals costum-design "
 "tag/page/error en zoekpagina's, dynamische navigatiemenu's, logo "
 "ondersteuning en meer."
-
-#. URI of the theme
-msgid "https://michaelboumann.info/collection/#ceruleanwp"
-msgstr "https://michaelboumann.info/collection/#ceruleanwp"
 
 #. Author of the theme
 msgid "Michael Boumann"

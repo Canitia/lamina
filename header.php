@@ -6,12 +6,17 @@
     <meta name="generator" content="WordPress <?php bloginfo('version');?>" />
     <meta name="description" content="<?php bloginfo( 'description' );?>" />
     <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() );?>/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
-
+    <style type="text/css">
+        #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?> !important; }
+        .container-fluid p, .post-errortext, .post-content p { color: <?php echo get_theme_mod( 'set_text_color', '#000000' ); ?> !important; }
+        .container-fluid a, .container-fluid a p { color: <?php echo get_theme_mod( 'set_link_color', '#000000' ); ?> !important; }
+        .container-fluid a:hover, .container-fluid a > p:hover { color: <?php echo get_theme_mod( 'set_link_hover_color', '#979797' ); ?> !important; }
+    </style>
     <!-- close with wp_head -->
     <?php wp_head();?>
 </head>
@@ -20,63 +25,39 @@
 
 <!-- start of the actual header -->
 <header>
-    <div class="navbar-fixed">
-    <nav class="white">
-      <div class="nav-wrapper">
-        <a href="#" data-activates="slide-out" class="button-collapse left"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        <?php if ( function_exists( 'the_custom_logo' ) ) {
-	
-	        the_custom_logo();
-            
-        }
-        ?>
-        <p class="brand-logo site-title">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="headerurl" style="color: #<?php echo get_header_textcolor();?> !important;"><?php bloginfo('name');?></a>
-        </p>
-
-         <div id="nav-mobile" class="right hide-on-med-and-down">
-           <?php
-            wp_nav_menu(
-                array(
-                 'theme_location' => 'header-menu',
-                  'container' => '',
-                  'fallback_cb' => false
-                )
-            );
-
-            ?>
-         </div>
-
-        <div id="slide-out" class="side-nav">
-            <p class="text-left-title-featured-sidebar sidenav-menu-header"><?php _e('Menu', 'cerulean-for-wordpress');?></p>
-          <?php
-            wp_nav_menu(
-                array(
-                 'theme_location' => 'header-menu',
-                 'container' => '',
-                 'fallback_cb' => false,
-                 'depth' => 0
-                )
-            );
-
-            ?>
-        </div>
-
-</div>
+<nav class="navbar navbar-light navbar-toggleable-sm justify-content-center">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
+    <a class="navbar-brand d-flex mr-auto site-title hidden-sm-down" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <?php    
+        bloginfo('name');
+     ?>
+    </a>
+    <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <?php bootstrap_nav(); ?>
+    </div>
 </nav>
 
-</div>
 </header>
 <?php
     if ( is_home() ) {
-        get_template_part( 'partials/slider' );
-        }
+
+        if ( get_theme_mod( 'display_slider' ) == 1 ) :
+            get_template_part( 'partials/slider' );
+        endif;
+    }
         
-    if ( is_single() ) {
-        the_post_thumbnail('full', ['class' => 'responsive-img', 'title' => 'Feature image']);
+    if ( is_category() )
+     {
+        get_template_part( 'partials/slider' );
+
     }
 
-        if ( is_page() ) {
-        the_post_thumbnail('full', ['class' => 'responsive-img', 'title' => 'Feature image']);
+    if ( is_single() || is_page() ) {
+
+        the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+        
     }
 ?>
