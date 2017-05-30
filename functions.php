@@ -63,7 +63,7 @@ function canitia_sidebars() {
 		'description' => __( 'Main sidebar.', 'canitia' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
-		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar" style="color:' . get_theme_mod( 'set_itemheader_color') . '">',
+		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar" style="color:' . get_theme_mod( 'set_itemheader_color', '#979797' ) . '">',
 		'after_title' => '</h1>'
 		)
 	);

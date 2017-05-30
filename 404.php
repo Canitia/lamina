@@ -9,7 +9,7 @@
     <?php endif; ?>
 
     <div class="main-content col-xs-12 col-md-8 col-lg-8">
-        <h1 class="text-left-title-featured-sidebar error" style="<?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Error', 'canitia'); ?></h1>
+        <h1 class="text-left-title-featured-sidebar error" style="<?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Error', 'canitia'); ?></h1>
         <div class="post-content post-errortext">
           <p><?php _e('This post/page doesnt exist anymore or has been renamed. Try searching for it.', 'canitia');?></p>
         </div><!-- post-content END! -->

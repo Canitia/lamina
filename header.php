@@ -12,10 +12,10 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
     <style type="text/css">
-        #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?> !important; }
-        .container-fluid p, .post-errortext, .post-content p { color: <?php echo get_theme_mod( 'set_text_color' ); ?> !important; }
-        .container-fluid a, .container-fluid a p { color: <?php echo get_theme_mod( 'set_link_color' ); ?> !important; }
-        .container-fluid a:hover, .container-fluid a > p:hover { color: <?php echo get_theme_mod( 'set_link_hover_color' ); ?> !important; }
+        #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?> !important; }
+        .container-fluid p, .post-errortext, .post-content p { color: <?php echo get_theme_mod( 'set_text_color', '#000000' ); ?> !important; }
+        .container-fluid a, .container-fluid a p { color: <?php echo get_theme_mod( 'set_link_color', '#000000' ); ?> !important; }
+        .container-fluid a:hover, .container-fluid a > p:hover { color: <?php echo get_theme_mod( 'set_link_hover_color', '#979797' ); ?> !important; }
     </style>
     <!-- close with wp_head -->
     <?php wp_head();?>

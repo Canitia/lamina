@@ -15,7 +15,7 @@
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       if ($paged < 2) {    //only show today section on page 1
       ?>
-      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Today', 'canitia'); ?></h1>
+      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Today', 'canitia'); ?></h1>
       <div class="collection">
       <?php
 
@@ -63,7 +63,7 @@
         wp_reset_postdata(); 
         };
         ?>
-      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Older posts', 'canitia');?></h1>            
+      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Older posts', 'canitia');?></h1>            
   <?php endif; ?>
 
   <!-- end today section -->
@@ -73,10 +73,10 @@
   if ( get_theme_mod( 'display_today' ) == 0 ) :   ?>
       
       <?php if ($paged <= 1) { ?>
-       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Latest', 'canitia');?></h1>        
+       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Latest', 'canitia');?></h1>        
       <?php }
       else { ?>
-        <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Older posts', 'canitia');?></h1> 
+        <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Older posts', 'canitia');?></h1> 
       <?php }
       ?>    
  <?php endif;?>

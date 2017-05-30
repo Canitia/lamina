@@ -8,7 +8,7 @@
   <?php endif; ?>
 
   <div class="col-xs-12 col-md-8 col-lg-8 main-content">
-  <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Latest posts by', 'canitia'); ?> 
+  <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Latest posts by', 'canitia'); ?> 
   <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
     echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
 

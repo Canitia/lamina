@@ -1,4 +1,4 @@
-<h1 class="widget-title text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Search', 'canitia');?></h1>
+<h1 class="widget-title text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Search', 'canitia');?></h1>
 <div class="search-box">
   <form role="search" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
       <label>

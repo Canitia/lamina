@@ -47,7 +47,7 @@
           </div>
        </article><!-- close article -->
        <!-- let user enter a comment -->
-      <h3 class="h3-join-the-conversation" style="<?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Join the conversation', 'canitia'); ?></h3>
+      <h3 class="h3-join-the-conversation" style="<?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Join the conversation', 'canitia'); ?></h3>
       <?php comments_template(); ?>
   
     </div><!-- close post class div -->

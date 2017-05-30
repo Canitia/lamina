@@ -6,7 +6,7 @@
       <?php get_sidebar( 'primary' ); ?>
       <?php endif; ?>
         <div class="col-xs-12 col-md-8 col-lg-8 main-content">
-          <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color' ); ?>;"><?php _e('Latest posts in', 'canitia'); ?> <strong><?php single_cat_title(); ?></strong></h1>
+          <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Latest posts in', 'canitia'); ?> <strong><?php single_cat_title(); ?></strong></h1>
         <div class="collection">
       <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
