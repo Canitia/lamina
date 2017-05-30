@@ -42,7 +42,7 @@
 
 </header>
 <?php
-    if ( is_home() || is_category() ) {
+    if ( is_home() || is_category() || is_author() ) {
 
         if ( get_theme_mod( 'display_slider' ) == 1 ) :
             get_template_part( 'partials/slider' );
