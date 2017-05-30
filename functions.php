@@ -366,8 +366,8 @@ function canitia_setup() {
 	
 }
 
-add_action( 'after_setup_theme', 'cerulean_setup' );
+add_action( 'after_setup_theme', 'canitia_setup' );
 
-load_theme_textdomain( 'cerulean-for-wordpress', get_template_directory().'/languages' );
+load_theme_textdomain( 'canitia', get_template_directory().'/languages' );
 
 ?>
