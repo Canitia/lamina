@@ -51,7 +51,11 @@
 
     if ( is_single() || is_page() ) {
 
-        the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-        
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+        }
+        else {
+           echo '<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" width="3840" class="d-block img-fluid wp-post-image" />';
+        }
     }
 ?>
