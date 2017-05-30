@@ -37,10 +37,8 @@ h3 {
 }
 
 .h3-join-the-conversation {
-	font-size: 2rem !important;
 	font-weight: 300 !important;
-	margin-left: 15px;
-	margin-top: 60px;
+	margin-top: 30px;
     margin-bottom: 0;
 }
 
@@ -551,11 +549,6 @@ footer {
 
 	blockquote > p {
 		padding: 0;
-	}
-
-	.h3-join-the-conversation {
-		font-weight: 300 !important;
-		margin-left: 15px;
 	}
 
 	.reply-title {
