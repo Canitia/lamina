@@ -42,17 +42,11 @@
 
 </header>
 <?php
-    if ( is_home() ) {
+    if ( is_home() || is_category() ) {
 
         if ( get_theme_mod( 'display_slider' ) == 1 ) :
             get_template_part( 'partials/slider' );
         endif;
-    }
-        
-    if ( is_category() )
-     {
-        get_template_part( 'partials/slider' );
-
     }
 
     if ( is_single() || is_page() ) {
