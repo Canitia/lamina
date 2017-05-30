@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-29 17:07+0000\n"
-"PO-Revision-Date: 2017-05-29 17:07+0000\n"
+"POT-Creation-Date: 2017-05-30 10:43+0000\n"
+"PO-Revision-Date: 2017-05-30 10:43+0000\n"
 "Last-Translator: Michael <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,9 +13,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: single.php:44
-msgid "Tags"
-msgstr "Tags"
+#. URI of the theme
+msgid "https://michaelboumann.info/collection/#canitia"
+msgstr "https://michaelboumann.info/collection/#canitia"
 
 #: 404.php:12
 msgid "Error"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Latest posts by"
 msgstr "Laatste berichten van"
 
-#: author.php:22 category.php:20 index.php:45 index.php:103 search.php:38
+#: author.php:22 category.php:20 index.php:45 index.php:103 search.php:39
 #: tag.php:21
 msgid "ago"
 msgstr "geleden"
@@ -63,12 +63,12 @@ msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
 #: functions.php:210
-msgid "Cerulean Settings"
-msgstr "Cerulean Instellingen"
+msgid "Canitia Settings"
+msgstr "Canitia Instellingen"
 
 #: functions.php:211
-msgid "Tweak Cerulean to your liking."
-msgstr "Stel Cerulean in zoals jij dat wilt."
+msgid "Tweak Canitia to your liking."
+msgstr "Stel Canitia in zoals jij dat wilt."
 
 #: functions.php:276
 msgid "Show slider?"
@@ -126,11 +126,11 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 msgid "Search Page"
 msgstr "Zoekpagina"
 
-#: search.php:20
+#: search.php:21
 msgid "Results for "
 msgstr "Resultaten voor"
 
-#: search.php:48
+#: search.php:49
 msgid "Sorry, it seems this search query has no posts."
 msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
 
@@ -161,6 +161,10 @@ msgstr "Er zijn momenteel geen widgets actief."
 msgid "Posted in"
 msgstr "Gepost in"
 
+#: single.php:44
+msgid "Tags"
+msgstr "Tags"
+
 #: single.php:50
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
@@ -178,8 +182,8 @@ msgid "Sorry, no posts can be found within this tag."
 msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 
 #. Name of the theme
-msgid "Cerulean for Wordpress"
-msgstr "Cerulean voor Wordpress"
+msgid "Canitia"
+msgstr "Canitia"
 
 #. Description of the theme
 msgid ""
@@ -189,10 +193,6 @@ msgstr ""
 "Elegant en toch simpel. Simpliciteit met functionaliteit zoals costum-design "
 "tag/page/error en zoekpagina's, dynamische navigatiemenu's, logo "
 "ondersteuning en meer."
-
-#. URI of the theme
-msgid "https://michaelboumann.info/collection/#ceruleanwp"
-msgstr "https://michaelboumann.info/collection/#ceruleanwp"
 
 #. Author of the theme
 msgid "Michael Boumann"
