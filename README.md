@@ -11,7 +11,7 @@ Canitia is a Wordpress theme based on the [Cerulean for Ghost](https://github.co
 - Show your custom site logo
 - Slider support which automatically grabs the 3 latest 'sticky' posts
 - Today section (only shows the posts from the last day .. duh)
-- Custom Cerulean 'theme' settings (sidebar left/right, slider on/off and today section on/off options)
+- Custom Canitia 'theme' settings (sidebar left/right, slider on/off and today section on/off options)
 - Custom tag, category, author, search and error pages. 
 
 # Status

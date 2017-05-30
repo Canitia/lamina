@@ -52,7 +52,7 @@ add_action( 'widgets_init', 'canitia_sidebars' );
  * sidebar
  */
 
-function cerulean_sidebars() {
+function canitia_sidebars() {
 	
 	/* Register the 'primary' sidebar. */
 	
@@ -195,7 +195,7 @@ function canitia_pagination_numeric_posts_nav() {
 }
 
 /* sanitize checkbox as was asked by the theme checker */
-function cerulean_sanitize_checkbox( $checked ) {
+function canitia_sanitize_checkbox( $checked ) {
 	// Boolean check.
 	return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
