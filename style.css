@@ -48,6 +48,14 @@ h4 {
 	font-weight: 300 !important;	
 }
 
+a {
+	color: black;
+}
+
+a:hover {
+	color: #979797;
+}
+
 p > a {
 	text-decoration: underline;
 }
@@ -285,7 +293,8 @@ article > h1:first-child {
 	border-right: 1px solid #f8f8f8;
 }
 
-.widget_recent_entries > ul {
+.widget_recent_entries > ul,
+.recentcomments {
 	padding-left: 0;
 }
 
