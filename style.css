@@ -293,10 +293,8 @@ article > h1:first-child {
 	border-right: 1px solid #f8f8f8;
 }
 
-.widget_recent_entries > ul,
-#recentcomments,
-.widget widget_archive > ul {
-	padding-left: 0;
+.widget > ul {
+    padding-left: 0;
 }
 
 /* ######################################
@@ -472,14 +470,6 @@ img.avatar {
 
 .pagination > ul > li.active {
 	background-color: #d3d3d3 !important;
-}
-
-.pagination > ul > li > a {
-	color: white;
-}
-
-.pagination > ul > li > a:hover {
-	color: #979797;
 }
 
 .pagination > ul > li.pagination-dash {
