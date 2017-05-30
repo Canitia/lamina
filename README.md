@@ -1,6 +1,6 @@
 Canitia
 ==================
-Canitia is a Wordpress theme based on the [Cerulean for Ghost](https://github.com/boumannm/cerulean-for-ghost) theme, although it has gone quite it's own way in multiple ways now. Which is one of the reasons i rebranded the Wordpress version to Canitia. It's own seperate entity, which can branch out in all directions. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the 'quick and dirty' featurelist below.
+Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Although it has gone it's own way recently adding more features than it's Canitia Jr. counterpart. Which is one of the reasons i rebranded the Wordpress version to Canitia 'senior'. It now has it's own seperate entity. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the 'quick and dirty' featurelist below.
 
 ![Canitia](https://github.com/boumannm/canitia/blob/master/screenshot.png)
 
