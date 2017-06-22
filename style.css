@@ -1118,6 +1118,7 @@ ul.children {
 	max-width: 100%;
 	border: 1px solid #ebebeb;
 	background: whitesmoke;
+	clear:both;
 }
 
 dl.wp-caption {
