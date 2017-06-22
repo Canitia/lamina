@@ -1177,6 +1177,7 @@ dl.wp-caption {
 }
 /* custom image size */
 .wp-caption > img {
+	width: 100%;
 	max-width: 100%;
 	height: 100%;
 }
