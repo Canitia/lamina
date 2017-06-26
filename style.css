@@ -91,6 +91,7 @@ blockquote:before, blockquote:after {
     position:absolute;
     display:block;
 }
+
 blockquote:after {
     content:'\f10e';
     right:8px;
@@ -138,8 +139,7 @@ td {
 }
 
 p > a:focus,
-p > a:hover
-{
+p > a:hover {
   color:#979797  !important;
 }
 
