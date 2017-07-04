@@ -39,8 +39,8 @@
       </div><!-- einde md8 -->
 
       <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
-      <!-- second column (widget bar) -->
-      <?php get_sidebar( 'primary' ); ?>
+        <!-- second column (widget bar) -->
+        <?php get_sidebar( 'primary' ); ?>
       <?php endif; ?>
 
     </div><!-- end row -->
