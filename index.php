@@ -54,7 +54,6 @@
         } ?>
                 </div> <!-- end first collection -->
         <?php } else { ?>
-
               <p class="post-errortext"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'canitia'); ?></p>
           </div> <!-- end first collection -->
         <?php     
@@ -63,6 +62,7 @@
         wp_reset_postdata(); 
         };
         ?>
+        
       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Older posts', 'canitia');?></h1>            
   <?php endif; ?>
 
