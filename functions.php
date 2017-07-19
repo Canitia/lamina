@@ -9,7 +9,6 @@ if ( ! isset( $content_width ) ) {
 }
 
 
-
 /**
  * Proper way to enqueue scripts and styles
  *  wp_enqueue_script( $handle, $source, $dependencies, $version,
