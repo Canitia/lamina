@@ -383,6 +383,17 @@ ul.pings.commentlist {
 	justify-content: center;
 }
 
+.pagination-within li { 
+	background-color: #979797;
+	color:white;
+}
+
+/* pagination within a post/page */
+.pagination-within > li,
+.pagination-within > a > li {
+	padding: 10px;
+}
+
 
 /* **************************************
 
@@ -485,13 +496,6 @@ img.avatar {
 .fa-chevron-left {
 	font-size: 1em !important;
 }
-
-/* pagination within a post/page */
-.pagination-within > li,
-.pagination-within > a > li {
-	padding: 5px;
-}
-
 
 /* **************************************
 
