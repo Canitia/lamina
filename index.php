@@ -15,6 +15,7 @@
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       if ($paged < 2) {    //only show today section on page 1
       ?>
+ 
       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Today', 'canitia'); ?></h1>
       <div class="collection">
       <?php
