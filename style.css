@@ -388,6 +388,17 @@ ul.pings.commentlist {
 	color:white;
 }
 
+.pagination-within > a > li {
+	background-color: #ebebeb;
+	color: black;
+}
+
+.pagination-within > a > li:hover {
+	background-color: #979797;
+	color: white;
+}
+
+
 /* pagination within a post/page */
 .pagination-within > li,
 .pagination-within > a > li {
