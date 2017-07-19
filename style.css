@@ -223,7 +223,8 @@ address {
 
 *****************************************/
 .carousel-item {
-    object-fit: cover;
+	object-fit: cover;
+	justify-content: center;
 }
 
 .carousel:hover {
