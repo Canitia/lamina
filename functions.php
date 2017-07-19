@@ -17,6 +17,7 @@ if ( ! isset( $content_width ) ) {
 
 function canitia_theme_scripts() {
 
+
 	wp_enqueue_script( 'tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', false );
 
 	wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', false );
@@ -25,7 +26,7 @@ function canitia_theme_scripts() {
 
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false );
 	
-	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery', 'bootstrap'), false, true );
+	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'), false, false );
 
 	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css', false );	
 }
