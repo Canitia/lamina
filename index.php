@@ -45,7 +45,6 @@
                 <span class="badge">
                 <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
               </span> 
-              <?php echo the_date();?>
               </p>
           </a>
           </div>
