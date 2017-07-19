@@ -378,6 +378,11 @@ ul.pings.commentlist {
     font-size: 14px;
 }
 
+/* pagination within a post/page */
+.pagination-within {
+	justify-content: center;
+}
+
 
 /* **************************************
 
