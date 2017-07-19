@@ -386,18 +386,18 @@ ul.pings.commentlist {
 }
 
 .pagination-within li { 
-	background-color: #979797;
-	color:white;
+	background-color: #ebebeb;
+	color:black;
 }
 
 .pagination-within > a > li {
-	background-color: #ebebeb;
+	background-color: ##d3d3d3;
 	color: black;
 }
 
 .pagination-within > a > li:hover {
-	background-color: #979797;
-	color: white;
+	background-color: #ebebeb;
+	color: black;
 }
 
 
