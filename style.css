@@ -138,11 +138,6 @@ td {
 	padding: 5px;
 }
 
-p > a:focus,
-p > a:hover {
-  color:#979797  !important;
-}
-
 input, 
 select  {
   padding:10px 10px 10px 5px;
@@ -221,8 +216,6 @@ address {
 	margin-top: -8px;
 	margin-bottom: -8px;
 }
-
-
 
 /* **************************************
 
