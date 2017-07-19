@@ -1062,7 +1062,8 @@ ul.children {
 }
 
 .comment-reply-link:hover, .form-submit > input#submit:hover{
-     text-decoration: underline;
+	 text-decoration: underline;
+	 color: white;
 }
 
 .form-submit > input#submit {
@@ -1103,6 +1104,11 @@ ul.children {
 
 .reply > a {
 	color: white !important;
+}
+
+.reply > a:hover {
+	color: white !important;
+	text-decoration: underline;
 }
 
 /* add some styling to disqus */
