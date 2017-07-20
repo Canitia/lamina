@@ -1046,6 +1046,11 @@ ul.children {
     padding: 5px;
     margin-top: 5px;
 	border-bottom: 1px solid #ebebeb;
+	
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 14px;
 }
 
 .comment-meta > a {
