@@ -433,6 +433,10 @@ ul.pings.commentlist {
 	clear:both;
 }
 
+.author-bio {
+	display: flex;
+}
+
 img.avatar {
 	float:left;
 	z-index:200;
