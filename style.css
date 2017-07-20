@@ -696,7 +696,12 @@ footer {
 
 	img.avatar {
 		margin-left: 0;
-	}	
+	}
+	
+	.comment-author > cite {
+    	font-size: 1.3em !important;
+	}
+	
  }
 
 /* Medium devices (tablets, 768px and up) */
