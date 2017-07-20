@@ -737,7 +737,6 @@ footer {
 
 	.search-box {
 		padding: 5px;
-		margin-bottom: 50px;
 	}
 
 	.widget_calendar {
@@ -1267,6 +1266,10 @@ div.aligncenter {
 	CUSTOM WORDPRESS WIDGET CSS
 
 *****************************************/
+
+.search-box {
+	margin-bottom: 50px;
+}
 
 .search-form > label {
 	width: 100%;
