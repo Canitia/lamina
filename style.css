@@ -161,8 +161,10 @@ address {
   text-overflow: ellipsis;
 }
 
-.btn:hover, .comment-reply-link:hover {
-	background-color: #d3d3d3;
+.btn:hover, 
+.comment-reply-link:hover,
+.submit:hover {
+	background-color: #d3d3d3 !important;
 }
 
 /* **************************************
