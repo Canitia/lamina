@@ -586,6 +586,10 @@ footer {
     	font-size: 1.7em !important;
 	}
 
+	.comment-meta {
+		justify-content: center;
+	}
+
 	.wp-caption {
 		margin-left: auto !important;
 		margin-right: auto !important;
@@ -1046,7 +1050,7 @@ ul.children {
     padding: 5px;
     margin-top: 5px;
 	border-bottom: 1px solid #ebebeb;
-	
+
 	display: flex;
     flex-direction: row;
     justify-content: flex-end;
