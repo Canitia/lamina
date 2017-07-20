@@ -434,7 +434,6 @@ ul.pings.commentlist {
 }
 
 img.avatar {
-	border-radius: 50px;
 	float:left;
 	z-index:200;
 	margin-right:15px;
