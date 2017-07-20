@@ -161,7 +161,7 @@ address {
   text-overflow: ellipsis;
 }
 
-.btn:hover {
+.btn:hover, .comment-reply-link:hover {
 	background-color: #d3d3d3;
 }
 
