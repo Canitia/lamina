@@ -622,6 +622,10 @@ footer {
 		margin-right: 0px;
 	}
 
+	.author-name {
+		margin-left: 10px;
+	}
+
 	p.author-bio {
 		margin-left:60px;
 	}
