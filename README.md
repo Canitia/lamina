@@ -10,6 +10,7 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 - Today section
 - Custom tag, category, author, search and error pages. 
 - Custom **Canitia Settings**
+- **Translation support** - includes English and Dutch languages
 
 # Canitia Settings - theme specific custom options
 - Sidebar position (left or right)
