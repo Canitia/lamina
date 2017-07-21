@@ -13,8 +13,8 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 
 # Canitia Settings - theme specific custom options
 - Sidebar position (left or right)
-- Enable or Disable Slider
-- Enable or Disable the Today section
+- Enable or disable Slider
+- Enable or disable the Today section
 
 ![Canitia](https://github.com/boumannm/canitia/blob/master/screenshot.png)
 
