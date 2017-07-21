@@ -3,9 +3,9 @@ Canitia
 Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Canitia is a responsive theme optimised for all screensizes with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the 'quick and dirty' featurelist below.
 
 # Theme features
-- Set a custom site icon and logo
+- Set a custom site icon, logo and/or background image
 - Change background, header, text, link and link hover colors
-- Sidebar support (it only shows when there is actually a widget added to it)
+- Sidebar support (it only shows when there are widgets added to it)
 - Slider support (which automatically grabs the 3 latest 'sticky' posts)
 - Today section (only shows the posts from the current day .. duh)
 - Custom tag, category, author, search and error pages. 
