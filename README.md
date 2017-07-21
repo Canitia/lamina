@@ -20,9 +20,9 @@ Stable
 *It passes the Wordpress theme check as of May 26th 2017. Although i do want to work on the 'recommended' items it gave me.*
 
 ## Libraries used
-- Font Awesome
+- Font Awesome 4.7.0
 - Bootstrap v4 (alpha)
-- Jquery (the Wordpress included version)
+- JQuery (the Wordpress included version)
 
 ## Tested on:
 - Google Chrome 59.0.3071.115 (stable)
