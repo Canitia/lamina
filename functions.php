@@ -84,7 +84,7 @@ function register_mainmenu() {
 add_action( 'init', 'register_mainmenu' );
 
 // Register Custom Navigation Walker
-require_once('wp-bootstrap-navwalker.php');
+require_once('libs/wp-bootstrap-navwalker.php');
 
 
 // Bootstrap navigation
