@@ -23,3 +23,8 @@ Stable
 - Chrome 60.0.3107.5
 - Firefox 53.0.3
 - Edge 41.16199.1000.0/EdgeHTML 15.16199
+
+## Libraries used
+- Font Awesome
+- Bootstrap v4 (alpha)
+- Jquery (the Wordpress included version)
