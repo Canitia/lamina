@@ -23,7 +23,8 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 # Status
 Stable
 
-*It passes the Wordpress theme check as of May 26th 2017. Although i do want to work on the 'recommended' items it gave me.*
+*Passed validation on May 26th 2017*
+*Passed a second time (recheck) on July 22nd 2017*
 
 ## Libraries used
 - Font Awesome 4.7.0
