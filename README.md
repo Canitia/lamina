@@ -29,7 +29,7 @@ Stable
 - Font Awesome 4.7.0
 - Bootstrap v4 (alpha)
 - JQuery (the Wordpress included version)
-- ![Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
+- [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 
 ## Tested on:
 - Google Chrome 59.0.3071.115 (stable)
