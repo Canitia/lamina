@@ -5,7 +5,8 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 # Theme features
 - Set a custom site icon, logo and/or background image
 - Change background, header, text, link and link hover colors
-- Sidebar support (it only shows when there are widgets added to it)
+- Sidebar support
+- **Adaptive 1/2 column design**. When there is no sidebar widgets enabled the site turns into a **single column** site.
 - Slider support (shows the 3 latest 'sticky' posts)
 - Today section
 - Custom tag, category, author, search and error pages. 
