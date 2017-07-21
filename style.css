@@ -4,7 +4,7 @@ Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple. Simplicity with features like custom designed tag/page/error and search pages, dynamic nav-menu's, logo support and more.
-Version: 0.10.3.34
+Version: 0.11
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
@@ -37,10 +37,8 @@ h3 {
 }
 
 .h3-join-the-conversation {
-	font-size: 2rem !important;
 	font-weight: 300 !important;
-	margin-left: 15px;
-	margin-top: 60px;
+	margin-top: 30px;
     margin-bottom: 0;
 }
 
@@ -93,6 +91,7 @@ blockquote:before, blockquote:after {
     position:absolute;
     display:block;
 }
+
 blockquote:after {
     content:'\f10e';
     right:8px;
@@ -135,10 +134,8 @@ dt {
     font-weight: 500;
 }
 
-p > a:focus,
-p > a:hover
-{
-  color:#979797  !important;
+td {
+	padding: 5px;
 }
 
 input, 
@@ -148,6 +145,10 @@ select  {
   width:100%;
   border:none;
   border-bottom:1px solid #ebebeb;
+}
+
+address {
+	font-style: italic;
 }
 
 .strong-search {
@@ -160,7 +161,11 @@ select  {
   text-overflow: ellipsis;
 }
 
-
+.btn:hover, 
+.comment-reply-link:hover,
+.submit:hover {
+	background-color: #d3d3d3 !important;
+}
 
 /* **************************************
 
@@ -216,6 +221,10 @@ select  {
 	margin-bottom: -8px;
 }
 
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important;
+}
 
 
 /* **************************************
@@ -224,7 +233,8 @@ select  {
 
 *****************************************/
 .carousel-item {
-    object-fit: cover;
+	object-fit: cover;
+	justify-content: center;
 }
 
 .carousel:hover {
@@ -320,6 +330,7 @@ POST/ARTICLE HEADERS
 .wp-post-image {
 	object-fit: cover;
 	max-height: 500px;
+	width: 100%;
 }
 
 .post-content > ul li, 
@@ -354,7 +365,7 @@ article {
 
 .post-content > img,
 .post-content > p > img {
-	width: 100%;
+	max-width: 100%;
 	height:auto;
 	display:block;
 	margin-left:auto;
@@ -377,6 +388,33 @@ ul.pings.commentlist {
     margin-right: 20px;
     text-align: justify;
     font-size: 14px;
+}
+
+/* pagination within a post/page */
+.pagination-within {
+	justify-content: center;
+}
+
+.pagination-within li { 
+	background-color: #d3d3d3;
+	color:black;
+}
+
+.pagination-within > a > li {
+	background-color: #ebebeb;
+	color: black;
+}
+
+.pagination-within > a > li:hover {
+	background-color: #d3d3d3;
+	color: black;
+}
+
+
+/* pagination within a post/page */
+.pagination-within > li,
+.pagination-within > a > li {
+	padding: 15px;
 }
 
 
@@ -402,15 +440,16 @@ ul.pings.commentlist {
 
 *****************************************/
 .author-profile {
-	min-height: 125px;
+	clear:both;
+}
+
+.author-bio {
+	display: flex;
 }
 
 img.avatar {
-	border-radius: 50px;
 	float:left;
 	z-index:200;
-	margin-top: 10px;
-	margin-left: 20px;
 	margin-right:15px;
 }
 
@@ -481,13 +520,6 @@ img.avatar {
 	font-size: 1em !important;
 }
 
-/* pagination within a post/page */
-.pagination-within > li,
-.pagination-within > a > li {
-	padding: 5px;
-}
-
-
 /* **************************************
 
   FOOTER
@@ -552,11 +584,6 @@ footer {
 		padding: 0;
 	}
 
-	.h3-join-the-conversation {
-		font-weight: 300 !important;
-		margin-left: 15px;
-	}
-
 	.reply-title {
 		font-size: 1.7rem !important;
 	}
@@ -566,7 +593,11 @@ footer {
 	}
 
 	.comment-author > cite {
-    	font-size: 1.7em !important;
+    	font-size: 1.4em !important;
+	}
+
+	.comment-meta {
+		justify-content: center;
 	}
 
 	.wp-caption {
@@ -605,9 +636,13 @@ footer {
 		margin-right: 0px;
 	}
 
+	.author-name {
+		margin-left: 10px;
+	}
+
 	p.author-bio {
 		margin-left:60px;
-		min-height: 100px;
+		margin-top: -10px;
 	}
 	
 	.badge {
@@ -675,7 +710,12 @@ footer {
 
 	img.avatar {
 		margin-left: 0;
-	}	
+	}
+	
+	.comment-author > cite {
+    	font-size: 1.3em !important;
+	}
+	
  }
 
 /* Medium devices (tablets, 768px and up) */
@@ -695,12 +735,6 @@ footer {
 	article {
 		padding-left: 15px;
 		padding-right:15px;
-	}
- 
-	img.avatar {
-		width:100px;
-		height:100px;
-		margin-left: 0;
 	}
 
 	.sidebar {
@@ -970,7 +1004,8 @@ ul.commentlist {
 
 .comment-body p {
     margin-left: 5px;
-    margin-right: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
 }
 
 .comment {
@@ -1025,6 +1060,11 @@ ul.children {
     padding: 5px;
     margin-top: 5px;
 	border-bottom: 1px solid #ebebeb;
+
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 14px;
 }
 
 .comment-meta > a {
@@ -1047,7 +1087,8 @@ ul.children {
 }
 
 .comment-reply-link:hover, .form-submit > input#submit:hover{
-     text-decoration: underline;
+	 text-decoration: underline;
+	 color: white;
 }
 
 .form-submit > input#submit {
@@ -1090,17 +1131,16 @@ ul.children {
 	color: white !important;
 }
 
+.reply > a:hover {
+	color: white !important;
+	text-decoration: underline;
+}
+
 /* add some styling to disqus */
 #disqus_thread {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
-
-
-
-
-
 
 /* **************************************
 
@@ -1124,6 +1164,7 @@ ul.children {
 	max-width: 100%;
 	border: 1px solid #ebebeb;
 	background: whitesmoke;
+	clear:both;
 }
 
 dl.wp-caption {
@@ -1182,6 +1223,7 @@ dl.wp-caption {
 }
 /* custom image size */
 .wp-caption > img {
+	width: 100%;
 	max-width: 100%;
 	height: 100%;
 }
@@ -1257,6 +1299,10 @@ div.aligncenter {
 	CUSTOM WORDPRESS WIDGET CSS
 
 *****************************************/
+
+.search-box {
+	margin-bottom: 25px;
+}
 
 .search-form > label {
 	width: 100%;

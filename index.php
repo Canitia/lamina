@@ -7,7 +7,7 @@
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
 
-  <div class="main-content col-xs-12 col-md-8 col-lg-8">
+  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8"'; } else { echo 'col-md-12 col-lg-12"'; echo ' style="border-right:0';};?>" >
 
     <?php 
     if ( get_theme_mod( 'display_today' ) == 1 ) : //show today section or not
@@ -15,6 +15,7 @@
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       if ($paged < 2) {    //only show today section on page 1
       ?>
+ 
       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Today', 'canitia'); ?></h1>
       <div class="collection">
       <?php
@@ -44,7 +45,6 @@
                 <span class="badge">
                 <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
               </span> 
-              <?php echo the_date();?>
               </p>
           </a>
           </div>
@@ -54,7 +54,6 @@
         } ?>
                 </div> <!-- end first collection -->
         <?php } else { ?>
-
               <p class="post-errortext"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'canitia'); ?></p>
           </div> <!-- end first collection -->
         <?php     
@@ -63,6 +62,7 @@
         wp_reset_postdata(); 
         };
         ?>
+        
       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Older posts', 'canitia');?></h1>            
   <?php endif; ?>
 

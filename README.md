@@ -1,25 +1,39 @@
 Canitia
 ==================
-Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Although it has gone it's own way recently adding more features than it's Canitia Jr. counterpart. Which is one of the reasons i rebranded the Wordpress version to Canitia 'senior'. It now has it's own seperate entity. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the 'quick and dirty' featurelist below.
+Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Canitia is a responsive theme optimised for all screensizes with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the featurelist below.
+
+# Theme features
+- Set a custom site icon, logo and/or background image
+- Change background, header, text, link and link hover colors
+- Sidebar support
+- **Adaptive 1/2 column design**. When there is no sidebar widgets enabled your site turns into a **single column** site.
+- Slider support (shows the 3 latest 'sticky' posts)
+- Today section
+- Custom tag, category, author, search and error pages. 
+- Custom **Canitia Settings**
+- **Translation support** - includes English and Dutch languages
+
+# Canitia Settings - theme specific custom options
+- Sidebar position (left or right)
+- Enable or disable Slider
+- Enable or disable the Today section
 
 ![Canitia](https://github.com/boumannm/canitia/blob/master/screenshot.png)
-
-# Current features
-- Optimised for phones, tablets and desktops
-- Sidebar support
-- Show your custom site icon
-- Show your custom site logo
-- Slider support which automatically grabs the 3 latest 'sticky' posts
-- Today section (only shows the posts from the last day .. duh)
-- Custom Canitia 'theme' settings (sidebar left/right, slider on/off and today section on/off options)
-- Custom tag, category, author, search and error pages. 
 
 # Status
 Stable
 
 *It passes the Wordpress theme check as of May 26th 2017. Although i do want to work on the 'recommended' items it gave me.*
 
+## Libraries used
+- Font Awesome 4.7.0
+- Bootstrap v4 (alpha)
+- JQuery (the Wordpress included version)
+- [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
+
 ## Tested on:
-- Chrome 60.0.3107.5
-- Firefox 53.0.3
+- Google Chrome 59.0.3071.115 (stable)
+- Google Chrome 60.0.3107.5 (dev)
+- Firefox 54.0.1
+- Firefox Nightly 56.0a1.20170720-1
 - Edge 41.16199.1000.0/EdgeHTML 15.16199

@@ -15,7 +15,7 @@
         #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?> !important; }
         .container-fluid p, .post-errortext, .post-content p { color: <?php echo get_theme_mod( 'set_text_color', '#000000' ); ?> !important; }
         .container-fluid a, .container-fluid a p { color: <?php echo get_theme_mod( 'set_link_color', '#000000' ); ?> !important; }
-        .container-fluid a:hover, .container-fluid a > p:hover { color: <?php echo get_theme_mod( 'set_link_hover_color', '#979797' ); ?> !important; }
+        .container-fluid a:hover, .container-fluid a > p:hover, .container-fluid > p a:focus, .container-fluid > p a:hover { color: <?php echo get_theme_mod( 'set_link_hover_color', '#979797' ); ?> !important; }
     </style>
     <!-- close with wp_head -->
     <?php wp_head();?>
@@ -42,22 +42,17 @@
 
 </header>
 <?php
-    if ( is_home() ) {
+    if ( is_home() || is_category() || is_author() ) {
 
         if ( get_theme_mod( 'display_slider' ) == 1 ) :
             get_template_part( 'partials/slider' );
         endif;
     }
-        
-    if ( is_category() )
-     {
-        get_template_part( 'partials/slider' );
-
-    }
 
     if ( is_single() || is_page() ) {
 
-        the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-        
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+        }
     }
 ?>
