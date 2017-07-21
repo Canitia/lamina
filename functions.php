@@ -16,12 +16,9 @@ if ( ! isset( $content_width ) ) {
 
 
 function canitia_theme_scripts() {
-
-
 	wp_enqueue_script( 'tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', false );
 
 	wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', false );
-
 	wp_enqueue_script( 'bootstrapjs', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), false, true );
 
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false );
@@ -33,19 +30,14 @@ function canitia_theme_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'canitia_theme_scripts' );
 
-add_theme_support( "title-tag" );
-
 $bgargs = array(
 	'default-color' => 'ffffff',
 );
 
+add_theme_support( "title-tag" );
 add_theme_support( 'custom-background', $bgargs );
-
 add_theme_support( 'automatic-feed-links' );
-
 add_theme_support( "post-thumbnails" );
-
-add_action( 'widgets_init', 'canitia_sidebars' );
 
 
 /**
@@ -73,6 +65,8 @@ function canitia_sidebars() {
 	
 }
 
+add_action( 'widgets_init', 'canitia_sidebars' );
+
 /* register main navigation */
 
 function register_mainmenu() {
@@ -84,7 +78,7 @@ function register_mainmenu() {
 add_action( 'init', 'register_mainmenu' );
 
 // Register Custom Navigation Walker
-require_once('wp-bootstrap-navwalker.php');
+require_once('libs/wp-bootstrap-navwalker.php');
 
 
 // Bootstrap navigation

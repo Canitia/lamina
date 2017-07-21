@@ -7,7 +7,7 @@
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
 
-  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8"'; } else { echo 'col-md-12 col-lg-12"'; echo ' style="border-right:0';};?>" >
+  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
 
     <?php 
     if ( get_theme_mod( 'display_today' ) == 1 ) : //show today section or not
@@ -43,7 +43,7 @@
           <a href="<?php the_permalink(); ?>">
               <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
                 <span class="badge">
-                <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
+                <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
               </span> 
               </p>
           </a>
@@ -100,7 +100,7 @@
           <a href="<?php the_permalink(); ?>">
               <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
                 <span class="badge">
-                <time datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
+                <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
               </span> 
               </p>
           </a>
