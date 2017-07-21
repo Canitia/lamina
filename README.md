@@ -20,7 +20,7 @@ Stable
 *It passes the Wordpress theme check as of May 26th 2017. Although i do want to work on the 'recommended' items it gave me.*
 
 ## Tested on:
-- Chrome 60.0.3107.5
+- Chrome 59.0.3071.115 (stable) and 60.0.3107.5 (dev)
 - Firefox 53.0.3
 - Edge 41.16199.1000.0/EdgeHTML 15.16199
 
