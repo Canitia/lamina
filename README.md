@@ -21,7 +21,7 @@ Stable
 
 ## Tested on:
 - Chrome 59.0.3071.115 (stable) and 60.0.3107.5 (dev)
-- Firefox 53.0.3
+- Firefox 54.0.1
 - Edge 41.16199.1000.0/EdgeHTML 15.16199
 
 ## Libraries used
