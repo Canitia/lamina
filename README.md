@@ -19,14 +19,14 @@ Stable
 
 *It passes the Wordpress theme check as of May 26th 2017. Although i do want to work on the 'recommended' items it gave me.*
 
+## Libraries used
+- Font Awesome
+- Bootstrap v4 (alpha)
+- Jquery (the Wordpress included version)
+
 ## Tested on:
 - Google Chrome 59.0.3071.115 (stable)
 - Google Chrome 60.0.3107.5 (dev)
 - Firefox 54.0.1
 - Firefox Nightly (July 21st 2017)
 - Edge 41.16199.1000.0/EdgeHTML 15.16199
-
-## Libraries used
-- Font Awesome
-- Bootstrap v4 (alpha)
-- Jquery (the Wordpress included version)
