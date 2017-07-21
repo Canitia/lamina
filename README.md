@@ -1,8 +1,6 @@
 Canitia
 ==================
-Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Although it has gone it's own way recently adding more features than it's Canitia Jr. counterpart. Which is one of the reasons i rebranded the Wordpress version to Canitia 'senior'. It now has it's own seperate entity. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the 'quick and dirty' featurelist below.
-
-![Canitia](https://github.com/boumannm/canitia/blob/master/screenshot.png)
+Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Although it has gone it's own way recently adding more features than it's Canitia Jr. counterpart. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the 'quick and dirty' featurelist below.
 
 # Current features
 - Optimised for phones, tablets and desktops
@@ -13,6 +11,8 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 - Today section (only shows the posts from the last day .. duh)
 - Custom Canitia 'theme' settings (sidebar left/right, slider on/off and today section on/off options)
 - Custom tag, category, author, search and error pages. 
+
+![Canitia](https://github.com/boumannm/canitia/blob/master/screenshot.png)
 
 # Status
 Stable
