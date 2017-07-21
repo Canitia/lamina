@@ -221,6 +221,12 @@ address {
 	margin-bottom: -8px;
 }
 
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+
 /* **************************************
 
   SLIDER LOOK-N-FEEL
