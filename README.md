@@ -35,5 +35,5 @@ Stable
 - Google Chrome 59.0.3071.115 (stable)
 - Google Chrome 60.0.3107.5 (dev)
 - Firefox 54.0.1
-- Firefox Nightly (July 21st 2017)
+- Firefox Nightly 56.0a1.20170720-1
 - Edge 41.16199.1000.0/EdgeHTML 15.16199
