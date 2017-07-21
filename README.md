@@ -1,6 +1,6 @@
 Canitia
 ==================
-Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Canitia is a responsive theme optimised for all screensizes with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the 'quick and dirty' featurelist below.
+Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Canitia is a responsive theme optimised for all screensizes with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the featurelist below.
 
 # Theme features
 - Set a custom site icon, logo and/or background image
