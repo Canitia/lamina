@@ -973,7 +973,10 @@ EXTERNAL libraries look-n-feel
 	color: #d3d3d3;
 }
 
-.fa-tag,
+.fa-tag {
+	margin-right: 12px;
+}
+
 .fa-list {
 	margin-right: 8px;
 }
