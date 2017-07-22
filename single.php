@@ -29,6 +29,7 @@
         } ?>
 
         <div class="cat-links">
+        <?php if (get_theme_mod( 'show_categories')) { ?>
         <?php if(has_category()) { ?>
           <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
@@ -42,10 +43,10 @@
                 echo trim( $output, $separator );
             } ?>
          <hr class="cat-links-hr" />
-        <?php } ?>
-
-
-                <?php if(has_tag()) { ?>
+        <?php 
+            }
+        } ?>
+        <?php if(has_tag()) { ?>
         <?php if (get_theme_mod( 'show_tags')) { ?>
                 <?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> 
                 <hr class="cat-links-hr" />
