@@ -136,6 +136,11 @@ dt {
     font-weight: 500;
 }
 
+table {
+	margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 td {
 	padding: 5px;
 }
