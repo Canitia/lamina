@@ -2,7 +2,6 @@
 if ( post_password_required() )
 return;
 ?>
-     <h3 class="h3-join-the-conversation" style="<?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Join the conversation', 'canitia'); ?></h3>
 <div class="comments-wrapper">
 
 <?php if ( have_comments() ) : ?>
