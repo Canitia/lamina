@@ -17,14 +17,10 @@ if ( ! isset( $content_width ) ) {
 
 function canitia_theme_scripts() {
 	wp_enqueue_script( 'tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', false );
-
 	wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', false );
 	wp_enqueue_script( 'bootstrapjs', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), false, true );
-
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false );
-	
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'), false, false );
-
 	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css', false );	
 }
 
@@ -195,41 +191,62 @@ function canitia_sanitize_checkbox( $checked ) {
 	return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
 
+/* sanitize select/inputs/radios as was asked by the theme checker */
+function canitia_sanitize_select( $input, $setting ) {
+	
+	// Ensure input is a slug.
+	$input = sanitize_key( $input );
+	
+	// Get list of choices from the control associated with the setting.
+	$choices = $setting->manager->get_control( $setting->id )->choices;
+	
+	// If the input is a valid key, return it; otherwise, return the default.
+	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+}
+
 /**
  * Adds the individual sections, settings, and controls to the theme customizer
  */
 function canitia_customizer( $wp_customize ) {
     $wp_customize->add_section(
-        'settings_section_one',
+        'settings_section_canitia',
         array(
             'title' =>  __('Canitia Settings', 'canitia'),
             'description' => __('Tweak Canitia to your liking.', 'canitia'),
-            'priority' => 35,
+            'priority' => 55,
+        )
+    );
+
+    $wp_customize->add_section(
+        'settings_section_canitia_labs',
+        array(
+            'title' =>  __('Canitia Labs', 'canitia'),
+            'description' => __('Experimental Canitia Labs features.', 'canitia'),
+            'priority' => 200,
         )
     );
 
 	$wp_customize->add_setting(
-		'display_slider',
+		'display_featured_content',
 		array(
-			'default' => true,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
-	
 	$wp_customize->add_setting(
 		'display_today',
 		array(
-			'default' => true,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
 	$wp_customize->add_setting(
-		'move_sidebar_left',
+		'sidebar_position',
 		array(
-			'default' => false,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'right',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
@@ -265,32 +282,98 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_control(
-		'display_slider',
+	$wp_customize->add_setting(
+		'show_tags',
 		array(
-			'label' =>  __('Show slider?', 'canitia'),
-			'section' => 'settings_section_one',
-			'type' => 'checkbox',
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
-		);
+	);
 
-	$wp_customize->add_control(
-		'display_today',
+	$wp_customize->add_setting(
+		'show_categories',
 		array(
-			'label' =>  __('Show Today section?', 'canitia'),
-			'section' => 'settings_section_one',
-			'type' => 'checkbox',
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
-		);
+	);
 
-	$wp_customize->add_control(
-		'move_sidebar_left',
+	$wp_customize->add_setting(
+		'show_author_section',
 		array(
-			'label' => __('Move sidebar to the left?', 'canitia'),
-			'section' => 'settings_section_one',
-			'type' => 'checkbox',
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
-		);
+	);
+
+	$wp_customize->add_setting(
+		'theme_preset',
+		array(
+			'default' => 'light',
+			'sanitize_callback' => 'canitia_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control( 'display_featured_content', array(
+		'label' => __('Featured content', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'showslider' => __('Show Slider', 'canitia'),
+			'showfeatured' => __('Show Featured Row', 'canitia'),
+			'hide' => __('Hide all', 'canitia'),
+		),
+	) );
+
+	$wp_customize->add_control( 'display_today', array(
+		'label' => __('Today section', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show Today section', 'canitia'),
+			'hide' => __('Hide Today section', 'canitia'),
+		),
+	) );
+
+	$wp_customize->add_control( 'sidebar_position', array(
+		'label' => __('Sidebar position', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'left' => __('Left', 'canitia'),
+			'right' => __('Right', 'canitia'),
+		),
+	) );
+
+	$wp_customize->add_control( 'show_tags', array(
+		'label' => __('Show Tags', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show Tags', 'canitia'),
+			'hide' => __('Hide Tags', 'canitia'),
+		),
+	) );
+
+	$wp_customize->add_control( 'show_categories', array(
+		'label' => __('Show Categories', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show Categories', 'canitia'),
+			'hide' => __('Hide Categories', 'canitia'),
+		),
+	) );
+
+	$wp_customize->add_control( 'show_author_section', array(
+		'label' => __('Show Author section', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show Author section', 'canitia'),
+			'hide' => __('Hide Author section', 'canitia'),
+		),
+	) );
 
 		$wp_customize->add_control(
 			new WP_Customize_Color_Control(
@@ -340,7 +423,17 @@ function canitia_customizer( $wp_customize ) {
 			)
 		);
 
+	$wp_customize->add_control( 'theme_preset', array(
+		'label' => __('Theme preset', 'canitia'),
+		'section' => 'settings_section_canitia_labs',
+		'type' => 'radio',
+		'choices' => array(
+			'light' => __('Light', 'canitia'),
+			'dark' => __('Dark', 'canitia'),
+		),
+	) );
 	}
+
 add_action( 'customize_register', 'canitia_customizer' );
 
 

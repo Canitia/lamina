@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row">
 
-    <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+    <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
     <!-- second column (widget bar) -->
     <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
@@ -18,7 +18,7 @@
 
     </div><!-- main content END! -->
 
-    <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
+    <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
     <!-- second column (widget bar) -->
     <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>

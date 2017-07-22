@@ -2,7 +2,7 @@
 <div class="container-fluid">
      <div class="row">
 
-      <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+      <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
       <!-- second column (widget bar) -->
       <?php get_sidebar( 'primary' ); ?>
       <?php endif; ?>
@@ -36,7 +36,7 @@
                 <?php canitia_pagination_numeric_posts_nav(); ?>
           </div><!-- einde md8 -->
           </div>
-            <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
+            <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
             <!-- second column (widget bar) -->
             <?php get_sidebar( 'primary' ); ?>
             <?php endif; ?>

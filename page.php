@@ -15,7 +15,9 @@
       <div class="post-content">
         <?php the_content();?>
       </div>  
-        <?php get_template_part( 'partials/authorsection' ); ?>
+        <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
+            get_template_part( 'partials/authorsection' ); 
+        endif; ?>
         </article><!-- close article -->
   </div><!-- close post class div -->
   <!-- error handling -->

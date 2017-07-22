@@ -1,7 +1,7 @@
 <?php get_header(); ?>
  <div class="container-fluid">
     <div class="row">
-        <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+        <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
         <?php endif; ?>
@@ -23,11 +23,15 @@
 
         <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
-        <?php get_template_part( 'partials/authorsection' ); ?>
+
+        <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
+            get_template_part( 'partials/authorsection' ); 
+        endif; ?>
 
         <div class="cat-links">
+        <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
         <?php if(has_category()) { ?>
-          <span class="label"><?php _e("Posted in", "canitia"); ?></span>
+          <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
             $separator = ', ';
             $output = '';
@@ -39,10 +43,14 @@
                 echo trim( $output, $separator );
             } ?>
          <hr class="cat-links-hr" />
-        <?php } ?>
-         <?php if(has_tag()) { ?>
-             <?php the_tags( '<span class="label">'. __("Tags", "canitia") . '</span> ', ', ', ' ' ); ?> 
-        <hr class="cat-links-hr" />
+        <?php 
+            }
+        } ?>
+        <?php if(has_tag()) { ?>
+            <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
+                <?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> 
+                <hr class="cat-links-hr" />
+                <?php endif; ?>
         <?php } ?>
           </div>
        </article><!-- close article -->
@@ -62,7 +70,7 @@
       <?php endif; ?>
 
 
-        <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
+        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
         <?php endif; ?>

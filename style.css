@@ -3,11 +3,11 @@ Theme Name: Canitia
 Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
-Description: Elegant yet simple. Simplicity with features like custom designed tag/page/error and search pages, dynamic nav-menu's, logo support and more.
-Version: 0.11.1.1
+Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, custom  colors, logo support and more.
+Version: 0.11.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
 Text Domain: canitia
 
 This theme, like WordPress, is licensed under the GPL.
@@ -243,6 +243,16 @@ address {
 
 /* **************************************
 
+  FEATURED POSTS LOOK-N-FEEL
+
+*****************************************/
+
+.row-featured {
+	margin-top: 20px;
+}
+
+/* **************************************
+
   CONTENT SIDEBAR / MAIN
 
 *****************************************/
@@ -304,16 +314,13 @@ article > h1:first-child {
 POST/ARTICLE HEADERS
 
 ##########################################*/
-
 .post-subitems {
-	color: #979797;
 	margin-bottom: 25px;
 	font-size: 16px;
 }
 
 .post-subitems > a
 {
-	color:#979797;
 	text-decoration: none;
 }
 
@@ -331,6 +338,16 @@ POST/ARTICLE HEADERS
 	object-fit: cover;
 	max-height: 500px;
 	width: 100%;
+}
+
+.archive-image {
+	object-fit: cover;
+	height: 150px;
+	width: 100%;	
+}
+
+.archive-image:hover {
+	filter: grayscale(50%);
 }
 
 .post-content > ul li, 
@@ -358,7 +375,6 @@ article {
     margin-bottom: 15px;
 	padding-top: 25px;
 	word-wrap: break-word;
-	background:white;
 	height:100%;
 }
 
@@ -939,11 +955,13 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-circle, 
-.fa-tag {
+.fa-tag,
+.fa-list {
 	color: #d3d3d3;
 }
 
-.fa-tag {
+.fa-tag,
+.fa-list {
 	margin-right: 8px;
 }
 
