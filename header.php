@@ -44,21 +44,17 @@
 <?php
     if ( is_home() || is_category() || is_author() ) {
 
-        if ( get_theme_mod( 'display_slider', 'show' ) == 'show' && get_theme_mod( 'display_featured', 'hide' )  == 'hide') :
+        if ( get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') :
             get_template_part( 'partials/slider' );
         endif;
 
-        if ( get_theme_mod( 'display_featured', 'show' )  == 'show' && get_theme_mod( 'display_slider', 'hide' ) == 'hide' ) :
+        if ( get_theme_mod( 'display_featured_content', 'showfeatured' )  == 'showfeatured' ) :
             get_template_part( 'partials/featured-post' );
         endif;
 
-        if ( get_theme_mod( 'display_featured', 'show' ) == 'show' && get_theme_mod( 'display_slider', 'show' ) == 'show' ) :
-            set_theme_mod ('display_featured', 'hide' ); // disable featured section as the slider replaces it
-            set_theme_mod ('display_slider', 'hide' );   ?>
-             <p class="text-center"> 
-                 <?php _e("Sorry, you can't enable sticky posts in a row and slider at the same time. Please disable one of the two.", 'canitia');?>
-            </p>
-        <?php endif;
+        if ( get_theme_mod( 'display_featured_content', 'hide' ) == 'hide' ) :
+            set_theme_mod ('display_featured_content', 'hide' ); // disable featured section as the slider replaces it
+        endif;
     }
 
     if ( is_single() || is_page() ) {

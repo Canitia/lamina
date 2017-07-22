@@ -209,16 +209,9 @@ function canitia_customizer( $wp_customize ) {
     );
 
 	$wp_customize->add_setting(
-		'display_slider',
+		'display_featured_content',
 		array(
 			'default' => 'show',
-		)
-	);
-
-	$wp_customize->add_setting(
-		'display_featured',
-		array(
-			'default' => 'hide',
 		)
 	);
 
@@ -292,23 +285,14 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_control( 'display_slider', array(
-		'label' => __('Show slider', 'canitia'),
+	$wp_customize->add_control( 'display_featured_content', array(
+		'label' => __('Show featured content', 'canitia'),
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => 'Show Slider',
-			'hide' => 'Hide Slider',
-		),
-	) );
-
-	$wp_customize->add_control( 'display_featured', array(
-		'label' => __('Show featured posts', 'canitia'),
-		'section' => 'settings_section_canitia',
-		'type' => 'radio',
-		'choices' => array(
-			'show' => __('Show featured posts', 'canitia'),
-			'hide' => __('Hide featured posts', 'canitia'),
+			'showslider' => __('Show Slider', 'canitia'),
+			'showfeatured' => __('Show featured row', 'canitia'),
+			'hide' => __('Hide all', 'canitia'),
 		),
 	) );
 
