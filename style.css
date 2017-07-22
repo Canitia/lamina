@@ -71,8 +71,8 @@ pre {
 blockquote {
 	display: table;
 	position:relative;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding-top:7px;
+	padding-bottom:7px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	background-color: whitesmoke;
