@@ -58,7 +58,7 @@
             set_theme_mod ('display_featured', false ); // disable featured section as the slider replaces it
             set_theme_mod ('display_slider', false );   ?>
              <p class="text-center"> 
-                 <?php _e("Sorry, you can't enable featured posts in a row and slider at the same time. Please disable one of the two.", 'canitia');?>
+                 <?php _e("Sorry, you can't enable sticky posts in a row and slider at the same time. Please disable one of the two.", 'canitia');?>
             </p>
         <?php endif;
     }
