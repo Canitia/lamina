@@ -216,7 +216,14 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
-	
+	$wp_customize->add_setting(
+		'display_featured',
+		array(
+			'default' => false,
+			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+		)
+	);
+
 	$wp_customize->add_setting(
 		'display_today',
 		array(
@@ -292,7 +299,16 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'display_slider',
 		array(
-			'label' =>  __('Show slider?', 'canitia'),
+			'label' =>  __('Show featured posts in a slider?', 'canitia'),
+			'section' => 'settings_section_canitia',
+			'type' => 'checkbox',
+		)
+		);
+
+	$wp_customize->add_control(
+		'display_featured',
+		array(
+			'label' =>  __('Show featured posts in a row?', 'canitia'),
 			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
 		)
