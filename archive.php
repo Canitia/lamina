@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container-fluid">
-    <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Archive', 'canitia'); ?></h1>
+    <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><strong><?php _e('Archive ', 'canitia');?></strong> <?php the_archive_title();?></h1>
   <div <?php post_class(); ?>>
   <div class="row">
          <?php if ( have_posts() ) : ?>
