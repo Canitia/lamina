@@ -1064,7 +1064,6 @@ ul.children {
 }
 
 .comment-body .comment-author img {
-	border-radius: 50%;
 	position: relative;
 	float:none;
 	width: 60px;
@@ -1093,7 +1092,6 @@ ul.children {
     padding: 5px;
     margin-top: 5px;
 	border-bottom: 1px solid #ebebeb;
-
 	display: flex;
     flex-direction: row;
     justify-content: flex-end;
