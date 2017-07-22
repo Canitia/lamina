@@ -323,7 +323,7 @@ function canitia_customizer( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'sidebar_position', array(
-		'label' => 'Sidebar position',
+		'label' => __('Sidebar position', 'canitia'),
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
