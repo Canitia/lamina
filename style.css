@@ -330,6 +330,8 @@ POST/ARTICLE HEADERS
 .post-subitems {
 	margin-bottom: 25px;
 	font-size: 16px;
+	font-weight: 600;
+    font-style: italic;
 }
 
 .post-subitems > a
