@@ -211,15 +211,14 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'display_slider',
 		array(
-			'default' => true,
+			'default' => 'show',
 		)
 	);
 
 	$wp_customize->add_setting(
 		'display_featured',
 		array(
-			'default' => false,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'hide',
 		)
 	);
 
@@ -305,14 +304,15 @@ function canitia_customizer( $wp_customize ) {
 		),
 	) );
 
-	$wp_customize->add_control(
-		'display_featured',
-		array(
-			'label' =>  __('Show last 3 sticky posts in a row?', 'canitia'),
-			'section' => 'settings_section_canitia',
-			'type' => 'radio',
-		)
-		);
+	$wp_customize->add_control( 'display_featured', array(
+		'label' => 'Show featured posts',
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => 'Show featured posts',
+			'hide' => 'Hide featured posts',
+		),
+	) );
 
 	$wp_customize->add_control(
 		'display_today',
