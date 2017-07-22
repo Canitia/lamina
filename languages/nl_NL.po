@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-22 15:27+0000\n"
-"PO-Revision-Date: 2017-07-22 15:30+0000\n"
+"POT-Creation-Date: 2017-07-22 18:02+0000\n"
+"PO-Revision-Date: 2017-07-22 18:03+0000\n"
 "Last-Translator: bouwlamp <michael@michaelboumann.info>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,31 +13,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: header.php:61
-msgid ""
-"Sorry, you can't enable featured posts in a row and slider at the same time. "
-"Please disable one of the two."
-msgstr ""
-"Sorry, je kan 'uitgelichte posts' in een rij en de 'uitgelichte post' slider "
-"niet tegelijk activeren. Schakel a.u.b. een van de twee opties uit. "
+#: functions.php:210
+msgid "Canitia Labs"
+msgstr "Canitia experimenten"
 
-#: functions.php:302
-msgid "Show featured posts in a slider?"
-msgstr "Laat uitgelichte posts zien in een slider?"
+#: functions.php:211
+msgid "Experimental Canitia Labs features."
+msgstr "Experimentele Canitia features."
 
-#: functions.php:311
-msgid "Show featured posts in a row?"
-msgstr "Laat uitgelichte posts zien in een rij?"
+#: functions.php:294
+msgid "Show featured content"
+msgstr "Laatst uitgelichte content zien"
 
-#. Description of the theme
-msgid ""
-"Elegant yet simple. Simplicity with features. Custom "
-"post/tag/page/archive/error pages, dynamic nav-menu's, custom  colors, logo "
-"support and more."
-msgstr ""
-"Elegant en toch simpel. Simpelheid met features. Volledig custom "
-"post/tag/pagina/archief en fout-pagina's, dynamische navigatiemenu's, custom "
-"kleuren, logo ondersteuning en meer."
+#: functions.php:298
+msgid "Show Slider"
+msgstr "Laat Slider zien"
+
+#: functions.php:299
+msgid "Show Featured Row"
+msgstr "Laat een uitgelichte rij zien"
+
+#: functions.php:300
+msgid "Hide all"
+msgstr "Verberg alle featured content"
+
+#: functions.php:309
+msgid "Show Today section"
+msgstr "Laat 'Vandaag' sectie zien"
+
+#: functions.php:310
+msgid "Hide Today section"
+msgstr "Verberg 'Vandaag' sectie"
+
+#: functions.php:315
+msgid "Sidebar position"
+msgstr "Sidebar positie"
+
+#: functions.php:319
+msgid "Sidebar on the left"
+msgstr "Sidebar aan de linkerzijde"
+
+#: functions.php:320
+msgid "Sidebar on the right"
+msgstr "Sidebar aan de rechterzijde"
 
 #: 404.php:12
 msgid "Error"
@@ -115,59 +133,55 @@ msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
-#: functions.php:54
+#: functions.php:50
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:55
+#: functions.php:51
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:74
+#: functions.php:70
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:205
+#: functions.php:201
 msgid "Canitia Settings"
 msgstr "Canitia Instellingen"
 
-#: functions.php:206
+#: functions.php:202
 msgid "Tweak Canitia to your liking."
 msgstr "Stel Canitia in zoals jij dat wilt."
 
-#: functions.php:320
+#: functions.php:305
 msgid "Show Today section?"
 msgstr "Laat 'vandaag' sectie zien?"
 
-#: functions.php:329
-msgid "Move sidebar to the left?"
-msgstr "Verplaats sidebar naar links?"
-
-#: functions.php:338
+#: functions.php:325
 msgid "Show tags within a post?"
 msgstr "Laat tags zien in een post?"
 
-#: functions.php:347
+#: functions.php:332
 msgid "Show categories within a post?"
 msgstr "Laat categorieën zien in een post?"
 
-#: functions.php:356
+#: functions.php:339
 msgid "Show the full author section below a post/page?"
 msgstr "Laat auteurssectie zien onder een post of pagina?"
 
-#: functions.php:367
+#: functions.php:350
 msgid "Header item Color"
 msgstr "Headeritems kleur"
 
-#: functions.php:379
+#: functions.php:362
 msgid "Text color"
 msgstr "Text kleur"
 
-#: functions.php:391
+#: functions.php:374
 msgid "Link color"
 msgstr "Link kleur"
 
-#: functions.php:403
+#: functions.php:386
 msgid "Link hover color"
 msgstr "Link hover kleur"
 
@@ -210,6 +224,16 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 #. Name of the theme
 msgid "Canitia"
 msgstr "Canitia"
+
+#. Description of the theme
+msgid ""
+"Elegant yet simple. Simplicity with features. Custom "
+"post/tag/page/archive/error pages, dynamic nav-menu's, custom  colors, logo "
+"support and more."
+msgstr ""
+"Elegant en toch simpel. Simpelheid met features. Volledig custom "
+"post/tag/pagina/archief en fout-pagina's, dynamische navigatiemenu's, custom "
+"kleuren, logo ondersteuning en meer."
 
 #. URI of the theme
 msgid "https://michaelboumann.info/collection/#canitia"
