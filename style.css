@@ -476,6 +476,7 @@ ul.pings.commentlist {
 
 .author-bio {
 	display: flex;
+	margin-top: -15px;
 }
 
 img.avatar {
@@ -670,11 +671,6 @@ footer {
 
 	.author-name {
 		margin-left: 10px;
-	}
-
-	p.author-bio {
-		margin-left:60px;
-		margin-top: -10px;
 	}
 	
 	.badge {
