@@ -200,13 +200,23 @@ function canitia_sanitize_checkbox( $checked ) {
  */
 function canitia_customizer( $wp_customize ) {
     $wp_customize->add_section(
-        'settings_section_one',
+        'settings_section_canitia',
         array(
             'title' =>  __('Canitia Settings', 'canitia'),
             'description' => __('Tweak Canitia to your liking.', 'canitia'),
             'priority' => 35,
         )
     );
+
+    $wp_customize->add_section(
+        'settings_section_canitia_content',
+        array(
+            'title' =>  __('Canitia Content', 'canitia'),
+            'description' => __('Tweak Canitia to your liking.', 'canitia'),
+            'priority' => 35,
+        )
+    );
+
 
 	$wp_customize->add_setting(
 		'display_slider',
@@ -265,11 +275,27 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'show_tags',
+		array(
+			'default'     => true,
+			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'show_author_section',
+		array(
+			'default'     => true,
+			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+		)
+	);
+
 	$wp_customize->add_control(
 		'display_slider',
 		array(
 			'label' =>  __('Show slider?', 'canitia'),
-			'section' => 'settings_section_one',
+			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
 		)
 		);
@@ -278,7 +304,7 @@ function canitia_customizer( $wp_customize ) {
 		'display_today',
 		array(
 			'label' =>  __('Show Today section?', 'canitia'),
-			'section' => 'settings_section_one',
+			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
 		)
 		);
@@ -287,10 +313,28 @@ function canitia_customizer( $wp_customize ) {
 		'move_sidebar_left',
 		array(
 			'label' => __('Move sidebar to the left?', 'canitia'),
-			'section' => 'settings_section_one',
+			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
 		)
 		);
+
+	$wp_customize->add_control(
+		'show_tags',
+		array(
+			'label' =>  __('Show tags within a post?', 'canitia'),
+			'section' => 'settings_section_canitia_content',
+			'type' => 'checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'show_author_section',
+		array(
+			'label' =>  __('Show the full author section below a post/page?', 'canitia'),
+			'section' => 'settings_section_canitia_content',
+			'type' => 'checkbox',
+		)
+	);
 
 		$wp_customize->add_control(
 			new WP_Customize_Color_Control(

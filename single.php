@@ -23,7 +23,10 @@
 
         <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
-        <?php get_template_part( 'partials/authorsection' ); ?>
+
+        <?php if (get_theme_mod( 'show_author_section')) {
+            get_template_part( 'partials/authorsection' ); 
+        } ?>
 
         <div class="cat-links">
         <?php if(has_category()) { ?>
@@ -40,9 +43,13 @@
             } ?>
          <hr class="cat-links-hr" />
         <?php } ?>
-         <?php if(has_tag()) { ?>
-             <?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> 
-        <hr class="cat-links-hr" />
+
+
+                <?php if(has_tag()) { ?>
+        <?php if (get_theme_mod( 'show_tags')) { ?>
+                <?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> 
+                <hr class="cat-links-hr" />
+                <?php } ?>
         <?php } ?>
           </div>
        </article><!-- close article -->
