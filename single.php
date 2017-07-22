@@ -16,7 +16,7 @@
             <i class="fa fa-clock-o"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
           </div>
-        <hr />
+        <hr class="cat-links-hr" />
         <div class="post-content">
             <?php the_content(); ?>
         </div> 
