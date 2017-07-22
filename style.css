@@ -197,6 +197,7 @@ address {
 /* color of clickable header */
 .site-title {
 	font-weight: 300;
+	font-size: 200%;
 }
 
 .menu-item {
