@@ -332,27 +332,21 @@ function canitia_customizer( $wp_customize ) {
 		),
 	) );
 
-	$wp_customize->add_control(
-		'show_tags',
-		array(
+	$wp_customize->add_control(	'show_tags', array(
 			'label' =>  __('Show tags within a post?', 'canitia'),
 			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
 		)
 	);
 
-	$wp_customize->add_control(
-		'show_categories',
-		array(
+	$wp_customize->add_control(	'show_categories',	array(
 			'label' =>  __('Show categories within a post?', 'canitia'),
 			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
 		)
 	);
 
-	$wp_customize->add_control(
-		'show_author_section',
-		array(
+	$wp_customize->add_control(	'show_author_section', array(
 			'label' =>  __('Show the full author section below a post/page?', 'canitia'),
 			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
