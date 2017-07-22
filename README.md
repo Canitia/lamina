@@ -14,17 +14,20 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 - **Translation support** - includes English and Dutch languages
 
 # Canitia Settings - theme specific custom options
+- Enable Featured content (slider, featured row or hide)
+- 'Today' section (show/hide)
 - Sidebar position (left or right)
-- Enable or disable Slider
-- Enable or disable the Today section
+- Show tags in posts and such (show/hide)
+- Show categories in posts and such (show/hide)
+- Show author section (show/hide)
 
 ![Canitia](https://github.com/boumannm/canitia/blob/master/screenshot.png)
 
 # Status
 Stable
 
-*Passed validation on May 26th 2017*
-*Passed a second time (recheck) on July 22nd 2017*
+- *Passed validation on May 26th 2017*
+- *Passed a second time (recheck) on July 22nd 2017*
 
 ## Libraries used
 - Font Awesome 4.7.0
