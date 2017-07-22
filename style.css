@@ -329,7 +329,6 @@ POST/ARTICLE HEADERS
 ##########################################*/
 .post-subitems {
 	margin-bottom: 25px;
-	font-size: 16px;
 	font-weight: 600;
     font-style: italic;
 }
@@ -440,7 +439,6 @@ ul.pings.commentlist {
 	background-color: #d3d3d3;
 	color: black;
 }
-
 
 /* pagination within a post/page */
 .pagination-within > li,
