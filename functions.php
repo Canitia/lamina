@@ -213,7 +213,7 @@ function canitia_customizer( $wp_customize ) {
         array(
             'title' =>  __('Canitia Settings', 'canitia'),
             'description' => __('Tweak Canitia to your liking.', 'canitia'),
-            'priority' => 35,
+            'priority' => 55,
         )
     );
 
@@ -222,7 +222,7 @@ function canitia_customizer( $wp_customize ) {
         array(
             'title' =>  __('Canitia Labs', 'canitia'),
             'description' => __('Experimental Canitia Labs features.', 'canitia'),
-            'priority' => 35,
+            'priority' => 200,
         )
     );
 
