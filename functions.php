@@ -315,7 +315,7 @@ function canitia_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_control( 'display_featured_content', array(
-		'label' => __('Show featured content', 'canitia'),
+		'label' => __('Featured content', 'canitia'),
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
@@ -326,7 +326,7 @@ function canitia_customizer( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'display_today', array(
-		'label' => __('Show Today section?', 'canitia'),
+		'label' => __('Today section', 'canitia'),
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
@@ -340,8 +340,8 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
-			'left' => __('Sidebar on the left', 'canitia'),
-			'right' => __('Sidebar on the right', 'canitia'),
+			'left' => __('Left', 'canitia'),
+			'right' => __('Right', 'canitia'),
 		),
 	) );
 
