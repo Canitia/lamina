@@ -940,7 +940,8 @@ EXTERNAL libraries look-n-feel
 	color: #d3d3d3;
 }
 
-.fa-tag {
+.fa-tag,
+.fa-list {
 	margin-right: 8px;
 }
 

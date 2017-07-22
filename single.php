@@ -27,7 +27,7 @@
 
         <div class="cat-links">
         <?php if(has_category()) { ?>
-          <span class="label"><?php _e("Posted in", "canitia"); ?></span>
+          <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
             $separator = ', ';
             $output = '';
@@ -41,7 +41,7 @@
          <hr class="cat-links-hr" />
         <?php } ?>
          <?php if(has_tag()) { ?>
-             <?php the_tags( '<span class="label">'. __("Tags", "canitia") . '</span> ', ', ', ' ' ); ?> 
+             <?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> 
         <hr class="cat-links-hr" />
         <?php } ?>
           </div>
