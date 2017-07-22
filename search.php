@@ -11,7 +11,7 @@ Template Name: Search Page
 
 <div class="row">
 
-  <?php if ( get_theme_mod( 'move_sidebar_left' ) == 1 ) : ?>
+  <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>

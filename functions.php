@@ -231,10 +231,9 @@ function canitia_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'move_sidebar_left',
+		'sidebar_position',
 		array(
-			'default' => false,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'right',
 		)
 	);
 
@@ -323,14 +322,15 @@ function canitia_customizer( $wp_customize ) {
 		)
 		);
 
-	$wp_customize->add_control(
-		'move_sidebar_left',
-		array(
-			'label' => __('Move sidebar to the left?', 'canitia'),
-			'section' => 'settings_section_canitia',
-			'type' => 'checkbox',
-		)
-		);
+	$wp_customize->add_control( 'sidebar_position', array(
+		'label' => 'Sidebar position',
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'left' => 'Sidebar on the left',
+			'right' => 'Sidebar on the right',
+		),
+	) );
 
 	$wp_customize->add_control(
 		'show_tags',
