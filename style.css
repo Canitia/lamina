@@ -936,7 +936,8 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-circle, 
-.fa-tag {
+.fa-tag,
+.fa-list {
 	color: #d3d3d3;
 }
 
