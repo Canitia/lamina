@@ -390,6 +390,15 @@ function canitia_customizer( $wp_customize ) {
 			)
 		);
 
+	$wp_customize->add_control( 'theme_preset', array(
+		'label' => __('Theme preset', 'canitia'),
+		'section' => 'settings_section_canitia_labs',
+		'type' => 'radio',
+		'choices' => array(
+			'light' => __('Light', 'canitia'),
+			'dark' => __('Dark', 'canitia'),
+		),
+	) );
 	}
 add_action( 'customize_register', 'canitia_customizer' );
 
