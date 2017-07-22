@@ -285,24 +285,32 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'show_tags',
 		array(
-			'default'     => true,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
 	$wp_customize->add_setting(
 		'show_categories',
 		array(
-			'default'     => true,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
 	$wp_customize->add_setting(
 		'show_author_section',
 		array(
-			'default'     => true,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'theme_preset',
+		array(
+			'default' => 'light',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
@@ -337,26 +345,35 @@ function canitia_customizer( $wp_customize ) {
 		),
 	) );
 
-	$wp_customize->add_control(	'show_tags', array(
-			'label' =>  __('Show tags within a post?', 'canitia'),
-			'section' => 'settings_section_canitia',
-			'type' => 'checkbox',
-		)
-	);
+	$wp_customize->add_control( 'show_tags', array(
+		'label' => __('Show Tags', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show Tags', 'canitia'),
+			'hide' => __('Hide Tags', 'canitia'),
+		),
+	) );
 
-	$wp_customize->add_control(	'show_categories',	array(
-			'label' =>  __('Show categories within a post?', 'canitia'),
-			'section' => 'settings_section_canitia',
-			'type' => 'checkbox',
-		)
-	);
+	$wp_customize->add_control( 'show_categories', array(
+		'label' => __('Show Categories', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show Categories', 'canitia'),
+			'hide' => __('Hide Categories', 'canitia'),
+		),
+	) );
 
-	$wp_customize->add_control(	'show_author_section', array(
-			'label' =>  __('Show the full author section below a post/page?', 'canitia'),
-			'section' => 'settings_section_canitia',
-			'type' => 'checkbox',
-		)
-	);
+	$wp_customize->add_control( 'show_author_section', array(
+		'label' => __('Show Author section', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show Author section', 'canitia'),
+			'hide' => __('Hide Author section', 'canitia'),
+		),
+	) );
 
 		$wp_customize->add_control(
 			new WP_Customize_Color_Control(

@@ -47,10 +47,10 @@
             }
         } ?>
         <?php if(has_tag()) { ?>
-        <?php if (get_theme_mod( 'show_tags')) { ?>
+            <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
                 <?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> 
                 <hr class="cat-links-hr" />
-                <?php } ?>
+                <?php endif; ?>
         <?php } ?>
           </div>
        </article><!-- close article -->
