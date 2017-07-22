@@ -457,6 +457,7 @@ ul.pings.commentlist {
 .cat-links-hr {
 	margin-top:7px;
 	margin-bottom:7px;
+	clear:both;
 }
 
 .cat-links > a:hover {
