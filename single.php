@@ -24,12 +24,12 @@
         <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
 
-        <?php if (get_theme_mod( 'show_author_section')) {
+        <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
             get_template_part( 'partials/authorsection' ); 
-        } ?>
+        endif; ?>
 
         <div class="cat-links">
-        <?php if (get_theme_mod( 'show_categories')) { ?>
+        <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
         <?php if(has_category()) { ?>
           <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
