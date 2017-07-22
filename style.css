@@ -4,7 +4,7 @@ Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, custom  colors, logo support and more.
-Version: 0.11.3
+Version: 0.11.3.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -197,6 +197,7 @@ address {
 /* color of clickable header */
 .site-title {
 	font-weight: 300;
+	font-size: 200%;
 }
 
 .menu-item {
@@ -259,7 +260,7 @@ address {
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
-	font-size: 175% !important;
+	font-size: 150% !important;
 	font-weight: 300;
     margin-top: 10px;
 	border-bottom: 1px solid #f8f8f8;
