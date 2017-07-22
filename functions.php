@@ -191,6 +191,18 @@ function canitia_sanitize_checkbox( $checked ) {
 	return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
 
+function canitia_sanitize_select( $input, $setting ) {
+	
+	// Ensure input is a slug.
+	$input = sanitize_key( $input );
+	
+	// Get list of choices from the control associated with the setting.
+	$choices = $setting->manager->get_control( $setting->id )->choices;
+	
+	// If the input is a valid key, return it; otherwise, return the default.
+	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+}
+
 /**
  * Adds the individual sections, settings, and controls to the theme customizer
  */
@@ -217,6 +229,7 @@ function canitia_customizer( $wp_customize ) {
 		'display_featured_content',
 		array(
 			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
@@ -224,6 +237,7 @@ function canitia_customizer( $wp_customize ) {
 		'display_today',
 		array(
 			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
@@ -231,6 +245,7 @@ function canitia_customizer( $wp_customize ) {
 		'sidebar_position',
 		array(
 			'default' => 'right',
+			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
@@ -400,7 +415,7 @@ function canitia_customizer( $wp_customize ) {
 		),
 	) );
 	}
-	
+
 add_action( 'customize_register', 'canitia_customizer' );
 
 
