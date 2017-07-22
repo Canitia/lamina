@@ -290,13 +290,6 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting(
-		'theme_preset',
-		array(
-			'default' => 'light',
-		)
-	);
-
 	$wp_customize->add_control( 'display_featured_content', array(
 		'label' => __('Show featured content', 'canitia'),
 		'section' => 'settings_section_canitia',
@@ -396,16 +389,6 @@ function canitia_customizer( $wp_customize ) {
 				)
 			)
 		);
-
-	$wp_customize->add_control( 'theme_preset', array(
-		'label' => __('Theme preset', 'canitia'),
-		'section' => 'settings_section_canitia_labs',
-		'type' => 'radio',
-		'choices' => array(
-			'light' => __('Light', 'canitia'),
-			'dark' => __('Dark', 'canitia'),
-		),
-	) );
 
 	}
 add_action( 'customize_register', 'canitia_customizer' );
