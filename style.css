@@ -342,7 +342,7 @@ POST/ARTICLE HEADERS
 
 .archive-image {
 	object-fit: cover;
-	max-height: 150px;
+	height: 150px;
 	width: 100%;	
 }
 
