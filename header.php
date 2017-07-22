@@ -44,17 +44,17 @@
 <?php
     if ( is_home() || is_category() || is_author() ) {
 
-        if ( get_theme_mod( 'display_slider' ) == 1 && get_theme_mod( 'display_featured' )  == 0) :
+        if ( get_theme_mod( 'display_slider', 'show' ) == 'show' && get_theme_mod( 'display_featured' )  == 0) :
             get_template_part( 'partials/slider' );
             set_theme_mod ('display_featured', false ); // disable featured section as the slider replaces it
         endif;
 
-        if ( get_theme_mod( 'display_featured' )  == 1 && get_theme_mod( 'display_slider' ) == 0 ) :
-            set_theme_mod ('display_slider', false ); // disable slider as the featured section replaces it
+        if ( get_theme_mod( 'display_featured' )  == 1 && get_theme_mod( 'display_slider', 'hide' ) == 'hide' ) :
+            set_theme_mod ('display_slider', 'hide' ); // disable slider as the featured section replaces it
             get_template_part( 'partials/featured-post' );
         endif;
 
-        if ( get_theme_mod( 'display_featured' ) == 1 && get_theme_mod( 'display_slider' ) == 1 ) :
+        if ( get_theme_mod( 'display_featured' ) == 1 && get_theme_mod( 'display_slider', 'show' ) == 'show' ) :
             set_theme_mod ('display_featured', false ); // disable featured section as the slider replaces it
             set_theme_mod ('display_slider', false );   ?>
              <p class="text-center"> 

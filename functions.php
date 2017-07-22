@@ -212,7 +212,6 @@ function canitia_customizer( $wp_customize ) {
 		'display_slider',
 		array(
 			'default' => true,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
 		)
 	);
 
@@ -296,21 +295,22 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_control(
-		'display_slider',
-		array(
-			'label' =>  __('Show last 3 sticky posts in a slider?', 'canitia'),
-			'section' => 'settings_section_canitia',
-			'type' => 'checkbox',
-		)
-		);
+	$wp_customize->add_control( 'display_slider', array(
+		'label' => 'Show slider',
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => 'Show Slider',
+			'hide' => 'Hide Slider',
+		),
+	) );
 
 	$wp_customize->add_control(
 		'display_featured',
 		array(
 			'label' =>  __('Show last 3 sticky posts in a row?', 'canitia'),
 			'section' => 'settings_section_canitia',
-			'type' => 'checkbox',
+			'type' => 'radio',
 		)
 		);
 
