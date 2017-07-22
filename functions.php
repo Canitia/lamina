@@ -191,6 +191,7 @@ function canitia_sanitize_checkbox( $checked ) {
 	return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
 
+/* sanitize select/inputs/radios as was asked by the theme checker */
 function canitia_sanitize_select( $input, $setting ) {
 	
 	// Ensure input is a slug.
