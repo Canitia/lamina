@@ -132,6 +132,11 @@ cite {
     font-weight: bold;
 }
 
+dl > dt {
+	font-weight: bold;
+	font-style: italic;
+}
+
 dt {
     font-weight: 500;
 }
