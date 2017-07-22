@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-22 18:02+0000\n"
-"PO-Revision-Date: 2017-07-22 18:03+0000\n"
+"POT-Creation-Date: 2017-07-22 21:35+0000\n"
+"PO-Revision-Date: 2017-07-22 21:37+0000\n"
 "Last-Translator: bouwlamp <michael@michaelboumann.info>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,49 +13,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:210
-msgid "Canitia Labs"
-msgstr "Canitia experimenten"
+#: functions.php:318
+msgid "Featured content"
+msgstr "Aanbevolen content"
 
-#: functions.php:211
-msgid "Experimental Canitia Labs features."
-msgstr "Experimentele Canitia features."
+#: functions.php:329
+msgid "Today section"
+msgstr "Vandaag sectie"
 
-#: functions.php:294
-msgid "Show featured content"
-msgstr "Laatst uitgelichte content zien"
+#: functions.php:343
+msgid "Left"
+msgstr "Links"
 
-#: functions.php:298
-msgid "Show Slider"
-msgstr "Laat Slider zien"
+#: functions.php:344
+msgid "Right"
+msgstr "Rechts"
 
-#: functions.php:299
-msgid "Show Featured Row"
-msgstr "Laat een uitgelichte rij zien"
+#: functions.php:349 functions.php:353
+msgid "Show Tags"
+msgstr "Laat tags zien"
 
-#: functions.php:300
-msgid "Hide all"
-msgstr "Verberg alle featured content"
+#: functions.php:354
+msgid "Hide Tags"
+msgstr "Verberg tags"
 
-#: functions.php:309
-msgid "Show Today section"
-msgstr "Laat 'Vandaag' sectie zien"
+#: functions.php:359 functions.php:363
+msgid "Show Categories"
+msgstr "Laat categorieën zien"
 
-#: functions.php:310
-msgid "Hide Today section"
-msgstr "Verberg 'Vandaag' sectie"
+#: functions.php:364
+msgid "Hide Categories"
+msgstr "Verberg categorieën"
 
-#: functions.php:315
-msgid "Sidebar position"
-msgstr "Sidebar positie"
+#: functions.php:369 functions.php:373
+msgid "Show Author section"
+msgstr "Laat auteur sectie zien"
 
-#: functions.php:319
-msgid "Sidebar on the left"
-msgstr "Sidebar aan de linkerzijde"
+#: functions.php:374
+msgid "Hide Author section"
+msgstr "Verberg auteur sectie"
 
-#: functions.php:320
-msgid "Sidebar on the right"
-msgstr "Sidebar aan de rechterzijde"
+#: functions.php:427
+msgid "Theme preset"
+msgstr "Thema preset"
+
+#: functions.php:431
+msgid "Light"
+msgstr "Licht"
+
+#: functions.php:432
+msgid "Dark"
+msgstr "Donker"
 
 #: 404.php:12
 msgid "Error"
@@ -145,43 +153,59 @@ msgstr "Hoofd sidebar."
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:201
+#: functions.php:214
 msgid "Canitia Settings"
 msgstr "Canitia Instellingen"
 
-#: functions.php:202
+#: functions.php:215
 msgid "Tweak Canitia to your liking."
 msgstr "Stel Canitia in zoals jij dat wilt."
 
-#: functions.php:305
-msgid "Show Today section?"
-msgstr "Laat 'vandaag' sectie zien?"
+#: functions.php:223
+msgid "Canitia Labs"
+msgstr "Canitia experimenten"
 
-#: functions.php:325
-msgid "Show tags within a post?"
-msgstr "Laat tags zien in een post?"
+#: functions.php:224
+msgid "Experimental Canitia Labs features."
+msgstr "Experimentele Canitia features."
 
-#: functions.php:332
-msgid "Show categories within a post?"
-msgstr "Laat categorieën zien in een post?"
+#: functions.php:322
+msgid "Show Slider"
+msgstr "Laat Slider zien"
+
+#: functions.php:323
+msgid "Show Featured Row"
+msgstr "Laat een uitgelichte rij zien"
+
+#: functions.php:324
+msgid "Hide all"
+msgstr "Verberg alle featured content"
+
+#: functions.php:333
+msgid "Show Today section"
+msgstr "Laat 'Vandaag' sectie zien"
+
+#: functions.php:334
+msgid "Hide Today section"
+msgstr "Verberg 'Vandaag' sectie"
 
 #: functions.php:339
-msgid "Show the full author section below a post/page?"
-msgstr "Laat auteurssectie zien onder een post of pagina?"
+msgid "Sidebar position"
+msgstr "Sidebar positie"
 
-#: functions.php:350
+#: functions.php:383
 msgid "Header item Color"
 msgstr "Headeritems kleur"
 
-#: functions.php:362
+#: functions.php:395
 msgid "Text color"
 msgstr "Text kleur"
 
-#: functions.php:374
+#: functions.php:407
 msgid "Link color"
 msgstr "Link kleur"
 
-#: functions.php:386
+#: functions.php:419
 msgid "Link hover color"
 msgstr "Link hover kleur"
 
