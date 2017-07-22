@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-22 02:23+0000\n"
-"PO-Revision-Date: 2017-07-22 02:26+0000\n"
+"POT-Creation-Date: 2017-07-22 15:27+0000\n"
+"PO-Revision-Date: 2017-07-22 15:30+0000\n"
 "Last-Translator: bouwlamp <michael@michaelboumann.info>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,25 +13,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:322
-msgid "Show tags within a post?"
-msgstr "Laat tags zien in een post?"
+#: header.php:61
+msgid ""
+"Sorry, you can't enable featured posts in a row and slider at the same time. "
+"Please disable one of the two."
+msgstr ""
+"Sorry, je kan 'uitgelichte posts' in een rij en de 'uitgelichte post' slider "
+"niet tegelijk activeren. Schakel a.u.b. een van de twee opties uit. "
 
-#: functions.php:331
-msgid "Show categories within a post?"
-msgstr "Laat categorieën zien in een post?"
+#: functions.php:302
+msgid "Show featured posts in a slider?"
+msgstr "Laat uitgelichte posts zien in een slider?"
 
-#: functions.php:340
-msgid "Show the full author section below a post/page?"
-msgstr "Laat auteurssectie zien onder een post of pagina?"
+#: functions.php:311
+msgid "Show featured posts in a row?"
+msgstr "Laat uitgelichte posts zien in een rij?"
 
-#: archive.php:9
-msgid "Archive"
-msgstr "Archief"
-
-#: archive.php:33
-msgid "Sorry, this archive is empty."
-msgstr "Sorry, dit archief is leeg."
+#. Description of the theme
+msgid ""
+"Elegant yet simple. Simplicity with features. Custom "
+"post/tag/page/archive/error pages, dynamic nav-menu's, custom  colors, logo "
+"support and more."
+msgstr ""
+"Elegant en toch simpel. Simpelheid met features. Volledig custom "
+"post/tag/pagina/archief en fout-pagina's, dynamische navigatiemenu's, custom "
+"kleuren, logo ondersteuning en meer."
 
 #: 404.php:12
 msgid "Error"
@@ -50,7 +56,7 @@ msgid "Latest posts tagged"
 msgstr "Laatste berichten getagged met"
 
 #: tag.php:21 author.php:22 index.php:46 index.php:103 search.php:39
-#: archive.php:20 category.php:20
+#: category.php:20
 msgid "ago"
 msgstr "geleden"
 
@@ -129,31 +135,39 @@ msgstr "Canitia Instellingen"
 msgid "Tweak Canitia to your liking."
 msgstr "Stel Canitia in zoals jij dat wilt."
 
-#: functions.php:295
-msgid "Show slider?"
-msgstr "Laat slider zien?"
-
-#: functions.php:304
+#: functions.php:320
 msgid "Show Today section?"
 msgstr "Laat 'vandaag' sectie zien?"
 
-#: functions.php:313
+#: functions.php:329
 msgid "Move sidebar to the left?"
 msgstr "Verplaats sidebar naar links?"
 
-#: functions.php:351
+#: functions.php:338
+msgid "Show tags within a post?"
+msgstr "Laat tags zien in een post?"
+
+#: functions.php:347
+msgid "Show categories within a post?"
+msgstr "Laat categorieën zien in een post?"
+
+#: functions.php:356
+msgid "Show the full author section below a post/page?"
+msgstr "Laat auteurssectie zien onder een post of pagina?"
+
+#: functions.php:367
 msgid "Header item Color"
 msgstr "Headeritems kleur"
 
-#: functions.php:363
+#: functions.php:379
 msgid "Text color"
 msgstr "Text kleur"
 
-#: functions.php:375
+#: functions.php:391
 msgid "Link color"
 msgstr "Link kleur"
 
-#: functions.php:387
+#: functions.php:403
 msgid "Link hover color"
 msgstr "Link hover kleur"
 
@@ -168,6 +182,14 @@ msgstr "Resultaten voor"
 #: search.php:49
 msgid "Sorry, it seems this search query has no posts."
 msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
+
+#: archive.php:3
+msgid "Archive"
+msgstr "Archief"
+
+#: archive.php:27
+msgid "Sorry, this archive is empty."
+msgstr "Sorry, dit archief is leeg."
 
 #: category.php:9
 msgid "Latest posts in"
@@ -188,15 +210,6 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 #. Name of the theme
 msgid "Canitia"
 msgstr "Canitia"
-
-#. Description of the theme
-msgid ""
-"Elegant yet simple. Simplicity with features like custom designed "
-"tag/page/error and search pages, dynamic nav-menu's, logo support and more."
-msgstr ""
-"Elegant en toch simpel. Simpliciteit met functionaliteit zoals costum-design "
-"tag/page/error en zoekpagina's, dynamische navigatiemenu's, logo "
-"ondersteuning en meer."
 
 #. URI of the theme
 msgid "https://michaelboumann.info/collection/#canitia"
