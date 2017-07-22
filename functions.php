@@ -208,16 +208,6 @@ function canitia_customizer( $wp_customize ) {
         )
     );
 
-    $wp_customize->add_section(
-        'settings_section_canitia_content',
-        array(
-            'title' =>  __('Canitia Content', 'canitia'),
-            'description' => __('Tweak Canitia to your liking.', 'canitia'),
-            'priority' => 35,
-        )
-    );
-
-
 	$wp_customize->add_setting(
 		'display_slider',
 		array(
@@ -322,7 +312,7 @@ function canitia_customizer( $wp_customize ) {
 		'show_tags',
 		array(
 			'label' =>  __('Show tags within a post?', 'canitia'),
-			'section' => 'settings_section_canitia_content',
+			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
 		)
 	);
@@ -331,7 +321,7 @@ function canitia_customizer( $wp_customize ) {
 		'show_author_section',
 		array(
 			'label' =>  __('Show the full author section below a post/page?', 'canitia'),
-			'section' => 'settings_section_canitia_content',
+			'section' => 'settings_section_canitia',
 			'type' => 'checkbox',
 		)
 	);
