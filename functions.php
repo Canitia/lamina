@@ -225,8 +225,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'display_today',
 		array(
-			'default' => true,
-			'sanitize_callback'	=> 'canitia_sanitize_checkbox',
+			'default' => 'show',
 		)
 	);
 
@@ -294,7 +293,7 @@ function canitia_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_control( 'display_slider', array(
-		'label' => 'Show slider',
+		'label' => __('Show slider', 'canitia'),
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
@@ -304,31 +303,32 @@ function canitia_customizer( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'display_featured', array(
-		'label' => 'Show featured posts',
+		'label' => __('Show featured posts', 'canitia'),
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => 'Show featured posts',
-			'hide' => 'Hide featured posts',
+			'show' => __('Show featured posts', 'canitia'),
+			'hide' => __('Hide featured posts', 'canitia'),
 		),
 	) );
 
-	$wp_customize->add_control(
-		'display_today',
-		array(
-			'label' =>  __('Show Today section?', 'canitia'),
-			'section' => 'settings_section_canitia',
-			'type' => 'checkbox',
-		)
-		);
+	$wp_customize->add_control( 'display_today', array(
+		'label' => __('Show Today section?', 'canitia'),
+		'section' => 'settings_section_canitia',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show Today section', 'canitia'),
+			'hide' => __('Hide Today section', 'canitia'),
+		),
+	) );
 
 	$wp_customize->add_control( 'sidebar_position', array(
 		'label' => 'Sidebar position',
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
-			'left' => 'Sidebar on the left',
-			'right' => 'Sidebar on the right',
+			'left' => __('Sidebar on the left', 'canitia'),
+			'right' => __('Sidebar on the right', 'canitia'),
 		),
 	) );
 
