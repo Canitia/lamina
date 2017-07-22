@@ -330,6 +330,16 @@ POST/ARTICLE HEADERS
 	width: 100%;
 }
 
+.archive-image {
+	object-fit: cover;
+	max-height: 150px;
+	width: 100%;	
+}
+
+.archive-image:hover {
+	filter: grayscale(50%);
+}
+
 .post-content > ul li, 
 .post-content > ol li > ul li,
 .post-content > ol li > ul li,
