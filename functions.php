@@ -436,8 +436,8 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'settings_section_canitia_labs',
 		'type' => 'radio',
 		'choices' => array(
-			'light' => __('Light', 'canitia'),
-			'dark' => __('Dark', 'canitia'),
+			'light' => __('Light/White', 'canitia'),
+			'lightcolor' => __('Light/Colorful', 'canitia'),
 		),
 	) );
 
