@@ -89,11 +89,6 @@ blockquote {
 	width: auto;
 }
 
-blockquote:before {
-    top:-20px;
-    left:8px;
-}
-
 blockquote > p {
   	font-style: italic;
 	margin-bottom: 0;
