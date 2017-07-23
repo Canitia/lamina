@@ -18,6 +18,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	color: black;
 }
 
+article a:hover {
+	color: #bc3168 !important;
+}
+
 .navbar {
 	border-bottom: 0 !important;
 }
