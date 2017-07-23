@@ -444,6 +444,10 @@ ul.pings.commentlist {
 	margin-top: -15px;
 }
 
+.author-social {
+    margin-top: 15px;
+}
+
 img.avatar {
 	float:left;
 	z-index:200;
