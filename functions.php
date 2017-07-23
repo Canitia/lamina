@@ -317,7 +317,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'display_authorsocial',
 		array(
-			'default' => 'show',
+			'default' => 'hide',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);

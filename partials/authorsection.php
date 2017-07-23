@@ -7,9 +7,12 @@
     if ( get_the_author_meta( 'description' ) ) {
     echo get_avatar( get_the_author_meta('email'), '100' ); 
 ?>
-<div class="author-social float-right">
-<i class="fa fa-twitter-square" aria-hidden="true"></i>
-</div>
+
+<?php if ( get_theme_mod( 'show_authorsocial', 'show' ) == 'show' ) : ?>
+    <div class="author-social float-right">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    </div>
+<?php endif; ?>
 
         <p class="author-bio">
         <br />
