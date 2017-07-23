@@ -30,6 +30,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
     margin-bottom: 0;
 }
 
+.container-fluid a {
+	color: black;
+}
+
 p > a {
 	text-decoration: underline;
 }
