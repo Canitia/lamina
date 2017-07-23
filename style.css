@@ -654,6 +654,10 @@ footer > .container > .text-center {
 	.author-name {
 		margin-left: 10px;
 	}
+
+	.author-bio {
+		padding-left: 10px;
+	}
 	
 	.badge {
 		margin-right: 5px;
