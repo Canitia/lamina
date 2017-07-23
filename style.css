@@ -20,7 +20,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 *****************************************/
 h1 {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 300 !important;
 	font-size: 2.3rem !important;
 }
@@ -30,12 +29,10 @@ h1 {
 }
 
 h2 {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 300 !important;
 }
 
 h3 {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 300 !important;
 }
 
@@ -46,7 +43,6 @@ h3 {
 }
 
 h4 {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 300 !important;	
 }
 
