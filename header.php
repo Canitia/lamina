@@ -19,12 +19,12 @@
 
 <!-- start of the actual header -->
 <header>
-<nav class="navbar navbar-light navbar-toggleable-sm justify-content-center">
+<nav class="navbar navbar-light navbar-toggleable-xs justify-content-center">
     <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
     <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
-    <a class="navbar-brand d-flex mr-auto site-title hidden-sm-down" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <a class="navbar-brand d-flex mr-auto site-title hidden-xs-down" href="<?php echo esc_url( home_url( '/' ) ); ?>">
     <?php    
         bloginfo('name');
      ?>
