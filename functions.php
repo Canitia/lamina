@@ -315,7 +315,7 @@ function canitia_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'display_authorsocial',
+		'display_social',
 		array(
 			'default' => 'hide',
 			'sanitize_callback' => 'canitia_sanitize_select',
@@ -441,12 +441,12 @@ function canitia_customizer( $wp_customize ) {
 		),
 	) );
 
-		$wp_customize->add_control( 'display_authorsocial', array(
-		'label' => __('Author social media', 'canitia'),
+		$wp_customize->add_control( 'display_social', array(
+		'label' => __('Display social media', 'canitia'),
 		'section' => 'settings_section_canitia_labs',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => __('Show author socials', 'canitia'),
+			'show' => __('Show socials', 'canitia'),
 			'hide' => __('Hide', 'canitia'),
 		),
 	) );
