@@ -234,7 +234,7 @@ address {
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
-	font-size: 140% !important;
+	font-size: 125% !important;
 	font-weight: 300;
     margin-top: 10px;
 	border-bottom: 1px solid #f8f8f8;
