@@ -341,6 +341,10 @@ POST/ARTICLE HEADERS
 	filter: grayscale(50%);
 }
 
+.post-content {
+	margin-top: 15px;
+}
+
 .post-content > ul li, 
 .post-content > ol li > ul li,
 .post-content > ol li > ul li,
