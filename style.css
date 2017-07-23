@@ -239,6 +239,7 @@ address {
     margin-top: 10px;
 	border-bottom: 1px solid #f8f8f8;
 	color: #979797;
+	text-transform: uppercase;
 }
 
 .badge {
