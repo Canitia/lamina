@@ -1,6 +1,6 @@
 <footer class="footer">
       <div class="container">
-        <p class="text-muted text-center">
+        <p class="text-center">
             <?php
               $getActiveTheme = wp_get_theme();
 
