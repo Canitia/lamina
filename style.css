@@ -96,9 +96,6 @@ blockquote:before {
 
 blockquote > p {
   	font-style: italic;
-	padding: 15px;
-	margin-left: 15px;
-	margin-right: 15px;
 	margin-bottom: 0;
 }
 
