@@ -45,6 +45,10 @@ footer p {
 
 }
 
+article > h1:first-child {
+	color: #ec008c !important;
+}
+
  .pagination > ul > li > a:hover {
 	 color: white !important;
  }
