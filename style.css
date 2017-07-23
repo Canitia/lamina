@@ -610,10 +610,6 @@ footer > .container > .text-center {
 		width: 50px;
 	}
 
-	.comment-author > cite {
-    	font-size: 1.4em !important;
-	}
-
 	.comment-meta {
 		justify-content: center;
 	}
@@ -729,10 +725,6 @@ footer > .container > .text-center {
 		margin-left: 0;
 	}
 	
-	.comment-author > cite {
-    	font-size: 1.3em !important;
-	}
-	
  }
 
 /* Medium devices (tablets, 768px and up) */
@@ -773,10 +765,6 @@ footer > .container > .text-center {
 		padding-left: initial;
 		line-height: normal;
 		padding-top: 10px;
-	}
-
-	.comment-author > cite {
-    	font-size: 1.7em !important;
 	}
 
 	.search-box {
@@ -1070,7 +1058,7 @@ ul.children {
 }
 
 .comment-author > cite {
-    font-size: 2.3em;
+    font-size: 1.3em;
     font-weight: 300;
 	vertical-align: middle;
 }
