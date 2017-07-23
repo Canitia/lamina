@@ -314,6 +314,14 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'display_authorsocial',
+		array(
+			'default' => 'show',
+			'sanitize_callback' => 'canitia_sanitize_select',
+		)
+	);
+
 	$wp_customize->add_control( 'display_featured_content', array(
 		'label' => __('Featured content', 'canitia'),
 		'section' => 'settings_section_canitia',
@@ -432,6 +440,17 @@ function canitia_customizer( $wp_customize ) {
 			'dark' => __('Dark', 'canitia'),
 		),
 	) );
+
+		$wp_customize->add_control( 'display_authorsocial', array(
+		'label' => __('Author social media', 'canitia'),
+		'section' => 'settings_section_canitia_labs',
+		'type' => 'radio',
+		'choices' => array(
+			'show' => __('Show author socials', 'canitia'),
+			'hide' => __('Hide', 'canitia'),
+		),
+	) );
+
 	}
 
 add_action( 'customize_register', 'canitia_customizer' );
