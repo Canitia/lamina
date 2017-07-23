@@ -606,10 +606,6 @@ footer > .container > .text-center {
 		font-size: 1.7rem !important;
 	}
 
-	.comment-body .comment-author img {
-		width: 32px;
-	}
-
 	.comment-meta {
 		justify-content: center;
 	}
@@ -1032,15 +1028,6 @@ ul.children {
 .comment-respond label {
 	display: block;
 	margin-right: 12px;
-}
-
-.comment-body .comment-author img {
-	position: relative;
-	float:none;
-	width: 60px;
-    height: 60px;
-    margin-top: 0;
-	margin-left: 0;
 }
 
 .comment-author.vcard {
