@@ -286,14 +286,6 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting(
-		'display_social',
-		array(
-			'default' => 'hide',
-			'sanitize_callback' => 'canitia_sanitize_select',
-		)
-	);
-
 	$wp_customize->add_control( 'display_featured_content', array(
 		'label' => __('Featured content', 'canitia'),
 		'section' => 'settings_section_canitia',
@@ -362,16 +354,6 @@ function canitia_customizer( $wp_customize ) {
 		'choices' => array(
 			'default' => __('Grey Wolf (default)', 'canitia'),
 			'pinkruby' => __('Pink Ruby', 'canitia'),
-		),
-	) );
-
-		$wp_customize->add_control( 'display_social', array(
-		'label' => __('Display social media', 'canitia'),
-		'section' => 'settings_section_canitia_labs',
-		'type' => 'radio',
-		'choices' => array(
-			'show' => __('Show socials', 'canitia'),
-			'hide' => __('Hide', 'canitia'),
 		),
 	) );
 
