@@ -536,6 +536,10 @@ footer {
 	padding-bottom: 10px;
 }
 
+footer > .container > .text-center {
+    margin-bottom: 0;
+}
+
 /* **************************************
 
 	TWEAKS FOR DIFFERENT DISPLAY SIZES
