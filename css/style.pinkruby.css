@@ -57,7 +57,7 @@ article > h1:first-child {
 	 color: white !important;
  }
 
- .btn {
+ .btn, .comment-reply-link {
 	 background-color: #e88dc3 !important;
  }
 
