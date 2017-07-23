@@ -434,6 +434,10 @@ ul.pings.commentlist {
 	color: #979797;
 }
 
+.cat-links > hr:last-child {
+    margin-bottom: 0;
+}
+
 /* **************************************
 
 	ARTICLE: AUTHOR look-n-feel
