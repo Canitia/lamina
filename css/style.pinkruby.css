@@ -18,6 +18,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	color: black;
 }
 
+.navbar {
+	border-bottom: 0 !important;
+}
+
 .navbar,
 .footer {
     background: #ec008c;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
