@@ -19,10 +19,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
-h1 {
-	font-weight: 300 !important;
-	font-size: 2.3rem !important;
-}
 
 .h-slider {
 	text-shadow: 2px 1px #000000;
