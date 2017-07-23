@@ -988,11 +988,6 @@ EXTERNAL libraries look-n-feel
 	WORDPRESS COMMENTS
 
 *****************************************/
-/* comment styling */
-.comments-wrapper {
-	padding-top: 15px;
-}
-
 ul.commentlist {
     padding-left: 0;
 }
