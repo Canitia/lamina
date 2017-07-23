@@ -558,6 +558,16 @@ footer > .container > .text-center {
 		text-overflow: inherit;
 	}
 
+	.navbar {
+		padding: 10px;
+	}
+
+	.navbar-light .navbar-toggler {
+		top: 2%;
+		left: 2%;
+		position: relative;
+	}
+
 	.collection-item > p,
 	.collection-item > a > p
  	{
