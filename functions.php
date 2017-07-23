@@ -360,7 +360,7 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'settings_section_canitia_labs',
 		'type' => 'radio',
 		'choices' => array(
-			'default' => __('Default', 'canitia'),
+			'default' => __('Grey Wolf (default)', 'canitia'),
 			'pinkruby' => __('Pink Ruby', 'canitia'),
 		),
 	) );
