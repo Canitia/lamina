@@ -54,6 +54,10 @@
         <?php } ?>
           </div>
        </article><!-- close article -->
+      <?php if( comments_open() ) { ?>
+	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'cerulean-for-wordpress'); ?></h3>
+        <?php }
+        ?>
        <!-- let user enter a comment -->
       <?php comments_template(); ?>
   
