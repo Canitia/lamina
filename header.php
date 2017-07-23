@@ -20,7 +20,7 @@
 <!-- start of the actual header -->
 <header>
 <nav class="navbar navbar-light navbar-toggleable-sm justify-content-center">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
     <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
