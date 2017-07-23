@@ -57,6 +57,10 @@ footer p {
 	 color: #bc3168 !important;
  }
 
+ .badge {
+	 color: white !important;
+ }
+
  .pagination > ul > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
 	 color: white !important;
 	 background-color: #ec008c !important;
