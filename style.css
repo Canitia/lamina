@@ -608,6 +608,8 @@ footer > .container > .text-center {
 
 	.comment-meta {
 		justify-content: center;
+		float: none;
+		top: 0px;
 	}
 
 	.wp-caption {
@@ -1053,6 +1055,9 @@ ul.children {
     flex-direction: row;
     justify-content: flex-end;
 	font-size: 14px;
+	float: right;
+    top: -45px;
+    position: relative;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
