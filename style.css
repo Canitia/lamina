@@ -1015,6 +1015,15 @@ ul.commentlist {
 	border: 1px solid #ebebeb;
 }
 
+.comment-body > ul li,
+.comment-body > ol li,
+.comment-body > ul li > ol li,
+.comment-body > ul li > ol li > ul li {
+	list-style-type: square;
+	padding:5px;
+	line-height: 35px;
+}
+
 .comment {
 	list-style: none;
 }
