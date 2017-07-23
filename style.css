@@ -166,7 +166,7 @@ address {
 }
 
 .navbar-light .navbar-toggler {
-	top: 25%;
+	left:0;
 	position: relative;
 	margin: 10px;
 }

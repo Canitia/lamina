@@ -20,14 +20,15 @@
 <!-- start of the actual header -->
 <header>
 <nav class="navbar navbar-light navbar-toggleable-xs justify-content-center">
-    <button class="navbar-toggler navbar-toggler-left float-left" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </button>
+
     <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
     <a class="navbar-brand d-flex mr-auto site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+     <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
     <?php    
-        bloginfo('name');
-     ?>
+            bloginfo('name');
+        ?>
     </a>
     <div class="navbar-collapse collapse" id="collapsingNavbar">
             <?php bootstrap_nav(); ?>
