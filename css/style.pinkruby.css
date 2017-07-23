@@ -1,0 +1,75 @@
+/*
+Theme Name: Canitia
+Theme URI: https://michaelboumann.info/collection/#canitia
+Author: Michael Boumann
+Author URI: http://www.michaelboumann.info
+Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, custom  colors, logo support and more.
+Version: 0.11.3.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
+Text Domain: canitia
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.container-fluid a {
+	color: black;
+}
+
+.container-fluid a:hover {
+	color: white;
+}
+
+.navbar {
+    background: #ec008c;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+}
+
+.navbar-brand {
+	color: white !important;
+}
+
+.menu-item > a {
+	color: white !important;
+}
+
+.menu-item > a:hover {
+	color: black !important;
+}
+
+/* headers like 'latest' */
+.text-left-title-featured-sidebar {
+	color: #ec008c !important;
+}
+
+ .pagination > ul > li > a:hover {
+	 color: white !important;
+ }
+
+ .btn {
+	 background-color: #e88dc3 !important;
+ }
+
+ .badge:hover {
+	 color: white !important;
+ }
+
+ .sticky {
+	 color: #bc3168 !important;
+ }
+
+ .pagination > ul > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
+	 color: white !important;
+	 background-color: #ec008c !important;
+ }
+
+.collection .collection-item:hover, .widget > ul > li:hover, .pagination > ul > li.active {
+	background-color: #e88dc3 !important;
+}
+
+.fa-circle,
+.fa-tag,
+.fa-list {
+	color: #fc6767 !important;	
+}
