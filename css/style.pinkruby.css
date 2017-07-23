@@ -41,7 +41,7 @@ footer p {
 }
 
 /* headers like 'latest' */
-.text-left-title-featured-sidebar, .h3-join-the-conversation {
+h1, h2, h3, h4, h5 {
 	color: #ec008c !important;
 }
 
