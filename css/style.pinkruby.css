@@ -53,7 +53,7 @@ article > h1:first-child {
 	color: #ec008c !important;
 }
 
- .pagination > ul > li > a:hover {
+ .pagination > ul > li > a:hover,  .pagination-within > li > a:hover  {
 	 color: white !important;
  }
 
@@ -73,12 +73,12 @@ article > h1:first-child {
 	 color: #bc3168 !important;
  }
 
- .pagination > ul > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
+ .pagination > ul > li:hover, .pagination-within > a > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
 	 color: white !important;
 	 background-color: #bc3168 !important;
  }
 
-.collection .collection-item:hover, .widget > ul > li:hover, .pagination > ul > li.active {
+.collection .collection-item:hover, .widget > ul > li:hover, .pagination > ul > li.active, .pagination-within > li {
 	background-color: #e88dc3 !important;
 }
 
