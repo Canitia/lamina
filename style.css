@@ -607,9 +607,7 @@ footer > .container > .text-center {
 	}
 
 	.comment-meta {
-		justify-content: center;
-		float: none;
-		top: 0px;
+		justify-content: center !important;
 	}
 
 	.wp-caption {
@@ -1043,14 +1041,13 @@ ul.children {
 
 .comment-meta {
     padding: 5px;
-    margin-top: 5px;
+	margin-top: 5px;
+	margin-bottom: 15px;
 	display: flex;
     flex-direction: row;
     justify-content: flex-end;
 	font-size: 14px;
-	float: right;
-    top: -45px;
-    position: relative;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
