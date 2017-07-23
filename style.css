@@ -94,23 +94,6 @@ blockquote:before {
     left:8px;
 }
 
-blockquote:before, blockquote:after {
-    color:black;
-    content:'\f10d';
-    font-family:'FontAwesome';
-    font-size:25px;
-    position:absolute;
-    display:block;
-}
-
-blockquote:after {
-    content:'\f10e';
-    right:8px;
-    top:auto;
-    left:auto;
-	bottom: -23px;
-}
-
 blockquote > p {
   	font-style: italic;
 	padding: 15px;
