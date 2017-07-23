@@ -18,10 +18,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	color: black;
 }
 
-.container-fluid a:hover {
-	color: white;
-}
-
 .navbar,
 .footer {
     background: #ec008c;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
@@ -32,17 +28,21 @@ footer p {
 	color: white !important;
 }
 
-.menu-item > a {
-	color: white !important;
+.menu-item:hover {
+    background-color: #bc3168 !important;
 }
 
-.menu-item > a:hover {
-	color: black !important;
+.menu-item > a {
+	color: white !important;
 }
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
 	color: #ec008c !important;
+}
+
+.row-featured {
+
 }
 
  .pagination > ul > li > a:hover {
@@ -63,7 +63,7 @@ footer p {
 
  .pagination > ul > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
 	 color: white !important;
-	 background-color: #ec008c !important;
+	 background-color: #bc3168 !important;
  }
 
 .collection .collection-item:hover, .widget > ul > li:hover, .pagination > ul > li.active {
