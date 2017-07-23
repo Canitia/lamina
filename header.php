@@ -13,7 +13,7 @@
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
     <style type="text/css">
         #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?> !important; }
-        .container-fluid p, .post-errortext, .post-content p { color: <?php echo get_theme_mod( 'set_text_color', '#000000' ); ?> !important; }
+        .post-errortext, .post-content p, th, tr, td, dl, dt, ul > li { color: <?php echo get_theme_mod( 'set_text_color', '#000000' ); ?> !important; }
         .container-fluid a, .container-fluid a p { color: <?php echo get_theme_mod( 'set_link_color', '#000000' ); ?> !important; }
         .container-fluid a:hover, .container-fluid a > p:hover, .container-fluid > p a:focus, .container-fluid > p a:hover { color: <?php echo get_theme_mod( 'set_link_hover_color', '#979797' ); ?> !important; }
     </style>
