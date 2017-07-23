@@ -19,7 +19,7 @@
 
 <!-- start of the actual header -->
 <header>
-<nav class="navbar navbar-light navbar-toggleable-xs justify-content-center">
+<nav class="navbar navbar-light navbar-toggleable-sm justify-content-center">
 
     <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
     <a class="navbar-brand d-flex mr-auto site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>">
