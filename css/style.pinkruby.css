@@ -82,6 +82,10 @@ article > h1:first-child {
 	background-color: #e88dc3 !important;
 }
 
+.fa-bars {
+	color: white !important;
+}
+
 .fa-circle,
 .fa-tag,
 .fa-list {
