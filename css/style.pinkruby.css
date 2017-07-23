@@ -28,6 +28,10 @@ footer p {
 	color: white !important;
 }
 
+.menu-item {
+	background-color: #ec008c;
+}
+
 .menu-item:hover {
     background-color: #bc3168 !important;
 }

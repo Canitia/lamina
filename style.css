@@ -168,6 +168,7 @@ address {
 
 .navbar-light .navbar-toggler {
 	top: 25%;
+	position: relative;
 }
 
 /* color of clickable header */
@@ -563,9 +564,9 @@ footer > .container > .text-center {
 	}
 
 	.navbar-light .navbar-toggler {
-		top: 2%;
-		left: 2%;
-		position: relative;
+		top: 2% !important;
+		left: 2% !important;
+		position: relative !important;
 	}
 
 	.collection-item > p,
