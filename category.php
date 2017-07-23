@@ -16,7 +16,7 @@
                       <div class="collection-item">
                       <a href="<?php the_permalink(); ?>">
                           <p title="<?php the_title_attribute(); ?>" class="truncate"><i class="fa fa-circle" aria-hidden="true"></i><?php the_title(); ?>
-                            <span class="badge">
+                            <span class="badge float-right">
                               <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
                           </span> 
                           </p>
