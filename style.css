@@ -622,10 +622,6 @@ footer {
 		padding-right:0;
 	}
 
-	blockquote > p {
-		padding: 0;
-	}
-
 	.reply-title {
 		font-size: 1.7rem !important;
 	}
