@@ -14,7 +14,7 @@
     <style type="text/css">
         #wp-calendar caption { color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?> !important; }
         .post-errortext, .post-content p, th, tr, td, dl, dt, ul > li, li, address, pre, author-bio { color: <?php echo get_theme_mod( 'set_text_color', '#000000' ); ?> !important; }
-        .container-fluid a, .container-fluid a p { color: <?php echo get_theme_mod( 'set_link_color', '#000000' ); ?> !important; }
+        .container-fluid a, .container-fluid a p, .comment-meta > a { color: <?php echo get_theme_mod( 'set_link_color', '#000000' ); ?> !important; }
         .container-fluid a:hover, .container-fluid a > p:hover, .container-fluid > p a:focus, .container-fluid > p a:hover { color: <?php echo get_theme_mod( 'set_link_hover_color', '#979797' ); ?> !important; }
     </style>
     <!-- close with wp_head -->

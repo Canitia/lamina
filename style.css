@@ -1078,10 +1078,6 @@ ul.children {
     font-size: 14px;
 }
 
-.comment-meta > a {
-	color: #979797 !important;
-}
-
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
     background-color:#979797;
