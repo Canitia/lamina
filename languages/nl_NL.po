@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-22 21:35+0000\n"
-"PO-Revision-Date: 2017-07-22 21:37+0000\n"
+"POT-Creation-Date: 2017-07-23 23:26+0000\n"
+"PO-Revision-Date: 2017-07-23 23:26+0000\n"
 "Last-Translator: bouwlamp <michael@michaelboumann.info>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,57 +13,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:318
-msgid "Featured content"
-msgstr "Aanbevolen content"
+#: functions.php:355
+msgid "Grey Wolf (default)"
+msgstr "Grey Wolf (standaard)"
 
-#: functions.php:329
-msgid "Today section"
-msgstr "Vandaag sectie"
+#: functions.php:356
+msgid "Pink Ruby"
+msgstr "Pink Ruby"
 
-#: functions.php:343
-msgid "Left"
-msgstr "Links"
-
-#: functions.php:344
-msgid "Right"
-msgstr "Rechts"
-
-#: functions.php:349 functions.php:353
-msgid "Show Tags"
-msgstr "Laat tags zien"
-
-#: functions.php:354
-msgid "Hide Tags"
-msgstr "Verberg tags"
-
-#: functions.php:359 functions.php:363
-msgid "Show Categories"
-msgstr "Laat categorieën zien"
-
-#: functions.php:364
-msgid "Hide Categories"
-msgstr "Verberg categorieën"
-
-#: functions.php:369 functions.php:373
-msgid "Show Author section"
-msgstr "Laat auteur sectie zien"
-
-#: functions.php:374
-msgid "Hide Author section"
-msgstr "Verberg auteur sectie"
-
-#: functions.php:427
-msgid "Theme preset"
-msgstr "Thema preset"
-
-#: functions.php:431
-msgid "Light"
-msgstr "Licht"
-
-#: functions.php:432
-msgid "Dark"
-msgstr "Donker"
+#: archive.php:3
+msgid "Archive "
+msgstr "Archief"
 
 #: 404.php:12
 msgid "Error"
@@ -141,73 +101,101 @@ msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
-#: functions.php:50
+#: functions.php:54
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:51
+#: functions.php:55
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:70
+#: functions.php:74
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:214
+#: functions.php:218
 msgid "Canitia Settings"
 msgstr "Canitia Instellingen"
 
-#: functions.php:215
+#: functions.php:219
 msgid "Tweak Canitia to your liking."
 msgstr "Stel Canitia in zoals jij dat wilt."
 
-#: functions.php:223
+#: functions.php:227
 msgid "Canitia Labs"
 msgstr "Canitia experimenten"
 
-#: functions.php:224
+#: functions.php:228
 msgid "Experimental Canitia Labs features."
 msgstr "Experimentele Canitia features."
 
-#: functions.php:322
+#: functions.php:290
+msgid "Featured content"
+msgstr "Aanbevolen content"
+
+#: functions.php:294
 msgid "Show Slider"
 msgstr "Laat Slider zien"
 
-#: functions.php:323
+#: functions.php:295
 msgid "Show Featured Row"
 msgstr "Laat een uitgelichte rij zien"
 
-#: functions.php:324
+#: functions.php:296
 msgid "Hide all"
 msgstr "Verberg alle featured content"
 
-#: functions.php:333
+#: functions.php:301
+msgid "Today section"
+msgstr "Vandaag sectie"
+
+#: functions.php:305
 msgid "Show Today section"
 msgstr "Laat 'Vandaag' sectie zien"
 
-#: functions.php:334
+#: functions.php:306
 msgid "Hide Today section"
 msgstr "Verberg 'Vandaag' sectie"
 
-#: functions.php:339
+#: functions.php:311
 msgid "Sidebar position"
 msgstr "Sidebar positie"
 
-#: functions.php:383
-msgid "Header item Color"
-msgstr "Headeritems kleur"
+#: functions.php:315
+msgid "Left"
+msgstr "Links"
 
-#: functions.php:395
-msgid "Text color"
-msgstr "Text kleur"
+#: functions.php:316
+msgid "Right"
+msgstr "Rechts"
 
-#: functions.php:407
-msgid "Link color"
-msgstr "Link kleur"
+#: functions.php:321 functions.php:325
+msgid "Show Tags"
+msgstr "Laat tags zien"
 
-#: functions.php:419
-msgid "Link hover color"
-msgstr "Link hover kleur"
+#: functions.php:326
+msgid "Hide Tags"
+msgstr "Verberg tags"
+
+#: functions.php:331 functions.php:335
+msgid "Show Categories"
+msgstr "Laat categorieën zien"
+
+#: functions.php:336
+msgid "Hide Categories"
+msgstr "Verberg categorieën"
+
+#: functions.php:341 functions.php:345
+msgid "Show Author section"
+msgstr "Laat auteur sectie zien"
+
+#: functions.php:346
+msgid "Hide Author section"
+msgstr "Verberg auteur sectie"
+
+#: functions.php:351
+msgid "Theme preset"
+msgstr "Thema preset"
 
 #. Name of the template
 msgid "Search Page"
@@ -220,10 +208,6 @@ msgstr "Resultaten voor"
 #: search.php:49
 msgid "Sorry, it seems this search query has no posts."
 msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
-
-#: archive.php:3
-msgid "Archive"
-msgstr "Archief"
 
 #: archive.php:27
 msgid "Sorry, this archive is empty."
@@ -241,7 +225,7 @@ msgstr "Sorry, er zijn geen posts in deze categorie. "
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
 
-#: single.php:67
+#: single.php:70
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
