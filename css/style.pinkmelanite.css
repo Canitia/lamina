@@ -111,13 +111,12 @@ article > h1:first-child {
 	color: white !important;
 }
 
-.pagination > ul > li {
+.pagination > ul > li,
+.pagination-within > a > li
+{
+	color: white !important;
 	background-color: #3f3f3f !important;
 }
-
- .pagination > ul > li > a:hover,  .pagination-within > li > a:hover  {
-	 color: white !important;
- }
 
  .btn, .comment-reply-link {
 	 background-color: #e88dc3 !important;
