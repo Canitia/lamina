@@ -24,29 +24,7 @@
           <div class="post-subitems text-center">
             <i class="fa fa-clock-o"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
-        <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
-        <?php if(has_category()) { ?>
-          <?php $categories = get_the_category();
-            $separator = ', ';
-            $output = '';
-            if ( ! empty( $categories ) ) {
-
-                if(count($categories) > 3) {
-                    echo '<br />';
-                }?>
-          <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
-          <?php
-                foreach( $categories as $category ) {
-                    $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
-                    . esc_html( $category->name ) . '</a>' . $separator;
-                }
-                echo trim( $output, $separator );
-            } ?>
-         <hr class="cat-links-hr" />
-        <?php 
-            }
-        } ?>
-</div>
+        </div>
         <hr class="cat-links-hr" />
         <div class="post-content">
             <?php the_content(); ?>
@@ -62,6 +40,26 @@
                 <hr class="cat-links-hr" />
                 <?php endif; ?>
         <?php } ?>
+
+        <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
+        <?php if(has_category()) { ?>
+          <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
+          <?php $categories = get_the_category();
+            $separator = ', ';
+            $output = '';
+            if ( ! empty( $categories ) ) {
+                foreach( $categories as $category ) {
+                    $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
+                    . esc_html( $category->name ) . '</a>' . $separator;
+                }
+                echo trim( $output, $separator );
+            } ?>
+         <hr class="cat-links-hr" />
+        <?php 
+            }
+        } ?>
+
+
           </div>
 
         <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
