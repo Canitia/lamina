@@ -193,8 +193,8 @@ ul.children {
 	background-color: #4c4c4c !important;
 }
 
-.even {
-	background-color: #666666 !important;	
+.comment.even {
+	background-color: #292929 !important;	
 }
 
 .comment-meta > a {
