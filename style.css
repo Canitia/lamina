@@ -207,9 +207,14 @@ address {
   SLIDER LOOK-N-FEEL
 
 *****************************************/
+.carousel {
+	padding-top: 20px;
+}
+
 .carousel-item {
 	object-fit: cover;
 	justify-content: center;
+	height: 300px;
 }
 
 .carousel:hover {
@@ -568,10 +573,6 @@ footer > .container > .text-center {
 		display: block;
 	}
 
-	.carousel-item {
-		max-height: 250px;
-	}
-
 	.truncate {
 		white-space: normal;
 		overflow: auto;
@@ -668,10 +669,6 @@ footer > .container > .text-center {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
-	.carousel-item {
-		max-height: 350px;
-	}
-
 	.collection-item {
 		padding-left: initial;
 		line-height: 1;
@@ -721,10 +718,6 @@ footer > .container > .text-center {
 		padding-right: 10px;
 		padding-top: 20px;
     	padding-bottom: 20px;
-	}
-
-	.carousel-item {
-		max-height: 400px;
 	}
 
 	article {
@@ -788,10 +781,6 @@ footer > .container > .text-center {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
-
-	.carousel-item {
-		max-height: 500px;
-	}
 
 	article {
 		padding-left: 15px;
@@ -860,9 +849,6 @@ footer > .container > .text-center {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-	.carousel-item {
-		max-height: 500px;
-	}
 
 	.container-fluid {
 		max-width:1250px;
