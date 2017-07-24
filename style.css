@@ -19,8 +19,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
+body {
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 .container-fluid {
-    min-height: calc(100vh - 166px);
+	    flex: 1;
 }
 
 .main-content {
@@ -562,8 +568,7 @@ img.avatar {
 
 *****************************************/
 footer {
-	border-top: 1px solid #ebebeb;
-	height: 70px;
+	height: 75px;
 }
 
 footer p {
