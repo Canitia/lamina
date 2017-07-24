@@ -171,6 +171,11 @@ address {
 	margin: 10px;
 }
 
+.navbar img{
+    flex-grow:0;
+    flex-shrink:0;
+}
+
 /* color of clickable header */
 .site-title {
 	font-weight: 300;
