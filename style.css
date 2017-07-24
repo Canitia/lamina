@@ -716,6 +716,10 @@ footer > .container > .text-center {
 		margin-left: 0;
 	}
 	
+	img.avatar {
+		width: 64px;
+		height: 64px;
+	}
  }
 
 /* Medium devices (tablets, 768px and up) */
