@@ -200,6 +200,12 @@ address {
 	margin-bottom: -8px;
 }
 
+.menu-item:last-child > .dropdown-menu {
+	left: inherit !important;
+	right: 0% !important;
+}
+
+
 .navbar .dropdown-menu li {
   width: 100%;
   margin-left: 0 !important;
