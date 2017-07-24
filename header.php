@@ -31,7 +31,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <?php bootstrap_nav(); ?>
-        <form class="form-inline col-lg-0 hidden-md-up search-form">
+    <form class="form-inline col-lg-0 hidden-md-up search-form">
         <input type="search" class="search-field form-control mr-sm-2"
         placeholder="<?php echo esc_attr_x( 'What are you looking for?', 'placeholder', 'canitia' ) ?>"
         value="<?php echo get_search_query() ?>" name="s"
