@@ -22,7 +22,6 @@
     <?php endif; ?>
     
 </div><!-- row END! -->
-</div><!-- container END! -->
 <!-- start of footer -->
 <?php get_footer();
 ?>

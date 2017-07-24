@@ -57,7 +57,6 @@ Template Name: Search Page
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
 </div><!-- end row -->
-</div><!-- container fluid END! -->
 
 <!-- start of footer -->
 <?php get_footer(); ?>

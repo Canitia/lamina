@@ -34,7 +34,5 @@
           <?php canitia_pagination_numeric_posts_nav(); ?>
     </div><!-- einde md8 -->
 
-  </div><!-- container fluid END! -->
-
        <!-- start of footer -->
          <?php get_footer(); ?>

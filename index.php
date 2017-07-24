@@ -125,6 +125,5 @@
 
 
 </div> <!-- row main -->
-</div> <!-- fluid main -->
 <!-- start of footer -->
 <?php get_footer(); ?>

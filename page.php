@@ -30,7 +30,6 @@
    <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&after=</ul>&link_before=<li>&link_after=</li>');?>
 
 </div><!-- einde md8 -->
-</div><!-- container fluid END! -->
 
 <!-- start of footer -->
 <?php get_footer();?>
