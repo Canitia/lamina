@@ -721,6 +721,24 @@ footer > .container > .text-center {
    	 	margin-bottom: 20px;
    	 	margin-left: 20px;
 	}
+
+	.post-content > ul li, 
+	.post-content > ol li > ul li,
+	.post-content > ol li > ul li,
+	.post-content > ul li > ol li > ul li,
+	.post-content > ol li, 
+	.post-content > ul li > ol li,
+	.post-content > ol li > ul li > ol li
+	{
+		line-height: 25px;
+	}
+
+	.comment-body > ul li,
+	.comment-body > ol li,
+	.comment-body > ul li > ol li,
+	.comment-body > ul li > ol li > ul li {
+		line-height: 25px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -780,6 +798,23 @@ footer > .container > .text-center {
 	.tagslist, 
 	.categorylist {
 		margin-left: 2px;
+	}
+
+	.post-content > ul li, 
+	.post-content > ol li > ul li,
+	.post-content > ol li > ul li,
+	.post-content > ul li > ol li > ul li,
+	.post-content > ol li, 
+	.post-content > ul li > ol li,
+	.post-content > ol li > ul li > ol li	{
+		line-height: 25px;
+	}
+
+	.comment-body > ul li,
+	.comment-body > ol li,
+	.comment-body > ul li > ol li,
+	.comment-body > ul li > ol li > ul li {
+		line-height: 25px;
 	}
 }
 
@@ -845,6 +880,24 @@ footer > .container > .text-center {
 
 	.post-errortext {
 		margin-left: 0px;
+	}
+
+	.post-content > ul li, 
+	.post-content > ol li > ul li,
+	.post-content > ol li > ul li,
+	.post-content > ul li > ol li > ul li,
+	.post-content > ol li, 
+	.post-content > ul li > ol li,
+	.post-content > ol li > ul li > ol li
+	{
+		line-height: 25px;
+	}
+	
+	.comment-body > ul li,
+	.comment-body > ol li,
+	.comment-body > ul li > ol li,
+	.comment-body > ul li > ol li > ul li {
+		line-height: 25px;
 	}
  }
 
