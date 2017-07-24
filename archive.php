@@ -6,6 +6,9 @@
          <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
                 <div class="col-sm-4">
+                    <span class="badge badge-default badge-archive">
+                      <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
+                    </span>
                 <?php if ( has_post_thumbnail() ) : ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <?php the_post_thumbnail( 'medium', ['class' => 'img-responsive archive-image', 'title' => 'Feature image']); ?>
