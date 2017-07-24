@@ -573,6 +573,9 @@ img.avatar {
 *****************************************/
 footer {
 	height: 75px;
+	position: inherit;
+	bottom: 0;
+	width: 100%;
 }
 
 footer p {
