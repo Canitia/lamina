@@ -262,7 +262,7 @@ address {
 	margin-right: 10px;
 	right: 0;
 	position: absolute;
-
+	color: black;
 }
 
 .collection {
@@ -584,6 +584,7 @@ footer {
 	position: inherit;
 	bottom: 0;
 	width: 100%;
+	border-top: 1px solid #ebebeb;
 }
 
 footer p {
