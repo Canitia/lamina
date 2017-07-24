@@ -96,6 +96,10 @@ article > h1:first-child,
     color: white;
 }
 
+.pagination a {
+    text-decoration: none;
+}
+
 .search-field {
 	background-color: #3f3f3f !important;
 	border-bottom: 0 !important;
