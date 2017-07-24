@@ -95,3 +95,11 @@ article > h1:first-child {
 .text-muted {
 	margin-bottom: 0 !important;
 }
+
+/* image captions */
+.wp-caption, 
+.gallery-caption {
+	border: 0 !important;
+	background-color: #3f3f3f !important;
+	color: white !important;
+}
