@@ -1169,6 +1169,7 @@ ul.children {
 	border: 1px solid #ebebeb;
 	background: whitesmoke;
 	clear:both;
+	text-align: center !important;
 }
 
 dl.wp-caption {
