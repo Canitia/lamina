@@ -193,3 +193,8 @@ ul.children {
 .comment-reply-link {
     text-decoration: none !important;
 }
+
+.comment-form-comment > textarea {
+    background-color: #3f3f3f;
+    color: white;
+}
