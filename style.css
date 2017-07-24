@@ -147,10 +147,6 @@ address {
   HEADER / NAVBAR / NAVIGATION
 
 *****************************************/
-header {
-    margin-bottom: 64px;
-}
-
 .navbar {
 	border-bottom: 1px solid #ebebeb;
 	padding: 0;
@@ -714,6 +710,10 @@ footer > .container > .text-center {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 
+	header {
+    	margin-bottom: 32px;
+	}
+
 	.menu-item {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -786,6 +786,9 @@ footer > .container > .text-center {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
+	header {
+    	margin-bottom: 64px;
+	}
 
 	.carousel-item {
 		max-height: 500px;
