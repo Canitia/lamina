@@ -168,7 +168,8 @@ article > h1:first-child,
 	filter: grayscale(75%) !important;
 }
 
-.disabled-image{
+.disabled-image, 
+.disabled-image:hover{
 	filter: grayscale(100%) !important;
 }
 
