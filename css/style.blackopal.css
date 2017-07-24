@@ -164,6 +164,10 @@ article > h1:first-child,
 	border: 1px solid #3f3f3f !important;
 }
 
+ul.children {
+    background: inherit;
+}
+
 .comment-author {
 	border-bottom: 1px solid #3f3f3f !important;
 }
