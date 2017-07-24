@@ -98,6 +98,11 @@ article > h1:first-child {
     color: white;
 }
 
+.search-field {
+	background-color: #3f3f3f !important;
+	border-bottom: 0 !important;
+}
+
 .pagination > ul > li {
 	background-color: #3f3f3f !important;
 }
