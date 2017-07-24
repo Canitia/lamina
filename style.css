@@ -154,22 +154,6 @@ address {
 	background-color: white;
 }
 
-.navbar-brand {
-  padding: 0px;
-  margin-left: 5px;
-}
-
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
-}
-
-.navbar img{
-    flex-grow:0;
-    flex-shrink:0;
-}
-
 /* color of clickable header */
 .site-title {
 	font-weight: 300;
