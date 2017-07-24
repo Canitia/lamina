@@ -187,7 +187,11 @@ ul.children {
 }
 
 .even {
-	background-color: #636363 !important;	
+	background-color: #666666 !important;	
+}
+
+.comment-meta > a {
+	color: white !important;
 }
 
 .comment-reply-link, .form-submit > input#submit:hover {

@@ -130,7 +130,7 @@ article > h1:first-child,
 }
 
  .post-subitems, .post-subitems > a, .author-name a, .fn a {
-	 color: #979797 !important;
+	 color: white !important;
  }
 
  .pagination > ul > li:hover, .pagination-within > a > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
@@ -177,11 +177,15 @@ ul.children {
 }
 
 .comment.odd {
-	background-color: #3f3f3f !important;
+	background-color: #4c4c4c !important;
 }
 
 .even {
-	background-color: #636363 !important;	
+	background-color: #666666 !important;	
+}
+
+.comment-meta > a {
+	color: white !important;
 }
 
 .comment-reply-link, .form-submit > input#submit:hover {
