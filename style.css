@@ -313,7 +313,7 @@ POST/ARTICLE HEADERS
 	width: 100%;
 }
 
-.badge-archive {
+.badge-date {
 	float:right;
 	position:absolute;
 	top: 20px;
