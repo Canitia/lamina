@@ -361,6 +361,7 @@ POST/ARTICLE HEADERS
 
 .post-content {
 	margin-top: 15px;
+	margin-bottom: 35px;
 }
 
 .post-content > ul li, 
