@@ -41,7 +41,6 @@ $bgargs = array(
 );
 
 add_theme_support( "title-tag" );
-add_theme_support( 'custom-background', $bgargs );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
 
@@ -355,7 +354,7 @@ function canitia_customizer( $wp_customize ) {
 
 	$wp_customize->add_control( 'theme_preset', array(
 		'label' => __('Theme preset', 'canitia'),
-		'section' => 'settings_section_canitia_labs',
+		'section' => 'colors',
 		'type' => 'radio',
 		'choices' => array(
 			'default' => __('Grey Wolf (default)', 'canitia'),
