@@ -38,13 +38,9 @@
     $count = $query->post_count;
     while ($count < 3) { ?>
       <div class="col-sm-4">
-        <a href="#" title="empty">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-pic-available.jpg"  alt="<?php the_title(); ?>" class="archive-image disabled-image"/>
-            </a>
-            <a href="#">
             <p title="empty" class="text-muted text-center truncate">Empty
             </p>
-            </a>
     </div>
         <?php 
         $count++;
