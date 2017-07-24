@@ -668,6 +668,10 @@ footer > .container > .text-center {
 		float: right;
 	}
 
+	img.avatar {
+		width: 64px;
+		height: 64px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
