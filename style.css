@@ -165,12 +165,6 @@ address {
   width: auto;
 }
 
-.navbar-light .navbar-toggler {
-	left:0;
-	position: relative;
-	margin: 10px;
-}
-
 .navbar img{
     flex-grow:0;
     flex-shrink:0;
@@ -179,7 +173,7 @@ address {
 /* color of clickable header */
 .site-title {
 	font-weight: 300;
-	font-size: 200%;
+	font-size: 175%;
 }
 
 .menu-item {
@@ -575,12 +569,6 @@ footer > .container > .text-center {
 		padding: 10px;
 	}
 
-	.navbar-light .navbar-toggler {
-		top: 2% !important;
-		left: 2% !important;
-		position: relative !important;
-	}
-
 	.collection-item > p,
 	.collection-item > a > p
  	{
@@ -670,10 +658,6 @@ footer > .container > .text-center {
 	.carousel-item {
 		max-height: 350px;
 	}
-
-	button.navbar-toggler.navbar-toggler-right {
-		top: 15px;
-	}	
 
 	.collection-item {
 		padding-left: initial;
@@ -960,6 +944,7 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-bars {
+	margin-top: 10px;
 	color: black;
 }
 
