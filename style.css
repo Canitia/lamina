@@ -207,10 +207,6 @@ address {
   SLIDER LOOK-N-FEEL
 
 *****************************************/
-.carousel {
-	padding-top: 20px;
-}
-
 .carousel-item {
 	object-fit: cover;
 	justify-content: center;
