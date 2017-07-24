@@ -554,6 +554,10 @@ footer > .container > .text-center {
 
 @media (max-width: 575px) {  
 
+	header {
+    	margin-bottom: 48px;
+	}
+
 	.badge {
 		display: none;
 	}
@@ -661,6 +665,10 @@ footer > .container > .text-center {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+
+	header {
+    	margin-bottom: 32px;
+	}
 
 	.carousel-item {
 		max-height: 350px;
