@@ -19,6 +19,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
+html, body, .container-fluid {
+    min-height: 100%;
+}
+
+.container-fluid {
+	position: relative;
+}
+
+.container-fluid-page {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.main-content {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
 
 .h-slider {
 	text-shadow: 2px 1px #000000;
@@ -545,8 +562,8 @@ footer {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	position: relative;
-    bottom: 0;
-    width: 100%;
+	width: 100%;
+	bottom: 0%;
 }
 
 footer > .container > .text-center {
