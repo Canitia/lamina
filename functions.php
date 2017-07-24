@@ -370,6 +370,14 @@ function canitia_customizer( $wp_customize ) {
 add_action( 'customize_register', 'canitia_customizer' );
 
 
+
+function change_logo_class( $html ) {
+
+    $html = str_replace( 'custom-logo', 'brand-logo', $html );
+
+    return $html;
+}
+
 /**
  * add custom site logo (to header)
  */
@@ -378,16 +386,16 @@ function canitia_setup() {
 	
 	
 	add_theme_support( 'custom-logo', array(
-	'height'      => 64,
-	'width'       => 64,
+	'height'      => 48,
+	'width'       => 48,
 	'flex-width' => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 	) );
-	
-	
 }
 
 add_action( 'after_setup_theme', 'canitia_setup' );
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
 
 load_theme_textdomain( 'canitia', get_template_directory().'/languages' );
 

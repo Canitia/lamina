@@ -593,6 +593,11 @@ footer > .container > .text-center {
 
 @media (max-width: 575px) {  
 
+	img.brand-logo {
+		display: none;
+	}
+
+
 	.badge {
 		display: none;
 	}
@@ -700,6 +705,10 @@ footer > .container > .text-center {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+
+	img.brand-logo {
+		display: none;
+	}
 
 	.collection-item {
 		padding-left: initial;
