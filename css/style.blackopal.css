@@ -184,7 +184,7 @@ ul.children {
 	background-color: #636363 !important;	
 }
 
-.comment-reply-link {
+.comment-reply-link, .form-submit > input#submit:hover {
     text-decoration: none !important;
 }
 
