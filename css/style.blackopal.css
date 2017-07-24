@@ -183,3 +183,7 @@ ul.children {
 .even {
 	background-color: #636363 !important;	
 }
+
+.comment-reply-link {
+    text-decoration: none !important;
+}
