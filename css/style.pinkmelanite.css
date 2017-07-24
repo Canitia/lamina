@@ -102,6 +102,10 @@ article > h1:first-child {
     text-decoration: none;
 }
 
+.pagination-within li {
+	color: white !important;
+}
+
 .search-field {
 	background-color: #3f3f3f !important;
 	border-bottom: 0 !important;

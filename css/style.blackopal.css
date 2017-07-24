@@ -96,10 +96,6 @@ article > h1:first-child,
     color: white;
 }
 
-.pagination-within li {
-	color: white !important;
-}
-
 .pagination a {
     text-decoration: none;
 }
