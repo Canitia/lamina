@@ -1,4 +1,3 @@
-   <div class="container-fluid">
     <div class="row row-featured">
   <?php
 
@@ -33,5 +32,4 @@
     </div>
         <?php } ?>
 <?php endif;?>
-</div>
 </div>

@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div class="container-fluid">
     <h1 class="text-left-title-featured-sidebar"><strong><?php _e('Archive ', 'canitia');?></strong> <?php the_archive_title();?></h1>
   <div <?php post_class(); ?>>
   <div class="row">

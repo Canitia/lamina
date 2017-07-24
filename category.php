@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div class="container-fluid">
      <div class="row">
        <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
       <!-- second column (widget bar) -->

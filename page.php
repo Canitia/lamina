@@ -1,5 +1,4 @@
 <?php get_header();?>
-<div class="container-fluid container-fluid-page">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
   
