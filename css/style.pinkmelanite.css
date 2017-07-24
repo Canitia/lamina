@@ -178,6 +178,10 @@ article > h1:first-child {
 }
 
 .carousel:hover, .archive-image:hover {
+	filter: grayscale(75%) !important;
+}
+
+.disabled-image{
 	filter: grayscale(100%) !important;
 }
 
