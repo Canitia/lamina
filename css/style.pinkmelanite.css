@@ -103,6 +103,10 @@ article > h1:first-child {
 	border-bottom: 0 !important;
 }
 
+[type=search] {
+	color: white !important;
+}
+
 .pagination > ul > li {
 	background-color: #3f3f3f !important;
 }
