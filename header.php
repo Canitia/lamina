@@ -47,8 +47,7 @@
 
 
 </header>
-
-<div class="container-fluid">
+<div class="container-fluid h-100">
 <?php
     if ( is_home() || is_category() || is_author() || is_search() ) {
 
@@ -63,12 +62,5 @@
         if ( get_theme_mod( 'display_featured_content', 'hide' ) == 'hide' ) :
             set_theme_mod ('display_featured_content', 'hide' ); // disable featured section as the slider replaces it
         endif;
-    }
-
-    if ( is_single() || is_page() ) {
-
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-        }
     }
 ?>

@@ -1,5 +1,15 @@
 <?php get_header(); ?>
-    <div class="row">
+    <div class="row h-100">
+<?php
+    if ( is_single() || is_page() ) {
+
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+        }
+    }
+?>
+
+
         <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
@@ -72,10 +82,10 @@
       <?php endif; ?>
 
 
-        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-        <!-- second column (widget bar) -->
-        <?php get_sidebar( 'primary' ); ?>
-        <?php endif; ?>
+  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
+  <!-- second column (widget bar) -->
+  <?php get_sidebar( 'primary' ); ?>
+  <?php endif; ?>
   </div><!-- end row -->
 <!-- start of footer -->
 <?php get_footer(); ?>
