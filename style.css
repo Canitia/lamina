@@ -147,6 +147,9 @@ address {
   HEADER / NAVBAR / NAVIGATION
 
 *****************************************/
+header {
+    margin-bottom: 64px;
+}
 
 .navbar {
 	border-bottom: 1px solid #ebebeb;
