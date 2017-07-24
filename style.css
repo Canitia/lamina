@@ -981,13 +981,13 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-circle, 
-.fa-tag,
+.fa-tags,
 .fa-list {
 	color: #d3d3d3;
 }
 
 .fa-list,
-.fa-tag {
+.fa-tags {
 	margin-right: 10px;
 }
 
