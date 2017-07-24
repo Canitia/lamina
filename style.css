@@ -432,6 +432,10 @@ ul.pings.commentlist {
 	padding: 15px;
 }
 
+.page-ui {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
 
 /* **************************************
 
