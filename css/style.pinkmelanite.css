@@ -165,6 +165,10 @@ article > h1:first-child {
 	margin-bottom: 0 !important;
 }
 
+.h-slider {
+	color: white !important;
+}
+
 .carousel:hover, .archive-image:hover {
 	filter: grayscale(100%) !important;
 }
