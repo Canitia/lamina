@@ -386,8 +386,8 @@ function canitia_setup() {
 	
 	
 	add_theme_support( 'custom-logo', array(
-	'height'      => 48,
-	'width'       => 48,
+	'height'      => 64,
+	'width'       => 64,
 	'flex-width' => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 	) );
