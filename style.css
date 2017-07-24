@@ -319,6 +319,7 @@ POST/ARTICLE HEADERS
 	top: 20px;
 	right: 0;
 	z-index: 2;
+	padding: 7px;
 }
 
 .archive-image {
