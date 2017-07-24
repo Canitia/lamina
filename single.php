@@ -25,7 +25,7 @@
             <i class="fa fa-clock-o"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
         </div>
-        <hr class="cat-links-hr" />
+
         <div class="post-content">
             <?php the_content(); ?>
         </div> 
@@ -36,14 +36,13 @@
 
         <?php if(has_tag()) { ?>
             <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
-                <?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> 
-                <hr class="cat-links-hr" />
+                <div class="tagslist"><?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> </div>
                 <?php endif; ?>
         <?php } ?>
-
+        <br />
         <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
         <?php if(has_category()) { ?>
-          <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
+          <div class="categorylist"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
             $separator = ', ';
             $output = '';
@@ -54,7 +53,7 @@
                 }
                 echo trim( $output, $separator );
             } ?>
-         <hr class="cat-links-hr" />
+            </div>
         <?php 
             }
         } ?>

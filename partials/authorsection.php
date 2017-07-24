@@ -1,7 +1,6 @@
 
 
 <section class="author-profile">
-<hr class="cat-links-hr" />
     <strong class="author-name"><?php the_author_posts_link();?></strong>
 <?php 
     if ( get_the_author_meta( 'description' ) ) {
@@ -18,9 +17,3 @@
 
 ?>
 </section>
-<?php if ( !is_page() ) { ?>
-<hr class="cat-links-hr" />
-<?php } /* end is page */
-
-
-?>
