@@ -48,11 +48,7 @@
 
 </header>
 
-<?php if ( !is_page() ) : ?>
 <div class="container-fluid">
-<?php else : ?>
-<div class="container-fluid container-fluid-page">
-<?php endif;?>
 <?php
     if ( is_home() || is_category() || is_author() || is_search() ) {
 
