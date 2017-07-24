@@ -26,11 +26,16 @@
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
         <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
         <?php if(has_category()) { ?>
-          <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
             $separator = ', ';
             $output = '';
             if ( ! empty( $categories ) ) {
+
+                if(count($categories) > 3) {
+                    echo '<br />';
+                }?>
+          <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
+          <?php
                 foreach( $categories as $category ) {
                     $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
                     . esc_html( $category->name ) . '</a>' . $separator;
@@ -49,11 +54,6 @@
 
         <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
-
-        <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
-            get_template_part( 'partials/authorsection' ); 
-        endif; ?>
-
         <div class="cat-links">
 
         <?php if(has_tag()) { ?>
@@ -63,6 +63,10 @@
                 <?php endif; ?>
         <?php } ?>
           </div>
+
+        <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
+            get_template_part( 'partials/authorsection' ); 
+        endif; ?>
        </article><!-- close article -->
       <?php if( comments_open() ) { ?>
 	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>

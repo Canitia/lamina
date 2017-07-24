@@ -480,6 +480,7 @@ ul.pings.commentlist {
 *****************************************/
 .author-profile {
 	clear:both;
+	margin-top: 25px;
 }
 
 .author-bio {

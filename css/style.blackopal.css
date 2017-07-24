@@ -145,10 +145,6 @@ article > h1:first-child,
 	color: white !important;
 }
 
-.author-profile {
-	background-color: #2b2b2b !important;
-}
-
  .post-subitems, .post-subitems > a, .author-name a, .fn a {
 	 color: white !important;
  }
