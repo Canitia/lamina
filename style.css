@@ -1170,6 +1170,7 @@ ul.children {
 	background: whitesmoke;
 	clear:both;
 	text-align: center !important;
+	padding: 5px;
 }
 
 dl.wp-caption {
