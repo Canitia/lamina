@@ -241,7 +241,7 @@ address {
 }
 
 .badge {
-	color: #979797;
+	color: #979797 !important;
     margin-right: 10px;
 }
 
