@@ -476,6 +476,11 @@ ul.pings.commentlist {
 	margin-top: 10px;
 }
 
+.tagslist a,
+.categorylist a {
+	text-decoration: underline;
+}
+
 /* **************************************
 
 	ARTICLE: AUTHOR look-n-feel
@@ -701,6 +706,11 @@ footer > .container > .text-center {
 		float: right;
 	}
 
+	.tagslist, 
+	.categorylist {
+		margin-left: 2px;
+	}
+
 	img.avatar {
 		width: 64px;
 		height: 64px;
@@ -754,20 +764,22 @@ footer > .container > .text-center {
 	.post-errortext {
 		margin-left: 0px;
 	}
-
-	img.avatar {
-		margin-left: 0;
-	}
 	
 	img.avatar {
 		width: 64px;
 		height: 64px;
+		margin-left: 0;
 	}
  
 	.search-form {
    		margin-top: 15px;
    	 	margin-bottom: 20px;
    	 	margin-left: 20px;
+	}
+
+	.tagslist, 
+	.categorylist {
+		margin-left: 2px;
 	}
 }
 
