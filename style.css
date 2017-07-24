@@ -73,8 +73,7 @@ pre {
 blockquote {
 	display: table;
 	position:relative;
-	padding-top:7px;
-	padding-bottom:7px;
+	padding: 10px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	background-color: whitesmoke;
