@@ -154,6 +154,10 @@ address {
 	background-color: white;
 }
 
+.navbar-brand {
+	margin-left: 10px;
+}
+
 /* color of clickable header */
 .site-title {
 	font-weight: 300;
