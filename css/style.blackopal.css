@@ -176,3 +176,6 @@ article > h1:first-child,
 	background-color: #3f3f3f !important;
 }
 
+.even {
+	background-color: #636363 !important;	
+}

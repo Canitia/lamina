@@ -181,3 +181,7 @@ article > h1:first-child {
 .comment.odd {
 	background-color: #4c4c4c !important;
 }
+
+.even {
+	background-color: #636363 !important;	
+}
