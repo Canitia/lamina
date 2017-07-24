@@ -558,6 +558,10 @@ footer > .container > .text-center {
 		display: none;
 	}
 
+	.badge-date {
+		display: block;
+	}
+
 	.carousel-item {
 		max-height: 250px;
 	}
