@@ -18,7 +18,7 @@
                 endif;
 ?>
                 <a href="<?php the_permalink(); ?>">
-                            <p title="<?php the_title_attribute(); ?>" class="truncate"><?php the_title(); ?>
+                            <p title="<?php the_title_attribute(); ?>" class="text-center truncate"><?php the_title(); ?>
                             </p>
                         </a>
                 </div>
