@@ -43,6 +43,10 @@ q {
 	border-bottom: 1px solid #3f3f3f !important;
 }
 
+.widget > ul > li > a {
+	color: white !important;
+}
+
 article a:hover {
 	color: #bc3168 !important;
 }
@@ -91,7 +95,11 @@ article > h1:first-child {
 }
 
 .pagination > ul > li > a {
-    color: black;
+    color: white;
+}
+
+.pagination > ul > li {
+	background-color: #3f3f3f !important;
 }
 
  .pagination > ul > li > a:hover,  .pagination-within > li > a:hover  {
