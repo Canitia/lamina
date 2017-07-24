@@ -165,3 +165,19 @@ article > h1:first-child {
 .carousel:hover, .archive-image:hover {
 	filter: grayscale(100%) !important;
 }
+
+.comment-respond, .entry-pings, .comment-body {
+	border: 1px solid #3f3f3f !important;
+}
+
+.comment-author {
+	border-bottom: 1px solid #3f3f3f !important;
+}
+
+.comment-meta {
+	border-bottom: 1px solid #3f3f3f !important;	
+}
+
+.comment.odd {
+	background-color: #3f3f3f !important;
+}
