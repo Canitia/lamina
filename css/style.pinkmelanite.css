@@ -3,17 +3,34 @@ body {
 }
 
 .container-fluid a {
-	color: white;
+	color: #979797;
 	text-decoration: underline;
 }
 
+.container-fluid a:hover {
+	color: white;
+	text-decoration: none;
+}
+
 p,
-li {
+li,
+table,
+dl,
+address,
+q,
+pre {
 	color: white;
 }
 
 hr {
     border-top: 1px solid #3f3f3f !important;
+}
+
+blockquote,
+pre,
+q {
+	background-color: #3f3f3f !important;
+	border: 0 !important;
 }
 
 .main-content {
