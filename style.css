@@ -350,8 +350,13 @@ POST/ARTICLE HEADERS
 	width: 100%;	
 }
 
-.archive-image:hover {
-	filter: grayscale(50%);
+.carousel:hover, .archive-image:hover {
+	filter: grayscale(25%) !important;
+}
+
+.disabled-image, 
+.disabled-image:hover{
+	filter: grayscale(100%) !important;
 }
 
 .post-content {

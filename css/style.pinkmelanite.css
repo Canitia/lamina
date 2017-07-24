@@ -177,15 +177,6 @@ article > h1:first-child {
 	color: white !important;
 }
 
-.carousel:hover, .archive-image:hover {
-	filter: grayscale(45%) !important;
-}
-
-.disabled-image, 
-.disabled-image:hover{
-	filter: grayscale(100%) !important;
-}
-
 .comment-respond, .entry-pings, .comment-body {
 	border: 1px solid #3f3f3f !important;
 }
