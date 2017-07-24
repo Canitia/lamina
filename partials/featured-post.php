@@ -34,6 +34,7 @@
 
     <?php  
     
+    //add empty posts to the row if there are non selected
     $count = $query->post_count;
     while ($count < 3) { ?>
       <div class="col-sm-4">
