@@ -974,7 +974,8 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-list {
-	margin-right: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .fa-calendar {

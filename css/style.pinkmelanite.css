@@ -30,6 +30,10 @@ hr {
 	border-top: 0 !important;
 }
 
+.cat-links-hr {
+	border: 0px !important;
+}
+
 th, tr, td {
 	border: 1px solid #3f3f3f !important;
 }
