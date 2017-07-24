@@ -447,6 +447,7 @@ ul.pings.commentlist {
 .page-ui {
 	padding-left: 5px !important;
 	padding-right: 5px !important;
+	max-width: 800px;
 }
 
 /* **************************************
