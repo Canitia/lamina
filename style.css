@@ -469,8 +469,10 @@ ul.pings.commentlist {
 	color: #979797;
 }
 
-.cat-links > hr:last-child {
-    margin-bottom: 0;
+.tagslist,
+.categorylist {
+	margin-left: 10px;
+	margin-top: 10px;
 }
 
 /* **************************************
