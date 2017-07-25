@@ -32,6 +32,13 @@ function canitia_theme_scripts() {
 	if ( get_theme_mod( 'theme_preset', 'pinkmelanite' ) == 'pinkmelanite') :
 		wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css', false );	
 	endif;
+	if ( get_theme_mod( 'theme_preset', 'brownsinhalite' ) == 'brownsinhalite') :
+		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset', 'bluesapphire' ) == 'bluesapphire') :
+		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
+	endif;
+
 }
 
 add_action( 'wp_enqueue_scripts', 'canitia_theme_scripts' );
@@ -379,6 +386,8 @@ function canitia_customizer( $wp_customize ) {
 			'pinkruby' => __('Pink Ruby', 'canitia'),
 			'pinkmelanite' => __('Pink Melanite', 'canitia'),
 			'blackopal' => __('Black Opal', 'canitia'),
+			'brownsinhalite' => __('Brown Sinhalite', 'canitia'),
+			'bluesapphire' => __('Blue Sapphire', 'canitia'),
 		),
 	) );
 
