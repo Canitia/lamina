@@ -508,6 +508,10 @@ ul.pings.commentlist {
     margin-top: 15px;
 }
 
+.author-profile > .avatar {
+	float:left;
+}
+
 img.avatar {
 	z-index:200;
 	margin-right:15px;
