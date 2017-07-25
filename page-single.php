@@ -1,4 +1,4 @@
-<?php /* Template Name: Page (single column) */ ?>
+<?php /* Template Name: Full-Width Page */ ?>
 <?php get_header();?>
 <div class="row h-100">
 <?php if ( have_posts() ) : ?>
