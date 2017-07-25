@@ -1176,7 +1176,7 @@ ul.children {
 }
 
 .comment-author.vcard {
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #f8f8f8;
 	margin-top: -5px;
 	padding-bottom: 10px;
 }
@@ -1199,7 +1199,7 @@ ul.children {
     flex-direction: row;
     justify-content: flex-end;
 	font-size: 14px;
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #f8f8f8;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
