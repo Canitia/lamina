@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-25 15:11+0000\n"
-"PO-Revision-Date: 2017-07-25 15:12+0000\n"
+"POT-Creation-Date: 2017-07-25 16:16+0000\n"
+"PO-Revision-Date: 2017-07-25 16:17+0000\n"
 "Last-Translator: bouwlamp <michael@michaelboumann.info>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,25 +13,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:371
-msgid "Search in navbar on mobile"
-msgstr "Zoek via de navigatiebalk op mobiele apparaten"
-
-#: functions.php:375
-msgid "Show Search on mobile"
-msgstr "Laat zoekbalk zien op mobiele apparaten"
-
-#: functions.php:376
-msgid "Hide Search on mobile"
-msgstr "Verberg de zoekbalk op mobiele apparaten"
-
-#: functions.php:389
-msgid "Brown Sinhalite"
-msgstr "Brown Sinhalite"
-
-#: functions.php:390
-msgid "Blue Sapphire"
-msgstr "Blue Sapphire"
+#: partials/featured-post.php:42
+msgid "Placeholder"
+msgstr "Opvulling"
 
 #: 404.php:10
 msgid "Error"
@@ -201,6 +185,18 @@ msgstr "Laat auteur sectie zien"
 msgid "Hide Author section"
 msgstr "Verberg auteur sectie"
 
+#: functions.php:371
+msgid "Search in navbar on mobile"
+msgstr "Zoek via de navigatiebalk op mobiele apparaten"
+
+#: functions.php:375
+msgid "Show Search on mobile"
+msgstr "Laat zoekbalk zien op mobiele apparaten"
+
+#: functions.php:376
+msgid "Hide Search on mobile"
+msgstr "Verberg de zoekbalk op mobiele apparaten"
+
 #: functions.php:381
 msgid "Theme preset"
 msgstr "Thema preset"
@@ -220,6 +216,14 @@ msgstr "Pink Melanite"
 #: functions.php:388
 msgid "Black Opal"
 msgstr "Black Opal"
+
+#: functions.php:389
+msgid "Brown Sinhalite"
+msgstr "Brown Sinhalite"
+
+#: functions.php:390
+msgid "Blue Sapphire"
+msgstr "Blue Sapphire"
 
 #. Name of the template
 msgid "Search Page"
@@ -260,10 +264,6 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 #: partials/featured-post.php:16
 msgid "featured"
 msgstr "uitgelicht"
-
-#: partials/featured-post.php:42
-msgid "Empty row"
-msgstr "Leeg item"
 
 #. Name of the theme
 msgid "Canitia"
