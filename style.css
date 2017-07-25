@@ -30,7 +30,6 @@ body {
 }
 
 .main-content {
-
 	padding-left: 5px !important;
 	padding-right: 5px !important;
 }
@@ -222,6 +221,10 @@ address {
   SLIDER LOOK-N-FEEL
 
 *****************************************/
+.carousel {
+	background-color: black;
+}
+
 .carousel-item {
 	object-fit: cover;
 	justify-content: center;
