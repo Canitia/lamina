@@ -118,6 +118,10 @@ input, select {
 	border-bottom: 0 !important;
 }
 
+input.search-field::placeholder {
+    color: white;
+}
+
 .pagination > ul > li {
 	background-color: #3f3f3f !important;
 }

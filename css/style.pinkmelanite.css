@@ -120,6 +120,10 @@ input, select {
 	border-bottom: 0 !important;
 }
 
+input.search-field::placeholder {
+    color: white;
+}
+
 .pagination > ul > li,
 .pagination-within > a > li
 {
