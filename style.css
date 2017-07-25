@@ -20,10 +20,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 *****************************************/
 body {
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
 }
+
+.flex-grow {
+   flex: 1;
+}
+
 
 .container-fluid {
 	width: 100%;

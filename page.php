@@ -1,4 +1,5 @@
 <?php get_header();?>
+<div class="row h-100">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
   
@@ -10,6 +11,7 @@
         <i class="fa fa-clock-o"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date();?></time>
         <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
       </div>
+
       <div class="post-content">
         <?php the_content();?>
       </div>  
@@ -28,7 +30,7 @@
 
    <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&after=</ul>&link_before=<li>&link_after=</li>');?>
 
-</div><!-- einde md8 -->
-
+</div><!-- einde col -->
+</div>
 <!-- start of footer -->
 <?php get_footer();?>

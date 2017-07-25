@@ -15,7 +15,7 @@
     <?php wp_head();?>
 </head>
 
-<body <?php body_class();?>>
+<body class="d-flex flex-column" <?php body_class();?>>
 
 <!-- start of the actual header -->
 <header>
@@ -60,7 +60,7 @@
         endif;
     }
 ?>
-<div class="container-fluid h-100">
+<div class="container-fluid flex-grow">
 <?php
     // show featured post row
     if ( is_home() || is_category() || is_author() || is_search() ) {
