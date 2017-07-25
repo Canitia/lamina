@@ -45,6 +45,11 @@ q {
 	border: 0 !important;
 }
 
+input, select {
+	background-color: #3f3f3f !important;
+    color: white !important;
+}
+
 .main-content {
 	border-right: 1px solid #3f3f3f !important;
 }

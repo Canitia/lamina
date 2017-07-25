@@ -123,6 +123,12 @@ article > h1:first-child {
 	color: white !important;
 }
 
+input, select {
+	background-color: #3f3f3f !important;
+    color: white !important;
+}
+
+
 .pagination > ul > li,
 .pagination-within > a > li
 {
