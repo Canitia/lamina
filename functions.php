@@ -25,7 +25,6 @@ function canitia_theme_scripts() {
 
 	if ( get_theme_mod('night_mode') == 'enabled') 
 	{
-
 		wp_deregister_style(get_theme_mod( 'theme_preset'));
 		$current_time = date( 'H:i', current_time( 'timestamp', 0 ) );
 
@@ -48,7 +47,8 @@ function canitia_theme_scripts() {
 				wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
 			endif;
 		}
-		else {
+	}
+	else {
 			wp_deregister_style(get_theme_mod( 'night_theme_preset'));
 
 			if ( get_theme_mod( 'theme_preset', 'pinkruby' ) == 'pinkruby') :
@@ -66,10 +66,6 @@ function canitia_theme_scripts() {
 			if ( get_theme_mod( 'theme_preset', 'bluesapphire' ) == 'bluesapphire' ) :
 				wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
 			endif;
-		}
-	}
-	else {
-
 	}
 }
 
