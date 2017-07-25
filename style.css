@@ -711,6 +711,11 @@ footer > .container > .text-center {
 		margin-right: 5px;
 	}
 
+	.post-content {
+		margin-left: 10px;
+    	margin-right: 10px;
+	}
+	
 	.post-errortext {
 		margin-left: 10px;
 	}
@@ -799,6 +804,11 @@ footer > .container > .text-center {
 
 	#wp-calendar tbody td {
 		padding: 4px;
+	}
+
+	.post-content {
+		margin-left: 10px;
+    	margin-right: 10px;
 	}
 
 	.post-errortext {
