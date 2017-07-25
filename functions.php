@@ -441,7 +441,7 @@ function canitia_customizer( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'night_mode', array(
-		'label' => __('Night mode', 'canitia'),
+		'label' => __('Automatic night mode', 'canitia'),
 		'section' => 'colors',
 		'type' => 'radio',
 		'choices' => array(
