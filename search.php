@@ -5,9 +5,6 @@ Template Name: Search Page
 ?>
 
 <?php get_header(); ?>
-<?php get_template_part( 'partials/slider' ); ?>
-
-<div class="container-fluid">
 
 <div class="row">
 
@@ -18,7 +15,7 @@ Template Name: Search Page
 
 <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
  
-    <h1 class="text-left-title-featured-sidebar truncate" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Results for ', 'canitia'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
+    <h1 class="text-left-title-featured-sidebar truncate"><?php _e('Results for ', 'canitia'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
     <div class="collection">
 
     <?php
@@ -55,12 +52,11 @@ Template Name: Search Page
  </div>
 </div><!-- end main-content -->
 
-  <?php if ( get_theme_mod( 'move_sidebar_left' ) == 0 ) : ?>
+  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
 </div><!-- end row -->
-</div><!-- container fluid END! -->
 
 <!-- start of footer -->
 <?php get_footer(); ?>

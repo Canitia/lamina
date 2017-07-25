@@ -1,6 +1,15 @@
 <?php get_header(); ?>
- <div class="container-fluid">
-    <div class="row">
+    <div class="row h-100">
+<?php
+    if ( is_single() || is_page() ) {
+
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+        }
+    }
+?>
+
+
         <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
@@ -15,23 +24,25 @@
           <div class="post-subitems text-center">
             <i class="fa fa-clock-o"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
-          </div>
-        <hr />
+        </div>
+
         <div class="post-content">
             <?php the_content(); ?>
         </div> 
 
         <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
-
-        <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
-            get_template_part( 'partials/authorsection' ); 
-        endif; ?>
-
         <div class="cat-links">
+
+        <?php if(has_tag()) { ?>
+            <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
+                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </div>
+                <?php endif; ?>
+        <?php } ?>
+        <br />
         <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
         <?php if(has_category()) { ?>
-          <span class="label"><i class="fa fa-list" aria-hidden="true"></i></span>
+          <div class="categorylist"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
             $separator = ', ';
             $output = '';
@@ -42,20 +53,23 @@
                 }
                 echo trim( $output, $separator );
             } ?>
-         <hr class="cat-links-hr" />
+            </div>
         <?php 
             }
         } ?>
-        <?php if(has_tag()) { ?>
-            <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
-                <?php the_tags( '<i class="fa fa-tag" aria-hidden="true"></i>', ', ', ' ' ); ?> 
-                <hr class="cat-links-hr" />
-                <?php endif; ?>
-        <?php } ?>
+
+
           </div>
+
+        <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
+            get_template_part( 'partials/authorsection' ); 
+        endif; ?>
        </article><!-- close article -->
+      <?php if( comments_open() ) { ?>
+	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
+        <?php }
+        ?>
        <!-- let user enter a comment -->
-      <h3 class="h3-join-the-conversation" style="<?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Join the conversation', 'canitia'); ?></h3>
       <?php comments_template(); ?>
   
     </div><!-- close post class div -->
@@ -70,11 +84,10 @@
       <?php endif; ?>
 
 
-        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-        <!-- second column (widget bar) -->
-        <?php get_sidebar( 'primary' ); ?>
-        <?php endif; ?>
+  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
+  <!-- second column (widget bar) -->
+  <?php get_sidebar( 'primary' ); ?>
+  <?php endif; ?>
   </div><!-- end row -->
-</div><!-- container fluid END! -->
 <!-- start of footer -->
 <?php get_footer(); ?>

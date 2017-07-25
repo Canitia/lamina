@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div class="container-fluid">
   <div class="row">
 
     <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
@@ -16,7 +15,7 @@
       if ($paged < 2) {    //only show today section on page 1
       ?>
  
-      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Today', 'canitia'); ?></h1>
+      <h1 class="text-left-title-featured-sidebar"><?php _e('Today', 'canitia'); ?></h1>
       <div class="collection">
       <?php
 
@@ -42,7 +41,7 @@
           <div class="collection-item">
           <a href="<?php the_permalink(); ?>">
               <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
-                <span class="badge">
+                <span class="badge float-right">
                 <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
               </span> 
               </p>
@@ -63,7 +62,7 @@
         };
         ?>
         
-      <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Older posts', 'canitia');?></h1>            
+      <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'canitia');?></h1>            
   <?php endif; ?>
 
   <!-- end today section -->
@@ -73,10 +72,10 @@
   if ( get_theme_mod( 'display_today', 'hide' ) == 'hide' ) :   ?>
       
       <?php if ($paged <= 1) { ?>
-       <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Latest', 'canitia');?></h1>        
+       <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>        
       <?php }
       else { ?>
-        <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Older posts', 'canitia');?></h1> 
+        <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'canitia');?></h1> 
       <?php }
       ?>    
  <?php endif;?>
@@ -126,6 +125,5 @@
 
 
 </div> <!-- row main -->
-</div> <!-- fluid main -->
 <!-- start of footer -->
 <?php get_footer(); ?>

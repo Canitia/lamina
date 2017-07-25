@@ -1,0 +1,106 @@
+.container-fluid a {
+	color: black;
+}
+
+.h-slider {
+	color: white !important;
+}
+
+article a:hover {
+	color: #652121 !important;
+}
+
+.navbar {
+	border-bottom: 0 !important;
+}
+
+.navbar,
+.footer {
+    background: #654321 ;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+}
+
+.navbar-brand,
+footer p {
+	color: white !important;
+}
+
+.menu-item {
+	background-color: #654321;
+}
+
+.menu-item:hover {
+    background-color: #652121 !important;
+}
+
+.menu-item > a {
+	color: white !important;
+}
+
+/* headers like 'latest' */
+h1, h2, h3, h4, h5, h6 {
+	color: #654321 !important;
+}
+
+.row-featured {
+
+}
+
+article > h1:first-child {
+	color: #654321  !important;
+}
+
+ .pagination > ul > li > a:hover,  .pagination-within > li > a:hover  {
+	 color: white !important;
+ }
+
+ .btn, .comment-reply-link {
+	 background-color: #652121 !important;
+ }
+
+ .sticky {
+	 color: orange !important;
+ }
+
+ .badge {
+	color: black !important;
+ }
+
+ .badge-date {
+	 color: white !important;
+	background-color: #654321  !important;
+ }
+
+.search-submit {
+	color: white !important;
+}
+
+ .post-subitems, .post-subitems > a, .author-name a, .fn a {
+	 color: #654321 !important;
+ }
+
+ .pagination > ul > li:hover, .pagination-within > a > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
+	 color: white !important;
+	 background-color: #7a4242 !important;
+ }
+
+.collection .collection-item:hover, .widget > ul > li:hover, .pagination > ul > li.active, .pagination-within > li {
+	background-color: #7a4242 !important;
+}
+
+.collection-item a:hover, .widget > ul > li > a:hover {
+	color: white !important;
+}
+
+.fa-bars {
+	color: white !important;
+}
+
+.fa-circle,
+.fa-tags,
+.fa-list {
+	color: #656521 !important;	
+}
+
+.text-muted {
+	margin-bottom: 0 !important;
+}

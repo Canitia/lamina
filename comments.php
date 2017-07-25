@@ -2,7 +2,6 @@
 if ( post_password_required() )
 return;
 ?>
-
 <div class="comments-wrapper">
 
 <?php if ( have_comments() ) : ?>

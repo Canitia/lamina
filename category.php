@@ -1,12 +1,11 @@
 <?php get_header(); ?>
-<div class="container-fluid">
      <div class="row">
        <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
       <!-- second column (widget bar) -->
       <?php get_sidebar( 'primary' ); ?>
       <?php endif; ?>
         <div class="<?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?> main-content">
-          <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Latest posts in', 'canitia'); ?> <strong><?php single_cat_title(); ?></strong></h1>
+          <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts in', 'canitia'); ?> <strong><?php single_cat_title(); ?></strong></h1>
         <div class="collection">
       <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
@@ -44,7 +43,6 @@
       <?php endif; ?>
 
     </div><!-- end row -->
-  </div><!-- container fluid END! -->
 
           <!-- start of footer -->
           <?php get_footer(); ?>

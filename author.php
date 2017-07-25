@@ -1,5 +1,4 @@
 <?php get_header();?>
-<div class="container-fluid">
 <div class="row">
 
   <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
@@ -8,7 +7,7 @@
   <?php endif; ?>
 
   <div class="col-xs-12 <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?> main-content">
-  <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Latest posts by', 'canitia'); ?> 
+  <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts by', 'canitia'); ?> 
   <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
     echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
 
@@ -46,8 +45,6 @@
 
 </div>
 <!-- end row -->
-</div>
-<!-- container fluid END! -->
 
 <!-- start of footer -->
 <?php get_footer();

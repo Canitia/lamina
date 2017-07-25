@@ -1,0 +1,232 @@
+body {
+	background-color: black;
+}
+
+.container-fluid a {
+	color: #979797;
+	text-decoration: underline;
+}
+
+.container-fluid a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white !important;
+}
+
+p,
+li,
+table,
+dl,
+address,
+q,
+pre {
+	color: white;
+}
+
+hr {
+    border-top: 1px solid #3f3f3f !important;
+}
+
+.cat-links > hr:last-child {
+	border-top: 0 !important;
+}
+
+th, tr, td {
+	border: 1px solid #3f3f3f !important;
+}
+
+blockquote,
+pre,
+q {
+	background-color: #3f3f3f !important;
+	border: 0 !important;
+}
+
+.main-content {
+	border-right: 1px solid #3f3f3f !important;
+}
+
+.text-left-title-featured-sidebar,
+.collection-item,
+.widget > ul > li {
+	border-bottom: 1px solid #3f3f3f !important;
+}
+
+.widget > ul > li > a {
+	color: white !important;
+}
+
+article a:hover {
+	color: #686868 !important;
+}
+
+.navbar {
+	border-bottom: 0 !important;
+}
+
+.navbar,
+.footer {
+    background: #3f3f3f !important;
+	border:0 !important;
+}
+
+.navbar-brand,
+footer p {
+	color: white !important;
+}
+
+.menu-item {
+    background: #3f3f3f !important;
+}
+
+.menu-item:hover {
+    background-color: #686868 !important;
+}
+
+.menu-item > a {
+	color: white !important;
+}
+
+.row-featured {
+
+}
+
+article > h1:first-child {
+	color: #3f3f3f !important;
+}
+
+.text-left-title-featured-sidebar,
+article > h1:first-child,
+.h3-join-the-conversation {
+	color: white !important;
+}
+
+.pagination > ul > li > a {
+    color: white;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.search-field {
+	background-color: #3f3f3f !important;
+	border-bottom: 0 !important;
+}
+
+[type=search] {
+	color: white !important;
+}
+
+.pagination > ul > li {
+	background-color: #3f3f3f !important;
+}
+
+ .pagination > ul > li > a:hover,  .pagination-within > li > a:hover  {
+	 color: white !important;
+ }
+
+ .btn, .comment-reply-link {
+	 background-color: #979797 !important;
+ }
+
+ .badge {
+	 color: white !important;
+ }
+
+ .badge-date {
+	 background-color: #3f3f3f !important;
+ }
+
+.search-submit {
+	color: white !important;
+}
+
+ .post-subitems, .post-subitems > a, .author-name a, .fn a {
+	 color: white !important;
+ }
+
+ .pagination > ul > li:hover, .pagination-within > a > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
+	 color: white !important;
+	 background-color: #686868 !important;
+ }
+
+.collection .collection-item:hover, .widget > ul > li:hover, .pagination > ul > li.active, .pagination-within > li {
+	background-color: #686868 !important;
+}
+
+.fa-bars {
+	color: white !important;
+}
+
+.fa-circle,
+.fa-tag,
+.fa-list {
+	color: #ededed !important;	
+}
+
+.text-muted {
+	margin-bottom: 0 !important;
+}
+
+.carousel:hover, .archive-image:hover {
+	filter: grayscale(75%) !important;
+}
+
+.disabled-image, 
+.disabled-image:hover{
+	filter: grayscale(100%) !important;
+}
+
+
+.comment-respond, .entry-pings, .comment-body {
+	border: 1px solid #3f3f3f !important;
+}
+
+ul.children {
+    background: inherit;
+}
+
+.comment-author {
+	border-bottom: 1px solid #3f3f3f !important;
+}
+
+.comment-meta {
+	border-bottom: 1px solid #3f3f3f !important;	
+}
+
+.comment.odd {
+	background-color: #4c4c4c !important;
+}
+
+.comment.even {
+	background-color: #292929 !important;	
+}
+
+.comment-meta > a {
+	color: white !important;
+}
+
+.comment-reply-link, .form-submit > input#submit:hover {
+    text-decoration: none !important;
+}
+
+.comment-form-comment > textarea {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+/* image captions */
+.wp-caption, 
+.gallery-caption {
+	border: 0 !important;
+	background-color: #3f3f3f !important;
+	color: white !important;
+}
+
+.cat-links-hr {
+	border: 0px !important;
+}

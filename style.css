@@ -3,8 +3,8 @@ Theme Name: Canitia
 Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
-Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, custom  colors, logo support and more.
-Version: 0.11.3.1
+Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
+Version: 0.11.5-beta3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -19,31 +19,34 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
+body {
+  min-height: 100vh;
+}
 
-h1 {
-	font-weight: 300 !important;
+.flex-grow {
+   flex: 1;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.main-content {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
 }
 
 .h-slider {
 	text-shadow: 2px 1px #000000;
 }
 
-h2 {
-	font-weight: 300 !important;
-}
-
-h3 {
-	font-weight: 300 !important;
-}
-
 .h3-join-the-conversation {
-	font-weight: 300 !important;
-	margin-top: 30px;
-    margin-bottom: 0;
+	margin-top: 40px;
+    margin-bottom: 30px;
 }
 
-h4 {
-	font-weight: 300 !important;	
+.container-fluid a {
+	color: black;
 }
 
 p > a {
@@ -71,41 +74,18 @@ pre {
 blockquote {
 	display: table;
 	position:relative;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding: 10px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	background-color: whitesmoke;
 	border: 2px solid #ebebeb;
 	width: auto;
 }
 
-blockquote:before {
-    top:-20px;
-    left:8px;
-}
-
-blockquote:before, blockquote:after {
-    color:black;
-    content:'\f10d';
-    font-family:'FontAwesome';
-    font-size:25px;
-    position:absolute;
-    display:block;
-}
-
-blockquote:after {
-    content:'\f10e';
-    right:8px;
-    top:auto;
-    left:auto;
-	bottom: -23px;
-}
-
 blockquote > p {
   	font-style: italic;
-	padding: 15px;
-	margin-left: 15px;
-	margin-right: 15px;
 	margin-bottom: 0;
+	padding: 5px;
 }
 
 q {
@@ -130,8 +110,18 @@ cite {
     font-weight: bold;
 }
 
+dl > dt {
+	font-weight: bold;
+	font-style: italic;
+}
+
 dt {
-    font-weight: 500;
+    font-weight: 600;
+}
+
+table {
+	margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 td {
@@ -180,24 +170,17 @@ address {
 }
 
 .navbar-brand {
-  padding: 0px;
-  margin-left: 5px;
-}
-
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
+	margin-left: 10px;
 }
 
 .navbar-light .navbar-toggler {
-	top: 25%;
+	border: 0;
 }
 
 /* color of clickable header */
 .site-title {
 	font-weight: 300;
-	font-size: 200%;
+	font-size: 175%;
 }
 
 .menu-item {
@@ -206,6 +189,8 @@ address {
 
 .menu-item > a {
 	color: black;
+	font-size: 14px;
+    font-weight: 600;
 }
 
 .menu-item:hover {
@@ -218,21 +203,30 @@ address {
 }
 
 .menu-item > ul > .menu-item {
-	margin-top: -8px;
+	margin-top: -11px;
 	margin-bottom: -8px;
 }
+
+.menu-item:last-child > .dropdown-menu {
+	left: inherit !important;
+	right: 0% !important;
+}
+
 
 .navbar .dropdown-menu li {
   width: 100%;
   margin-left: 0 !important;
 }
 
-
 /* **************************************
 
   SLIDER LOOK-N-FEEL
 
 *****************************************/
+.carousel {
+	background-color: black;
+}
+
 .carousel-item {
 	object-fit: cover;
 	justify-content: center;
@@ -249,7 +243,7 @@ address {
 *****************************************/
 
 .row-featured {
-	margin-top: 20px;
+	padding-top: 20px;
 }
 
 /* **************************************
@@ -260,17 +254,19 @@ address {
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
-	font-size: 150% !important;
+	font-size: 125% !important;
 	font-weight: 300;
     margin-top: 10px;
 	border-bottom: 1px solid #f8f8f8;
 	color: #979797;
+	text-transform: uppercase;
 }
 
 .badge {
-	color: #979797;
-    margin-right: 10px;
-    font-weight: 400;
+	margin-right: 10px;
+	right: 0;
+	position: absolute;
+	color: black;
 }
 
 .collection {
@@ -278,7 +274,7 @@ address {
 }
 
 .collection-item {
-	border-bottom: 1px solid #ededed !important;
+	border-bottom: 1px solid #f8f8f8 !important;
 	padding-left: 10px;
 	white-space: nowrap;
     overflow: hidden;
@@ -299,7 +295,7 @@ article > h4,
 }
 
 article > h1:first-child {
-	margin-bottom:30px;
+	margin-bottom:25px;
 }
 
 .main-content {
@@ -317,7 +313,7 @@ POST/ARTICLE HEADERS
 ##########################################*/
 .post-subitems {
 	margin-bottom: 25px;
-	font-size: 16px;
+	font-weight: 600;
 }
 
 .post-subitems > a
@@ -341,14 +337,35 @@ POST/ARTICLE HEADERS
 	width: 100%;
 }
 
+.badge-date {
+	float:right;
+	position:absolute;
+	top: 20px;
+	right: 0;
+	z-index: 2;
+	padding: 7px;
+	text-transform: uppercase;
+	color: white;
+}
+
 .archive-image {
 	object-fit: cover;
 	height: 150px;
 	width: 100%;	
 }
 
-.archive-image:hover {
-	filter: grayscale(50%);
+.carousel:hover, .archive-image:hover {
+	filter: grayscale(25%) !important;
+}
+
+.disabled-image, 
+.disabled-image:hover{
+	filter: grayscale(100%) !important;
+}
+
+.post-content {
+	margin-top: 15px;
+	margin-bottom: 35px;
 }
 
 .post-content > ul li, 
@@ -373,7 +390,6 @@ POST/ARTICLE HEADERS
 article {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
 	padding-top: 25px;
 	word-wrap: break-word;
 	height:100%;
@@ -427,13 +443,19 @@ ul.pings.commentlist {
 	color: black;
 }
 
-
 /* pagination within a post/page */
 .pagination-within > li,
 .pagination-within > a > li {
 	padding: 15px;
 }
 
+.page-ui {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	max-width: 800px;
+	    margin-left: auto;
+    margin-right: auto;
+}
 
 /* **************************************
 
@@ -444,11 +466,23 @@ ul.pings.commentlist {
 .cat-links-hr {
 	margin-top:7px;
 	margin-bottom:7px;
+	clear:both;
 }
 
 .cat-links > a:hover {
 	text-decoration: underline;
 	color: #979797;
+}
+
+.tagslist,
+.categorylist {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.tagslist a,
+.categorylist a {
+	text-decoration: underline;
 }
 
 /* **************************************
@@ -458,16 +492,24 @@ ul.pings.commentlist {
 *****************************************/
 .author-profile {
 	clear:both;
+	margin-top: 25px;
 }
 
 .author-bio {
 	display: flex;
+	margin-top: -5px;
+}
+
+.author-social {
+    margin-top: 15px;
 }
 
 img.avatar {
 	float:left;
 	z-index:200;
 	margin-right:15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .avatar-page {
@@ -543,8 +585,19 @@ img.avatar {
 
 *****************************************/
 footer {
+	height: 75px;
+	position: inherit;
+	bottom: 0;
+	width: 100%;
 	border-top: 1px solid #ebebeb;
-	padding-top: 30px;
+}
+
+footer p {
+	padding-top: 25px;
+}
+
+footer > .container > .text-center {
+    margin-bottom: 0;
 }
 
 /* **************************************
@@ -556,7 +609,19 @@ footer {
 @media (max-width: 575px) {  
 
 	.carousel-item {
-		max-height: 250px;
+		height: 300px;
+	}
+
+	img.brand-logo {
+		display: none;
+	}
+
+	.badge {
+		display: none;
+	}
+
+	.badge-date {
+		display: block;
 	}
 
 	.truncate {
@@ -565,17 +630,14 @@ footer {
 		text-overflow: inherit;
 	}
 
-	button.navbar-toggler.navbar-toggler-right {
-		top: 15px;
+	.navbar {
+		padding: 10px;
 	}
 
 	.collection-item > p,
 	.collection-item > a > p
  	{
 		padding-top:10px;
-    	padding-bottom: 10px;
-		margin-top: 16px;
-		margin-bottom: 16px;
 		margin-left: 10px;
 		line-height: 1.15;
 	}
@@ -597,24 +659,12 @@ footer {
 		padding-right:0;
 	}
 
-	blockquote > p {
-		padding: 0;
-	}
-
 	.reply-title {
 		font-size: 1.7rem !important;
 	}
 
-	.comment-body .comment-author img {
-		width: 50px;
-	}
-
-	.comment-author > cite {
-    	font-size: 1.4em !important;
-	}
-
 	.comment-meta {
-		justify-content: center;
+		justify-content: center !important;
 	}
 
 	.wp-caption {
@@ -624,10 +674,6 @@ footer {
 
 	.alignleft, .alignright {
 		float: none !important;
-	}
-
-	.comment-body .comment-author img {
-		display: none;
 	}
 
 	.text-left-title-featured-sidebar {
@@ -646,20 +692,12 @@ footer {
 		margin-left: 0px !important;
 	}
 
-	img.avatar {
-		width:50px;
-		height:50px;
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-
 	.author-name {
 		margin-left: 10px;
 	}
 
-	p.author-bio {
-		margin-left:60px;
-		margin-top: -10px;
+	.author-bio {
+		padding-left: 10px;
 	}
 	
 	.badge {
@@ -677,18 +715,51 @@ footer {
 		float: right;
 	}
 
+	.tagslist, 
+	.categorylist {
+		margin-left: 2px;
+	}
+
+	img.avatar {
+		width: 64px;
+		height: 64px;
+	}
+
+	.search-form {
+   		margin-top: 15px;
+   	 	margin-bottom: 20px;
+   	 	margin-left: 20px;
+	}
+
+	.post-content > ul li, 
+	.post-content > ol li > ul li,
+	.post-content > ol li > ul li,
+	.post-content > ul li > ol li > ul li,
+	.post-content > ol li, 
+	.post-content > ul li > ol li,
+	.post-content > ol li > ul li > ol li
+	{
+		line-height: 25px;
+	}
+
+	.comment-body > ul li,
+	.comment-body > ol li,
+	.comment-body > ul li > ol li,
+	.comment-body > ul li > ol li > ul li {
+		line-height: 25px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
 	.carousel-item {
-		max-height: 350px;
+		height: 300px;
 	}
 
-	button.navbar-toggler.navbar-toggler-right {
-		top: 15px;
-	}	
+	img.brand-logo {
+		display: none;
+	}
 
 	.collection-item {
 		padding-left: initial;
@@ -724,29 +795,54 @@ footer {
 	.post-errortext {
 		margin-left: 0px;
 	}
-
+	
 	img.avatar {
+		width: 64px;
+		height: 64px;
 		margin-left: 0;
 	}
-	
-	.comment-author > cite {
-    	font-size: 1.3em !important;
+ 
+	.search-form {
+   		margin-top: 15px;
+   	 	margin-bottom: 20px;
+   	 	margin-left: 20px;
 	}
-	
- }
+
+	.tagslist, 
+	.categorylist {
+		margin-left: 2px;
+	}
+
+	.post-content > ul li, 
+	.post-content > ol li > ul li,
+	.post-content > ol li > ul li,
+	.post-content > ul li > ol li > ul li,
+	.post-content > ol li, 
+	.post-content > ul li > ol li,
+	.post-content > ol li > ul li > ol li	{
+		line-height: 25px;
+	}
+
+	.comment-body > ul li,
+	.comment-body > ol li,
+	.comment-body > ul li > ol li,
+	.comment-body > ul li > ol li > ul li {
+		line-height: 25px;
+	}
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+	.carousel-item {
+		height: 300px;
+	}
 
 	.menu-item {
 		padding-left: 10px;
 		padding-right: 10px;
 		padding-top: 20px;
     	padding-bottom: 20px;
-	}
-
-	.carousel-item {
-		max-height: 400px;
 	}
 
 	article {
@@ -773,14 +869,6 @@ footer {
 		padding-left: initial;
 		line-height: normal;
 		padding-top: 10px;
-	}
-
-	.comment-author > cite {
-    	font-size: 1.7em !important;
-	}
-
-	.search-box {
-		padding: 5px;
 	}
 
 	.widget_calendar {
@@ -810,13 +898,31 @@ footer {
 	.post-errortext {
 		margin-left: 0px;
 	}
+
+	.post-content > ul li, 
+	.post-content > ol li > ul li,
+	.post-content > ol li > ul li,
+	.post-content > ul li > ol li > ul li,
+	.post-content > ol li, 
+	.post-content > ul li > ol li,
+	.post-content > ol li > ul li > ol li
+	{
+		line-height: 25px;
+	}
+	
+	.comment-body > ul li,
+	.comment-body > ol li,
+	.comment-body > ul li > ol li,
+	.comment-body > ul li > ol li > ul li {
+		line-height: 25px;
+	}
  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
 
 	.carousel-item {
-		max-height: 500px;
+		height: 400px;
 	}
 
 	article {
@@ -846,10 +952,6 @@ footer {
     	padding-bottom: 10px;
 		margin-top: 0;
 		margin-bottom: 5px;
-	}
-
-	.search-box {
-		padding: 15px;
 	}
 
 	.widget_calendar {
@@ -886,8 +988,9 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
 	.carousel-item {
-		max-height: 500px;
+		height: 500px;
 	}
 
 	.container-fluid {
@@ -956,14 +1059,14 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-circle, 
-.fa-tag,
+.fa-tags,
 .fa-list {
 	color: #d3d3d3;
 }
 
-.fa-tag,
-.fa-list {
-	margin-right: 8px;
+.fa-list,
+.fa-tags {
+	margin-right: 10px;
 }
 
 .fa-calendar {
@@ -980,6 +1083,7 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-bars {
+	margin-top: 10px;
 	color: black;
 }
 
@@ -988,11 +1092,6 @@ EXTERNAL libraries look-n-feel
 	WORDPRESS COMMENTS
 
 *****************************************/
-/* comment styling */
-.comments-wrapper {
-	padding-top: 15px;
-}
-
 ul.commentlist {
     padding-left: 0;
 }
@@ -1021,10 +1120,13 @@ ul.commentlist {
 	border: 1px solid #ebebeb;
 }
 
-.comment-body p {
-    margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 10px;
+.comment-body > ul li,
+.comment-body > ol li,
+.comment-body > ul li > ol li,
+.comment-body > ul li > ol li > ul li {
+	list-style-type: square;
+	padding:5px;
+	line-height: 35px;
 }
 
 .comment {
@@ -1049,16 +1151,6 @@ ul.children {
 	margin-right: 12px;
 }
 
-.comment-body .comment-author img {
-	border-radius: 50%;
-	position: relative;
-	float:none;
-	width: 60px;
-    height: 60px;
-    margin-top: 0;
-	margin-left: 0;
-}
-
 .comment-author.vcard {
 	border-bottom: 1px solid #ebebeb;
 	margin-top: -5px;
@@ -1070,24 +1162,20 @@ ul.children {
 }
 
 .comment-author > cite {
-    font-size: 2.3em;
+    font-size: 1.3em;
     font-weight: 300;
 	vertical-align: middle;
 }
 
 .comment-meta {
     padding: 5px;
-    margin-top: 5px;
-	border-bottom: 1px solid #ebebeb;
-
+	margin-top: 5px;
+	margin-bottom: 15px;
 	display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    font-size: 14px;
-}
-
-.comment-meta > a {
-	color: #979797 !important;
+	font-size: 14px;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
@@ -1102,7 +1190,7 @@ ul.children {
     text-transform: uppercase;
     width: auto;
 	color:white;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .comment-reply-link:hover, .form-submit > input#submit:hover{
@@ -1129,7 +1217,7 @@ ul.children {
     text-transform: uppercase;
     width: auto;
 	color:white;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 #cancel-comment-reply-link:hover {
@@ -1184,6 +1272,8 @@ ul.children {
 	border: 1px solid #ebebeb;
 	background: whitesmoke;
 	clear:both;
+	text-align: center !important;
+	padding: 5px;
 }
 
 dl.wp-caption {
@@ -1208,7 +1298,7 @@ dl.wp-caption {
 	line-height: 1.5rem;
 	padding: 10px 20px;
 	margin: 0;
-	border-bottom: 1px solid #e0e0e0;
+	border-bottom: 1px solid #f8f8f8;
 	list-style-type: none !important;
 }
 

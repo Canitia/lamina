@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-22 21:35+0000\n"
-"PO-Revision-Date: 2017-07-22 21:37+0000\n"
+"POT-Creation-Date: 2017-07-24 22:28+0000\n"
+"PO-Revision-Date: 2017-07-24 22:29+0000\n"
 "Last-Translator: bouwlamp <michael@michaelboumann.info>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,63 +13,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:318
-msgid "Featured content"
-msgstr "Aanbevolen content"
-
-#: functions.php:329
-msgid "Today section"
-msgstr "Vandaag sectie"
-
-#: functions.php:343
-msgid "Left"
-msgstr "Links"
-
-#: functions.php:344
-msgid "Right"
-msgstr "Rechts"
-
-#: functions.php:349 functions.php:353
-msgid "Show Tags"
-msgstr "Laat tags zien"
-
-#: functions.php:354
-msgid "Hide Tags"
-msgstr "Verberg tags"
-
-#: functions.php:359 functions.php:363
-msgid "Show Categories"
-msgstr "Laat categorieën zien"
+#: functions.php:363
+msgid "Pink Melanite"
+msgstr "Pink Melanite"
 
 #: functions.php:364
-msgid "Hide Categories"
-msgstr "Verberg categorieën"
+msgid "Black Opal"
+msgstr "Black Opal"
 
-#: functions.php:369 functions.php:373
-msgid "Show Author section"
-msgstr "Laat auteur sectie zien"
+#: partials/featured-post.php:16
+msgid "featured"
+msgstr "uitgelicht"
 
-#: functions.php:374
-msgid "Hide Author section"
-msgstr "Verberg auteur sectie"
+#: partials/featured-post.php:42
+msgid "Empty row"
+msgstr "Leeg item"
 
-#: functions.php:427
-msgid "Theme preset"
-msgstr "Thema preset"
+#. Description of the theme
+msgid ""
+"Elegant yet simple. Simplicity with features. Custom "
+"post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets "
+"and more."
+msgstr ""
+"Elegant en toch simpel. Simpliciteit met functionaliteit. Volledig "
+"aangepaste post/tag/page/archief en foutpagina's, dynamische navigatie, "
+"theme kleurpresets en meer."
 
-#: functions.php:431
-msgid "Light"
-msgstr "Licht"
-
-#: functions.php:432
-msgid "Dark"
-msgstr "Donker"
-
-#: 404.php:12
+#: 404.php:10
 msgid "Error"
 msgstr "Foutmelding"
 
-#: 404.php:14
+#: 404.php:12
 msgid ""
 "This post/page doesnt exist anymore or has been renamed. Try searching for "
 "it."
@@ -77,16 +51,16 @@ msgstr ""
 "Deze post/pagina bestaat niet meer of is van naam veranderd. Probeer het "
 "onderstaande zoekveld om uw post te vinden."
 
-#: tag.php:11
+#: tag.php:10
 msgid "Latest posts tagged"
 msgstr "Laatste berichten getagged met"
 
-#: tag.php:21 author.php:22 index.php:46 index.php:103 search.php:39
-#: category.php:20
+#: tag.php:20 author.php:21 index.php:45 index.php:102 search.php:36
+#: archive.php:9 category.php:19
 msgid "ago"
 msgstr "geleden"
 
-#: tag.php:31
+#: tag.php:30
 msgid "Sorry, no posts can be found within this tag."
 msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 
@@ -94,170 +68,196 @@ msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 msgid "Search"
 msgstr "Zoeken"
 
-#: searchform.php:6
+#: searchform.php:6 header.php:39
 msgctxt "placeholder"
 msgid "What are you looking for?"
 msgstr "Waar zoek je naar?"
 
-#: searchform.php:8
+#: searchform.php:8 header.php:41
 msgctxt "label"
 msgid "Search for:"
 msgstr "Zoeken naar:"
 
-#: searchform.php:11
+#: searchform.php:11 header.php:42
 msgctxt "submit button"
 msgid "Go"
 msgstr "Gaan"
 
-#: author.php:11
+#: author.php:10
 msgid "Latest posts by"
 msgstr "Laatste berichten van"
 
-#: author.php:31
+#: author.php:30
 msgid "Sorry, there are no posts by this author."
 msgstr "Sorry, er zijn geen berichten van deze auteur."
 
-#: index.php:19
+#: index.php:18
 msgid "Today"
 msgstr "Vandaag"
 
-#: index.php:57
+#: index.php:56
 msgid "It seems there are no posts today."
 msgstr "Het lijkt erop dat er vandaag geen berichten geplaatst zijn."
 
-#: index.php:66 index.php:79
+#: index.php:65 index.php:78
 msgid "Older posts"
 msgstr "Oudere berichten"
 
-#: index.php:76
+#: index.php:75
 msgid "Latest"
 msgstr "Laatste"
 
-#: index.php:110
+#: index.php:109
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
-#: page.php:26
+#: page.php:25
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
-#: functions.php:50
+#: functions.php:60
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:51
+#: functions.php:61
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:70
+#: functions.php:80
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:214
+#: functions.php:224
 msgid "Canitia Settings"
 msgstr "Canitia Instellingen"
 
-#: functions.php:215
+#: functions.php:225
 msgid "Tweak Canitia to your liking."
 msgstr "Stel Canitia in zoals jij dat wilt."
 
-#: functions.php:223
+#: functions.php:233
 msgid "Canitia Labs"
 msgstr "Canitia experimenten"
 
-#: functions.php:224
+#: functions.php:234
 msgid "Experimental Canitia Labs features."
 msgstr "Experimentele Canitia features."
 
-#: functions.php:322
+#: functions.php:296
+msgid "Featured content"
+msgstr "Aanbevolen content"
+
+#: functions.php:300
 msgid "Show Slider"
 msgstr "Laat Slider zien"
 
-#: functions.php:323
+#: functions.php:301
 msgid "Show Featured Row"
 msgstr "Laat een uitgelichte rij zien"
 
-#: functions.php:324
+#: functions.php:302
 msgid "Hide all"
 msgstr "Verberg alle featured content"
 
-#: functions.php:333
+#: functions.php:307
+msgid "Today section"
+msgstr "Vandaag sectie"
+
+#: functions.php:311
 msgid "Show Today section"
 msgstr "Laat 'Vandaag' sectie zien"
 
-#: functions.php:334
+#: functions.php:312
 msgid "Hide Today section"
 msgstr "Verberg 'Vandaag' sectie"
 
-#: functions.php:339
+#: functions.php:317
 msgid "Sidebar position"
 msgstr "Sidebar positie"
 
-#: functions.php:383
-msgid "Header item Color"
-msgstr "Headeritems kleur"
+#: functions.php:321
+msgid "Left"
+msgstr "Links"
 
-#: functions.php:395
-msgid "Text color"
-msgstr "Text kleur"
+#: functions.php:322
+msgid "Right"
+msgstr "Rechts"
 
-#: functions.php:407
-msgid "Link color"
-msgstr "Link kleur"
+#: functions.php:327 functions.php:331
+msgid "Show Tags"
+msgstr "Laat tags zien"
 
-#: functions.php:419
-msgid "Link hover color"
-msgstr "Link hover kleur"
+#: functions.php:332
+msgid "Hide Tags"
+msgstr "Verberg tags"
+
+#: functions.php:337 functions.php:341
+msgid "Show Categories"
+msgstr "Laat categorieën zien"
+
+#: functions.php:342
+msgid "Hide Categories"
+msgstr "Verberg categorieën"
+
+#: functions.php:347 functions.php:351
+msgid "Show Author section"
+msgstr "Laat auteur sectie zien"
+
+#: functions.php:352
+msgid "Hide Author section"
+msgstr "Verberg auteur sectie"
+
+#: functions.php:357
+msgid "Theme preset"
+msgstr "Thema preset"
+
+#: functions.php:361
+msgid "Grey Wolf (default)"
+msgstr "Grey Wolf (standaard)"
+
+#: functions.php:362
+msgid "Pink Ruby"
+msgstr "Pink Ruby"
 
 #. Name of the template
 msgid "Search Page"
 msgstr "Zoekpagina"
 
-#: search.php:21
+#: search.php:18
 msgid "Results for "
 msgstr "Resultaten voor"
 
-#: search.php:49
+#: search.php:46
 msgid "Sorry, it seems this search query has no posts."
 msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
 
-#: archive.php:3
-msgid "Archive"
+#: archive.php:2
+msgid "Archive "
 msgstr "Archief"
 
-#: archive.php:27
+#: archive.php:29
 msgid "Sorry, this archive is empty."
 msgstr "Sorry, dit archief is leeg."
 
-#: category.php:9
+#: category.php:8
 msgid "Latest posts in"
 msgstr "Laatste berichten van"
 
-#: category.php:33
+#: category.php:32
 msgid "Sorry, there are no posts in this category."
 msgstr "Sorry, er zijn geen posts in deze categorie. "
 
-#: single.php:58
+#: single.php:67
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
 
-#: single.php:67
+#: single.php:79
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
 #. Name of the theme
 msgid "Canitia"
 msgstr "Canitia"
-
-#. Description of the theme
-msgid ""
-"Elegant yet simple. Simplicity with features. Custom "
-"post/tag/page/archive/error pages, dynamic nav-menu's, custom  colors, logo "
-"support and more."
-msgstr ""
-"Elegant en toch simpel. Simpelheid met features. Volledig custom "
-"post/tag/pagina/archief en fout-pagina's, dynamische navigatiemenu's, custom "
-"kleuren, logo ondersteuning en meer."
 
 #. URI of the theme
 msgid "https://michaelboumann.info/collection/#canitia"

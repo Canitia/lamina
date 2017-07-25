@@ -1,11 +1,13 @@
 <?php get_header(); ?>
-<div class="container-fluid">
-    <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><strong><?php _e('Archive ', 'canitia');?></strong> <?php the_archive_title();?></h1>
+    <h1 class="text-left-title-featured-sidebar"><strong><?php _e('Archive ', 'canitia');?></strong> <?php the_archive_title();?></h1>
   <div <?php post_class(); ?>>
   <div class="row">
          <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
                 <div class="col-sm-4">
+                    <span class="badge badge-default badge-date">
+                      <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
+                    </span>
                 <?php if ( has_post_thumbnail() ) : ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <?php the_post_thumbnail( 'medium', ['class' => 'img-responsive archive-image', 'title' => 'Feature image']); ?>
@@ -18,7 +20,7 @@
                 endif;
 ?>
                 <a href="<?php the_permalink(); ?>">
-                            <p title="<?php the_title_attribute(); ?>" class="truncate"><?php the_title(); ?>
+                            <p title="<?php the_title_attribute(); ?>" class="text-center truncate"><?php the_title(); ?>
                             </p>
                         </a>
                 </div>
@@ -31,8 +33,6 @@
             </div>
           <?php canitia_pagination_numeric_posts_nav(); ?>
     </div><!-- einde md8 -->
-
-  </div><!-- container fluid END! -->
 
        <!-- start of footer -->
          <?php get_footer(); ?>

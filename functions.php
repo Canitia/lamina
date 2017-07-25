@@ -22,6 +22,23 @@ function canitia_theme_scripts() {
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'), false, false );
 	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css', false );	
+
+	if ( get_theme_mod( 'theme_preset', 'pinkruby' ) == 'pinkruby') :
+		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset', 'blackopal' ) == 'blackopal') :
+		wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset', 'pinkmelanite' ) == 'pinkmelanite') :
+		wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset', 'brownsinhalite' ) == 'brownsinhalite') :
+		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset', 'bluesapphire' ) == 'bluesapphire') :
+		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
+	endif;
+
 }
 
 add_action( 'wp_enqueue_scripts', 'canitia_theme_scripts' );
@@ -31,7 +48,6 @@ $bgargs = array(
 );
 
 add_theme_support( "title-tag" );
-add_theme_support( 'custom-background', $bgargs );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
 
@@ -51,7 +67,7 @@ function canitia_sidebars() {
 		'description' => __( 'Main sidebar.', 'canitia' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
-		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar" style="color:' . get_theme_mod( 'set_itemheader_color', '#979797' ) . '">',
+		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar">',
 		'after_title' => '</h1>'
 		)
 	);
@@ -251,38 +267,6 @@ function canitia_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'set_itemheader_color',
-		array(
-			'default'     => '#979797',
-			'sanitize_callback' => 'sanitize_hex_color',
-		)
-	);
-
-	$wp_customize->add_setting(
-		'set_text_color',
-		array(
-			'default'     => '#000000',
-			'sanitize_callback' => 'sanitize_hex_color',
-		)
-	);
-
-	$wp_customize->add_setting(
-		'set_link_color',
-		array(
-			'default'     => '#000000',
-			'sanitize_callback' => 'sanitize_hex_color',
-		)
-	);
-
-	$wp_customize->add_setting(
-		'set_link_hover_color',
-		array(
-			'default'     => '#979797',
-			'sanitize_callback' => 'sanitize_hex_color',
-		)
-	);
-
-	$wp_customize->add_setting(
 		'show_tags',
 		array(
 			'default' => 'show',
@@ -309,7 +293,15 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'theme_preset',
 		array(
-			'default' => 'light',
+			'default' => 'default',
+			'sanitize_callback' => 'canitia_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'show_mobile_search',
+		array(
+			'default' => 'hide',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
@@ -375,67 +367,42 @@ function canitia_customizer( $wp_customize ) {
 		),
 	) );
 
-		$wp_customize->add_control(
-			new WP_Customize_Color_Control(
-				$wp_customize,
-				'itemheader_color',
-				array(
-					'label'      => __( 'Header item Color', 'canitia' ),
-					'section'    => 'colors',
-					'settings'   => 'set_itemheader_color'
-				)
-			)
-		);
-
-		$wp_customize->add_control(
-			new WP_Customize_Color_Control(
-				$wp_customize,
-				'text_color',
-				array(
-					'label'      => __( 'Text color', 'canitia' ),
-					'section'    => 'colors',
-					'settings'   => 'set_text_color'
-				)
-			)
-		);
-
-		$wp_customize->add_control(
-			new WP_Customize_Color_Control(
-				$wp_customize,
-				'link_color',
-				array(
-					'label'      => __( 'Link color', 'canitia' ),
-					'section'    => 'colors',
-					'settings'   => 'set_link_color'
-				)
-			)
-		);
-
-		$wp_customize->add_control(
-			new WP_Customize_Color_Control(
-				$wp_customize,
-				'link_hover_color',
-				array(
-					'label'      => __( 'Link hover color', 'canitia' ),
-					'section'    => 'colors',
-					'settings'   => 'set_link_hover_color'
-				)
-			)
-		);
-
-	$wp_customize->add_control( 'theme_preset', array(
-		'label' => __('Theme preset', 'canitia'),
+	$wp_customize->add_control( 'show_mobile_search', array(
+		'label' => __('Search in navbar on mobile', 'canitia'),
 		'section' => 'settings_section_canitia_labs',
 		'type' => 'radio',
 		'choices' => array(
-			'light' => __('Light', 'canitia'),
-			'dark' => __('Dark', 'canitia'),
+			'show' => __('Show Search on mobile', 'canitia'),
+			'hide' => __('Hide Search on mobile', 'canitia'),
 		),
 	) );
+
+	$wp_customize->add_control( 'theme_preset', array(
+		'label' => __('Theme preset', 'canitia'),
+		'section' => 'colors',
+		'type' => 'radio',
+		'choices' => array(
+			'default' => __('Grey Wolf (default)', 'canitia'),
+			'pinkruby' => __('Pink Ruby', 'canitia'),
+			'pinkmelanite' => __('Pink Melanite', 'canitia'),
+			'blackopal' => __('Black Opal', 'canitia'),
+			'brownsinhalite' => __('Brown Sinhalite', 'canitia'),
+			'bluesapphire' => __('Blue Sapphire', 'canitia'),
+		),
+	) );
+
 	}
 
 add_action( 'customize_register', 'canitia_customizer' );
 
+
+
+function change_logo_class( $html ) {
+
+    $html = str_replace( 'custom-logo', 'brand-logo', $html );
+
+    return $html;
+}
 
 /**
  * add custom site logo (to header)
@@ -450,11 +417,11 @@ function canitia_setup() {
 	'flex-width' => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 	) );
-	
-	
 }
 
 add_action( 'after_setup_theme', 'canitia_setup' );
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
 
 load_theme_textdomain( 'canitia', get_template_directory().'/languages' );
 

@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div class="container-fluid">
      <div class="row">
 
       <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
@@ -8,7 +7,7 @@
       <?php endif; ?>
 
         <div class="col-xs-12 col-md-8 col-lg-8 main-content">
-        <h1 class="text-left-title-featured-sidebar" style="color: <?php echo get_theme_mod( 'set_itemheader_color', '#979797' ); ?>;"><?php _e('Latest posts tagged', 'canitia');?> <strong><?php single_tag_title(); ?></strong></h1>
+        <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts tagged', 'canitia');?> <strong><?php single_tag_title(); ?></strong></h1>
         <div class="collection">
         <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
@@ -42,7 +41,6 @@
             <?php endif; ?>
 
             </div><!-- end row -->
-          </div><!-- container fluid END! -->
 
           <!-- start of footer -->
           <?php get_footer(); ?>
