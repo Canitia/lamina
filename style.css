@@ -345,6 +345,7 @@ POST/ARTICLE HEADERS
 	z-index: 2;
 	padding: 7px;
 	text-transform: uppercase;
+	color: white;
 }
 
 .archive-image {
