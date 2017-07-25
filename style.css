@@ -141,6 +141,10 @@ address {
 	font-style: italic;
 }
 
+strong {
+	font-weight: 600 !important;
+}
+
 .strong-search {
 	font-size: 140%;
 }
