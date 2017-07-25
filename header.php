@@ -48,13 +48,22 @@
 
 
 </header>
-<div class="container-fluid h-100">
 <?php
     if ( is_home() || is_category() || is_author() || is_search() ) {
 
         if ( get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') :
             get_template_part( 'partials/slider' );
         endif;
+
+        if ( get_theme_mod( 'display_featured_content', 'hide' ) == 'hide' ) :
+            set_theme_mod ('display_featured_content', 'hide' ); // disable featured section as the slider replaces it
+        endif;
+    }
+?>
+<div class="container-fluid h-100">
+<?php
+
+    if ( is_home() || is_category() || is_author() || is_search() ) {
 
         if ( get_theme_mod( 'display_featured_content', 'showfeatured' )  == 'showfeatured' ) :
             get_template_part( 'partials/featured-post' );
@@ -64,4 +73,5 @@
             set_theme_mod ('display_featured_content', 'hide' ); // disable featured section as the slider replaces it
         endif;
     }
+
 ?>
