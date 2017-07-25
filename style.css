@@ -645,6 +645,13 @@ footer > .container > .text-center {
 	.collection-item {
 		padding-left: 0;
 		line-height: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.main-content {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 
 	.main-content > .collection > .collection-item > a > p > .fa-circle,
@@ -764,6 +771,8 @@ footer > .container > .text-center {
 	.collection-item {
 		padding-left: initial;
 		line-height: 1;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.collection-item > p,
@@ -828,6 +837,11 @@ footer > .container > .text-center {
 	.comment-body > ul li > ol li,
 	.comment-body > ul li > ol li > ul li {
 		line-height: 25px;
+	}
+
+	.main-content {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 }
 
