@@ -59,6 +59,13 @@
             get_template_part( 'partials/slider' );
         endif;
     }
+
+    if ( is_single() || is_page() ) {
+
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+        }
+    }
 ?>
 <div class="container-fluid flex-grow">
 <?php
