@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <?php bootstrap_nav(); ?>
 
-    <?php if ( is_home() || is_category() || is_author() || is_search() || is_tag() || is_archive() ) {?>
+<?php if ( is_home() || is_category() || is_author() || is_search() || is_tag() || is_archive() ) {?>
  
  <?php if ( get_theme_mod( 'show_mobile_search', 'show' )  == 'show' ) :?>
         <form class="form-inline col-lg-0 hidden-md-up search-form">
@@ -52,29 +52,21 @@
 
 
 </header>
-<?php
+<?php //show slider
     if ( is_home() || is_category() || is_author() || is_search() ) {
 
         if ( get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') :
             get_template_part( 'partials/slider' );
         endif;
-
-        if ( get_theme_mod( 'display_featured_content', 'hide' ) == 'hide' ) :
-            set_theme_mod ('display_featured_content', 'hide' ); // disable featured section as the slider replaces it
-        endif;
     }
 ?>
 <div class="container-fluid h-100">
 <?php
-
+    // show featured post row
     if ( is_home() || is_category() || is_author() || is_search() ) {
 
         if ( get_theme_mod( 'display_featured_content', 'showfeatured' )  == 'showfeatured' ) :
             get_template_part( 'partials/featured-post' );
-        endif;
-
-        if ( get_theme_mod( 'display_featured_content', 'hide' ) == 'hide' ) :
-            set_theme_mod ('display_featured_content', 'hide' ); // disable featured section as the slider replaces it
         endif;
     }
 
