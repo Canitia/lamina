@@ -736,7 +736,7 @@ footer > .container > .text-center {
 
 	.search-form {
    		margin-top: 15px;
-   	 	margin-bottom: 20px;
+   	 	margin-bottom: 20px !important;
    	 	margin-left: 20px;
 	}
 
@@ -1426,9 +1426,12 @@ div.aligncenter {
 	CUSTOM WORDPRESS WIDGET CSS
 
 *****************************************/
-
 .search-box {
 	margin-bottom: 32px;
+}
+
+.search-form {
+	margin-bottom: 48px;
 }
 
 .search-form > label {
