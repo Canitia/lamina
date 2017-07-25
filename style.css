@@ -688,6 +688,7 @@ footer > .container > .text-center {
 		padding-bottom: 15px;
 		padding-left: 5px;
 		padding-right: 5px;
+		margin-left: 5px;
 	}
 
 	.widget_recent_entries > ul > li {
@@ -711,13 +712,9 @@ footer > .container > .text-center {
 		margin-right: 5px;
 	}
 
-	.post-content {
+	.post-content, .post-errortext {
 		margin-left: 10px;
     	margin-right: 10px;
-	}
-	
-	.post-errortext {
-		margin-left: 10px;
 	}
 
 	.fa-star, 
@@ -795,6 +792,7 @@ footer > .container > .text-center {
 		padding-bottom: 15px;
 		padding-left: 0px;
 		padding-right: 5px;
+		margin-left: 5px;
 	}
 
 	article {
@@ -806,13 +804,9 @@ footer > .container > .text-center {
 		padding: 4px;
 	}
 
-	.post-content {
+	.post-content, .post-errortext  {
 		margin-left: 10px;
     	margin-right: 10px;
-	}
-
-	.post-errortext {
-		margin-left: 0px;
 	}
 	
 	img.avatar {
