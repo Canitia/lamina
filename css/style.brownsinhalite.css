@@ -62,11 +62,12 @@ article > h1:first-child {
  }
 
  .badge {
-	 color: white !important;
+	color: black !important;
  }
 
  .badge-date {
-	 background-color: #654321  !important;
+	 color: white !important;
+	background-color: #654321  !important;
  }
 
 .search-submit {
