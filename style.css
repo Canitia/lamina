@@ -225,7 +225,6 @@ address {
 .carousel-item {
 	object-fit: cover;
 	justify-content: center;
-	height: 300px;
 }
 
 .carousel:hover {
@@ -607,6 +606,10 @@ footer > .container > .text-center {
 
 @media (max-width: 575px) {  
 
+	.carousel-item {
+		height: 300px;
+	}
+
 	img.brand-logo {
 		display: none;
 	}
@@ -748,6 +751,10 @@ footer > .container > .text-center {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
+	.carousel-item {
+		height: 300px;
+	}
+
 	img.brand-logo {
 		display: none;
 	}
@@ -824,6 +831,10 @@ footer > .container > .text-center {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+	.carousel-item {
+		height: 300px;
+	}
 
 	.menu-item {
 		padding-left: 10px;
@@ -908,6 +919,10 @@ footer > .container > .text-center {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
 
+	.carousel-item {
+		height: 400px;
+	}
+
 	article {
 		padding-left: 15px;
 		padding-right:15px;
@@ -971,6 +986,10 @@ footer > .container > .text-center {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
+	.carousel-item {
+		height: 500px;
+	}
 
 	.container-fluid {
 		max-width:1250px;
