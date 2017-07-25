@@ -452,7 +452,7 @@ function canitia_customizer( $wp_customize ) {
 
 
 	$wp_customize->add_control( 'night_theme_preset', array(
-		'label' => __('Theme preset night', 'canitia'),
+		'label' => __('Night theme preset', 'canitia'),
 		'section' => 'colors',
 		'type' => 'radio',
 		'choices' => array(
