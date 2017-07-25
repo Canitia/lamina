@@ -2,8 +2,12 @@
 	color: black;
 }
 
+.h-slider {
+	color: white !important;
+}
+
 article a:hover {
-	color: #bc3168 !important;
+	color: #652121 !important;
 }
 
 .navbar {
@@ -12,7 +16,7 @@ article a:hover {
 
 .navbar,
 .footer {
-    background: #ec008c;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+    background: #654321 ;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
 }
 
 .navbar-brand,
@@ -21,11 +25,11 @@ footer p {
 }
 
 .menu-item {
-	background-color: #ec008c;
+	background-color: #654321;
 }
 
 .menu-item:hover {
-    background-color: #bc3168 !important;
+    background-color: #652121 !important;
 }
 
 .menu-item > a {
@@ -34,7 +38,7 @@ footer p {
 
 /* headers like 'latest' */
 h1, h2, h3, h4, h5, h6 {
-	color: #ec008c !important;
+	color: #654321 !important;
 }
 
 .row-featured {
@@ -42,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article > h1:first-child {
-	color: #ec008c !important;
+	color: #654321  !important;
 }
 
  .pagination > ul > li > a:hover,  .pagination-within > li > a:hover  {
@@ -50,11 +54,11 @@ article > h1:first-child {
  }
 
  .btn, .comment-reply-link {
-	 background-color: #e88dc3 !important;
+	 background-color: #652121 !important;
  }
 
  .sticky {
-	 color: #ea357d !important;
+	 color: orange !important;
  }
 
  .badge {
@@ -62,7 +66,7 @@ article > h1:first-child {
  }
 
  .badge-date {
-	 background-color: #ec008c !important;
+	 background-color: #654321  !important;
  }
 
 .search-submit {
@@ -70,16 +74,20 @@ article > h1:first-child {
 }
 
  .post-subitems, .post-subitems > a, .author-name a, .fn a {
-	 color: #bc3168 !important;
+	 color: #654321 !important;
  }
 
  .pagination > ul > li:hover, .pagination-within > a > li:hover, .btn:hover, .comment-reply-link:hover, .submit:hover {
 	 color: white !important;
-	 background-color: #bc3168 !important;
+	 background-color: #7a4242 !important;
  }
 
 .collection .collection-item:hover, .widget > ul > li:hover, .pagination > ul > li.active, .pagination-within > li {
-	background-color: #e88dc3 !important;
+	background-color: #7a4242 !important;
+}
+
+.collection-item a:hover, .widget > ul > li > a:hover {
+	color: white !important;
 }
 
 .fa-bars {
@@ -89,17 +97,9 @@ article > h1:first-child {
 .fa-circle,
 .fa-tags,
 .fa-list {
-	color: #fc6767 !important;	
+	color: #656521 !important;	
 }
 
 .text-muted {
 	margin-bottom: 0 !important;
-}
-
-/* image captions */
-.wp-caption, 
-.gallery-caption {
-	border: 0 !important;
-	background-color: #3f3f3f !important;
-	color: white !important;
 }
