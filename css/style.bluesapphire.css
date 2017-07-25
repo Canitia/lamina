@@ -62,10 +62,11 @@ article > h1:first-child {
  }
 
  .badge {
-	 color: white !important;
+
  }
 
  .badge-date {
+	 color: white !important;
 	 background-color: #333399 !important;
  }
 

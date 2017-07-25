@@ -260,10 +260,6 @@ address {
 	text-transform: uppercase;
 }
 
- .badge {
-	 color: white !important;
- }
-
 .badge {
 	margin-right: 10px;
 	right: 0;
