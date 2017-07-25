@@ -30,26 +30,26 @@ function canitia_theme_scripts() {
 		$current_time = date( 'H:i', current_time( 'timestamp', 0 ) );
 
 		if ($current_time > '22:00' || $current_time < '07:00') {
-			wp_enqueue_style( get_theme_mod( 'night_mode_theme') );		
+			wp_enqueue_style( get_theme_mod( 'night_theme_preset') );		
 
-			if ( get_theme_mod( 'night_mode_theme', 'pinkruby' ) == 'pinkruby') :
+			if ( get_theme_mod( 'night_theme_preset', 'pinkruby' ) == 'pinkruby') :
 				wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css', false );	
 			endif;
-			if ( get_theme_mod( 'night_mode_theme', 'blackopal' ) == 'blackopal' ) :
+			if ( get_theme_mod( 'night_theme_preset', 'blackopal' ) == 'blackopal' ) :
 				wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css', false );	
 			endif;
-			if ( get_theme_mod( 'night_mode_theme', 'pinkmelanite' ) == 'pinkmelanite' ) :
+			if ( get_theme_mod( 'night_theme_preset', 'pinkmelanite' ) == 'pinkmelanite' ) :
 				wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css', false );	
 			endif;
-			if ( get_theme_mod( 'night_mode_theme', 'brownsinhalite' ) == 'brownsinhalite') :
+			if ( get_theme_mod( 'night_theme_preset', 'brownsinhalite' ) == 'brownsinhalite') :
 				wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css', false );	
 			endif;
-			if ( get_theme_mod( 'night_mode_theme', 'bluesapphire' ) == 'bluesapphire' ) :
+			if ( get_theme_mod( 'night_theme_preset', 'bluesapphire' ) == 'bluesapphire' ) :
 				wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
 			endif;
 		}
 		else {
-			wp_deregister_style(get_theme_mod( 'night_mode_theme'));
+			wp_deregister_style(get_theme_mod( 'night_theme_preset'));
 
 			if ( get_theme_mod( 'theme_preset', 'pinkruby' ) == 'pinkruby') :
 				wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css', false );	
@@ -347,7 +347,7 @@ function canitia_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'night_mode_theme',
+		'night_theme_preset',
 		array(
 			'default' => 'default',
 			'sanitize_callback' => 'canitia_sanitize_select',
@@ -451,7 +451,7 @@ function canitia_customizer( $wp_customize ) {
 	) );
 
 
-	$wp_customize->add_control( 'night_mode_theme', array(
+	$wp_customize->add_control( 'night_theme_preset', array(
 		'label' => __('Theme preset night', 'canitia'),
 		'section' => 'colors',
 		'type' => 'radio',
