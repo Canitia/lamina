@@ -39,7 +39,7 @@
     while ($count < 3) { ?>
       <div class="col-sm-4">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-pic-available.jpg"  alt="<?php the_title(); ?>" class="archive-image disabled-image"/>
-            <p title="empty" class="text-muted text-center truncate"><?php _e('Empty row', 'canitia');?>
+            <p title="empty" class="text-muted text-center truncate"><?php _e('Placeholder', 'canitia');?>
             </p>
     </div>
         <?php 
