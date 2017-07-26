@@ -64,3 +64,7 @@
     }
 
 ?>
+
+    <?php
+    var_dump(get_theme_mod( 'theme_preset' ));
+    ?>
