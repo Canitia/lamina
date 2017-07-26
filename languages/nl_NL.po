@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-25 22:10+0000\n"
-"PO-Revision-Date: 2017-07-25 22:11+0000\n"
+"POT-Creation-Date: 2017-07-25 16:16+0000\n"
+"PO-Revision-Date: 2017-07-25 16:17+0000\n"
 "Last-Translator: bouwlamp <michael@michaelboumann.info>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,21 +13,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:440
-msgid "Automatic night mode"
-msgstr "Automatische nachtmodus"
-
-#: functions.php:444
-msgid "Disabled"
-msgstr "Uitgeschakeld"
-
-#: functions.php:445
-msgid "Enabled"
-msgstr "Ingeschakeld"
-
-#: functions.php:451
-msgid "Night theme preset"
-msgstr "Nachtmodus thema selectie"
+#: partials/featured-post.php:42
+msgid "Placeholder"
+msgstr "Opvulling"
 
 #: 404.php:10
 msgid "Error"
@@ -105,135 +93,135 @@ msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 msgid "Sorry, this page can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
-#: functions.php:94
+#: functions.php:66
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:95
+#: functions.php:67
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:114
+#: functions.php:86
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:258
+#: functions.php:230
 msgid "Canitia Settings"
 msgstr "Canitia Instellingen"
 
-#: functions.php:259
+#: functions.php:231
 msgid "Tweak Canitia to your liking."
 msgstr "Stel Canitia in zoals jij dat wilt."
 
-#: functions.php:267
+#: functions.php:239
 msgid "Canitia Labs"
 msgstr "Canitia experimenten"
 
-#: functions.php:268
+#: functions.php:240
 msgid "Experimental Canitia Labs features."
 msgstr "Experimentele Canitia features."
 
-#: functions.php:355
+#: functions.php:310
 msgid "Featured content"
 msgstr "Aanbevolen content"
 
-#: functions.php:359
+#: functions.php:314
 msgid "Show Slider"
 msgstr "Laat Slider zien"
 
-#: functions.php:360
+#: functions.php:315
 msgid "Show Featured Row"
 msgstr "Laat een uitgelichte rij zien"
 
-#: functions.php:361
+#: functions.php:316
 msgid "Hide all"
 msgstr "Verberg alle featured content"
 
-#: functions.php:366
+#: functions.php:321
 msgid "Today section"
 msgstr "Vandaag sectie"
 
-#: functions.php:370
+#: functions.php:325
 msgid "Show Today section"
 msgstr "Laat 'Vandaag' sectie zien"
 
-#: functions.php:371
+#: functions.php:326
 msgid "Hide Today section"
 msgstr "Verberg 'Vandaag' sectie"
 
-#: functions.php:376
+#: functions.php:331
 msgid "Sidebar position"
 msgstr "Sidebar positie"
 
-#: functions.php:380
+#: functions.php:335
 msgid "Left"
 msgstr "Links"
 
-#: functions.php:381
+#: functions.php:336
 msgid "Right"
 msgstr "Rechts"
 
-#: functions.php:386 functions.php:390
+#: functions.php:341 functions.php:345
 msgid "Show Tags"
 msgstr "Laat tags zien"
 
-#: functions.php:391
+#: functions.php:346
 msgid "Hide Tags"
 msgstr "Verberg tags"
 
-#: functions.php:396 functions.php:400
+#: functions.php:351 functions.php:355
 msgid "Show Categories"
 msgstr "Laat categorieën zien"
 
-#: functions.php:401
+#: functions.php:356
 msgid "Hide Categories"
 msgstr "Verberg categorieën"
 
-#: functions.php:406 functions.php:410
+#: functions.php:361 functions.php:365
 msgid "Show Author section"
 msgstr "Laat auteur sectie zien"
 
-#: functions.php:411
+#: functions.php:366
 msgid "Hide Author section"
 msgstr "Verberg auteur sectie"
 
-#: functions.php:416
+#: functions.php:371
 msgid "Search in navbar on mobile"
 msgstr "Zoek via de navigatiebalk op mobiele apparaten"
 
-#: functions.php:420
+#: functions.php:375
 msgid "Show Search on mobile"
 msgstr "Laat zoekbalk zien op mobiele apparaten"
 
-#: functions.php:421
+#: functions.php:376
 msgid "Hide Search on mobile"
 msgstr "Verberg de zoekbalk op mobiele apparaten"
 
-#: functions.php:426
+#: functions.php:381
 msgid "Theme preset"
 msgstr "Thema preset"
 
-#: functions.php:430 functions.php:455
+#: functions.php:385
 msgid "Grey Wolf (default)"
 msgstr "Grey Wolf (standaard)"
 
-#: functions.php:431 functions.php:456
+#: functions.php:386
 msgid "Pink Ruby"
 msgstr "Pink Ruby"
 
-#: functions.php:432 functions.php:457
+#: functions.php:387
 msgid "Pink Melanite"
 msgstr "Pink Melanite"
 
-#: functions.php:433 functions.php:458
+#: functions.php:388
 msgid "Black Opal"
 msgstr "Black Opal"
 
-#: functions.php:434 functions.php:459
+#: functions.php:389
 msgid "Brown Sinhalite"
 msgstr "Brown Sinhalite"
 
-#: functions.php:435 functions.php:460
+#: functions.php:390
 msgid "Blue Sapphire"
 msgstr "Blue Sapphire"
 
@@ -276,10 +264,6 @@ msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 #: partials/featured-post.php:16
 msgid "featured"
 msgstr "uitgelicht"
-
-#: partials/featured-post.php:42
-msgid "Placeholder"
-msgstr "Opvulling"
 
 #. Name of the theme
 msgid "Canitia"

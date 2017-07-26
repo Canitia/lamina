@@ -1,12 +1,12 @@
 <?php get_header(); ?>
      <div class="row">
 
-      <?php if ( get_theme_mod( 'sidebar_position' ) == 'left' ) : ?>
+      <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
       <!-- second column (widget bar) -->
       <?php get_sidebar( 'primary' ); ?>
       <?php endif; ?>
 
-        <div class="<?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?> main-content">
+        <div class="col-xs-12 col-md-8 col-lg-8 main-content">
         <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts tagged', 'canitia');?> <strong><?php single_tag_title(); ?></strong></h1>
         <div class="collection">
         <?php if ( have_posts() ) : ?>
@@ -35,7 +35,7 @@
                 <?php canitia_pagination_numeric_posts_nav(); ?>
           </div><!-- einde md8 -->
           </div>
-            <?php if ( get_theme_mod( 'sidebar_position' ) == 'right' ) : ?>
+            <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
             <!-- second column (widget bar) -->
             <?php get_sidebar( 'primary' ); ?>
             <?php endif; ?>

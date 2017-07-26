@@ -39,26 +39,19 @@
 
 </header>
 <?php //show slider
-    if ( is_home() || is_category() || is_tag() || is_author() || is_search() ) {
+    if ( is_home() || is_category() || is_author() || is_search() ) {
 
-        if ( get_theme_mod( 'display_featured_content' ) == 'showslider') :
+        if ( get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') :
             get_template_part( 'partials/slider' );
         endif;
-    }
-
-    if ( is_single() || is_page() ) {
-
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-        }
     }
 ?>
 <div class="container-fluid flex-grow">
 <?php
     // show featured post row
-    if ( is_home() || is_category() || is_tag() || is_author() || is_search() ) {
+    if ( is_home() || is_category() || is_author() || is_search() ) {
 
-        if ( get_theme_mod( 'display_featured_content' )  == 'showfeatured' ) :
+        if ( get_theme_mod( 'display_featured_content', 'showfeatured' )  == 'showfeatured' ) :
             get_template_part( 'partials/featured-post' );
         endif;
     }

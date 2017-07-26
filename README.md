@@ -3,11 +3,12 @@ Canitia
 Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/boumannm/canitia-jr) theme. Canitia is a responsive theme with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](http://michaelboumann.info/collection/#canitiawp) or look at the featurelist below.
 
 # Theme features
-- Set a custom site icon (favicon) and navbar logo
-- **Adaptive 1/2 column design** with/without **sidebar**. When there is no sidebar widgets enabled your site turns into a **single column** site.
-- Show **Featured posts** (sticky) in a **slider** or as a 'row-of-three-posts with images' **featured row**. 
+- Set a custom site icon, logo and/or background image
 - **Theme Presets** - pick your theme color from the theme presets. Presets include the default Grey Wolf (light mode/grey), Pink Ruby (light mode/pink), Pink Melanite (dark mode/pink), Black Opal (dark mode/grey), Blue Sapphire (light mode/blue) or Brown Sinhalite (light mode/brown)
-- Today section - showing all posts of today in a seperate section
+- Sidebar support
+- **Adaptive 1/2 column design**. When there is no sidebar widgets enabled your site turns into a **single column** site.
+- Show **Featured posts** (sticky) in a **slider** or as a 'row-of-three-posts with images' **featured row**. 
+- Today section
 - Custom tag, category, author, search and error pages. 
 - Custom **Canitia Settings**
 - Custom **Canitia Labs** - for early feature testing and usage. Use at your own risk ;).
