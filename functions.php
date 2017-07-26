@@ -21,7 +21,10 @@ function canitia_theme_scripts() {
 	wp_enqueue_script( 'bootstrapjs', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), false, true );
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'), false, false );
-	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css', false );	
+
+	if(!get_theme_mod( 'theme_preset') || get_theme_mod( 'theme_preset') == 'greywolf') :
+		wp_enqueue_style( 'greywolf',  get_stylesheet_directory_uri(). '/style.css', false );	
+	endif;
 
 	if ( get_theme_mod( 'theme_preset', 'pinkruby' ) == 'pinkruby') :
 		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css', false );	
@@ -292,7 +295,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'theme_preset',
 		array(
-			'default' => 'default',
+			'default' => 'greywolf',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
@@ -363,7 +366,7 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'colors',
 		'type' => 'radio',
 		'choices' => array(
-			'default' => __('Grey Wolf (default)', 'canitia'),
+			'greywolf' => __('Grey Wolf (default)', 'canitia'),
 			'pinkruby' => __('Pink Ruby', 'canitia'),
 			'pinkmelanite' => __('Pink Melanite', 'canitia'),
 			'blackopal' => __('Black Opal', 'canitia'),
