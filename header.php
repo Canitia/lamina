@@ -40,7 +40,7 @@
 
 </header>
 <?php //show slider
-    if ( is_home() || is_category() || is_author() || is_search() ) {
+    if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
         if ( get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') :
             get_template_part( 'partials/slider' );
@@ -50,7 +50,7 @@
 <div class="container-fluid flex-grow">
 <?php
     // show featured post row
-    if ( is_home() || is_category() || is_author() || is_search() ) {
+    if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
         if ( get_theme_mod( 'display_featured_content', 'showfeatured' )  == 'showfeatured' ) :
             get_template_part( 'partials/featured-post' );
