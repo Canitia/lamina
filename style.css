@@ -4,7 +4,7 @@ Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 0.11.5-beta6
+Version: 0.11.5-beta5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -139,6 +139,10 @@ select  {
 
 address {
 	font-style: italic;
+}
+
+strong {
+	font-weight: 600 !important;
 }
 
 .strong-search {
@@ -504,8 +508,11 @@ ul.pings.commentlist {
     margin-top: 15px;
 }
 
-img.avatar {
+.author-profile > .avatar {
 	float:left;
+}
+
+img.avatar {
 	z-index:200;
 	margin-right:15px;
 	margin-bottom: 10px;
@@ -608,6 +615,10 @@ footer > .container > .text-center {
 
 @media (max-width: 575px) {  
 
+	.carousel-item {
+		height: 300px;
+	}
+
 	img.brand-logo {
 		display: none;
 	}
@@ -641,6 +652,13 @@ footer > .container > .text-center {
 	.collection-item {
 		padding-left: 0;
 		line-height: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.main-content {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 
 	.main-content > .collection > .collection-item > a > p > .fa-circle,
@@ -677,6 +695,7 @@ footer > .container > .text-center {
 		padding-bottom: 15px;
 		padding-left: 5px;
 		padding-right: 5px;
+		margin-left: 5px;
 	}
 
 	.widget_recent_entries > ul > li {
@@ -700,8 +719,9 @@ footer > .container > .text-center {
 		margin-right: 5px;
 	}
 
-	.post-errortext {
+	.post-content, .post-errortext {
 		margin-left: 10px;
+    	margin-right: 10px;
 	}
 
 	.fa-star, 
@@ -723,7 +743,7 @@ footer > .container > .text-center {
 
 	.search-form {
    		margin-top: 15px;
-   	 	margin-bottom: 20px;
+   	 	margin-bottom: 20px !important;
    	 	margin-left: 20px;
 	}
 
@@ -749,6 +769,10 @@ footer > .container > .text-center {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
+	.carousel-item {
+		height: 300px;
+	}
+
 	img.brand-logo {
 		display: none;
 	}
@@ -756,6 +780,8 @@ footer > .container > .text-center {
 	.collection-item {
 		padding-left: initial;
 		line-height: 1;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.collection-item > p,
@@ -773,6 +799,7 @@ footer > .container > .text-center {
 		padding-bottom: 15px;
 		padding-left: 0px;
 		padding-right: 5px;
+		margin-left: 5px;
 	}
 
 	article {
@@ -784,8 +811,9 @@ footer > .container > .text-center {
 		padding: 4px;
 	}
 
-	.post-errortext {
-		margin-left: 0px;
+	.post-content, .post-errortext  {
+		margin-left: 10px;
+    	margin-right: 10px;
 	}
 	
 	img.avatar {
@@ -820,6 +848,11 @@ footer > .container > .text-center {
 	.comment-body > ul li > ol li,
 	.comment-body > ul li > ol li > ul li {
 		line-height: 25px;
+	}
+
+	.main-content {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 }
 
@@ -1144,7 +1177,7 @@ ul.children {
 }
 
 .comment-author.vcard {
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #f8f8f8;
 	margin-top: -5px;
 	padding-bottom: 10px;
 }
@@ -1167,7 +1200,7 @@ ul.children {
     flex-direction: row;
     justify-content: flex-end;
 	font-size: 14px;
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #f8f8f8;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
@@ -1400,9 +1433,12 @@ div.aligncenter {
 	CUSTOM WORDPRESS WIDGET CSS
 
 *****************************************/
-
 .search-box {
-	margin-bottom: 25px;
+	margin-bottom: 32px;
+}
+
+.search-form {
+	margin-bottom: 48px;
 }
 
 .search-form > label {
