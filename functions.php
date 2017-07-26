@@ -438,7 +438,7 @@ function canitia_customizer( $wp_customize ) {
 
 	$wp_customize->add_control( 'night_mode', array(
 		'label' => __('Automatic night mode', 'canitia'),
-		'section' => 'colors',
+		'section' => 'settings_section_canitia_labs',
 		'type' => 'radio',
 		'choices' => array(
 			'disabled' => __('Disabled', 'canitia'),
@@ -449,7 +449,7 @@ function canitia_customizer( $wp_customize ) {
 
 	$wp_customize->add_control( 'night_theme_preset', array(
 		'label' => __('Night theme preset', 'canitia'),
-		'section' => 'colors',
+		'section' => 'settings_section_canitia_labs',
 		'type' => 'radio',
 		'choices' => array(
 			'default' => __('Grey Wolf (default)', 'canitia'),
