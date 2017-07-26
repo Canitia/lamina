@@ -34,6 +34,7 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
+</nav>
 
 
 

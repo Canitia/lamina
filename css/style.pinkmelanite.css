@@ -114,13 +114,14 @@ article > h1:first-child {
     text-decoration: none;
 }
 
-.search-field {
+input, select {
 	background-color: #3f3f3f !important;
+	color: white !important;
 	border-bottom: 0 !important;
 }
 
-[type=search] {
-	color: white !important;
+input.search-field::placeholder {
+    color: white;
 }
 
 .pagination > ul > li,

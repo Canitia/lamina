@@ -298,14 +298,6 @@ function canitia_customizer( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting(
-		'show_mobile_search',
-		array(
-			'default' => 'hide',
-			'sanitize_callback' => 'canitia_sanitize_select',
-		)
-	);
-
 	$wp_customize->add_control( 'display_featured_content', array(
 		'label' => __('Featured content', 'canitia'),
 		'section' => 'settings_section_canitia',
@@ -364,16 +356,6 @@ function canitia_customizer( $wp_customize ) {
 		'choices' => array(
 			'show' => __('Show Author section', 'canitia'),
 			'hide' => __('Hide Author section', 'canitia'),
-		),
-	) );
-
-	$wp_customize->add_control( 'show_mobile_search', array(
-		'label' => __('Search in navbar on mobile', 'canitia'),
-		'section' => 'settings_section_canitia_labs',
-		'type' => 'radio',
-		'choices' => array(
-			'show' => __('Show Search on mobile', 'canitia'),
-			'hide' => __('Hide Search on mobile', 'canitia'),
 		),
 	) );
 

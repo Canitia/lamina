@@ -608,9 +608,7 @@ footer > .container > .text-center {
 
 @media (max-width: 575px) {  
 
-	.carousel-item {
-		height: 300px;
-	}
+
 
 	img.brand-logo {
 		display: none;
