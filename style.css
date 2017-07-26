@@ -608,8 +608,6 @@ footer > .container > .text-center {
 
 @media (max-width: 575px) {  
 
-
-
 	img.brand-logo {
 		display: none;
 	}
@@ -750,10 +748,6 @@ footer > .container > .text-center {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
-
-	.carousel-item {
-		height: 300px;
-	}
 
 	img.brand-logo {
 		display: none;
