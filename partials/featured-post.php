@@ -21,7 +21,7 @@
         </a>
     <?php else : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-pic-available.jpg"  alt="<?php the_title(); ?>" class="archive-image"/>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-pic-available-featured.jpg"  alt="<?php the_title(); ?>" class="archive-image"/>
         </a>
     <?php endif;?>
     <a href="<?php the_permalink(); ?>">
@@ -38,7 +38,7 @@
     $count = $query->post_count;
     while ($count < 3) { ?>
       <div class="col-sm-4">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-pic-available.jpg"  alt="<?php the_title(); ?>" class="archive-image disabled-image"/>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-pic-available-featured.jpg"  alt="<?php the_title(); ?>" class="archive-image disabled-image"/>
             <p title="empty" class="text-muted text-center truncate"><?php _e('Placeholder', 'canitia');?>
             </p>
     </div>
