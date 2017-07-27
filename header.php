@@ -34,8 +34,6 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-</nav>
-
 
 
 </header>
@@ -57,7 +55,7 @@
 
         if ( get_theme_mod( 'display_featured_content' )  == 'showfeatured' ) :
             get_template_part( 'partials/featured-post' );
-            
+
         elseif ( get_theme_mod( 'display_featured_content') == 'hideall' ) :
 
         endif;
