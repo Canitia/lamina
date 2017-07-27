@@ -279,6 +279,14 @@ strong {
 	color: black;
 }
 
+/* all list items */
+
+.collection-header {
+	list-style-type: none !important;
+	margin-left:0;
+	margin-right:0;
+}
+
 .collection {
 	padding-left: 0;
 }
@@ -312,8 +320,21 @@ article > h1:first-child {
 	border-right: 1px solid #f8f8f8;
 }
 
+/* sidebar */
 .widget > ul {
     padding-left: 0;
+}
+
+.widget > ul > li {
+	line-height: 1.5rem;
+	padding: 10px 20px;
+	margin: 0;
+	border-bottom: 1px solid #f8f8f8;
+	list-style-type: none !important;
+}
+
+.widget > ul > li:hover {
+	background-color: #ebebeb;
 }
 
 /* ######################################
@@ -1302,33 +1323,13 @@ dl.wp-caption {
 	font-weight: 600;
 }
 
-
 /* center align twitter */
 .twitter-tweet {
 	margin-left:auto;
 	margin-right: auto;
 }
 
-/* sidebar */
-.widget > ul > li {
-	line-height: 1.5rem;
-	padding: 10px 20px;
-	margin: 0;
-	border-bottom: 1px solid #f8f8f8;
-	list-style-type: none !important;
-}
 
-.widget > ul > li:hover {
-	background-color: #ebebeb;
-}
-
-/* all list items */
-
-.collection-header {
-	list-style-type: none !important;
-	margin-left:0;
-	margin-right:0;
-}
 
 /* images */
 .size-auto,
@@ -1489,4 +1490,28 @@ div.aligncenter {
 
 #wp-calendar tbody .pad { 
 	background: none; 
+}
+
+/* image widget css */
+.widget_media_image > img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* custom menu css */
+.widget_nav_menu > div > ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.widget_nav_menu > div > ul > li {
+	padding: 10px;
+}
+
+.widget_nav_menu > div > ul > li > a {
+	font-weight: 400;
+	font-size: 16px;
 }
