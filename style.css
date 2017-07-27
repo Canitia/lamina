@@ -631,7 +631,8 @@ footer p {
 	}
 
 	.carousel-item {
-		height: 300px;
+		height: auto;
+		max-height: 250px;
 	}
 
 	img.brand-logo {
