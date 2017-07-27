@@ -1,6 +1,7 @@
 
 
 <section class="author-profile">
+<p class="postedby"><?php _e('This article was wrtten by', 'canitia'); ?></p>
 <?php 
     if ( get_the_author_meta( 'description' ) ) {
     echo get_avatar( get_the_author_meta('email'), '100' ); 

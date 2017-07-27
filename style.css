@@ -492,6 +492,13 @@ ul.pings.commentlist {
 	ARTICLE: AUTHOR look-n-feel
 
 *****************************************/
+p.postedby {
+    font-size: 125%;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+
 .author-profile {
 	clear:both;
 	margin-top: 25px;
@@ -513,8 +520,6 @@ p.author-bio {
 img.avatar {
 	z-index:200;
 	margin-right:15px;
-	margin-bottom: 10px;
-	margin-top: 10px;
 }
 
 .avatar-page {
@@ -525,8 +530,9 @@ img.avatar {
 }
 
 .author-name {
-	font-size:175%;
+	font-size:110%;
 	font-weight: 300 !important;
+	vertical-align: middle;
 }
 
 .author-name a:hover {
