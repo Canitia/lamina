@@ -404,7 +404,6 @@ function canitia_setup() {
 add_action( 'after_setup_theme', 'canitia_setup' );
 add_filter( 'get_custom_logo', 'change_logo_class' );
 
-
 load_theme_textdomain( 'canitia', get_template_directory().'/languages' );
 
 ?>

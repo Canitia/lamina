@@ -1431,6 +1431,13 @@ div.aligncenter {
 	border-bottom: 0px !important;
 }
 
+.format-status > article > .post-content > p {
+	text-align: center;
+	font-weight:600;
+	background-color: whitesmoke;
+	padding: 10px;
+}
+
 /* **************************************
 
 	CUSTOM WORDPRESS WIDGET CSS

@@ -13,15 +13,17 @@ return;
 	<div class="alignright"><?php next_comments_link() ?></div>
 </div>
 <?php else : // this is displayed if there are no comments so far ?>
-	<?php if ( comments_open() ) :?>
-		<h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
+	<?php if ( comments_open() ) :
+	// If comments are open, but there are no comments.
+	comment_form();
+	?>
+
+	<h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
   
-	<?php else : // comments are closed
+	<?php	else : // comments are closed
 	endif;
 
 endif;
-
-comment_form();
 ?>
 
 </div>

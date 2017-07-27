@@ -111,6 +111,7 @@
           </div><!-- post-content END! -->
                 
       <?php endif; ?>
+      
   </div><!-- close collection 2 -->
 
   <!-- navigation?-->
