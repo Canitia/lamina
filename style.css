@@ -603,10 +603,6 @@ footer p {
 	padding-top: 25px;
 }
 
-footer > .container > .text-center {
-    margin-bottom: 0;
-}
-
 /* **************************************
 
 	TWEAKS FOR DIFFERENT DISPLAY SIZES
@@ -666,11 +662,6 @@ footer > .container > .text-center {
 	.collection > .post-errortext > .fa-circle,
 	.main-content > .collection > .collection-item > a > p > .fa-star	{
 		margin-left: 12px;
-	}
-
-	article {
-		padding-left: 0;
-		padding-right:0;
 	}
 
 	.reply-title {
@@ -774,6 +765,11 @@ footer > .container > .text-center {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
+	article {
+		padding-right: 20px;
+   		padding-left: 20px;
+	}
+
 	.carousel-item {
 		height: 300px;
 	}
@@ -805,11 +801,6 @@ footer > .container > .text-center {
 		padding-left: 0px;
 		padding-right: 5px;
 		margin-left: 5px;
-	}
-
-	article {
-		padding-left: 0;
-		padding-right:0;
 	}
 
 	#wp-calendar tbody td {
