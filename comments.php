@@ -15,7 +15,6 @@ return;
 <?php else : // this is displayed if there are no comments so far ?>
 	<?php if ( comments_open() ) :
 	// If comments are open, but there are no comments.
-	comment_form();
 	?>
 
 	<h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
@@ -24,6 +23,8 @@ return;
 	endif;
 
 endif;
+
+comment_form();
 ?>
 
 </div>
