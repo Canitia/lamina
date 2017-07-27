@@ -617,6 +617,11 @@ footer p {
 
 @media (max-width: 575px) {  
 
+	.main-content {
+		padding-left: 0;
+		padding-right:0;
+	}
+
 	.carousel-item {
 		height: 300px;
 	}
@@ -626,7 +631,7 @@ footer p {
 	}
 
 	.badge {
-		display: none;
+		display: none !important;
 	}
 
 	.badge-date {
@@ -648,7 +653,7 @@ footer p {
  	{
 		padding-top:10px;
 		margin-left: 10px;
-		line-height: 1.15;
+		line-height: normal;
 	}
 
 	.collection-item {
