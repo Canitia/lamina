@@ -25,24 +25,21 @@ function canitia_theme_scripts() {
 	wp_enqueue_script( 'tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', false, null, true );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'), false, null, true );
 	
-	if (get_theme_mod( 'theme_preset' ) != null ){
-		if ( get_theme_mod( 'theme_preset' ) == 'pinkruby') :
-			wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css', false );	
-		endif;
-		if ( get_theme_mod( 'theme_preset' ) == 'blackopal') :
-			wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css', false );	
-		endif;
-		if ( get_theme_mod( 'theme_preset' ) == 'pinkmelanite') :
-			wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css', false );	
-		endif;
-		if ( get_theme_mod( 'theme_preset' ) == 'brownsinhalite') :
-			wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css', false );	
-		endif;
-		if ( get_theme_mod( 'theme_preset' ) == 'bluesapphire') :
-			wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
-		endif;
-
-	}
+	if ( get_theme_mod( 'theme_preset' ) == 'pinkruby') :
+		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset' ) == 'blackopal') :
+		wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset' ) == 'pinkmelanite') :
+		wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset' ) == 'brownsinhalite') :
+		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css', false );	
+	endif;
+	if ( get_theme_mod( 'theme_preset' ) == 'bluesapphire') :
+		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
+	endif;
 }
 
 add_action( 'wp_enqueue_scripts', 'canitia_theme_scripts' );
@@ -297,7 +294,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'theme_preset',
 		array(
-			'default' => 'default',
+			'default' => 'greywolf',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);

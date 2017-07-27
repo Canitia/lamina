@@ -56,5 +56,4 @@
             get_template_part( 'partials/featured-post' );
         endif;
     }
-
 ?>
