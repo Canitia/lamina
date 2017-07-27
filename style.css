@@ -616,7 +616,7 @@ footer > .container > .text-center {
 @media (max-width: 575px) {  
 
 	.carousel-item {
-		height: 325px;
+		height: 300px;
 	}
 
 	img.brand-logo {
@@ -724,9 +724,9 @@ footer > .container > .text-center {
     	margin-right: 10px;
 	}
 
-	.post-errortext {
+	.post-content, .post-errortext  {
 		margin-left: 20px;
-		margin-right: 10px;
+    	margin-right: 10px;
 	}
 
 	.fa-star, 
