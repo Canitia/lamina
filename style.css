@@ -517,6 +517,11 @@ ul.pings.commentlist {
 	text-decoration: underline;
 }
 
+.tagslist a:hover,
+.categorylist a:hover {
+	color: #979797;
+}
+
 /* **************************************
 
 	ARTICLE: AUTHOR look-n-feel
