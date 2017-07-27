@@ -8,7 +8,7 @@ Template Name: Search Page
 
 <div class="row">
 
-  <?php if ( get_theme_mod( 'sidebar_position', 'left' ) == 'left' ) : ?>
+  <?php if ( get_theme_mod( 'sidebar_position' ) == 'left' ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
@@ -52,7 +52,7 @@ Template Name: Search Page
  </div>
 </div><!-- end main-content -->
 
-  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
+  <?php if ( get_theme_mod( 'sidebar_position' ) == 'right' ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>

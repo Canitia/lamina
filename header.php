@@ -32,28 +32,15 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <?php bootstrap_nav(); ?>
-
-<?php if ( is_home() || is_category() || is_author() || is_search() || is_tag() || is_archive() ) {?>
- 
- <?php if ( get_theme_mod( 'show_mobile_search', 'show' )  == 'show' ) :?>
-        <form class="form-inline col-lg-0 hidden-md-up search-form">
-            <input type="search" class="search-field form-control mr-sm-2"
-            placeholder="<?php echo esc_attr_x( 'What are you looking for?', 'placeholder', 'canitia' ) ?>"
-            value="<?php echo get_search_query() ?>" name="s"
-            title="<?php echo esc_attr_x( 'Search for:', 'label', 'canitia' ) ?>" maxlength="50" />
-            <button class="search-submit btn col-sm-0" type="submit" value="<?php echo esc_attr_x( 'Go', 'submit button', 'canitia' ) ?>">Search</button>
-        </form>
-    <?php endif;?>
-
-    <?php } ?>
   </div>
+</nav>
 </nav>
 
 
 
 </header>
 <?php //show slider
-    if ( is_home() || is_category() || is_tag() || is_author() || is_search() ) {
+    if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
         if ( get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') :
             get_template_part( 'partials/slider' );
@@ -63,11 +50,10 @@
 <div class="container-fluid flex-grow">
 <?php
     // show featured post row
-    if ( is_home() || is_category() || is_tag() || is_author() || is_search() ) {
+    if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
         if ( get_theme_mod( 'display_featured_content', 'showfeatured' )  == 'showfeatured' ) :
             get_template_part( 'partials/featured-post' );
         endif;
     }
-
 ?>

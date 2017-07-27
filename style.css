@@ -4,7 +4,7 @@ Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 0.11.5-beta5
+Version: 0.11.5-rc1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -19,8 +19,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
+
 body {
   min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .flex-grow {
@@ -29,11 +31,6 @@ body {
 
 .container-fluid {
 	width: 100%;
-}
-
-.main-content {
-	padding-left: 5px !important;
-	padding-right: 5px !important;
 }
 
 .h-slider {
@@ -108,6 +105,15 @@ pre {
 cite {
     font-style: italic;
     font-weight: bold;
+	color: #999999;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+
+}
+
+cite:before {
+	content: "\2014 \2009";
 }
 
 dl > dt {
@@ -139,6 +145,10 @@ select  {
 
 address {
 	font-style: italic;
+}
+
+strong {
+	font-weight: 600 !important;
 }
 
 .strong-search {
@@ -269,6 +279,14 @@ address {
 	color: black;
 }
 
+/* all list items */
+
+.collection-header {
+	list-style-type: none !important;
+	margin-left:0;
+	margin-right:0;
+}
+
 .collection {
 	padding-left: 0;
 }
@@ -302,8 +320,21 @@ article > h1:first-child {
 	border-right: 1px solid #f8f8f8;
 }
 
+/* sidebar */
 .widget > ul {
     padding-left: 0;
+}
+
+.widget > ul > li {
+	line-height: 1.5rem;
+	padding: 10px 20px;
+	margin: 0;
+	border-bottom: 1px solid #f8f8f8;
+	list-style-type: none !important;
+}
+
+.widget > ul > li:hover {
+	background-color: #ebebeb;
 }
 
 /* ######################################
@@ -331,6 +362,7 @@ POST/ARTICLE HEADERS
   ARTICLE/POST LOOK-N-FEEL
 
 *****************************************/
+
 .wp-post-image {
 	object-fit: cover;
 	max-height: 500px;
@@ -490,26 +522,35 @@ ul.pings.commentlist {
 	ARTICLE: AUTHOR look-n-feel
 
 *****************************************/
+p.postedby {
+    font-size: 125%;
+    font-weight: 300;
+}
+
+
 .author-profile {
 	clear:both;
 	margin-top: 25px;
+	padding-right: 15px;
+	padding-left: 15px;
+    padding-top: 20px;
+	border-top: 1px solid #ebebeb !important;
 }
 
-.author-bio {
-	display: flex;
-	margin-top: -5px;
+.author-profile > .avatar {
+	margin-left: 10px;
+    width: 50px;
+    height: auto;
 }
 
-.author-social {
-    margin-top: 15px;
+p.author-bio {
+	margin-left: 10px;
+    color: #979797;
 }
 
 img.avatar {
-	float:left;
 	z-index:200;
 	margin-right:15px;
-	margin-bottom: 10px;
-	margin-top: 10px;
 }
 
 .avatar-page {
@@ -520,8 +561,9 @@ img.avatar {
 }
 
 .author-name {
-	font-size:175%;
+	font-size:110%;
 	font-weight: 300 !important;
+	vertical-align: middle;
 }
 
 .author-name a:hover {
@@ -596,10 +638,6 @@ footer p {
 	padding-top: 25px;
 }
 
-footer > .container > .text-center {
-    margin-bottom: 0;
-}
-
 /* **************************************
 
 	TWEAKS FOR DIFFERENT DISPLAY SIZES
@@ -608,8 +646,14 @@ footer > .container > .text-center {
 
 @media (max-width: 575px) {  
 
+	.main-content {
+		padding-left: 0;
+		padding-right:0;
+	}
+
 	.carousel-item {
-		height: 300px;
+		height: auto;
+		max-height: 250px;
 	}
 
 	img.brand-logo {
@@ -617,7 +661,7 @@ footer > .container > .text-center {
 	}
 
 	.badge {
-		display: none;
+		display: none !important;
 	}
 
 	.badge-date {
@@ -639,7 +683,7 @@ footer > .container > .text-center {
  	{
 		padding-top:10px;
 		margin-left: 10px;
-		line-height: 1.15;
+		line-height: normal;
 	}
 
 	.collection-item {
@@ -649,21 +693,11 @@ footer > .container > .text-center {
 		padding-right: 10px;
 	}
 
-	.main-content {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
-
 	.main-content > .collection > .collection-item > a > p > .fa-circle,
 	.main-content > .collection > .collection-item > p > .fa-circle, 
 	.collection > .post-errortext > .fa-circle,
 	.main-content > .collection > .collection-item > a > p > .fa-star	{
 		margin-left: 12px;
-	}
-
-	article {
-		padding-left: 0;
-		padding-right:0;
 	}
 
 	.reply-title {
@@ -688,6 +722,7 @@ footer > .container > .text-center {
 		padding-bottom: 15px;
 		padding-left: 5px;
 		padding-right: 5px;
+		margin-left: 5px;
 	}
 
 	.widget_recent_entries > ul > li {
@@ -699,12 +734,9 @@ footer > .container > .text-center {
 		margin-left: 0px !important;
 	}
 
-	.author-name {
-		margin-left: 10px;
-	}
-
-	.author-bio {
-		padding-left: 10px;
+	.author-profile {
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 	
 	.badge {
@@ -715,9 +747,13 @@ footer > .container > .text-center {
 		margin-left: 10px;
     	margin-right: 10px;
 	}
-	
-	.post-errortext {
-		margin-left: 10px;
+
+	.post-content, 
+	.post-errortext,
+	.cat-links
+  	{
+		margin-left: 20px;
+    	margin-right: 10px;
 	}
 
 	.fa-star, 
@@ -727,11 +763,6 @@ footer > .container > .text-center {
 		float: right;
 	}
 
-	.tagslist, 
-	.categorylist {
-		margin-left: 2px;
-	}
-
 	img.avatar {
 		width: 64px;
 		height: 64px;
@@ -739,7 +770,7 @@ footer > .container > .text-center {
 
 	.search-form {
    		margin-top: 15px;
-   	 	margin-bottom: 20px;
+   	 	margin-bottom: 20px !important;
    	 	margin-left: 20px;
 	}
 
@@ -789,32 +820,30 @@ footer > .container > .text-center {
 		margin-bottom: 5px;
 	}
 
-
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
 		padding-bottom: 15px;
 		padding-left: 0px;
 		padding-right: 5px;
-	}
-
-	article {
-		padding-left: 0;
-		padding-right:0;
+		margin-left: 5px;
 	}
 
 	#wp-calendar tbody td {
 		padding: 4px;
 	}
 
-	.post-content {
+	.post-content, 
+	.post-errortext,
+	.cat-links {
 		margin-left: 10px;
     	margin-right: 10px;
 	}
 
-	.post-errortext {
-		margin-left: 0px;
+	.author-profile {
+		padding-left: 0;
+		padding-right: 0;
 	}
-	
+
 	img.avatar {
 		width: 64px;
 		height: 64px;
@@ -849,10 +878,6 @@ footer > .container > .text-center {
 		line-height: 25px;
 	}
 
-	.main-content {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -867,11 +892,6 @@ footer > .container > .text-center {
 		padding-right: 10px;
 		padding-top: 20px;
     	padding-bottom: 20px;
-	}
-
-	article {
-		padding-left: 15px;
-		padding-right:15px;
 	}
 
 	.sidebar {
@@ -919,9 +939,7 @@ footer > .container > .text-center {
 		padding: 8px;
 	}
 
-	.post-errortext {
-		margin-left: 0px;
-	}
+
 
 	.post-content > ul li, 
 	.post-content > ol li > ul li,
@@ -947,11 +965,6 @@ footer > .container > .text-center {
 
 	.carousel-item {
 		height: 400px;
-	}
-
-	article {
-		padding-left: 15px;
-		padding-right:15px;
 	}
 
 	.sidebar {
@@ -1310,33 +1323,13 @@ dl.wp-caption {
 	font-weight: 600;
 }
 
-
 /* center align twitter */
 .twitter-tweet {
 	margin-left:auto;
 	margin-right: auto;
 }
 
-/* sidebar */
-.widget > ul > li {
-	line-height: 1.5rem;
-	padding: 10px 20px;
-	margin: 0;
-	border-bottom: 1px solid #f8f8f8;
-	list-style-type: none !important;
-}
 
-.widget > ul > li:hover {
-	background-color: #ebebeb;
-}
-
-/* all list items */
-
-.collection-header {
-	list-style-type: none !important;
-	margin-left:0;
-	margin-right:0;
-}
 
 /* images */
 .size-auto,
@@ -1432,9 +1425,12 @@ div.aligncenter {
 	CUSTOM WORDPRESS WIDGET CSS
 
 *****************************************/
-
 .search-box {
-	margin-bottom: 25px;
+	margin-bottom: 32px;
+}
+
+.search-form {
+	margin-bottom: 48px;
 }
 
 .search-form > label {
@@ -1494,4 +1490,28 @@ div.aligncenter {
 
 #wp-calendar tbody .pad { 
 	background: none; 
+}
+
+/* image widget css */
+.widget_media_image > img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* custom menu widget css */
+.widget_nav_menu > div > ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.widget_nav_menu > div > ul > li {
+	padding: 10px;
+}
+
+.widget_nav_menu > div > ul > li > a {
+	font-weight: 400;
+	font-size: 16px;
 }
