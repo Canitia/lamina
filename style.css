@@ -784,7 +784,6 @@ footer p {
 		margin-bottom: 5px;
 	}
 
-
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
 		padding-bottom: 15px;
@@ -797,7 +796,10 @@ footer p {
 		padding: 4px;
 	}
 
-	.post-content, .post-errortext  {
+	.post-content, 
+	.post-errortext,
+	.cat-links,
+	.author-profile  {
 		margin-left: 10px;
     	margin-right: 10px;
 	}
