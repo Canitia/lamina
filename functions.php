@@ -23,24 +23,25 @@ function canitia_theme_scripts() {
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', false );
 	wp_enqueue_style( 'open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700', false );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'), false, null, true );
-	wp_enqueue_style( 'greywolf',  get_stylesheet_directory_uri(). '/style.css', false );	
-
-	if ( get_theme_mod( 'theme_preset' ) == 'pinkruby') :
-		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css', false );	
-	endif;
-	if ( get_theme_mod( 'theme_preset' ) == 'blackopal') :
-		wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css', false );	
-	endif;
-	if ( get_theme_mod( 'theme_preset' ) == 'pinkmelanite') :
-		wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css', false );	
-	endif;
-	if ( get_theme_mod( 'theme_preset' ) == 'brownsinhalite') :
-		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css', false );	
-	endif;
-	if ( get_theme_mod( 'theme_preset' ) == 'bluesapphire') :
-		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
-	endif;
-
+	wp_enqueue_style( 'greywolf',  get_stylesheet_directory_uri(). '/style.css', false );
+	
+	if (get_theme_mod( 'theme_preset' ) != null ){
+		if ( get_theme_mod( 'theme_preset' ) == 'pinkruby') :
+			wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css', false );	
+		endif;
+		if ( get_theme_mod( 'theme_preset' ) == 'blackopal') :
+			wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css', false );	
+		endif;
+		if ( get_theme_mod( 'theme_preset' ) == 'pinkmelanite') :
+			wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css', false );	
+		endif;
+		if ( get_theme_mod( 'theme_preset' ) == 'brownsinhalite') :
+			wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css', false );	
+		endif;
+		if ( get_theme_mod( 'theme_preset' ) == 'bluesapphire') :
+			wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
+		endif;
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'canitia_theme_scripts' );
