@@ -107,6 +107,21 @@ cite {
     font-weight: bold;
 }
 
+cite:before {
+content: "\2014 \2009";
+}
+
+cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
 dl > dt {
 	font-weight: bold;
 	font-style: italic;
