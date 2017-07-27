@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-26 23:27+0000\n"
-"PO-Revision-Date: 2017-07-26 23:27+0000\n"
+"POT-Creation-Date: 2017-07-27 13:55+0000\n"
+"PO-Revision-Date: 2017-07-27 13:56+0000\n"
 "Last-Translator: bouwlamp <michaelboumann@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,9 +13,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#. Name of the template
-msgid "Full-Width Page"
-msgstr "Pagina als enkele kolom"
+#: partials/authorsection.php:4
+msgid "This article was written by"
+msgstr "Dit artikel is geschreven door"
 
 #: 404.php:10
 msgid "Error"
@@ -97,123 +97,123 @@ msgstr "Reageer op dit bericht"
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
-#: functions.php:66
+#: functions.php:67
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:67
+#: functions.php:68
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:86
+#: functions.php:87
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:230
+#: functions.php:231
 msgid "Canitia Settings"
 msgstr "Canitia Instellingen"
 
-#: functions.php:231
+#: functions.php:232
 msgid "Tweak Canitia to your liking."
 msgstr "Stel Canitia in zoals jij dat wilt."
 
-#: functions.php:239
+#: functions.php:240
 msgid "Canitia Labs"
 msgstr "Canitia experimenten"
 
-#: functions.php:240
+#: functions.php:241
 msgid "Experimental Canitia Labs features."
 msgstr "Experimentele Canitia features."
 
-#: functions.php:302
+#: functions.php:303
 msgid "Featured content"
 msgstr "Aanbevolen content"
 
-#: functions.php:306
+#: functions.php:307
 msgid "Show Slider"
 msgstr "Laat Slider zien"
 
-#: functions.php:307
+#: functions.php:308
 msgid "Show Featured Row"
 msgstr "Laat een uitgelichte rij zien"
 
-#: functions.php:308
+#: functions.php:309
 msgid "Hide all"
 msgstr "Verberg alle featured content"
 
-#: functions.php:313
+#: functions.php:314
 msgid "Today section"
 msgstr "Vandaag sectie"
 
-#: functions.php:317
+#: functions.php:318
 msgid "Show Today section"
 msgstr "Laat 'Vandaag' sectie zien"
 
-#: functions.php:318
+#: functions.php:319
 msgid "Hide Today section"
 msgstr "Verberg 'Vandaag' sectie"
 
-#: functions.php:323
+#: functions.php:324
 msgid "Sidebar position"
 msgstr "Sidebar positie"
 
-#: functions.php:327
+#: functions.php:328
 msgid "Left"
 msgstr "Links"
 
-#: functions.php:328
+#: functions.php:329
 msgid "Right"
 msgstr "Rechts"
 
-#: functions.php:333 functions.php:337
+#: functions.php:334 functions.php:338
 msgid "Show Tags"
 msgstr "Laat tags zien"
 
-#: functions.php:338
+#: functions.php:339
 msgid "Hide Tags"
 msgstr "Verberg tags"
 
-#: functions.php:343 functions.php:347
+#: functions.php:344 functions.php:348
 msgid "Show Categories"
 msgstr "Laat categorieën zien"
 
-#: functions.php:348
+#: functions.php:349
 msgid "Hide Categories"
 msgstr "Verberg categorieën"
 
-#: functions.php:353 functions.php:357
+#: functions.php:354 functions.php:358
 msgid "Show Author section"
 msgstr "Laat auteur sectie zien"
 
-#: functions.php:358
+#: functions.php:359
 msgid "Hide Author section"
 msgstr "Verberg auteur sectie"
 
-#: functions.php:363
+#: functions.php:364
 msgid "Theme preset"
 msgstr "Thema preset"
 
-#: functions.php:367
+#: functions.php:368
 msgid "Grey Wolf (default)"
 msgstr "Grey Wolf (standaard)"
 
-#: functions.php:368
+#: functions.php:369
 msgid "Pink Ruby"
 msgstr "Pink Ruby"
 
-#: functions.php:369
+#: functions.php:370
 msgid "Pink Melanite"
 msgstr "Pink Melanite"
 
-#: functions.php:370
+#: functions.php:371
 msgid "Black Opal"
 msgstr "Black Opal"
 
-#: functions.php:371
+#: functions.php:372
 msgid "Brown Sinhalite"
 msgstr "Brown Sinhalite"
 
-#: functions.php:372
+#: functions.php:373
 msgid "Blue Sapphire"
 msgstr "Blue Sapphire"
 
@@ -228,6 +228,10 @@ msgstr "Resultaten voor"
 #: search.php:46
 msgid "Sorry, it seems this search query has no posts."
 msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
+
+#. Name of the template
+msgid "Full-Width Page"
+msgstr "Pagina als enkele kolom"
 
 #: page-single.php:27
 msgid "Sorry, this page can not be found or has been deleted."
