@@ -509,11 +509,13 @@ p.postedby {
 }
 
 .author-profile > .avatar {
+	margin-left: 10px;
     width: 50px;
     height: auto;
 }
 
 p.author-bio {
+	margin-left: 10px;
     color: #979797;
 }
 
