@@ -25,12 +25,12 @@
         <div class="cat-links">
 
         <?php if(has_tag()) { ?>
-            <?php if ( get_theme_mod( 'show_tags' ) == 'show' ) : ?>
+            <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
                 <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </div>
                 <?php endif; ?>
         <?php } ?>
         <br />
-        <?php if (get_theme_mod( 'show_categories' ) == 'show' ) { ?>
+        <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
         <?php if(has_category()) { ?>
           <div class="categorylist"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
@@ -51,7 +51,7 @@
 
           </div>
 
-        <?php if ( get_theme_mod( 'show_author_section' ) == 'show' ) :
+        <?php if ( get_theme_mod( 'show_author_section' ) == 'showauthor' ) :
             get_template_part( 'partials/authorsection' ); 
         endif; ?>
        </article><!-- close article -->

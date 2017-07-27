@@ -246,15 +246,15 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'display_featured_content',
 		array(
-			'default' => 'show',
+			'default' => 'hidefeatured',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
 
 	$wp_customize->add_setting(
-		'display_today',
+		'display_today_list',
 		array(
-			'default' => 'show',
+			'default' => 'hidetoday',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
@@ -270,7 +270,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'show_tags',
 		array(
-			'default' => 'show',
+			'default' => 'showtags',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
@@ -278,7 +278,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'show_categories',
 		array(
-			'default' => 'show',
+			'default' => 'showcategories',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
@@ -286,7 +286,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'show_author_section',
 		array(
-			'default' => 'show',
+			'default' => 'showauthor',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
@@ -310,13 +310,13 @@ function canitia_customizer( $wp_customize ) {
 		),
 	) );
 
-	$wp_customize->add_control( 'display_today', array(
+	$wp_customize->add_control( 'display_today_list', array(
 		'label' => __('Today section', 'canitia'),
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => __('Show Today section', 'canitia'),
-			'hide' => __('Hide Today section', 'canitia'),
+			'showtoday' => __('Show Today section', 'canitia'),
+			'hidetoday' => __('Hide Today section', 'canitia'),
 		),
 	) );
 
@@ -335,8 +335,8 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => __('Show Tags', 'canitia'),
-			'hide' => __('Hide Tags', 'canitia'),
+			'showtags' => __('Show Tags', 'canitia'),
+			'hidetags' => __('Hide Tags', 'canitia'),
 		),
 	) );
 
@@ -345,8 +345,8 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => __('Show Categories', 'canitia'),
-			'hide' => __('Hide Categories', 'canitia'),
+			'showcategories' => __('Show Categories', 'canitia'),
+			'hidecategories' => __('Hide Categories', 'canitia'),
 		),
 	) );
 
@@ -355,8 +355,8 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'settings_section_canitia',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => __('Show Author section', 'canitia'),
-			'hide' => __('Hide Author section', 'canitia'),
+			'showauthor' => __('Show Author section', 'canitia'),
+			'hideauthor' => __('Hide Author section', 'canitia'),
 		),
 	) );
 
