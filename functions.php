@@ -41,6 +41,7 @@ function canitia_theme_scripts() {
 		if ( get_theme_mod( 'theme_preset' ) == 'bluesapphire') :
 			wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css', false );	
 		endif;
+
 	}
 }
 
