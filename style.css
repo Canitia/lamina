@@ -19,8 +19,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
+
 body {
   min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .flex-grow {
@@ -493,11 +495,19 @@ ul.pings.commentlist {
 .author-profile {
 	clear:both;
 	margin-top: 25px;
+	padding-right: 15px;
+	padding-left: 15px;
+    padding-top: 20px;
+	border-top: 1px solid #ebebeb !important;
 }
 
 .author-profile > .avatar {
     width: 50px;
     height: auto;
+}
+
+p.author-bio {
+    color: #979797;
 }
 
 img.avatar {
