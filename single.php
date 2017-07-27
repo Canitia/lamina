@@ -67,10 +67,10 @@
        </article><!-- close article -->
       <?php if( comments_open() ) { ?>
 	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
+                   <!-- let user enter a comment -->
+                    <?php comments_template(); ?>
         <?php }
         ?>
-       <!-- let user enter a comment -->
-      <?php comments_template(); ?>
   
     </div><!-- close post class div -->
   </div><!-- close col s12 m8 l8 class div -->
