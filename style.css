@@ -1202,6 +1202,11 @@ ul.children {
     font-size: 1.3em;
     font-weight: 300;
 	vertical-align: middle;
+	display: initial;
+}
+
+.comment-author > cite:before {
+	content: none;
 }
 
 .comment-meta {
