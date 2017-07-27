@@ -710,7 +710,10 @@ footer p {
     	margin-right: 10px;
 	}
 
-	.post-content, .post-errortext  {
+	.post-content, 
+	.post-errortext,
+	.cat-links,
+	.author-profile   {
 		margin-left: 20px;
     	margin-right: 10px;
 	}
