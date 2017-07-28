@@ -1,7 +1,7 @@
 <?php get_header();?>
 <div class="row">
 
-  <?php if ( get_theme_mod( 'sidebar_position' ) == 'left' ) : ?>
+  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
@@ -38,7 +38,7 @@
 
   </div>
   <!-- einde md8 -->
-    <?php if ( get_theme_mod( 'sidebar_position' ) == 'right' ) : ?>
+    <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
     <!-- second column (widget bar) -->
     <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>

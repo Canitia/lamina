@@ -68,7 +68,7 @@
   
   <!-- show the right header item -->
   <?php 
-  if ( get_theme_mod( 'display_today_list' ) == 'hidetoday' ) :   ?>
+  if ( get_theme_mod( 'display_today_list', 'hidetoday' ) == 'hidetoday' ) :   ?>
       
       <?php if ($paged <= 1) { ?>
        <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>        
@@ -120,7 +120,7 @@
 
 </div> <!-- close content main -->
 
-  <?php if ( get_theme_mod( 'sidebar_position' ) == 'right' ) : ?>
+  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
