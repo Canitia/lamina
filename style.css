@@ -752,17 +752,12 @@ footer p {
 		margin-right: 5px;
 	}
 
-	.post-content {
-		margin-left: 10px;
-    	margin-right: 10px;
-	}
-
 	.post-content, 
 	.post-errortext,
 	.cat-links
   	{
 		margin-left: 20px;
-    	margin-right: 10px;
+    	margin-right: 20px;
 	}
 
 	.fa-star, 
