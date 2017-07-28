@@ -39,7 +39,7 @@ function canitia_theme_scripts() {
 	if ( get_theme_mod( 'theme_preset' , 'greywolf' ) == 'brownsinhalite') :
 		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css' );	
 	endif;
-	
+
 	if ( get_theme_mod( 'theme_preset' , 'greywolf' ) == 'bluesapphire') :
 		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css' );	
 	endif;
@@ -457,7 +457,7 @@ function canitia_customizer( $wp_customize ) {
 		'choices' => array(
 			'showslider' => __('Show Slider', 'canitia'),
 			'showfeatured' => __('Show Featured Row', 'canitia'),
-			'hide' => __('Hide all', 'canitia'),
+			'hidefeatured' => __('Hide all', 'canitia'),
 		),
 	) );
 

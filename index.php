@@ -7,7 +7,7 @@
     <?php endif; ?>
   <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
     <?php 
-    if ( get_theme_mod( 'display_today_list' ) == 'showtoday' ) : //show today section or not
+    if ( get_theme_mod( 'display_today_list', 'hidetoday' ) == 'showtoday' ) : //show today section or not
 
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       if ($paged < 2) {    //only show today section on page 1
