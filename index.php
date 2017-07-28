@@ -5,9 +5,7 @@
     <!-- second column (widget bar) -->
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
-
   <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
-
     <?php 
     if ( get_theme_mod( 'display_today_list' ) == 'showtoday' ) : //show today section or not
 
@@ -110,7 +108,9 @@
               <?php get_search_form(); ?>
           </div><!-- post-content END! -->
                 
-      <?php endif; ?>
+      <?php endif; 
+              wp_reset_postdata(); 
+      ?>
       
   </div><!-- close collection 2 -->
 

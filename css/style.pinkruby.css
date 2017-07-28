@@ -107,3 +107,7 @@ article > h1:first-child {
 	background-color: #3f3f3f !important;
 	color: white !important;
 }
+
+#wp-calendar caption {
+	color: #ec008c !important;
+}

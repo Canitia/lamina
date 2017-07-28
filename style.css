@@ -1478,17 +1478,16 @@ div.aligncenter {
 }
 
 #wp-calendar caption {
-	font-size: 175% !important;
+	font-size: 125% !important;
 	font-weight: 300;
 	white-space: normal;
 	overflow:hidden;
 	text-overflow: ellipsis;
 	margin-bottom: 0px;
-	padding-top: 20px;
-	border-bottom: 1px solid #f8f8f8;
 	text-align: left;
 	color: #979797;
 	caption-side: top;
+	text-transform: uppercase;
 }
 
 #wp-calendar thead { 
@@ -1543,5 +1542,4 @@ div.aligncenter {
 
 .page_item_has_children > ul > li {
     list-style-type: none;
-    /* background-color: pink; */
 }
