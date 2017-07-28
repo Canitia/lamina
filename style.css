@@ -1540,3 +1540,8 @@ div.aligncenter {
 	font-weight: 400;
 	font-size: 16px;
 }
+
+.page_item_has_children > ul > li {
+    list-style-type: none;
+    /* background-color: pink; */
+}
