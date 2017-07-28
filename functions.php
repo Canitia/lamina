@@ -20,14 +20,15 @@ function canitia_theme_scripts() {
 	wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' );
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' );
-	wp_enqueue_style( 'greywolf',  get_stylesheet_directory_uri(). '/style.css' );
 	wp_enqueue_script( 'bootstrapjs', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
-	
+	wp_enqueue_style( 'greywolf',  get_stylesheet_directory_uri(). '/style.css' );	
+
 	if ( get_theme_mod( 'theme_preset' ) == 'pinkruby') :
-		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css' );	
+		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css' );
 	endif;
-	if ( get_theme_mod( 'theme_preset' ) == 'blackopal') :
+
+		if ( get_theme_mod( 'theme_preset' ) == 'blackopal') :
 		wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css' );	
 	endif;
 	if ( get_theme_mod( 'theme_preset' ) == 'pinkmelanite') :
@@ -40,6 +41,14 @@ function canitia_theme_scripts() {
 		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css' );	
 	endif;
 }
+
+function include_custom_jquery() {
+
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+
+}
+add_action('wp_enqueue_scripts', 'include_custom_jquery');
 
 add_action( 'wp_enqueue_scripts', 'canitia_theme_scripts' );
 
@@ -434,6 +443,7 @@ function canitia_customizer( $wp_customize ) {
 		array(
 			'default' => 'greywolf',
 			'sanitize_callback' => 'canitia_sanitize_select',
+			'settings' => 'theme_preset',
 		)
 	);
 
