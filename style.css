@@ -651,6 +651,10 @@ footer p {
 
 @media (max-width: 575px) {  
 
+	.site-title {
+		font-size: 125%;
+	}
+
 	.main-content {
 		padding-left: 0;
 		padding-right:0;
