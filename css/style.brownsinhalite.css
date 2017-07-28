@@ -104,3 +104,7 @@ article > h1:first-child {
 .text-muted {
 	margin-bottom: 0 !important;
 }
+
+#wp-calendar caption {
+	color: #654321 !important;
+}
