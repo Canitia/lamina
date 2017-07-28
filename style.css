@@ -1483,7 +1483,8 @@ div.aligncenter {
 	white-space: normal;
 	overflow:hidden;
 	text-overflow: ellipsis;
-	margin-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 15px;
 	text-align: left;
 	color: #979797;
 	caption-side: top;
