@@ -14,6 +14,7 @@
       ?>
  
       <h1 class="text-left-title-featured-sidebar"><?php _e('Today', 'canitia'); ?></h1>
+      <?php } ?>
       <div class="collection">
       <?php
 
@@ -57,7 +58,7 @@
         }
 
         wp_reset_postdata(); 
-        };
+
         ?>
         
       <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'canitia');?></h1>            
