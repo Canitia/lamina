@@ -760,6 +760,10 @@ footer p {
     	margin-right: 20px;
 	}
 
+	p.postedby {
+		margin-left: 5px;
+	}
+
 	.fa-star, 
 	.fa-circle {
 		margin-left: 5px;
@@ -1221,7 +1225,7 @@ ul.children {
 }
 
 .comment-author > cite:before {
-	content: none;
+	content: none !important;
 }
 
 .comment-meta {
