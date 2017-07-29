@@ -702,11 +702,8 @@ footer p {
 		padding-right: 10px;
 	}
 
-	.main-content > .collection > .collection-item > a > p > .fa-circle,
-	.main-content > .collection > .collection-item > p > .fa-circle, 
-	.collection > .post-errortext > .fa-circle,
-	.main-content > .collection > .collection-item > a > p > .fa-star	{
-		margin-left: 12px;
+	.collection>.post-errortext>.fa-circle {
+		margin-right: 5px;
 	}
 
 	.reply-title {
@@ -895,6 +892,11 @@ footer p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+	.collection>.post-errortext>.fa-circle {
+		margin-right: 15px;
+		margin-left: 5px;
+	}
 
 	.carousel-item {
 		height: 300px;
