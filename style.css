@@ -3,7 +3,7 @@ Theme Name: Canitia
 Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
-Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
+Description: Canitia brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
 Version: 0.11.5-release
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -1087,6 +1087,10 @@ footer p {
 .error {
 	background-color: orangered;
 	color: white;
+}
+
+.main-content > .search-box {
+    padding: 15px;
 }
 
 /* **************************************
