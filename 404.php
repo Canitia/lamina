@@ -3,7 +3,7 @@
 
     <?php if ( get_theme_mod( 'sidebar_position' ) == 'left' ) : ?>
     <!-- second column (widget bar) -->
-    <?php get_sidebar( 'primary' ); ?>
+      <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
 
     <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
