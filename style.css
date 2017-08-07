@@ -3,8 +3,8 @@ Theme Name: Canitia
 Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
-Description: Elegant yet simple. Simplicity with features. Custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 0.11.5-rc1
+Description: Canitia brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
+Version: 0.11.5-release
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -517,6 +517,11 @@ ul.pings.commentlist {
 	text-decoration: underline;
 }
 
+.tagslist a:hover,
+.categorylist a:hover {
+	color: #979797;
+}
+
 /* **************************************
 
 	ARTICLE: AUTHOR look-n-feel
@@ -646,6 +651,10 @@ footer p {
 
 @media (max-width: 575px) {  
 
+	.site-title {
+		font-size: 125%;
+	}
+
 	.main-content {
 		padding-left: 0;
 		padding-right:0;
@@ -693,11 +702,8 @@ footer p {
 		padding-right: 10px;
 	}
 
-	.main-content > .collection > .collection-item > a > p > .fa-circle,
-	.main-content > .collection > .collection-item > p > .fa-circle, 
-	.collection > .post-errortext > .fa-circle,
-	.main-content > .collection > .collection-item > a > p > .fa-star	{
-		margin-left: 12px;
+	.collection>.post-errortext>.fa-circle {
+		margin-right: 5px;
 	}
 
 	.reply-title {
@@ -743,17 +749,16 @@ footer p {
 		margin-right: 5px;
 	}
 
-	.post-content {
-		margin-left: 10px;
-    	margin-right: 10px;
-	}
-
 	.post-content, 
 	.post-errortext,
 	.cat-links
   	{
 		margin-left: 20px;
-    	margin-right: 10px;
+    	margin-right: 20px;
+	}
+
+	p.postedby {
+		margin-left: 5px;
 	}
 
 	.fa-star, 
@@ -795,6 +800,11 @@ footer p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+
+	.site-title {
+		font-size: 125%;
+	}
+
 
 	.carousel-item {
 		height: 300px;
@@ -882,6 +892,11 @@ footer p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+	.collection>.post-errortext>.fa-circle {
+		margin-right: 15px;
+		margin-left: 5px;
+	}
 
 	.carousel-item {
 		height: 300px;
@@ -1074,6 +1089,10 @@ footer p {
 	color: white;
 }
 
+.main-content > .search-box {
+    padding: 15px;
+}
+
 /* **************************************
 
 EXTERNAL libraries look-n-feel
@@ -1129,8 +1148,14 @@ EXTERNAL libraries look-n-feel
 	WORDPRESS COMMENTS
 
 *****************************************/
+.pings {
+	list-style-type: none;
+	border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+}
+
 ul.commentlist {
-    padding-left: 0;
+	padding-left: 0;
+	list-style-type: none;
 }
 
 .comment-reply-title {
@@ -1202,6 +1227,11 @@ ul.children {
     font-size: 1.3em;
     font-weight: 300;
 	vertical-align: middle;
+	display: initial;
+}
+
+.comment-author > cite:before {
+	content: none !important;
 }
 
 .comment-meta {
@@ -1420,6 +1450,15 @@ div.aligncenter {
 	border-bottom: 0px !important;
 }
 
+/* css for post format : status, link*/
+.format-status > article > .post-content > p,
+.format-link > article > .post-content > p {
+	text-align: center;
+	font-weight:600;
+	background-color: whitesmoke;
+	padding: 10px;
+}
+
 /* **************************************
 
 	CUSTOM WORDPRESS WIDGET CSS
@@ -1453,17 +1492,17 @@ div.aligncenter {
 }
 
 #wp-calendar caption {
-	font-size: 175% !important;
+	font-size: 125% !important;
 	font-weight: 300;
 	white-space: normal;
 	overflow:hidden;
 	text-overflow: ellipsis;
-	margin-bottom: 0px;
-	padding-top: 20px;
-	border-bottom: 1px solid #f8f8f8;
+    padding-top: 0;
+    padding-bottom: 15px;
 	text-align: left;
 	color: #979797;
 	caption-side: top;
+	text-transform: uppercase;
 }
 
 #wp-calendar thead { 
@@ -1514,4 +1553,8 @@ div.aligncenter {
 .widget_nav_menu > div > ul > li > a {
 	font-weight: 400;
 	font-size: 16px;
+}
+
+.page_item_has_children > ul > li {
+    list-style-type: none;
 }

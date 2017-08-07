@@ -24,7 +24,7 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+  <a class="navbar-brand site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>">
     <?php    
         bloginfo('name');
      ?>
@@ -34,15 +34,13 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-</nav>
-
 
 
 </header>
 <?php //show slider
     if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
-        if ( get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') :
+        if ( get_theme_mod( 'display_featured_content', 'hidefeatured' ) == 'showslider') :
             get_template_part( 'partials/slider' );
         endif;
     }
@@ -52,8 +50,8 @@
     // show featured post row
     if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
-        if ( get_theme_mod( 'display_featured_content', 'showfeatured' )  == 'showfeatured' ) :
-            get_template_part( 'partials/featured-post' );
+        if ( get_theme_mod( 'display_featured_content', 'hidefeatured' )  == 'showfeatured' ) :
+            get_template_part( 'partials/featured-post' ); 
         endif;
     }
 ?>

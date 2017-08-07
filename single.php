@@ -10,7 +10,7 @@
 ?>
 
 
-        <?php if ( get_theme_mod( 'sidebar_position' ) == 'left' ) : ?>
+        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
         <?php endif; ?>
@@ -35,11 +35,11 @@
         <div class="cat-links">
 
         <?php if(has_tag()) { ?>
-            <?php if ( get_theme_mod( 'show_tags' ) == 'show' ) : ?>
+            <?php if ( get_theme_mod( 'show_tags', 'showtags' ) == 'showtags' ) : ?>
                 <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </div>
                 <?php endif; ?>
         <?php } ?>
-        <?php if (get_theme_mod( 'show_categories' ) == 'show' ) { ?>
+        <?php if (get_theme_mod( 'show_categories', 'showcategories' ) == 'showcategories' ) { ?>
         <?php if(has_category()) { ?>
           <div class="categorylist"><i class="fa fa-list" aria-hidden="true"></i></span>
           <?php $categories = get_the_category();
@@ -60,17 +60,13 @@
 
           </div>
 
-        <?php if ( get_theme_mod( 'show_author_section' ) == 'show' ) :
+        <?php if ( get_theme_mod( 'show_author_section', 'showauthor' ) == 'showauthor' ) :
             get_template_part( 'partials/authorsection' ); 
         endif; ?>
        </article><!-- close article -->
-      <?php if( comments_open() ) { ?>
-	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
-                   <!-- let user enter a comment -->
-                    <?php comments_template(); ?>
-        <?php }
-        ?>
-  
+
+        <!-- let user enter a comment -->
+        <?php comments_template(); ?>  
     </div><!-- close post class div -->
   </div><!-- close col s12 m8 l8 class div -->
 
@@ -83,7 +79,7 @@
       <?php endif; ?>
 
 
-  <?php if ( get_theme_mod( 'sidebar_position' ) == 'right' ) : ?>
+  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
   <?php endif; ?>
