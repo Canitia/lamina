@@ -45,14 +45,6 @@ function canitia_theme_scripts() {
 	endif;
 }
 
-function include_custom_jquery() {
-
-	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
-
-}
-add_action('wp_enqueue_scripts', 'include_custom_jquery');
-
 add_action( 'wp_enqueue_scripts', 'canitia_theme_scripts' );
 
 $bgargs = array(
