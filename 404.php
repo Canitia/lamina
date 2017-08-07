@@ -10,9 +10,6 @@
         <div class="post-content post-errortext">
           <p><?php _e('This post/page doesnt exist anymore or has been renamed. Try searching for it.', 'canitia');?></p>
         </div><!-- post-content END! -->
-
-        <?php get_search_form(); ?>
-
     </div><!-- main content END! -->
 
     <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
