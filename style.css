@@ -1148,6 +1148,10 @@ EXTERNAL libraries look-n-feel
 	WORDPRESS COMMENTS
 
 *****************************************/
+.comments-wrapper {
+	margin-top: 15px;
+}
+
 .pings {
 	list-style-type: none;
 	border-bottom: 0px solid rgba(0, 0, 0, 0.1);
