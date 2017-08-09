@@ -1178,7 +1178,12 @@ ul.commentlist {
     padding-left: 15px;
 }
 
-.comment-respond,
+.comment-respond {
+    padding: 15px;
+	overflow: hidden;
+	border: 0;	
+}
+
 .entry-pings,
 .comment-body {
     padding: 15px;
