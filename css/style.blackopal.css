@@ -231,3 +231,17 @@ ul.children {
 .cat-links-hr {
 	border: 0px !important;
 }
+
+#wp-calendar caption {
+	color: white !important;
+}
+
+#wp-calendar tbody td {
+	background-color: black !important;
+}
+
+#wp-calendar tbody td:hover,
+#wp-calendar tbody td a:hover {
+	background-color: #3f3f3f !important;
+	color: white !important;
+}
