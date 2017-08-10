@@ -234,3 +234,13 @@ ul.children {
 #wp-calendar caption {
 	color: #ec008c !important;
 }
+
+#wp-calendar tbody td {
+	background-color: black !important;
+}
+
+#wp-calendar tbody td:hover,
+#wp-calendar tbody td a:hover {
+	background-color: #ec008c !important;
+	color: white !important;
+}
