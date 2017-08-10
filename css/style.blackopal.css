@@ -232,6 +232,10 @@ ul.children {
 	border: 0px !important;
 }
 
+#wp-calendar caption {
+	color: white !important;
+}
+
 #wp-calendar tbody td {
 	background-color: black !important;
 }
