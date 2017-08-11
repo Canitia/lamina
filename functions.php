@@ -523,7 +523,7 @@ add_action( 'customize_register', 'canitia_customizer' );
 
 
 
-function change_logo_class( $html ) {
+function canitia_change_logo_class( $html ) {
 
     $html = str_replace( 'custom-logo', 'brand-logo', $html );
 
@@ -546,7 +546,7 @@ function canitia_setup() {
 }
 
 add_action( 'after_setup_theme', 'canitia_setup' );
-add_filter( 'get_custom_logo', 'change_logo_class' );
+add_filter( 'get_custom_logo', 'canitia_change_logo_class' );
 
 load_theme_textdomain( 'canitia', get_template_directory().'/languages' );
 
