@@ -237,15 +237,6 @@ function canitia_customizer( $wp_customize ) {
         )
     );
 
-    $wp_customize->add_section(
-        'settings_section_canitia_labs',
-        array(
-            'title' =>  __('Canitia Labs', 'canitia'),
-            'description' => __('Experimental Canitia Labs features.', 'canitia'),
-            'priority' => 200,
-        )
-    );
-
 	$wp_customize->add_setting(
 		'display_featured_content',
 		array(
