@@ -11,7 +11,6 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 - Today section - showing all posts of today in a seperate section
 - Custom tag, category, author, search and error pages. 
 - Custom **Canitia Settings** - update your settings straight from the WordPress Customizer.
-- Custom **Canitia Labs** - for early feature testing and usage. Use at your own risk ;).
 - **Translation support** - includes English and Dutch languages
 
 # Canitia Settings - theme specific custom options
