@@ -10,7 +10,7 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 - **Theme Presets** - pick your theme color from the theme presets. Presets include the default Grey Wolf (light mode/grey), Pink Ruby (light mode/pink), Pink Melanite (dark mode/pink), Black Opal (dark mode/grey), Blue Sapphire (light mode/blue) or Brown Sinhalite (light mode/brown)
 - Today section - showing all posts of today in a seperate section
 - Custom tag, category, author, search and error pages. 
-- Custom **Canitia Settings**
+- Custom **Canitia Settings** - update your settings straight from the WordPress Customizer.
 - Custom **Canitia Labs** - for early feature testing and usage. Use at your own risk ;).
 - **Translation support** - includes English and Dutch languages
 
