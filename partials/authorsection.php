@@ -9,9 +9,8 @@
     <br />
     <?php echo nl2br(get_the_author_meta('description'));  ?>
     </p>
- <?php  } /* end author meta */ else {
-     _e('Please fill in a author description to show the author section or disable it from the Canitia Settings. ', 'canitia');
- }
-
+ <?php  } /* end author meta */ else { ?>
+     <p class="text-center"> <?php _e('Please fill in a author bio to show the author section or disable it from the Canitia Settings.', 'canitia' ) ;?> </p>
+ <?php }
 ?>
 </section>
