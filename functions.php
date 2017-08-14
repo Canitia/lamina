@@ -280,7 +280,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'show_author_section',
 		array(
-			'default' => 'showauthor',
+			'default' => 'hideauthor',
 			'sanitize_callback' => 'canitia_sanitize_select',
 		)
 	);
