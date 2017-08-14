@@ -515,6 +515,7 @@ ul.pings.commentlist {
 .categorylist a {
 	text-decoration: underline;
 	font-weight: 600;
+	font-size: 14px;
 }
 
 .post-content a:hover,
