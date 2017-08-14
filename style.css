@@ -494,6 +494,10 @@ ul.pings.commentlist {
   ARTICLE: TAGS/CATEGORY look-n-feel
 
 *****************************************/
+.cat-links {
+	margin-top: 45px;
+}
+
 
 .cat-links-hr {
 	margin-top:7px;
