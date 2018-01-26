@@ -275,9 +275,6 @@ strong {
 *****************************************/
 
 .navbar {
-	border-bottom: 1px solid #ebebeb;
-	padding: 0;
-	background-color: white;
 	background: #FF4500 !important;
 }
 
@@ -305,13 +302,9 @@ strong {
     font-weight: 600;
 }
 
-.menu-item:hover {
-    background-color: #ebebeb;
-}
-
 .menu-item > a:hover {
-	text-decoration: underline;
-	color: black;
+	text-decoration: none;
+	color: #f9f9f9;
 }
 
 .menu-item > ul > .menu-item {
@@ -1061,13 +1054,6 @@ footer p {
 
 	.carousel-item {
 		height: 300px;
-	}
-
-	.menu-item {
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 20px;
-    	padding-bottom: 20px;
 	}
 
 	.sidebar {
