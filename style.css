@@ -361,7 +361,7 @@ strong {
 .text-left-title-featured-sidebar {
 	font-size: 125% !important;
 	font-weight: 300;
-	color: #979797;
+	color: #d33900;
 	text-transform: uppercase;
 }
 
@@ -420,7 +420,7 @@ article > h1:first-child {
 }
 
 .widget > ul > li:hover {
-	background-color: #ebebeb;
+	background-color: #d33900;
 }
 
 /* ######################################
@@ -687,18 +687,19 @@ img.avatar {
 }
 
 .pagination > ul > li {
-	background-color: #ebebeb;
+	background-color: #FF4500;
 	float: left;
 	list-style: none;
 	padding: 15px;
+	font-weight: 600;
 }
 
 .pagination > ul > li:hover {
-	background-color: #d3d3d3;
+	background-color: #d33900;
 }
 
 .pagination > ul > li.active {
-	background-color: #d3d3d3 !important;
+	background-color: #d33900 !important;
 }
 
 .pagination > ul > li.pagination-dash {
@@ -1283,6 +1284,7 @@ EXTERNAL libraries look-n-feel
 .fa-clock-o, 
 .fa-user {
 	margin-right: 10px;
+	color: #d33900;
 }
 
 .fa-user {
@@ -1407,7 +1409,7 @@ ul.children {
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
-    background-color:#979797;
+    background-color:#FF4500 !important;
     border: none;
     border-radius: 3px;
 	padding-left: 15px;
@@ -1437,7 +1439,7 @@ ul.children {
     font-size: 80% !important;
     float: right;
 	cursor: pointer;
-    background-color:#979797;
+    background-color:#FF4500 !important;
     border: none;
     border-radius: 3px;
     padding: 5px;
