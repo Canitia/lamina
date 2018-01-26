@@ -574,7 +574,7 @@ ul.pings.commentlist {
 
 .cat-links > a:hover {
 	text-decoration: underline;
-	color: #979797;
+	color: #FF4500;
 }
 
 .tagslist,
@@ -592,7 +592,7 @@ ul.pings.commentlist {
 .post-content a:hover,
 .tagslist a:hover,
 .categorylist a:hover {
-	color: #979797;
+	color: #FF4500;
 }
 
 /* **************************************
