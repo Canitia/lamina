@@ -95,7 +95,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 300 !important;
+}
+
+h1 {
+	font-size: 3.2rem !important;
+}
+
+h2 {
+	font-size: 2.9rem !important;
+}
+
+h3 {
+	font-size: 2.6rem !important;
 }
 
 .flex-grow {
