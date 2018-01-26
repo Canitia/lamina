@@ -539,6 +539,7 @@ ul.pings.commentlist {
 .pagination-within li { 
 	background-color: #d33900;
 	color:black;
+	font-weight: 600;
 }
 
 .pagination-within > a > li {
