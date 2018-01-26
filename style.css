@@ -48,7 +48,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     top: 50px;
     z-index: 10;
     padding: 10px !important;
-    background-color: #E39B00;
+    background-color: #FF4500 !important;
     font-weight: bold;
     opacity: 0.9;
     color: darkslategrey;
@@ -454,17 +454,6 @@ POST/ARTICLE HEADERS
 	width: 100%;
 }
 
-.badge-date {
-	float:right;
-	position:absolute;
-	top: 20px;
-	right: 0;
-	z-index: 2;
-	padding: 7px;
-	text-transform: uppercase;
-	color: white;
-}
-
 .archive-image {
 	object-fit: cover;
 	height: 150px;
@@ -483,6 +472,8 @@ POST/ARTICLE HEADERS
 .post-content {
 	margin-top: 15px;
 	margin-bottom: 35px;
+	border-top: 1px solid #ebebeb;
+    padding-top: 30px;
 }
 
 .post-content > ul li, 
@@ -784,18 +775,7 @@ footer p {
 	img.brand-logo {
 		display: none;
 	}
-
-
-	.badge-date {
-		display: block;
-	}
-
-	.truncate {
-		white-space: normal;
-		overflow: auto;
-		text-overflow: inherit;
-	}
-
+	
 	.navbar {
 		padding: 10px;
 	}
@@ -842,7 +822,7 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-left: 5px;
+		padding-left: 15px;
 		padding-right: 5px;
 		margin-left: 5px;
 	}
@@ -915,7 +895,7 @@ footer p {
 	}
 
 	.caption-image {
-		font-size: 1em !important;
+		font-size: 1.1em !important;
 	}	
 }
 
@@ -951,7 +931,7 @@ footer p {
 	}
 
 	.caption-image {
-		font-size: 1em !important;
+		font-size: 1.3em !important;
 	}
 
 	.carousel-item {
@@ -980,7 +960,7 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-left: 0px;
+		padding-left: 15px;
 		padding-right: 5px;
 		margin-left: 5px;
 	}
@@ -1045,7 +1025,7 @@ footer p {
 @media (min-width: 768px) and (max-width: 991px) {
 
 	.caption-image {
-		font-size: 1.2em !important;
+		font-size: 1.5em !important;
 	}
 
 	.collection>.post-errortext>.fa-circle {
@@ -1067,7 +1047,7 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-left: 0px;
+		padding-left: 15px;
 		padding-right: 5px;
 	}
 
@@ -1126,7 +1106,7 @@ footer p {
 @media (min-width: 992px) and (max-width: 1199px) { 
 
 	.caption-image {
-		font-size: 1.2em !important;
+		font-size: 2em !important;
 	}
 
 	.carousel-item {
@@ -1139,7 +1119,7 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-left: 0px;
+		padding-left: 15px;
 		padding-right: 5px;
 	}
 
@@ -1191,7 +1171,7 @@ footer p {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.caption-image {
-		font-size: 1.3em !important;
+		font-size: 2.3em !important;
 	}
 
 	.carousel-item {
