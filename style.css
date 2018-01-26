@@ -733,6 +733,9 @@ footer p {
 *****************************************/
 
 @media (max-width: 575px) {  
+	.container-fluid {
+		padding: 0 !important;
+	}
 
 	h1 {
 		font-size: 2em !important;
@@ -784,15 +787,12 @@ footer p {
 	.collection-item > a > p
  	{
 		padding-top:10px;
-		margin-left: 10px;
 		line-height: normal;
 	}
 
 	.collection-item {
 		padding-left: 0;
 		line-height: 0;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 
 	.collection>.post-errortext>.fa-circle {
@@ -822,7 +822,7 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-left: 15px;
+		padding-left: 0;
 		padding-right: 5px;
 		margin-left: 5px;
 	}
@@ -960,7 +960,7 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-left: 15px;
+		padding-left: 0;
 		padding-right: 5px;
 		margin-left: 5px;
 	}
@@ -1047,7 +1047,7 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-left: 15px;
+		padding-left: 0;
 		padding-right: 5px;
 	}
 
@@ -1119,7 +1119,7 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-left: 15px;
+		padding-left: 0;
 		padding-right: 5px;
 	}
 
@@ -1255,6 +1255,7 @@ EXTERNAL libraries look-n-feel
 .fa-list,
 .fa-tags {
 	margin-right: 10px;
+	color: #d33900;
 }
 
 .fa-calendar {
