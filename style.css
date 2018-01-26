@@ -22,7 +22,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .post-item-main {
 	margin-top: 5px;
     margin-bottom: 30px;
-	height: 216px !important;
+	height: 235px !important;
 	overflow:hidden;
 }
 
@@ -47,11 +47,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .homepage-image {
-	border: 5px solid #ebebeb;
-	max-width: 100%;
-	width: 100%;
-	object-fit: cover;
-	filter: brightness(50%);
+    border: 5px solid #ebebeb;
+    max-width: 100%;
+    width: 100% !important;
+    object-fit: cover !important;
+    filter: brightness(50%);
+    height: 205px;
 }
 
 .homepage-image-featured {

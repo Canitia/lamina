@@ -40,7 +40,7 @@
               <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail()  && is_sticky() ) {
 
-                    the_post_thumbnail( 'thumbnail', array( 'class' => 'homepage-image post-featured' ) );                
+                    the_post_thumbnail( 'thumbnail', array( 'class' => 'homepage-image homepage-image-featured' ) );                
               }
                 elseif ( has_post_thumbnail() && !is_sticky() ) {
                   the_post_thumbnail( 'thumbnail', array( 'class' => 'homepage-image' ) );                  
