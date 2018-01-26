@@ -19,7 +19,7 @@
 
 <!-- start of the actual header -->
 <header>
-<nav class="navbar navbar-toggleable-sm navbar-light">
+<nav class="navbar navbar-expand-sm navbar-light">
         <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,6 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-
 
 </header>
 
