@@ -380,6 +380,14 @@ strong {
 	background-color: #FF4500 !important;
 }
 
+.collection-item > a > p:hover {
+	color: white;
+}
+
+.collection-item > a:hover {
+    text-decoration: none;
+}
+
 .main-content > .text-left-title, 
 article > h1:not(:first-child), 
 article > h2, 
