@@ -367,8 +367,6 @@ strong {
 .text-left-title-featured-sidebar {
 	font-size: 125% !important;
 	font-weight: 300;
-    margin-top: 10px;
-	border-bottom: 1px solid #f8f8f8;
 	color: #979797;
 	text-transform: uppercase;
 }
@@ -853,7 +851,6 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-bottom: 15px;
 		padding-left: 5px;
 		padding-right: 5px;
 		margin-left: 5px;
@@ -992,7 +989,6 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-bottom: 15px;
 		padding-left: 0px;
 		padding-right: 5px;
 		margin-left: 5px;
@@ -1087,7 +1083,6 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-bottom: 15px;
 		padding-left: 0px;
 		padding-right: 5px;
 	}
@@ -1160,7 +1155,6 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-bottom: 15px;
 		padding-left: 0px;
 		padding-right: 5px;
 	}
@@ -1239,7 +1233,6 @@ footer p {
 
 	.text-left-title-featured-sidebar {
 		padding-top: 15px;
-		padding-bottom: 15px;
 		padding-left: 0px;
 		padding-right: 5px;
 	}
