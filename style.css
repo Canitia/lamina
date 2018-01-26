@@ -14,6 +14,79 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+
+.post-item-main > a {
+	color: white;
+}
+
+.post-item-main {
+	margin-top: 5px;
+    margin-bottom: 30px;
+	height: 216px !important;
+	overflow:hidden;
+}
+
+.badge {
+	background: #ebebeb;
+	font-weight: 500;
+	color: black;
+}
+
+.badge-featured {
+    position: relative;
+    top: 50px;
+    z-index: 10;
+    padding: 16px !important;
+    background-color: #E39B00;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    font-weight: bold;
+    opacity: 0.9;
+    color: darkslategrey;
+    margin-right: 5px;
+}
+
+.homepage-image {
+	border: 5px solid #ebebeb;
+	max-width: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(50%);
+}
+
+.homepage-image-featured {
+	border: 0 !important;
+}
+
+.post-featured {
+	filter: brightness(80%) !important;
+	border: 5px solid #E39B00 !important;
+	margin-top: -5px;
+}
+
+.caption-image {
+	text-align: center;
+	position: relative;
+	bottom: 140px;
+	font-size: 1.5em !important;
+	overflow:hidden;
+	padding: 5px;
+	color: white;
+}
+
+.caption-image:hover {
+	font-weight: 700 !important;
+}
+
+
+
+
+
+
+
+
+
+
 /* **************************************
 
   GENERAL FONT / ELEMENT
@@ -270,13 +343,6 @@ strong {
 	border-bottom: 1px solid #f8f8f8;
 	color: #979797;
 	text-transform: uppercase;
-}
-
-.badge {
-	margin-right: 10px;
-	right: 0;
-	position: absolute;
-	color: black;
 }
 
 /* all list items */
@@ -675,9 +741,6 @@ footer p {
 		display: none;
 	}
 
-	.badge {
-		display: none !important;
-	}
 
 	.badge-date {
 		display: block;
@@ -750,10 +813,7 @@ footer p {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-	
-	.badge {
-		margin-right: 5px;
-	}
+
 
 	.post-content, 
 	.post-errortext,

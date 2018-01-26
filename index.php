@@ -6,102 +6,53 @@
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
   <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
-    <?php 
-    if ( get_theme_mod( 'display_today_list', 'hidetoday' ) == 'showtoday' ) : //show today section or not
-
-      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-      if ($paged < 2) {    //only show today section on page 1
-      ?>
- 
-      <h1 class="text-left-title-featured-sidebar"><?php _e('Today', 'canitia'); ?></h1>
-      <?php } ?>
-      <div class="collection">
-      <?php
-
-        $lastweek_args = array(
-          'post_type'      => 'post',
-          'post_status'    => 'publish',
-          'orderby'        => 'date',
-          'order'          => 'DESC',
-          'ignore_sticky_posts' => 1,
-          'date_query'     => array(
-                                      array(             
-                                        'after' => '1 day ago'
-                                      )
-                                )
-        );
-        $lastweek_query = new WP_Query( $lastweek_args );
-
-        if ( $lastweek_query->have_posts() ) {
-          
-          while ( $lastweek_query->have_posts() ) {
-            $lastweek_query->the_post();
-            ?>
-          <div class="collection-item">
-          <a href="<?php the_permalink(); ?>">
-              <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
-                <span class="badge float-right">
-                <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
-              </span> 
-              </p>
-          </a>
-          </div>
-            <?php
-          
-          
-        } ?>
-                </div> <!-- end first collection -->
-        <?php } else { ?>
-              <p class="post-errortext"><i class="fa fa-circle" aria-hidden="true"></i><?php  _e('It seems there are no posts today.', 'canitia'); ?></p>
-          </div> <!-- end first collection -->
-        <?php     
-        }
-
-        wp_reset_postdata(); 
-
-        ?>
         
-      <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'canitia');?></h1>            
-  <?php endif; ?>
+      <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>            
 
-  <!-- end today section -->
-  
+
   <!-- show the right header item -->
-  <?php 
-  if ( get_theme_mod( 'display_today_list', 'hidetoday' ) == 'hidetoday' ) :   ?>
-      
-      <?php if ($paged <= 1) { ?>
-       <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>        
-      <?php }
-      else { ?>
-        <h1 class="text-left-title-featured-sidebar"><?php _e('Older posts', 'canitia');?></h1> 
-      <?php }
-      ?>    
- <?php endif;?>
- 
-
-  <div class="collection">
+     <div class="row">
       <?php
-      $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'ignore_sticky_posts' => 1, 'paged' => $paged,
-              'date_query'     => array(
-                                      array(
-                                        'column' => 'post_date_gmt',              
-                                        'before' => '1 day ago'
-
-                                      )
-                                )    
-      ); 
+      $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'paged' => $paged ); 
       $main_query = new WP_Query( $args );
       if ( $main_query->have_posts() ) : 
         while ( $main_query->have_posts() ) : $main_query->the_post(); ?>
-          <div class="collection-item">
-          <a href="<?php the_permalink(); ?>">
-              <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
-                <span class="badge">
-                <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
-              </span> 
-              </p>
-          </a>
+          <div class="col col-sm-12 col-md-6 col-lg-4 post-item-main">
+
+          <?php
+
+          if ( is_sticky() ) { ?>
+                      <span class="badge-featured">
+                        Featured
+                      </span>
+          <?php
+          } elseif ( !is_sticky() ) {?>
+          <span class="badge">
+                        <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
+                      </span>
+
+          <?php }
+
+          ?>
+
+
+
+              <a href="<?php the_permalink(); ?>">
+              <?php if ( has_post_thumbnail()  && is_sticky() ) {
+
+                    the_post_thumbnail( 'thumbnail', array( 'class' => 'homepage-image post-featured' ) );                
+              }
+                elseif ( has_post_thumbnail() && !is_sticky() ) {
+                  the_post_thumbnail( 'thumbnail', array( 'class' => 'homepage-image' ) );                  
+                }
+
+                 else { ?>
+                <img src="<?php bloginfo('template_directory'); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="homepage-image" />
+                <?php } ?>
+
+                  <h2 class="caption-image"><?php the_title(); ?></h2>
+            </a>
+
           </div>
           <?php endwhile; else: ?>
           <div class="post-content">

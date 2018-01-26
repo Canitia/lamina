@@ -246,14 +246,6 @@ function canitia_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'display_today_list',
-		array(
-			'default' => 'hidetoday',
-			'sanitize_callback' => 'canitia_sanitize_select',
-		)
-	);
-
-	$wp_customize->add_setting(
 		'sidebar_position',
 		array(
 			'default' => 'right',
@@ -302,16 +294,6 @@ function canitia_customizer( $wp_customize ) {
 			'showslider' => __('Show Slider', 'canitia'),
 			'showfeatured' => __('Show Featured Row', 'canitia'),
 			'hidefeatured' => __('Hide all', 'canitia'),
-		),
-	) );
-
-	$wp_customize->add_control( 'display_today_list', array(
-		'label' => __('Today section', 'canitia'),
-		'section' => 'settings_section_canitia',
-		'type' => 'radio',
-		'choices' => array(
-			'showtoday' => __('Show Today section', 'canitia'),
-			'hidetoday' => __('Hide Today section', 'canitia'),
 		),
 	) );
 
