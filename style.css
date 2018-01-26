@@ -14,6 +14,11 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+.row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
 .col {
 	flex-basis: unset !important;
 }
