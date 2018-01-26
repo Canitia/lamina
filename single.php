@@ -21,10 +21,10 @@
     <div <?php post_class(); ?>>
         <article>
             <h1 class="text-center"><?php the_title(); ?></h1>
-          <div class="post-subitems text-center">
+          <small class="post-subitems text-center text-muted d-block">
             <i class="fa fa-clock-o"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
-        </div>
+        </small>
 
         <div class="post-content">
             <?php the_content(); ?>

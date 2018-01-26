@@ -56,12 +56,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .homepage-image {
-    border: 5px solid #ebebeb;
     max-width: 100%;
     width: 100% !important;
     object-fit: cover !important;
     filter: brightness(50%);
-    height: 205px;
+	height: 205px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .homepage-image-featured {
@@ -435,11 +436,7 @@ POST/ARTICLE HEADERS
 
 ##########################################*/
 .post-subitems {
-	padding-bottom: 35px;
-	margin-bottom: 35px;
-	font-weight: 600;
-    font-size: 0.9em;
-	border-bottom: 1px solid #ebebeb;
+
 }
 
 .post-subitems > a
@@ -1142,7 +1139,7 @@ footer p {
 @media (min-width: 992px) and (max-width: 1199px) { 
 
 	.caption-image {
-		font-size: 1.5em !important;
+		font-size: 1.2em !important;
 	}
 
 	.carousel-item {
@@ -1207,7 +1204,7 @@ footer p {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.caption-image {
-		font-size: 1.5em !important;
+		font-size: 1.3em !important;
 	}
 
 	.carousel-item {

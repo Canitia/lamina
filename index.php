@@ -13,13 +13,14 @@
   <div class="row">
   <!-- show the right header item -->
 
-      <?php
+     <?php
       $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'paged' => $paged ); 
       $main_query = new WP_Query( $args );
       if ( $main_query->have_posts() ) : 
         while ( $main_query->have_posts() ) : $main_query->the_post(); ?>
           <div class="col col-sm-12 col-md-6 col-lg-6 post-item-main">
 
+          
           <?php
 
           if ( is_sticky() ) { ?>
