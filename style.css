@@ -431,6 +431,7 @@ POST/ARTICLE HEADERS
 .post-subitems > a:hover
 {
 	text-decoration: underline;
+	color: #FF4500;
 }
 
 /* **************************************
