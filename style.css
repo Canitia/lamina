@@ -328,15 +328,6 @@ strong {
   SLIDER LOOK-N-FEEL
 
 *****************************************/
-.carousel {
-	background-color: black;
-}
-
-.carousel-item {
-	object-fit: cover;
-	justify-content: center;
-}
-
 .carousel:hover {
 	filter: grayscale(30%);
 }
@@ -770,11 +761,6 @@ footer p {
 		padding-right:0;
 	}
 
-	.carousel-item {
-		height: auto;
-		max-height: 250px;
-	}
-
 	img.brand-logo {
 		display: none;
 	}
@@ -934,9 +920,6 @@ footer p {
 		font-size: 1.3em !important;
 	}
 
-	.carousel-item {
-		height: 300px;
-	}
 
 	img.brand-logo {
 		display: none;
@@ -1033,10 +1016,6 @@ footer p {
 		margin-left: 5px;
 	}
 
-	.carousel-item {
-		height: 300px;
-	}
-
 	.sidebar {
 		margin-bottom: 20px;
 	}
@@ -1109,10 +1088,6 @@ footer p {
 		font-size: 2em !important;
 	}
 
-	.carousel-item {
-		height: 400px;
-	}
-
 	.sidebar {
 		margin-bottom: 20px;
 	}
@@ -1172,10 +1147,6 @@ footer p {
 @media (min-width: 1200px) { 
 	.caption-image {
 		font-size: 2.3em !important;
-	}
-
-	.carousel-item {
-		height: 500px;
 	}
 
 	.container-fluid {
