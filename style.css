@@ -278,6 +278,7 @@ strong {
 	border-bottom: 1px solid #ebebeb;
 	padding: 0;
 	background-color: white;
+	background: #FF4500 !important;
 }
 
 .navbar-brand {
@@ -300,7 +301,7 @@ strong {
 
 .menu-item > a {
 	color: black;
-	font-size: 14px;
+	font-size: 16px;
     font-weight: 600;
 }
 
