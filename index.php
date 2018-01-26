@@ -9,15 +9,15 @@
         
       <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>            
 
-
+  <div class="row">
   <!-- show the right header item -->
-     <div class="row">
+
       <?php
       $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'paged' => $paged ); 
       $main_query = new WP_Query( $args );
       if ( $main_query->have_posts() ) : 
         while ( $main_query->have_posts() ) : $main_query->the_post(); ?>
-          <div class="col col-sm-12 col-md-6 col-lg-4 post-item-main">
+          <div class="col col-sm-12 col-md-6 col-lg-6 post-item-main">
 
           <?php
 
@@ -40,10 +40,10 @@
               <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail()  && is_sticky() ) {
 
-                    the_post_thumbnail( 'thumbnail', array( 'class' => 'homepage-image homepage-image-featured' ) );                
+                    the_post_thumbnail( 'medium', array( 'class' => 'homepage-image homepage-image-featured' ) );                
               }
                 elseif ( has_post_thumbnail() && !is_sticky() ) {
-                  the_post_thumbnail( 'thumbnail', array( 'class' => 'homepage-image' ) );                  
+                  the_post_thumbnail( 'medium', array( 'class' => 'homepage-image' ) );                  
                 }
 
                  else { ?>
@@ -64,8 +64,8 @@
               wp_reset_postdata(); 
       ?>
       
-  </div><!-- close collection 2 -->
 
+                 </div>
   <!-- navigation?-->
   <?php canitia_pagination_numeric_posts_nav(); ?>
 
