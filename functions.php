@@ -24,25 +24,25 @@ function canitia_theme_scripts() {
 	wp_enqueue_style( 'raleway', '//fonts.googleapis.com/css?family=Raleway:300,400,700' );
 	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
-	wp_enqueue_style( 'greywolf',  get_stylesheet_directory_uri(). '/style.css' );	
+	wp_enqueue_style( 'orange-sphalerite',  get_stylesheet_directory_uri(). '/style.css' );	
 
-	if ( get_theme_mod( 'theme_preset', 'greywolf' ) == 'pinkruby') :
+	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'pinkruby') :
 		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css' );
 	endif;
 
-	if ( get_theme_mod( 'theme_preset', 'greywolf' ) == 'blackopal') :
+	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'blackopal') :
 		wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css' );	
 	endif;
 
-	if ( get_theme_mod( 'theme_preset', 'greywolf' ) == 'pinkmelanite') :
+	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'pinkmelanite') :
 		wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css' );	
 	endif;
 
-	if ( get_theme_mod( 'theme_preset' , 'greywolf' ) == 'brownsinhalite') :
+	if ( get_theme_mod( 'theme_preset' , 'orange-sphalerite' ) == 'brownsinhalite') :
 		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css' );	
 	endif;
 
-	if ( get_theme_mod( 'theme_preset' , 'greywolf' ) == 'bluesapphire') :
+	if ( get_theme_mod( 'theme_preset' , 'orange-sphalerite' ) == 'bluesapphire') :
 		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css' );	
 	endif;
 }
@@ -282,7 +282,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'theme_preset',
 		array(
-			'default' => 'greywolf',
+			'default' => 'orange-sphalerite',
 			'sanitize_callback' => 'canitia_sanitize_select',
 			'settings' => 'theme_preset',
 		)
@@ -344,7 +344,7 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'colors',
 		'type' => 'radio',
 		'choices' => array(
-			'default' => __('Grey Wolf (default)', 'canitia'),
+			'default' => __('Orange Sphalerite (default)', 'canitia'),
 			'pinkruby' => __('Pink Ruby', 'canitia'),
 			'pinkmelanite' => __('Pink Melanite', 'canitia'),
 			'blackopal' => __('Black Opal', 'canitia'),
