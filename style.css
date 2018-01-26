@@ -427,8 +427,11 @@ POST/ARTICLE HEADERS
 
 ##########################################*/
 .post-subitems {
-	margin-bottom: 50px;
+	padding-bottom: 35px;
+	margin-bottom: 35px;
 	font-weight: 600;
+    font-size: 0.9em;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .post-subitems > a

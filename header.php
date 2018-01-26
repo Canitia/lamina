@@ -19,8 +19,9 @@
 
 <!-- start of the actual header -->
 <header>
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-toggleable-sm navbar-light">
+        <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -28,17 +29,14 @@
         bloginfo('name');
      ?>
   </a>
-  <div class="collapse navbar-collapse" id="navbarNav">
-        <?php bootstrap_nav(); ?>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <?php bootstrap_nav(); ?>
   </div>
 </nav>
 
 
 </header>
-
-
-
-
 
 <?php //show slider
     if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {

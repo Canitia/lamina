@@ -13,12 +13,13 @@ if ( ! isset( $content_width ) ) {
  * Proper way to enqueue scripts and styles
  *  wp_enqueue_script( $handle, $source, $dependencies, $version,
  */
+
 function canitia_theme_scripts() {
 	wp_enqueue_script( 'tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js' );
 	wp_enqueue_style( 'bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css' );
 	wp_enqueue_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'slabo-27px', '//fonts.googleapis.com/css?family=Slabo+27px:400,700' );
-	wp_enqueue_style( 'raleway', '//fonts.googleapis.com/css?family=Raleway:300,400,700' );
+	wp_enqueue_style( 'raleway', '	//fonts.googleapis.com/css?family=Raleway:300,400,700' );
 	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
 	wp_enqueue_style( 'greywolf',  get_stylesheet_directory_uri(). '/style.css' );	
