@@ -19,6 +19,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	color: white;
 }
 
+.post-item-main > a:hover {
+	text-decoration: none;
+}
+
 .post-item-main {
 	margin-top: 5px;
     margin-bottom: 30px;
@@ -34,7 +38,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .badge-featured {
     position: relative;
-    top: 50px;
+	top: 15px;
     z-index: 10;
     padding: 16px !important;
     background-color: #E39B00;
@@ -68,7 +72,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .caption-image {
 	text-align: center;
 	position: relative;
-	bottom: 140px;
+	bottom: 130px;
 	font-size: 1.5em !important;
 	overflow:hidden;
 	padding: 5px;
@@ -76,7 +80,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .caption-image:hover {
-	font-weight: 700 !important;
+	font-weight: 600 !important;
 }
 
 
