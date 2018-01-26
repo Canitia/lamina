@@ -537,17 +537,17 @@ ul.pings.commentlist {
 }
 
 .pagination-within li { 
-	background-color: #d3d3d3;
+	background-color: #d33900;
 	color:black;
 }
 
 .pagination-within > a > li {
-	background-color: #ebebeb;
+	background-color: #FF4500;
 	color: black;
 }
 
 .pagination-within > a > li:hover {
-	background-color: #d3d3d3;
+	background-color: #d33900;
 	color: black;
 }
 
