@@ -78,10 +78,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	text-align: center;
 	position: relative;
 	bottom: 130px;
-	font-size: 1.5em !important;
 	overflow:hidden;
 	padding: 5px;
 	color: white;
+	font-family: 'Raleway', sans-serif !important;
 }
 
 .caption-image:hover {
@@ -754,6 +754,30 @@ footer p {
 
 @media (max-width: 575px) {  
 
+	h1 {
+		font-size: 2em !important;
+	}
+
+	h2 {
+		font-size: 1.8em !important;
+	}
+
+	h3 {
+		font-size: 1.6em !important;
+	}
+
+	h4 {
+		font-size: 1.4em !important;
+	}
+
+	h5 {
+		font-size: 1.3em !important;
+	}
+
+	h6 {
+		font-size: 1.1em !important;
+	}
+
 	.site-title {
 		font-size: 125%;
 	}
@@ -817,6 +841,10 @@ footer p {
 	.wp-caption {
 		margin-left: auto !important;
 		margin-right: auto !important;
+	}
+
+	.caption-image {
+		font-size: 1em !important;
 	}
 
 	.alignleft, .alignright {
@@ -893,15 +921,50 @@ footer p {
 	.comment-body > ul li > ol li > ul li {
 		line-height: 25px;
 	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.caption-image {
+		font-size: 1em !important;
+	}	
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
+	h1 {
+		font-size: 2em !important;
+	}
+
+	h2 {
+		font-size: 1.8em !important;
+	}
+
+	h3 {
+		font-size: 1.6em !important;
+	}
+
+	h4 {
+		font-size: 1.4em !important;
+	}
+
+	h5 {
+		font-size: 1.3em !important;
+	}
+
+	h6 {
+		font-size: 1.1em !important;
+	}
+
 	.site-title {
 		font-size: 125%;
 	}
 
+	.caption-image {
+		font-size: 1em !important;
+	}
 
 	.carousel-item {
 		height: 300px;
@@ -985,10 +1048,18 @@ footer p {
 		line-height: 25px;
 	}
 
+	.sidebar {
+		display: none;
+	}
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+	.caption-image {
+		font-size: 1.2em !important;
+	}
 
 	.collection>.post-errortext>.fa-circle {
 		margin-right: 15px;
@@ -1075,6 +1146,10 @@ footer p {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
 
+	.caption-image {
+		font-size: 1.5em !important;
+	}
+
 	.carousel-item {
 		height: 400px;
 	}
@@ -1137,6 +1212,9 @@ footer p {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+	.caption-image {
+		font-size: 1.5em !important;
+	}
 
 	.carousel-item {
 		height: 500px;
