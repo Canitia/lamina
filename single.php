@@ -1,12 +1,9 @@
 <?php get_header(); ?>
 
 <?php
-    if ( is_single() || is_page() ) {
-
         if ( has_post_thumbnail() ) {
             the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
         }
-    }
 ?>
 
     <div class="row h-100 page-row">

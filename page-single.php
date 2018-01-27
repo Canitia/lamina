@@ -1,5 +1,10 @@
 <?php /* Template Name: Full-Width Page */ ?>
 <?php get_header();?>
+<?php
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+        }
+?>
 <div class="row h-100 page-row">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
