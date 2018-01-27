@@ -347,7 +347,7 @@ strong {
 
 *****************************************/
 .carousel:hover {
-	filter: grayscale(30%);
+	filter: brightness(80%) !important;
 }
 
 /* **************************************
@@ -490,12 +490,12 @@ POST/ARTICLE HEADERS
 }
 
 .carousel:hover, .archive-image:hover {
-	filter: grayscale(25%) !important;
+	filter: brightness(80%) !important;
 }
 
 .disabled-image, 
 .disabled-image:hover{
-	filter: grayscale(100%) !important;
+	filter: brightness(80%) !important;
 }
 
 .post-content {
