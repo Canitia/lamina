@@ -45,9 +45,9 @@
               <p class="card-text"><?php the_excerpt(); ?></p>
               <a href="<?php the_permalink(); ?>" class="btn btn-primary read-more-btn"><?php _e('Read', 'canitia');?></a>
               <?php if ( !is_sticky() ) {?>
-                <span class="badge">
+                <small class="text-muted badge">
                               <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
-                            </span>
+              </small>
 
                 <?php }
 
