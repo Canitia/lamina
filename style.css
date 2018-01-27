@@ -886,10 +886,6 @@ footer p {
 		line-height: 25px;
 	}
 
-	.sidebar {
-		display: none;
-	}
-
 	.caption-image {
 		font-size: 1.1em !important;
 	}	
@@ -1006,10 +1002,6 @@ footer p {
 	.comment-body > ul li > ol li,
 	.comment-body > ul li > ol li > ul li {
 		line-height: 25px;
-	}
-
-	.sidebar {
-		display: none;
 	}
 
 }
