@@ -57,11 +57,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .homepage-image {
+	object-fit: cover;
     max-width: 100%;
     filter: brightness(50%);
 	height: 200px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .homepage-image-featured {
@@ -86,6 +85,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .caption-image:hover {
 	font-weight: 600 !important;
+}
+
+
+.spacer {
+    height: 30px;
+}
+
+.card-actions-bottom {
+    position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-right: 40px;
+	margin-bottom: 0;
 }
 
 /* **************************************
@@ -754,6 +766,10 @@ footer p {
 		padding-bottom: 30px;
 	}
 
+	.card-actions-bottom {
+		margin-bottom: 25px;
+	}
+
 	h1 {
 		font-size: 2em !important;
 	}
@@ -913,6 +929,10 @@ footer p {
 	.card {
 		border-bottom: 1px solid #ebebeb !important;
 		padding-bottom: 30px;
+	}
+
+	.card-actions-bottom {
+		margin-bottom: 25px;
 	}
 
 	h1 {
