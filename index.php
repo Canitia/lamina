@@ -9,12 +9,17 @@
         
       <?php if($paged <= 1) {
 
-        if ( is_archive() && !is_tag() ) { ?>
+        if ( is_archive() && !is_tag() && !is_author() ) { ?>
             <h1 class="text-left-title-featured-sidebar"><?php _e('Archive ', 'canitia');?> <strong><?php the_archive_title();?></strong></h1>  
         <?php }
         elseif ( is_tag() ) { ?>
             <h1 class="text-left-title-featured-sidebar"><?php _e('Posts tagged', 'canitia');?> <strong><?php single_tag_title(); ?></strong></h1>  
-        <?php }       
+        <?php } 
+        elseif ( is_author() ) {?>
+            <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts by', 'canitia'); ?> 
+            <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+              echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
+        <?php }      
         else { ?>
           <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>  
         <?php 
