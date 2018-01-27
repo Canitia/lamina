@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-27 11:16+0000\n"
+"POT-Creation-Date: 2018-01-27 18:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,43 +14,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: 404.php:9
+#: 404.php:19
 msgid "Error"
 msgstr ""
 
-#: 404.php:11
+#: 404.php:20
 msgid ""
 "This post/page doesnt exist anymore or has been renamed. Try searching for "
 "it."
 msgstr ""
 
-#: archive.php:2
-msgid "Archive "
+#: 404.php:23
+msgid "Return to the previous page"
 msgstr ""
 
-#: archive.php:9 author.php:21 category.php:19 index.php:51 search.php:36
-#: tag.php:20
-msgid "ago"
-msgstr ""
-
-#: archive.php:29
-msgid "Sorry, this archive is empty."
-msgstr ""
-
-#: author.php:10
-msgid "Latest posts by"
-msgstr ""
-
-#: author.php:30
-msgid "Sorry, there are no posts by this author."
-msgstr ""
-
-#: category.php:8
-msgid "Latest posts in"
-msgstr ""
-
-#: category.php:32
-msgid "Sorry, there are no posts in this category."
+#: 404.php:24
+msgid "Return to the homepage"
 msgstr ""
 
 #: comments.php:20
@@ -157,15 +136,31 @@ msgstr ""
 msgid "Blue Sapphire"
 msgstr ""
 
-#: index.php:11
+#: index.php:13
+msgid "Archive "
+msgstr ""
+
+#: index.php:16
+msgid "Posts tagged"
+msgstr ""
+
+#: index.php:19
+msgid "Latest posts by"
+msgstr ""
+
+#: index.php:24
 msgid "Latest"
 msgstr ""
 
-#: index.php:48
+#: index.php:71
 msgid "Read"
 msgstr ""
 
-#: index.php:62
+#: index.php:74 search.php:36
+msgid "ago"
+msgstr ""
+
+#: index.php:85
 msgid "Sorry, it seems there are no posts available."
 msgstr ""
 
@@ -210,14 +205,6 @@ msgstr ""
 #: searchform.php:11
 msgctxt "submit button"
 msgid "Go"
-msgstr ""
-
-#: tag.php:10
-msgid "Latest posts tagged"
-msgstr ""
-
-#: tag.php:30
-msgid "Sorry, no posts can be found within this tag."
 msgstr ""
 
 #: partials/authorsection.php:3

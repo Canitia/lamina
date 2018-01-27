@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-27 11:16+0000\n"
-"PO-Revision-Date: 2018-01-27 11:16+0000\n"
+"POT-Creation-Date: 2018-01-27 18:04+0000\n"
+"PO-Revision-Date: 2018-01-27 18:04+0000\n"
 "Last-Translator: Michael Boumann\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,54 +13,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:354
-msgid "Orange Sphalerite (default)"
-msgstr "Orange Sphalerite (standaard)"
+#: 404.php:23
+msgid "Return to the previous page"
+msgstr "Terug naar de vorige pagina"
 
-#: index.php:48
-msgid "Read"
-msgstr "Lees"
+#: 404.php:24
+msgid "Return to the homepage"
+msgstr "Terug naar de homepage"
 
-#: 404.php:9
+#: index.php:16
+msgid "Posts tagged"
+msgstr "Posts getagd"
+
+#: 404.php:19
 msgid "Error"
 msgstr "Foutmelding"
 
-#: 404.php:11
+#: 404.php:20
 msgid ""
 "This post/page doesnt exist anymore or has been renamed. Try searching for "
 "it."
 msgstr ""
 "Deze post/pagina bestaat niet meer of is van naam veranderd. Probeer het "
 "onderstaande zoekveld om uw post te vinden."
-
-#: archive.php:2
-msgid "Archive "
-msgstr "Archief"
-
-#: archive.php:9 author.php:21 category.php:19 index.php:51 search.php:36
-#: tag.php:20
-msgid "ago"
-msgstr "geleden"
-
-#: archive.php:29
-msgid "Sorry, this archive is empty."
-msgstr "Sorry, dit archief is leeg."
-
-#: author.php:10
-msgid "Latest posts by"
-msgstr "Laatste berichten van"
-
-#: author.php:30
-msgid "Sorry, there are no posts by this author."
-msgstr "Sorry, er zijn geen berichten van deze auteur."
-
-#: category.php:8
-msgid "Latest posts in"
-msgstr "Laatste berichten van"
-
-#: category.php:32
-msgid "Sorry, there are no posts in this category."
-msgstr "Sorry, er zijn geen posts in deze categorie. "
 
 #: comments.php:20
 msgid "Join the conversation"
@@ -142,6 +117,10 @@ msgstr "Verberg auteur sectie"
 msgid "Theme preset"
 msgstr "Thema preset"
 
+#: functions.php:354
+msgid "Orange Sphalerite (default)"
+msgstr "Orange Sphalerite (standaard)"
+
 #: functions.php:355
 msgid "Pink Ruby"
 msgstr "Pink Ruby"
@@ -162,11 +141,27 @@ msgstr "Brown Sinhalite"
 msgid "Blue Sapphire"
 msgstr "Blue Sapphire"
 
-#: index.php:11
+#: index.php:13
+msgid "Archive "
+msgstr "Archief"
+
+#: index.php:19
+msgid "Latest posts by"
+msgstr "Laatste berichten van"
+
+#: index.php:24
 msgid "Latest"
 msgstr "Laatste"
 
-#: index.php:62
+#: index.php:71
+msgid "Read"
+msgstr "Lees"
+
+#: index.php:74 search.php:36
+msgid "ago"
+msgstr "geleden"
+
+#: index.php:85
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
@@ -212,14 +207,6 @@ msgstr "Zoeken naar:"
 msgctxt "submit button"
 msgid "Go"
 msgstr "Gaan"
-
-#: tag.php:10
-msgid "Latest posts tagged"
-msgstr "Laatste berichten getagged met"
-
-#: tag.php:30
-msgid "Sorry, no posts can be found within this tag."
-msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
 
 #: partials/authorsection.php:3
 msgid "This article was written by "
