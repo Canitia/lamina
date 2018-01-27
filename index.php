@@ -10,7 +10,7 @@
       <?php if($paged <= 1) { ?>
       <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>            
       <?php } ?>
-  <div class="row">
+  <div class="row page-row">
   <!-- show the right header item -->
 
      <?php
