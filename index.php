@@ -91,8 +91,9 @@
           ?>
       
 
-                 </div>
-  <!-- navigation?-->
+   </div>
+   <hr />
+  <!-- pagination?-->
   <?php canitia_pagination_numeric_posts_nav(); ?>
 
 </div> <!-- close content main -->
