@@ -10,7 +10,7 @@
       <?php if($paged <= 1) {
 
         if ( is_archive() ) { ?>
-            <h1 class="text-left-title-featured-sidebar"><?php the_archive_title(); ?></h1>   
+            <h1 class="text-left-title-featured-sidebar"><?php _e('Archive ', 'canitia');?> <strong><?php the_archive_title();?></strong></h1>  
         <?php } else { ?>
           <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>  
         <?php 
@@ -21,10 +21,8 @@
   <!-- show the right header item -->
 
      <?php
-      $args = array( 'orderby'=> 'date', 'order' => 'DESC', 'paged' => $paged ); 
-      $main_query = new WP_Query( $args );
-      if ( $main_query->have_posts() ) : 
-        while ( $main_query->have_posts() ) : $main_query->the_post(); ?>
+     if ( have_posts() ) {
+    while ( have_posts() ) : the_post(); ?>
 
           <div class="card col col-sm-12 col-md-6">
           <a href="<?php the_permalink(); ?>">
@@ -64,15 +62,13 @@
           </div>     
 
       
-          <?php endwhile; else: ?>
+          <?php endwhile; } else { ?>
           <div class="post-content">
               <p><?php _e('Sorry, it seems there are no posts available.', 'canitia'); ?></p>
               <?php get_search_form(); ?>
           </div><!-- post-content END! -->
                 
-      <?php endif; 
-              wp_reset_postdata(); 
-      ?>
+          <?php } ?>
       
 
                  </div>
