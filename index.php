@@ -9,9 +9,12 @@
         
       <?php if($paged <= 1) {
 
-        if ( is_archive() ) { ?>
+        if ( is_archive() && !is_tag() ) { ?>
             <h1 class="text-left-title-featured-sidebar"><?php _e('Archive ', 'canitia');?> <strong><?php the_archive_title();?></strong></h1>  
-        <?php }      
+        <?php }
+        elseif ( is_tag() ) { ?>
+            <h1 class="text-left-title-featured-sidebar"><?php _e('Posts tagged', 'canitia');?> <strong><?php single_tag_title(); ?></strong></h1>  
+        <?php }       
         else { ?>
           <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>  
         <?php 
