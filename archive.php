@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <h1 class="text-left-title-featured-sidebar"><strong><?php _e('Archive ', 'canitia');?></strong> <?php the_archive_title();?></h1>
   <div <?php post_class(); ?>>
-  <div class="row">
+  <div class="row page-row">
          <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
                 <div class="col-sm-4">
