@@ -19,6 +19,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	margin-right: 0 !important;
 }
 
+.page-row {
+	max-width: 1200px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
 .col {
 	flex-basis: unset !important;
 }
@@ -1190,10 +1196,6 @@ footer p {
 @media (min-width: 1200px) { 
 	.caption-image {
 		font-size: 2.3em !important;
-	}
-
-	.container-fluid {
-		max-width:1250px;
 	}
 
 	.collection-item {

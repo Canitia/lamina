@@ -9,7 +9,7 @@
     }
 ?>
 
-    <div class="row h-100">
+    <div class="row h-100 page-row">
         <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
