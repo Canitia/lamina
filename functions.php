@@ -301,8 +301,7 @@ function canitia_customizer( $wp_customize ) {
 		'type' => 'radio',
 		'choices' => array(
 			'showslider' => __('Show Slider', 'canitia'),
-			'showfeatured' => __('Show Featured Row', 'canitia'),
-			'hidefeatured' => __('Hide all', 'canitia'),
+			'hidefeatured' => __('Hide', 'canitia'),
 		),
 	) );
 
