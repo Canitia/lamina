@@ -44,15 +44,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .badge-featured {
-    position: relative;
-    top: 50px;
+	position: absolute;
+    top: 30px;
+	left: 0px;
+	width: 100%;
     z-index: 10;
     padding: 10px !important;
     background-color: #FF4500 !important;
     font-weight: bold;
     opacity: 0.9;
     color: darkslategrey;
-    margin-right: 5px;
+	text-align: center;
 }
 
 .homepage-image {
@@ -253,6 +255,11 @@ strong {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.btn-primary {
+	border: 0 !important;
+	background-color: #d33900 !important;
 }
 
 .btn:hover, 
@@ -739,6 +746,11 @@ footer p {
 @media (max-width: 575px) {  
 	.container-fluid {
 		padding: 0 !important;
+	}
+
+	.card {
+		border-bottom: 1px solid #ebebeb !important;
+		padding-bottom: 30px;
 	}
 
 	h1 {
