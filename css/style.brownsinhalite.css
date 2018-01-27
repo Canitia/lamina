@@ -14,9 +14,8 @@ article a:hover {
 	border-bottom: 0 !important;
 }
 
-.navbar,
-.footer {
-    background: #654321 ;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+.navbar {
+    background: #654321 !important; 
 }
 
 .navbar-brand,
@@ -53,7 +52,7 @@ article > h1:first-child {
 	 color: white !important;
  }
 
- .btn, .comment-reply-link {
+ .btn, .comment-reply-link, .form-submit > input#submit, input.search-submit  {
 	 background-color: #652121 !important;
  }
 
@@ -95,6 +94,8 @@ article > h1:first-child {
 	color: white !important;
 }
 
+.fa-clock-o,
+.fa-user,
 .fa-circle,
 .fa-tags,
 .fa-list {
