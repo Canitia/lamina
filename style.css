@@ -38,7 +38,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .badge {
-	background: #ebebeb;
 	font-weight: 500;
 	color: black;
 }
@@ -257,9 +256,12 @@ strong {
   text-overflow: ellipsis;
 }
 
-.btn-primary {
+.read-more-btn {
 	border: 0 !important;
 	background-color: #d33900 !important;
+	font-weight: 600;
+	display: block;
+    float: right;
 }
 
 .btn:hover, 

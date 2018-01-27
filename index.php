@@ -40,7 +40,11 @@
                               Featured
                             </span>
                 <?php
-                } elseif ( !is_sticky() ) {?>
+                } ?>
+              <h2 class="card-title"><?php the_title(); ?></h2>
+              <p class="card-text"><?php the_excerpt(); ?></p>
+              <a href="<?php the_permalink(); ?>" class="btn btn-primary read-more-btn"><?php _e('Read', 'canitia');?></a>
+              <?php if ( !is_sticky() ) {?>
                 <span class="badge">
                               <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
                             </span>
@@ -48,9 +52,6 @@
                 <?php }
 
                 ?>
-              <h2 class="card-title"><?php the_title(); ?></h2>
-              <p class="card-text"><?php the_excerpt(); ?></p>
-              <a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php _e('Read', 'canitia');?></a>
             </div>
           </div>     
 
