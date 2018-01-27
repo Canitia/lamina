@@ -18,44 +18,43 @@
       $main_query = new WP_Query( $args );
       if ( $main_query->have_posts() ) : 
         while ( $main_query->have_posts() ) : $main_query->the_post(); ?>
-          <div class="col col-sm-12 col-md-6 col-lg-6 post-item-main">
 
-          
-          <?php
-
-          if ( is_sticky() ) { ?>
-                      <span class="badge-featured">
-                        Featured
-                      </span>
-          <?php
-          } elseif ( !is_sticky() ) {?>
-          <span class="badge">
-                        <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
-                      </span>
-
-          <?php }
-
-          ?>
-
-
-
-              <a href="<?php the_permalink(); ?>">
+          <div class="card col col-sm-12 col-md-6">
+          <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail()  && is_sticky() ) {
 
-                    the_post_thumbnail( 'medium', array( 'class' => 'homepage-image homepage-image-featured' ) );                
+                    the_post_thumbnail( 'medium', array( 'class' => 'card-img-top homepage-image homepage-image-featured' ) );                
               }
                 elseif ( has_post_thumbnail() && !is_sticky() ) {
-                  the_post_thumbnail( 'medium', array( 'class' => 'homepage-image' ) );                  
+                  the_post_thumbnail( 'medium', array( 'class' => 'card-img-top homepage-image' ) );                  
                 }
 
                  else { ?>
-                <img src="<?php bloginfo('template_directory'); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="homepage-image" />
+                <img src="<?php bloginfo('template_directory'); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="card-img-top homepage-image" />
                 <?php } ?>
 
-                  <h2 class="caption-image"><?php the_title(); ?></h2>
             </a>
+            <div class="card-block">
+                  <?php if ( is_sticky() ) { ?>
+                            <span class="badge-featured">
+                              Featured
+                            </span>
+                <?php
+                } elseif ( !is_sticky() ) {?>
+                <span class="badge">
+                              <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
+                            </span>
 
-          </div>
+                <?php }
+
+                ?>
+              <h2 class="card-title"><?php the_title(); ?></h2>
+              <p class="card-text"><?php the_excerpt(); ?></p>
+              <a href="<?php the_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>     
+
+      
           <?php endwhile; else: ?>
           <div class="post-content">
               <p><?php _e('Sorry, it seems there are no posts available.', 'canitia'); ?></p>

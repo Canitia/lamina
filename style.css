@@ -341,6 +341,16 @@ strong {
 
 *****************************************/
 
+.card {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 0 !important;
+}
+
+.card-title {
+	font-size: 150% !important;
+}
+
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
 	font-size: 125% !important;
