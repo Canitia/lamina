@@ -771,7 +771,11 @@ footer p {
 
 	.card-actions-bottom {
 		margin-bottom: 25px;
-		width: 98%;
+		width: 97%;
+	}
+
+	hr {
+		display: none;
 	}
 
 	h1 {
@@ -937,6 +941,10 @@ footer p {
 
 	.card-actions-bottom {
 		margin-bottom: 25px;
+	}
+
+	hr {
+		display: none;
 	}
 
 	h1 {
