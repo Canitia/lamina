@@ -456,10 +456,6 @@ article > h1:first-child {
 POST/ARTICLE HEADERS
 
 ##########################################*/
-.post-subitems {
-
-}
-
 .post-subitems > a
 {
 	text-decoration: none;
