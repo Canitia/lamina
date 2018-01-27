@@ -86,8 +86,8 @@ footer p {
     background: #3f3f3f !important;
 }
 
-.menu-item:hover {
-    background-color: #686868 !important;
+.menu-item a:hover {
+    color: #686868 !important;
 }
 
 .menu-item > a {
