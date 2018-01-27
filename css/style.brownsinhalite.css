@@ -27,8 +27,8 @@ footer p {
 	background-color: #654321;
 }
 
-.menu-item:hover {
-    background-color: #652121 !important;
+.menu-item a:hover {
+    color: black !important;
 }
 
 .menu-item > a {
@@ -42,6 +42,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .row-featured {
 
+}
+
+.badge-featured {
+	background: #652121 !important;
+	color: white !important;
 }
 
 article > h1:first-child {
@@ -100,6 +105,10 @@ article > h1:first-child {
 .fa-tags,
 .fa-list {
 	color: #656521 !important;	
+}
+
+.read-more-btn { 
+	color: white !important;
 }
 
 .text-muted {
