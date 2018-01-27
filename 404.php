@@ -21,10 +21,8 @@ function goBack() {
                 <div class="spacer"></div>
                 <div class="card-actions-bottom">
                   <a class="btn btn-primary read-more-btn" onclick="goBack()"><?php _e('Return to the previous page', 'canitia');?></a>
+                  <a class="btn btn-primary read-more-btn" href="/"><?php _e('Return to the homepage', 'canitia');?></a>
                 </div>
-                <p>
-                <?php get_search_form(); ?>
-                </p>
             </div>
           </div>  
 
