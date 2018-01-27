@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div class="row h-100">
+
 <?php
     if ( is_single() || is_page() ) {
 
@@ -9,7 +9,7 @@
     }
 ?>
 
-
+    <div class="row h-100">
         <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
