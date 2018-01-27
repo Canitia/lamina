@@ -277,7 +277,8 @@ strong {
 	background-color: #d33900 !important;
 	font-weight: 600;
 	display: block;
-    float: right;
+	float: right;
+	margin-right: 5px;
 }
 
 .btn:hover, 
