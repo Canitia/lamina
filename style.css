@@ -50,9 +50,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .badge-featured {
 	position: absolute;
-    top: 75px;
-	left: 0px;
-	width: 100%;
+    top: 15px;
+    right: 0px;
+    margin-right: 5px;
+    width: 40%;
     z-index: 10;
     padding: 10px !important;
     background-color: #FF4500 !important;
