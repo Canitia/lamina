@@ -86,7 +86,9 @@
               <?php get_search_form(); ?>
           </div><!-- post-content END! -->
                 
-          <?php } ?>
+          <?php }
+          wp_reset_postdata(); 
+          ?>
       
 
                  </div>
