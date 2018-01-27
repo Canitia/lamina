@@ -11,7 +11,8 @@
 
         if ( is_archive() ) { ?>
             <h1 class="text-left-title-featured-sidebar"><?php _e('Archive ', 'canitia');?> <strong><?php the_archive_title();?></strong></h1>  
-        <?php } else { ?>
+        <?php }      
+        else { ?>
           <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>  
         <?php 
         }          
