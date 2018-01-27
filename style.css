@@ -911,6 +911,11 @@ footer p {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
+	.card {
+		border-bottom: 1px solid #ebebeb !important;
+		padding-bottom: 30px;
+	}
+
 	h1 {
 		font-size: 2em !important;
 	}
