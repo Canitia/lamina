@@ -7,9 +7,16 @@
     <?php endif; ?>
   <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
         
-      <?php if($paged <= 1) { ?>
-      <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>            
-      <?php } ?>
+      <?php if($paged <= 1) {
+
+        if ( is_archive() ) { ?>
+            <h1 class="text-left-title-featured-sidebar"><?php the_archive_title(); ?></h1>   
+        <?php } else { ?>
+          <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>  
+        <?php 
+        }          
+       } ?>
+
   <div class="row page-row">
   <!-- show the right header item -->
 
