@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-14 21:31+0000\n"
+"POT-Creation-Date: 2018-01-27 11:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -28,8 +28,8 @@ msgstr ""
 msgid "Archive "
 msgstr ""
 
-#: archive.php:9 author.php:21 category.php:19 index.php:44 index.php:101
-#: search.php:36 tag.php:20
+#: archive.php:9 author.php:21 category.php:19 index.php:51 search.php:36
+#: tag.php:20
 msgid "ago"
 msgstr ""
 
@@ -57,135 +57,115 @@ msgstr ""
 msgid "Join the conversation"
 msgstr ""
 
-#: functions.php:70
+#: functions.php:79
 msgid "Primary"
 msgstr ""
 
-#: functions.php:71
+#: functions.php:80
 msgid "Main sidebar."
 msgstr ""
 
-#: functions.php:90
+#: functions.php:99
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:234
+#: functions.php:243
 msgid "Canitia Settings"
 msgstr ""
 
-#: functions.php:235
+#: functions.php:244
 msgid "Tweak Canitia to your liking."
 msgstr ""
 
-#: functions.php:298
+#: functions.php:299
 msgid "Featured content"
 msgstr ""
 
-#: functions.php:302
+#: functions.php:303
 msgid "Show Slider"
 msgstr ""
 
-#: functions.php:303
+#: functions.php:304
 msgid "Show Featured Row"
 msgstr ""
 
-#: functions.php:304
+#: functions.php:305
 msgid "Hide all"
 msgstr ""
 
-#: functions.php:309
-msgid "Today section"
-msgstr ""
-
-#: functions.php:313
-msgid "Show Today section"
-msgstr ""
-
-#: functions.php:314
-msgid "Hide Today section"
-msgstr ""
-
-#: functions.php:319
+#: functions.php:310
 msgid "Sidebar position"
 msgstr ""
 
-#: functions.php:323
+#: functions.php:314
 msgid "Left"
 msgstr ""
 
-#: functions.php:324
+#: functions.php:315
 msgid "Right"
 msgstr ""
 
-#: functions.php:329 functions.php:333
+#: functions.php:320 functions.php:324
 msgid "Show Tags"
 msgstr ""
 
-#: functions.php:334
+#: functions.php:325
 msgid "Hide Tags"
 msgstr ""
 
-#: functions.php:339 functions.php:343
+#: functions.php:330 functions.php:334
 msgid "Show Categories"
 msgstr ""
 
-#: functions.php:344
+#: functions.php:335
 msgid "Hide Categories"
 msgstr ""
 
-#: functions.php:349 functions.php:353
+#: functions.php:340 functions.php:344
 msgid "Show Author section"
 msgstr ""
 
-#: functions.php:354
+#: functions.php:345
 msgid "Hide Author section"
 msgstr ""
 
-#: functions.php:359
+#: functions.php:350
 msgid "Theme preset"
 msgstr ""
 
-#: functions.php:363
-msgid "Grey Wolf (default)"
+#: functions.php:354
+msgid "Orange Sphalerite (default)"
 msgstr ""
 
-#: functions.php:364
+#: functions.php:355
 msgid "Pink Ruby"
 msgstr ""
 
-#: functions.php:365
+#: functions.php:356
 msgid "Pink Melanite"
 msgstr ""
 
-#: functions.php:366
+#: functions.php:357
 msgid "Black Opal"
 msgstr ""
 
-#: functions.php:367
+#: functions.php:358
 msgid "Brown Sinhalite"
 msgstr ""
 
-#: functions.php:368
+#: functions.php:359
 msgid "Blue Sapphire"
 msgstr ""
 
-#: index.php:16
-msgid "Today"
-msgstr ""
-
-#: index.php:55
-msgid "It seems there are no posts today."
-msgstr ""
-
-#: index.php:64 index.php:77
-msgid "Older posts"
-msgstr ""
-
-#: index.php:74
+#: index.php:11
 msgid "Latest"
 msgstr ""
 
-#: index.php:108
+#: index.php:48
+msgid "Read"
+msgstr ""
+
+#: index.php:62
 msgid "Sorry, it seems there are no posts available."
 msgstr ""
 
