@@ -12,11 +12,7 @@ article a:hover {
 
 .navbar {
 	border-bottom: 0 !important;
-}
-
-.navbar,
-.footer {
-    background: #333399;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+	background: #333399 !important; 
 }
 
 .navbar-brand,
@@ -28,8 +24,8 @@ footer p {
 	background-color: #333399;
 }
 
-.menu-item:hover {
-    background-color: #3366cc !important;
+.menu-item a:hover {
+    color: #3366cc !important;
 }
 
 .menu-item > a {
@@ -53,22 +49,22 @@ article > h1:first-child {
 	 color: white !important;
  }
 
- .btn, .comment-reply-link {
+ .btn, .comment-reply-link, .form-submit > input#submit, input.search-submit {
 	 background-color: #3399ff !important;
- }
-
- .sticky {
-	 color: orange !important;
  }
 
  .badge {
 
  }
 
- .badge-date {
+ .badge-date, .badge-featured {
 	 color: white !important;
 	 background-color: #333399 !important;
  }
+
+ .read-more-btn {
+	color: white !important;
+}
 
 .search-submit {
 	color: white !important;
@@ -91,8 +87,10 @@ article > h1:first-child {
 	color: white !important;
 }
 
+.fa-clock-o,
+.fa-user,
 .fa-circle,
-.fa-tags,
+.fa-tag,
 .fa-list {
 	color: #333399 !important;	
 }
