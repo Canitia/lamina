@@ -49,6 +49,10 @@ q {
 	border-right: 1px solid #3f3f3f !important;
 }
 
+.card {
+	background: black !important;
+}
+
 .text-left-title-featured-sidebar,
 .collection-item,
 .widget > ul > li {
@@ -130,7 +134,7 @@ input.search-field::placeholder {
 	 color: white !important;
  }
 
- .btn, .comment-reply-link {
+ .btn, .comment-reply-link, .form-submit > input#submit, input.search-submit {
 	 background-color: #979797 !important;
  }
 
@@ -138,7 +142,8 @@ input.search-field::placeholder {
 	 color: white !important;
  }
 
- .badge-date {
+ .badge-date, .badge-featured {
+	color: white;
 	 background-color: #3f3f3f !important;
  }
 
@@ -163,6 +168,8 @@ input.search-field::placeholder {
 	color: white !important;
 }
 
+.fa-clock-o,
+.fa-user,
 .fa-circle,
 .fa-tag,
 .fa-list {
