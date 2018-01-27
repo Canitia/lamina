@@ -1293,6 +1293,13 @@ EXTERNAL libraries look-n-feel
 	color: black;
 }
 
+.fa-exclamation-triangle {
+	text-align: center;
+    display: block !important;
+	font-size: 5em !important;
+	margin-top: 50px;
+}
+
 /* **************************************
 
 	WORDPRESS COMMENTS
