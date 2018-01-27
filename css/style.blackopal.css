@@ -147,6 +147,11 @@ input.search-field::placeholder {
 	 background-color: #3f3f3f !important;
  }
 
+.read-more-btn {
+	color: white !important;
+}
+
+
 .search-submit {
 	color: white !important;
 }
