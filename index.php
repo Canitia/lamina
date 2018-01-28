@@ -53,14 +53,14 @@
                 }
 
                  else { ?>
-                <img src="<?php bloginfo('template_directory'); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="card-img-top homepage-image" />
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="card-img-top homepage-image" />
                 <?php } ?>
 
             </a>
             <div class="card-block">
                   <?php if ( is_sticky() ) { ?>
                             <span class="badge-featured">
-                              Featured
+                              <?php _e('Featured', 'canitia');?>
                             </span>
                 <?php
                 } ?>
