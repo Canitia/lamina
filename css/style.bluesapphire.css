@@ -37,9 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #333399 !important;
 }
 
-.row-featured {
-
-}
 
 article > h1:first-child {
 	color: #333399 !important;
@@ -51,10 +48,6 @@ article > h1:first-child {
 
  .btn, .comment-reply-link, .form-submit > input#submit, input.search-submit {
 	 background-color: #3399ff !important;
- }
-
- .badge {
-
  }
 
  .badge-date, .badge-featured {
