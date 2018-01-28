@@ -10,9 +10,8 @@ article a:hover {
 	border-bottom: 0 !important;
 }
 
-.navbar,
-.footer {
-    background: #ec008c;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+.navbar {
+    background: #bc3168 !important;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
 }
 
 .navbar-brand,
@@ -21,11 +20,11 @@ footer p {
 }
 
 .menu-item {
-	background-color: #ec008c;
+	background-color: #bc3168;
 }
 
-.menu-item:hover {
-    background-color: #bc3168 !important;
+.menu-item a:hover {
+    color: black !important;
 }
 
 .menu-item > a {
@@ -53,7 +52,7 @@ article > h1:first-child {
 	 color: white !important;
  }
 
- .btn, .comment-reply-link {
+ .btn, .comment-reply-link, .comment-reply-link, .form-submit > input#submit, input.search-submit {
 	 background-color: #e88dc3 !important;
  }
 
@@ -67,6 +66,10 @@ article > h1:first-child {
 
  .badge-date {
 	 background-color: #ec008c !important;
+ }
+
+ .badge-featured {
+	 background: #ec008c !important;
  }
 
 .search-submit {

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-14 21:31+0000\n"
-"PO-Revision-Date: 2017-08-14 21:33+0000\n"
+"POT-Creation-Date: 2018-01-27 18:04+0000\n"
+"PO-Revision-Date: 2018-01-27 18:04+0000\n"
 "Last-Translator: Michael Boumann\n"
 "Language-Team: Dutch\n"
 "Language: nl-NL\n"
@@ -13,33 +13,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: partials/authorsection.php:3
-msgid "This article was written by "
-msgstr "Dit artikel is geschreven door"
+#: 404.php:23
+msgid "Return to the previous page"
+msgstr "Terug naar de vorige pagina"
 
-#: partials/authorsection.php:13
-msgid ""
-"Please fill in a author bio to show the author section or disable it from "
-"the Canitia Settings."
-msgstr ""
-"Vul een bio in voor deze auteur of schakel de auteursectie uit via de "
-"Canitia Instellingen. "
+#: 404.php:24
+msgid "Return to the homepage"
+msgstr "Terug naar de homepage"
 
-#. Description of the theme
-msgid ""
-"Canitia brings simplicity with features. With custom "
-"post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets "
-"and more."
-msgstr ""
-"Canitia brengt simpliciteit met functionaliteit. Met 'custom' "
-"post/tag/pagina/archief en foutpagina's, dynamische navigatiemenu's, theme "
-"kleur presets en meer. "
+#: index.php:16
+msgid "Posts tagged"
+msgstr "Posts getagd"
 
-#: 404.php:9
+#: 404.php:19
 msgid "Error"
 msgstr "Foutmelding"
 
-#: 404.php:11
+#: 404.php:20
 msgid ""
 "This post/page doesnt exist anymore or has been renamed. Try searching for "
 "it."
@@ -47,168 +37,131 @@ msgstr ""
 "Deze post/pagina bestaat niet meer of is van naam veranderd. Probeer het "
 "onderstaande zoekveld om uw post te vinden."
 
-#: archive.php:2
-msgid "Archive "
-msgstr "Archief"
-
-#: archive.php:9 author.php:21 category.php:19 index.php:44 index.php:101
-#: search.php:36 tag.php:20
-msgid "ago"
-msgstr "geleden"
-
-#: archive.php:29
-msgid "Sorry, this archive is empty."
-msgstr "Sorry, dit archief is leeg."
-
-#: author.php:10
-msgid "Latest posts by"
-msgstr "Laatste berichten van"
-
-#: author.php:30
-msgid "Sorry, there are no posts by this author."
-msgstr "Sorry, er zijn geen berichten van deze auteur."
-
-#: category.php:8
-msgid "Latest posts in"
-msgstr "Laatste berichten van"
-
-#: category.php:32
-msgid "Sorry, there are no posts in this category."
-msgstr "Sorry, er zijn geen posts in deze categorie. "
-
 #: comments.php:20
 msgid "Join the conversation"
 msgstr "Reageer op dit bericht"
 
-#: functions.php:70
+#: functions.php:79
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:71
+#: functions.php:80
 msgid "Main sidebar."
 msgstr "Hoofd sidebar."
 
-#: functions.php:90
+#: functions.php:99
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:234
+#: functions.php:243
 msgid "Canitia Settings"
 msgstr "Canitia Instellingen"
 
-#: functions.php:235
+#: functions.php:244
 msgid "Tweak Canitia to your liking."
 msgstr "Stel Canitia in zoals jij dat wilt."
 
-#: functions.php:298
+#: functions.php:299
 msgid "Featured content"
 msgstr "Aanbevolen content"
 
-#: functions.php:302
+#: functions.php:303
 msgid "Show Slider"
 msgstr "Laat Slider zien"
 
-#: functions.php:303
+#: functions.php:304
 msgid "Show Featured Row"
 msgstr "Laat een uitgelichte rij zien"
 
-#: functions.php:304
+#: functions.php:305
 msgid "Hide all"
 msgstr "Verberg alle featured content"
 
-#: functions.php:309
-msgid "Today section"
-msgstr "Vandaag sectie"
-
-#: functions.php:313
-msgid "Show Today section"
-msgstr "Laat 'Vandaag' sectie zien"
-
-#: functions.php:314
-msgid "Hide Today section"
-msgstr "Verberg 'Vandaag' sectie"
-
-#: functions.php:319
+#: functions.php:310
 msgid "Sidebar position"
 msgstr "Sidebar positie"
 
-#: functions.php:323
+#: functions.php:314
 msgid "Left"
 msgstr "Links"
 
-#: functions.php:324
+#: functions.php:315
 msgid "Right"
 msgstr "Rechts"
 
-#: functions.php:329 functions.php:333
+#: functions.php:320 functions.php:324
 msgid "Show Tags"
 msgstr "Laat tags zien"
 
-#: functions.php:334
+#: functions.php:325
 msgid "Hide Tags"
 msgstr "Verberg tags"
 
-#: functions.php:339 functions.php:343
+#: functions.php:330 functions.php:334
 msgid "Show Categories"
 msgstr "Laat categorieën zien"
 
-#: functions.php:344
+#: functions.php:335
 msgid "Hide Categories"
 msgstr "Verberg categorieën"
 
-#: functions.php:349 functions.php:353
+#: functions.php:340 functions.php:344
 msgid "Show Author section"
 msgstr "Laat auteur sectie zien"
 
-#: functions.php:354
+#: functions.php:345
 msgid "Hide Author section"
 msgstr "Verberg auteur sectie"
 
-#: functions.php:359
+#: functions.php:350
 msgid "Theme preset"
 msgstr "Thema preset"
 
-#: functions.php:363
-msgid "Grey Wolf (default)"
-msgstr "Grey Wolf (standaard)"
+#: functions.php:354
+msgid "Orange Sphalerite (default)"
+msgstr "Orange Sphalerite (standaard)"
 
-#: functions.php:364
+#: functions.php:355
 msgid "Pink Ruby"
 msgstr "Pink Ruby"
 
-#: functions.php:365
+#: functions.php:356
 msgid "Pink Melanite"
 msgstr "Pink Melanite"
 
-#: functions.php:366
+#: functions.php:357
 msgid "Black Opal"
 msgstr "Black Opal"
 
-#: functions.php:367
+#: functions.php:358
 msgid "Brown Sinhalite"
 msgstr "Brown Sinhalite"
 
-#: functions.php:368
+#: functions.php:359
 msgid "Blue Sapphire"
 msgstr "Blue Sapphire"
 
-#: index.php:16
-msgid "Today"
-msgstr "Vandaag"
+#: index.php:13
+msgid "Archive "
+msgstr "Archief"
 
-#: index.php:55
-msgid "It seems there are no posts today."
-msgstr "Het lijkt erop dat er vandaag geen berichten geplaatst zijn."
+#: index.php:19
+msgid "Latest posts by"
+msgstr "Laatste berichten van"
 
-#: index.php:64 index.php:77
-msgid "Older posts"
-msgstr "Oudere berichten"
-
-#: index.php:74
+#: index.php:24
 msgid "Latest"
 msgstr "Laatste"
 
-#: index.php:108
+#: index.php:71
+msgid "Read"
+msgstr "Lees"
+
+#: index.php:74 search.php:36
+msgid "ago"
+msgstr "geleden"
+
+#: index.php:85
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
@@ -255,13 +208,17 @@ msgctxt "submit button"
 msgid "Go"
 msgstr "Gaan"
 
-#: tag.php:10
-msgid "Latest posts tagged"
-msgstr "Laatste berichten getagged met"
+#: partials/authorsection.php:3
+msgid "This article was written by "
+msgstr "Dit artikel is geschreven door"
 
-#: tag.php:30
-msgid "Sorry, no posts can be found within this tag."
-msgstr "Sorry, er kunnen geen pagina's gevonden worden met deze tag."
+#: partials/authorsection.php:13
+msgid ""
+"Please fill in a author bio to show the author section or disable it from "
+"the Canitia Settings."
+msgstr ""
+"Vul een bio in voor deze auteur of schakel de auteursectie uit via de "
+"Canitia Instellingen. "
 
 #: partials/featured-post.php:16
 msgid "featured"
@@ -274,6 +231,16 @@ msgstr "Opvulling"
 #. Name of the theme
 msgid "Canitia"
 msgstr "Canitia"
+
+#. Description of the theme
+msgid ""
+"Canitia brings simplicity with features. With custom "
+"post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets "
+"and more."
+msgstr ""
+"Canitia brengt simpliciteit met functionaliteit. Met 'custom' "
+"post/tag/pagina/archief en foutpagina's, dynamische navigatiemenu's, theme "
+"kleur presets en meer. "
 
 #. URI of the theme
 msgid "https://michaelboumann.info/collection/#canitia"

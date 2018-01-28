@@ -14,33 +14,35 @@ if ( ! isset( $content_width ) ) {
  *  wp_enqueue_script( $handle, $source, $dependencies, $version,
  */
 
-
 function canitia_theme_scripts() {
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
 	wp_enqueue_script( 'tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js' );
-	wp_enqueue_style( 'bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css' );
 	wp_enqueue_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
-	wp_enqueue_style( 'open-sans', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' );
-	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery') );
+	wp_enqueue_style( 'slabo-27px', '//fonts.googleapis.com/css?family=Slabo+27px:400,700' );
+	wp_enqueue_style( 'raleway', '//fonts.googleapis.com/css?family=Raleway:300,400,700' );
+	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
-	wp_enqueue_style( 'greywolf',  get_stylesheet_directory_uri(). '/style.css' );	
+	wp_enqueue_style( 'orange-sphalerite',  get_stylesheet_directory_uri(). '/style.css' );	
 
-	if ( get_theme_mod( 'theme_preset', 'greywolf' ) == 'pinkruby') :
+	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'pinkruby') :
 		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css' );
 	endif;
 
-	if ( get_theme_mod( 'theme_preset', 'greywolf' ) == 'blackopal') :
+	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'blackopal') :
 		wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css' );	
 	endif;
 
-	if ( get_theme_mod( 'theme_preset', 'greywolf' ) == 'pinkmelanite') :
+	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'pinkmelanite') :
 		wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css' );	
 	endif;
 
-	if ( get_theme_mod( 'theme_preset' , 'greywolf' ) == 'brownsinhalite') :
+	if ( get_theme_mod( 'theme_preset' , 'orange-sphalerite' ) == 'brownsinhalite') :
 		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css' );	
 	endif;
 
-	if ( get_theme_mod( 'theme_preset' , 'greywolf' ) == 'bluesapphire') :
+	if ( get_theme_mod( 'theme_preset' , 'orange-sphalerite' ) == 'bluesapphire') :
 		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css' );	
 	endif;
 }
@@ -54,6 +56,13 @@ $bgargs = array(
 add_theme_support( "title-tag" );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
+
+
+function custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 
 
 /**
@@ -246,14 +255,6 @@ function canitia_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'display_today_list',
-		array(
-			'default' => 'hidetoday',
-			'sanitize_callback' => 'canitia_sanitize_select',
-		)
-	);
-
-	$wp_customize->add_setting(
 		'sidebar_position',
 		array(
 			'default' => 'right',
@@ -288,7 +289,7 @@ function canitia_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'theme_preset',
 		array(
-			'default' => 'greywolf',
+			'default' => 'orange-sphalerite',
 			'sanitize_callback' => 'canitia_sanitize_select',
 			'settings' => 'theme_preset',
 		)
@@ -300,18 +301,7 @@ function canitia_customizer( $wp_customize ) {
 		'type' => 'radio',
 		'choices' => array(
 			'showslider' => __('Show Slider', 'canitia'),
-			'showfeatured' => __('Show Featured Row', 'canitia'),
-			'hidefeatured' => __('Hide all', 'canitia'),
-		),
-	) );
-
-	$wp_customize->add_control( 'display_today_list', array(
-		'label' => __('Today section', 'canitia'),
-		'section' => 'settings_section_canitia',
-		'type' => 'radio',
-		'choices' => array(
-			'showtoday' => __('Show Today section', 'canitia'),
-			'hidetoday' => __('Hide Today section', 'canitia'),
+			'hidefeatured' => __('Hide', 'canitia'),
 		),
 	) );
 
@@ -360,7 +350,7 @@ function canitia_customizer( $wp_customize ) {
 		'section' => 'colors',
 		'type' => 'radio',
 		'choices' => array(
-			'default' => __('Grey Wolf (default)', 'canitia'),
+			'default' => __('Orange Sphalerite (default)', 'canitia'),
 			'pinkruby' => __('Pink Ruby', 'canitia'),
 			'pinkmelanite' => __('Pink Melanite', 'canitia'),
 			'blackopal' => __('Black Opal', 'canitia'),

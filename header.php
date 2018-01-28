@@ -6,7 +6,7 @@
     <meta name="generator" content="WordPress <?php bloginfo('version');?>" />
     <meta name="description" content="<?php bloginfo( 'description' );?>" />
     <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() );?>/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
@@ -19,7 +19,7 @@
 
 <!-- start of the actual header -->
 <header>
-<nav class="navbar navbar-toggleable-sm navbar-light">
+<nav class="navbar navbar-expand-md navbar-light">
         <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -35,8 +35,8 @@
   </div>
 </nav>
 
-
 </header>
+
 <?php //show slider
     if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
@@ -46,12 +46,3 @@
     }
 ?>
 <div class="container-fluid flex-grow">
-<?php
-    // show featured post row
-    if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
-
-        if ( get_theme_mod( 'display_featured_content', 'hidefeatured' )  == 'showfeatured' ) :
-            get_template_part( 'partials/featured-post' ); 
-        endif;
-    }
-?>

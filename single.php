@@ -1,15 +1,12 @@
 <?php get_header(); ?>
-    <div class="row h-100">
-<?php
-    if ( is_single() || is_page() ) {
 
+<?php
         if ( has_post_thumbnail() ) {
             the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
         }
-    }
 ?>
 
-
+    <div class="row h-100 page-row">
         <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
@@ -21,10 +18,10 @@
     <div <?php post_class(); ?>>
         <article>
             <h1 class="text-center"><?php the_title(); ?></h1>
-          <div class="post-subitems text-center">
+          <small class="post-subitems text-center text-muted d-block">
             <i class="fa fa-clock-o"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
             <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
-        </div>
+        </small>
 
         <div class="post-content">
             <?php the_content(); ?>
