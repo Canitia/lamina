@@ -259,6 +259,15 @@ strong {
 	filter: brightness(80%) !important;
 }
 
+.carousel {
+	max-height: 300px;
+}
+
+.carousel-item {
+	max-height: 300px;
+	width: 100%;
+}
+
 /* **************************************
 
   FEATURED POSTS LOOK-N-FEEL
@@ -485,7 +494,7 @@ POST/ARTICLE HEADERS
 	width: 100%;	
 }
 
-.carousel:hover, .archive-image:hover {
+.archive-image:hover {
 	filter: brightness(80%) !important;
 }
 
@@ -759,6 +768,16 @@ footer p {
 *****************************************/
 
 @media (max-width: 575px) {  
+
+	.carousel {
+		max-height: 250px;
+	}
+	
+	.carousel-item {
+		max-height: 250px;
+		width: 100%;
+	}
+
 	.container-fluid {
 		padding: 0 !important;
 	}
@@ -932,6 +951,15 @@ footer p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+
+	.carousel {
+		max-height: 250px;
+	}
+	
+	.carousel-item {
+		max-height: 250px;
+		width: 100%;
+	}
 
 	.card {
 		border-bottom: 1px solid #ebebeb !important;
