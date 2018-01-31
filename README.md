@@ -5,8 +5,8 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 # Theme features
 - Set a custom site icon (favicon) and navbar logo
 - **Adaptive 1/2 column design** with/without **sidebar**. When there is no sidebar widgets enabled your site turns into a **single column** site.
-- Show **Featured posts** (sticky) in a **slider**. 
-- Show WordPress **Pages** the default way (w/ sidebar) or pick the **full-width** page template.
+- Show **Featured posts** (sticky) in a **carousel/slider**. 
+- Show WordPress **pages** the default way (w/ sidebar) or pick the **full-width** page template.
 - **Theme Presets** - pick your theme color from the theme presets. Presets include the default Grey Wolf (light mode/grey), Pink Ruby (light mode/pink), Pink Melanite (dark mode/pink), Black Opal (dark mode/grey), Blue Sapphire (light mode/blue) or Brown Sinhalite (light mode/brown)
 - Custom error pages and others like tag, category, author, search based on the index page. 
 - Custom **Canitia Settings** - update your settings straight from the WordPress Customizer.
@@ -22,10 +22,11 @@ Canitia is a Wordpress theme based on the [Canitia Jr.](https://github.com/bouma
 ![Canitia](https://github.com/boumannm/canitia/blob/master/screenshot.png)
 
 # Status
-Stable
+Stable, but might have some minor issues left (alignment, margins, specific sidebar widgets etc.)
 
 - *Passed validation on May 26th 2017*
 - *Passed a second time (recheck) on July 22nd 2017*
+- *Passed validation once more on January 29th 2018*
 
 ## Libraries used
 - Font Awesome 4.7.0
@@ -36,13 +37,11 @@ Stable
 ## Tested on:
 
 ### Desktop
-- Google Chrome 59.0.3071.115 (stable)
-- Google Chrome 60.0.3107.5 (dev)
-- Firefox 54.0.1
-- Firefox Nightly 56.0a1.20170720-1
-- Edge 41.16199.1000.0/EdgeHTML 15.16199
+- Google Chrome 64.0.3282.119
+- Firefox 56.0.1
+- Firefox Nightly 60a1 (January 28th)
+- Edge 42.17083.1000.0 (Insider Preview)
 
-### Mobile (Android)
-- Google Chrome
-- Firefox
-- Firefox Nightly (July 24th 2017)
+### Mobile (Android / iOS)
+- Google Chrome (Android / iOS)
+- Safari
