@@ -17,7 +17,6 @@ return;
 	// If comments are open, but there are no comments.
 	?>
 
-	<h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
 	<?php comment_form(); ?>
 	<?php	else : // comments are closed
 	endif;
