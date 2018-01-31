@@ -1171,10 +1171,6 @@ footer p {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
 
-	.card {
-		height: 400px !important;
-	}
-
 	.caption-image {
 		font-size: 2em !important;
 	}
