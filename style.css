@@ -4,7 +4,7 @@ Theme URI: https://michaelboumann.info/collection/#canitia
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Canitia brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 1.0.4-release
+Version: 1.0.5-release
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -1316,7 +1316,7 @@ EXTERNAL libraries look-n-feel
 	margin-left: 20px;
 }
 
-.fa-clock-o, 
+.fa-clock, 
 .fa-user {
 	margin-right: 10px;
 	color: #d33900;
