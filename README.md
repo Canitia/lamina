@@ -1,14 +1,14 @@
 Canitia
 ==================
-Canitia is a WordPress theme based on the [Canitia Jr.](https://github.com/Canitia/canitia-jr) theme. Canitia is a responsive theme with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](https://michaelboumann.info/#projects) or look at the featurelist below.
+Canitia is a WordPress theme based on the [Canitia Jr.](https://github.com/Canitia/canitia-jr) theme. Canitia is a responsive theme with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](https://canitia.nl) or look at the featurelist below.
 
 # Theme features
 - Set a custom site icon (favicon) and navbar logo
 - **Adaptive 1/2 column design** with/without **sidebar**. When there is no sidebar widgets enabled your site turns into a **single column** site.
-- Show **Featured posts** (sticky) in a **carousel/slider**. 
+- Show **Featured posts** (sticky) in a **carousel/slider**.
 - Show WordPress **pages** the default way (w/ sidebar) or pick the **full-width** page template.
 - **Theme Presets** - pick your theme color from the theme presets. Presets include the default Grey Wolf (light mode/grey), Pink Ruby (light mode/pink), Pink Melanite (dark mode/pink), Black Opal (dark mode/grey), Blue Sapphire (light mode/blue) or Brown Sinhalite (light mode/brown)
-- Custom error pages and others like tag, category, author, search based on the index page. 
+- Custom error pages and others like tag, category, author, search based on the index page.
 - Custom **Canitia Settings** - update your settings straight from the WordPress Customizer.
 - **Translation support** - includes English and Dutch languages
 
