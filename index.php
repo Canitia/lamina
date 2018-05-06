@@ -10,18 +10,18 @@
       <?php if($paged <= 1) {
 
         if ( is_archive() && !is_tag() && !is_author() ) { ?>
-            <h1 class="text-left-title-featured-sidebar"><?php _e('Archive ', 'canitia');?> <strong><?php the_archive_title();?></strong></h1>  
+            <h1 class="text-left-title-featured-sidebar"><?php _e('Archive ', 'lamina');?> <strong><?php the_archive_title();?></strong></h1>  
         <?php }
         elseif ( is_tag() ) { ?>
-            <h1 class="text-left-title-featured-sidebar"><?php _e('Posts tagged', 'canitia');?> <strong><?php single_tag_title(); ?></strong></h1>  
+            <h1 class="text-left-title-featured-sidebar"><?php _e('Posts tagged', 'lamina');?> <strong><?php single_tag_title(); ?></strong></h1>  
         <?php } 
         elseif ( is_author() ) {?>
-            <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts by', 'canitia'); ?> 
+            <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts by', 'lamina'); ?> 
             <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
         <?php }      
         else { ?>
-          <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'canitia');?></h1>  
+          <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'lamina');?></h1>  
         <?php 
         }          
        } ?>
@@ -60,7 +60,7 @@
             <div class="card-block">
                   <?php if ( is_sticky() ) { ?>
                             <span class="badge-featured">
-                              <?php _e('Featured', 'canitia');?>
+                              <?php _e('Featured', 'lamina');?>
                             </span>
                 <?php
                 } ?>
@@ -68,10 +68,10 @@
               <p class="card-text"><?php the_excerpt(); ?></p>
                 <div class="spacer"></div>
                 <div class="card-actions-bottom">
-                  <a href="<?php the_permalink(); ?>" class="btn btn-primary read-more-btn"><?php _e('Read', 'canitia');?></a>
+                  <a href="<?php the_permalink(); ?>" class="btn btn-primary read-more-btn"><?php _e('Read', 'lamina');?></a>
                   <?php if ( !is_sticky() ) {?>
                     <small class="text-muted badge">
-                                  <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
+                                  <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'lamina'); ?></time>
                   </small>
 
                     <?php }  ?>
@@ -82,7 +82,7 @@
       
           <?php endwhile; } else { ?>
           <div class="post-content">
-              <p><?php _e('Sorry, it seems there are no posts available.', 'canitia'); ?></p>
+              <p><?php _e('Sorry, it seems there are no posts available.', 'lamina'); ?></p>
               <?php get_search_form(); ?>
           </div><!-- post-content END! -->
                 
@@ -94,7 +94,7 @@
    </div>
    <hr />
   <!-- pagination?-->
-  <?php canitia_pagination_numeric_posts_nav(); ?>
+  <?php lamina_pagination_numeric_posts_nav(); ?>
 
 </div> <!-- close content main -->
 
