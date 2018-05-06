@@ -1,6 +1,6 @@
-Canitia
+Lamina
 ==================
-Canitia is a WordPress theme based on the [Canitia Jr.](https://github.com/Canitia/canitia-jr) theme. Canitia is a responsive theme with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](https://canitia.nl) or look at the featurelist below.
+Lamina is a WordPress theme based on the [Lamina Jr.](https://github.com/Canitia/canitia-jr) theme. Lamina is a responsive theme with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](https://lamina.canitia.nl) or look at the featurelist below.
 
 # Theme features
 - Set a custom site icon (favicon) and navbar logo
@@ -9,17 +9,17 @@ Canitia is a WordPress theme based on the [Canitia Jr.](https://github.com/Canit
 - Show WordPress **pages** the default way (w/ sidebar) or pick the **full-width** page template.
 - **Theme Presets** - pick your theme color from the theme presets. Presets include the default Grey Wolf (light mode/grey), Pink Ruby (light mode/pink), Pink Melanite (dark mode/pink), Black Opal (dark mode/grey), Blue Sapphire (light mode/blue) or Brown Sinhalite (light mode/brown)
 - Custom error pages and others like tag, category, author, search based on the index page.
-- Custom **Canitia Settings** - update your settings straight from the WordPress Customizer.
+- Custom **Lamina Settings** - update your settings straight from the WordPress Customizer.
 - **Translation support** - includes English and Dutch languages
 
-# Canitia Settings - theme specific custom options
+# Lamina Settings - theme specific custom options
 - Enable Featured content (slider or hide)
 - Sidebar position (left or right)
 - Show tags in posts and such (show/hide)
 - Show categories in posts and such (show/hide)
 - Show author section (show/hide)
 
-![Canitia](https://github.com/boumannm/canitia/blob/master/screenshot.png)
+![Lamina](https://github.com/Canitia/lamina/blob/master/screenshot.png)
 
 # Status
 Stable, but might have some minor issues left (alignment, margins, specific sidebar widgets etc.)
