@@ -61,11 +61,6 @@ h3 {
 	max-width:1200px;
 }
 
-
-.main-content {
-	margin-top: 10px;
-}
-
 .h-slider {
 	text-shadow: 2px 1px #000000;
 }
@@ -492,7 +487,8 @@ article > h1:first-child {
 }
 
 .main-content {
-	border-right: 1px solid #f8f8f8;
+	border-right: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
 }
 
 /* sidebar */
