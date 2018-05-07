@@ -1,6 +1,6 @@
 </div><!-- container END! -->
 </main>
-<footer class="footer">
+<footer class="footer"  style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
       <div class="container">
         <p class="text-center text-muted">
             <?php
