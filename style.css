@@ -195,6 +195,10 @@ strong {
 	background-color: #d33900 !important;
 }
 
+.btn:hover {
+	color: black !important;
+}
+
 /* **************************************
 
   HEADER / NAVBAR / NAVIGATION
