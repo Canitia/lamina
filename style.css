@@ -753,8 +753,7 @@ p.postedby {
 	text-decoration: underline;
 }
 
-img.avatar {
-	border-radius: 150px;
+.avatar-post {
 	width: 100px;
 	max-width: 100%;
 	height: auto;
@@ -769,7 +768,6 @@ img.avatar {
 
 .avatar-page {
 	width:150px;
-	border-radius: 150px;
 }
 
 .author-name {
@@ -1402,6 +1400,15 @@ EXTERNAL libraries look-n-feel
 *****************************************/
 .comments-wrapper {
 	margin-top: 15px;
+}
+
+.avatar {
+	display: block;
+	padding: 10px;
+	border: 2px solid #ebebeb;
+	width: 100px;
+	max-width: 100%;
+	height: auto;
 }
 
 .pings {
