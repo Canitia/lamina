@@ -1,16 +1,20 @@
 <section class="author-profile">
+<div class="row">
+
 <?php if ( get_the_author_meta( 'description' ) ) { ?>
-<p class="postedby"><?php _e('This article was written by ', 'lamina');?></p>
+<div class="col-sm-2 col-md-2">
 <?php 
-    echo get_avatar( get_the_author_meta('email'), '100' ); 
+    echo get_avatar( get_the_author_meta('email'), '100', $default, $alt, array( 'class' => array( 'avatar-post' ) ) ); 
 ?>
-<strong class="author-name"><?php the_author_posts_link();?></strong>
-    <p class="author-bio">
-    <br />
+</div>
+<div class="col-sm-10 author-bio-text">
+    <h3><?php the_author_posts_link();?></h3>
     <?php echo nl2br(get_the_author_meta('description'));  ?>
-    </p>
+</div>
+
  <?php  } /* end author meta */ else { ?>
      <p class="text-center"> <?php _e('Please fill in a author bio to show the author section or disable it from the Lamina Settings.', 'lamina' ) ;?> </p>
  <?php }
 ?>
+</div>
 </section>

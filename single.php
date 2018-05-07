@@ -3,10 +3,12 @@
 <?php
         if ( has_post_thumbnail() ) {
             the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-        }
+        } else {
 ?>
+<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="img-fluid" />
+<?php } ?>
 
-    <div class="row h-100 page-row">
+    <div class="row h-100 page-row post-row">
         <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
@@ -17,12 +19,13 @@
     <div class="col-xs-12 col-md-8 col-lg-8 main-content">
     <div <?php post_class(); ?>>
         <article>
-            <h1 class="text-center"><?php the_title(); ?></h1>
-          <small class="post-subitems text-center text-muted d-block">
-            <i class="fas fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
-            <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
-        </small>
-
+        <div class="post-head">
+                <h1 class="text-center post-title"><?php the_title(); ?></h1>
+                <div class="post-subitems text-center d-block">
+                     <i class="fas fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
+                     <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
+                </div>
+        </div>
         <div class="post-content">
             <?php the_content(); ?>
         </div> 
@@ -33,29 +36,10 @@
 
         <?php if(has_tag()) { ?>
             <?php if ( get_theme_mod( 'show_tags', 'showtags' ) == 'showtags' ) : ?>
-                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </div>
+                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', '', '' ); ?> </div>
                 <?php endif; ?>
         <?php } ?>
-        <?php if (get_theme_mod( 'show_categories', 'showcategories' ) == 'showcategories' ) { ?>
-        <?php if(has_category()) { ?>
-          <div class="categorylist"><i class="fa fa-list" aria-hidden="true"></i></span>
-          <?php $categories = get_the_category();
-            $separator = ', ';
-            $output = '';
-            if ( ! empty( $categories ) ) {
-                foreach( $categories as $category ) {
-                    $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
-                    . esc_html( $category->name ) . '</a>' . $separator;
-                }
-                echo trim( $output, $separator );
-            } ?>
-            </div>
-        <?php 
-            }
-        } ?>
-
-
-          </div>
+        </div>
 
         <?php if ( get_theme_mod( 'show_author_section', 'hideauthor' ) == 'showauthor' ) :
             get_template_part( 'partials/authorsection' ); 

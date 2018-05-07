@@ -19,8 +19,7 @@ function lamina_theme_scripts() {
 	wp_enqueue_script( 'tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js' );
 	wp_enqueue_style( 'bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css' );
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js' );
-	wp_enqueue_style( 'slabo-27px', '//fonts.googleapis.com/css?family=Slabo+27px:400,700' );
-	wp_enqueue_style( 'raleway', '//fonts.googleapis.com/css?family=Raleway:300,400,700' );
+	wp_enqueue_style( 'karla', '//fonts.googleapis.com/css?family=Karla:400,700' );
 	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
 	wp_enqueue_style( 'orange-sphalerite',  get_stylesheet_directory_uri(). '/style.css' );	
@@ -246,14 +245,6 @@ function lamina_customizer( $wp_customize ) {
     );
 
 	$wp_customize->add_setting(
-		'display_featured_content',
-		array(
-			'default' => 'hidefeatured',
-			'sanitize_callback' => 'lamina_sanitize_select',
-		)
-	);
-
-	$wp_customize->add_setting(
 		'sidebar_position',
 		array(
 			'default' => 'right',
@@ -265,14 +256,6 @@ function lamina_customizer( $wp_customize ) {
 		'show_tags',
 		array(
 			'default' => 'showtags',
-			'sanitize_callback' => 'lamina_sanitize_select',
-		)
-	);
-
-	$wp_customize->add_setting(
-		'show_categories',
-		array(
-			'default' => 'showcategories',
 			'sanitize_callback' => 'lamina_sanitize_select',
 		)
 	);
@@ -294,16 +277,6 @@ function lamina_customizer( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_control( 'display_featured_content', array(
-		'label' => __('Featured content', 'lamina'),
-		'section' => 'settings_section_lamina',
-		'type' => 'radio',
-		'choices' => array(
-			'showslider' => __('Show Slider', 'lamina'),
-			'hidefeatured' => __('Hide', 'lamina'),
-		),
-	) );
-
 	$wp_customize->add_control( 'sidebar_position', array(
 		'label' => __('Sidebar position', 'lamina'),
 		'section' => 'settings_section_lamina',
@@ -321,16 +294,6 @@ function lamina_customizer( $wp_customize ) {
 		'choices' => array(
 			'showtags' => __('Show Tags', 'lamina'),
 			'hidetags' => __('Hide Tags', 'lamina'),
-		),
-	) );
-
-	$wp_customize->add_control( 'show_categories', array(
-		'label' => __('Show Categories', 'lamina'),
-		'section' => 'settings_section_lamina',
-		'type' => 'radio',
-		'choices' => array(
-			'showcategories' => __('Show Categories', 'lamina'),
-			'hidecategories' => __('Hide Categories', 'lamina'),
 		),
 	) );
 

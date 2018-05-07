@@ -42,7 +42,7 @@
      if ( $query->have_posts() ) {
     while ( $query->have_posts() ) : $query->the_post(); ?>
 
-          <div class="card col col-sm-12 col-md-6">
+          <div class="card col col-sm-12 col-md-12 col-lg-6">
           <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail() && is_sticky() ) {
 
@@ -64,17 +64,12 @@
                             </span>
                 <?php
                 } ?>
-              <h2 class="card-title"><?php the_title(); ?></h2>
-              <p class="card-text"><?php the_excerpt(); ?></p>
-                <div class="spacer"></div>
-                <div class="card-actions-bottom">
-                  <a href="<?php the_permalink(); ?>" class="btn btn-primary read-more-btn"><?php _e('Read', 'lamina');?></a>
-                  <?php if ( !is_sticky() ) {?>
+              <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+              <p class="card-text"><?php echo  get_the_excerpt(); ?></p>
+                <div class="card-actions-top">
                     <small class="text-muted badge">
-                                  <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'lamina'); ?></time>
+                        <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'lamina'); ?></time>
                   </small>
-
-                    <?php }  ?>
                 </div>
             </div>
           </div>     
