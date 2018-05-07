@@ -743,45 +743,46 @@ p.postedby {
 
 
 .author-profile {
-	clear:both;
-	margin-top: 25px;
-	padding-right: 15px;
-	padding-left: 15px;
-    padding-top: 20px;
-	border-top: 1px solid #ebebeb !important;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
-.author-profile > .avatar {
-	margin-left: 10px;
-    width: 50px;
-    height: auto;
-}
-
-p.author-bio {
-	margin-left: 10px;
-    color: #979797;
+.author-profile h4 a {
+	text-decoration: underline;
 }
 
 img.avatar {
+	border-radius: 150px;
+	width: 100px;
+	max-width: 100%;
+	height: auto;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 10px;
+	border: 2px solid #ebebeb;
 	z-index:200;
-	margin-right:15px;
 }
 
 .avatar-page {
 	width:150px;
-	border-radius: 100px;
-	margin-top:15px;
-	background-color:#F8F8F8;
+	border-radius: 150px;
 }
 
 .author-name {
-	font-size:110%;
+	font-size:200%;
 	font-weight: 300 !important;
-	vertical-align: middle;
 }
 
 .author-name a:hover {
 	color: #979797;
+}
+
+.author-bio-text {
+	padding: 20px;
 }
 
 
