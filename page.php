@@ -36,26 +36,6 @@
                 <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </div>
                 <?php endif; ?>
         <?php } ?>
-        <br />
-        <?php if (get_theme_mod( 'show_categories', 'showcategories' ) == 'showcategories' ) { ?>
-        <?php if(has_category()) { ?>
-          <div class="categorylist"><i class="fa fa-list" aria-hidden="true"></i></span>
-          <?php $categories = get_the_category();
-            $separator = ', ';
-            $output = '';
-            if ( ! empty( $categories ) ) {
-                foreach( $categories as $category ) {
-                    $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
-                    . esc_html( $category->name ) . '</a>' . $separator;
-                }
-                echo trim( $output, $separator );
-            } ?>
-            </div>
-        <?php 
-            }
-        } ?>
-
-
           </div>
 
         <?php if ( get_theme_mod( 'show_author_section', 'hideauthor' ) == 'showauthor' ) :
