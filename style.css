@@ -518,6 +518,7 @@ article > h1:first-child {
 	background: white;
 	border-left: 1px solid #ebebeb;
 	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
 }
 
 /* ######################################
