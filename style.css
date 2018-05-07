@@ -529,15 +529,21 @@ POST/ARTICLE HEADERS
 	margin-top: 0;
 }
 
+.post-subitems {
+	margin-top: 30px;
+	font-weight: 300;
+}
+
 .post-subitems > a
 {
+	color:black;
 	text-decoration: none;
 }
 
 .post-subitems > a:hover
 {
+	color: #b5b5b5;
 	text-decoration: underline;
-	color: #FF4500;
 }
 
 /* **************************************
