@@ -441,11 +441,6 @@ strong {
 	font-weight: 600 !important;
 }
 
-
-.spacer {
-    height: 30px;
-}
-
 .card-actions-bottom {
     position: absolute;
 	bottom: 0;
@@ -519,6 +514,13 @@ article > h1:first-child {
 .widget > ul > li:hover {
 	background-color: #FF4500;
 	font-weight: 600;
+}
+
+
+.sidebar {
+	background: white;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
 }
 
 /* ######################################
