@@ -34,7 +34,7 @@
 
         <?php if(has_tag()) { ?>
             <?php if ( get_theme_mod( 'show_tags', 'showtags' ) == 'showtags' ) : ?>
-                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ' #', ' ' ); ?> </div>
+                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', '', '' ); ?> </div>
                 <?php endif; ?>
         <?php } ?>
         <?php if (get_theme_mod( 'show_categories', 'showcategories' ) == 'showcategories' ) { ?>
