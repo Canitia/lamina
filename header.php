@@ -36,7 +36,7 @@
 </nav>
 
 </header>
-
+<main>
 <?php //show slider
     if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
