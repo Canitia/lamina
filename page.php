@@ -31,15 +31,6 @@
 
         <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
-        <div class="cat-links">
-
-        <?php if(has_tag()) { ?>
-            <?php if ( get_theme_mod( 'show_tags', 'showtags' ) == 'showtags' ) : ?>
-                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </div>
-                <?php endif; ?>
-        <?php } ?>
-          </div>
-
         <?php if ( get_theme_mod( 'show_author_section', 'hideauthor' ) == 'showauthor' ) :
             get_template_part( 'partials/authorsection' ); 
         endif; ?>
