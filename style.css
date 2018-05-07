@@ -56,8 +56,14 @@ h3 {
 }
 
 .container-fluid {
-	width: 100%;
-	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width:1200px;
+}
+
+
+.main-content {
+	margin-top: 10px;
 }
 
 .h-slider {
@@ -519,6 +525,10 @@ article > h1:first-child {
 POST/ARTICLE HEADERS
 
 ##########################################*/
+.post-title {
+	margin-top: 0;
+}
+
 .post-subitems > a
 {
 	text-decoration: none;
