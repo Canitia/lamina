@@ -28,14 +28,6 @@ function lamina_theme_scripts() {
 		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css' );
 	endif;
 
-	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'blackopal') :
-		wp_enqueue_style( 'blackopal',  get_stylesheet_directory_uri(). '/css/style.blackopal.css' );	
-	endif;
-
-	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'pinkmelanite') :
-		wp_enqueue_style( 'pinkmelanite',  get_stylesheet_directory_uri(). '/css/style.pinkmelanite.css' );	
-	endif;
-
 	if ( get_theme_mod( 'theme_preset' , 'orange-sphalerite' ) == 'brownsinhalite') :
 		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css' );	
 	endif;
@@ -314,8 +306,6 @@ function lamina_customizer( $wp_customize ) {
 		'choices' => array(
 			'default' => __('Orange Sphalerite (default)', 'lamina'),
 			'pinkruby' => __('Pink Ruby', 'lamina'),
-			'pinkmelanite' => __('Pink Melanite', 'lamina'),
-			'blackopal' => __('Black Opal', 'lamina'),
 			'brownsinhalite' => __('Brown Sinhalite', 'lamina'),
 			'bluesapphire' => __('Blue Sapphire', 'lamina'),
 		),
