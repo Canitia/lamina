@@ -19,7 +19,7 @@
         <article>
         <div class="post-head">
                 <h1 class="text-center post-title"><?php the_title(); ?></h1>
-                <div class="post-subitems text-center text-muted d-block">
+                <div class="post-subitems text-center d-block">
                      <i class="fas fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
                      <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
                 </div>
@@ -34,7 +34,7 @@
 
         <?php if(has_tag()) { ?>
             <?php if ( get_theme_mod( 'show_tags', 'showtags' ) == 'showtags' ) : ?>
-                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </div>
+                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ' #', ' ' ); ?> </div>
                 <?php endif; ?>
         <?php } ?>
         <?php if (get_theme_mod( 'show_categories', 'showcategories' ) == 'showcategories' ) { ?>
