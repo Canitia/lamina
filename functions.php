@@ -269,14 +269,6 @@ function lamina_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'show_categories',
-		array(
-			'default' => 'showcategories',
-			'sanitize_callback' => 'lamina_sanitize_select',
-		)
-	);
-
-	$wp_customize->add_setting(
 		'show_author_section',
 		array(
 			'default' => 'hideauthor',
@@ -320,16 +312,6 @@ function lamina_customizer( $wp_customize ) {
 		'choices' => array(
 			'showtags' => __('Show Tags', 'lamina'),
 			'hidetags' => __('Hide Tags', 'lamina'),
-		),
-	) );
-
-	$wp_customize->add_control( 'show_categories', array(
-		'label' => __('Show Categories', 'lamina'),
-		'section' => 'settings_section_lamina',
-		'type' => 'radio',
-		'choices' => array(
-			'showcategories' => __('Show Categories', 'lamina'),
-			'hidecategories' => __('Hide Categories', 'lamina'),
 		),
 	) );
 
