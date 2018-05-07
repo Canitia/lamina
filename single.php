@@ -5,7 +5,7 @@
             the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
         } else {
 ?>
-<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="card-img-top homepage-image" />
+<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="img-fluid" />
 <?php } ?>
 
     <div class="row h-100 page-row post-row">
