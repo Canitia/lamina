@@ -36,7 +36,11 @@
 </nav>
 
 </header>
-<main>
+
+ <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="card-img-top homepage-image" />
+
+
+<main style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
 <?php //show slider
     if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
