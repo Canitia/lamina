@@ -17,12 +17,13 @@
     <div class="col-xs-12 col-md-8 col-lg-8 main-content">
     <div <?php post_class(); ?>>
         <article>
-            <h1 class="text-center"><?php the_title(); ?></h1>
-          <small class="post-subitems text-center text-muted d-block">
-            <i class="fas fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
-            <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
-        </small>
-
+        <div class="post-head">
+                <h1 class="text-center post-title"><?php the_title(); ?></h1>
+                <div class="post-subitems text-center text-muted d-block">
+                     <i class="fas fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
+                     <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
+                </div>
+        </div>
         <div class="post-content">
             <?php the_content(); ?>
         </div> 
