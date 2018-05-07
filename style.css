@@ -1000,13 +1000,6 @@ footer p {
 		margin-left: 5px;
 	}
 
-	.fa-star, 
-	.fa-circle {
-		margin-left: 5px;
-		margin-right: 15px;
-		float: right;
-	}
-
 	img.avatar {
 		width: 64px;
 		height: 64px;
@@ -1183,11 +1176,6 @@ footer p {
 
 	.caption-image {
 		font-size: 1.5em !important;
-	}
-
-	.collection>.post-errortext>.fa-circle {
-		margin-right: 15px;
-		margin-left: 5px;
 	}
 
 	.sidebar {
@@ -1378,35 +1366,16 @@ EXTERNAL libraries look-n-feel
   margin-right:20px;
 }
 
-.fa-star, 
-.fa-circle {
-	margin-right: 15px;
-}
-
-.fa-star {
-	color: #e59400;
-}
-
-.fa-circle, 
 .fa-tags,
 .fa-list {
-	color: #d3d3d3;
-}
-
-.fa-list,
-.fa-tags {
+	color: black;
 	margin-right: 10px;
-	color: #d33900;
-}
-
-.fa-calendar {
-	margin-left: 20px;
 }
 
 .fa-clock, 
 .fa-user {
 	margin-right: 10px;
-	color: #d33900;
+	color: black;
 }
 
 .fa-user {
