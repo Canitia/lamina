@@ -685,12 +685,10 @@ ul.pings.commentlist {
 	color: #FF4500;
 }
 
-.tagslist,
 .categorylist {
 	margin-top: 15px;
 }
 
-.tagslist a,
 .categorylist a {
 	text-decoration: underline;
 	font-weight: 600;
@@ -701,6 +699,25 @@ ul.pings.commentlist {
 .tagslist a:hover,
 .categorylist a:hover {
 	color: #FF4500;
+}
+
+.tagslist {
+	margin-bottom: 35px;
+	padding-top: 35px;
+	margin-left: 10px;
+}
+
+.tagslist a {
+	text-decoration: none;
+	font-weight: 300;
+	color: #9e9e9e;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.tagslist a:hover {
+	color: black;
+	text-decoration: underline;
 }
 
 /* **************************************
