@@ -701,6 +701,10 @@ ul.pings.commentlist {
 	color: #FF4500;
 }
 
+.tagslist a::before {
+    content: '#';
+}
+
 .tagslist {
 	margin-bottom: 35px;
 	padding-top: 35px;
