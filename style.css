@@ -518,6 +518,7 @@ article > h1:first-child {
 
 .widget > ul > li:hover {
 	background-color: #FF4500;
+	font-weight: 600;
 }
 
 /* ######################################
