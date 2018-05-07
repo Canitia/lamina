@@ -5,7 +5,7 @@
             the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
         }
 ?>
-<div class="row h-100 page-row">
+<div class="row h-100 page-row post-row">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
   
