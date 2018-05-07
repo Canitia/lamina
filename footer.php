@@ -6,7 +6,7 @@
             <?php
               $getActiveTheme = wp_get_theme();
 
-              echo 'Powered by ' . ' <strong>' . $getActiveTheme->get( 'Name' ) . $getActiveTheme->get( 'Version' ) . ' </strong>';
+              echo 'Powered by ' . ' <strong>' . $getActiveTheme->get( 'Name' ) . ' ' . $getActiveTheme->get( 'Version' ) . ' </strong>';
             ?>    
         </p>
       </div>
