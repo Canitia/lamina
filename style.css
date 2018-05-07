@@ -21,14 +21,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 *****************************************/
 
 body {
-  min-height: 100vh;
-  font-family: 'Raleway', sans-serif !important;
-  font-size: 112.5%;
+	height: 100%;
+	font-size: 112.5%;
+	font-family: 'Karla', sans-serif !important;
+	line-height: 1.66667;
+	min-width: 320px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Slabo 27px', serif !important;
-	font-weight: 300 !important;
+h1, h2, h3, h4, h5, h6 {
+    color: #2f313d;
+    font-weight: bold;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+}
+
+p {
+	margin: 0 0 1.66667em;
 }
 
 h1 {
@@ -309,15 +317,50 @@ strong {
 }
 
 .card {
-	margin-top: 20px;
-	margin-bottom: 30px;
 	border: 0 !important;
+	padding: 15px;
+	height: 100% !important;
+	background-color: transparent !important;
+	transition: all .2s ease-in-out;
+}
+
+.card:hover {
+	transform: scale(1.02);
 }
 
 .card-title {
-	font-size: 150% !important;
+	font-size: 125% !important;
 	margin-top: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
+
+
+.card-title a {
+	color: black;
+}
+
+.card-title a:hover {
+    color: #545454;
+    text-decoration: none;
+}
+
+.card-block, .post-content {
+	padding: 10px;
+}
+
+.card-block {
+	border: 1px solid #d3d3d3;
+	background: white !important;
+}
+
+.card-text {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 95px;
+}
+
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
@@ -341,6 +384,7 @@ strong {
 	height: 235px !important;
 }
 
+
 .badge {
 	font-weight: 500;
 	color: black;
@@ -348,23 +392,24 @@ strong {
 
 .badge-featured {
 	position: absolute;
-    top: 15px;
-    right: 0px;
-    margin-right: 5px;
-    width: 35%;
+    top: 25px;
+    right: 30px;
     z-index: 10;
     padding: 10px !important;
-    background-color: #FF4500 !important;
+    background-color: #ebebeb !important;
     font-weight: bold;
     opacity: 0.9;
-    color: white;
+    color: black;
 	text-align: center;
+	border-radius: 15px;
 }
 
 .homepage-image {
 	object-fit: cover;
-    max-width: 100%;
-	height: 200px;
+	max-width: 100%;
+	width: 100%;
+	height: 275px;
+	border: 1px solid #ebebeb !important;
 }
 
 .homepage-image-featured {
@@ -384,7 +429,6 @@ strong {
 	overflow:hidden;
 	padding: 5px;
 	color: white;
-	font-family: 'Raleway', sans-serif !important;
 }
 
 .caption-image:hover {
