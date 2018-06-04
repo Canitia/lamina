@@ -1,14 +1,14 @@
 /*
-Theme Name: Canitia
-Theme URI: https://canitia.nl/themes.html
+Theme Name: Lamina
+Theme URI: https://lamina.canitia.nl
 Author: Michael Boumann
 Author URI: http://me.canitia.nl
-Description: Canitia brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 1.0.6-release
+Description: Lamina brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
+Version: 1.1.1r
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
-Text Domain: canitia
+Text Domain: lamina
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -21,14 +21,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 *****************************************/
 
 body {
-  min-height: 100vh;
-  font-family: 'Raleway', sans-serif !important;
-  font-size: 120%;
+	height: 100%;
+	font-size: 112.5%;
+	font-family: 'Karla', sans-serif !important;
+	line-height: 1.66667;
+	min-width: 320px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Slabo 27px', serif !important;
-	font-weight: 300 !important;
+h1, h2, h3, h4, h5, h6 {
+    color: #2f313d;
+    font-weight: bold;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+}
+
+p {
+	margin: 0 0 1.66667em;
 }
 
 h1 {
@@ -48,8 +56,9 @@ h3 {
 }
 
 .container-fluid {
-	width: 100%;
-	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width:1200px;
 }
 
 .h-slider {
@@ -195,6 +204,11 @@ strong {
 	background-color: #d33900 !important;
 }
 
+.btn:hover {
+	color: black !important;
+	background: #FF4500 !important;
+}
+
 /* **************************************
 
   HEADER / NAVBAR / NAVIGATION
@@ -293,10 +307,8 @@ strong {
 	margin-right: 0 !important;
 }
 
-.page-row {
-	max-width: 1200px;
-	margin-left: auto !important;
-	margin-right: auto !important;
+.post-row {
+	background: white;
 }
 
 .col {
@@ -304,15 +316,50 @@ strong {
 }
 
 .card {
-	margin-top: 20px;
-	margin-bottom: 30px;
 	border: 0 !important;
+	padding: 15px;
+	height: 100% !important;
+	background-color: transparent !important;
+	transition: all .2s ease-in-out;
+}
+
+.card:hover {
+	transform: scale(1.02);
 }
 
 .card-title {
-	font-size: 150% !important;
+	font-size: 125% !important;
 	margin-top: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
+
+
+.card-title a {
+	color: black;
+}
+
+.card-title a:hover {
+    color: #545454;
+    text-decoration: none;
+}
+
+.card-block, .post-content {
+	padding: 10px;
+}
+
+.card-block {
+	border: 1px solid #d3d3d3;
+	background: white !important;
+}
+
+.card-text {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 95px;
+}
+
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
@@ -336,6 +383,7 @@ strong {
 	height: 235px !important;
 }
 
+
 .badge {
 	font-weight: 500;
 	color: black;
@@ -343,23 +391,23 @@ strong {
 
 .badge-featured {
 	position: absolute;
-    top: 15px;
-    right: 0px;
-    margin-right: 5px;
-    width: 35%;
+    top: 25px;
+    right: 30px;
     z-index: 10;
     padding: 10px !important;
-    background-color: #FF4500 !important;
+    background-color: #ebebeb !important;
     font-weight: bold;
     opacity: 0.9;
-    color: white;
+    color: black;
 	text-align: center;
+	border-radius: 15px;
 }
 
 .homepage-image {
 	object-fit: cover;
-    max-width: 100%;
-	height: 200px;
+	max-width: 100%;
+	width: 100%;
+	height: 275px;
 }
 
 .homepage-image-featured {
@@ -379,16 +427,10 @@ strong {
 	overflow:hidden;
 	padding: 5px;
 	color: white;
-	font-family: 'Raleway', sans-serif !important;
 }
 
 .caption-image:hover {
 	font-weight: 600 !important;
-}
-
-
-.spacer {
-    height: 30px;
 }
 
 .card-actions-bottom {
@@ -445,7 +487,7 @@ article > h1:first-child {
 }
 
 .main-content {
-	border-right: 1px solid #f8f8f8;
+	border-right: 1px solid #ebebeb;
 }
 
 /* sidebar */
@@ -463,6 +505,15 @@ article > h1:first-child {
 
 .widget > ul > li:hover {
 	background-color: #FF4500;
+	font-weight: 600;
+}
+
+
+.sidebar {
+	background: white;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
 }
 
 /* ######################################
@@ -470,15 +521,25 @@ article > h1:first-child {
 POST/ARTICLE HEADERS
 
 ##########################################*/
+.post-title {
+	margin-top: 0;
+}
+
+.post-subitems {
+	margin-top: 30px;
+	font-weight: 300;
+}
+
 .post-subitems > a
 {
+	color:black;
 	text-decoration: none;
 }
 
 .post-subitems > a:hover
 {
+	color: #b5b5b5;
 	text-decoration: underline;
-	color: #FF4500;
 }
 
 /* **************************************
@@ -626,12 +687,11 @@ ul.pings.commentlist {
 	color: #FF4500;
 }
 
-.tagslist,
 .categorylist {
 	margin-top: 15px;
+	margin-left: 10px;
 }
 
-.tagslist a,
 .categorylist a {
 	text-decoration: underline;
 	font-weight: 600;
@@ -642,6 +702,29 @@ ul.pings.commentlist {
 .tagslist a:hover,
 .categorylist a:hover {
 	color: #FF4500;
+}
+
+.tagslist a::before {
+    content: '#';
+}
+
+.tagslist {
+	margin-bottom: 35px;
+	padding-top: 35px;
+	margin-left: 10px;
+}
+
+.tagslist a {
+	text-decoration: none;
+	font-weight: 300;
+	color: #9e9e9e;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.tagslist a:hover {
+	color: black;
+	text-decoration: underline;
 }
 
 /* **************************************
@@ -656,45 +739,44 @@ p.postedby {
 
 
 .author-profile {
-	clear:both;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.author-profile h4 a {
+	text-decoration: underline;
+}
+
+.avatar-post {
+	width: 100px;
+	max-width: 100%;
+	height: auto;
 	margin-top: 25px;
-	padding-right: 15px;
-	padding-left: 15px;
-    padding-top: 20px;
-	border-top: 1px solid #ebebeb !important;
-}
-
-.author-profile > .avatar {
-	margin-left: 10px;
-    width: 50px;
-    height: auto;
-}
-
-p.author-bio {
-	margin-left: 10px;
-    color: #979797;
-}
-
-img.avatar {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 10px;
+	border: 2px solid #ebebeb;
 	z-index:200;
-	margin-right:15px;
 }
 
 .avatar-page {
 	width:150px;
-	border-radius: 100px;
-	margin-top:15px;
-	background-color:#F8F8F8;
 }
 
 .author-name {
-	font-size:110%;
+	font-size:200%;
 	font-weight: 300 !important;
-	vertical-align: middle;
 }
 
 .author-name a:hover {
 	color: #979797;
+}
+
+.author-bio-text {
+	padding: 20px;
 }
 
 
@@ -759,7 +841,6 @@ footer {
 	position: inherit;
 	bottom: 0;
 	width: 100%;
-	border-top: 1px solid #ebebeb;
 }
 
 footer p {
@@ -911,13 +992,6 @@ footer p {
 
 	p.postedby {
 		margin-left: 5px;
-	}
-
-	.fa-star, 
-	.fa-circle {
-		margin-left: 5px;
-		margin-right: 15px;
-		float: right;
 	}
 
 	img.avatar {
@@ -1096,11 +1170,6 @@ footer p {
 
 	.caption-image {
 		font-size: 1.5em !important;
-	}
-
-	.collection>.post-errortext>.fa-circle {
-		margin-right: 15px;
-		margin-left: 5px;
 	}
 
 	.sidebar {
@@ -1291,35 +1360,16 @@ EXTERNAL libraries look-n-feel
   margin-right:20px;
 }
 
-.fa-star, 
-.fa-circle {
-	margin-right: 15px;
-}
-
-.fa-star {
-	color: #e59400;
-}
-
-.fa-circle, 
 .fa-tags,
 .fa-list {
-	color: #d3d3d3;
-}
-
-.fa-list,
-.fa-tags {
+	color: black;
 	margin-right: 10px;
-	color: #d33900;
-}
-
-.fa-calendar {
-	margin-left: 20px;
 }
 
 .fa-clock, 
 .fa-user {
 	margin-right: 10px;
-	color: #d33900;
+	color: black;
 }
 
 .fa-user {
@@ -1345,6 +1395,15 @@ EXTERNAL libraries look-n-feel
 *****************************************/
 .comments-wrapper {
 	margin-top: 15px;
+}
+
+.avatar {
+	display: block;
+	padding: 10px;
+	border: 2px solid #ebebeb;
+	width: 100px;
+	max-width: 100%;
+	height: auto;
 }
 
 .pings {

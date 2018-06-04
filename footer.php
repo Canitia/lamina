@@ -1,11 +1,12 @@
 </div><!-- container END! -->
-<footer class="footer">
+</main>
+<footer class="footer" style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
       <div class="container">
-        <p class="text-center">
+        <p class="text-center text-muted">
             <?php
               $getActiveTheme = wp_get_theme();
 
-              echo 'Powered by ' . ' <strong>' . $getActiveTheme->get( 'Name' ) . ' </strong>';
+              echo 'Powered by ' . ' <strong>' . $getActiveTheme->get( 'Name' ) . ' </strong>' . ' ' . $getActiveTheme->get( 'Version' ) ;
             ?>    
         </p>
       </div>
