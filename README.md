@@ -17,7 +17,7 @@ Lamina is a WordPress theme based on the [Canitia Jr.](https://gitlab.com/caniti
 - Show tags in posts and such (show/hide)
 - Show author section (show/hide)
 
-![Lamina](https://gitlab.com/canitia/lamina/blob/master/screenshot.png)
+![Lamina](https://gitlab.com/canitia/lamina/raw/master/screenshot.png)
 
 # Status
 Stable, but might have some minor issues left (alignment, margins, specific sidebar widgets etc.)
