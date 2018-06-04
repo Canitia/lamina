@@ -49,11 +49,11 @@ msgid "Header Menu"
 msgstr ""
 
 #: functions.php:242
-msgid "Canitia Settings"
+msgid "Lamina Settings"
 msgstr ""
 
 #: functions.php:243
-msgid "Tweak Canitia to your liking."
+msgid "Tweak Lamina to your liking."
 msgstr ""
 
 #: functions.php:298
@@ -214,7 +214,7 @@ msgstr ""
 #: partials/authorsection.php:13
 msgid ""
 "Please fill in a author bio to show the author section or disable it from "
-"the Canitia Settings."
+"the Lamina Settings."
 msgstr ""
 
 #: partials/featured-post.php:16
@@ -226,18 +226,18 @@ msgid "Placeholder"
 msgstr ""
 
 #. Name of the theme
-msgid "Canitia"
+msgid "Lamina"
 msgstr ""
 
 #. Description of the theme
 msgid ""
-"Canitia brings simplicity with features. With custom "
+"Lamina brings simplicity with features. With custom "
 "post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets "
 "and more."
 msgstr ""
 
 #. URI of the theme
-msgid "https://michaelboumann.info/collection/#canitia"
+msgid "https://lamina.canitia.nl"
 msgstr ""
 
 #. Author of the theme
@@ -245,5 +245,5 @@ msgid "Michael Boumann"
 msgstr ""
 
 #. Author URI of the theme
-msgid "http://www.michaelboumann.info"
+msgid "https://me.canitia.nl"
 msgstr ""
