@@ -15,7 +15,7 @@ Template Name: Search Page
 
 <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
  
-    <h1 class="text-left-title-featured-sidebar truncate"><?php _e('Results for ', 'canitia'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
+    <h1 class="text-left-title-featured-sidebar truncate"><?php _e('Results for ', 'lamina'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
     <div class="collection">
 
     <?php
@@ -33,7 +33,7 @@ Template Name: Search Page
                     <a href="<?php the_permalink(); ?>">
                     <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
                         <span class="badge">
-                            <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'canitia'); ?></time>
+                            <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'lamina'); ?></time>
                         </span> 
                     </p>
                     </a>
@@ -43,7 +43,7 @@ Template Name: Search Page
     } else {?>
 
         <div class="collection-item">
-            <p><i class="fa fa-circle" aria-hidden="true"></i><?php _e('Sorry, it seems this search query has no posts.', 'canitia'); ?></p>
+            <p><i class="fa fa-circle" aria-hidden="true"></i><?php _e('Sorry, it seems this search query has no posts.', 'lamina'); ?></p>
         </div>
 
 
