@@ -34,10 +34,10 @@ Stable, but might have some minor issues left (alignment, margins, specific side
 
 ### Desktop
 - Google Chrome 64.0.3282.119
-- Firefox 59
+- Firefox 60
 - Firefox Nightly 61 (May 7th 2018)
 - Microsoft Edge (Windows 10 April 2018 update)
 
-### Mobile (Android / iOS)
-- Google Chrome (Android / iOS)
-- Safari
+### Mobile (Android)
+- Google Chrome
+- Firefox
