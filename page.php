@@ -8,8 +8,6 @@
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="img-fluid" />
         <?php } ?>
 
-
-
     <div class="row h-100 page-row post-row">
         <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
