@@ -1,6 +1,6 @@
 Lamina
 ==================
-Lamina is a WordPress theme based on the [Canitia Jr.](https://gitlab.com/canitia/canitia-jr) theme. Lamina is a responsive theme with some added 'advanced' features. For a quick look at the features you can check out the [Theme's project page](https://lamina.canitia.nl) or look at the featurelist below.
+Lamina is a responsive theme with some added 'advanced' features. For a quick look at the features you can check out the [theme's project page](https://lamina.canitia.nl) or look at the featurelist below.
 
 # Theme features
 - Set a custom site icon (favicon) and navbar logo
@@ -17,7 +17,7 @@ Lamina is a WordPress theme based on the [Canitia Jr.](https://gitlab.com/caniti
 - Show tags in posts and such (show/hide)
 - Show author section (show/hide)
 
-![Lamina](https://gitlab.com/canitia/lamina/raw/master/screenshot.png)
+![Lamina](https://git.canitia.nl/Canitia/lamina/raw/branch/master/screenshot.png)
 
 # Status
 Stable, but might have some minor issues left (alignment, margins, specific sidebar widgets etc.)
@@ -34,10 +34,10 @@ Stable, but might have some minor issues left (alignment, margins, specific side
 
 ### Desktop
 - Google Chrome 64.0.3282.119
-- Firefox 59
+- Firefox 60
 - Firefox Nightly 61 (May 7th 2018)
 - Microsoft Edge (Windows 10 April 2018 update)
 
-### Mobile (Android / iOS)
-- Google Chrome (Android / iOS)
-- Safari
+### Mobile (Android)
+- Google Chrome
+- Firefox
