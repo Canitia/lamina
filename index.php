@@ -19,12 +19,7 @@
             <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts by', 'lamina'); ?> 
             <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
-        <?php }      
-        else { ?>
-          <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'lamina');?></h1>  
-        <?php 
-        }          
-       } ?>
+        <?php }} ?>
 
   <div class="row page-row">
   <!-- show the right header item -->
