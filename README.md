@@ -1,6 +1,6 @@
 Lamina
 ==================
-Lamina is a responsive theme with some added 'advanced' features. For a quick look at the features you can check out the [theme's project page](https://lamina.canitia.nl) or look at the featurelist below.
+Lamina is a responsive theme with some added 'advanced' features.
 
 # Theme features
 - Set a custom site icon (favicon) and navbar logo
@@ -25,17 +25,16 @@ Stable, but might have some minor issues left (alignment, margins, specific side
 - *Passed 'theme check' validation once more on May 7th 2018*
 
 ## Libraries used
-- Font Awesome 5.0.12
-- Bootstrap v4.1.1
+- Font Awesome 5.3.0
+- Bootstrap v4.1.3
 - JQuery (included)
 - [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 
 ## Tested on:
 
 ### Desktop
-- Google Chrome 64.0.3282.119
-- Firefox 60
-- Firefox Nightly 61 (May 7th 2018)
+- Google Chrome 66
+- Firefox 62
 - Microsoft Edge (Windows 10 April 2018 update)
 
 ### Mobile (Android)
