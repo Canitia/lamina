@@ -1511,7 +1511,7 @@ ul.children {
 }
 
 .comment-author > cite {
-	font-size: 1em;
+	font-size: 1.1em;
 	font-family: 'Asap', sans-serif;
 	vertical-align: middle;
 }
@@ -1524,6 +1524,7 @@ ul.children {
     padding: 5px;
 	margin-bottom: 15px;
 	text-align: center;
+	font-family: 'Asap', sans-serif;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
