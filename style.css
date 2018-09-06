@@ -360,6 +360,7 @@ strong {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	height: 45px;
+	margin-bottom: 10px;
 }
 
 
