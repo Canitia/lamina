@@ -222,6 +222,10 @@ strong {
 	background: #FF4500 !important;
 }
 
+.brand-logo {
+	border-radius: 50px;
+}
+
 .navbar-brand {
 	margin-left: 10px;
 }
@@ -937,10 +941,6 @@ footer p {
 		padding-left: 0;
 		padding-right:0;
 	}
-
-	img.brand-logo {
-		display: none;
-	}
 	
 	.navbar {
 		padding: 10px;
@@ -1120,11 +1120,6 @@ footer p {
 
 	.caption-image {
 		font-size: 1.3em !important;
-	}
-
-
-	img.brand-logo {
-		display: none;
 	}
 
 	.collection-item {
