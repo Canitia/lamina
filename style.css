@@ -34,13 +34,17 @@ p {
 	font-family: 'Anaheim', sans-serif;
 }
 
+p a:hover {
+	color: #b5b5b5 !important;
+}
+
 h1 {
 	font-size: 3.2rem !important;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 {
-	font-size: 2.9rem !important;
+	font-size: 2.8rem !important;
 	font-family: 'Asap', sans-serif;
 }
 
