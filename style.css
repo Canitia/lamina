@@ -1418,11 +1418,19 @@ EXTERNAL libraries look-n-feel
 	display: block;
 	padding: 10px;
 	border: 2px solid #ebebeb;
-	width: 100px;
-	max-width: 100%;
-	height: auto;
+	width: 75px;
+	height: 75px;
+	border-radius: 50px;
 	margin-left: auto;
     margin-right: auto;
+}
+
+.fn {
+	text-align: center;
+}
+
+.url {
+	text-align: center;
 }
 
 .pings {
@@ -1517,13 +1525,8 @@ ul.children {
 
 .comment-meta {
     padding: 5px;
-	margin-top: 5px;
 	margin-bottom: 15px;
-	display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-	font-size: 14px;
-	border-bottom: 1px solid #f8f8f8;
+	text-align: center;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
