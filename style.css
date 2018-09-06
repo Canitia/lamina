@@ -872,6 +872,10 @@ footer p {
 		transition-duration: 0.5s;
 	}
 
+	.navbar {
+		justify-content: flex-start !important;
+	}
+
 	.menu-item {
 		text-align: center;
 	}
@@ -1060,6 +1064,10 @@ footer p {
 	.navbar-collapse {
 		height: 100vh;
 		transition-duration: 0.5s;
+	}
+
+	.navbar {
+		justify-content: flex-start !important;
 	}
 
 	.menu-item {
