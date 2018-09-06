@@ -1,10 +1,10 @@
 /*
 Theme Name: Lamina
-Theme URI: https://lamina.canitia.nl
+Theme URI: https://canitia.nl
 Author: Michael Boumann
 Author URI: http://me.canitia.nl
 Description: Lamina brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 1.2.1r
+Version: 1.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -222,6 +222,10 @@ strong {
 	background: #FF4500 !important;
 }
 
+.brand-logo {
+	border-radius: 50px;
+}
+
 .navbar-brand {
 	margin-left: 10px;
 }
@@ -331,10 +335,6 @@ strong {
 	transition: all .2s ease-in-out;
 }
 
-.card:hover {
-	transform: scale(1.02);
-}
-
 .card-title {
 	font-size: 135% !important;
 	margin-top: 15px;
@@ -376,6 +376,10 @@ strong {
 	font-weight: 300;
 	color: #d33900;
 	text-transform: uppercase;
+}
+
+.collection-search {
+	background: white;
 }
 
 .post-item-main > a {
@@ -513,6 +517,9 @@ article > h1:first-child {
 	font-weight: 600;
 }
 
+.widget > ul > li > a:hover {
+	color: white;
+}
 
 .sidebar {
 	background: white;
@@ -865,6 +872,10 @@ footer p {
 		transition-duration: 0.5s;
 	}
 
+	.navbar {
+		justify-content: flex-start !important;
+	}
+
 	.menu-item {
 		text-align: center;
 	}
@@ -936,10 +947,6 @@ footer p {
 	.main-content {
 		padding-left: 0;
 		padding-right:0;
-	}
-
-	img.brand-logo {
-		display: none;
 	}
 	
 	.navbar {
@@ -1059,6 +1066,10 @@ footer p {
 		transition-duration: 0.5s;
 	}
 
+	.navbar {
+		justify-content: flex-start !important;
+	}
+
 	.menu-item {
 		text-align: center;
 	}
@@ -1120,11 +1131,6 @@ footer p {
 
 	.caption-image {
 		font-size: 1.3em !important;
-	}
-
-
-	img.brand-logo {
-		display: none;
 	}
 
 	.collection-item {
@@ -1419,10 +1425,10 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-exclamation-triangle {
-	text-align: center;
     display: block !important;
-	font-size: 5em !important;
-	margin-top: 50px;
+    font-size: 5em !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* **************************************
@@ -1806,9 +1812,10 @@ div.aligncenter {
     padding-top: 0;
     padding-bottom: 15px;
 	text-align: left;
-	color: #979797;
+	color: #d33900;
 	caption-side: top;
 	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 #wp-calendar thead { 
