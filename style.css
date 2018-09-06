@@ -873,6 +873,10 @@ footer p {
 		width: 100%;
 	}
 
+	.card-title {
+		font-size: 115% !important;
+	}
+
 	.container-fluid {
 		padding: 0 !important;
 	}
