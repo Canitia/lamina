@@ -359,7 +359,7 @@ strong {
 .card-text {
 	text-overflow: ellipsis;
 	overflow: hidden;
-	height: 95px;
+	height: 45px;
 }
 
 
