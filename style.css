@@ -523,6 +523,7 @@ article > h1:first-child {
 
 .widget > ul > li > a:hover {
 	color: white;
+	text-decoration: none;
 }
 
 .sidebar {
