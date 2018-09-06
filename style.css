@@ -22,9 +22,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
 	height: 100%;
-	font-size: 112.5%;
-	font-family: 'Karla', sans-serif !important;
-	line-height: 1.66667;
 	min-width: 320px;
 }
 
@@ -37,18 +34,22 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	margin: 0 0 1.66667em;
+	font-family: 'Anaheim', sans-serif;
 }
 
 h1 {
 	font-size: 3.2rem !important;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 {
 	font-size: 2.9rem !important;
+	font-family: 'Asap', sans-serif;
 }
 
 h3 {
 	font-size: 2.6rem !important;
+	font-family: 'Asap', sans-serif;
 }
 
 .flex-grow {
@@ -63,6 +64,7 @@ h3 {
 
 .h-slider {
 	text-shadow: 2px 1px #000000;
+	font-family: 'Asap', sans-serif;
 }
 
 .h3-join-the-conversation {
