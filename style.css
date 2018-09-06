@@ -382,6 +382,14 @@ strong {
 	text-transform: uppercase;
 }
 
+.text-left-title-featured-search {
+	background: white;
+}
+
+.collection-search {
+	background: white;
+}
+
 .post-item-main > a {
 	color: white;
 }
