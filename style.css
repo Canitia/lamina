@@ -231,7 +231,7 @@ strong {
 
 /* color of clickable header */
 .site-title {
-	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 175%;
 }
 
