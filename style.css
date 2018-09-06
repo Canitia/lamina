@@ -488,10 +488,6 @@ article > h1:first-child {
 	margin-bottom:25px;
 }
 
-.main-content {
-	border-right: 1px solid #ebebeb;
-}
-
 /* sidebar */
 .widget > ul {
     padding-left: 0;
