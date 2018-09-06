@@ -1807,6 +1807,7 @@ div.aligncenter {
 	color: #d33900;
 	caption-side: top;
 	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 #wp-calendar thead { 
