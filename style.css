@@ -229,6 +229,13 @@ strong {
 	border: 0;
 }
 
+.navbar-collapse {
+	margin-bottom: 0 !important;
+	height: 100vh;
+	transition-duration: 0.5s;
+	padding-left: 0 !important;
+}
+
 /* color of clickable header */
 .site-title {
 	font-family: 'Source Sans Pro', sans-serif;
