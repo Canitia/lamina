@@ -1,7 +1,11 @@
 <?php get_header(); ?>
   <div class="row">
 
-  <div class="main-content">
+    <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
+    <!-- second column (widget bar) -->
+      <?php get_sidebar( 'primary' ); ?>
+    <?php endif; ?>
+  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
         
       <?php if($paged <= 1) {
 
@@ -15,7 +19,12 @@
             <h1 class="text-left-title-featured-sidebar"><?php _e('Latest posts by', 'lamina'); ?> 
             <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
-        <?php }} ?>
+        <?php }      
+        else { ?>
+          <h1 class="text-left-title-featured-sidebar"><?php _e('Latest', 'lamina');?></h1>  
+        <?php 
+        }          
+       } ?>
 
   <div class="row page-row">
   <!-- show the right header item -->
@@ -78,10 +87,17 @@
       
 
    </div>
+   <hr />
   <!-- pagination?-->
   <?php lamina_pagination_numeric_posts_nav(); ?>
 
 </div> <!-- close content main -->
+
+  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
+  <!-- second column (widget bar) -->
+  <?php get_sidebar( 'primary' ); ?>
+  <?php endif; ?>
+
 
 </div> <!-- row main -->
 <!-- start of footer -->
