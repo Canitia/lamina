@@ -231,8 +231,6 @@ strong {
 
 .navbar-collapse {
 	margin-bottom: 0 !important;
-	height: 100vh;
-	transition-duration: 0.5s;
 	padding-left: 0 !important;
 }
 
@@ -861,6 +859,11 @@ footer p {
 
 @media (max-width: 575px) {  
 
+	.navbar-collapse {
+		height: 100vh;
+		transition-duration: 0.5s;
+	}
+
 	.carousel {
 		max-height: 250px;
 	}
@@ -1036,6 +1039,10 @@ footer p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+	.navbar-collapse {
+		height: 100vh;
+		transition-duration: 0.5s;
+	}
 
 	.carousel {
 		max-height: 250px;
