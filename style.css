@@ -1421,6 +1421,8 @@ EXTERNAL libraries look-n-feel
 	width: 100px;
 	max-width: 100%;
 	height: auto;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .pings {
@@ -1505,10 +1507,8 @@ ul.children {
 }
 
 .comment-author > cite {
-    font-size: 1.3em;
-    font-weight: 300;
+    font-size: 1em;
 	vertical-align: middle;
-	display: initial;
 }
 
 .comment-author > cite:before {
