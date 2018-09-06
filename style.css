@@ -521,6 +521,9 @@ article > h1:first-child {
 	font-weight: 600;
 }
 
+.widget > ul > li > a:hover {
+	color: white;
+}
 
 .sidebar {
 	background: white;
