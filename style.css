@@ -4,7 +4,7 @@ Theme URI: https://lamina.canitia.nl
 Author: Michael Boumann
 Author URI: http://me.canitia.nl
 Description: Lamina brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 1.1.3r
+Version: 1.2.0r
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -22,33 +22,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
 	height: 100%;
-	font-size: 112.5%;
-	font-family: 'Karla', sans-serif !important;
-	line-height: 1.66667;
 	min-width: 320px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #2f313d;
-    font-weight: bold;
-    line-height: 1.2;
-    text-rendering: optimizeLegibility;
 }
 
 p {
 	margin: 0 0 1.66667em;
+	font-family: 'Anaheim', sans-serif;
+}
+
+p a:hover {
+	color: #b5b5b5 !important;
 }
 
 h1 {
 	font-size: 3.2rem !important;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 {
-	font-size: 2.9rem !important;
+	font-size: 2.8rem !important;
+	font-family: 'Asap', sans-serif;
 }
 
 h3 {
 	font-size: 2.6rem !important;
+	font-family: 'Asap', sans-serif;
 }
 
 .flex-grow {
@@ -63,6 +65,7 @@ h3 {
 
 .h-slider {
 	text-shadow: 2px 1px #000000;
+	font-family: 'Asap', sans-serif;
 }
 
 .h3-join-the-conversation {
@@ -227,9 +230,14 @@ strong {
 	border: 0;
 }
 
+.navbar-collapse {
+	margin-bottom: 0 !important;
+	padding-left: 0 !important;
+}
+
 /* color of clickable header */
 .site-title {
-	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 175%;
 }
 
@@ -328,7 +336,7 @@ strong {
 }
 
 .card-title {
-	font-size: 125% !important;
+	font-size: 135% !important;
 	margin-top: 15px;
 	white-space: nowrap;
 	overflow: hidden;
@@ -357,7 +365,8 @@ strong {
 .card-text {
 	text-overflow: ellipsis;
 	overflow: hidden;
-	height: 95px;
+	height: 45px;
+	margin-bottom: 10px;
 }
 
 
@@ -486,10 +495,6 @@ article > h1:first-child {
 	margin-bottom:25px;
 }
 
-.main-content {
-	border-right: 1px solid #ebebeb;
-}
-
 /* sidebar */
 .widget > ul {
     padding-left: 0;
@@ -513,7 +518,6 @@ article > h1:first-child {
 	background: white;
 	border-left: 1px solid #ebebeb;
 	border-right: 1px solid #ebebeb;
-	border-bottom: 1px solid #ebebeb;
 }
 
 /* ######################################
@@ -526,8 +530,9 @@ POST/ARTICLE HEADERS
 }
 
 .post-subitems {
+	font-family: 'Asap', sans-serif;
 	margin-top: 30px;
-	font-weight: 300;
+	margin-bottom: 30px;
 }
 
 .post-subitems > a
@@ -855,6 +860,20 @@ footer p {
 
 @media (max-width: 575px) {  
 
+	.navbar-collapse {
+		height: 100vh;
+		transition-duration: 0.5s;
+	}
+
+	.menu-item {
+		text-align: center;
+	}
+
+	.menu-item a {
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+
 	.carousel {
 		max-height: 250px;
 	}
@@ -862,6 +881,10 @@ footer p {
 	.carousel-item {
 		max-height: 250px;
 		width: 100%;
+	}
+
+	.card-title {
+		font-size: 115% !important;
 	}
 
 	.container-fluid {
@@ -1030,6 +1053,20 @@ footer p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+
+	.navbar-collapse {
+		height: 100vh;
+		transition-duration: 0.5s;
+	}
+
+	.menu-item {
+		text-align: center;
+	}
+
+	.menu-item a {
+		font-size: 2em;
+		text-transform: uppercase;
+	}
 
 	.carousel {
 		max-height: 250px;
@@ -1401,9 +1438,19 @@ EXTERNAL libraries look-n-feel
 	display: block;
 	padding: 10px;
 	border: 2px solid #ebebeb;
-	width: 100px;
-	max-width: 100%;
-	height: auto;
+	width: 75px;
+	height: 75px;
+	border-radius: 50px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.fn {
+	text-align: center;
+}
+
+.url {
+	text-align: center;
 }
 
 .pings {
@@ -1443,6 +1490,7 @@ ul.commentlist {
     padding: 15px;
     overflow: hidden;
 	border: 1px solid #ebebeb;
+	background: #f8f8f8;
 }
 
 .comment-body > ul li,
@@ -1487,10 +1535,9 @@ ul.children {
 }
 
 .comment-author > cite {
-    font-size: 1.3em;
-    font-weight: 300;
+	font-size: 1.1em;
+	font-family: 'Asap', sans-serif;
 	vertical-align: middle;
-	display: initial;
 }
 
 .comment-author > cite:before {
@@ -1499,13 +1546,9 @@ ul.children {
 
 .comment-meta {
     padding: 5px;
-	margin-top: 5px;
 	margin-bottom: 15px;
-	display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-	font-size: 14px;
-	border-bottom: 1px solid #f8f8f8;
+	text-align: center;
+	font-family: 'Asap', sans-serif;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
