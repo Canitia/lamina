@@ -16,7 +16,7 @@ Template Name: Search Page
 <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
  
     <h1 class="text-left-title-featured-sidebar text-left-title-featured-search truncate"><?php _e('Results for ', 'lamina'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
-    <div class="collection collection-search">
+    <div class="collection collection-search card">
 
     <?php
     $s=get_search_query();
@@ -29,7 +29,7 @@ Template Name: Search Page
             while ( $the_query->have_posts() ) {
             $the_query->the_post();
                     ?>
-                <div class="collection-item">
+                <div class="collection-item card-block">
                     <a href="<?php the_permalink(); ?>">
                     <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
                         <span class="badge">
