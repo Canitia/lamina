@@ -865,6 +865,15 @@ footer p {
 		transition-duration: 0.5s;
 	}
 
+	.menu-item {
+		text-align: center;
+	}
+
+	.menu-item a {
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+
 	.carousel {
 		max-height: 250px;
 	}
@@ -1044,9 +1053,19 @@ footer p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
+
 	.navbar-collapse {
 		height: 100vh;
 		transition-duration: 0.5s;
+	}
+
+	.menu-item {
+		text-align: center;
+	}
+
+	.menu-item a {
+		font-size: 2em;
+		text-transform: uppercase;
 	}
 
 	.carousel {
