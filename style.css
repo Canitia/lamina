@@ -27,9 +27,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #2f313d;
-    font-weight: bold;
-    line-height: 1.2;
-    text-rendering: optimizeLegibility;
 }
 
 p {
@@ -1514,7 +1511,8 @@ ul.children {
 }
 
 .comment-author > cite {
-    font-size: 1em;
+	font-size: 1em;
+	font-family: 'Asap', sans-serif;
 	vertical-align: middle;
 }
 
