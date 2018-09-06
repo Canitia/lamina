@@ -1422,10 +1422,10 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-exclamation-triangle {
-	text-align: center;
     display: block !important;
-	font-size: 5em !important;
-	margin-top: 50px;
+    font-size: 5em !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* **************************************
