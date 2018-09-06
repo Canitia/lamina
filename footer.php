@@ -13,5 +13,12 @@
           <!-- close with Wordpress footer aka adminbar etc. -->
        <?php wp_footer();?>
 </footer>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Source Sans Pro:600', 'Asap', 'Anaheim']
+    }
+  });
+</script>
   </body>
 </html>
