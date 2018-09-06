@@ -78,7 +78,6 @@
       
 
    </div>
-   <hr />
   <!-- pagination?-->
   <?php lamina_pagination_numeric_posts_nav(); ?>
 
