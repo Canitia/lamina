@@ -204,12 +204,12 @@ strong {
 .btn:hover, 
 .comment-reply-link:hover,
 .submit:hover {
-	background-color: #d33900 !important;
+	background-color: #979797 !important;
 }
 
 .btn:hover {
 	color: black !important;
-	background: #FF4500 !important;
+	background: #979797 !important;
 }
 
 /* **************************************
@@ -372,10 +372,12 @@ strong {
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
-	font-size: 125% !important;
+	font-size: 135% !important;
 	font-weight: 300;
 	color: #d33900;
 	text-transform: uppercase;
+	background: rgba(255,255,255,0.5);
+    padding: 25px;
 }
 
 .collection-search {
@@ -475,7 +477,7 @@ strong {
 }
 
 .collection .collection-item:hover {
-	background-color: #FF4500 !important;
+	background-color: #979797 !important;
 }
 
 .collection-item > a > p:hover {
@@ -645,18 +647,18 @@ ul.pings.commentlist {
 }
 
 .pagination-within li { 
-	background-color: #d33900;
+	background-color: #979797;
 	color:black;
 	font-weight: 600;
 }
 
 .pagination-within > a > li {
-	background-color: #FF4500;
+	background-color: #979797;
 	color: black;
 }
 
 .pagination-within > a > li:hover {
-	background-color: #d33900;
+	background-color: #f8f8f8;
 	color: black;
 }
 
@@ -692,7 +694,7 @@ ul.pings.commentlist {
 
 .cat-links > a:hover {
 	text-decoration: underline;
-	color: #FF4500;
+	color: #979797;
 }
 
 .categorylist {
@@ -709,7 +711,7 @@ ul.pings.commentlist {
 .post-content a:hover,
 .tagslist a:hover,
 .categorylist a:hover {
-	color: #FF4500;
+	color: #979797;
 }
 
 .tagslist a::before {
@@ -808,7 +810,7 @@ p.postedby {
 }
 
 .pagination > ul > li {
-	background-color: #FF4500;
+	background-color: #f8f8f8;
 	float: left;
 	list-style: none;
 	padding: 15px;
@@ -816,11 +818,11 @@ p.postedby {
 }
 
 .pagination > ul > li:hover {
-	background-color: #d33900;
+	background-color: #979797;
 }
 
 .pagination > ul > li.active {
-	background-color: #d33900 !important;
+	background-color: #979797 !important;
 }
 
 .pagination > ul > li.pagination-dash {
@@ -1555,7 +1557,7 @@ ul.children {
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
-    background-color:#FF4500 !important;
+    background-color:#979797 !important;
     border: none;
     border-radius: 3px;
 	padding-left: 15px;
@@ -1585,7 +1587,7 @@ ul.children {
     font-size: 80% !important;
     float: right;
 	cursor: pointer;
-    background-color:#FF4500 !important;
+    background-color:#979797 !important;
     border: none;
     border-radius: 3px;
     padding: 5px;
