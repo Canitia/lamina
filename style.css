@@ -256,8 +256,7 @@ strong {
 }
 
 .menu-item > a:hover {
-	text-decoration: none;
-	color: #f9f9f9;
+	text-decoration: underline;
 }
 
 .menu-item > ul > .menu-item {
