@@ -22,17 +22,17 @@ function lamina_theme_scripts() {
 	wp_enqueue_script( 'webfontloader', '//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js' );
 	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
-	wp_enqueue_style( 'orange-sphalerite',  get_stylesheet_directory_uri(). '/style.css' );	
+	wp_enqueue_style( 'sodalite',  get_stylesheet_directory_uri(). '/style.css' );	
 
-	if ( get_theme_mod( 'theme_preset', 'orange-sphalerite' ) == 'pinkruby') :
+	if ( get_theme_mod( 'theme_preset', 'sodalite' ) == 'pinkruby') :
 		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css' );
 	endif;
 
-	if ( get_theme_mod( 'theme_preset' , 'orange-sphalerite' ) == 'brownsinhalite') :
+	if ( get_theme_mod( 'theme_preset' , 'sodalite' ) == 'brownsinhalite') :
 		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css' );	
 	endif;
 
-	if ( get_theme_mod( 'theme_preset' , 'orange-sphalerite' ) == 'bluesapphire') :
+	if ( get_theme_mod( 'theme_preset' , 'sodalite' ) == 'bluesapphire') :
 		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css' );	
 	endif;
 }
@@ -263,7 +263,7 @@ function lamina_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'theme_preset',
 		array(
-			'default' => 'orange-sphalerite',
+			'default' => 'sodalite',
 			'sanitize_callback' => 'lamina_sanitize_select',
 			'settings' => 'theme_preset',
 		)
@@ -304,7 +304,7 @@ function lamina_customizer( $wp_customize ) {
 		'section' => 'colors',
 		'type' => 'radio',
 		'choices' => array(
-			'default' => __('Orange Sphalerite (default)', 'lamina'),
+			'default' => __('Sodalite (default)', 'lamina'),
 			'pinkruby' => __('Pink Ruby', 'lamina'),
 			'brownsinhalite' => __('Brown Sinhalite', 'lamina'),
 			'bluesapphire' => __('Blue Sapphire', 'lamina'),
