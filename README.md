@@ -20,7 +20,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 ![Lamina](https://gitlab.com/canitia/lamina/raw/master/screenshot.png)
 
 # Status
-Stable, but might have some minor issues left (alignment, margins, specific sidebar widgets etc.)
+Stable
 
 - *Passed 'theme check' validation once more on May 7th 2018*
 
