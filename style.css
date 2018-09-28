@@ -819,6 +819,11 @@ p.postedby {
 	font-weight: 600;
 }
 
+.pagination > ul > li.active > a, 
+.pagination > ul > li > a:hover  {
+    color: white;
+}
+
 .pagination > ul > li:hover {
 	background-color: #666666;
 }
