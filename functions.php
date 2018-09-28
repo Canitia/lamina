@@ -31,10 +31,6 @@ function lamina_theme_scripts() {
 	if ( get_theme_mod( 'theme_preset' , 'sodalite' ) == 'brownsinhalite') :
 		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css' );	
 	endif;
-
-	if ( get_theme_mod( 'theme_preset' , 'sodalite' ) == 'bluesapphire') :
-		wp_enqueue_style( 'bluesapphire',  get_stylesheet_directory_uri(). '/css/style.bluesapphire.css' );	
-	endif;
 }
 
 add_action( 'wp_enqueue_scripts', 'lamina_theme_scripts' );
@@ -306,8 +302,7 @@ function lamina_customizer( $wp_customize ) {
 		'choices' => array(
 			'default' => __('Sodalite (default)', 'lamina'),
 			'pinkruby' => __('Pink Ruby', 'lamina'),
-			'brownsinhalite' => __('Brown Sinhalite', 'lamina'),
-			'bluesapphire' => __('Blue Sapphire', 'lamina'),
+			'brownsinhalite' => __('Brown Sinhalite', 'lamina')
 		),
 	) );
 
