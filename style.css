@@ -194,7 +194,7 @@ strong {
 
 .read-more-btn {
 	border: 0 !important;
-	background-color: #f8f8f8 !important;
+	background-color: #eeeeee !important;
 	font-weight: 600;
 	display: block;
 	float: right;
@@ -348,7 +348,7 @@ strong {
 }
 
 .card-title a:hover {
-    color: #545454;
+    color: #979797;
     text-decoration: none;
 }
 
@@ -373,7 +373,7 @@ strong {
 .text-left-title-featured-sidebar {
 	font-size: 135% !important;
 	font-weight: 300;
-	color: #d33900;
+	color: #0088cc;
 	text-transform: uppercase;
 	background: rgba(255,255,255,0.5);
     padding: 25px;
@@ -468,7 +468,7 @@ strong {
 }
 
 .collection-item {
-	border-bottom: 1px solid #f8f8f8 !important;
+	border-bottom: 1px solid #eeeeee !important;
 	padding-left: 10px;
 	white-space: nowrap;
     overflow: hidden;
@@ -480,7 +480,7 @@ strong {
 }
 
 .collection-item > a > p:hover {
-	color: white;
+	color: #979797;
 }
 
 .collection-item > a:hover {
@@ -493,7 +493,7 @@ article > h2,
 article > h3, 
 article > h4, 
 .author-url-post-head  {
-	color:#979797 !important;
+	color:#666666 !important;
 }
 
 article > h1:first-child {
@@ -509,13 +509,18 @@ article > h1:first-child {
 	line-height: 1.5rem;
 	padding: 10px 20px;
 	margin: 0;
-	border-bottom: 1px solid #f8f8f8;
+	border-bottom: 1px solid #eeeeee;
 	list-style-type: none !important;
 }
 
 .widget > ul > li:hover {
-	background-color: #f8f8f8;
+	background-color: #eeeeee;
+	color: #0088cc;
 	font-weight: 600;
+}
+
+.widget > ul > li > a:hover {
+	color: #0088cc;
 }
 
 .sidebar {
@@ -547,7 +552,7 @@ POST/ARTICLE HEADERS
 
 .post-subitems > a:hover
 {
-	color: #b5b5b5;
+	color: #979797;
 	text-decoration: underline;
 }
 
@@ -646,18 +651,18 @@ ul.pings.commentlist {
 }
 
 .pagination-within li { 
-	background-color: #979797;
+	background-color: #666666;
 	color:black;
 	font-weight: 600;
 }
 
 .pagination-within > a > li {
-	background-color: #979797;
+	background-color: #666666;
 	color: black;
 }
 
 .pagination-within > a > li:hover {
-	background-color: #f8f8f8;
+	background-color: #eeeeee;
 	color: black;
 }
 
@@ -693,7 +698,7 @@ ul.pings.commentlist {
 
 .cat-links > a:hover {
 	text-decoration: underline;
-	color: #979797;
+	color: #666666;
 }
 
 .categorylist {
@@ -710,7 +715,7 @@ ul.pings.commentlist {
 .post-content a:hover,
 .tagslist a:hover,
 .categorylist a:hover {
-	color: #979797;
+	color: #666666;
 }
 
 .tagslist a::before {
@@ -781,7 +786,7 @@ p.postedby {
 }
 
 .author-name a:hover {
-	color: #979797;
+	color: #666666;
 }
 
 .author-bio-text {
@@ -809,7 +814,7 @@ p.postedby {
 }
 
 .pagination > ul > li {
-	background-color: #f8f8f8;
+	background-color: #eeeeee;
 	float: left;
 	list-style: none;
 	padding: 15px;
@@ -817,11 +822,11 @@ p.postedby {
 }
 
 .pagination > ul > li:hover {
-	background-color: #979797;
+	background-color: #666666;
 }
 
 .pagination > ul > li.active {
-	background-color: #979797 !important;
+	background-color: #666666 !important;
 }
 
 .pagination > ul > li.pagination-dash {
@@ -832,7 +837,7 @@ p.postedby {
 }
 
 .pagination > ul > .disabled, .pagination > ul > .disabled:hover {
-    background: #f8f8f8;
+    background: #eeeeee;
 }
 
 .fa-chevron-right,
@@ -1493,7 +1498,7 @@ ul.commentlist {
     padding: 15px;
     overflow: hidden;
 	border: 1px solid #ebebeb;
-	background: #f8f8f8;
+	background: #eeeeee;
 }
 
 .comment-body > ul li,
@@ -1510,7 +1515,7 @@ ul.commentlist {
 }
 
 .comment.odd {
-	background-color: #f8f8f8;
+	background-color: #eeeeee;
 }
 
 ul.children {
@@ -1528,7 +1533,7 @@ ul.children {
 }
 
 .comment-author.vcard {
-	border-bottom: 1px solid #f8f8f8;
+	border-bottom: 1px solid #eeeeee;
 	margin-top: -5px;
 	padding-bottom: 10px;
 }
@@ -1556,7 +1561,7 @@ ul.children {
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
-    background-color:#979797 !important;
+    background-color:#666666 !important;
     border: none;
     border-radius: 3px;
 	padding-left: 15px;
@@ -1586,7 +1591,7 @@ ul.children {
     font-size: 80% !important;
     float: right;
 	cursor: pointer;
-    background-color:#979797 !important;
+    background-color:#666666 !important;
     border: none;
     border-radius: 3px;
     padding: 5px;
@@ -1791,7 +1796,7 @@ div.aligncenter {
 }
 
 .tagcloud > a:hover {
-	color: #979797;
+	color: #666666;
 	text-decoration: underline;
 }
 
@@ -1809,7 +1814,7 @@ div.aligncenter {
     padding-top: 0;
     padding-bottom: 15px;
 	text-align: left;
-	color: #d33900;
+	color: #0088cc;
 	caption-side: top;
 	text-transform: uppercase;
 	font-family: 'Source Sans Pro', sans-serif;
