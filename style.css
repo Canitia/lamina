@@ -686,7 +686,6 @@ ul.pings.commentlist {
 
 *****************************************/
 .cat-links {
-	margin-top: 45px;
 }
 
 
@@ -723,8 +722,7 @@ ul.pings.commentlist {
 }
 
 .tagslist {
-	margin-bottom: 35px;
-	padding-top: 35px;
+	padding-top: 10px;
 	margin-left: 10px;
 }
 
