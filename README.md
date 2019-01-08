@@ -17,7 +17,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 - Show tags in posts and such (show/hide)
 - Show author section (show/hide)
 
-![Lamina](https://gitlab.com/canitia/lamina/raw/master/screenshot.png)
+![Lamina](https://github.com/canitia/lamina/raw/master/screenshot.png)
 
 # Status
 Stable
