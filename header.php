@@ -15,10 +15,10 @@
     <?php wp_head();?>
 </head>
 
-<body class="d-flex flex-column" <?php body_class();?>>
+<body class="d-flex flex-column" <?php body_class();?> style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
 
 <!-- start of the actual header -->
-<header>
+<header class="container-fluid">
 <nav class="navbar navbar-expand-md navbar-light">
         <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
