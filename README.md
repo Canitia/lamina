@@ -25,8 +25,8 @@ Stable
 - *Passed 'theme check' validation once more on May 7th 2018*
 
 ## Libraries used
-- Font Awesome 5.3.1
-- Bootstrap v4.1.3
+- Font Awesome 5.8.1
+- Bootstrap v4.3.1
 - JQuery (included)
 - [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 
