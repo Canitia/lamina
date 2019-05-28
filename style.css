@@ -553,9 +553,7 @@ article > h1:first-child {
 }
 
 .widget > ul > li:hover {
-	background-color: #eeeeee;
 	color: #0088cc;
-	font-weight: 600;
 }
 
 .widget > ul > li > a:hover {
