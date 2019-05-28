@@ -348,6 +348,7 @@ strong {
 
 *****************************************/
 .sidebar {
+	margin-top: 20px;
 	margin-bottom: 20px;
 	justify-content: space-around;
 }
@@ -355,6 +356,10 @@ strong {
 .row {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+}
+
+.page-row {
+    margin-bottom: 50px;
 }
 
 .post-row {
