@@ -554,6 +554,11 @@ article > h1:first-child {
 
 .widget > ul > li > a:hover {
 	color: #0088cc;
+	text-decoration: none;
+}
+
+.widget > ul > li > a {
+    color: black;
 }
 
 /* ######################################
