@@ -44,7 +44,7 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
 $headerargs = array(
 	'flex-height'    => true,
-	'height'        => 200,
+	'height'        => 325,
 	'default-image' => get_template_directory_uri() . '/images/header.jpg',
 );
 add_theme_support( 'custom-header', $headerargs );
