@@ -5,7 +5,7 @@
     <!-- second column (widget bar) -->
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
-  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-9 col-lg-9'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
+  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
         
       <?php if($paged <= 1) {
 
@@ -89,12 +89,6 @@
   <?php lamina_pagination_numeric_posts_nav(); ?>
 
 </div> <!-- close content main -->
-
-  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-  <!-- second column (widget bar) -->
-  <?php get_sidebar( 'primary' ); ?>
-  <?php endif; ?>
-
 
 </div> <!-- row main -->
 <!-- start of footer -->
