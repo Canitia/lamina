@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!sdDOCTYPE html>
 <html <?php language_attributes();?> itemscope itemtype="http://schema.org/WebPage">
 <head>
     <!-- some meta -->
@@ -34,7 +34,7 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-
+<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="100%" alt="Header image" />
 </header>
 <main>
 <?php //show slider
