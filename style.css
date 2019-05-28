@@ -256,6 +256,10 @@ strong {
 	padding-left: 0 !important;
 }
 
+.nav-link:hover {
+	text-decoration: none !important;
+}
+
 /* color of clickable header */
 .site-title {
 	font-family: 'Source Sans Pro', sans-serif;
