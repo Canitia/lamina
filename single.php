@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php
         if ( has_post_thumbnail() ) {
-            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+            the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
         } else {
 ?>
 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="img-fluid" />
