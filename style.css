@@ -455,6 +455,7 @@ strong {
 .badge {
 	font-weight: 500;
 	color: black;
+	padding: 0 !important;
 }
 
 .badge-featured {
