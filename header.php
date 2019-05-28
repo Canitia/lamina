@@ -36,7 +36,7 @@
 </nav>
 
 </header>
-<main style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
+<main>
 <?php //show slider
     if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
 
