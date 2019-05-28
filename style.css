@@ -367,7 +367,7 @@ strong {
 
 .card {
 	border: 0 !important;
-	padding: 15px;
+	padding: 20px;
 	height: 100% !important;
 	background-color: transparent !important;
 	transition: all .2s ease-in-out;
@@ -392,7 +392,10 @@ strong {
 }
 
 .card-block, .post-content {
-	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .card-block {
@@ -453,6 +456,11 @@ strong {
     color: black;
 	text-align: center;
 	border-radius: 15px;
+}
+
+.card-img-top.homepage-image {
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .homepage-image {
