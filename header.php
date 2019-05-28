@@ -34,7 +34,12 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="100%" alt="Header image" />
+<div class="heading">
+    <div class="heading-text">
+      <?php echo get_bloginfo('description');?>
+    </div>
+      <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="100%" alt="Header image" />
+</div>
 </header>
 <main>
 <?php //show slider
