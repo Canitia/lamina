@@ -42,8 +42,8 @@ $bgargs = array(
 add_theme_support( "title-tag" );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
+
 $headerargs = array(
-	'flex-height'    => true,
 	'height'        => 325,
 	'default-image' => get_template_directory_uri() . '/images/header.jpg',
 );
