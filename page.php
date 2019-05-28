@@ -3,7 +3,7 @@
     <div class="row h-100 page-row post-row">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-    <div class="<?php if ( is_active_sidebar('primary')) { echo 'col-md-12 col-lg-12';};?> main-content">
+    <div class="col-md-12 col-lg-12 main-content">
     <div <?php post_class(); ?>>
         <article>
         <div class="post-head">
