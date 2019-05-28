@@ -15,7 +15,7 @@
     <?php wp_head();?>
 </head>
 
-<body class="d-flex flex-column" <?php body_class();?> style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
+<body class="d-flex flex-column" <?php body_class();?> >
 
 <!-- start of the actual header -->
 <header class="container-fluid">
