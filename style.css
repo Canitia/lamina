@@ -1243,6 +1243,7 @@ footer p {
 
 	.sidebar {
 		margin-bottom: 20px;
+		justify-content: space-around;
 	}
 
 	.row-post {
@@ -1315,6 +1316,7 @@ footer p {
 
 	.sidebar {
 		margin-bottom: 20px;
+		justify-content: space-around;
 	}
 
 	.text-left-title-featured-sidebar {
