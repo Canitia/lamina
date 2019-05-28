@@ -556,12 +556,6 @@ article > h1:first-child {
 	color: #0088cc;
 }
 
-.sidebar {
-	background: white;
-	border-left: 1px solid #ebebeb;
-	border-right: 1px solid #ebebeb;
-}
-
 /* ######################################
 
 POST/ARTICLE HEADERS
