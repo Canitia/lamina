@@ -18,7 +18,7 @@
 <body class="d-flex flex-column" <?php body_class();?> >
 
 <!-- start of the actual header -->
-<header class="container-fluid">
+<header>
 <nav class="navbar navbar-expand-md navbar-light">
         <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
