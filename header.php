@@ -42,6 +42,7 @@
       <img src="<?php header_image(); ?>" class="header-image" alt="Header image" />
 </div>
 <?php } ?>
+
 </header>
 <main>
 <div class="container-fluid flex-grow">
