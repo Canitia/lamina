@@ -944,6 +944,10 @@ footer p {
 		width: 100%;
 	}
 
+	.heading {
+		font-size: 2em;
+	}
+
 	.card-title {
 		font-size: 115% !important;
 	}
