@@ -1,11 +1,5 @@
 <?php get_header(); ?>
-<?php
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
-        } else {
-?>
-<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="img-fluid" />
-<?php } ?>
+
 
     <div class="row h-100 page-row post-row">
         <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
@@ -15,7 +9,7 @@
         
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-    <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>">
+    <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-12 col-lg-12';};?>">
     <div <?php post_class(); ?>>
         <article>
         <div class="post-head">
@@ -25,6 +19,13 @@
                      <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
                 </div>
         </div>
+        <?php
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
+        } else {
+?>
+<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
+<?php } ?>    
         <div class="post-content">
             <?php the_content(); ?>
         </div> 
