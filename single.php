@@ -9,7 +9,7 @@
         
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-    <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-12 col-lg-12';};?>">
+    <div class="main-content col-md-12 col-lg-12">
     <div <?php post_class(); ?>>
         <article>
         <div class="post-head">
@@ -23,9 +23,9 @@
         if ( has_post_thumbnail() ) {
             the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
         } else {
-?>
-<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
-<?php } ?>    
+        ?>
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
+        <?php } ?>    
         <div class="post-content">
             <?php the_content(); ?>
         </div> 
@@ -47,7 +47,7 @@
 
         <!-- let user enter a comment -->
         <?php comments_template(); ?>  
-        
+
        </article><!-- close article -->
 
     </div><!-- close post class div -->
@@ -60,12 +60,6 @@
             <?php get_search_form(); ?>
         </div><!-- post-content END! -->
       <?php endif; ?>
-
-
-  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-  <!-- second column (widget bar) -->
-  <?php get_sidebar( 'primary' ); ?>
-  <?php endif; ?>
   </div><!-- end row -->
 <!-- start of footer -->
 <?php get_footer(); ?>
