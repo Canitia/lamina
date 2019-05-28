@@ -44,10 +44,12 @@
         <?php if ( get_theme_mod( 'show_author_section', 'hideauthor' ) == 'showauthor' ) :
             get_template_part( 'partials/authorsection' ); 
         endif; ?>
-       </article><!-- close article -->
 
         <!-- let user enter a comment -->
         <?php comments_template(); ?>  
+        
+       </article><!-- close article -->
+
     </div><!-- close post class div -->
   </div><!-- close col s12 m8 l8 class div -->
 
