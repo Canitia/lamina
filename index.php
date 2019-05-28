@@ -5,7 +5,7 @@
     <!-- second column (widget bar) -->
       <?php get_sidebar( 'primary' ); ?>
     <?php endif; ?>
-  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
+  <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?>" >
         
       <?php if($paged <= 1) {
 
@@ -19,11 +19,9 @@
             <h1 class="text-left-title-featured-sidebar text-center"><?php _e('Latest posts by', 'lamina'); ?> 
             <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
-        <?php }
-        elseif ( is_home() || is_front_page() ) {?>
-               <h1 class="text-left-title-featured-sidebar text-center"><?php _e('Latest posts by', 'lamina'); ?> </h1>
-               <p class="text-center"><?php _e('Read the newest posts','lamina'); ?></p>
-        <?php } ?>
+        <?php }      
+         
+        } ?>
 
   <div class="row page-row">
   <!-- show the right header item -->
@@ -41,7 +39,7 @@
      if ( $query->have_posts() ) {
     while ( $query->have_posts() ) : $query->the_post(); ?>
 
-          <div class="card col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card col col-sm-12 col-md-12 col-lg-12">
           <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail() && is_sticky() ) {
 
@@ -91,6 +89,12 @@
   <?php lamina_pagination_numeric_posts_nav(); ?>
 
 </div> <!-- close content main -->
+
+  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
+  <!-- second column (widget bar) -->
+  <?php get_sidebar( 'primary' ); ?>
+  <?php endif; ?>
+
 
 </div> <!-- row main -->
 <!-- start of footer -->
