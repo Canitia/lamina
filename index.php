@@ -90,12 +90,6 @@
 
 </div> <!-- close content main -->
 
-  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-  <!-- second column (widget bar) -->
-  <?php get_sidebar( 'primary' ); ?>
-  <?php endif; ?>
-
-
 </div> <!-- row main -->
 <!-- start of footer -->
 <?php get_footer(); ?>
