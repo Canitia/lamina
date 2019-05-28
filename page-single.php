@@ -20,7 +20,7 @@
             the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
         } else {
             ?>
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="img-fluid" />
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
         <?php } ?>
       <div class="post-content">
         <?php the_content();?>
