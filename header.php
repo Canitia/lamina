@@ -34,12 +34,14 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
+<?php if ( is_home() || is_front_page() ) {?>
 <div class="heading">
     <div class="heading-text">
       <?php echo get_bloginfo('description');?>
     </div>
       <img src="<?php header_image(); ?>" class="header-image" alt="Header image" />
 </div>
+<?php } ?>
 </header>
 <main>
 <?php //show slider
