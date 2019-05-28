@@ -317,30 +317,19 @@ function lamina_customizer( $wp_customize ) {
 add_action( 'customize_register', 'lamina_customizer' );
 
 
-function lamina_change_logo_class( $html ) {
-	
-		$html = str_replace( 'custom-logo', 'brand-logo', $html );
-	
-		return $html;
-	}
-
 /**
  * add custom site logo (to header)
  */
-
- function lamina_setup() {
-	
+function lamina_setup() {
 	
 	add_theme_support( 'custom-logo', array(
-	'height'      => 64,
-	'width'       => 64,
-	'flex-width' => true,
-	'header-text' => array( 'site-title', 'site-description' ),
+		'height'      => 64,
+		'width'       => 64,
+		'flex-width' => false,
 	) );
-}
 
+}
 add_action( 'after_setup_theme', 'lamina_setup' );
-add_filter( 'get_custom_logo', 'lamina_change_logo_class' );
 
 load_theme_textdomain( 'lamina', get_template_directory().'/languages' );
 
