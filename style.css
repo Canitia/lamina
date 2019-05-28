@@ -73,7 +73,6 @@ h3 {
 .container-fluid {
 	margin-left: auto;
 	margin-right: auto;
-	max-width:1200px;
 }
 
 .main-content {
@@ -237,7 +236,10 @@ strong {
 *****************************************/
 
 .navbar {
-	background: rgba(0,0,0,0.1) !important;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;	background: rgba(0,0,0,0.1) !important;
 }
 
 .brand-logo {
