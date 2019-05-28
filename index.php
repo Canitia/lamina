@@ -39,7 +39,7 @@
      if ( $query->have_posts() ) {
     while ( $query->have_posts() ) : $query->the_post(); ?>
 
-          <div class="card col col-sm-12 col-md-12 col-lg-6">
+          <div class="card col col-sm-12 col-md-12 col-lg-4">
           <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail() && is_sticky() ) {
 
