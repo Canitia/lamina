@@ -724,7 +724,7 @@ ul.pings.commentlist {
 
 .pagination-within > a > li {
 	background-color: #eeeeee;
-	color: white;
+	color: black;
 }
 
 .pagination-within > a > li:hover {
