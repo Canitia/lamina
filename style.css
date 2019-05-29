@@ -228,6 +228,7 @@ strong {
 .comment-reply-link:hover,
 .submit:hover {
 	background-color: #0088cc !important;
+	color: white !important;
 }
 
 /* **************************************
