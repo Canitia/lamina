@@ -54,10 +54,6 @@ Template Name: Search Page
  </div>
 </div><!-- end main-content -->
 </div>
-  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-  <!-- second column (widget bar) -->
-  <?php get_sidebar( 'primary' ); ?>
-  <?php endif; ?>
 </div><!-- end row -->
 
 <!-- start of footer -->
