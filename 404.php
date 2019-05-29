@@ -22,12 +22,6 @@ function goBack() {
           </div>  
 
     </div><!-- main content END! -->
-
-    <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-    <!-- second column (widget bar) -->
-      <?php get_sidebar( 'primary' ); ?>
-    <?php endif; ?>
-    
 </div><!-- row END! -->
 <!-- start of footer -->
 <?php get_footer();
