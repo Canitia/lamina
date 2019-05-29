@@ -47,6 +47,10 @@ a {
 	text-decoration: underline;
 }
 
+a:hover {
+	color: #0088cc !important;
+}
+
 p {
 	margin: 0 0 1.66667em;
 	font-family: 'Anaheim', sans-serif;
