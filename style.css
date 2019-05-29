@@ -248,7 +248,7 @@ strong {
 	position: relative;
 	text-align: center;
 	color: white;
-	font-size: 3em;
+	font-size: 2em;
 }
 
 .heading-text {
@@ -976,10 +976,6 @@ footer p {
 	.carousel-item {
 		max-height: 250px;
 		width: 100%;
-	}
-
-	.heading {
-		font-size: 2em;
 	}
 
 	.card-title {
