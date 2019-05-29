@@ -289,6 +289,11 @@ strong {
 	text-decoration: none !important;
 }
 
+.navbar .dropdown-menu li a {
+    background: white;
+    color: black;
+}
+
 /* color of clickable header */
 .site-title {
 	font-family: 'Source Sans Pro', sans-serif;
