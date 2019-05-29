@@ -726,6 +726,7 @@ ul.pings.commentlist {
 /* pagination within a post/page */
 .pagination-within {
 	justify-content: center;
+	clear: both;
 }
 
 .pagination-within li { 
