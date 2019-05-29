@@ -14,7 +14,7 @@
     <?php wp_head();?>
 </head>
 
-<body class="d-flex flex-column" <?php body_class();?> >
+<body class="d-flex flex-column <?php body_class();?>" >
 
 <!-- start of the actual header -->
 <header>
