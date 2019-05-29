@@ -35,7 +35,7 @@
 </nav>
 <div class="heading">
     <div class="heading-text">
-      <?php echo get_bloginfo('description');?>
+      <?php esc_html_e(get_bloginfo('description'),'lamina');?>
     </div>
       <img src="<?php header_image(); ?>" class="header-image" alt="Header image" />
 </div>
