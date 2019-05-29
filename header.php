@@ -1,4 +1,4 @@
-<!sdDOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes();?> itemscope itemtype="http://schema.org/WebPage">
 <head>
     <!-- some meta -->
