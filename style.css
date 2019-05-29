@@ -213,6 +213,7 @@ strong {
 .read-more-btn {
 	border: 0 !important;
 	background-color: #fcfcfc !important;
+	border: 2px solid #ebebeb !important;
 	color: black;
 	font-weight: 600;
 	width: 230px;
