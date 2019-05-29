@@ -474,8 +474,8 @@ strong {
 
 .badge-featured {
 	position: absolute;
-    top: 25px;
-    right: 30px;
+	top: 50px;
+	right: 50px;
     z-index: 10;
     padding: 10px !important;
     background-color: #ebebeb !important;
