@@ -19,7 +19,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 # Status
 Stable
 
-- *Passed 'theme check' validation once more on May 7th 2018*
+- *Passed 'theme check' validation once more on May 29th 2019*
 
 ## Libraries used
 - Bootstrap v4.3.1
