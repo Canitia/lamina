@@ -1,11 +1,10 @@
-<!sdDOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes();?> itemscope itemtype="http://schema.org/WebPage">
 <head>
     <!-- some meta -->
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type');?>; charset=<?php bloginfo('charset');?>" />
     <meta name="generator" content="WordPress <?php bloginfo('version');?>" />
     <meta name="description" content="<?php bloginfo( 'description' );?>" />
-    <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() );?>/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- rss, pingback -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo( 'rss2_url' )?>" />
@@ -15,7 +14,7 @@
     <?php wp_head();?>
 </head>
 
-<body class="d-flex flex-column" <?php body_class();?> >
+<body <?php body_class();?> >
 
 <!-- start of the actual header -->
 <header>
@@ -36,7 +35,7 @@
 </nav>
 <div class="heading">
     <div class="heading-text">
-      <?php echo get_bloginfo('description');?>
+      <?php bloginfo('description');?>
     </div>
       <img src="<?php header_image(); ?>" class="header-image" alt="Header image" />
 </div>
