@@ -32,8 +32,8 @@ Stable
 ## Tested on:
 
 ### Desktop
-- Google Chrome 66
-- Firefox 62
+- Google Chrome 74
+- Firefox 67
 - Microsoft Edge (Windows 10 April 2018 update)
 
 ### Mobile (Android)
