@@ -13,7 +13,7 @@
               $laminaVersion = $laminaGetTheme->get( 'Version' );
               $laminaGetThemeName = $laminaGetThemeName->get( 'Name' );
 
-              echo '<strong>' . esc_html_e($laminaGetThemeName,'lamina') . ' </strong>' . ' ' . esc_html_e($laminaVersion,'lamina') ;
+              echo '<strong>' . esc_html($laminaGetThemeName) . ' </strong>' . ' ' . esc_html($laminaVersion) ;
             ?>    
         </p>
       </div>
