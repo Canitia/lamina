@@ -10,13 +10,13 @@
 
       <p class="text-center text-muted">
             <?php
-              $getActiveTheme = wp_get_theme();
+              $lamina_getTheme = wp_get_theme();
 
-              echo '<strong>' . esc_html($getActiveTheme->get( 'Name' )) . ' </strong>' . ' ' . esc_html($getActiveTheme->get( 'Version' )) ;
+              echo '<strong>' . esc_html($lamina_getTheme->get( 'Name' )) . ' </strong>' . ' ' . esc_html($lamina_getTheme->get( 'Version' )) ;
             ?>    
         </p>
       </div>
-          <!-- close with Wordpress footer aka adminbar etc. -->
+          <!-- close with WordPress footer aka adminbar etc. -->
        <?php wp_footer();?>
 </footer>
 <script>
