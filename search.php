@@ -15,6 +15,8 @@ Template Name: Search Page
 
 <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
  
+<div class="row page-row">
+
     <h1 class="text-left-title-featured-sidebar truncate"><?php _e('Results for ', 'lamina'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
     <div class="collection collection-search card">
 
@@ -51,7 +53,7 @@ Template Name: Search Page
     <?php } ?>
  </div>
 </div><!-- end main-content -->
-
+</div>
   <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
   <!-- second column (widget bar) -->
   <?php get_sidebar( 'primary' ); ?>
