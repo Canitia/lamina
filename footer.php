@@ -15,7 +15,7 @@
             ?>    
         </p>
       </div>
-          <!-- close with Wordpress footer aka adminbar etc. -->
+          <!-- close with WordPress footer aka adminbar etc. -->
        <?php wp_footer();?>
 </footer>
 <script>
