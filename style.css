@@ -838,6 +838,10 @@ p.postedby {
 	z-index:200;
 }
 
+.avatar-author-page {
+	margin-top: 50px;
+}
+
 .avatar-page {
 	width:150px;
 }

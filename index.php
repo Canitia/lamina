@@ -14,6 +14,9 @@
             <hr class="top-text-hr"/>
         <?php } 
         elseif ( is_author() ) {?>
+            <?php 
+                echo get_avatar( get_the_author_meta('email'), '100', $default, $alt, array( 'class' => array( 'avatar-post avatar-author-page' ) ) ); 
+            ?>
             <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Latest posts by', 'lamina'); ?> 
             <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
