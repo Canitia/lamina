@@ -596,8 +596,6 @@ POST/ARTICLE HEADERS
 ##########################################*/
 .post-head-image {
 	width: 100%;
-	height: 325px;
-	object-fit: cover;
 }
 
 .post-title {
