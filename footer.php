@@ -9,9 +9,11 @@
       <div class="container-fluid">
       <p class="text-center text-muted">
             <?php
-              $laminaGetThemeName = wp_get_theme();
+              $laminaGetTheme = wp_get_theme();
+              $laminaVersion = $laminaGetTheme->get( 'Version' );
+              $laminaGetThemeName = $laminaGetThemeName->get( 'Name' );
 
-              echo '<strong>' . esc_html_e($laminaGetThemeName->get( 'Name' )) . ' </strong>' . ' ' . esc_html_e($laminaGetThemeName->get( 'Version' )) ;
+              echo '<strong>' . esc_html_e($laminaGetThemeName,'lamina') . ' </strong>' . ' ' . esc_html_e($laminaVersion,'lamina') ;
             ?>    
         </p>
       </div>
