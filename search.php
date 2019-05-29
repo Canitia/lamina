@@ -8,11 +8,6 @@ Template Name: Search Page
 
 <div class="row">
 
-  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
-  <!-- second column (widget bar) -->
-  <?php get_sidebar( 'primary' ); ?>
-  <?php endif; ?>
-
 <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
  
 <div class="row page-row">
@@ -31,25 +26,46 @@ Template Name: Search Page
             while ( $the_query->have_posts() ) {
             $the_query->the_post();
                     ?>
-                <div class="collection-item card-block">
-                    <a href="<?php the_permalink(); ?>">
-                    <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><?php }; the_title(); ?>
-                        <span class="badge">
-                            <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'lamina'); ?></time>
-                        </span> 
-                    </p>
-                    </a>
+       <div class="card col col-sm-12 col-md-6 col-lg-4">
+          <a href="<?php the_permalink(); ?>">
+              <?php if ( has_post_thumbnail() && is_sticky() ) {
+
+                    the_post_thumbnail( 'medium', array( 'class' => 'card-img-top homepage-image homepage-image-featured' ) );                
+              }
+                elseif ( has_post_thumbnail() ) {
+                  the_post_thumbnail( 'medium', array( 'class' => 'card-img-top homepage-image' ) );                  
+                }
+
+                 else { ?>
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="card-img-top homepage-image" />
+                <?php } ?>
+
+            </a>
+            <div class="card-block">
+                  <?php if ( is_sticky() ) { ?>
+                    <span class="badge-featured">
+                      <?php _e('Featured', 'lamina');?>
+                    </span>
+                <?php
+                } ?>
+              <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+              <p class="card-text"><?php echo  get_the_excerpt(); ?></p>
+                <div class="card-actions-top">
+                    <small class="text-muted badge">
+                        <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'lamina'); ?></time>
+                  </small>
                 </div>
+            </div>
+          </div>     
 
    <?php    }
     } else {?>
 
-        <div class="collection-item">
-            <p><i class="fa fa-circle" aria-hidden="true"></i><?php _e('Sorry, it seems this search query has no posts.', 'lamina'); ?></p>
-        </div>
-
-
+      <div class="post-content">
+              <p><?php _e('Sorry, it seems there are no posts available.', 'lamina'); ?></p>
         <?php get_search_form(); ?>
+    </div><!-- post-content END! -->
+                
     <?php } ?>
  </div>
 </div><!-- end main-content -->
