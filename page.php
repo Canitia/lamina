@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div class="row h-100 page-row post-row">
+    <div class="row page-row post-row">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
     <div class="col-md-12 col-lg-12 main-content">
