@@ -8,7 +8,7 @@ Template Name: Search Page
 
 <div class="row">
 
-<div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
+<div class="main-content col-md-12 col-lg-12">
  
 <div class="row page-row">
 
