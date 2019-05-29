@@ -3,8 +3,8 @@ if ( post_password_required() )
 return;
 ?>
 <div class="comments-wrapper">
-<h1 class="text-left-title-featured-sidebar text-center home-top-recent"><?php _e('Comments', 'lamina'); ?></h1>
 <?php if ( have_comments() ) : ?>
+<h1 class="text-left-title-featured-sidebar text-center home-top-recent"><?php _e('Comments', 'lamina'); ?></h1>
 	<ul class="commentlist">
 		<?php wp_list_comments();
 	?></ul>
