@@ -4,7 +4,7 @@ Theme URI: https://canitia.nl
 Author: Michael Boumann
 Author URI: http://canitia.nl
 Description: Lamina brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 1.3.0
+Version: 1.3.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready, custom-colors
@@ -440,6 +440,7 @@ strong {
 	font-weight: 300;
 	text-transform: uppercase;
 	padding-bottom: 5px;
+	width: 100%;
 }
 
 .collection-search {
@@ -531,7 +532,7 @@ strong {
 }
 
 .collection .collection-item:hover {
-	background-color: #979797 !important;
+
 }
 
 .collection-item > a > p:hover {
@@ -838,6 +839,10 @@ p.postedby {
 	z-index:200;
 }
 
+.avatar-author-page {
+	margin-top: 50px !important;
+}
+
 .avatar-page {
 	width:150px;
 }
@@ -1067,6 +1072,9 @@ footer p {
 		padding-right: 5px;
 	}
 
+	.author-bio-text {
+		text-align: center;
+	}
 
 	.post-content, 
 	.post-errortext,
