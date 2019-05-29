@@ -126,7 +126,7 @@ add_filter( 'comments_template', function( $theme_template) {
 
     // Display:
     if( $lamina_pings )
-        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", $lamina_pings );
+        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", esc_html_e($lamina_pings) );
 
     return $theme_template;
 
