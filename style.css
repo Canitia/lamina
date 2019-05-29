@@ -297,6 +297,7 @@ strong {
 .site-title {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 175%;
+	text-decoration: none;
 }
 
 .menu-item {
