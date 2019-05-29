@@ -342,7 +342,7 @@ function my_format_chat_content( $content ) {
 	$separator = apply_filters( 'my_post_format_chat_separator', ' ' );
 
 	/* Open the chat transcript div and give it a unique ID based on the post ID. */
-	$chat_output = "\n\t\t\t" . '<div id="chat-transcript-' . esc_attr( get_the_ID() ) . '" class="chat-transcript">';
+	$chat_output = esc_html_e("\n\t\t\t" . '<div id="chat-transcript-' . esc_attr( get_the_ID() ) . '" class="chat-transcript">');
 
 	/* Split the content to get individual chat rows. */
 	$chat_rows = preg_split( "/(\r?\n)+|(<br\s*\/?>\s*)+/", $content );
@@ -366,16 +366,16 @@ function my_format_chat_content( $content ) {
 			$speaker_id = my_format_chat_row_id( $chat_author );
 
 			/* Open the chat row. */
-			$chat_output .= "\n\t\t\t\t" . '<div class="chat-row ' . sanitize_html_class( "chat-speaker-{$speaker_id}" ) . '">';
+			$chat_output .= esc_html_e("\n\t\t\t\t" . '<div class="chat-row ' . sanitize_html_class( "chat-speaker-{$speaker_id}" ) . '">');
 
 			/* Add the chat row author. */
-			$chat_output .= "\n\t\t\t\t\t" . '<div class="chat-author ' . sanitize_html_class( strtolower( "chat-author-{$chat_author}" ) ) . ' vcard"><cite class="fn">' . apply_filters( 'my_post_format_chat_author', $chat_author, $speaker_id ) . '</cite>' . $separator . '</div>';
+			$chat_output .= esc_html_e("\n\t\t\t\t\t" . '<div class="chat-author ' . sanitize_html_class( strtolower( "chat-author-{$chat_author}" ) ) . ' vcard"><cite class="fn">' . apply_filters( 'my_post_format_chat_author', $chat_author, $speaker_id ) . '</cite>' . $separator . '</div>');
 
 			/* Add the chat row text. */
-			$chat_output .= "\n\t\t\t\t\t" . '<div class="chat-text">' . str_replace( array( "\r", "\n", "\t" ), '', apply_filters( 'my_post_format_chat_text', $chat_text, $chat_author, $speaker_id ) ) . '</div>';
+			$chat_output .= esc_html_e("\n\t\t\t\t\t" . '<div class="chat-text">' . str_replace( array( "\r", "\n", "\t" ), '', apply_filters( 'my_post_format_chat_text', $chat_text, $chat_author, $speaker_id ) ) . '</div>');
 
 			/* Close the chat row. */
-			$chat_output .= "\n\t\t\t\t" . '</div><!-- .chat-row -->';
+			$chat_output .= esc_html_e("\n\t\t\t\t" . '</div><!-- .chat-row -->');
 		}
 
 		/**
