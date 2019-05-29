@@ -42,10 +42,10 @@ Template Name: Search Page
                 <?php
                 } ?>
               <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-              <p class="card-text"><?php esc_html( get_the_excerpt() ); ?></p>
+              <p class="card-text"><?php echo esc_html( get_the_excerpt() ); ?></p>
                 <div class="card-actions-top">
                     <small class="text-muted badge">
-                        <time datetime="<?php esc_html(get_the_date('c')); ?>"><?php esc_html(human_time_diff( get_the_time('U'), current_time('timestamp')) . esc_html('&nbsp;') . esc_html_e('ago', 'lamina')); ?></time>
+                    <time datetime="<?php echo esc_html(get_the_date('c')); ?>"><?php echo esc_html(human_time_diff( get_the_time('U'), current_time('timestamp'))); echo esc_html('&nbsp;'); echo esc_html('ago'); ?></time>
                   </small>
                 </div>
             </div>
