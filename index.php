@@ -33,17 +33,9 @@
   <!-- show the right header item -->
 
      <?php
-      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
-
-      $args = array(
-        'ignore_sticky_posts' => 1,
-        'paged' => $paged
-      );
-      $query = new WP_Query($args);
-
-     if ( $query->have_posts() ) {
-    while ( $query->have_posts() ) : $query->the_post(); ?>
+    if ( have_posts() ) {
+    while ( have_posts() ) : the_post(); ?>
 
           <div class="card col col-sm-12 col-md-6 col-lg-4">
           <a href="<?php the_permalink(); ?>">
