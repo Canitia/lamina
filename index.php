@@ -19,7 +19,10 @@
             <h1 class="text-left-title-featured-sidebar text-center"><?php _e('Latest posts by', 'lamina'); ?> 
             <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
-        <?php }      
+        <?php }
+        elseif ( is_home() || is_front_page() ) { ?>
+          <h1 class="text-left-title-featured-sidebar text-center"><?php _e('Recent posts', 'lamina'); ?> 
+        <?php }     
          
         } ?>
 
