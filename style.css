@@ -421,6 +421,8 @@ strong {
 	overflow: hidden;
 	height: 45px;
 	margin-bottom: 10px;
+	color: black;
+    text-transform: none;
 }
 
 
