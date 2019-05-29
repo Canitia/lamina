@@ -4,7 +4,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 
 # Theme features
 - Set a custom site icon (favicon) and navbar logo
-- **Adaptive 1/2 column design** with/without **sidebar**. When there is no sidebar widgets enabled your site turns into a **single column** site.
+- **Bottom widget bar** - Add your widgets to the bottom bar
 - Shows a 'featured' tag when posts are marked sticky.
 - Show WordPress **pages** the default way (w/ sidebar) or pick the **full-width** page template.
 - **Theme Presets** - pick your theme color from the theme presets. Presets include the default Sodalite (Light/grey/blue), Pink Ruby (light/pink) or Brown Sinhalite (light/brown)
@@ -13,7 +13,6 @@ Lamina is a responsive theme with some added 'advanced' features.
 - **Translation support** - includes English and Dutch languages
 
 # Lamina Settings - theme specific custom options
-- Sidebar position (left or right)
 - Show tags in posts and such (show/hide)
 - Show author section (show/hide)
 
