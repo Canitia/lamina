@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header(); ?>
 <script>
 function goBack() {
     window.history.back();
@@ -6,12 +6,7 @@ function goBack() {
 </script>
 
   <div class="row page-row">
-    <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
-    <!-- second column (widget bar) -->
-      <?php get_sidebar( 'primary' ); ?>
-    <?php endif; ?>
-
-    <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
+    <div class="main-content col-md-12 col-lg-12">
         
           <div class="card col s12 m12 l12">
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
