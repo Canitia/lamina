@@ -297,7 +297,7 @@ strong {
 }
 
 .menu-item {
-    padding: 20px;
+    padding: 10px;
 }
 
 .menu-item > a {
@@ -308,11 +308,6 @@ strong {
 
 .menu-item > a:hover {
 	text-decoration: underline;
-}
-
-.menu-item > ul > .menu-item {
-	margin-top: -11px;
-	margin-bottom: -8px;
 }
 
 .menu-item:last-child > .dropdown-menu {
