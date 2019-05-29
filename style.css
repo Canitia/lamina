@@ -716,20 +716,19 @@ ul.pings.commentlist {
 }
 
 .pagination-within li { 
-	background-color: #666666;
+	background-color: #eeeeee;
 	color:black;
 	font-weight: 600;
 	padding: 15px;
-	color: white;
 }
 
 .pagination-within > a > li {
-	background-color: #666666;
+	background-color: #eeeeee;
 	color: white;
 }
 
 .pagination-within > a > li:hover {
-	background-color: #eeeeee;
+	background-color: #e2e2e2;
 	color: black;
 }
 
@@ -863,7 +862,6 @@ p.postedby {
 .pagination > .mx-auto {
 	padding-left: 0;
 }
-
 
 .pagination {
 	margin-top: 15px;
