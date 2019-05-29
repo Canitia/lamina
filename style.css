@@ -219,7 +219,7 @@ strong {
 }
 
 .read-more-btn:hover {
-	color: white;
+	color: white !important;
 }
 
 .btn:hover, 
