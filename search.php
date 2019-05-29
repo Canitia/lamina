@@ -11,7 +11,7 @@ Template Name: Search Page
 <div class="row page-row">
 
     <h1 class="text-left-title-featured-sidebar text-center top-text truncate"><?php _e('Results for ', 'lamina'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
-    <div class="collection collection-search card">
+    <div class="row">
 
     <?php
     $s=get_search_query();
