@@ -14,15 +14,10 @@ Template Name: Search Page
     <div class="row">
 
     <?php
-    $s=get_search_query();
-    $args = array(
-      's' =>$s
-    );
-    // The Query
-    $the_query = new WP_Query( $args );
-    if ( $the_query->have_posts() ) {
-            while ( $the_query->have_posts() ) {
-            $the_query->the_post();
+
+    if ( have_posts() ) {
+            while ( have_posts() ) {
+            the_post();
                     ?>
        <div class="card col col-sm-12 col-md-6 col-lg-4">
           <a href="<?php the_permalink(); ?>">
