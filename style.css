@@ -750,6 +750,10 @@ ul.pings.commentlist {
   ARTICLE: TAGS/CATEGORY look-n-feel
 
 *****************************************/
+.cat-links {
+	clear: both;
+}
+
 .cat-links-hr {
 	margin-top:7px;
 	margin-bottom:7px;
@@ -784,6 +788,7 @@ ul.pings.commentlist {
 
 .tagslist {
 	padding-top: 10px;
+	padding-bottom: 35px;
 	margin-left: 20px;
 }
 
@@ -816,6 +821,10 @@ p.postedby {
 	border-bottom: 1px solid #ebebeb;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .author-profile h4 a {
@@ -823,15 +832,9 @@ p.postedby {
 }
 
 .avatar-post {
-	width: 100px;
+	width: 100px !important;
 	max-width: 100%;
-	height: auto;
-	margin-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	padding: 10px;
-	border: 2px solid #ebebeb;
+	height: auto !important;
 	z-index:200;
 }
 
