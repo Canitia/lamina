@@ -1,21 +1,17 @@
 </div><!-- container END! -->
 <div class="row">
-  <!-- second column (widget bar) -->
+  <!-- widget bar -->
   <?php get_sidebar( 'primary' ); ?>
 </div>
 
 </main>
 <footer class="footer">
       <div class="container-fluid">
-        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-        <!-- second column (widget bar) -->
-        <?php get_sidebar( 'primary' ); ?>
-        <?php endif; ?>  
       <p class="text-center text-muted">
             <?php
               $getActiveTheme = wp_get_theme();
 
-              echo '<strong>' . $getActiveTheme->get( 'Name' ) . ' </strong>' . ' ' . $getActiveTheme->get( 'Version' ) ;
+              echo '<strong>' . $laminaGetThemeName->get( 'Name' ) . ' </strong>' . ' ' . $laminaGetThemeName->get( 'Version' ) ;
             ?>    
         </p>
       </div>
