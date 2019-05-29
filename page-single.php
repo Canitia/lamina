@@ -1,7 +1,7 @@
 <?php /* Template Name: Full-Width Page */ ?>
 <?php get_header();?>
        
-<div class="row h-100 page-row post-row">
+<div class="row page-row post-row">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
   
