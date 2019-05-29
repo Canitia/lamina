@@ -898,7 +898,7 @@ p.postedby {
 
 .pagination > ul > li.active > a, 
 .pagination > ul > li > a:hover  {
-    color: white !important;
+    color: black !important;
 }
 
 .pagination > ul > li:hover {
