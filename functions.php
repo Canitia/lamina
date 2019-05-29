@@ -239,14 +239,6 @@ function lamina_customizer( $wp_customize ) {
     );
 
 	$wp_customize->add_setting(
-		'sidebar_position',
-		array(
-			'default' => 'right',
-			'sanitize_callback' => 'lamina_sanitize_select',
-		)
-	);
-
-	$wp_customize->add_setting(
 		'show_tags',
 		array(
 			'default' => 'showtags',
@@ -270,16 +262,6 @@ function lamina_customizer( $wp_customize ) {
 			'settings' => 'theme_preset',
 		)
 	);
-
-	$wp_customize->add_control( 'sidebar_position', array(
-		'label' => __('Sidebar position', 'lamina'),
-		'section' => 'settings_section_lamina',
-		'type' => 'radio',
-		'choices' => array(
-			'left' => __('Left', 'lamina'),
-			'right' => __('Right', 'lamina'),
-		),
-	) );
 
 	$wp_customize->add_control( 'show_tags', array(
 		'label' => __('Show Tags', 'lamina'),
