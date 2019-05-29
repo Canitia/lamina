@@ -436,9 +436,9 @@ strong {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	height: 45px;
-	margin-bottom: 10px;
 	color: black;
-    text-transform: none;
+	text-transform: none;
+	text-align: left;
 }
 
 
