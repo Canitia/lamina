@@ -1,10 +1,6 @@
 <?php get_header(); ?>
   <div class="row">
 
-    <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
-    <!-- second column (widget bar) -->
-      <?php get_sidebar( 'primary' ); ?>
-    <?php endif; ?>
   <div class="main-content col-md-12 col-lg-12" >
         
       <?php if($paged <= 1) {
