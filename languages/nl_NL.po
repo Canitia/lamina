@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cerulean for Wordpress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 09:11+0000\n"
-"PO-Revision-Date: 2018-05-07 09:11+0000\n"
-"Last-Translator: Canitia <michael@canitia.nl>\n"
+"POT-Creation-Date: 2019-05-29 11:43+0000\n"
+"PO-Revision-Date: 2019-05-29 11:44+0000\n"
+"Last-Translator: michael <michael@canitia.nl>\n"
 "Language-Team: Dutch\n"
 "Language: nl_NL\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.2.1"
 
 #: 404.php:19
 msgid "Error"
@@ -33,109 +34,77 @@ msgstr "Terug naar de vorige pagina"
 msgid "Return to the homepage"
 msgstr "Terug naar de homepage"
 
-#: functions.php:77
+#: comments.php:7
+msgid "Comments"
+msgstr "Commentaar"
+
+#: functions.php:70
 msgid "Primary"
 msgstr "Primair"
 
-#: functions.php:78
-msgid "Main sidebar."
-msgstr "Hoofd sidebar."
+#: functions.php:71
+msgid "Bottom bar."
+msgstr "Onderste balk"
 
-#: functions.php:97
+#: functions.php:90
 msgid "Header Menu"
 msgstr "Hoofdnavigatie"
 
-#: functions.php:241
+#: functions.php:234
 msgid "Lamina Settings"
 msgstr "Lamina Instellingen"
 
-#: functions.php:242
+#: functions.php:235
 msgid "Tweak Lamina to your liking."
 msgstr "Stel Lamina in zoals jij dat wilt."
 
-#: functions.php:289
-msgid "Featured content"
-msgstr "Aanbevolen content"
-
-#: functions.php:293
-msgid "Show Slider"
-msgstr "Laat Slider zien"
-
-#: functions.php:294
-msgid "Hide"
-msgstr "Verbergen"
-
-#: functions.php:299
-msgid "Sidebar position"
-msgstr "Sidebar positie"
-
-#: functions.php:303
-msgid "Left"
-msgstr "Links"
-
-#: functions.php:304
-msgid "Right"
-msgstr "Rechts"
-
-#: functions.php:309 functions.php:313
+#: functions.php:266 functions.php:270
 msgid "Show Tags"
 msgstr "Laat tags zien"
 
-#: functions.php:314
+#: functions.php:271
 msgid "Hide Tags"
 msgstr "Verberg tags"
 
-#: functions.php:319 functions.php:323
+#: functions.php:276 functions.php:280
 msgid "Show Author section"
 msgstr "Laat auteur sectie zien"
 
-#: functions.php:324
+#: functions.php:281
 msgid "Hide Author section"
 msgstr "Verberg auteur sectie"
 
-#: functions.php:329
+#: functions.php:286
 msgid "Theme preset"
 msgstr "Thema preset"
 
-#: functions.php:333
-msgid "Orange Sphalerite (default)"
-msgstr "Orange Sphalerite (standaard)"
+#: functions.php:290
+msgid "Sodalite (default)"
+msgstr ""
 
-#: functions.php:334
+#: functions.php:291
 msgid "Pink Ruby"
 msgstr "Pink Ruby"
 
-#: functions.php:335
-msgid "Pink Melanite"
-msgstr "Pink Melanite"
-
-#: functions.php:336
-msgid "Black Opal"
-msgstr "Black Opal"
-
-#: functions.php:337
+#: functions.php:292
 msgid "Brown Sinhalite"
 msgstr "Brown Sinhalite"
 
-#: functions.php:338
-msgid "Blue Sapphire"
-msgstr "Blue Sapphire"
-
-#: index.php:13
+#: index.php:9
 msgid "Archive "
 msgstr "Archief"
 
-#: index.php:16
+#: index.php:13
 msgid "Posts tagged"
 msgstr "Posts getagd"
 
-#: index.php:19
+#: index.php:17
 msgid "Latest posts by"
 msgstr "Laatste berichten van"
 
-#: index.php:24
-msgid "Latest"
-msgstr "Laatste"
+#: index.php:23
+msgid "Recent posts"
+msgstr ""
 
 #: index.php:63
 msgid "Featured"
@@ -149,15 +118,7 @@ msgstr "geleden"
 msgid "Sorry, it seems there are no posts available."
 msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
 
-#. Name of the template
-msgid "Full-Width Page"
-msgstr "Pagina als enkele kolom"
-
-#: page-single.php:34
-msgid "Sorry, this page can not be found or has been deleted."
-msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
-
-#: page.php:56 single.php:55
+#: page.php:44 single.php:59
 msgid "Sorry, this post can not be found or has been deleted."
 msgstr "Sorry, deze pagina kan niet gevonden worden of is gewist."
 
@@ -192,7 +153,7 @@ msgctxt "submit button"
 msgid "Go"
 msgstr "Gaan"
 
-#: partials/authorsection.php:16
+#: partials/authorsection.php:15
 msgid ""
 "Please fill in a author bio to show the author section or disable it from "
 "the Lamina Settings."
@@ -215,13 +176,13 @@ msgstr ""
 "kleur presets en meer. "
 
 #. URI of the theme
-msgid "https://lamina.canitia.nl"
-msgstr "https://lamina.canitia.nl"
+msgid "https://canitia.nl"
+msgstr "https://canitia.nl"
 
 #. Author of the theme
 msgid "Michael Boumann"
 msgstr "Michael Boumann"
 
 #. Author URI of the theme
-msgid "http://me.canitia.nl"
-msgstr "http://me.canitia.nl"
+msgid "http://canitia.nl"
+msgstr "http://canitia.nl"
