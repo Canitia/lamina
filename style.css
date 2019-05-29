@@ -1761,7 +1761,6 @@ dl.wp-caption {
 .size-full {
 	max-width: 100%;
 	display:block;
-	height: 100%;
 }
 /* custom image size */
 .wp-caption > img {
