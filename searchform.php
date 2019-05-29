@@ -1,4 +1,4 @@
-<h1 class="widget-title text-left-title-featured-sidebar"><?php _e('Search', 'lamina');?></h1>
+<h1 class="widget-title text-left-title-featured-sidebar"><?php esc_html_e('Search', 'lamina');?></h1>
 <div class="search-box">
   <form role="search" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
       <label>
