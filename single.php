@@ -2,11 +2,6 @@
 
 
     <div class="row page-row post-row">
-        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
-        <!-- second column (widget bar) -->
-        <?php get_sidebar( 'primary' ); ?>
-        <?php endif; ?>
-        
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
     <div class="main-content col-md-12 col-lg-12">
