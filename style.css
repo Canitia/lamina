@@ -328,12 +328,26 @@ strong {
 
 /* **************************************
 
-  FEATURED POSTS LOOK-N-FEEL
+  FEATURED (POSTS) LOOK-N-FEEL
 
 *****************************************/
 
 .row-featured {
 	padding-top: 20px;
+}
+
+.badge-featured {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+    z-index: 10;
+    padding: 10px !important;
+    background-color: #ebebeb !important;
+    font-weight: bold;
+    opacity: 0.9;
+    color: black;
+	text-align: center;
+	border-radius: 15px;
 }
 
 /* **************************************
@@ -447,20 +461,6 @@ strong {
 	font-weight: 500;
 	color: black;
 	padding: 0 !important;
-}
-
-.badge-featured {
-	position: absolute;
-	top: 50px;
-	right: 50px;
-    z-index: 10;
-    padding: 10px !important;
-    background-color: #ebebeb !important;
-    font-weight: bold;
-    opacity: 0.9;
-    color: black;
-	text-align: center;
-	border-radius: 15px;
 }
 
 .card-img-top.homepage-image {
