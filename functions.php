@@ -166,13 +166,13 @@ function lamina_pagination_numeric_posts_nav() {
 
 	/**	Previous Post Link */
 	if ( get_previous_posts_link() )
-		printf( '<li>%s</li>' . "\n", esc_html_e(get_previous_posts_link('<i class="fa fa-chevron-left" aria-hidden="true"></i>'),'lamina') );
+		printf( '<li>%s</li>' . "\n", esc_html_e(get_previous_posts_link('<i class="fa fa-chevron-left" aria-hidden="true"></i>')) );
 
 	/**	Link to first page, plus ellipses if necessary */
 	if ( ! in_array( 1, $links ) ) {
 		$class = 1 == $paged ? ' class="active"' : '';
 
-		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html_e($class,'lamina'), get_pagenum_link( 1, true ), '1' );
+		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html_e($class), get_pagenum_link( 1, true ), '1' );
 
 		if ( ! in_array( 2, $links ) )
 			echo '<li class="pagination-dash">-</li>';
@@ -182,7 +182,7 @@ function lamina_pagination_numeric_posts_nav() {
 	sort( $links );
 	foreach ( (array) $links as $link ) {
 		$class = $paged == $link ? ' class="active"' : '';
-		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html_e($class,'lamina'), get_pagenum_link( $link, 1, true ), $link );
+		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html_e($class), get_pagenum_link( $link, 1, true ), $link );
 	}
 
 	/**	Link to last page, plus ellipses if necessary */
@@ -191,7 +191,7 @@ function lamina_pagination_numeric_posts_nav() {
 			echo '<li class="pagination-dash">-</li>' . "\n";
 
 		$class = $paged == $max ? ' class="active"' : '';
-		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html_e($class,'lamina'), get_pagenum_link( $max, 1, true ), $max );
+		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html_e($class), get_pagenum_link( $max, 1, true ), $max );
 	}
 
 	/**	Next Post Link */
