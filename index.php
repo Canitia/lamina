@@ -56,9 +56,9 @@
             </a>
             <div class="card-block">
                   <?php if ( is_sticky() ) { ?>
-                            <span class="badge-featured">
-                              <?php _e('Featured', 'lamina');?>
-                            </span>
+                    <span class="badge-featured">
+                      <?php _e('Featured', 'lamina');?>
+                    </span>
                 <?php
                 } ?>
               <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
