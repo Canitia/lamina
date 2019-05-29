@@ -34,19 +34,15 @@ function lamina_theme_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'lamina_theme_scripts' );
 
-$bgargs = array(
-	'default-color' => 'ffffff',
-);
-
 add_theme_support( "title-tag" );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
 
-$headerargs = array(
+$lamina_headerargs = array(
 	'height'        => 325,
 	'default-image' => get_template_directory_uri() . '/images/header.jpg',
 );
-add_theme_support( 'custom-header', $headerargs );
+add_theme_support( 'custom-header', $lamina_headerargs );
 
 
 function custom_excerpt_length( $length ) {
