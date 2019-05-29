@@ -18,7 +18,7 @@ return;
 	?>
 
 	<?php comment_form(); ?>
-	<?php	else : // comments are closed
+	<?php // comments are closed
 	endif;
 
 endif;
