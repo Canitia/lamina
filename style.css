@@ -357,6 +357,7 @@ strong {
 *****************************************/
 .top-text {
 	margin-top: 50px;
+	font-size: 2em !important;
 }
 
 .top-text-hr {
@@ -440,11 +441,10 @@ strong {
 
 /* headers like 'latest' */
 .text-left-title-featured-sidebar {
-	font-size: 120% !important;
 	font-weight: 300;
 	color: #0088cc;
 	text-transform: uppercase;
-    padding: 5px;
+	padding-bottom: 5px;
 }
 
 .collection-search {
@@ -558,6 +558,10 @@ article > h4,
 
 article > h1:first-child {
 	margin-bottom:25px;
+}
+
+.widget-title {
+	font-size: 1em !important;
 }
 
 /* sidebar */
