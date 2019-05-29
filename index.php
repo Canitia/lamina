@@ -6,18 +6,22 @@
       <?php if($paged <= 1) {
 
         if ( is_archive() && !is_tag() && !is_author() ) { ?>
-            <h1 class="text-left-title-featured-sidebar text-center home-top-recent"><?php _e('Archive ', 'lamina');?> <strong><?php the_archive_title();?></strong></h1>  
+            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Archive ', 'lamina');?> <strong><?php the_archive_title();?></strong></h1>  
+            <hr class="top-text-hr"/>
         <?php }
         elseif ( is_tag() ) { ?>
-            <h1 class="text-left-title-featured-sidebar text-center home-top-recent"><?php _e('Posts tagged', 'lamina');?> <strong><?php single_tag_title(); ?></strong></h1>  
+            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Posts tagged', 'lamina');?> <strong><?php single_tag_title(); ?></strong></h1>  
+            <hr class="top-text-hr"/>
         <?php } 
         elseif ( is_author() ) {?>
-            <h1 class="text-left-title-featured-sidebar text-center home-top-recent"><?php _e('Latest posts by', 'lamina'); ?> 
+            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Latest posts by', 'lamina'); ?> 
             <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
+              <hr class="top-text-hr" />
         <?php }
         elseif ( is_home() || is_front_page() ) { ?>
-          <h1 class="text-left-title-featured-sidebar text-center home-top-recent"><?php _e('Recent posts', 'lamina'); ?></h1>
+          <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Recent posts', 'lamina'); ?></h1>
+          <hr class="top-text-hr" />
         <?php }     
          
         } ?>
