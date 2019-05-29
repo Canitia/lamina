@@ -213,10 +213,15 @@ strong {
 .read-more-btn {
 	border: 0 !important;
 	background-color: #eeeeee !important;
+	color: black;
 	font-weight: 600;
 	display: block;
-	float: right;
+
 	margin-right: 5px;
+}
+
+.read-more-btn:hover {
+	color: white;
 }
 
 .btn:hover, 
@@ -501,14 +506,6 @@ strong {
 
 .caption-image:hover {
 	font-weight: 600 !important;
-}
-
-.card-actions-bottom {
-    position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding-right: 40px;
-	margin-bottom: 0;
 }
 
 /* all list items */
