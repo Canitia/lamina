@@ -2,11 +2,6 @@
 
 
     <div class="row page-row post-row">
-        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
-        <!-- second column (widget bar) -->
-        <?php get_sidebar( 'primary' ); ?>
-        <?php endif; ?>
-        
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
     <div class="main-content col-md-12 col-lg-12">
@@ -56,7 +51,7 @@
       <!-- error handling -->
       <?php endwhile; else: ?>
           <div class="post-content">
-            <p><?php _e('Sorry, this post can not be found or has been deleted.', 'lamina'); ?></p>
+            <p><?php esc_html_e('Sorry, this post can not be found or has been deleted.', 'lamina'); ?></p>
             <?php get_search_form(); ?>
         </div><!-- post-content END! -->
       <?php endif; ?>

@@ -12,7 +12,7 @@
         <?php echo nl2br(get_the_author_meta('description'));  ?>
     </div>
     <?php  } /* end author meta */ else { ?>
-        <p class="text-center"> <?php _e('Please fill in a author bio to show the author section or disable it from the Lamina Settings.', 'lamina' ) ;?> </p>
+        <p class="text-center"> <?php esc_html_e('Please fill in a author bio to show the author section or disable it from the Lamina Settings.', 'lamina' ) ;?> </p>
     <?php }
     ?>
 </div>
