@@ -126,7 +126,7 @@ add_filter( 'comments_template', function( $theme_template) {
 
     // Display:
     if( $pings )
-        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", $pings );
+        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", esc_html_e($pings,'lamina') );
 
     return $theme_template;
 
@@ -308,4 +308,3 @@ function lamina_setup() {
 add_action( 'after_setup_theme', 'lamina_setup' );
 
 load_theme_textdomain( 'lamina', get_template_directory().'/languages' );
-?>
