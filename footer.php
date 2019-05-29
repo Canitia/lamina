@@ -9,7 +9,7 @@
       <div class="container-fluid">
       <p class="text-center text-muted">
             <?php
-              $getActiveTheme = wp_get_theme();
+              $laminaGetThemeName = wp_get_theme();
 
               echo '<strong>' . $laminaGetThemeName->get( 'Name' ) . ' </strong>' . ' ' . $laminaGetThemeName->get( 'Version' ) ;
             ?>    
