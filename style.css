@@ -898,15 +898,15 @@ p.postedby {
 
 .pagination > ul > li.active > a, 
 .pagination > ul > li > a:hover  {
-    color: white;
+    color: white !important;
 }
 
 .pagination > ul > li:hover {
-	background-color: #666666;
+	background-color: #e2e2e2;
 }
 
 .pagination > ul > li.active {
-	background-color: #666666 !important;
+	background-color: #e2e2e2 !important;
 }
 
 .pagination > ul > li.pagination-dash {
