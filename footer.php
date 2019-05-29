@@ -7,17 +7,16 @@
 </main>
 <footer class="footer">
       <div class="container-fluid">
+
       <p class="text-center text-muted">
             <?php
-              $laminaGetTheme = wp_get_theme();
-              $laminaVersion = $laminaGetTheme->get( 'Version' );
-              $laminaGetThemeName = $laminaGetThemeName->get( 'Name' );
+              $getActiveTheme = wp_get_theme();
 
-              echo '<strong>' . esc_html($laminaGetThemeName) . ' </strong>' . ' ' . esc_html($laminaVersion) ;
+              echo '<strong>' . esc_html($getActiveTheme->get( 'Name' )) . ' </strong>' . ' ' . esc_html($getActiveTheme->get( 'Version' )) ;
             ?>    
         </p>
       </div>
-          <!-- close with WordPress footer aka adminbar etc. -->
+          <!-- close with Wordpress footer aka adminbar etc. -->
        <?php wp_footer();?>
 </footer>
 <script>
