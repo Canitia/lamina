@@ -13,12 +13,12 @@ return;
 	<div class="alignright"><?php next_comments_link() ?></div>
 </div>
 <?php else : // this is displayed if there are no comments so far ?>
-	<?php if ( comments_open() ) :
-	// If comments are open, but there are no comments.
-	?>
+		<?php if ( comments_open() ) :
+		// If comments are open, but there are no comments.
+		?>
 
-	<?php comment_form(); ?>
-	<?php // comments are closed
+		<?php comment_form(); ?>
+		<?php // comments are closed
 	endif;
 
 endif;
