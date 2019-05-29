@@ -212,7 +212,7 @@ strong {
 
 .read-more-btn {
 	border: 0 !important;
-	background-color: #eeeeee !important;
+	background-color: #fcfcfc !important;
 	color: black;
 	font-weight: 600;
 	width: 230px;
@@ -220,12 +220,13 @@ strong {
 
 .read-more-btn:hover {
 	color: white !important;
+	background: #0088cc !important;
 }
 
 .btn:hover, 
 .comment-reply-link:hover,
 .submit:hover {
-	background-color: #979797 !important;
+	background-color: #0088cc !important;
 }
 
 /* **************************************
