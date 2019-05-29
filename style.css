@@ -816,6 +816,10 @@ p.postedby {
 	border-bottom: 1px solid #ebebeb;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .author-profile h4 a {
