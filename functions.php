@@ -69,7 +69,7 @@ function lamina_sidebars() {
 		array(
 		'id' => 'primary',
 		'name' => __( 'Primary', 'lamina' ),
-		'description' => __( 'Main sidebar.', 'lamina' ),
+		'description' => __( 'Bottom bar.', 'lamina' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar">',
