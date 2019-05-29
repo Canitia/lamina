@@ -6,7 +6,6 @@ Lamina is a responsive theme with some added 'advanced' features.
 - Set a custom site icon (favicon) and navbar logo
 - **Bottom widget bar** - Add your widgets to the bottom bar
 - Shows a 'featured' tag when posts are marked sticky.
-- Show WordPress **pages** the default way (w/ sidebar) or pick the **full-width** page template.
 - **Theme Presets** - pick your theme color from the theme presets. Presets include the default Sodalite (Light/grey/blue), Pink Ruby (light/pink) or Brown Sinhalite (light/brown)
 - Custom error pages and others like tag, category, author, search based on the index page.
 - Custom **Lamina Settings** - update your settings straight from the WordPress Customizer.
