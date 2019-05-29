@@ -733,6 +733,7 @@ ul.pings.commentlist {
 	background-color: #666666;
 	color:black;
 	font-weight: 600;
+	padding: 15px;
 }
 
 .pagination-within > a > li {
