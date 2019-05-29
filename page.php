@@ -1,22 +1,9 @@
 <?php get_header(); ?>
 
-<?php
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-        } else {
-            ?>
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="img-fluid" />
-        <?php } ?>
-
-    <div class="row h-100 page-row post-row">
-        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
-        <!-- second column (widget bar) -->
-        <?php get_sidebar( 'primary' ); ?>
-        <?php endif; ?>
-        
+    <div class="row page-row post-row">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-    <div class="<?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12'; echo ' style="border-right:0';};?> main-content">
+    <div class="col-md-12 col-lg-12 main-content">
     <div <?php post_class(); ?>>
         <article>
         <div class="post-head">
@@ -26,6 +13,14 @@
                      <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
                 </div>
         </div>
+
+        <?php
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
+        } else {
+            ?>
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
+        <?php } ?>
 
         <div class="post-content">
             <?php the_content(); ?>
@@ -50,12 +45,6 @@
             <?php get_search_form(); ?>
         </div><!-- post-content END! -->
       <?php endif; ?>
-
-
-  <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-  <!-- second column (widget bar) -->
-  <?php get_sidebar( 'primary' ); ?>
-  <?php endif; ?>
   </div><!-- end row -->
 <!-- start of footer -->
 <?php get_footer(); ?>
