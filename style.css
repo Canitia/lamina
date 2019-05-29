@@ -365,7 +365,6 @@ strong {
 
 .sidebar {
 	margin-top: 20px;
-	margin-bottom: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	justify-content: space-around;
@@ -917,6 +916,7 @@ footer {
 	position: inherit;
 	bottom: 0;
 	width: 100%;
+	background: #fcfcfc;
 }
 
 footer p {
