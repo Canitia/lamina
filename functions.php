@@ -22,14 +22,6 @@ function lamina_theme_scripts() {
 	wp_enqueue_script( 'webfontloader', '//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js' );
 	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_style( 'sodalite',  get_stylesheet_directory_uri(). '/style.css' );	
-
-	if ( get_theme_mod( 'theme_preset', 'sodalite' ) == 'pinkruby') :
-		wp_enqueue_style( 'pinkruby',  get_stylesheet_directory_uri(). '/css/style.pinkruby.css' );
-	endif;
-
-	if ( get_theme_mod( 'theme_preset' , 'sodalite' ) == 'brownsinhalite') :
-		wp_enqueue_style( 'brownsinhalite',  get_stylesheet_directory_uri(). '/css/style.brownsinhalite.css' );	
-	endif;
 }
 
 add_action( 'wp_enqueue_scripts', 'lamina_theme_scripts' );
@@ -249,15 +241,6 @@ function lamina_customizer( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting(
-		'theme_preset',
-		array(
-			'default' => 'sodalite',
-			'sanitize_callback' => 'lamina_sanitize_select',
-			'settings' => 'theme_preset',
-		)
-	);
-
 	$wp_customize->add_control( 'show_tags', array(
 		'label' => __('Show Tags', 'lamina'),
 		'section' => 'settings_section_lamina',
@@ -277,18 +260,6 @@ function lamina_customizer( $wp_customize ) {
 			'hideauthor' => __('Hide Author section', 'lamina'),
 		),
 	) );
-
-	$wp_customize->add_control( 'theme_preset', array(
-		'label' => __('Theme preset', 'lamina'),
-		'section' => 'colors',
-		'type' => 'radio',
-		'choices' => array(
-			'default' => __('Sodalite (default)', 'lamina'),
-			'pinkruby' => __('Pink Ruby', 'lamina'),
-			'brownsinhalite' => __('Brown Sinhalite', 'lamina')
-		),
-	) );
-
 	}
 
 add_action( 'customize_register', 'lamina_customizer' );
