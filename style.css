@@ -328,29 +328,6 @@ strong {
 
 /* **************************************
 
-  SLIDER LOOK-N-FEEL
-
-*****************************************/
-.carousel:hover {
-	filter: brightness(80%) !important;
-}
-
-.carousel {
-	max-height: 300px;
-}
-
-.carousel-item {
-	max-height: 300px;
-	width: 100%;
-}
-
-.content-images-featured {
-	width: 100%;
-}
-
-
-/* **************************************
-
   FEATURED POSTS LOOK-N-FEEL
 
 *****************************************/
@@ -971,15 +948,6 @@ footer p {
 		text-transform: uppercase;
 	}
 
-	.carousel {
-		max-height: 250px;
-	}
-	
-	.carousel-item {
-		max-height: 250px;
-		width: 100%;
-	}
-
 	.card-title {
 		font-size: 115% !important;
 	}
@@ -1159,15 +1127,6 @@ footer p {
 	.menu-item a {
 		font-size: 1.4em;
 		text-transform: uppercase;
-	}
-
-	.carousel {
-		max-height: 250px;
-	}
-	
-	.carousel-item {
-		max-height: 250px;
-		width: 100%;
 	}
 
 	.card {
