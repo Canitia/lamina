@@ -1860,6 +1860,7 @@ div.aligncenter {
 .tagcloud {
 	padding-top: 0px;
 	padding-bottom: 20px;
+	max-width: 150px;
 }
 
 .tagcloud > a:hover {
