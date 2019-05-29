@@ -5,7 +5,7 @@
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post();?>
   
-  <div class="<?php if ( is_active_sidebar('primary')) { echo 'col-md-12 col-lg-12';};?> page-ui">
+  <div class="col-md-12 col-lg-12 page-ui">
     <div <?php post_class();?>>
     <article>
       <div class="post-head">
