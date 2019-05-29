@@ -355,8 +355,16 @@ strong {
   CONTENT SIDEBAR / MAIN
 
 *****************************************/
-.home-top-recent {
-	margin-top: 50px
+.top-text {
+	margin-top: 50px;
+}
+
+.top-text-hr {
+	width: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #2f313d;
+	height: 4px;
 }
 
 .sidebar {
@@ -436,7 +444,7 @@ strong {
 	font-weight: 300;
 	color: #0088cc;
 	text-transform: uppercase;
-    padding: 25px;
+    padding: 5px;
 }
 
 .collection-search {
