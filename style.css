@@ -1575,7 +1575,8 @@ ul.children {
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
-    background-color:#666666 !important;
+	background-color:#fcfcfc !important;
+	border: 2px solid #ebebeb;
     border: none;
     border-radius: 3px;
 	padding-left: 15px;
@@ -1584,13 +1585,14 @@ ul.children {
     padding-right: 15px;
     text-transform: uppercase;
     width: auto;
-	color:white;
+	color:black;
 	font-weight: 600;
 }
 
 .comment-reply-link:hover, .form-submit > input#submit:hover{
 	 text-decoration: underline;
 	 color: white;
+	 background: #0088cc !important;
 }
 
 .form-submit > input#submit {
@@ -1605,13 +1607,13 @@ ul.children {
     font-size: 80% !important;
     float: right;
 	cursor: pointer;
-    background-color:#666666 !important;
+    background-color:#fcfcfc !important;
     border: none;
     border-radius: 3px;
     padding: 5px;
     text-transform: uppercase;
     width: auto;
-	color:white;
+	color:black;
 	font-weight: 600;
 }
 
