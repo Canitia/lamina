@@ -836,11 +836,10 @@ p.postedby {
 	max-width: 100%;
 	height: auto !important;
 	z-index:200;
-	margin-top: 30px !important;
 }
 
 .avatar-author-page {
-	margin-top: 50px;
+	margin-top: 50px !important;
 }
 
 .avatar-page {
