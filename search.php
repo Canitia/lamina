@@ -10,7 +10,7 @@ Template Name: Search Page
  
 <div class="row page-row">
 
-    <h1 class="text-left-title-featured-sidebar text-center top-text truncate"><?php esc_html_e('Results for ', 'lamina'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
+    <h1 class="text-left-title-featured-sidebar text-center top-text truncate"><?php esc_html_e('Results for ', 'lamina'); esc_html('<strong class="strong-search">') . get_query_var("s") . '</strong>'; ?> </h1>
     <div class="row">
 
     <?php
@@ -42,10 +42,10 @@ Template Name: Search Page
                 <?php
                 } ?>
               <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-              <p class="card-text"><?php echo  get_the_excerpt(); ?></p>
+              <p class="card-text"><?php esc_html( get_the_excerpt() ); ?></p>
                 <div class="card-actions-top">
                     <small class="text-muted badge">
-                        <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; esc_html_e('ago', 'lamina'); ?></time>
+                        <time datetime="<?php esc_html(get_the_date('c')); ?>"><?php esc_html(human_time_diff( get_the_time('U'), current_time('timestamp')); esc_html('&nbsp;'); esc_html_e('ago', 'lamina'); ?></time>
                   </small>
                 </div>
             </div>
