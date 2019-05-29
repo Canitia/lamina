@@ -34,7 +34,7 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-<?php if ( is_home() || is_front_page() ) {?>
+<?php if ( is_home() || is_front_page() || is_archive() || is_tag() || is_author() ) {?>
 <div class="heading">
     <div class="heading-text">
       <?php echo get_bloginfo('description');?>
