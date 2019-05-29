@@ -45,7 +45,7 @@ Template Name: Search Page
               <p class="card-text"><?php esc_html( get_the_excerpt() ); ?></p>
                 <div class="card-actions-top">
                     <small class="text-muted badge">
-                        <time datetime="<?php esc_html(get_the_date('c')); ?>"><?php esc_html(human_time_diff( get_the_time('U'), current_time('timestamp')); esc_html('&nbsp;'); esc_html_e('ago', 'lamina'); ?></time>
+                        <time datetime="<?php esc_html(get_the_date('c')); ?>"><?php esc_html(human_time_diff( get_the_time('U'), current_time('timestamp')) . esc_html('&nbsp;') . esc_html_e('ago', 'lamina')); ?></time>
                   </small>
                 </div>
             </div>
