@@ -6,24 +6,24 @@
       <?php if($paged <= 1) {
 
         if ( is_archive() && !is_tag() && !is_author() ) { ?>
-            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Archive ', 'lamina');?> <strong><?php the_archive_title();?></strong></h1>  
+            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php esc_html_e('Archive ', 'lamina');?> <strong><?php the_archive_title();?></strong></h1>  
             <hr class="top-text-hr"/>
         <?php }
         elseif ( is_tag() ) { ?>
-            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Posts tagged', 'lamina');?> <strong><?php single_tag_title(); ?></strong></h1>  
+            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php esc_html_e('Posts tagged', 'lamina');?> <strong><?php single_tag_title(); ?></strong></h1>  
             <hr class="top-text-hr"/>
         <?php } 
         elseif ( is_author() ) {?>
             <?php 
                 echo get_avatar( get_the_author_meta('email'), '100', $default, $alt, array( 'class' => array( 'avatar-post avatar-author-page' ) ) ); 
             ?>
-            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Latest posts by', 'lamina'); ?> 
+            <h1 class="text-left-title-featured-sidebar text-center top-text"><?php esc_html_e('Latest posts by', 'lamina'); ?> 
             <?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
               <hr class="top-text-hr" />
         <?php }
         elseif ( is_home() || is_front_page() ) { ?>
-          <h1 class="text-left-title-featured-sidebar text-center top-text"><?php _e('Recent posts', 'lamina'); ?></h1>
+          <h1 class="text-left-title-featured-sidebar text-center top-text"><?php esc_html_e('Recent posts', 'lamina'); ?></h1>
           <hr class="top-text-hr" />
         <?php }     
          
@@ -63,7 +63,7 @@
             <div class="card-block">
                   <?php if ( is_sticky() ) { ?>
                     <span class="badge-featured">
-                      <?php _e('Featured', 'lamina');?>
+                      <?php esc_html_e('Featured', 'lamina');?>
                     </span>
                 <?php
                 } ?>
@@ -71,7 +71,7 @@
               <p class="card-text"><?php echo  get_the_excerpt(); ?></p>
                 <div class="card-actions-top">
                     <small class="text-muted badge">
-                        <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'lamina'); ?></time>
+                        <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; esc_html_e('ago', 'lamina'); ?></time>
                   </small>
                 </div>
             </div>
@@ -80,7 +80,7 @@
       
           <?php endwhile; } else { ?>
           <div class="post-content">
-              <p><?php _e('Sorry, it seems there are no posts available.', 'lamina'); ?></p>
+              <p><?php esc_html_e('Sorry, it seems there are no posts available.', 'lamina'); ?></p>
               <?php get_search_form(); ?>
           </div><!-- post-content END! -->
                 
