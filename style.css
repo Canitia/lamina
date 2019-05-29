@@ -734,11 +734,12 @@ ul.pings.commentlist {
 	color:black;
 	font-weight: 600;
 	padding: 15px;
+	color: white;
 }
 
 .pagination-within > a > li {
 	background-color: #666666;
-	color: black;
+	color: white;
 }
 
 .pagination-within > a > li:hover {
