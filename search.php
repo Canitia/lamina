@@ -6,8 +6,6 @@ Template Name: Search Page
 
 <?php get_header(); ?>
 
-<div class="row">
-
 <div class="main-content col-md-12 col-lg-12">
  
 <div class="row page-row">
@@ -67,7 +65,6 @@ Template Name: Search Page
     </div><!-- post-content END! -->
                 
     <?php } ?>
- </div>
 </div><!-- end main-content -->
 </div>
 </div><!-- end row -->
