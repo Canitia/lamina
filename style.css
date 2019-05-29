@@ -750,6 +750,10 @@ ul.pings.commentlist {
   ARTICLE: TAGS/CATEGORY look-n-feel
 
 *****************************************/
+.cat-links {
+	clear: both;
+}
+
 .cat-links-hr {
 	margin-top:7px;
 	margin-bottom:7px;
