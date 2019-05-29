@@ -1,25 +1,22 @@
 </div><!-- container END! -->
 <div class="row">
-  <!-- second column (widget bar) -->
+  <!-- widget bar -->
   <?php get_sidebar( 'primary' ); ?>
 </div>
 
 </main>
 <footer class="footer">
       <div class="container-fluid">
-        <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'right' ) : ?>
-        <!-- second column (widget bar) -->
-        <?php get_sidebar( 'primary' ); ?>
-        <?php endif; ?>  
+
       <p class="text-center text-muted">
             <?php
-              $getActiveTheme = wp_get_theme();
+              $lamina_getTheme = wp_get_theme();
 
-              echo '<strong>' . $getActiveTheme->get( 'Name' ) . ' </strong>' . ' ' . $getActiveTheme->get( 'Version' ) ;
+              echo '<strong>' . esc_html($lamina_getTheme->get( 'Name' )) . ' </strong>' . ' ' . esc_html($lamina_getTheme->get( 'Version' )) ;
             ?>    
         </p>
       </div>
-          <!-- close with Wordpress footer aka adminbar etc. -->
+          <!-- close with WordPress footer aka adminbar etc. -->
        <?php wp_footer();?>
 </footer>
 <script>
