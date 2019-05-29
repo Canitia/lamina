@@ -440,6 +440,7 @@ strong {
 	font-weight: 300;
 	text-transform: uppercase;
 	padding-bottom: 5px;
+	width: 100%;
 }
 
 .collection-search {
