@@ -191,7 +191,7 @@ function lamina_pagination_numeric_posts_nav() {
 			echo '<li class="pagination-dash">-</li>' . "\n";
 
 		$class = $paged == $max ? ' class="active"' : '';
-		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html($class), get_pagenum_link( $max, 1, true ), $max );
+		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html($class), get_pagenum_link( $max, 1, true ), esc_html($max) );
 	}
 
 	/**	Next Post Link */
