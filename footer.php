@@ -11,7 +11,7 @@
             <?php
               $laminaGetThemeName = wp_get_theme();
 
-              echo '<strong>' . $laminaGetThemeName->get( 'Name' ) . ' </strong>' . ' ' . $laminaGetThemeName->get( 'Version' ) ;
+              echo '<strong>' . esc_html_e($laminaGetThemeName->get( 'Name' )) . ' </strong>' . ' ' . esc_html_e($laminaGetThemeName->get( 'Version' )) ;
             ?>    
         </p>
       </div>
