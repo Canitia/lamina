@@ -304,8 +304,8 @@ add_action( 'customize_register', 'lamina_customizer' );
 function lamina_setup() {
 	
 	add_theme_support( 'custom-logo', array(
-		'height'      => 64,
-		'width'       => 64,
+		'height'      => 48,
+		'width'       => 48,
 		'flex-width' => false,
 	) );
 }
