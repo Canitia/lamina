@@ -1,6 +1,6 @@
 <?php
 
-/* should be set for a proper Wordpress theme*/
+/* should be set for a proper WordPress theme*/
 
 if ( ! isset( $content_width ) ) {
 	
@@ -132,7 +132,7 @@ add_filter( 'comments_template', function( $theme_template) {
 
 }, 9 );
 
-/* shoutout to WPBeginner -> http://www.wpbeginner.com/wp-themes/how-to-add-numeric-pagination-in-your-wordpress-theme/ */
+/* shoutout to WPBeginner -> http://www.wpbeginner.com/wp-themes/how-to-add-numeric-pagination-in-your-WordPress-theme/ */
 function lamina_pagination_numeric_posts_nav() {
 
 	if( is_singular() )
