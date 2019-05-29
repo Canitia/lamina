@@ -42,6 +42,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #2f313d;
 }
 
+a {
+	color: black;
+	text-decoration: underline;
+}
+
 p {
 	margin: 0 0 1.66667em;
 	font-family: 'Anaheim', sans-serif;
@@ -278,6 +283,7 @@ strong {
 	padding-left: 0 !important;
 }
 
+.nav-link,
 .nav-link:hover {
 	text-decoration: none !important;
 }
