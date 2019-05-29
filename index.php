@@ -19,7 +19,7 @@
             ?>
             <h1 class="text-left-title-featured-sidebar text-center top-text"><?php esc_html_e('Latest posts by', 'lamina'); ?> 
             <?php $lamina_curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
-              echo '<strong>' . $lamina_curauth->display_name . '</strong>';?></h1>
+              echo '<strong>' . esc_html_e($lamina_curauth->display_name) . '</strong>';?></h1>
               <hr class="top-text-hr" />
         <?php }
         elseif ( is_home() || is_front_page() ) { ?>
@@ -60,10 +60,10 @@
                 <?php
                 } ?>
               <h2 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-              <p class="card-text"><?php echo  get_the_excerpt(); ?></p>
+              <p class="card-text"><?php esc_html_e(get_the_excerpt()); ?></p>
                 <div class="card-actions-top">
                     <small class="text-muted badge">
-                        <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; esc_html_e('ago', 'lamina'); ?></time>
+                        <time datetime="<?php echo get_the_date('c'); ?>"><?php esc_html_e(human_time_diff( get_the_time('U'), current_time('timestamp')),'lamina'); echo '&nbsp;'; esc_html_e('ago', 'lamina'); ?></time>
                   </small>
                 </div>
             </div>
