@@ -21,7 +21,7 @@
               echo '<strong>' . $curauth->display_name . '</strong>';?></h1>
         <?php }
         elseif ( is_home() || is_front_page() ) { ?>
-          <h1 class="text-left-title-featured-sidebar text-center"><?php _e('Recent posts', 'lamina'); ?> 
+          <h1 class="text-left-title-featured-sidebar text-center home-top-recent"><?php _e('Recent posts', 'lamina'); ?> 
         <?php }     
          
         } ?>
