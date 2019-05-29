@@ -1576,7 +1576,7 @@ ul.children {
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
 	background-color:#fcfcfc !important;
-	border: 2px solid #ebebeb;
+	border: 2px solid #ebebeb !important;
     border: none;
     border-radius: 3px;
 	padding-left: 15px;
@@ -1591,7 +1591,7 @@ ul.children {
 
 .comment-reply-link:hover, .form-submit > input#submit:hover{
 	 text-decoration: underline;
-	 color: white;
+	 color: white !important;
 	 background: #0088cc !important;
 }
 
