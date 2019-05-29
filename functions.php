@@ -116,7 +116,7 @@ add_filter( 'comments_template', function( $theme_template) {
         return $theme_template;
 
     // List comments with filters:
-    $pings = wp_list_comments( 
+    $lamina_pings = wp_list_comments( 
         array(  
             'type'     => 'pings', 
             'style'    => 'ul', 
@@ -125,8 +125,8 @@ add_filter( 'comments_template', function( $theme_template) {
     ); 
 
     // Display:
-    if( $pings )
-        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", esc_html_e($pings) );
+    if( $lamina_pings )
+        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", $lamina_pings );
 
     return $theme_template;
 
