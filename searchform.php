@@ -7,7 +7,7 @@
               value="<?php echo get_search_query() ?>" name="s"
               title="<?php echo esc_attr_x( 'Search for:', 'label', 'lamina' ) ?>" maxlength="50" />
       </label>
-      <input type="submit" class="search-submit btn float-right"
+      <input type="submit" class="search-submit btn"
           value="<?php echo esc_attr_x( 'Go', 'submit button', 'lamina' ) ?>" />
   </form>
 </div>
