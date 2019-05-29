@@ -126,7 +126,7 @@ add_filter( 'comments_template', function( $theme_template) {
 
     // Display:
     if( $pings )
-        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", $pings );
+        printf( "<div><ul class=\"pings commentlist\">%s</ul></div>", esc_html_e($pings) );
 
     return $theme_template;
 
@@ -324,19 +324,19 @@ load_theme_textdomain( 'lamina', get_template_directory().'/languages' );
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @link http://justintadlock.com/archives/2012/08/21/post-formats-chat
  *
- * @global array $_post_format_chat_ids An array of IDs for the chat rows based on the author.
+ * @global array $_lamina_post_format_chat_ids An array of IDs for the chat rows based on the author.
  * @param string $content The content of the post.
  * @return string $chat_output The formatted content of the post.
  */
 function my_format_chat_content( $content ) {
-	global $_post_format_chat_ids;
+	global $_lamina_post_format_chat_ids;
 
 	/* If this is not a 'chat' post, return the content. */
 	if ( !has_post_format( 'chat' ) )
 		return $content;
 
 	/* Set the global variable of speaker IDs to a new, empty array for this chat. */
-	$_post_format_chat_ids = array();
+	$_lamina_post_format_chat_ids = array();
 
 	/* Allow the separator (separator for speaker/text) to be filtered. */
 	$separator = apply_filters( 'my_post_format_chat_separator', ' ' );
@@ -423,24 +423,24 @@ function my_format_chat_content( $content ) {
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @link http://justintadlock.com/archives/2012/08/21/post-formats-chat
  *
- * @global array $_post_format_chat_ids An array of IDs for the chat rows based on the author.
+ * @global array $_lamina_post_format_chat_ids An array of IDs for the chat rows based on the author.
  * @param string $chat_author Author of the current chat row.
  * @return int The ID for the chat row based on the author.
  */
 function my_format_chat_row_id( $chat_author ) {
-	global $_post_format_chat_ids;
+	global $_lamina_post_format_chat_ids;
 
 	/* Let's sanitize the chat author to avoid craziness and differences like "John" and "john". */
 	$chat_author = strtolower( strip_tags( $chat_author ) );
 
 	/* Add the chat author to the array. */
-	$_post_format_chat_ids[] = $chat_author;
+	$_lamina_post_format_chat_ids[] = $chat_author;
 
 	/* Make sure the array only holds unique values. */
-	$_post_format_chat_ids = array_unique( $_post_format_chat_ids );
+	$_lamina_post_format_chat_ids = array_unique( $_lamina_post_format_chat_ids );
 
 	/* Return the array key for the chat author and add "1" to avoid an ID of "0". */
-	return absint( array_search( $chat_author, $_post_format_chat_ids ) ) + 1;
+	return absint( array_search( $chat_author, $_lamina_post_format_chat_ids ) ) + 1;
 }
 
 /* Filter the content of chat posts. */
