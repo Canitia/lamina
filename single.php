@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-    <div class="row h-100 page-row post-row">
+    <div class="row page-row post-row">
         <?php if ( get_theme_mod( 'sidebar_position', 'right' ) == 'left' ) : ?>
         <!-- second column (widget bar) -->
         <?php get_sidebar( 'primary' ); ?>
