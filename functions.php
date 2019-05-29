@@ -21,7 +21,6 @@ function lamina_theme_scripts() {
 	wp_enqueue_script( 'font-awesome', '//use.fontawesome.com/releases/v5.8.1/js/all.js' );
 	wp_enqueue_script( 'webfontloader', '//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js' );
 	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js', array('jquery') );
-	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
 	wp_enqueue_style( 'sodalite',  get_stylesheet_directory_uri(). '/style.css' );	
 
 	if ( get_theme_mod( 'theme_preset', 'sodalite' ) == 'pinkruby') :
