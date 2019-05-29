@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!sdDOCTYPE html>
 <html <?php language_attributes();?> itemscope itemtype="http://schema.org/WebPage">
 <head>
     <!-- some meta -->
@@ -15,10 +15,10 @@
     <?php wp_head();?>
 </head>
 
-<body class="d-flex flex-column" <?php body_class();?> style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
+<body class="d-flex flex-column" <?php body_class();?> >
 
 <!-- start of the actual header -->
-<header class="container-fluid">
+<header>
 <nav class="navbar navbar-expand-md navbar-light">
         <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,15 +34,13 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
+<div class="heading">
+    <div class="heading-text">
+      <?php echo get_bloginfo('description');?>
+    </div>
+      <img src="<?php header_image(); ?>" class="header-image" alt="Header image" />
+</div>
 
 </header>
-<main style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
-<?php //show slider
-    if ( is_home() || is_category() || is_author() || is_search() || is_tag() ) {
-
-        if ( get_theme_mod( 'display_featured_content', 'hidefeatured' ) == 'showslider') :
-            get_template_part( 'partials/slider' );
-        endif;
-    }
-?>
+<main>
 <div class="container-fluid flex-grow">
