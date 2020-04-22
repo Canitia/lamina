@@ -1825,21 +1825,21 @@ div.aligncenter {
 }
 
 #wp-calendar thead {
-	font-size: 10px; 
+	font-size: 10px;
 }
 
 #wp-calendar thead th {
-	padding-bottom: 10px; 
+	padding-bottom: 10px;
 }
 
-#wp-calendar tbody { 
+#wp-calendar tbody {
 	color: #aaa;
 }
 
 #wp-calendar tbody td {
 	background: #f5f5f5;
-	border: 1px solid #fff; 
-	text-align: center; 
+	border: 1px solid #fff;
+	text-align: center;
 }
 
 #wp-calendar tbody td:hover {
@@ -1847,7 +1847,7 @@ div.aligncenter {
 }
 
 #wp-calendar tbody .pad {
-	background: none; 
+	background: none;
 }
 
 /* image widget css */
