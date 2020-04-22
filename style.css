@@ -123,10 +123,6 @@ hr {
     padding: 0;
 }
 
-pre {
-	line-height: 30px;
-}
-
 blockquote {
 	display: table;
 	position:relative;
@@ -154,6 +150,7 @@ q {
 }
 
 pre {
+	line-height: 30px;
 	padding-left:30px;
 	padding-right:30px;
 	padding-top:5px;
