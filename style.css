@@ -636,7 +636,7 @@ POST/ARTICLE HEADERS
 .archive-image {
 	object-fit: cover;
 	height: 150px;
-	width: 100%;	
+	width: 100%;
 }
 
 .archive-image:hover {
@@ -714,7 +714,7 @@ ul.pings.commentlist {
 	clear: both;
 }
 
-.pagination-within li { 
+.pagination-within li {
 	background-color: #eeeeee;
 	color:black;
 	font-weight: 600;
@@ -939,7 +939,7 @@ footer p {
 
 *****************************************/
 
-@media (max-width: 575px) {  
+@media (max-width: 575px) {
 
 	.heading {
 		font-size: 1.4em;
@@ -1120,11 +1120,11 @@ footer p {
 
 	.caption-image {
 		font-size: 1.1em !important;
-	}	
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) { 
+@media (min-width: 576px) and (max-width: 767px) {
 
 	.heading {
 		font-size: 1.6em;
@@ -1305,7 +1305,7 @@ footer p {
  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-width: 992px) and (max-width: 1199px) {
 
 	.caption-image {
 		font-size: 2em !important;
@@ -1357,7 +1357,7 @@ footer p {
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 	.caption-image {
 		font-size: 2.3em !important;
 	}
@@ -1497,7 +1497,7 @@ ul.commentlist {
 .comment-respond {
     padding: 15px;
 	overflow: hidden;
-	border: 0;	
+	border: 0;
 }
 
 .entry-pings,
@@ -1617,7 +1617,7 @@ input.search-submit{
 }
 
 .comment-notes{
-    display:none;   
+    display: none;
 }
 
 .reply {
