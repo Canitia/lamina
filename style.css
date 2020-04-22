@@ -875,7 +875,7 @@ p.postedby {
 
 .pagination > .active {
 	padding: 15px;
-	line-height: 2px; 
+	line-height: 2px;
 }
 
 .pagination > ul > li {
@@ -1693,7 +1693,7 @@ dl.wp-caption {
 .size-thumbnail {
 	max-width: 100%;
 	width: 100%;
-	height: auto; 
+	height: auto;
 	display:block;
 }
 
@@ -1830,29 +1830,29 @@ div.aligncenter {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-#wp-calendar thead { 
+#wp-calendar thead {
 	font-size: 10px; 
 }
 
-#wp-calendar thead th { 
+#wp-calendar thead th {
 	padding-bottom: 10px; 
 }
 
 #wp-calendar tbody { 
-	color: #aaa; 
+	color: #aaa;
 }
 
-#wp-calendar tbody td { 
-	background: #f5f5f5; 
+#wp-calendar tbody td {
+	background: #f5f5f5;
 	border: 1px solid #fff; 
 	text-align: center; 
 }
 
-#wp-calendar tbody td:hover { 
+#wp-calendar tbody td:hover {
 	background: #fff;
 }
 
-#wp-calendar tbody .pad { 
+#wp-calendar tbody .pad {
 	background: none; 
 }
 
