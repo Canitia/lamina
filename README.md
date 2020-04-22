@@ -1,4 +1,6 @@
-Lamina
+# Lamina
+![License](https://img.shields.io/github/license/Canitia/lamina?style=flat-square)
+[![CodeFactor](https://www.codefactor.io/repository/github/canitia/lamina/badge)](https://www.codefactor.io/repository/github/canitia/lamina)
 ==================
 Lamina is a responsive theme with some added 'advanced' features.
 
