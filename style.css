@@ -651,7 +651,6 @@ POST/ARTICLE HEADERS
 
 .post-content > ul li,
 .post-content > ol li > ul li,
-.post-content > ol li > ul li,
 .post-content > ul li > ol li > ul li {
 	list-style-type: square;
 	padding:5px;
