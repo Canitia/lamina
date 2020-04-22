@@ -12,7 +12,7 @@
             <?php
               $lamina_getTheme = wp_get_theme();
 
-              echo '<strong>' . esc_html($lamina_getTheme->get( 'Name' )) . ' </strong>' . ' ' . esc_html($lamina_getTheme->get( 'Version' )) ;
+              echo '<strong>' . esc_html($lamina_getTheme->get( 'Name' )) . ' </strong> ' . esc_html($lamina_getTheme->get( 'Version' )) ;
             ?>    
         </p>
       </div>
