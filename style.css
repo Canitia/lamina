@@ -946,6 +946,7 @@ footer p {
 
 	.navbar {
 		justify-content: flex-start !important;
+		padding: 10px;
 	}
 
 	.menu-item {
@@ -1009,10 +1010,6 @@ footer p {
 	.main-content {
 		padding-left: 0;
 		padding-right:0;
-	}
-	
-	.navbar {
-		padding: 10px;
 	}
 
 	.collection-item > p,
