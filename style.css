@@ -530,10 +530,6 @@ strong {
     text-overflow: ellipsis;
 }
 
-.collection .collection-item:hover {
-
-}
-
 .collection-item > a > p:hover {
 	color: #979797;
 }
