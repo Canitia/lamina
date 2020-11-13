@@ -18,11 +18,6 @@ Lamina is a responsive theme with some added 'advanced' features.
 
 ![Lamina](https://github.com/canitia/lamina/raw/master/screenshot.png)
 
-# Status
-Stable
-
-- *Passed 'theme check' validation once more on May 29th 2019*
-
 ## Libraries used
 - Bootstrap v4.5.3
 - JQuery (included)
