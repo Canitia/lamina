@@ -24,7 +24,7 @@ Stable
 - *Passed 'theme check' validation once more on May 29th 2019*
 
 ## Libraries used
-- Bootstrap v4.3.1
+- Bootstrap v4.5.3
 - JQuery (included)
 - [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 - Font Awesome 5.8.1
@@ -32,10 +32,7 @@ Stable
 ## Tested on:
 
 ### Desktop
-- Google Chrome 74
-- Firefox 67
-- Microsoft Edge (Windows 10 April 2018 update)
+- Firefox 82
 
-### Mobile (Android)
-- Google Chrome
+### Mobile (iOS)
 - Firefox
