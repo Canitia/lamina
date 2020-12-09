@@ -225,6 +225,14 @@ function lamina_customizer( $wp_customize ) {
     );
 
 	$wp_customize->add_setting(
+		'show_header_image',
+		array(
+			'default' => 'showheader',
+			'sanitize_callback' => 'lamina_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_setting(
 		'show_tags',
 		array(
 			'default' => 'showtags',
@@ -239,6 +247,16 @@ function lamina_customizer( $wp_customize ) {
 			'sanitize_callback' => 'lamina_sanitize_select',
 		)
 	);
+
+	$wp_customize->add_control( 'show_header_image', array(
+		'label' => __('Show Header Image', 'lamina'),
+		'section' => 'settings_section_lamina',
+		'type' => 'radio',
+		'choices' => array(
+			'showheader' => __('Show Header', 'lamina'),
+			'hideheader' => __('Hide Header', 'lamina'),
+		),
+	) );
 
 	$wp_customize->add_control( 'show_tags', array(
 		'label' => __('Show Tags', 'lamina'),
