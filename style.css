@@ -209,12 +209,6 @@ strong {
 	font-size: 140%;
 }
 
-.truncate {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .read-more-btn {
 	background-color: #fcfcfc !important;
 	border: 2px solid #ebebeb !important;
