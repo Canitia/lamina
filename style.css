@@ -200,6 +200,11 @@ dt {
 
 td {
 	padding: 5px;
+	border: 1px solid var(--inlinefields);
+}
+
+th {
+	border: 1px solid var(--inlinefields);
 }
 
 input,
@@ -395,7 +400,6 @@ strong {
 .card {
 	border: 0 !important;
 	padding: 20px;
-	height: 100% !important;
 	background-color: transparent !important;
 	transition: all .2s ease-in-out;
 }
