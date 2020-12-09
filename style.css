@@ -595,6 +595,8 @@ POST/ARTICLE HEADERS
 	font-family: 'Asap', sans-serif;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	font-size: 1.3rem;
+	font-weight: bold;
 }
 
 .post-subitems > a
