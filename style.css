@@ -783,7 +783,7 @@ ul.pings.commentlist {
 .tagslist a {
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 300;
 	color: var(--tag-button-color);
 	padding: 10px;
