@@ -36,6 +36,7 @@ https://www.color-hex.com/color-palette/3598
 */
 
 
+
 body {
 	height: 100%;
 	min-width: 320px;
@@ -209,6 +210,7 @@ strong {
 	font-size: 140%;
 }
 
+/* used on error page */
 .read-more-btn {
 	background-color: #fcfcfc !important;
 	border: 2px solid #ebebeb !important;
