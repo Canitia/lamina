@@ -1657,6 +1657,10 @@ dl.wp-caption {
 	font-weight: 600;
 }
 
+.wp-block-cover-text {
+	color: white !important;
+}
+
 /* center align twitter */
 .twitter-tweet {
 	margin-left:auto;
