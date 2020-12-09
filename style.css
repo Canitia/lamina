@@ -428,7 +428,7 @@ strong {
 }
 
 .card-block {
-	background: white !important;
+	background: #f8f8f8 !important;
 }
 
 .card-text {
@@ -472,11 +472,6 @@ strong {
 	font-weight: 500;
 	color: black;
 	padding: 0 !important;
-}
-
-.card-img-top.homepage-image {
-    padding: 10px;
-    border-radius: 15px;
 }
 
 .homepage-image {
