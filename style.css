@@ -32,7 +32,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	/* certain elements */
 	--bg-light: #fff;
 	--light-alt: #ebebeb;
-	--hovercolor: #666666;
+	--hovercolor: #e2e2e2;
 	--tag-button-color: #9e9e9e;
 	--inlinefields: #f5f7f8;
 
@@ -880,15 +880,15 @@ p.postedby {
 }
 
 .pagination > ul > li:hover {
-	background-color: #e2e2e2;
+	background-color: var(--hovercolor);
 }
 
 .pagination > ul > li.active {
-	background-color: #e2e2e2 !important;
+	background-color: var(--hovercolor) !important;
 }
 
 .pagination > ul > li.pagination-dash {
-	background-color: white;
+	background-color: var(--bg-light);
 	font-weight: 700;
     margin-left: 5px;
     margin-right: 5px;
