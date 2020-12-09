@@ -18,24 +18,33 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 /* **************************************
+  Main settings
+*****************************************/
+:root {
+	/* general accent colors */
+	--accentcolor: #0088cc;
+	--accentcolor2: #979797;
+	--accentcolor2: #eeeeee;
+
+	/* font colors */
+	--default-font-color: #000000;
+	--text-color-alt: #fff;
+	--headingcolor: #2f313d;
+
+	/* certain elements */
+	--bg-light: #fff;
+	--light-alt: #ebebeb;
+	--hovercolor: #666666;
+  }
+
+
+
+
+/* **************************************
 
   GENERAL FONT / ELEMENT
 
 *****************************************/
-
-
-/* Colors are as follows:
-https://www.color-hex.com/color-palette/3598
-
-#000000	(0,0,0)
-#666666	(102,102,102)
-#979797	(151,151,151)
-#eeeeee	(238,238,238)
-#0088cc	(0,136,204)
-
-*/
-
-
 
 body {
 	height: 100%;
@@ -48,16 +57,16 @@ h3,
 h4,
 h5,
 h6 {
-    color: #2f313d;
+    color: var(--headingcolor);
 }
 
 a {
-	color: black;
+	color: var(--default-font-color);
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #0088cc !important;
+	color: var(--accentcolor) !important;
 }
 
 p {
@@ -66,7 +75,7 @@ p {
 }
 
 p a:hover {
-	color: #0088cc !important;
+	color: var(--accentcolor) !important;
 }
 
 h1 {
@@ -100,7 +109,7 @@ h3 {
 }
 
 .h-slider {
-	text-shadow: 2px 1px #000000;
+	text-shadow: 2px 1px var(--default-font-color);
 	font-family: 'Asap', sans-serif;
 }
 
@@ -115,7 +124,7 @@ p > a {
 
 .label {
 	font-weight: bold;
-	color:black !important;
+	color: var(--default-font-color) !important;
 }
 
 hr {
@@ -214,20 +223,20 @@ strong {
 .read-more-btn {
 	background-color: #fcfcfc !important;
 	border: 2px solid #ebebeb !important;
-	color: black;
+	color: var(--default-font-color);
 	font-weight: 600;
 	width: 230px;
 }
 
 .read-more-btn:hover {
-	color: white !important;
-	background: #0088cc !important;
+	color: var(--text-color-alt) !important;
+	background: var(--accentcolor) !important;
 }
 
 .btn:hover,
 .comment-reply-link:hover,
 .submit:hover {
-	background-color: #0088cc !important;
+	background-color: var(--accentcolor) !important;
 	color: white !important;
 }
 
@@ -286,7 +295,7 @@ strong {
 
 .navbar .dropdown-menu li a {
     background: white;
-    color: black;
+    color: var(--default-font-color);
 }
 
 /* color of clickable header */
@@ -301,7 +310,7 @@ strong {
 }
 
 .menu-item > a {
-	color: black;
+	color: var(--default-font-color);
 	font-size: 16px;
     font-weight: 600;
 }
@@ -340,7 +349,7 @@ strong {
     background-color: #ebebeb !important;
     font-weight: bold;
     opacity: 0.9;
-    color: black;
+    color: var(--default-font-color);
 	text-align: center;
 	border-radius: 10px;
 }
@@ -397,11 +406,11 @@ strong {
 
 
 .card-title a {
-	color: black;
+	color: var(--default-font-color);
 }
 
 .card-title a:hover {
-	color: #0088cc;
+	color: var(--accentcolor);
     text-decoration: none;
 }
 
@@ -421,7 +430,7 @@ strong {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	height: 45px;
-	color: black;
+	color: var(--default-font-color);
 	text-transform: none;
 	text-align: left;
 }
@@ -456,7 +465,7 @@ strong {
 
 .badge {
 	font-weight: 500;
-	color: black;
+	color: var(--default-font-color);
 	padding: 0 !important;
 }
 
@@ -524,7 +533,7 @@ article > h2,
 article > h3,
 article > h4,
 .author-url-post-head  {
-	color:#666666 !important;
+	color:var(--hovercolor) !important;
 }
 
 article > h1:first-child {
@@ -533,7 +542,7 @@ article > h1:first-child {
 
 .widget-title {
 	font-size: 1em !important;
-	color: #0088cc !important;
+	color: var(--accentcolor) !important;
 }
 
 /* sidebar */
@@ -548,20 +557,20 @@ article > h1:first-child {
 	margin: 0;
 	border-bottom: 1px solid #eeeeee;
 	list-style-type: none !important;
-	color: black;
+	color: var(--default-font-color);
 }
 
 .widget > ul > li:hover {
-	color: black;
+	color: var(--default-font-color);
 }
 
 .widget > ul > li > a:hover {
-	color: #0088cc;
+	color: var(--accentcolor);
 	text-decoration: none;
 }
 
 .widget > ul > li > a {
-    color: black;
+    color: var(--default-font-color);
 }
 
 /* ######################################
@@ -587,7 +596,7 @@ POST/ARTICLE HEADERS
 
 .post-subitems > a
 {
-	color:black;
+	color:var(--default-font-color);
 	text-decoration: none;
 }
 
@@ -689,19 +698,19 @@ ul.pings.commentlist {
 
 .pagination-within li {
 	background-color: #eeeeee;
-	color:black;
+	color:var(--default-font-color);
 	font-weight: 600;
 	padding: 15px;
 }
 
 .pagination-within > a > li {
 	background-color: #eeeeee;
-	color: black;
+	color: var(--default-font-color);
 }
 
 .pagination-within > a > li:hover {
 	background-color: #e2e2e2;
-	color: black;
+	color: var(--default-font-color);
 }
 
 /* pagination within a post/page */
@@ -735,7 +744,7 @@ ul.pings.commentlist {
 
 .cat-links > a:hover {
 	text-decoration: underline;
-	color: #666666;
+	color: var(--hovercolor);
 }
 
 .categorylist {
@@ -752,7 +761,7 @@ ul.pings.commentlist {
 .post-content a:hover,
 .tagslist a:hover,
 .categorylist a:hover {
-	color: #666666;
+	color: var(--hovercolor);
 }
 
 .tagslist a::before {
@@ -774,7 +783,7 @@ ul.pings.commentlist {
 }
 
 .tagslist a:hover {
-	color: black;
+	color: var(--default-font-color);
 	text-decoration: underline;
 }
 
@@ -825,7 +834,7 @@ p.postedby {
 }
 
 .author-name a:hover {
-	color: #666666;
+	color: var(--hovercolor);
 }
 
 .author-bio-text {
@@ -861,7 +870,7 @@ p.postedby {
 
 .pagination > ul > li.active > a,
 .pagination > ul > li > a:hover  {
-    color: black !important;
+    color: var(--default-font-color) !important;
 }
 
 .pagination > ul > li:hover {
@@ -1374,15 +1383,11 @@ EXTERNAL libraries look-n-feel
 }
 
 .fa-tags,
-.fa-list {
-	color: black;
-	margin-right: 10px;
-}
-
+.fa-list,
 .fa-clock,
 .fa-user {
+	color: var(--default-font-color);
 	margin-right: 10px;
-	color: black;
 }
 
 .fa-user {
@@ -1391,7 +1396,7 @@ EXTERNAL libraries look-n-feel
 
 .fa-bars {
 	margin-top: 10px;
-	color: black;
+	color: var(--default-font-color);
 }
 
 .fa-exclamation-triangle {
@@ -1541,7 +1546,7 @@ input.search-submit{
     padding-right: 15px;
     text-transform: uppercase;
     width: auto;
-	color:black;
+	color:var(--default-font-color);
 	font-weight: 600;
 }
 
@@ -1549,7 +1554,7 @@ input.search-submit{
 .form-submit > input#submit:hover{
 	 text-decoration: underline;
 	 color: white !important;
-	 background: #0088cc !important;
+	 background: var(--accentcolor) !important;
 }
 
 .form-submit > input#submit {
@@ -1570,7 +1575,7 @@ input.search-submit{
     padding: 5px;
     text-transform: uppercase;
     width: auto;
-	color:black;
+	color:var(--default-font-color);
 	font-weight: 600;
 }
 
@@ -1730,7 +1735,7 @@ div.aligncenter {
 
 .dropdown-content li > a,
 .dropdown-content li > span {
-	color: black !important;
+	color: var(--default-font-color) !important;
 }
 
 /* sidebar dropdown element */
@@ -1771,7 +1776,7 @@ div.aligncenter {
 }
 
 .tagcloud > a:hover {
-	color: #666666;
+	color: var(--hovercolor);
 	text-decoration: underline;
 }
 
@@ -1788,7 +1793,7 @@ div.aligncenter {
     padding-top: 0;
     padding-bottom: 15px;
 	text-align: left;
-	color: #0088cc;
+	color: var(--accentcolor);
 	caption-side: top;
 	text-transform: uppercase;
 	font-family: 'Source Sans Pro', sans-serif;
