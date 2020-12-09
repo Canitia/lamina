@@ -33,12 +33,9 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-<div class="heading">
-    <div class="heading-text">
-      <?php bloginfo('description');?>
-    </div>
-      <img src="<?php header_image(); ?>" class="header-image" alt="Header image" />
-</div>
+<?php if ( get_theme_mod( 'show_header_image', 'hideheader' ) == 'showheader' ) :
+            get_template_part( 'partials/header-image' ); 
+      endif; ?>
 
 </header>
 <main>
