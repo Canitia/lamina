@@ -1587,10 +1587,6 @@ input.search-submit{
 	margin-bottom: 10px;
 }
 
-.reply > a {
-	color: white !important;
-}
-
 .reply > a:hover {
 	color: white !important;
 	text-decoration: underline;
