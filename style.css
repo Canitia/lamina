@@ -1638,7 +1638,8 @@ input.search-submit{
 	background: whitesmoke;
 	clear:both;
 	text-align: center !important;
-	padding: 5px;
+	padding: 10px;
+	margin-bottom: 20px !important;
 }
 
 dl.wp-caption {
