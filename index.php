@@ -22,12 +22,8 @@
               echo '<strong>' . esc_html($lamina_curauth->display_name) . '</strong>';?></h1>
               <hr class="top-text-hr" />
         <?php }
-        elseif ( is_home() || is_front_page() ) { ?>
-          <h1 class="text-left-title-featured-sidebar text-center top-text"><?php esc_html_e('Recent posts', 'lamina'); ?></h1>
-          <hr class="top-text-hr" />
-        <?php }     
-         
-        } ?>
+        }
+         ?>
 
   <div class="row page-row">
   <!-- show the right header item -->

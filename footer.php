@@ -1,5 +1,5 @@
 </div><!-- container END! -->
-<div class="row">
+<div class="container-fluid row">
   <!-- widget bar -->
   <?php get_sidebar( 'primary' ); ?>
 </div>

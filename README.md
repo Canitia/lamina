@@ -13,7 +13,8 @@ Lamina is a responsive theme with some added 'advanced' features.
 - **Translation support** - includes English and Dutch languages
 
 # Lamina Settings - theme specific custom options
-- Show tags in posts and such (show/hide)
+- Show a full-width header image (show/hide)
+- Show tags in posts (show/hide)
 - Show author section (show/hide)
 
 ![Lamina](https://github.com/canitia/lamina/raw/master/screenshot.png)
@@ -27,7 +28,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 ## Tested on:
 
 ### Desktop
-- Firefox 82
+- Firefox 83
 
 ### Mobile (iOS)
 - Firefox

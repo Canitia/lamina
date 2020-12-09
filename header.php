@@ -15,10 +15,10 @@
 </head>
 
 <body <?php body_class();?> >
-
+<?php wp_body_open(); ?>
 <!-- start of the actual header -->
 <header>
-<nav class="navbar navbar-expand-md navbar-light">
+<nav class="container-fluid navbar navbar-expand-md navbar-light">
         <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -33,12 +33,9 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-<div class="heading">
-    <div class="heading-text">
-      <?php bloginfo('description');?>
-    </div>
-      <img src="<?php header_image(); ?>" class="header-image" alt="Header image" />
-</div>
+<?php if ( get_theme_mod( 'show_header_image', 'hideheader' ) == 'showheader' ) :
+            get_template_part( 'partials/header-image' ); 
+      endif; ?>
 
 </header>
 <main>
