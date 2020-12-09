@@ -20,7 +20,7 @@ function lamina_theme_scripts() {
 	wp_enqueue_script( 'font-awesome', '//use.fontawesome.com/releases/v5.8.1/js/all.js' );
 	wp_enqueue_script( 'webfontloader', '//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js' );
 	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js', array('jquery') );
-	wp_enqueue_style( 'sodalite',  get_stylesheet_directory_uri(). '/style.css' );	
+	wp_enqueue_style( 'default',  get_stylesheet_directory_uri(). '/style.css' );	
 }
 
 add_action( 'wp_enqueue_scripts', 'lamina_theme_scripts' );
@@ -161,7 +161,7 @@ function lamina_pagination_numeric_posts_nav() {
 
 	/**	Link to first page, plus ellipses if necessary */
 	if ( ! in_array( 1, $links ) ) {
-		$class = 1 == $paged ? ' class="active"' : '';
+		$class = 1 == $paged ? ' class=active' : '';
 
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html($class), get_pagenum_link( 1, true ), '1' );
 
@@ -172,7 +172,7 @@ function lamina_pagination_numeric_posts_nav() {
 	/**	Link to current page, plus 2 pages in either direction if necessary */
 	sort( $links );
 	foreach ( (array) $links as $link ) {
-		$class = $paged == $link ? ' class="active"' : '';
+		$class = $paged == $link ? ' class=active' : '';
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html($class), get_pagenum_link( $link, 1, true ), esc_html($link) );
 	}
 
@@ -181,7 +181,7 @@ function lamina_pagination_numeric_posts_nav() {
 		if ( ! in_array( $max - 1, $links ) )
 			echo '<li class="pagination-dash">-</li>' . "\n";
 
-		$class = $paged == $max ? ' class="active"' : '';
+		$class = $paged == $max ? ' class=active' : '';
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html($class), get_pagenum_link( $max, 1, true ), esc_html($max) );
 	}
 
@@ -225,6 +225,14 @@ function lamina_customizer( $wp_customize ) {
     );
 
 	$wp_customize->add_setting(
+		'show_header_image',
+		array(
+			'default' => 'showheader',
+			'sanitize_callback' => 'lamina_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_setting(
 		'show_tags',
 		array(
 			'default' => 'showtags',
@@ -239,6 +247,16 @@ function lamina_customizer( $wp_customize ) {
 			'sanitize_callback' => 'lamina_sanitize_select',
 		)
 	);
+
+	$wp_customize->add_control( 'show_header_image', array(
+		'label' => __('Show Header Image', 'lamina'),
+		'section' => 'settings_section_lamina',
+		'type' => 'radio',
+		'choices' => array(
+			'showheader' => __('Show Header', 'lamina'),
+			'hideheader' => __('Hide Header', 'lamina'),
+		),
+	) );
 
 	$wp_customize->add_control( 'show_tags', array(
 		'label' => __('Show Tags', 'lamina'),
