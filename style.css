@@ -72,6 +72,7 @@ a:hover {
 	color: var(--accentcolor) !important;
 }
 
+div,
 p {
 	margin: 0 0 1.66667em;
 	font-family: 'Anaheim', sans-serif;
@@ -94,6 +95,22 @@ h2 {
 h3 {
 	font-size: 2.4rem !important;
 	font-family: 'Asap', sans-serif;
+}
+
+h4 {
+	font-size: 2rem !important;
+	font-family: 'Asap', sans-serif;
+}
+
+h5 {
+	font-size: 1.5rem !important;
+	font-family: 'Asap', sans-serif;
+}
+
+h6 {
+	font-size: 1.1rem !important;
+	font-family: 'Asap', sans-serif;
+	font-weight: bold;
 }
 
 .flex-grow {
