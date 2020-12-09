@@ -10,7 +10,7 @@ Template Name: Search Page
  
 <div class="row page-row">
 
-    <h1 class="text-left-title-featured-sidebar text-center top-text truncate"><?php esc_html_e('Results for ', 'lamina'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
+    <h1 class="text-left-title-featured-sidebar text-center top-text text-truncate"><?php esc_html_e('Results for ', 'lamina'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
     <div class="row">
 
     <?php
