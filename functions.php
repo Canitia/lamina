@@ -161,7 +161,7 @@ function lamina_pagination_numeric_posts_nav() {
 
 	/**	Link to first page, plus ellipses if necessary */
 	if ( ! in_array( 1, $links ) ) {
-		$class = 1 == $paged ? ' class="active"' : '';
+		$class = 1 == $paged ? ' class=active' : '';
 
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html($class), get_pagenum_link( 1, true ), '1' );
 
@@ -172,7 +172,7 @@ function lamina_pagination_numeric_posts_nav() {
 	/**	Link to current page, plus 2 pages in either direction if necessary */
 	sort( $links );
 	foreach ( (array) $links as $link ) {
-		$class = $paged == $link ? ' class="active"' : '';
+		$class = $paged == $link ? ' class=active' : '';
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html($class), get_pagenum_link( $link, 1, true ), esc_html($link) );
 	}
 
@@ -181,7 +181,7 @@ function lamina_pagination_numeric_posts_nav() {
 		if ( ! in_array( $max - 1, $links ) )
 			echo '<li class="pagination-dash">-</li>' . "\n";
 
-		$class = $paged == $max ? ' class="active"' : '';
+		$class = $paged == $max ? ' class=active' : '';
 		printf( '<li%s><a href="%s">%s</a></li>' . "\n", esc_html($class), get_pagenum_link( $max, 1, true ), esc_html($max) );
 	}
 
