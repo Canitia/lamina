@@ -545,7 +545,7 @@ article > h1:first-child {
 }
 
 .widget-title {
-	font-size: 1em !important;
+	font-size: 1rem !important;
 	color: var(--accentcolor) !important;
 }
 
@@ -899,11 +899,6 @@ p.postedby {
     background: var(--border-bg-light);
 }
 
-.fa-chevron-right,
-.fa-chevron-left {
-	font-size: 1em !important;
-}
-
 /* **************************************
 
   FOOTER
@@ -973,27 +968,27 @@ footer p {
 	}
 
 	h1 {
-		font-size: 2em !important;
+		font-size: 2rem !important;
 	}
 
 	h2 {
-		font-size: 1.8em !important;
+		font-size: 1.8rem !important;
 	}
 
 	h3 {
-		font-size: 1.6em !important;
+		font-size: 1.6rem !important;
 	}
 
 	h4 {
-		font-size: 1.4em !important;
+		font-size: 1.4rem !important;
 	}
 
 	h5 {
-		font-size: 1.3em !important;
+		font-size: 1.3rem !important;
 	}
 
 	h6 {
-		font-size: 1.1em !important;
+		font-size: 1.1rem !important;
 	}
 
 	.site-title {
@@ -1098,7 +1093,7 @@ footer p {
 	}
 
 	.caption-image {
-		font-size: 1.1em !important;
+		font-size: 1.1rem !important;
 	}
 }
 
@@ -1140,27 +1135,27 @@ footer p {
 	}
 
 	h1 {
-		font-size: 2em !important;
+		font-size: 2rem !important;
 	}
 
 	h2 {
-		font-size: 1.8em !important;
+		font-size: 1.8rem !important;
 	}
 
 	h3 {
-		font-size: 1.6em !important;
+		font-size: 1.6rem !important;
 	}
 
 	h4 {
-		font-size: 1.4em !important;
+		font-size: 1.4rem !important;
 	}
 
 	h5 {
-		font-size: 1.3em !important;
+		font-size: 1.3rem !important;
 	}
 
 	h6 {
-		font-size: 1.1em !important;
+		font-size: 1.1rem !important;
 	}
 
 	.site-title {
@@ -1168,7 +1163,7 @@ footer p {
 	}
 
 	.caption-image {
-		font-size: 1.3em !important;
+		font-size: 1.3rem !important;
 	}
 
 	.collection-item {
@@ -1506,7 +1501,7 @@ ul.children {
 }
 
 .comment-author > cite {
-	font-size: 1.1em;
+	font-size: 1.1rem;
 	font-family: 'Asap', sans-serif;
 	vertical-align: middle;
 }
