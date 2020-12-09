@@ -1462,7 +1462,7 @@ ul.commentlist {
 .comment-body {
     padding: 15px;
     overflow: hidden;
-	border: 1px solid #f8f8f8;
+	border: 1px solid var(--border-bg-light);
 }
 
 .comment-body > ul li,
@@ -1483,7 +1483,7 @@ ul.commentlist {
 }
 
 ul.children {
-    background: white;
+    background: var(--bg-light);
 }
 
 .comment-respond input[type="email"],
@@ -1526,7 +1526,7 @@ ul.children {
 .form-submit > input#submit,
 input.search-submit{
     cursor: pointer;
-	background-color:var(--tag-button-color) !important;
+	background-color: var(--tag-button-color) !important;
 	border: 2px solid var(--border-bg-light) !important;
     border: none;
     border-radius: 3px;
@@ -1536,14 +1536,14 @@ input.search-submit{
     padding-right: 15px;
     text-transform: uppercase;
     width: auto;
-	color:var(--default-font-color);
+	color: var(--default-font-color);
 	font-weight: 600;
 }
 
 .comment-reply-link:hover,
 .form-submit > input#submit:hover{
 	 text-decoration: underline;
-	 color: white !important;
+	 color: var(--bg-light) !important;
 	 background: var(--accentcolor) !important;
 }
 
@@ -1584,7 +1584,7 @@ input.search-submit{
 }
 
 .reply > a:hover {
-	color: white !important;
+	color: var(--bg-light) !important;
 	text-decoration: underline;
 }
 
@@ -1803,7 +1803,7 @@ div.aligncenter {
 
 #wp-calendar tbody td {
 	background: var(--border-bg-light);
-	border: 1px solid #fff;
+	border: 1px solid var(--bg-light);
 	text-align: center;
 }
 
