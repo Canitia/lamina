@@ -1418,12 +1418,6 @@ EXTERNAL libraries look-n-feel
 	WORDPRESS COMMENTS
 
 *****************************************/
-.comments-wrapper {
-	max-width: 750px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .avatar {
 	display: block;
 	width: 50px;
