@@ -33,7 +33,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	--bg-light: #fff;
 	--light-alt: #ebebeb;
 	--hovercolor: #666666;
-	--tagcolor: #9e9e9e;
+	--tag-button-color: #9e9e9e;
+	--inlinefields: #f5f7f8;
+
 	/* color of comment background and/or borders */
 	--border-bg-light: #eeeeee;
   }
@@ -169,13 +171,13 @@ pre {
 	padding-right:30px;
 	padding-top:5px;
 	padding-bottom:5px;
-	background-color: #f5f7f8;
+	background-color: var(--inlinefields);
 }
 
 cite {
     font-style: italic;
     font-weight: bold;
-	color: #999999;
+	color: var(--inlinefields);
 	font-size: 14px;
 	display: block;
 	margin-top: 5px;
@@ -369,7 +371,7 @@ strong {
 	width: 25px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #e2e2e2 !important;
+	background: var(--tag-button-color) !important;
 	height: 3px;
 }
 
@@ -378,11 +380,11 @@ strong {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	justify-content: space-around;
-	background: #fcfcfc;
+	background: var(--border-bg-light);
 }
 
 .post-row {
-	background: white;
+	background: var(--bg-light);
 }
 
 .col {
@@ -778,7 +780,7 @@ ul.pings.commentlist {
 .tagslist a {
 	text-decoration: none;
 	font-weight: 300;
-	color: var(--tagcolor);
+	color: var(--tag-button-color);
 	padding: 10px;
 	text-transform: uppercase;
 }
@@ -1537,7 +1539,7 @@ ul.children {
 .form-submit > input#submit,
 input.search-submit{
     cursor: pointer;
-	background-color:#fcfcfc !important;
+	background-color:var(--tag-button-color) !important;
 	border: 2px solid var(--border-bg-light) !important;
     border: none;
     border-radius: 3px;
@@ -1570,7 +1572,7 @@ input.search-submit{
     font-size: 80% !important;
     float: right;
 	cursor: pointer;
-    background-color:#fcfcfc !important;
+    background-color: var(--tag-button-color) !important;
     border: none;
     border-radius: 3px;
     padding: 5px;
@@ -1715,7 +1717,7 @@ div.aligncenter {
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background-color: var(--border-bg-light);
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
@@ -1813,13 +1815,13 @@ div.aligncenter {
 }
 
 #wp-calendar tbody td {
-	background: #f5f5f5;
+	background: var(--border-bg-light);
 	border: 1px solid #fff;
 	text-align: center;
 }
 
 #wp-calendar tbody td:hover {
-	background: #fff;
+	background: var(--text-color-alt);
 }
 
 #wp-calendar tbody .pad {
