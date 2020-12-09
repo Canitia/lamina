@@ -305,7 +305,7 @@ strong {
 /* color of clickable header */
 .site-title {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 175%;
+	font-size: 2rem;
 	text-decoration: none;
 }
 
@@ -997,7 +997,7 @@ footer p {
 	}
 
 	.site-title {
-		font-size: 125%;
+		font-size: 1.5rem;
 	}
 
 	.main-content {
@@ -1164,7 +1164,7 @@ footer p {
 	}
 
 	.site-title {
-		font-size: 125%;
+		font-size: 1.5rem;
 	}
 
 	.caption-image {
