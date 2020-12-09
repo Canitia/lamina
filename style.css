@@ -112,10 +112,6 @@ h6 {
 	font-weight: bold;
 }
 
-.flex-grow {
-   flex: 1;
-}
-
 .container-fluid {
 	margin-left: auto;
 	margin-right: auto;
@@ -178,7 +174,6 @@ pre {
 cite {
     font-style: italic;
     font-weight: bold;
-	color: var(--inlinefields);
 	font-size: 14px;
 	display: block;
 	margin-top: 5px;
@@ -391,10 +386,6 @@ strong {
 
 .post-row {
 	background: var(--bg-light);
-}
-
-.col {
-	flex-basis: unset !important;
 }
 
 .card {
