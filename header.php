@@ -15,7 +15,7 @@
 </head>
 
 <body <?php body_class();?> >
-
+<?php wp_body_open(); ?>
 <!-- start of the actual header -->
 <header>
 <nav class="navbar navbar-expand-md navbar-light">
