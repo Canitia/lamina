@@ -715,7 +715,7 @@ ul.pings.commentlist {
 }
 
 .pagination-within > a > li:hover {
-	background-color: var(--inlinefields);
+	background-color: var(--hovercolor);
 	color: var(--default-font-color);
 }
 
