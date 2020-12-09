@@ -1798,7 +1798,7 @@ div.aligncenter {
 }
 
 #wp-calendar tbody {
-	color: #aaa;
+	color: var(--tag-button-color);
 }
 
 #wp-calendar tbody td {
