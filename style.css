@@ -1649,6 +1649,7 @@ dl.wp-caption {
 	text-align:center;
 	font-style: italic;
 	font-weight: 600;
+	margin-bottom: 0;
 }
 
 .wp-block-cover-text {
