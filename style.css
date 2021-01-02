@@ -4,7 +4,7 @@ Theme URI: https://canitiathemes.com/products.html#lamina
 Author: CanitiaThemes
 Author URI: http://canitiathemes.com
 Description: Lamina brings simplicity with features. With custom post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets and more.
-Version: 1.3.7.1
+Version: 1.3.8
 Requires at least: 4.9
 Tested up to: 5.5
 Requires PHP: 7.0
@@ -39,9 +39,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	/* color of comment background and/or borders */
 	--border-bg-light: #eeeeee;
   }
-
-
-
 
 /* **************************************
 
