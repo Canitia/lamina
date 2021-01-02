@@ -1,5 +1,5 @@
 !.gitignore
-
+.mailmap
 wordpress/*
 !wordpress/wp-content/
  
