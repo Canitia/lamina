@@ -405,7 +405,6 @@ strong {
 	text-overflow: ellipsis;
 }
 
-
 .card-title a {
 	color: var(--default-font-color);
 	text-decoration: none;
