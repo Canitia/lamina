@@ -1,9 +1,4 @@
 </div><!-- container END! -->
-<div class="container-fluid row">
-  <!-- widget bar -->
-  <?php get_sidebar( 'primary' ); ?>
-</div>
-
 </main>
 <footer class="footer">
       <div class="container-fluid">
