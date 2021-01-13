@@ -363,7 +363,7 @@ strong {
 
 /* **************************************
 
-  CONTENT SIDEBAR / MAIN
+  CONTENT MAIN
 
 *****************************************/
 .top-text {
@@ -377,13 +377,6 @@ strong {
 	margin-right: auto;
 	background: var(--tag-button-color) !important;
 	height: 3px;
-}
-
-.sidebar {
-	padding-top: 35px;
-	padding-bottom: 35px;
-	justify-content: space-evenly;
-	border-top: 1px solid var(--border-bg-light);
 }
 
 .post-row {
@@ -434,15 +427,6 @@ strong {
 	color: var(--default-font-color);
 	text-transform: none;
 	text-align: left;
-}
-
-
-/* headers like 'latest' */
-.text-left-title-featured-sidebar {
-	font-weight: 300;
-	text-transform: uppercase;
-	padding-bottom: 5px;
-	width: 100%;
 }
 
 .collection-search {
@@ -538,39 +522,6 @@ article > h4,
 
 article > h1:first-child {
 	margin-bottom:25px;
-}
-
-.widget-title {
-	font-size: 1rem !important;
-	color: var(--accentcolor) !important;
-}
-
-/* sidebar */
-.widget > ul {
-    padding-left: 0;
-}
-
-.widget > ul > li {
-	line-height: 1.5rem;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin: 0;
-	border-bottom: 1px solid var(--border-bg-light);
-	list-style-type: none !important;
-	color: var(--default-font-color);
-}
-
-.widget > ul > li:hover {
-	color: var(--default-font-color);
-}
-
-.widget > ul > li > a:hover {
-	color: var(--accentcolor);
-	text-decoration: none;
-}
-
-.widget > ul > li > a {
-    color: var(--default-font-color);
 }
 
 /* ######################################
@@ -1716,11 +1667,6 @@ div.aligncenter {
 .dropdown-content li > a,
 .dropdown-content li > span {
 	color: var(--default-font-color) !important;
-}
-
-/* sidebar dropdown element */
-.select-wrapper input.select-dropdown {
-	border-bottom: 0 !important;
 }
 
 /* css for post format : status, link*/

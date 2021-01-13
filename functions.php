@@ -41,35 +41,6 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-
-
-/**
- * sidebar
- */
-
-function lamina_sidebars() {
-	
-	/* Register the 'primary' sidebar. */
-	
-	register_sidebar(
-		array(
-		'id' => 'primary',
-		'name' => __( 'Primary', 'lamina' ),
-		'description' => __( 'Bottom bar.', 'lamina' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar">',
-		'after_title' => '</h1>'
-		)
-	);
-	
-	
-	/* Repeat register_sidebar() code for additional sidebars. */
-	
-}
-
-add_action( 'widgets_init', 'lamina_sidebars' );
-
 /* register main navigation */
 
 function register_mainmenu() {
