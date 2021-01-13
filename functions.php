@@ -62,7 +62,7 @@ function bootstrap_nav()
             'theme_location'    => 'header-menu',
             'depth'             => 2,
             'container'         => 'false',
-            'menu_class'        => 'nav navbar-nav ml-auto w-100 justify-content-end',
+            'menu_class'        => 'nav navbar-nav w-100 justify-content-end',
             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'walker'            => new wp_bootstrap_navwalker())
     );
