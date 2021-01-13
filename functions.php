@@ -4,7 +4,7 @@
 
 if ( ! isset( $content_width ) ) {
 	
-	$content_width = 820;
+	$content_width = 860;
 	
 }
 
