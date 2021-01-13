@@ -893,6 +893,10 @@ p.postedby {
     background: var(--border-bg-light);
 }
 
+.pagination ul li a {
+	text-decoration: none;
+}
+
 /* **************************************
 
   FOOTER
