@@ -27,7 +27,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 ## Tested on:
 
 ### Desktop
-- Firefox 83
+- Firefox (latest stable version as of theme version release)
 
 ### Mobile (iOS)
 - Firefox
