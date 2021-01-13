@@ -29,11 +29,13 @@
   <!-- show the right header item -->
 
      <?php
-
+      $count = 1;
     if ( have_posts() ) {
-    while ( have_posts() ) : the_post(); ?>
+    while ( have_posts() ) : the_post(); 
+    $count++;
+    ?>
 
-          <div class="card col col-sm-12 col-md-6 col-lg-4">
+          <div class="card col col-sm-12 col-md-6 <?php if($count <= 3){ echo 'col-lg-6'; } else { echo 'col-lg-4'; };?>">
           <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail() && is_sticky() ) {
 
