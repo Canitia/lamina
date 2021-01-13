@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="row">
+  <div class="row content-wrap">
 
   <div class="main-content col-md-12 col-lg-12" >
         
