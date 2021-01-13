@@ -398,7 +398,7 @@ strong {
 }
 
 .card-title {
-	font-size: 135% !important;
+	font-size: 1.2rem !important;
 	margin-top: 15px;
 	white-space: nowrap;
 	overflow: hidden;
@@ -408,6 +408,7 @@ strong {
 
 .card-title a {
 	color: var(--default-font-color);
+	text-decoration: none;
 }
 
 .card-title a:hover {
@@ -939,10 +940,6 @@ footer p {
 	.menu-item a {
 		font-size: 1.2em;
 		text-transform: uppercase;
-	}
-
-	.card-title {
-		font-size: 115% !important;
 	}
 
 	.container-fluid {
