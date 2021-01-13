@@ -1,9 +1,4 @@
 </div><!-- container END! -->
-<div class="container-fluid row">
-  <!-- widget bar -->
-  <?php get_sidebar( 'primary' ); ?>
-</div>
-
 </main>
 <footer class="footer">
       <div class="container-fluid">
@@ -12,7 +7,7 @@
             <?php
               $lamina_getTheme = wp_get_theme();
 
-              echo '<strong>' . esc_html($lamina_getTheme->get( 'Name' )) . ' </strong> ' . esc_html($lamina_getTheme->get( 'Version' )) ;
+              echo '<strong>' . esc_html($lamina_getTheme->get( 'Name' )) . ' </strong> ' . esc_html($lamina_getTheme->get( 'Version' ));
             ?>    
         </p>
       </div>
