@@ -6,7 +6,6 @@ Lamina is a responsive theme with some added 'advanced' features.
 
 # Theme features
 - Set a custom site icon (favicon) and navbar logo
-- **Bottom widget bar** - Add your widgets to the bottom bar
 - Shows a 'featured' tag when posts are marked sticky.
 - Custom error pages and others like tag, category, author, search based on the index page.
 - Custom **Lamina Settings** - update your settings straight from the WordPress Customizer.
@@ -28,7 +27,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 ## Tested on:
 
 ### Desktop
-- Firefox 83
+- Firefox (latest stable version as of theme version release)
 
 ### Mobile (iOS)
 - Firefox
