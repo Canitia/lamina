@@ -349,16 +349,16 @@ strong {
 
 .badge-featured {
 	position: absolute;
-	top: 50px;
-	right: 50px;
+	top: 35px;
+	right: 35px;
     z-index: 10;
-    padding: 10px !important;
-    background-color: var(--border-bg-light) !important;
+    padding: 5px !important;
+	background-color: var(--border-bg-light) !important;
+	font-size: 12px;
     font-weight: bold;
-    opacity: 0.9;
     color: var(--default-font-color);
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 2px;
 }
 
 /* **************************************
