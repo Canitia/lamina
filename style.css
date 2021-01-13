@@ -382,7 +382,7 @@ strong {
 .sidebar {
 	padding-top: 35px;
 	padding-bottom: 35px;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	border-top: 1px solid var(--border-bg-light);
 }
 
