@@ -4,7 +4,7 @@
 
 if ( ! isset( $content_width ) ) {
 	
-	$content_width = 1200;
+	$content_width = 860;
 	
 }
 
@@ -41,35 +41,6 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-
-
-/**
- * sidebar
- */
-
-function lamina_sidebars() {
-	
-	/* Register the 'primary' sidebar. */
-	
-	register_sidebar(
-		array(
-		'id' => 'primary',
-		'name' => __( 'Primary', 'lamina' ),
-		'description' => __( 'Bottom bar.', 'lamina' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h1 class="widget-title text-left-title-featured-sidebar">',
-		'after_title' => '</h1>'
-		)
-	);
-	
-	
-	/* Repeat register_sidebar() code for additional sidebars. */
-	
-}
-
-add_action( 'widgets_init', 'lamina_sidebars' );
-
 /* register main navigation */
 
 function register_mainmenu() {
@@ -91,7 +62,7 @@ function bootstrap_nav()
             'theme_location'    => 'header-menu',
             'depth'             => 2,
             'container'         => 'false',
-            'menu_class'        => 'nav navbar-nav ml-auto w-100 justify-content-end',
+            'menu_class'        => 'nav navbar-nav w-100 justify-content-end',
             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'walker'            => new wp_bootstrap_navwalker())
     );

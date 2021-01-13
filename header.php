@@ -18,7 +18,7 @@
 <?php wp_body_open(); ?>
 <!-- start of the actual header -->
 <header>
-<nav class="container-fluid navbar navbar-expand-md navbar-light">
+<nav class="container-fluid navbar navbar-expand-lg navbar-light">
         <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
