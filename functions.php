@@ -16,10 +16,10 @@ if ( ! isset( $content_width ) ) {
 
 function lamina_theme_scripts() {
 	wp_enqueue_script('jquery');
-	wp_enqueue_style( 'bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css' );
 	wp_enqueue_script( 'font-awesome', '//use.fontawesome.com/releases/v5.8.1/js/all.js' );
 	wp_enqueue_script( 'webfontloader', '//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js' );
-	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js', array('jquery') );
+	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js', array('jquery') );
 	wp_enqueue_style( 'default',  get_stylesheet_directory_uri(). '/style.css' );	
 }
 
