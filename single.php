@@ -50,7 +50,7 @@
 
       <!-- error handling -->
       <?php endwhile; else: ?>
-          <div class="post-content">
+          <div class="post-content content-wrap">
             <p><?php esc_html_e('Sorry, this post can not be found or has been deleted.', 'lamina'); ?></p>
             <?php get_search_form(); ?>
         </div><!-- post-content END! -->
