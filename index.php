@@ -69,7 +69,7 @@
 
       
           <?php endwhile; } else { ?>
-          <div class="post-content">
+          <div class="post-content content-wrap">
               <p><?php esc_html_e('Sorry, it seems there are no posts available.', 'lamina'); ?></p>
               <?php get_search_form(); ?>
           </div><!-- post-content END! -->
