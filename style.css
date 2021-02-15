@@ -274,7 +274,8 @@ strong {
 }
 
 .navbar {
-	border-bottom: 1px solid var(--border-bg-light);
+	background: #f8f8f8;
+	border-bottom: 2px solid #ebebeb;
 }
 
 .navbar-brand {
@@ -860,6 +861,8 @@ footer {
 	position: inherit;
 	bottom: 0;
 	width: 100%;
+	background: #f8f8f8;
+	border-top: 2px solid #ebebeb;
 }
 
 footer p {
