@@ -536,6 +536,10 @@ article > h1:first-child {
 POST/ARTICLE HEADERS
 
 ##########################################*/
+.post-head {
+	margin-top: 30px;
+}
+
 .post-head-image {
 	object-fit: cover;
 	max-height: 500px;
