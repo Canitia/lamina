@@ -3,7 +3,7 @@
     <div class="row page-row post-row">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-        
+
         <?php
         if ( has_post_thumbnail() ) {
             the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
@@ -23,7 +23,7 @@
                 </div>
         </div>
 
-        <div class="post-content">
+        <div class="post-content content-wrap">
             <?php the_content(); ?>
         </div> 
 
