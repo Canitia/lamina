@@ -4,16 +4,17 @@
     <div class="row page-row post-row">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
+        
+    <?php
+    if ( has_post_thumbnail() ) {
+        the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
+    } else {
+    ?>
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
+    <?php } ?>  
     <div class="main-content">
     <div <?php post_class(); ?>>
         <article>
-        <?php
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
-        } else {
-        ?>
-        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
-        <?php } ?>  
         <div class="post-head content-wrap">
                 <h1 class="text-center post-title"><?php the_title(); ?></h1>
                 <div class="post-subitems text-center d-block">
