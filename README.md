@@ -1,7 +1,6 @@
 # Lamina
 ![License](https://img.shields.io/github/license/pixelateddeveloper/lamina?style=flat-square)
 
-==================
 Lamina is a responsive theme with some added 'advanced' features.
 
 # Theme features
