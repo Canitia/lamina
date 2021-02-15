@@ -3,7 +3,16 @@
     <div class="row page-row post-row">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-    <div class="col-md-12 col-lg-12 main-content">
+        
+        <?php
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
+        } else {
+            ?>
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
+        <?php } ?>
+
+    <div class="main-content">
     <div <?php post_class(); ?>>
         <article>
         <div class="post-head">
@@ -13,14 +22,6 @@
                      <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
                 </div>
         </div>
-
-        <?php
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
-        } else {
-            ?>
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
-        <?php } ?>
 
         <div class="post-content">
             <?php the_content(); ?>
