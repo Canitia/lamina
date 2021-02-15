@@ -4,7 +4,7 @@
     <div class="row page-row post-row">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-    <div class="main-content col-md-12 col-lg-12">
+    <div class="main-content">
     <div <?php post_class(); ?>>
         <article>
         <?php
