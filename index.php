@@ -35,7 +35,7 @@
     $count++;
     ?>
 
-          <div class="card col col-sm-12 col-md-6 <?php if($count <= 3){ echo 'col-lg-6'; } else { echo 'col-lg-4'; };?>">
+          <div class="card col-12 col-sm-12 col-md-6 <?php if($count <= 3){ echo 'col-lg-6'; } else { echo 'col-lg-4'; };?>">
           <a href="<?php the_permalink(); ?>">
               <?php if ( has_post_thumbnail() && is_sticky() ) {
 
