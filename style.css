@@ -277,12 +277,12 @@ strong {
 	border-bottom: 1px solid var(--border-bg-light);
 }
 
-.brand-logo {
-	border-radius: 50px;
-}
-
 .navbar-brand {
 	margin-left: 10px;
+}
+
+.custom-logo {
+    border-radius: 5px;
 }
 
 .navbar-light .navbar-toggler {
