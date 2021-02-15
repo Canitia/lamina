@@ -27,7 +27,7 @@
 
         <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
 
-        <div class="cat-links">
+        <div class="cat-links content-wrap">
 
         <?php if(has_tag()) { ?>
             <?php if ( get_theme_mod( 'show_tags', 'showtags' ) == 'showtags' ) : ?>
