@@ -2,7 +2,7 @@
 if ( post_password_required() )
 return;
 ?>
-<div class="comments-wrapper">
+<div class="comments-wrapper content-wrap">
 <?php if ( have_comments() ) : ?>
 <h1 class="text-left-title-featured-sidebar home-top-recent"><?php esc_html_e('Comments', 'lamina'); ?></h1>
 	<ul class="commentlist">
