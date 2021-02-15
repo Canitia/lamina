@@ -7,20 +7,20 @@
     <div class="main-content col-md-12 col-lg-12">
     <div <?php post_class(); ?>>
         <article>
-        <div class="post-head content-wrap">
-                <h1 class="text-center post-title"><?php the_title(); ?></h1>
-                <div class="post-subitems text-center d-block">
-                     <i class="fas fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
-                     <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
-                </div>
-        </div>
         <?php
         if ( has_post_thumbnail() ) {
             the_post_thumbnail('full', ['class' => 'post-head-image', 'title' => 'Feature image']);
         } else {
         ?>
         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
-        <?php } ?>    
+        <?php } ?>  
+        <div class="post-head content-wrap">
+                <h1 class="text-center post-title"><?php the_title(); ?></h1>
+                <div class="post-subitems text-center d-block">
+                     <i class="fas fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
+                     <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
+                </div>
+        </div>  
         <div class="post-content content-wrap">
             <?php the_content(); ?>
         </div> 
