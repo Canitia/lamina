@@ -7,7 +7,7 @@
     <div class="main-content col-md-12 col-lg-12">
     <div <?php post_class(); ?>>
         <article>
-        <div class="post-head">
+        <div class="post-head content-wrap">
                 <h1 class="text-center post-title"><?php the_title(); ?></h1>
                 <div class="post-subitems text-center d-block">
                      <i class="fas fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
@@ -21,7 +21,7 @@
         ?>
         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title(); ?>" class="post-head-image" />
         <?php } ?>    
-        <div class="post-content">
+        <div class="post-content content-wrap">
             <?php the_content(); ?>
         </div> 
 
@@ -31,7 +31,7 @@
 
         <?php if(has_tag()) { ?>
             <?php if ( get_theme_mod( 'show_tags', 'showtags' ) == 'showtags' ) : ?>
-                <div class="tagslist"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', '', '' ); ?> </div>
+                <div class="tagslist content-wrap"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', '', '' ); ?> </div>
                 <?php endif; ?>
         <?php } ?>
         </div>

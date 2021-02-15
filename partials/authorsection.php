@@ -1,4 +1,4 @@
-<section class="author-profile">
+<section class="author-profile content-wrap">
 <div class="row">
 
     <?php if ( get_the_author_meta( 'description' ) ) { ?>
