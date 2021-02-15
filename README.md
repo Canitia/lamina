@@ -19,7 +19,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 ![Lamina](https://github.com/pixelateddeveloper/lamina/raw/master/screenshot.png)
 
 ## Libraries used
-- Bootstrap v4.5.3
+- Bootstrap v4.6.0
 - JQuery (included)
 - [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 - Font Awesome 5.8.1
