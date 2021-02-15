@@ -714,6 +714,7 @@ ul.pings.commentlist {
 .tagslist a:hover,
 .categorylist a:hover {
 	color: var(--hovercolor);
+	text-decoration: none;
 }
 
 .tagslist a::before {
