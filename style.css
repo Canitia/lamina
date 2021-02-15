@@ -417,6 +417,8 @@ strong {
 
 .card-block {
 	background: #f8f8f8 !important;
+	border-radius: 0 0 5px 5px;
+	border: 2px solid #ebebeb !important;
 }
 
 .card-text {
