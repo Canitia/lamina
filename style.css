@@ -382,6 +382,7 @@ strong {
 .main-content {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 50px;
 }
 
 .post-row {
