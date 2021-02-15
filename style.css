@@ -908,10 +908,6 @@ footer p {
 		text-transform: uppercase;
 	}
 
-	.container-fluid {
-		padding: 0 !important;
-	}
-
 	.card {
 		padding-bottom: 30px;
 	}
