@@ -1,5 +1,5 @@
 # Lamina
-![License](https://img.shields.io/github/license/spookthemes/lamina?style=flat-square)
+![License](https://img.shields.io/github/license/spookthemes/lamina-wordpress-theme?style=flat-square)
 
 Lamina is a responsive theme with some added 'advanced' features.
 
@@ -15,7 +15,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 - Show tags in posts (show/hide)
 - Show author section (show/hide)
 
-![Lamina](https://github.com/spookthemes/lamina/raw/master/screenshot.png)
+![Lamina](https://github.com/spookthemes/lamina-wordpress-theme/raw/master/screenshot.png)
 
 ## Libraries used
 - Bootstrap v4.6.0
