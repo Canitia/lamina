@@ -1,7 +1,6 @@
 # Lamina
 ![License](https://img.shields.io/github/license/pixelateddeveloper/lamina?style=flat-square)
-[![CodeFactor](https://www.codefactor.io/repository/github/pixelateddeveloper/lamina/badge)](https://www.codefactor.io/repository/github/canitia/lamina)
-==================
+
 Lamina is a responsive theme with some added 'advanced' features.
 
 # Theme features
@@ -19,7 +18,7 @@ Lamina is a responsive theme with some added 'advanced' features.
 ![Lamina](https://github.com/pixelateddeveloper/lamina/raw/master/screenshot.png)
 
 ## Libraries used
-- Bootstrap v4.5.3
+- Bootstrap v4.6.0
 - JQuery (included)
 - [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 - Font Awesome 5.8.1
